@@ -25550,30 +25550,30 @@ ${t}`
         },
         pne = "sent",
         gne = {
-            SLIDE_0_TITLE: "In Weapons Drawn, every player is both a detective and a murderer.",
-            SLIDE_0_ITEM_1: "Murder guests brought by other players.",
-            SLIDE_0_ITEM_2: "Solve other murders to distract from your own.",
-            SLIDE_1_TITLE: "Each murder weapon you draw must contain a letter from your name.",
-            SLIDE_1_ITEM_1: 'This is your "calling card."',
-            SLIDE_1_ITEM_2: "Keep it a secret!",
-            SLIDE_2_TITLE: "Hide your letter as part of your drawing.",
-            SLIDE_2_ITEM_1: "Move your letter, then draw the weapon around it.",
-            SLIDE_2_ITEM_2: "Be on the lookout for other players\u2019 letters.",
-            SLIDE_3_TITLE: "Everyone brings two secret guests to the party.",
-            SLIDE_3_ITEM_1: "Give your guest a name that stands out, but won\u2019t lead back to you.",
-            SLIDE_3_ITEM_2: "Murder guests by guessing which player brought them.",
-            SLIDE_3_ITEM_3: "Your weapon is left behind as evidence.",
-            SLIDE_4_TITLE: "Pro Tips:",
-            SLIDE_4_ITEM_1: "Talk to each other and share your theories to get to a majority vote.",
-            SLIDE_4_ITEM_2: "Each player only draws each weapon once. Use this to eliminate suspects."
+            SLIDE_0_TITLE: "In Weapons Drawn ist jeder Spieler zugleich Mörder und Detektiv.",
+            SLIDE_0_ITEM_1: "Ermorde Gäste der anderen Spieler.",
+            SLIDE_0_ITEM_2: "Löse andere Mordfälle, um von deinen abzulenken.",
+            SLIDE_1_TITLE: "Jede Mordwaffe, die du zeichnest, muss einen Buchstaben aus deinem Namen enthalten.",
+            SLIDE_1_ITEM_1: 'Dies ist deine "Visitenkarte".',
+            SLIDE_1_ITEM_2: "Halte sie geheim!",
+            SLIDE_2_TITLE: "Verstecke deinen Buchstaben als Teil deiner Zeichnung.",
+            SLIDE_2_ITEM_1: "Bewege deinen Buchstaben und male deine Waffe mit ihm.",
+            SLIDE_2_ITEM_2: "Halte Ausschau nach den Buchstaben anderer Spieler.",
+            SLIDE_3_TITLE: "Jeder bringt zwei geheime Gäste mit zur Feier.",
+            SLIDE_3_ITEM_1: "Gib deinem Gast einen Namen, der heraussticht, aber nicht auf dich zurückzuführen ist.",
+            SLIDE_3_ITEM_2: "Ermorde Gäste, indem du herausfindest, wer sie mitgebracht hat.",
+            SLIDE_3_ITEM_3: "Deine Waffe bleibt als Beweismittel zurück.",
+            SLIDE_4_TITLE: "Profi-Tipp:",
+            SLIDE_4_ITEM_1: "Diskutiert eure Theorien und stimmt gemeinsam ab.",
+            SLIDE_4_ITEM_2: "Jeder Spieler malt jede Waffe nur ein Mal. Nutzt das, um Verdächtige auszuschließen."
         },
         mne = {
-            TAB_MOVE: "MOVE",
-            TAB_DRAW: "DRAW"
+            TAB_MOVE: "BEWEGEN",
+            TAB_DRAW: "ZEICHNEN"
         },
         vne = {
-            WRITE_SOMETHING: "You need to write something!",
-            FILTER_ERROR: "That's not allowed, enter something else! (You can change the level of filtering in the game's settings menu)"
+            WRITE_SOMETHING: "Du musst etwas schreiben!",
+            FILTER_ERROR: "Das kannst du nicht schreiben. Gib etwas anderes ein! (Du kannst die Filter-Optionen in den Einstellungen anpassen)"
         },
         yne = {
             SENT: pne,
