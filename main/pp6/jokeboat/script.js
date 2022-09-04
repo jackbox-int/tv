@@ -21043,11 +21043,11 @@ const $x = Et.View.extend({
     }),
     Hx = `<div class="topics-info">
     <div class="arrow"></div>
-    <p>When another comedian uses your topic for a great joke, you get <em>POINTS</em>!</p>
+    <p>Wenn ein anderer Comedian dein Thema für einen guten Witz benutzt, bekommst du <em>PUNKTE</em>!</p>
 </div>`,
     Ux = `<div class="joke-info">
     <div class="arrow"></div>
-    <p>For <em>HALF</em> the points</p>
+    <p>Für die <em>HÄLFTE</em> der Punkte</p>
 </div>`,
     Gx = Ma.extend({
         onRender() {
