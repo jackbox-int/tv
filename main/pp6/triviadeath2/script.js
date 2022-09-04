@@ -21174,7 +21174,7 @@ const g1 = mt.View.extend({
             if (this.model.get("roundType") !== "FinalRound") {
                 const n = this.model.get("choices");
                 if (!n) return e;
-                e = `<div class="chosenText">You have chosen<br>${n.find(o=>o.key===t[0]).html}</div>`
+                e = `<div class="chosenText">Du hast gewählt<br>${n.find(o=>o.key===t[0]).html}</div>`
             }
             return {
                 html: e
@@ -21419,7 +21419,7 @@ const g1 = mt.View.extend({
     }),
     T1 = `<div>\r
     <canvas id="phone" class="canvas phone" width=825 height=972></canvas>\r
-    <button id="reset" class="button reset">Reset</button>\r
+    <button id="reset" class="button reset">Zurücksetzen</button>\r
     <div class="visuallyhidden">\r
     	<img id="fingerStop" src="main/pp6/triviadeath2/triviadeath2/telephone_0_fingerStop.png"/>\r
     	<img id="fingerWheel" src="main/pp6/triviadeath2/triviadeath2/telephone_1_fingerWheel.png"/>\r
@@ -21558,7 +21558,7 @@ const g1 = mt.View.extend({
             const t = this.sprites.find(i => i.type === "dialed"),
                 e = this.model.get("dialed");
             let n = this.model.get("status") || "";
-            n.toLowerCase() === "busy" && (n = "NUMBER BUSY"), n.toLowerCase() === "connected" && (n = "CONNECTED"), n.toLowerCase() === "wrongnumber" && (n = "WRONG NUMBER"), t && (t.val = e, t.status = n)
+            n.toLowerCase() === "busy" && (n = "BESETZT"), n.toLowerCase() === "connected" && (n = "VERBUNDEN"), n.toLowerCase() === "wrongnumber" && (n = "FALSCH VERBUNDEN"), t && (t.val = e, t.status = n)
         },
         onRender() {
             this.stickit()
