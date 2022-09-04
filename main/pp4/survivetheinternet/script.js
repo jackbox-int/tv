@@ -21066,7 +21066,7 @@ const Ux = Ct.View.extend({
         },
         update() {
             this.playerInfo = this.model.get("playerInfo") || {}, this.promptComponent.model.set(this.model.get("text")), this.inputComponent.model.set("error", this.model.get("error")), this.inputComponent.model.set("placeholder", this.model.get("placeholder")), this.inputComponent.model.set("maxLength", this.model.get("maxLength")), this.inputComponent.model.set("inlineSubmit", !1), this.buttonsCollection.set([{
-                text: "Submit",
+                text: "Senden",
                 action: "submit",
                 block: !1,
                 color: {
