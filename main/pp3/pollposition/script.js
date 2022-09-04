@@ -21147,8 +21147,8 @@ const $x = Et.View.extend({
 			<div class="container">
 				<p id="pollposition-lobby-text" class='pollposition-text'></p>
 				<form class="pure-form">
-					<button type="button" id="pollposition-startgame" class="pollposition-button button-xlarge pure-button pure-input-1"><span>everybody's in</span></button>
-					<button type="button" id="pollposition-stopcountdown" class="pollposition-button button-xlarge pure-button pure-input-1"><span>cancel</span></button>
+					<button type="button" id="pollposition-startgame" class="pollposition-button button-xlarge pure-button pure-input-1"><span>alle bereit</span></button>
+					<button type="button" id="pollposition-stopcountdown" class="pollposition-button button-xlarge pure-button pure-input-1"><span>abbrechen</span></button>
 				</form>
 			</div>
 		</div>
@@ -21157,8 +21157,8 @@ const $x = Et.View.extend({
 			<div class="container">
 				<p id="pollposition-post-lobby-text" class='pollposition-text'></p>
 				<form class="pure-form">
-					<button type="button" id="pollposition-sameplayers" class="pollposition-button button-xlarge pure-button pure-input-1 pollposition-endbuttons"><span>same players</span></button>
-					<button type="button" id="pollposition-newplayers" class="pollposition-button button-xlarge pure-button pure-input-1 pollposition-endbuttons"><span>new players</span></button>
+					<button type="button" id="pollposition-sameplayers" class="pollposition-button button-xlarge pure-button pure-input-1 pollposition-endbuttons"><span>gleiche spieler</span></button>
+					<button type="button" id="pollposition-newplayers" class="pollposition-button button-xlarge pure-button pure-input-1 pollposition-endbuttons"><span>andere spieler</span></button>
 				</form>
 				<div align="center" id="pollposition-game-results" class="pollposition-results-padded"></div>
 			</div>
@@ -21176,7 +21176,7 @@ const $x = Et.View.extend({
         <div class="pt-page-off state-upordown-sent pollposition-page">
             <div class="container">
                 <p id="pollposition-upordown-received" class='pollposition-text'></p>
-                <p class='pollposition-text'>thanks for your selection</p>
+                <p class='pollposition-text'>danke für deine auswahl</p>
             </div>
         </div>
 
@@ -21204,13 +21204,13 @@ const $x = Et.View.extend({
 
         <div class="pt-page-off state-waitforallpercentages pollposition-page">
             <div class="container">
-                <p class='pollposition-text'>Thanks for your input.<br />Waiting for other players.</p>
+                <p class='pollposition-text'>Danke für deine Eingabe.<br />Warte auf die anderen Spieler.</p>
             </div>
         </div>
 
         <div class="pt-page-off state-waitforaudience pollposition-page">
             <div class="container">
-                <p class='pollposition-text'>Thanks for your input.<br />Waiting for the audience.</p>
+                <p class='pollposition-text'>Danke für deine Eingabe.<br />Warte auf das Publikum.</p>
             </div>
         </div>
 
@@ -21247,7 +21247,7 @@ const $x = Et.View.extend({
                 <div class="pollposition-range-buffer"> 
                     <form class="pure-form" id="pollposition-enterpercentage-field"> 
                         <div class=""> 
-                            <button type="submit" id="pollposition-submitpercentage" class="pollposition-button"><span>Submit</span></button> 
+                            <button type="submit" id="pollposition-submitpercentage" class="pollposition-button"><span>Senden</span></button> 
                             <div id="pollposition-submitpercentage-loading" class="button-pollposition-loading right" style="display:none; width: 110px; height: 48px; margin-top:10px;" ></div> 
                         </div> 
                     </form> 
@@ -21268,7 +21268,7 @@ const $x = Et.View.extend({
 
         <div class="pt-page-off state-waitforupordown pollposition-page">
             <div class="container">
-                <p class='pollposition-text'>Thanks for your input.<br />Waiting for other players.</p>
+                <p class='pollposition-text'>Danke für deine Eingabe.<br />Warte auf die anderen Spieler.</p>
             </div>
         </div>
 
@@ -21289,7 +21289,7 @@ const $x = Et.View.extend({
 
         <div class="pt-page-off state-waitformultiple pollposition-page">
             <div class="container">
-                <p class='pollposition-text'>Thanks for your input.<br />Waiting for other players.</p>
+                <p class='pollposition-text'>Danke für deine Eingabe.<br />Warte auf die anderen Spieler.</p>
             </div>
         </div>
 
@@ -21304,7 +21304,7 @@ const $x = Et.View.extend({
         <div class="pt-page-off state-audience-choice-sent pollposition-page">
             <div class="container">
                 <p id="pollposition-audience-choice-received" class='pollposition-text'></p>
-                <p class='pollposition-text'>thanks for your selection</p>
+                <p class='pollposition-text'>danke für deine auswahl</p>
             </div>
         </div>
 
@@ -21321,8 +21321,8 @@ const $x = Et.View.extend({
             <div class="container" align="center">
                 <p id="pollposition-characterlobby-text" class='pollposition-text'></p>
                 <form class="pure-form">
-                    <button type="button" id="pollposition-character-startgame" class="pollposition-button button-xlarge pure-button pure-input-1"><span>everybody's in</span></button>
-                    <button type="button" id="pollposition-character-stopcountdown" class="pollposition-button button-xlarge pure-button pure-input-1"><span>cancel</span></button>
+                    <button type="button" id="pollposition-character-startgame" class="pollposition-button button-xlarge pure-button pure-input-1"><span>alle bereit</span></button>
+                    <button type="button" id="pollposition-character-stopcountdown" class="pollposition-button button-xlarge pure-button pure-input-1"><span>abbrechen</span></button>
                 </form>
                 <p id="pollposition-choosecharacter-text" class='pollposition-text'></p>
                 <form id="pollposition-choosecharacter" class="pollposition-character-list" style="max-width:300px;" class="pure-form">
@@ -21389,7 +21389,7 @@ const Gx = lc.extend({
             this.hideLobbyButtons();
             const f = e.lobbyState;
             if (n === "Lobby_ChooseCharacter") {
-                this.hideCharacterLobbyButtons(), ae("#pollposition-choosecharacter-text").html("Select your agent");
+                this.hideCharacterLobbyButtons(), ae("#pollposition-choosecharacter-text").html("Wähle deinen Agenten");
                 let v = "";
                 for (o = 0; o < e.characters.length; o++) {
                     const b = e.characters[o].name,
@@ -21398,21 +21398,21 @@ const Gx = lc.extend({
                         D = !A && e.characters[o].isSelected != null ? " selected " : "";
                     v += `<button type='button' ${e.characters[o].isSelected!=null?" disabled ":""} data-character='${k}' aria-label='${b}' class='pollposition-character-button pollposition-character ${b} ${A} ${D}' style='width:64px;height:64px;'></button>`
                 }
-                ae("#pollposition-choosecharacter").html(v), this.showScreen(".state-choosecharacter"), t.isAllowedToStartGame && (f === "CanStart" ? (ae("#pollposition-characterlobby-text").html("press this button when everybody has joined"), ae("#pollposition-character-startgame").show()) : f === "Countdown" && (ae("#pollposition-characterlobby-text").html("press this button to cancel game start"), ae("#pollposition-character-stopcountdown").show())), this.onResize();
+                ae("#pollposition-choosecharacter").html(v), this.showScreen(".state-choosecharacter"), t.isAllowedToStartGame && (f === "CanStart" ? (ae("#pollposition-characterlobby-text").html("Drücke diesen Knopf, wenn alle beigetreten sind"), ae("#pollposition-character-startgame").show()) : f === "Countdown" && (ae("#pollposition-characterlobby-text").html("Drücke den Knopf um den Spielstart abzubrechen"), ae("#pollposition-character-stopcountdown").show())), this.onResize();
                 return
             }
             if (f === "PostGame") {
-                t.isAllowedToStartGame ? (ae("#pollposition-post-lobby-text").html("what do you want to do?"), ae(".pollposition-endbuttons").show()) : ae("#pollposition-post-lobby-text").html("Sit back and relax!");
+                t.isAllowedToStartGame ? (ae("#pollposition-post-lobby-text").html("Was möchtet ihr machen?"), ae(".pollposition-endbuttons").show()) : ae("#pollposition-post-lobby-text").html("Lehne dich zurück und entspanne!");
                 let v = '<table class="table table-striped table-bordered"><thead><tr><th>Rank</th><th>Player</th><th>Score</th></tr></thead><tbody>';
                 for (o = 0; o < e.gameResults.players.length; o++) v += `<tr><td>${e.gameResults.players[o].rank.toString()}</td><td><div style='display:inline-block;vertical-align:middle'><div class='pollposition-character ${e.gameResults.players[o].icon}' style='width:32px; height:32px' /></div><span>${e.gameResults.players[o].name}</span></td><td>${e.gameResults.players[o].score}</td></tr>`;
                 v += "</tbody></table>", ae("#pollposition-game-results").html(v), this.showScreen(".state-post-lobby");
                 return
             }
             if (!t.isAllowedToStartGame) {
-                ae("#pollposition-lobby-text").html("Sit back and relax!"), this.showScreen(".state-lobby");
+                ae("#pollposition-lobby-text").html("Lehne dich zurück und entspanne!"), this.showScreen(".state-lobby");
                 return
             }
-            f === "WaitingForMore" ? ae("#pollposition-lobby-text").html("waiting for all players to join") : f === "CanStart" ? (ae("#pollposition-lobby-text").html("press this button when everybody has joined"), ae("#pollposition-startgame").show()) : f === "Countdown" && (ae("#pollposition-lobby-text").html("press this button to cancel game start"), ae("#pollposition-stopcountdown").show()), this.showScreen(".state-lobby")
+            f === "WaitingForMore" ? ae("#pollposition-lobby-text").html("waiting for all players to join") : f === "CanStart" ? (ae("#pollposition-lobby-text").html("Drücke diesen Knopf, wenn alle beigetreten sind"), ae("#pollposition-startgame").show()) : f === "Countdown" && (ae("#pollposition-lobby-text").html("Drücke den Knopf um den Spielstart abzubrechen"), ae("#pollposition-stopcountdown").show()), this.showScreen(".state-lobby")
         } else if (i === "Gameplay_Logo") this.showLogo();
         else if (i === "Gameplay_PickCategory") {
             if (n === "Gameplay_WaitForCategory") ae("#waitforcategory-text").html(`Waiting for ${e.player} to pick a category.`), this.showScreen(".state-waitforcategory");
@@ -21425,12 +21425,12 @@ const Gx = lc.extend({
         } else if (i === "Gameplay_ShowQuestion") ae(".state-showquestion .question-text").html(e.question), this.showScreen(".state-showquestion");
         else if (i === "Gameplay_EnterPercentage") n === "Gameplay_EnterPercentage" ? (this.currentRange || this.startRangeInterface(), this.activeScreen !== ".state-enterpercentage" && (ae(".state-enterpercentage .question-text").html(e.question), this.setDefaultPercentage(50), ae("#pollposition-enterpercentage-field").show(), ae("#pollposition-submitpercentage").show(), ae("#pollposition-submit-alert").hide(), this.lastPercentage = -1, this.percentageSent = !1), this.enableLoadingButton("#pollposition-submitpercentage", !0), this.percentageInterval = setInterval(() => {
             !this.percentageSent && this.lastPercentage !== this.currentRange.getPercentage() && (this.lastPercentage = this.currentRange.getPercentage(), this.sendPercentageUpdate(this.currentRange.getPercentage()))
-        }, this.percentageDelayTime), this.showScreen(".state-enterpercentage"), this.currentRange.resize()) : n === "Gameplay_WaitForPercentage" ? (this.activeScreen !== ".state-waitforpercentage" && (ae(".state-waitforpercentage .question-text").html(e.question), ae("#waitingforpercentage-text").html(`Waiting for ${e.player} to enter a percentage.`)), this.showScreen(".state-waitforpercentage")) : n === "Gameplay_WaitForAllPercentages" ? this.showScreen(".state-waitforallpercentages") : n === "Gameplay_WaitForAudience" ? this.showScreen(".state-waitforaudience") : this.showLogo();
+        }, this.percentageDelayTime), this.showScreen(".state-enterpercentage"), this.currentRange.resize()) : n === "Gameplay_WaitForPercentage" ? (this.activeScreen !== ".state-waitforpercentage" && (ae(".state-waitforpercentage .question-text").html(e.question), ae("#waitingforpercentage-text").html(`Warte, bis ${e.player} einen Prozentwert eingegeben hat.`)), this.showScreen(".state-waitforpercentage")) : n === "Gameplay_WaitForAllPercentages" ? this.showScreen(".state-waitforallpercentages") : n === "Gameplay_WaitForAudience" ? this.showScreen(".state-waitforaudience") : this.showLogo();
         else if (i === "Gameplay_UpOrDownDone") this.showScreen(".state-upordowndone");
         else if (i === "Gameplay_ChooseUpOrDown")
             if (n === "Gameplay_WaitForChooseUpOrDown") this.showScreen(".state-waitforupordown");
             else {
-                ae(".state-chooseupordown .survey-text").html(e.survey), ae(".question-text").html(e.question), ae("#chooseupordown-text").html("Do you think the correct answer is:");
+                ae(".state-chooseupordown .survey-text").html(e.survey), ae(".question-text").html(e.question), ae("#chooseupordown-text").html("Denkst du, die richtige Antwort ist:");
                 let f = "";
                 for (o = 0; o < e.choices.length; o++) f += `<button type='button' data-choice='${e.choices[o].id.toString()}' class='pollposition-button pollposition-high-low-button pollposition-choice-button'><span>${e.choices[o].id.toString().replace("_"," ")}</span></button>`;
                 ae("#pollposition-chooseupordown").html(f), this.showScreen(".state-chooseupordown")
@@ -21440,7 +21440,7 @@ const Gx = lc.extend({
             else {
                 if (ae(".state-choosemultiple .question-text").html(e.question), n === "Gameplay_ChooseMultiple") {
                     let f = "";
-                    for (o = 0; o < t.choices.length; o++) t.choices[o].picked ? f += `<button type='button' data-choice='-1' class='pollposition-button pollposition-choice-button' disabled><span>${t.choices[o].text}</span></button>` : f += `<button type='button' data-choice='${o}' class='pollposition-button pollposition-choice-button'><span>${t.choices[o].text}</span></button>`;
+                    for (o = 0; o < t.choices.length; o++) t.choices[o].picked ? f += `<button type='button' data-choice='-1' class='pollposition-button pollposition-choice-button' disabled><span>${t.choices[o].text}</span></button>` : f += `<button type='button' data-choice='${o}' class='pollposition-button pollposition-choice-button'><span>${new Map(["Much_Higher","Viel mehr"],["Much_Lower","Viel weniger"],["Higher","Mehr"],["Lower","Weniger"]).get(t.choices[o].id)}</span></button>`;
                     ae(".state-choosemultiple .selection-text").html(t.selection), ae("#pollposition-choosemultiple").html(f)
                 } else ae(".state-choosemultiple .selection-text").html(""), ae("#pollposition-choosemultiple").html("");
                 this.showScreen(".state-choosemultiple")
@@ -21455,7 +21455,7 @@ const Gx = lc.extend({
             ae(".state-audience-chose-option .category-text").html(t.survey), ae(".state-audience-chose-option .pollquestion-text").html(t.poll.question);
             let o = "";
             for (i = 0; i < t.poll.choices.length; i++) o += `<button type='button' data-choice='${t.poll.choices[i].id}' class='pollposition-button pollposition-choice-button'><span>${t.poll.choices[i].choice}</span></button>`, o += "<br>";
-            o += "<button type='button' data-choice='-1' class='pollposition-button pollposition-choice-button'><span>This doesn't apply to me</span></button>", ae("#pollposition-audiencechooseoption").html(o), this.showScreen(".state-audience-chose-option")
+            o += "<button type='button' data-choice='-1' class='pollposition-button pollposition-choice-button'><span>Das trifft nicht auf mich zu</span></button>", ae("#pollposition-audiencechooseoption").html(o), this.showScreen(".state-audience-chose-option")
         } else if (!(e === "Gameplay_ChooseUpOrDown" || e === "Gameplay_ShowQuestion"))
             if (e === "Gameplay_ChooseMultiple" && t.poll) {
                 t.survey !== void 0 ? ae(".state-audience-chose-option .category-text").html(t.survey) : ae(".state-audience-chose-option .category-text").html(""), ae(".state-audience-chose-option .pollquestion-text").html(t.poll.question);
@@ -21468,7 +21468,7 @@ const Gx = lc.extend({
             let o = '<table class="table table-striped table-bordered"><thead><tr><th>Rank</th><th>Player</th><th>Score</th></tr></thead><tbody>';
             for (i = 0; i < t.gameResults.players.length; i++) o += `<tr><td>${t.gameResults.players[i].rank.toString()}</td><td><div style='display:inline-block;vertical-align:middle'><div class='pollposition-character ${t.gameResults.players[i].icon}' style='width:32px; height:32px' /></div><span>${t.gameResults.players[i].name}</span></td><td>${t.gameResults.players[i].score}</td></tr>`;
             o += "</tbody></table>", ae("#pollposition-game-results").html(o), this.showScreen(".state-post-lobby")
-        } else ae(".state-audience-wait .audience-wait-text").html("You\u2019re in the audience! Wait for your time to answer."), ae(".state-audience-wait .audience-usage-text").html("Audience answers are used when 5 or more audience members answer the question."), this.showScreen(".state-audience-wait")
+        } else ae(".state-audience-wait .audience-wait-text").html("Du bist im Publikum! Warte, bis du antworten kannst."), ae(".state-audience-wait .audience-usage-text").html("Die Stimme vom Publikum wird genutzt, wenn 5 oder mehr Leute antworten."), this.showScreen(".state-audience-wait")
     },
     hideLobbyButtons() {
         ae("#pollposition-startgame").hide(), ae("#pollposition-stopcountdown").hide(), ae(".pollposition-endbuttons").hide()
@@ -21542,7 +21542,7 @@ const Gx = lc.extend({
         }) : this.client.isRole("audience") && (e !== -1 && this.client.sessionSend("vote", "Poll Position Vote", {
             type: "vote",
             vote: e
-        }), ae("#pollposition-audiencechooseoption").html(""), ae(".state-audience-wait .audience-wait-text").html("Thanks, audience member!"), ae(".state-audience-wait .audience-usage-text").html("Audience answers are used when 5 or more audience members answer the question."), this.showScreen(".state-audience-wait")), !1
+        }), ae("#pollposition-audiencechooseoption").html(""), ae(".state-audience-wait .audience-wait-text").html("Danke, Person im Publikum!"), ae(".state-audience-wait .audience-usage-text").html("Die Stimme vom Publikum wird genutzt, wenn 5 oder mehr Leute antworten."), this.showScreen(".state-audience-wait")), !1
     },
     submitCategory(t) {
         const e = ae(t.currentTarget).data("category");
