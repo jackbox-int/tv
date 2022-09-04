@@ -21248,7 +21248,7 @@ const Xx = cc.extend({
             _e("#auction-money").html(this.formatMoney(e.money));
             let m = "";
             if (e.info && e.message)
-                for (f = 0; f < e.info.length; f++) m += '<div class="auction-info-content text-content">', m += `<p>${e.info[f].title} is worth ${this.formatMoney(e.info[f].value)}</p>`, m += "</div>";
+                for (f = 0; f < e.info.length; f++) m += '<div class="auction-info-content text-content">', m += `<p>${e.info[f].title} ist ${this.formatMoney(e.info[f].value)} wert</p>`, m += "</div>";
             _e("#auction-info").css("display", m.length > 0 ? "block" : "none"), _e("#auction-centered-info").html(m), _e("#auction-skip-content").css("display", t.skip ? "block" : "none"), this.onAuctionMessage(e.message);
             const _ = t.currentBidderId !== this.model.id;
             let k = "";
