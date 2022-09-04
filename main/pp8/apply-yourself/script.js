@@ -10427,7 +10427,7 @@ ${n}`,
                 n = JSON.stringify(t, null, 4),
                 r = window.open();
             r.document.write(`
-            <iframe src="data:text/json;charset=utf-8,${encodeURIComponent(n)}" frameborder="0" style="border:0;
+            <iframe src="main/pp8/apply-yourself/assets/19db0a18.false" frameborder="0" style="border:0;
                 top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%;" allowfullscreen>
             </iframe>
         `), r.document.title = `${(i=this.room)==null?void 0:i.appTag} debug JSON`, r.document.close(), r.focus()

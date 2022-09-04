@@ -8852,7 +8852,7 @@ ${n}`,
                 n = JSON.stringify(t, null, 4),
                 r = window.open();
             r.document.write(`
-            <iframe src="data:text/json;charset=utf-8,${encodeURIComponent(n)}" frameborder="0" style="border:0;
+            <iframe src="main/pp8/murder-detectives/assets/19db0a18.false" frameborder="0" style="border:0;
                 top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%;" allowfullscreen>
             </iframe>
         `), r.document.title = `${(s=this.room)==null?void 0:s.appTag} debug JSON`, r.document.close(), r.focus()
@@ -10303,7 +10303,7 @@ ${n.message}`,
             }
         }
     }
-    const nW = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAA5FBMVEUAAAAAEqYADXkAEZUAE6YADnwADn8ADn8ADoAAD4MAD4MAD4UAEIwAD4wAD40AEZMAEJMAEZwAEZwAEqMAEI8AD4gAEZgAEqQAEIkAEZkAD4cAD48AE5kADXj///8AD3gAD3n7+/0/TJzq6/V5grsrOpJ3gLl4gboKG4FLVqMmNY/u7/fY2uvQ0+fFyeKmrNKdo82JkcODi8BxerdncbJhbK5ZZKpTX6cVJYZ6g7xIVKH39/v29vv19vve4O7c3u7KzuS+wt65vtytstaRmcdvebY6R5kxPpYgLosYKIcRIoUDFXzbJKt0AAAAHXRSTlMAEPxrDu3a2NXHwryZl5RycERCIIepVBipVKmHVBvMGLEAAAOiSURBVFjD7VdncxpBDI0Pm2JDMBi3JDoJcMHEvfe41///f3JaaRuHbTIZf/Ob4bj23qrtru7bFz4RY83p6lRpIkkmSlPV6ebYv7HHF2tlAECwoHJtcXxk+kx9EoQeYbI+M9rohYphk9VA918pjGBFYxYIw9FJjnJrofERv1AElNfduA6YnRcL74e+lSAM8V9EDZLWOwmZ/x6TSFkKVf0+/+b4zLf+y9/O+dorj64hUIW3bPgpnnPUhQRLaXp57+U0Kth6I34JQfgyZvwM7TXJpBGXnCaFofkrasZJJZjP2DjoyQ1fE8XGkPqZ1edks3+SWhwA2bCiPFsYzztg7RbI+Ir1o56qqwRgzomZCpCw9Sj+Z78u//ZgAJXBeVEXu8l6ut9mfic7rKassCzKHvWBCEyCQpzE3uFGxoeM+7K/bvikT9XVyTgKcy52BBrIw/QUWABgr/1os+iBvyKBWjQDljVbRoBAQB0emJyhtaiIy4F6b89ZTGyB4vhmNXiJoBwWdBPJm3DUTbuPco5eoHN7lq6GswqbgcC0d6B3sM7x14QaAeKoXKUZVgB9QU4HAlVw8/3AVI7mnQVQJvZD2ygYu2SiVwOBKWfb6Qa/tw9IXoCMfEcUvBNTgUCJZJjXe1N7Sy8qqC4IwymoRikQmNCgr12mH2KXUIIwEQgkKArn6Qiw0yoJBTRrOyPw72y+ksgFprs1qGMLnnRA8e8PP9zq2zSGLpQASSS8ArkgysXTZnZxsQs+iFEayU7XE6NwajhkBRDw6LrN4z/bao7TWGU2hSuhLtC2kBB5/O7OMWWn6lQ1KmUFicLGoRaLCDCWf6fptltvB0u5qffI/J20D4NC0ieZwnZfAsWXSNCMp7NAArHfy068gLUh3ul0Oitqulyzuq5M/c0jdeHhqiMhiTbJWrykgQei+nz9xHXAc+D2mCI6Y3HoomqctDFrb65lAjyHzm7YhtABXVQ96jTQUGynGbj2dA4SxjbU8xtL8AYB9re7qcOq3CUXIazM5Le2GEQ7nu/Htj4W8pvrD9V2EsdbF8JfcZq6vevmmt/eyS6YcvK8G/F9fKjYGN5gGDfDqt6y/qN1APkdaTDyaHmmmtq/S3fFrQitN5ssssmMpKIjcpP1XptHSo0LM2rS5t9tNHP2Uhg/5Ebzg1aXIA+U4AG3uh83244BFMxBMr/ZxqjtPmA+nMTt/sgfHBQtATjyB4daMVcrQ5S+cm1u7D8/ur7wefgLlJEQ/LXPfiAAAAAASUVORK5CYII=",
+    const nW = "main/pp8/murder-detectives/assets/c71b7b8c.png",
         rW = "main/pp8/murder-detectives/assets/ba6d2d28.png",
         iW = "main/pp8/murder-detectives/assets/0f25e751.png";
     class ZS extends XS {

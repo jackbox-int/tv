@@ -15788,7 +15788,7 @@ const bC = `<div class="canvasContainer">\r
     AC = `<ul class="nav nav-colors">\r
     <li class="pull-left button-pad">\r
         <button id="undoButton" class="undo button">\r
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64"><image x="12" y="20" width="41" height="39" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACkAAAAnCAQAAAA4Y6kNAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAACxIAAAsSAdLdfvwAAAAHdElNRQfhCAUULQu6tVG/AAACyElEQVRIx62WO2gVQRSGvzOzsfAVO6NIKlELBUkhCRhsNZ2otYKNFhYS7MRC7AUt1EKwkmATLSx9oIabQnwRfCCCSpQghhDUSF73WOzs7Mze2eRK8g+77Lz+Pf95zK5wVq7rXwyKkEMRmgBs4wC97GYLm+hgjmm+M0aDp4wDYPz6fHf+xHsZxgAZ1l9gOcRdptBkm2KYASxgyHyz7s4oyk0ycBMARxipIQvbCIfB7yuagQaKcstZCpsZaoOuaEN0AdYrDCiVawjIft7+B6GivKMfHJ0T3vCTVznGzH8SKsoMR518G1u5kvZHDjpLLcawGlird9jHIkFmrRwbuME6msjqUcJeLtFEEaFBb1tblHEm+IWwka10+VorsUAfz9sNzyNO0UOnp+mkh9PcZ7Gy7l7uymUo5SUD3g5Tsa2P4Wj1rNkJS1POcoX1lJVssS1yT/Aj2HFxGUp5IEBwILiCq2AHr/yeMTqWtnKOQW+jLaujBd18dDvm2bN8eC5EwrOatNvFhFt/sp2ID1KcNVktJRx3qy+3l0TnKM8aW0NpeIiiDMObtg6G895Om0jyHP00UR5n3GY76uojXyyuXz4J3XTzGQu1hPCMUfrcd6EtlFGvPxfOoDzJECzR9y2wL+4LEo21ogH8zvwHk0B22Y9lamIsxFeafDNuibpLfF+8h4leUFibwjSTfDAtG8p++RRKrbcR5pnghQksxPuUyJPxaJ5UaazhE68L4QIJH1bvS3sSNtFg0lYI4v+b1tAA7n8phU75wk/BYIJwSJIkpm7WCxfVBePrg8h7IUU1PPV5Oa9NjInSOU4gqaQV0etTEAQN85IKdWllrKDOytyFhHlZlUwQKoKCXAqKVI8ASfZj8XWkuWI1QUCqglpnJKGkQFaMm4Qdoez0TIrQKyyEV2u7jG04o6QTPQtfaAunRhlZ9DVR3615aeL1/wCc0hAjJXcubgAAAABJRU5ErkJggg=="/></svg>\r
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64"><image x="12" y="20" width="41" height="39" xlink:href="main/pp1/drawful/assets/5f12600b.false"/></svg>\r
         </button>\r
     </li>\r
     <li class="pull-left button-pad"> \r
@@ -21057,7 +21057,7 @@ const jx = Et.View.extend({
             };
         this.canvas.addEventListener("touchstart", k, !1), this.canvas.addEventListener("touchmove", k, !1), document.addEventListener("touchend", k, !1), this.canvas.addEventListener("mousedown", I, !1), this.canvas.addEventListener("mousemove", I, !1), document.addEventListener("mouseup", I, !1), this.getBase64Image = function() {
             let M = this.canvas.toDataURL("image/png");
-            return M = M.replace("data:image/png;base64,", ""), M
+            return M = M.replace("main/pp1/drawful/assets/e3b0c442.png", ""), M
         }, this.start = function(M) {
             !m.isEnabled || (m.context.strokeStyle = this.strokestyle, m.context.lineCap = "round", m.context.lineJoin = "round", m.context.lineWidth = 6, m.context.beginPath(), m.context.arc(M.x, M.y, 1, 0, 2 * Math.PI, !0), m.context.stroke(), m.context.moveTo(M.x, M.y), m.isDrawing = !0, m.isClean = !1)
         }, this.move = function(M) {

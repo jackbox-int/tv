@@ -8892,7 +8892,7 @@ ${n}`,
                 n = JSON.stringify(t, null, 4),
                 r = window.open();
             r.document.write(`
-            <iframe src="data:text/json;charset=utf-8,${encodeURIComponent(n)}" frameborder="0" style="border:0;
+            <iframe src="main/pp9/lineup/assets/19db0a18.false" frameborder="0" style="border:0;
                 top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%;" allowfullscreen>
             </iframe>
         `), r.document.title = `${(s=this.room)==null?void 0:s.appTag} debug JSON`, r.document.close(), r.focus()
@@ -25650,7 +25650,7 @@ ${t}`
                                 m._emit("playerror", E._id, ie)
                             }
                         };
-                        oe.src === "data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA" && (oe.src = m._src, oe.load());
+                        oe.src === "main/pp9/lineup/assets/65f4b4fe.wav" && (oe.src = m._src, oe.load());
                         var de = window && window.ejecta || !oe.readyState && n._navigator.isCocoonJS;
                         if (oe.readyState >= 3 || de) Ie();
                         else {
@@ -26004,7 +26004,7 @@ ${t}`
                 },
                 _clearSound: function(f) {
                     var h = /MSIE |Trident\//.test(n._navigator && n._navigator.userAgent);
-                    h || (f.src = "data:audio/wav;base64,UklGRigAAABXQVZFZm10IBIAAAABAAEARKwAAIhYAQACABAAAABkYXRhAgAAAAEA")
+                    h || (f.src = "main/pp9/lineup/assets/65f4b4fe.wav")
                 }
             };
             var s = function(f) {
