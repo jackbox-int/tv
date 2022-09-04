@@ -21067,8 +21067,8 @@ const $x = Et.View.extend({
                 },
                 confirmButtonColor: "#000000",
                 cancelButtonColor: "#ff00ff",
-                confirmButtonText: "YES, CENSOR IT!",
-                cancelButtonText: "CANCEL"
+                confirmButtonText: "JA, ZENSIEREN!",
+                cancelButtonText: "ABBRECHEN"
             }).then(f => {
                 f.value && e.triggerMethod("client:message", {
                     action: a,
@@ -21080,7 +21080,7 @@ const $x = Et.View.extend({
             }) : this.model.get("isAudience") && (this.triggerMethod("client:message", {
                 type: "vote",
                 vote: i
-            }), this.promptComponent.model.set("html", `Thank you. Your choice: <span>${this.model.get("choices")[i].html}</span>`), this.choicesList.collection.reset()), !1
+            }), this.promptComponent.model.set("html", `Danke. Deine Wahl: <span>${this.model.get("choices")[i].html}</span>`), this.choicesList.collection.reset()), !1
         }
     });
 const Hx = Px.extend({
