@@ -21020,13 +21020,13 @@ const Hx = mt.View.extend({
             })
         })
     },
-    qx = `<div class="overdrawnBold title">Draw your name below</div>
+    qx = `<div class="overdrawnBold title">Zeichne deinen Namen</div>
 <div id="nametag" class="nametag">
-    <div id="header" class="nametagHeader overdrawnBold">Hello, I'm</div>
+    <div id="header" class="nametagHeader overdrawnBold">Hi, ich bin</div>
     <div id="sketchpad" class="nametagBody"></div>
 </div>
-<button id="submitButton" class="button submitButton">Submit</button>
-<div id="vipWarning" class="text">You must draw your name and click submit to proceed.</div>`,
+<button id="submitButton" class="button submitButton">Senden</button>
+<div id="vipWarning" class="text">Du musst deinen Namen zeichnen und auf Senden klicken.</div>`,
     Wx = Pn.extend({
         defaults: {
             live: !0,
@@ -21307,7 +21307,7 @@ const Hx = mt.View.extend({
         }
     }),
     bl = `<div id="nametag" class="nametag" style="background-color:<%=color%>;">
-    <div id="header" class="nametagHeader overdrawnBold">Hello, I'm</div>
+    <div id="header" class="nametagHeader overdrawnBold">Hi, ich bin</div>
     <div id="body" class="nametagBody"><%=playerName%></div>
 </div>`,
     s1 = Ws.extend({
@@ -21379,17 +21379,17 @@ const Hx = mt.View.extend({
     <div class="error text-danger"></div>
     <div class="col-xs-6">
         <div id="leftChoices" class="choices">choices</div>
-        <span>Left</span>
+        <span>Links</span>
     </div>
     <div class=" col-xs-6">
         <div id="rightChoices" class="choices">choices</div>
-        <span>Right</span>
+        <span>Rechts</span>
     </div>
     <button id='censorOptions' class='button'>Censor Options</button>
     <div id='next-up'>
-        <span id='next-up-span'>You're Up Next!!</span>
+        <span id='next-up-span'>Du bist danach dran!!</span>
     </div>
-    <div class="audienceInstruction col-xs-12 text">Audience members get one reaction per drawing, so use them wisely!</div>
+    <div class="audienceInstruction col-xs-12 text">Das Publikum darf einmal pro Zeichnung reagieren!</div>
 </div>`,
     a1 = mt.View.extend({
         bindings: {
@@ -21569,7 +21569,7 @@ const Hx = mt.View.extend({
     <div id="choicesRegion">choices</div>
     <button id='censorOptions' class='button'>Censor Options</button>
     <div id='next-up'>
-    <span id='next-up-span'>You're Up Next!!</span>
+    <span id='next-up-span'>Du bist danach dran!!</span>
     </div>
 </div>
 `,
@@ -21732,7 +21732,7 @@ const Hx = mt.View.extend({
     <div id="playericon" class="playerIcon"></div>
     <div id="playername" class="playerName controller-text">
         <div id="nametag" class="nametag">
-            <div id="header" class="nametagHeader overdrawnBold">Hello, I'm</div>
+            <div id="header" class="nametagHeader overdrawnBold">Hi, ich bin</div>
             <div id="body" class="nametagBody"></div>
         </div>
     </div>
