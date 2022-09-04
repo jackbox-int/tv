@@ -21175,15 +21175,15 @@ const jx = rt.View.extend({
             })
         },
         startInterval() {
-            this.intervalCount = 0, this.model.set("message", "HOLD TO ACCUSE"), this.model.set("shake", "none"), this.interval = setInterval(this.onInterval.bind(this), 1e3)
+            this.intervalCount = 0, this.model.set("message", "HALTEN, UM ZU BESCHULDIGEN"), this.model.set("shake", "none"), this.interval = setInterval(this.onInterval.bind(this), 1e3)
         },
         onInterval() {
             if (this.intervalCount += 1, this.intervalCount === 1) {
-                this.model.set("message", "ARE YOU SURE?"), this.model.set("shake", "light");
+                this.model.set("message", "BIST DU SICHER?"), this.model.set("shake", "light");
                 return
             }
             if (this.intervalCount === 2) {
-                this.model.set("message", "THIS IS SERIOUS!"), this.model.set("shake", "heavy");
+                this.model.set("message", "DAS IST ERNST!"), this.model.set("shake", "heavy");
                 return
             }
             this.triggerMethod("client:message", {
@@ -21248,7 +21248,7 @@ const jx = rt.View.extend({
             ".count": {
                 observe: "numTimesTested",
                 onGet(t) {
-                    return t === 1 ? "Tested 1 time" : `Tested ${t} times`
+                    return t === 1 ? "1 Mal getestet" : `${t} Mal getestet`
                 },
                 classes: {
                     hidden: {
@@ -21276,10 +21276,10 @@ const jx = rt.View.extend({
             Ws.prototype.onRender.apply(this), this.model.get("choiceId") === "ConfirmedIdentity" && this.model.get("chosen") === null && this.createConfirmDelay()
         },
         createConfirmDelay() {
-            this.model.get("choices")[0].html = "CONFIRM IN 5", this.model.get("choices")[0].disabled = !0;
+            this.model.get("choices")[0].html = "BESTÄTIGEN IN 5", this.model.get("choices")[0].disabled = !0;
             let t = 4,
                 e = window.setInterval(() => {
-                    t ? this.model.get("choices")[0].html = `CONFIRM IN ${t}` : (this.model.get("choices")[0].html = "CONFIRM", this.model.get("choices")[0].disabled = !1, window.clearInterval(e), e = void 0), t -= 1, this.update()
+                    t ? this.model.get("choices")[0].html = `BESTÄTIGEN IN ${t}` : (this.model.get("choices")[0].html = "BESTÄTIGEN", this.model.get("choices")[0].disabled = !1, window.clearInterval(e), e = void 0), t -= 1, this.update()
                 }, 1e3)
         }
     }),
@@ -22029,7 +22029,7 @@ const jx = rt.View.extend({
             this.triggerMethod("button:censor", this.model)
         }
     }),
-    C1 = '<p class="empty glitchable glitch-text glitch-element">NO RESPONSES TO INVESTIGATE</p>',
+    C1 = '<p class="empty glitchable glitch-text glitch-element">KEINE ANTWORTEN ZUM UNTERSUCHEN</p>',
     x1 = rt.View.extend({
         className: "response active",
         template: Be.template(C1)
