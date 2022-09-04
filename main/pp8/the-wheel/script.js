@@ -25352,94 +25352,94 @@ ${e}`
                 })
             })
         },
-        yae = "ASK",
-        bae = "You have used a word The Wheel does not approve of. Please try again.",
-        Eae = "NO",
-        Sae = "OR",
-        Tae = "SEND",
-        Cae = "SUBMIT",
-        wae = "WAIT TO TRY AGAIN",
-        $ae = "UNDO",
-        Oae = "YES",
+        yae = "FRAGEN",
+        bae = "Du hast ein Wort benutzt, welches dem Rad nicht gefällt. Probiere es erneut.",
+        Eae = "NEIN",
+        Sae = "ODER",
+        Tae = "SENDEN",
+        Cae = "ABSENDEN",
+        wae = "WARTE KURZ",
+        $ae = "ZURÜCK",
+        Oae = "JA",
         xae = {
-            NAME: "THE AUDIENCE",
-            VOTE_NOW: "VOTE NOW",
-            THANKS: ["Thank you, dear audience.", "Every vote counts. Even yours!", "I thank you with all my enormity.", "I bestow upon you my deepest gratitude.", "Many thanks. I won't forget this."]
+            NAME: "DAS PUBLIKUM",
+            VOTE_NOW: "WÄHLE JETZT",
+            THANKS: ["Danke, verehrtes Publikum.", "Jede Stimme zählt. Sogar deine!", "Ich danke dir mit meiner gesamten unglaublichen Größe.", "Ich möchte dir meinen tiefsten Dank aussprechen.", "Hab Dank. Ich werde das nicht vergessen."]
         },
         Aae = {
-            BANNER: "WHAT AM I THINKING?",
-            INCORRECT: "TRY AGAIN",
-            CORRECT: "GOT IT",
-            PLACEHOLDER: "Enter A Guess"
+            BANNER: "WORAN DENKE ICH?",
+            INCORRECT: "VERSUCH ES NOCHMAL",
+            CORRECT: "ALLES KLAR",
+            PLACEHOLDER: "Gib eine Vermutung ein"
         },
         Lae = {
-            BANNER: "COUNTERPARTS",
-            CORRECT: "MATCH",
-            FROZEN: "INCORRECT"
+            BANNER: "GEGENSÄTZE",
+            CORRECT: "PASST",
+            FROZEN: "FALSCH"
         },
         Iae = {
-            BANNER: "ENUMERATE"
+            BANNER: "SCHÄTZEN"
         },
         Mae = {
-            PLACE: "PLACE YOUR SLICES",
-            SUBMIT: "DONE! PRESS SUBMIT",
-            THANKS: "NICE JOB"
+            PLACE: "PLATZIERE DEINE SCHEIBEN",
+            SUBMIT: "FERTIG! DRÜCKE AUF SENDEN",
+            THANKS: "GUTE ARBEIT"
         },
         Pae = {
-            BANNER: "WELCOME",
-            PLACEHOLDER: "Enter A Question"
+            BANNER: "WILLKOMMEN",
+            PLACEHOLDER: "Gib eine Frage ein"
         },
         Rae = {
-            BANNER: "THAT [small]OR[/small] THIS",
-            CORRECT: "CORRECT",
-            FROZEN: "INCORRECT"
+            BANNER: "DIES [small]ODER[/small] DAS",
+            CORRECT: "RICHTIG",
+            FROZEN: "FALSCH"
         },
         Nae = {
-            ANSWER_BANNER: "YOU WIN!",
-            MAIN_BANNER: "SPIN [small]THE[/small] WHEEL",
-            RAINBOW_BANNER: "RAINBOW WHEEL",
-            WIN_BANNER: "FOR [small]THE[/small] WIN"
+            ANSWER_BANNER: "GEWONNEN!",
+            MAIN_BANNER: "DREH [small]DAS[/small] RAD",
+            RAINBOW_BANNER: "REGENBOGEN RAD",
+            WIN_BANNER: "FÜR [small]DEN[/small] SIEG"
         },
         kae = {
-            OBJECTIVE_BANNER: "DON'T FORGET TO WRITE",
-            SUBJECTIVE_BANNER: "SUBJECTIVELY YOURS",
-            CORRECT: "GOOD",
-            TAKEN: "ANSWERED",
-            OBJECTIVE_INCORRECT: "WRONG",
+            OBJECTIVE_BANNER: "VERGISS NICHT ZU SCHREIBEN",
+            SUBJECTIVE_BANNER: "RUNDE GRÜSSE",
+            CORRECT: "KLASSE",
+            TAKEN: "GEANTWORTET",
+            OBJECTIVE_INCORRECT: "FALSCH",
             SUBJECTIVE_INCORRECT: "NOPE",
-            PLACEHOLDER: "Enter A Guess"
+            PLACEHOLDER: "Gib eine Vermutung ab"
         },
         Dae = {
-            SPIN: '[player avatar="{avatar}"]{name}[/player] is the spinner',
-            MESSAGES: ["Remember... patience is a virtue.", "This is a blank screen. Or is it?", "Action awaits!", "Oh, the waiting. The waiting!", "Just wait till the next part!", "Hey, nice controller! Sorry, just making conversation.", "(Insert on-hold music here)", "Sit tight, little meeple.", "I believe in you. Shhh... don't tell anyone.", "It's about to get exciting in here.", "Nothing to see here.", "Behold... a screen with only these words on it.", "Property of the Wheel of Enormous Proportions", "The Wheel Was Here"]
+            SPIN: '[player avatar="{avatar}"]{name}[/player] ist dran',
+            MESSAGES: ["Denk dran... Geduld ist eine Tugend", "Dieser Bildschirm ist leer. Oder auch nicht?", "Das Abenteuer wartet!", "Oh, warten. Ich liebe warten!", "Warte einfach bis es weitergeht!", "Hey, schickes Gerät! Sorry, ich wollte nur was nettes sagen.", "(Hier Aufzugmusik einfügen)", "Setz dich, mein Lieber.", "Ich glaube an dich. Psst, sag es aber keinem.", "Gleich wird es großartig.", "Hier gibt es nichts zu sehen.", "Sieh her... ein Bildschirm nur mit diesen Worten drauf.", "Eigentum des Rads von unglaublicher Größe.", "Das Rad war hier."]
         },
         Bae = {
-            ANSWER: "answer slice.",
-            AUDIENCE: "audience slice.",
-            BAD: "skull slice.",
-            BONUS: "power slice for {for}.",
-            EMPTY: "empty.",
-            MULTIPLIER: "empty {multiplier}x multiplier.",
-            NEIGHBOR: "neighbor slice.",
-            PLAYER: "player slice for {for}.",
-            POINTS: "{points} point slice.",
-            POINTS_FOR: "points slice for {for}.",
-            RESERVED: "reserved for {for}.",
-            WINNER: "winner slice for {for}.",
-            KEEP_GOING: "keep going.",
-            SPIN_POWER: "{power} percent power spin.",
-            SPIN: "swipe down or tap quickly to spin",
-            SLICE_COUNT: "you have 0 slices. | you have 1 slice. | you have {count} slices.",
-            YOU_CAN_WIN: "You now have enough points to win.",
-            YOUR_AVATAR: "Your avatar is",
-            PLAYER1: "the royal",
-            PLAYER2: "the knight",
-            PLAYER3: "the mummy",
-            PLAYER4: "the robot",
-            PLAYER5: "the witch",
-            PLAYER6: "the clown",
-            PLAYER7: "the mermaid",
-            PLAYER8: "the astroman"
+            ANSWER: "Antwortenscheibe.",
+            AUDIENCE: "Publikumsscheibe.",
+            BAD: "Schädelscheibe.",
+            BONUS: "Kraftscheibe für {for}.",
+            EMPTY: "leer.",
+            MULTIPLIER: "leerer {multiplier}x Multiplizierer.",
+            NEIGHBOR: "Nachbarscheibe.",
+            PLAYER: "Spielerscheibe für {for}.",
+            POINTS: "{slice.data.points} Punktescheibe.",
+            POINTS_FOR: "Punktescheibe für {for}.",
+            RESERVED: "Reserviert für {for}.",
+            WINNER: "Gewinnerscheibe für {for}.",
+            KEEP_GOING: "mach weiter.",
+            SPIN_POWER: "{power} Prozent Kraftdreher.",
+            SPIN: "nach unten wischen oder schnell tippen zum drehen",
+            SLICE_COUNT: "Du hast 0 Scheiben. | Du hast 1 Scheibe. | Du hast {count} Scheiben.",
+            YOU_CAN_WIN: "Du hast jetzt genug Punkte, um zu gewinnen.",
+            YOUR_AVATAR: "Dein Avatar ist",
+            PLAYER1: "der Königliche",
+            PLAYER2: "der Ritter",
+            PLAYER3: "die Mumie",
+            PLAYER4: "der Roboter",
+            PLAYER5: "die Hexe",
+            PLAYER6: "der Clown",
+            PLAYER7: "die Meerjungfrau",
+            PLAYER8: "der Astronaut"
         },
         Fae = {
             ASK: yae,
