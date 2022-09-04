@@ -21120,10 +21120,10 @@ const UC = Et.View.extend({
             <div class="container">\r
                 <br /><span id="earwax-lobby-text"></span><br />\r
                 <form class="pure-form">\r
-                    <button type="button" id="earwax-startgame" class="button-earwax button-xlarge pure-button pure-input-1">EVERYBODY'S IN</button>\r
-                    <button type="button" id="earwax-stopcountdown" class="button-earwax  button-xlarge pure-button pure-input-1">CANCEL</button>\r
-                    <button type="button" id="earwax-sameplayers" class="button-earwax  button-xlarge pure-button pure-input-1 earwax-endbuttons">SAME PLAYERS</button>\r
-                    <button type="button" id="earwax-newplayers" class="button-earwax  button-xlarge pure-button pure-input-1 earwax-endbuttons">NEW PLAYERS</button>    \r
+                    <button type="button" id="earwax-startgame" class="button-earwax button-xlarge pure-button pure-input-1">ALLE BEREIT</button>\r
+                    <button type="button" id="earwax-stopcountdown" class="button-earwax  button-xlarge pure-button pure-input-1">ABBRECHEN</button>\r
+                    <button type="button" id="earwax-sameplayers" class="button-earwax  button-xlarge pure-button pure-input-1 earwax-endbuttons">GLEICHE SPIELER</button>\r
+                    <button type="button" id="earwax-newplayers" class="button-earwax  button-xlarge pure-button pure-input-1 earwax-endbuttons">NEUE SPIELER</button>    \r
                 </form>\r
             </div>\r
         </div>\r
@@ -21134,7 +21134,7 @@ const UC = Et.View.extend({
                     <img class="pure-img" style="margin-left:auto; margin-right:auto;"  src='main/pp2/earwax/earwax/logo.png'>\r
                 </div>\r
                 <form class="pure-form">\r
-                    <button type="button" id="earwax-skipintro" class="button-earwax  button-xlarge pure-button pure-input-1">SKIP INSTRUCTIONS >></button>\r
+                    <button type="button" id="earwax-skipintro" class="button-earwax  button-xlarge pure-button pure-input-1">TUTORIAL ÜBERSPRINGEN >></button>\r
                 </form>\r
             </div>\r
         </div>\r
@@ -21147,7 +21147,7 @@ const UC = Et.View.extend({
 \r
 		<div class="pt-page-off state-choosing earwax-page">\r
 			<div class="container">\r
-				<br /><span>PICK A PROMPT</span><br />\r
+				<br /><span>WÄHLE EIN THEMA</span><br />\r
 				<div class="button-container">\r
 					<form class="pure-form">\r
 						<fieldset class="button-fieldset">\r
@@ -21178,7 +21178,7 @@ const UC = Et.View.extend({
 		</div>		\r
 \r
 		<div class="pt-page-off state-audience-join earwax-page">\r
-			<br /><span>YOU'VE JOINED THE AUDIENCE!<br />WAITING FOR NEXT QUESTION TO START.</span><br />\r
+			<br /><span>DU BIST IM PUBLIKUM!<br />WARTE AUF DEN START DER NÄCHSTEN FRAGE.</span><br />\r
 		</div>\r
 \r
         <div id="state-audience-wait" class="pt-page-off earwax-page">\r
@@ -21395,7 +21395,7 @@ const vx = lc.extend({
                 return
             }
             const o = t.lobbyState;
-            o === "WaitingForMore" ? this.$el.find("#earwax-lobby-text").html("Waiting for more players") : o === "CanStart" ? (this.$el.find("#earwax-lobby-text").html("Waiting for more players"), this.$el.find("#earwax-startgame").show()) : o === "Countdown" ? (this.$el.find("#earwax-lobby-text").html("Press to cancel game start"), this.$el.find("#earwax-stopcountdown").show()) : o === "PostGame" && (this.$el.find("#earwax-lobby-text").html("What do you want to do?"), Le(".earwax-endbuttons").show()), this.showScreen("#state-lobby")
+            o === "WaitingForMore" ? this.$el.find("#earwax-lobby-text").html("Warte auf weitere Spieler") : o === "CanStart" ? (this.$el.find("#earwax-lobby-text").html("Warte auf mehr Spieler"), this.$el.find("#earwax-startgame").show()) : o === "Countdown" ? (this.$el.find("#earwax-lobby-text").html("Drücke um den Spielstart abzubrechen"), this.$el.find("#earwax-stopcountdown").show()) : o === "PostGame" && (this.$el.find("#earwax-lobby-text").html("Was möchtet ihr nun machen?"), Le(".earwax-endbuttons").show()), this.showScreen("#state-lobby")
         } else if (i === "Gameplay_Logo") n === "GameIntro" ? (this.$el.find("#earwax-skipintro").show(), this.showScreen("#state-intro")) : this.showScreen("#state-logo");
         else if (i === "Gameplay_CategorySelection" && n === "Gameplay_CategorySelection")
             if (e.isChoosing) {
@@ -21403,27 +21403,27 @@ const vx = lc.extend({
                 const f = t.choices || [];
                 for (let A = 0; A < f.length; A++) o += `<button type="button" data-num="${A}" class="earwax-category button-earwax button-large pure-button pure-input-1">${f[A]}</button>`;
                 Le(".button-fieldset").html(o), this.showScreen(".state-choosing")
-            } else this.$el.find("#notchoosing").html(`${t.choosingPlayerName} is picking a prompt`), this.showScreen(".state-notchoosing");
+            } else this.$el.find("#notchoosing").html(`${t.choosingPlayerName} wählt ein Thema`), this.showScreen(".state-notchoosing");
         else if (i === "Gameplay_SoundSelection" && n === "Gameplay_SoundSelection")
             if (e.isSelecting) {
                 let o = "",
                     f = !0;
                 for (let A = 0; A < e.choices.length; A++) e.choices[A].picked ? (o += `<button type="button" data-num="-1" class="button-earwax button-large pure-input-1" disabled>${e.choices[A].name}</button>`, f = !1) : o += `<button type="button" data-num="${e.choices[A].id}" class="earwax-sound button-earwax button-large pure-button pure-input-1">${e.choices[A].name}</button>`;
-                f ? this.$el.find("#selectingsound").html(`Pick first sound for:<br>${t.prompt}`) : this.$el.find("#selectingsound").html(`Pick second sound for:<br>${t.prompt}`), Le(".button-fieldset").html(o), this.showScreen("#state-selectingsound"), this.clickEnabled = !0
-            } else this.$el.find("#notselectingsound").html("Waiting for other players"), this.showScreen("#state-notselectingsound");
-        else if (i === "Gameplay_SoundSelection" && n === "Gameplay_SoundSelected") this.$el.find("#notselectingsound").html("Waiting for players to pick sounds"), this.showScreen("#state-notselectingsound");
+                f ? this.$el.find("#selectingsound").html(`Wähle das erste Geräusch für:<br>${t.prompt}`) : this.$el.find("#selectingsound").html(`Wähle das zweite Geräusch für:<br>${t.prompt}`), Le(".button-fieldset").html(o), this.showScreen("#state-selectingsound"), this.clickEnabled = !0
+            } else this.$el.find("#notselectingsound").html("Warte auf die anderen Spieler"), this.showScreen("#state-notselectingsound");
+        else if (i === "Gameplay_SoundSelection" && n === "Gameplay_SoundSelected") this.$el.find("#notselectingsound").html("Warte, bis die anderen Spieler ihre Geräusche gewählt haben"), this.showScreen("#state-notselectingsound");
         else if (i === "Gameplay_Vote" && n === "Gameplay_Vote") {
             t.prompt ? this.$el.find("#state-vote #question-text").html(t.prompt.replace(/<BLANK>/gi, "________")) : this.$el.find("#state-vote #question-text").html("");
             let o = "";
             if (e.isChoosing) {
-                this.$el.find("#vote-text").html("PICK A WINNER");
+                this.$el.find("#vote-text").html("WÄHLE EINEN GEWINNER");
                 const f = t.choices || [];
                 if (t.remote && this.audioContext != null && typeof this.audioContext < "u")
                     for (let A = 0; A < f.length; A++) o += '<div class="pure-form pure-g">', o += '<div class="pure-u-3-4 pure-u-md-6-8">', o += `<button type="button" data-vote="${A}" class="earwax-vote button-earwax-vote button-earwax button-large pure-button pure-input-1">${f[A].name}</button>`, o += "</div>", o += '<div class="pure-u-1-8 pure-u-md-1-8">', o += `<button type="button" aria-label="play" data-play="${A}" class="earwax-play  button-earwax-play button-earwax button-large pure-button pure-input-1">&nbsp;&nbsp;</button>`, o += "</div>", o += '<div class="pure-u-1-8  pure-u-md-1-8">', o += `<button type="button" aria-label="play locally" data-play="${f[A].id1}_${f[A].id2}" class="earwax-playlocal button-earwax-playLocal button-earwax button-large pure-button pure-input-1">&nbsp;&nbsp;</button>`, o += "</div>", o += "</div>";
                 else
                     for (let A = 0; A < f.length; A++) o += '<div class="pure-form pure-g">', o += '<div class="pure-u-3-4 pure-u-md-7-8">', o += `<button type="button" data-vote="${A}" class="earwax-vote button-earwax-vote button-earwax button-large pure-button pure-input-1">${f[A].name}</button>`, o += "</div>", o += '<div class="pure-u-1-6 pure-u-md-1-8">', o += `<button type="button" aria-label="play" data-play="${A}" class="earwax-play button-earwax-play button-earwax button-large pure-button pure-input-1">&nbsp;&nbsp;</button>`, o += "</div>", o += "</div>"
             } else {
-                this.$el.find("#vote-text").html("VOTE 4 FAVE");
+                this.$el.find("#vote-text").html("WÄHLE FÜR DEN BESTEN");
                 const f = t.choices || [];
                 for (let A = 0; A < f.length; A++) e.choices[A].disabled || (o += `<button type="button" data-like="${A}" class="earwax-like button-earwax button-large pure-button pure-input-1">${f[A].name}</button>`)
             }
@@ -21434,7 +21434,7 @@ const vx = lc.extend({
         const t = this.model.get("room"),
             e = t ? t.state : "";
         if (e === "Gameplay_Vote") {
-            t.prompt ? this.$el.find("#state-vote #question-text").html(t.prompt.replace(/<BLANK>/gi, "________")) : this.$el.find("#state-vote #question-text").html(""), this.$el.find("#vote-text").html("VOTE 4 FAVE");
+            t.prompt ? this.$el.find("#state-vote #question-text").html(t.prompt.replace(/<BLANK>/gi, "________")) : this.$el.find("#state-vote #question-text").html(""), this.$el.find("#vote-text").html("WÄHLE FÜR DEN BESTEN");
             let n = "";
             const i = t.choices || [];
             for (let o = 0; o < i.length; o++) n += `<button type="button" data-like="${o}" class="pure-input-1 earwax-like button-large pure-button button-earwax">${i[o].name}</button>`;
