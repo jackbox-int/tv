@@ -21079,7 +21079,7 @@ const Fx = Ct.View.extend({
         },
         sendInput(t) {
             if (this.sketchpadComponent.getLines().length === 0) {
-                Ot.show(Error("You have to draw something!"));
+                Ot.show(Error("Du musst etwas malen!"));
                 return
             }
             lr.prototype.sendInput.apply(this, [t])
@@ -21124,23 +21124,23 @@ const Fx = Ct.View.extend({
     Wx = Hn.extend({
         defaults: Ke.extend({}, ro.prototype.model.defaults, {
             strings: {
-                wait: "<div>PLEASE STAND BY!</div><div>The seminar will start shortly!</div>",
-                vip_waiting: "<div>You're the VIP!</div><div>Waiting for all attendees to take a seat!<div>",
-                vip_canStart: "<div>You're the VIP!</div><div>Press this button when all attendees are ready</div>",
-                vip_cancel: "<div>You're the VIP!</div><div>press this button to cancel the seminar</div>",
-                vip_postgame: "<div>You're the VIP!</div><div>Want to attend another seminar?<div>",
-                vip_episodes_menu: "Episodes Menu",
-                vip_episodes_unload: "Unload Episode",
-                vip_episodes_report: "Report Episode",
-                vip_episodes_view_author: "View Author",
-                button_start: "Everybody's In",
-                button_cancel: "Cancel",
-                button_changename: "Change Name",
-                button_sameplayers: "Same Players",
-                button_newplayers: "New Players",
-                prompt_entername: "Enter your name",
+                wait: "<div>MACH DICH BEREIT!</div><div>Das Seminar beginnt in Kürze!</div>",
+                vip_waiting: "<div>Du bist der VIP!</div><div>Warte, bis alle Teilnehmer sich bereit gemacht haben!<div>",
+                vip_canStart: "<div>Du bist der VIP!</div><div>Drücke diese Taste, wenn alle Teilnehmer bereit sind</div>",
+                vip_cancel: "<div>Du bist der VIP!</div><div>Drücke diese Taste um das Seminar abzubrechen</div>",
+                vip_postgame: "<div>Du bist der VIP!</div><div>Möchtest du an einem weiteren Seminar teilnehmen?<div>",
+                vip_episodes_menu: "Episoden Menü",
+                vip_episodes_unload: "Episode deaktivieren",
+                vip_episodes_report: "Episode melden",
+                vip_episodes_view_author: "Autor anzeigen",
+                button_start: "Alle bereit",
+                button_cancel: "Abbrechen",
+                button_changename: "Name ändern",
+                button_sameplayers: "Gleiche Spieler",
+                button_newplayers: "Neue Spieler",
+                prompt_entername: "Gib deinen Namen ein",
                 prompt_choosecharacter: "",
-                button_censorOptions: "Censor Options"
+                button_censorOptions: "Zensur Optionen"
             }
         })
     }),
