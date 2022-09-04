@@ -1,0 +1,47 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="none" x="0px" y="0px" width="500px" height="500px" viewBox="0 0 500 500">
+<defs>
+<g id="avatar1v2_0_Layer2_0_FILL">
+<path fill="#5C1A22" stroke="none" d="
+M -2.2 -22.75
+Q -4.5 -25.55 -8 -29.75 -18.3 -30.3 -25.15 -30.7
+L -35.65 -16.2
+Q -34.15 -8.75 -31.5 5.3
+L 0.45 32.6
+Q 9.05 24.6 25.7 9.05
+L 35.65 -16.65
+Q 29.05 -26.2 24.85 -32.6 17.3 -31.5 6.2 -30.15 0.85 -25.55 -2.2 -22.75 Z"/>
+</g>
+
+<g id="avatar1v2_0_Layer1_0_FILL">
+<path fill="#EC7839" stroke="none" d="
+M 30.85 -15.95
+L 21.95 -28.4 7.9 -27.05
+Q 2.3 -21.45 -1.35 -17.65 -4.4 -20.65 -8.5 -24.6
+L -15.05 -25.65 -23.75 -25.6 -30.8 -14.15 -27.45 2.05 -11.5 17.8 0.45 28.1 22.45 7.3 30.85 -15.95 Z"/>
+</g>
+
+<path id="avatar1v2_0_Layer2_0_1_STROKES" stroke="#5E3016" stroke-width="4" stroke-linejoin="miter" stroke-linecap="square" stroke-miterlimit="3" fill="none" d="
+M 25.7 9.05
+Q 9.05 24.6 0.45 32.6
+L -31.5 5.3
+Q -34.15 -8.75 -35.65 -16.2
+L -25.15 -30.7
+Q -18.3 -30.3 -8 -29.75 -4.5 -25.55 -2.2 -22.75 0.85 -25.55 6.2 -30.15 17.3 -31.5 24.85 -32.6 29.05 -26.2 35.65 -16.65
+L 25.7 9.05 Z"/>
+</defs>
+
+<g transform="matrix( 5.106536865234375, 0, 0, 5.106536865234375, 250.4,257.7) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#avatar1v2_0_Layer2_0_FILL"/>
+
+<use xlink:href="#avatar1v2_0_Layer2_0_1_STROKES"/>
+</g>
+
+<g transform="matrix( 1, 0, 0, 1, 0,0) ">
+<use xlink:href="#avatar1v2_0_Layer1_0_FILL"/>
+</g>
+</g>
+</g>
+</svg>

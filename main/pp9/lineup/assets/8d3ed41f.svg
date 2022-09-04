@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" x="0" y="0" version="1.1" viewBox="-5 -5 30 23" preserveAspectRatio="none" overflow="auto">
+    <style>
+        .line {
+            fill: transparent;
+            stroke: #ecc9ff;
+            stroke-width: 3px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+    </style>
+    <path class="line" vector-effect="non-scaling-stroke" d="M20,6.5H5.28C2.37,6.5,0,4.13,0,1.22V0" />
+    <polyline class="line" vector-effect="non-scaling-stroke" points="13.5,0 20,6.5 13.5,13" />
+</svg>

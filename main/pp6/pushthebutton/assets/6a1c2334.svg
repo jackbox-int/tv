@@ -1,0 +1,11 @@
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <svg viewBox="0 0 420 60" preserveAspectRatio="xMinYMid slice">
+        <path d="M 420 0 L 0 0 L 0 45 M 15 60 L 420 60" fill="none" stroke="#333" stroke-width="2" vector-effect="non-scaling-stroke" />
+    </svg>
+    <svg viewBox="0 0 60 60" preserveAspectRatio="xMinYMid">
+        <path d="M 0 45 L 15 60" fill="none" stroke="#333" stroke-width="1.25" vector-effect="non-scaling-stroke" />
+    </svg>
+    <svg viewBox="0 0 60 60" preserveAspectRatio="xMaxYMid">
+        <path d="M 60 0 L 60 60" fill="none" stroke="#333" stroke-width="2" vector-effect="non-scaling-stroke" />
+    </svg>
+</svg>
