@@ -21301,7 +21301,7 @@ const zx = ft.View.extend({
                 switchButton: "",
                 snapshotButton: "",
                 cancelButton: "",
-                confirmButton: "KEEP IT"
+                confirmButton: "BEHALTEN"
             }
         })
     }),
@@ -21491,7 +21491,7 @@ const zx = ft.View.extend({
             
         </div>
         <div class="add">
-            <button>ADD SLIDE</button>
+            <button>SENDEN</button>
         </div>
     </div>    
 </div>
@@ -21694,7 +21694,7 @@ const d1 = Bx.extend({
             switchButton: "",
             snapshotButton: "",
             cancelButton: "",
-            confirmButton: "KEEP IT"
+            confirmButton: "BEHALTEN"
         })), t
     },
     getGameLayout(t) {
