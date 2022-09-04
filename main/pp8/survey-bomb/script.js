@@ -24999,54 +24999,54 @@ ${t}`
             REMAINING: "Remaining Choices: {remaining}"
         },
         Bte = {
-            CHOOSE_ONE: "Choose a door",
-            CHOOSE_THIS: "Choose this door"
+            CHOOSE_ONE: "Wähle eine Tür",
+            CHOOSE_THIS: "Wähle diese Tür"
         },
         jte = {
-            FILTER_ERROR: "That\u2019s not allowed, enter something else!",
+            FILTER_ERROR: "Das ist nicht erlaubt. Gib etwas anderes ein!",
             INSTRUCTION: {
-                AVATAR: "Pick your avatar",
-                NAME_TEAM: "Suggest a team name",
-                RANK_TEAM: "Rank your favorite team names"
+                AVATAR: "Wähle deinen Charakter",
+                NAME_TEAM: "Schlage einen Teamnamen vor",
+                RANK_TEAM: "Bewerte deine Lieblings-Teamnamen"
             }
         },
-        Gte = "No torches",
+        Gte = "Keine Fackeln",
         Wte = {
-            CONFIRM: "Yeah, yeah, I got it",
+            CONFIRM: "Ja ja, ist ja gut",
             SUBTEXT: {
-                ATTENTION: "[b]YOU MUST HAVE THE AUDIENCE ON TO PLAY![/b]",
-                BEST: "[b]BEST:[/b] Passwording the game and sharing the password with your desired team",
-                GOOD: "[b]ALMOST AS GOOD:[/b] Hiding the room code and setting a max player limit",
-                RECOMMEND: "We recommend the following settings to help create your desired team and audience.",
-                RESTART: "So, if you haven\u2019t done that, maybe restart the game?"
+                ATTENTION: "[b]DU MUSST DAS PUBLIKUM AKTIVIEREN UM ZU SPIELEN![/b]",
+                BEST: "[b]TIPP:[/b] Schütze das Spiel mit einem Passwort und teile das Passwort mit deinem Team",
+                GOOD: "[b]AUCH GUT:[/b] Verstecke den Raum-Code und stelle ein Spielerlimit ein",
+                RECOMMEND: "Wir schlagen folgende Einstellungen vor, damit du mit deinem Team und einem Publikum spielen kannst.",
+                RESTART: "Also, wenn du das noch nicht gemacht hast, möchtest du vielleicht das Spiel neustarten?"
             },
-            TEXT: "Welcome to Streamer Mode!"
+            TEXT: "Willkommen im Streamer-Modus!"
         },
         Kte = {
-            INSTRUCTION: "Remember your choices",
-            PICK_MORE: "Pick {amount} more"
+            INSTRUCTION: "Merke dir deine Antworten",
+            PICK_MORE: "Wähle {amount} mehr"
         },
-        Hte = "Switch teams",
+        Hte = "Team wechseln",
         Vte = "VS",
         qte = {
             FINAL_CHANCE: {
-                BOTH: "If either team gets the next choice right, the game is over!",
-                CURRENT: "If their team gets their next choice right, the game is over!",
-                HEADER: "Elimination Moment",
-                RIVAL: "If your team gets your next choice right, the game is over!"
+                BOTH: "Wenn ein Team die nächste Antwort richtig hat, ist das Spiel vorbei!",
+                CURRENT: "Wenn das andere Team richtig liegt, ist das Spiel vorbei!",
+                HEADER: "Eliminationsmoment",
+                RIVAL: "Wenn dein Team richtig liegt, ist das Spiel vorbei!"
             },
             LOSE: {
-                HEADER: "You\u2019re Trapped",
-                TEXT: ["Don\u2019t worry, apparently you were tasty.", "At least the other team is happy.", "Learn more about your friends next time.", "Still, you learned a lot about each other.", "It is pitch black. You are likely to be eaten by a grue.", "Even worse, you\u2019re damp.", "Theivery doesn\u2019t pay!", "It\u2019s okay, Laverne will keep you company.", "Enjoy the musty air.", "At least your team name was cool."]
+                HEADER: "Du bist gefangen",
+                TEXT: ["Keine Angst, scheinbar warst du lecker.", "Immerhin ist das andere Team glücklich.", "Lerne deine Freunde nächstes Mal besser kennen.", "Ihr habt trotzdem viel voneinander gelernt.", "Es ist Pechschwarz. Wahrscheinlich wirst du von irgendwas gefressen.", "Noch schlimmer, hier ist es nass.", "Diebstahl zahlt sich nicht aus!", "Schon okay, Laverne wird dir Gesellschaft leisten.", "Genieß die muffige Luft.", "Immerhin war euer Teamname cool."]
             },
-            SKIP_TUTORIALS: "Skip Tutorials",
+            SKIP_TUTORIALS: "Tutorials überspringen",
             UP_NEXT: {
-                HEADER: "You\u2019re Up Next",
-                TEXT: ["Get ready! You\u2019re choosing next.", "Pay attention because you\u2019re picking the next door.", "After this choice, it\u2019s your turn\u2026 so hope they fail!"]
+                HEADER: "Du bist als nächstes!",
+                TEXT: ["Mach dich bereit! Du wählst als nächstes.", "Mach dich bereit, denn du wählst die nächste Tür.", "Nach dieser Entscheidung bist du dran! Hoffe also, dass sie scheitern!"]
             },
             WIN: {
-                HEADER: "You Escaped",
-                TEXT: ["Congratulations on a job well done!", "Teamwork made this dream work.", "Don\u2019t spend all that gold you stole earlier in one place.", "Enjoy the fresh air.", "Don\u2019t forget to rate your stay!", "I\u2019m sure the other team is just fine.", "You picked your friends\u2019 knows!", "Looking forward to your next visit.", "The real treasure was the friends we lost to the depths of this mine.", "Everyone is proud of you."]
+                HEADER: "Du bist entkommen!",
+                TEXT: ["Glückwunsch! Wirklich gute Arbeit!", "Im Team läuft doch alles besser", "Gib nicht all dein Geld auf einmal aus.", "Genieß die frische Luft.", "Vergiss nicht, deinen Aufenthalt zu bewerten!", "Ich bin mir sicher den anderen geht es gut.", "Du kennst deine Freunde! Cool!", "Wir freuen uns auf deinen nächsten Besuch.", "Der wahre Schatz ist die Freundschaft, die wir in dieser Mine verloren haben.", "Alle sind super stolz auf dich."]
             }
         },
         Yte = {
