@@ -21064,12 +21064,12 @@ const zx = Ct.View.extend({
                 tipTaperFactor: 1
             },
             strings: He.extend({}, jn.prototype.model.defaults.strings, {
-                name_modal_text: "Name your champion:",
+                name_modal_text: "Benenne deinen Champion:",
                 name_modal_confirm: "OK",
-                name_modal_cancel: "Cancel",
-                name_error_empty: "You need to write something!",
-                ERROR_REJECTED_OBJECT: "That's not allowed, enter something else!",
-                ERROR_REJECTED_TEXT: "That's not allowed, enter something else!"
+                name_modal_cancel: "Abbrechen",
+                name_error_empty: "Du musst etwas schreiben!",
+                ERROR_REJECTED_OBJECT: "Das kannst du nicht schreiben. Schreib etwas anderes!",
+                ERROR_REJECTED_TEXT: "Das kannst du nicht schreiben. Schreib etwas anderes!"
             })
         })
     }),
