@@ -21027,13 +21027,13 @@ const zx = Px.extend({
         if (t.classes = t.classes || [], t.state === "EnterSingleText") {
             let n = (t.prompt.html || "").toUpperCase().split("<BR>");
             n = n.map(i => i.indexOf("<DIV>") === -1 ? `<DIV>${i}</DIV>` : i), t.prompt.html = n.join(""), t.actions = [], t.actions.push({
-                text: "Submit",
+                text: "Senden",
                 action: "submit"
             }), t.canRhymeForMe && t.actions.push({
-                text: "Write For Me",
+                text: "Reime für mich",
                 key: "help"
             }), t.suggestions && t.suggestions.length > 0 && t.actions.push({
-                text: "Suggestions",
+                text: "Beispiele",
                 action: "suggestion"
             })
         } else t.state === "MakeSingleChoice" && (t.choiceType && t.choiceType === "PlayerVote" && t.classes.push("playerVote"), t.type === "repeating" ? (t.classes.push("actionChoice"), t.maxVotes = this.client.isRole("player") ? 200 : 100) : t.classes.includes("actionChoice") && (t.type = "repeating", t.maxVotes = this.client.isRole("player") ? 200 : 100), t.prompt.text === "Tap if you think this rhyme is DOPE" && (t.type = "repeating", t.maxVotes = this.client.isRole("player") ? 200 : 100));
