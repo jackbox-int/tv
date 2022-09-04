@@ -21054,7 +21054,7 @@ const Fx = mt.View.extend({
     <div id="namesRegion" class="names"></div>\r
     <div id="instructionsRegion" class="instructions"></div>\r
     <div id="rolesRegion" class="roles"></div>\r
-    <button id="submit" class="button choice-button btn btn-lg submit">SUBMIT</button>\r
+    <button id="submit" class="button choice-button btn btn-lg submit">SENDEN</button>\r
     <div id="mirror" class="mirror"></div>\r
 </div>`,
     Wx = Un.extend({
@@ -21238,7 +21238,7 @@ const Fx = mt.View.extend({
                     showDoubleDown: e
                 }));
             this.namesList.collection.set(t), this.rolesList.collection.set(n);
-            const i = this.model.get("isAudience") ? "Drag one player to the role that fits them best." : "Drag players into their roles";
+            const i = this.model.get("isAudience") ? "Ziehe den Spieler auf die Rolle, die zu ihm passt." : "Ziehe Spieler zu ihren Rollen.";
             this.instructionView.model.set("html", i), this.chosen = !1, this.stickit()
         },
         onRender() {
@@ -21362,7 +21362,7 @@ const Zx = Vx.extend({
             cappedEnds: !0
         }, e.prompt = {
             html: "Draw yourself"
-        }, e.playerInfo.playerColor && (e.background = e.playerInfo.playerColor)), e.state === "MakeSingleChoice" && e.choices && e.choices.length > 0 && e.choices[e.choices.length - 1].text === "CENSOR ANSWERS" && (e.choices[e.choices.length - 1].className = "censorAnswers"), e.isAudience ? e.playerInfo.username = "AUDIENCE" : e.playerInfo.hidden = !0, e
+        }, e.playerInfo.playerColor && (e.background = e.playerInfo.playerColor)), e.state === "MakeSingleChoice" && e.choices && e.choices.length > 0 && e.choices[e.choices.length - 1].text === "CENSOR ANSWERS" && (e.choices[e.choices.length - 1].className = "censorAnswers"), e.isAudience ? e.playerInfo.username = "PUBLIKUM" : e.playerInfo.hidden = !0, e
     },
     getGameLayout(t) {
         switch (t) {
