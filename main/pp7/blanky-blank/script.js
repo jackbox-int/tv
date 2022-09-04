@@ -21178,7 +21178,7 @@ const gk = da.extend({
         }), this.$el.find("#input-region").prop("hidden", !0), this.$el.find("#buttons").prop("hidden", !0)) : (this.guesses.push(s), this.model.setUpdate({
             prompt: {
                 html: `${this.prompt.html}<br />
-                        <span class="description">${r} isn't right, keep trying!</span>
+                        <span class="description">${r} ist nicht richtig. Versuch es weiter!</span>
                     `
             }
         })), this.model.setUpdate({
@@ -24911,17 +24911,17 @@ const ig = 5,
                 g = t.includes(parseInt(Object.keys(s).slice(-1)[0], 10));
             a ? this.navigationCollection.set([{
                 action: "submitSentence",
-                text: "Submit"
+                text: "Senden"
             }]) : n === "writing" ? this.navigationCollection.set([{
                 disabled: !0,
-                text: "Make a sentence!"
+                text: "Baue einen Satz!"
             }]) : g ? this.navigationCollection.set([{
                 action: "skipSentence",
-                text: "Skip"
+                text: "Überspringen"
             }]) : this.navigationCollection.set([{
                 action: "nextBlank",
                 disabled: !u,
-                text: "Next"
+                text: "Weiter"
             }])
         },
         updateSelectedSentence(t, e) {
@@ -24962,14 +24962,14 @@ const ig = 5,
         }
     }),
     e4 = `<div id="controller" class="state-controller controller-content">
-    <span id="prompt" class="">Describe prompt</span>
+    <span id="prompt" class="">Prompt beschreiben</span>
     <div id="sentence" class="">sentence</div>
 </div>`,
     t4 = ir.extend({
         defaults: {
             entryId: "sentence0",
             prompt: {
-                text: "Unknown prompt!"
+                text: "Unbekannter Prompt!"
             },
             sentence: {
                 words: [{
@@ -25038,7 +25038,7 @@ const i4 = ak.extend({
     },
     parseBlob(t) {
         switch (t.isAudience && (t.playerInfo = {
-                username: "AUDIENCE"
+                username: "PUBLIKUM"
             }), t.state) {
             case "MakeSentence":
                 t.playerInfo && (t.playerInfo.topBarColor = r4.playerBarPresenter);
