@@ -21206,10 +21206,10 @@ const cx = yt.View.extend({
             autocapitalize: "characters",
             className: "",
             inlineSubmit: !1,
-            inlineSubmitText: "Submit",
+            inlineSubmitText: "Senden",
             error: "",
             strings: {
-                ERROR_NOTHING_ENTERED: "You need to enter something!"
+                ERROR_NOTHING_ENTERED: "Du musst etwas eingeben!"
             }
         }
     }),
@@ -21337,11 +21337,11 @@ const cx = yt.View.extend({
             autoSubmit: !1,
             maxLength: 500,
             actions: [{
-                text: "submit",
+                text: "senden",
                 action: "submit"
             }],
             strings: {
-                ERROR_NOTHING_ENTERED: "You need to enter something!"
+                ERROR_NOTHING_ENTERED: "Du musst etwas eingeben!"
             },
             autocapitalize: "characters"
         }
@@ -21524,7 +21524,7 @@ const cx = yt.View.extend({
     Ex = Rn.extend({
         defaults: {
             toggled: !1,
-            leftLabel: "Regular Prompt",
+            leftLabel: "Normaler Prompt",
             rightLabel: "Thriplash Prompt"
         }
     }),
