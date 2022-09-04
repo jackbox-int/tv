@@ -21148,10 +21148,10 @@ const Bx = Et.View.extend({
             <div class="container">\r
                 <br /><span id="lobby-text"></span><br />\r
                 <form class="pure-form">                    \r
-                    <button type="button" id="button-startgame" class="light-text button-game button-xlarge pure-button pure-input-1">EVERYBODY'S IN</button>\r
-                    <button type="button" id="button-stopcountdown" class="light-text button-game  button-xlarge pure-button pure-input-1">CANCEL</button>\r
-                    <button type="button" id="button-sameplayers" class="light-text button-game  button-xlarge pure-button pure-input-1 button-endbuttons">same players</button>\r
-                    <button type="button" id="button-newplayers" class="light-text button-game  button-xlarge pure-button pure-input-1 button-endbuttons">new players</button>    \r
+                    <button type="button" id="button-startgame" class="light-text button-game button-xlarge pure-button pure-input-1">ALLE BEREIT</button>\r
+                    <button type="button" id="button-stopcountdown" class="light-text button-game  button-xlarge pure-button pure-input-1">ABBRECHEN</button>\r
+                    <button type="button" id="button-sameplayers" class="light-text button-game  button-xlarge pure-button pure-input-1 button-endbuttons">gleiche spieler</button>\r
+                    <button type="button" id="button-newplayers" class="light-text button-game  button-xlarge pure-button pure-input-1 button-endbuttons">neue spieler</button>    \r
                 </form>\r
             </div>\r
         </div>\r
@@ -21170,7 +21170,7 @@ const Bx = Et.View.extend({
                 <div id="make-many-choices-sub-text" class="white-text" style="width:100%; text-align:center;" ></div>\r
                 <div id="make-many-choices-choices" class="row light-text" style="width:100%;" ></div>\r
                 <div id="make-many-choices-submit-button-container" style="width:100%; display:table;" >\r
-                    <button type="button" id="make-many-choices-submit-button" class="light-text button-game button-xlarge pure-button pure-input-1">SUBMIT</button>\r
+                    <button type="button" id="make-many-choices-submit-button" class="light-text button-game button-xlarge pure-button pure-input-1">SENDEN</button>\r
                 </div>\r
             </div>\r
         </div>\r
@@ -21182,9 +21182,9 @@ const Bx = Et.View.extend({
                 <div id="enter-single-text-input-container" class="container">\r
                     <form class="pure-form" id="enter-single-text-field">\r
                         <div class="pure-u-1">\r
-                            <input id="enter-single-text-input" name="enter-single-text-input-field" class="pure-input-1 capitalize" type="text" maxlength="45" placeholder="ENTER HERE" autocapitalize="off" autocorrect="off" autocomplete="off">\r
+                            <input id="enter-single-text-input" name="enter-single-text-input-field" class="pure-input-1 capitalize" type="text" maxlength="45" placeholder="HIER EINGEBEN" autocapitalize="off" autocorrect="off" autocomplete="off">\r
                         </div>\r
-                        <button type="submit" id="enter-single-text-submit" class="light-text button-game button-large pure-button capitalize right"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;SEND</button>\r
+                        <button type="submit" id="enter-single-text-submit" class="light-text button-game button-large pure-button capitalize right"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;SENDEN</button>\r
                     </form>\r
                 </div>\r
             </div>\r
@@ -21198,7 +21198,7 @@ const Bx = Et.View.extend({
             </canvas>\r
             \r
             <form id="enter-single-drawing-submit-container" class="pure-form container">\r
-                <button type="submit" id="enter-single-drawing-submit" class="light-text submit-drawing button-game button-large pure-button pure-input-1" style="margin-top: 0px;"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;send</button>\r
+                <button type="submit" id="enter-single-drawing-submit" class="light-text submit-drawing button-game button-large pure-button pure-input-1" style="margin-top: 0px;"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;senden</button>\r
             </form>\r
         </div>\r
         \r
@@ -21260,9 +21260,9 @@ const Gx = VC.extend({
                 for (let E = 0; E < t.players.length; E++) t.players[E].id === this.client.userId && (a = t.players[E]);
                 const d = e ? e.state : "";
                 if (a) {
-                    if (n += `<p>${a.wonGame?"CONGRATULATIONS":"SUCH A TRAGEDY!"}</p>`, d === "MakeSingleChoice")
+                    if (n += `<p>${a.wonGame?"GLÜCKWUNSCH":"WELCH TRAUERSPIEL!"}</p>`, d === "MakeSingleChoice")
                         for (let E = 0; E < e.choices.length; E++) n += `<button data-choice="${E}" class="light-text button-choice button-game button-large btn btn-block">${e.choices[E].text}</button>`;
-                    i += `<p>${a.wonGame?"You survived the game!":"You did not survive the game"}</p>`, i += "<BR>", i += `<p>Your final score: $${a.score}</p>`
+                    i += `<p>${a.wonGame?"Du hast das Spiel überlebt!":"Du hast das Spiel nicht überlebt"}</p>`, i += "<BR>", i += `<p>Deine Punktzahl: $${a.score}</p>`
                 }
                 const g = this.model.get("room").artifact;
                 if (g && g.success && g.rootId) {
@@ -21279,7 +21279,7 @@ const Gx = VC.extend({
             } else {
                 let a = 0;
                 for (let g = 0; g < t.players.length; g++) t.players[g].wonGame && (a = t.players[g].score);
-                t.audience && (n += `<p>${t.audience.survived?"CONGRATULATIONS":"SUCH A TRAGEDY!"}</p>`, i += `<p>${t.audience.survived?"The audience has SURVIVED!":"The audience has DIED, and so have you!"}</p>`, i += "<BR>", i += `<p>${t.audience.count} audience ${t.audience.count===1?"member":"members"} got : $${t.audience.score}</p>`, i += "<BR>", i += `<p>Score to beat : $${a}</p>`);
+                t.audience && (n += `<p>${t.audience.survived?"GLÜCKWUNSCH":"WELCH TRAUERSPIEL!"}</p>`, i += `<p>${t.audience.survived?"Das Publikum hat ÜBERLEBT!":"Das Publikum ist gestorben, genauso wie DU!"}</p>`, i += "<BR>", i += `<p>${t.audience.count} Publikum ${t.audience.count===1?"Mitglied":"Mitglieder"} hatten: $${t.audience.score}</p>`, i += "<BR>", i += `<p>Punkte zu toppen: $${a}</p>`);
                 const d = this.model.get("room").artifact;
                 if (d && d.success && d.rootId) {
                     let g = "games.jackbox.tv";
@@ -21335,7 +21335,7 @@ const Gx = VC.extend({
                 return
             }
             const g = t.lobbyState;
-            g === "WaitingForMore" ? se("#lobby-text").html("Waiting for all players to join") : g === "CanStart" ? (se("#lobby-text").html("Press this button when everybody has joined"), se("#button-startgame").show()) : g === "Countdown" ? (se("#lobby-text").html("Press this button to cancel game start"), se("#button-stopcountdown").show()) : g === "PostGame" && (se("#lobby-text").html("What do you want to do?"), se(".button-endbuttons").show()), this.showScreen("#state-lobby")
+            g === "WaitingForMore" ? se("#lobby-text").html("Warte, bis alle Spieler beigetreten sind") : g === "CanStart" ? (se("#lobby-text").html("Drücke diesen Knopf, wenn alle Spieler beigetreten sind"), se("#button-startgame").show()) : g === "Countdown" ? (se("#lobby-text").html("Drücke diesen Knopf, um den Spielstart abzubrechen"), se("#button-stopcountdown").show()) : g === "PostGame" && (se("#lobby-text").html("Was möchtet ihr jetzt machen?"), se(".button-endbuttons").show()), this.showScreen("#state-lobby")
         } else if (i === "Gameplay")
             if (n === "MakeSingleChoice") {
                 const g = e.chosen === null || e.chosen === void 0,
@@ -21344,26 +21344,26 @@ const Gx = VC.extend({
                 if (g) {
                     se("#make-single-choice-text").html(`<p>${E}</p>`);
                     let A = "";
-                    for (let D = 0; D < k.length; D++) A += `<button data-choice="${D}" class="${k[D].disabled?`background-finger background-finger-${D}`:""} light-text button-choice button-game button-large btn" ${k[D].disabled?"disabled":""}>${k[D].disabled?"&zwnj;":k[D].text}</button>`;
+                    for (let D = 0; D < k.length; D++) A += `<button data-choice="${D}" class="${k[D].disabled?`background-finger background-finger-${D}`:""} light-text button-choice button-game button-large btn" ${k[D].disabled?"disabled":""}>${k[D].disabled?"&zwnj;":E==="Gib das Muster durch das Tippen der Knöpfe wieder."?new Map(["Orange","Orange"],["Blue","Blau"],["Green","Grün"],["Gun","Pistole"],["Knife","Messer"],["Hammer","Hammer"],["Grenade","Granate"]).get(k[D].text):k[D].text}</button>`;
                     se("#make-single-choice-choices").html(A)
-                } else se("#make-single-choice-text").html("<p>Thanks.</p>"), se("#make-single-choice-choices").html("");
+                } else se("#make-single-choice-text").html("<p>Danke.</p>"), se("#make-single-choice-choices").html("");
                 this.showScreen("#state-make-single-choice")
             } else if (n === "MakeManyChoices") {
             const g = e.chosen === null || e.chosen === void 0,
                 E = e.text,
                 k = e.choices;
             if (g) {
-                se("#make-many-choices-text").html(`<p id='many-text'>${E}</p>`), se("#make-many-choices-sub-text").html("<p id='many-sub-text'>Tap any items below that fit this category.</p>");
+                se("#make-many-choices-text").html(`<p id='many-text'>${E}</p>`), se("#make-many-choices-sub-text").html("<p id='many-sub-text'>Tippe auf alle zutreffenden Antworten.</p>");
                 let A = "";
                 for (let D = 0; D < k.length; D++) A += '<div class="col-xs-10">', A += `<button data-choice="${D}" id="make-many-choices-button-${D}" class="light-text make-many-choices-button button-game button-large pure-button pure-input-1">${k[D].text}</button>`, A += '</div><div class="col-xs-2">', A += `<i data-choice="${D}" id="make-many-choices-checkbox-${D}" class="checkbox box-unchecked make-many-choices-checkbox"></i>`, A += "</div>";
                 se("#make-many-choices-choices").html(A), se("#make-many-choices-submit-button-container").show()
-            } else se("#make-many-choices-text").html("<p>Thanks.</p>"), se("#make-many-choices-sub-text").html(""), se("#make-many-choices-choices").html(""), se("#make-many-choices-submit-button-container").hide();
+            } else se("#make-many-choices-text").html("<p>Danke.</p>"), se("#make-many-choices-sub-text").html(""), se("#make-many-choices-choices").html(""), se("#make-many-choices-submit-button-container").hide();
             this.showScreen("#state-make-many-choices")
         } else if (n === "EnterSingleText") e.entry ? this.showScreen("#state-logo") : (e.error ? (se("#enter-single-text-error").html(`<p>${e.error}</p>`), se("#enter-single-text-error").show()) : se("#enter-single-text-error").hide(), this.activeScreen !== "#state-enter-single-text" && (se("#enter-single-text-input").val(""), se("#enter-single-text-input").prop("type", e.inputType), se("#enter-single-text-field").show(), se("#state-enter-single-text #enter-single-text-text-container").html(`<span class="container-text">${e.text}</span>`)), this.showScreen("#state-enter-single-text"));
         else if (n === "EnterSingleDrawing")
             if (e.entry) this.showScreen("#state-logo");
             else {
-                se("#enter-single-drawing-text-container").html(`<p>Please Draw :<br>${e.text}</p>`), this.showScreen("#state-enter-single-drawing");
+                se("#enter-single-drawing-text-container").html(`<p>Bitte zeichne:<br>${e.text}</p>`), this.showScreen("#state-enter-single-drawing");
                 const g = this.$el.find("#sketchpad")[0],
                     E = g.getContext("2d"),
                     k = this.$el.find("#player").outerHeight() + this.$el.find("#enter-single-drawing-text-container").outerHeight() + this.$el.find("#enter-single-drawing-submit-container").outerHeight();
@@ -21451,7 +21451,7 @@ const Gx = VC.extend({
                 d += `<button data-choice="${g.key}" class="light-text button-choice button-game button-large pure-button pure-input-1">${g.text}</button>`
             }), se("#make-single-choice-choices").html(d), this.showScreen("#state-make-single-choice")
         } else if (a === "multiple") {
-            se("#make-many-choices-text").html(`<p>${n}</p>`), se("#make-many-choices-sub-text").html("<p>Tap the items below that fit into this category.</p>");
+            se("#make-many-choices-text").html(`<p>${n}</p>`), se("#make-many-choices-sub-text").html("<p>Tippe auf alle zutreffenden Antworten.</p>");
             let d = "";
             for (let g = 0; g < i.length; g++) d += '<div class="col-xs-10">', d += `<button data-choice="${g}" id="make-many-choices-button-${g}" class="light-text make-many-choices-button button-game button-large pure-button pure-input-1">${i[g].text}</button>`, d += '</div><div class="col-xs-2">', d += `<i data-choice="${g}" id="make-many-choices-checkbox-${g}" class="checkbox box-unchecked make-many-choices-checkbox"></i>`, d += "</div>";
             se("#make-many-choices-choices").html(d), se("#make-many-choices-submit-button-container").show(), this.showScreen("#state-make-many-choices")
@@ -21490,7 +21490,7 @@ const Gx = VC.extend({
         }) : (this.client.sessionSend("vote", "Trivia Death Vote", {
             type: "vote",
             vote: e
-        }), se("#make-single-choice-text").html("<p>Thanks. Now wait quietly.</p>"), se("#make-single-choice-choices").html("")), se(".button-choice").removeClass("selected"), se(t.currentTarget).addClass("selected"), !1
+        }), se("#make-single-choice-text").html("<p>Danke. Jetzt warte leise.</p>"), se("#make-single-choice-choices").html("")), se(".button-choice").removeClass("selected"), se(t.currentTarget).addClass("selected"), !1
     },
     chooseManyChoices(t) {
         const e = se(t.currentTarget).data("choice"),
@@ -21523,7 +21523,7 @@ const Gx = VC.extend({
             this.client.sessionSend("vote", "Trivia Death Vote", {
                 type: "vote",
                 vote: n.join(",")
-            }), se("#make-many-choices-text").html("<p>Thanks.</p>"), se("#make-many-choices-sub-text").html(""), se("#make-many-choices-choices").html(""), se("#make-many-choices-submit-button-container").hide()
+            }), se("#make-many-choices-text").html("<p>Danke.</p>"), se("#make-many-choices-sub-text").html(""), se("#make-many-choices-choices").html(""), se("#make-many-choices-submit-button-container").hide()
         }
     },
     submitEnterSingleText() {
@@ -21533,7 +21533,7 @@ const Gx = VC.extend({
         }), !1
     },
     submitEnterSingleDrawing() {
-        if (this.currentCanvas.isClean) return alert("You have to draw something!"), !1;
+        if (this.currentCanvas.isClean) return alert("Du musst etwas malen!"), !1;
         const t = {
             drawing: this.currentCanvas.getBase64Image()
         };
