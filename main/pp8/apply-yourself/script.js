@@ -26773,12 +26773,12 @@ ${t}`
         }, null, 40, Aae), Me(s, {
             progress: e.player.progress,
             submitted: e.submitting && !e.badAnswer && !e.player.error
-        }, null, 8, ["progress", "submitted"]), !!e.badAnswer || e.player.error ? (J(), ie("div", Rae, [e.player.error ? (J(), ie("span", Pae, $e(e.player.error), 1)) : Re("", !0), e.badAnswer ? (J(), ie("span", Lae, "That's not allowed! Please enter something else.")) : Re("", !0)])) : Re("", !0), V("button", {
+        }, null, 8, ["progress", "submitted"]), !!e.badAnswer || e.player.error ? (J(), ie("div", Rae, [e.player.error ? (J(), ie("span", Pae, $e(e.player.error), 1)) : Re("", !0), e.badAnswer ? (J(), ie("span", Lae, "Das ist nicht erlaubt! Bitte gib etwas anderes ein.")) : Re("", !0)])) : Re("", !0), V("button", {
             class: "submit-button control",
             type: "submit",
-            value: "Submit",
+            value: "Absenden",
             disabled: e.submitDisabled
-        }, " Submit ", 8, xae)], 32)])
+        }, " Absenden ", 8, xae)], 32)])
     }
     const kae = St(Oae, [
         ["render", Nae]
@@ -31832,7 +31832,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             class: "visually-hidden",
             role: "region",
             "aria-label": "instructions"
-        }, " Build your business card by clicking your name below. Once added, you can select your character. ", -1),
+        }, " Erstelle dein Namensschild, indem du deinen Namen unten anklickst. Wähle im Anschluss deinen Charakter aus. ", -1),
         $oe = {
             key: 0,
             class: "avatar-stash",
@@ -31910,13 +31910,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             key: 0,
             class: "name-instructions",
             style: Jn(e.instructionStyles)
-        }, " Drag your name to the card below ", 4))]), V("div", {
+        }, " Ziehe deinen Namen auf deine Karte ", 4))]), V("div", {
             class: ke(e.names.length ? "paper-container slide-down" : "paper-container")
         }, [V("div", xoe, [Me(c, {
             modelValue: e.names,
             "onUpdate:modelValue": t[2] || (t[2] = f => e.names = f),
             class: ke(!e.names.length && !e.draggingName ? "name-draggable name-empty" : "name-draggable"),
-            style: "--content: 'Name here'",
+            style: "--content: 'Name hier'",
             group: {
                 name: "name",
                 put: !0,
@@ -31934,7 +31934,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             modelValue: e.stamps,
             "onUpdate:modelValue": t[3] || (t[3] = f => e.stamps = f),
             class: ke(!!e.names.length && !e.stamps.length && !e.draggingAvatar ? "stamp-draggable empty" : "stamp-draggable"),
-            style: "--content: 'Stamp here'",
+            style: "--content: 'Hier stempeln'",
             group: {
                 name: "stamp",
                 put: ["avatars"],
@@ -32447,11 +32447,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 }]),
                 disabled: !!e.answer && e.answer.length < 1 || e.submitting,
                 onClick: t[5] || (t[5] = Bt((...h) => e.onSubmit && e.onSubmit(...h), ["prevent"]))
-            }, " Submit ", 10, vle), !e.answer.length && !e.submitting ? (J(), ie("button", {
+            }, " Absenden ", 10, vle), !e.answer.length && !e.submitting ? (J(), ie("button", {
                 key: 0,
                 class: "start control",
                 onClick: t[6] || (t[6] = Bt((...h) => e.startForMe && e.startForMe(...h), ["prevent"]))
-            }, " Start for me ")) : Re("", !0)])], 512), Me(u, {
+            }, " Starte für mich ")) : Re("", !0)])], 512), Me(u, {
                 progress: e.player.progress,
                 submitted: e.submitting
             }, null, 8, ["progress", "submitted"])], 2)]),
@@ -33070,10 +33070,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }, 8, ["modelValue", "disabled"])])) : Re("", !0), V("div", oce, [V("button", {
             class: "shuffle control",
             onClick: t[14] || (t[14] = u => e.showShuffled ? e.showShuffled = !1 : e.shuffleStash())
-        }, $e(e.showShuffled ? "Show Original" : "Shuffle"), 1), V("button", {
+        }, $e(e.showShuffled ? "Original zeigen" : "Mischen"), 1), V("button", {
             class: "unshuffle control",
             onClick: t[15] || (t[15] = u => e.showSorted ? e.showSorted = !1 : e.sortStash())
-        }, $e(e.showSorted ? "Show Original" : "Sort"), 1)])], 6), Me(ki, {
+        }, $e(e.showSorted ? "Original zeigen" : "Sortieren"), 1)])], 6), Me(ki, {
             name: "clipboard",
             appear: ""
         }, {
@@ -33619,7 +33619,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             style: Jn(`--remaining:${e.player.timer.timeLeft>14?"0px":(1-e.player.timer.timeLeft/15)*100+"vh"}`)
         }, null, 6)) : Re("", !0)])) : Re("", !0), e.audiencePlayer ? (J(), ie("div", uue, [e.audiencePlayer.kind !== "Logo" ? (J(), cn(c, {
             key: 0,
-            username: "AUDIENCE"
+            username: "PUBLIKUM"
         })) : Re("", !0), e.audiencePlayer.kind == "Logo" ? (J(), cn(s, {
             key: 1,
             player: e.audiencePlayer
