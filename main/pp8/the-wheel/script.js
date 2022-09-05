@@ -25422,7 +25422,7 @@ ${e}`
             MULTIPLIER: "leerer {multiplier}x Multiplizierer.",
             NEIGHBOR: "Nachbarscheibe.",
             PLAYER: "Spielerscheibe für {for}.",
-            POINTS: "{slice.data.points} Punktescheibe.",
+            POINTS: "{points} Punktescheibe.",
             POINTS_FOR: "Punktescheibe für {for}.",
             RESERVED: "Reserviert für {for}.",
             WINNER: "Gewinnerscheibe für {for}.",
