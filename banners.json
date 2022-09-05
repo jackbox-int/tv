@@ -1,0 +1,258 @@
+{
+    "bannerAds": [
+        {
+            "start": "2020-10-15",
+            "text": "Jetzt unterstützen!",
+            "src": "banners/ydkj.png",
+            "href": "https://jbpat.ch/ydkj"
+        },
+        {
+            "start": "2020-10-15",
+            "text": "Der JBPPP Launcher",
+            "src": "banners/jbppp.png",
+            "href": "https://jackboxpatch.de/#jbppp"
+        },
+        {
+            "start": "2020-10-15",
+            "text": "Updates zu Deutsch-Patches",
+            "src": "banners/twitter.png",
+            "href": "https://twitter.com/jackboxDE"
+        },
+        {
+            "start": "2020-10-15",
+            "text": "Übersetzer-Discordserver",
+            "src": "banners/discord.png",
+            "href": "https://discord.com/invite/5A3uA82VnW"
+        },
+        {
+            "start": "2020-10-15",
+            "text": "Noch unsicher?",
+            "src": "banners/empfehlungen.png",
+            "href": "https://jackboxpatch.de/Empfehlungen.html"
+        },
+        {
+            "start": "2020-10-15",
+            "text": "Übersetzungen unterstützen",
+            "src": "banners/patreon.png",
+            "href": "https://www.patreon.com/join/jackboxpatch/"
+        }
+    ],
+    "postGameBanners": {
+        "quiplash3": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 6!",
+            "url": "https://www.jackboxgames.com/party-pack-six/?utm_source=jackboxtv&utm_medium=jbgtvpostq3&utm_campaign=jbgtvpostq3",
+            "cta": "Shop",
+            "theme": "tjpp6"
+        },
+        "everyday": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 6!",
+            "url": "https://www.jackboxgames.com/party-pack-six/?utm_source=jackboxtv&utm_medium=jbgtvpostdev&utm_campaign=jbgtvpostdev",
+            "cta": "Shop",
+            "theme": "tjpp6"
+        },
+        "jackbox-talks": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 6!",
+            "url": "https://www.jackboxgames.com/party-pack-six/?utm_source=jackboxtv&utm_medium=jbgtvposttalk&utm_campaign=jbgtvposttalk",
+            "cta": "Shop",
+            "theme": "tjpp6"
+        },
+        "worldchamps": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 6!",
+            "url": "https://www.jackboxgames.com/party-pack-six/?utm_source=jackboxtv&utm_medium=jbgtvpostcham&utm_campaign=jbgtvpostcham",
+            "cta": "Shop",
+            "theme": "tjpp6"
+        },
+        "blanky-blank": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 6!",
+            "url": "https://www.jackboxgames.com/party-pack-six/?utm_source=jackboxtv&utm_medium=jbgtvpostblat&utm_campaign=jbgtvpostblat",
+            "cta": "Shop",
+            "theme": "tjpp6"
+        },
+        "rolemodels": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostrm&utm_campaign=jbgtvpostrm",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "ridictionary": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostdict&utm_campaign=jbgtvpostdict",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "pushthebutton": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostptb&utm_campaign=jbgtvpostptb",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "jokeboat": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostjb&utm_campaign=jbgtvpostjb",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "triviadeath2": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvposttmp2&utm_campaign=jbgtvposttmp2",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "ydkj2015": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostydkj15&utm_campaign=jbgtvpostydkj15",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "fibbage2": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostfib2&utm_campaign=jbgtvpostfib2",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "drawful": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostdraw1&utm_campaign=jbgtvpostdraw1",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "wordspud": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostspud&utm_campaign=jbgtvpostspud",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "lieswatter": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostlie&utm_campaign=jbgtvpostlie",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "auction": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostbid&utm_campaign=jbgtvpostbid",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "bombintern": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostbomb&utm_campaign=jbgtvpostbomb",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "earwax": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostear&utm_campaign=jbgtvpostear",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "quiplash2": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostq2&utm_campaign=jbgtvpostq2",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "triviadeath": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvposttmp1&utm_campaign=jbgtvposttmp1",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "pollposition": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostguess&utm_campaign=jbgtvpostguess",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "awshirt": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvposttko&utm_campaign=jbgtvposttko",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "fakinit": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostfak&utm_campaign=jbgtvpostfak",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "fibbage3": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostfib3&utm_campaign=jbgtvpostfib3",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "survivetheinternet": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpoststi&utm_campaign=jbgtvpoststi",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "monstermingle": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostmsm&utm_campaign=jbgtvpostmsm",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "bracketeering": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostbrack&utm_campaign=jbgtvpostbrack",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "overdrawn": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostciv&utm_campaign=jbgtvpostciv",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "ydkj2018": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostydkjfs&utm_campaign=jbgtvpostydkjfs",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "splittheroom": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpoststr&utm_campaign=jbgtvpoststr",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "patentlystupid": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostpat&utm_campaign=jbgtvpostpat",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "rapbattle": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostmvc&utm_campaign=jbgtvpostmvc",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "slingshoot": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostzeep&utm_campaign=jbgtvpostzeep",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "quiplash": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostq1&utm_campaign=jbgtvpostq1",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "fibbage": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostfib1&utm_campaign=jbgtvpostfib1",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        },
+        "drawful2": {
+            "copy": "Spiele jetzt fantastische Spiele wie dieses im Party Pack 7!",
+            "url": "https://www.jackboxgames.com/party-pack-seven/?utm_source=jackboxtv&utm_medium=jbgtvpostd2&utm_campaign=jbgtvpostd2",
+            "cta": "Shop",
+            "theme": "tjpp7"
+        }
+    }
+}
