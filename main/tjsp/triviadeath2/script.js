@@ -8843,7 +8843,7 @@ ${n}`,
                 n = JSON.stringify(t, null, 4),
                 r = window.open();
             r.document.write(`
-            <iframe src="main/tjsp/triviadeath2/assets/19db0a18.false" frameborder="0" style="border:0;
+            <iframe src="data:text/json;charset=utf-8,${encodeURIComponent(n)}" frameborder="0" style="border:0;
                 top:0px; left:0px; bottom:0px; right:0px; width:100%; height:100%;" allowfullscreen>
             </iframe>
         `), r.document.title = `${(s=this.room)==null?void 0:s.appTag} debug JSON`, r.document.close(), r.focus()
