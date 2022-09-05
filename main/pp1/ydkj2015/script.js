@@ -15784,7 +15784,7 @@ const wC = `<div class="canvasContainer">\r
     TC = `<ul class="nav nav-colors">\r
     <li class="pull-left button-pad">\r
         <button id="undoButton" class="undo button">\r
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64"><image x="12" y="20" width="41" height="39" xlink:href="main/pp1/ydkj2015/assets/5f12600b.false"/></svg>\r
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64"><image x="12" y="20" width="41" height="39" xlink:href="main/pp1/ydkj2015/assets/5f12600b.png"/></svg>\r
         </button>\r
     </li>\r
     <li class="pull-left button-pad"> \r

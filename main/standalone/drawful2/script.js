@@ -15788,7 +15788,7 @@ const yC = `<div class="canvasContainer">\r
     kC = `<ul class="nav nav-colors">\r
     <li class="pull-left button-pad">\r
         <button id="undoButton" class="undo button">\r
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64"><image x="12" y="20" width="41" height="39" xlink:href="main/standalone/drawful2/assets/5f12600b.false"/></svg>\r
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64"><image x="12" y="20" width="41" height="39" xlink:href="main/standalone/drawful2/assets/5f12600b.png"/></svg>\r
         </button>\r
     </li>\r
     <li class="pull-left button-pad"> \r
@@ -21105,7 +21105,7 @@ const jx = Et.View.extend({
                 }
             }
             let W = H.toDataURL("image/png");
-            return W = W.replace("main/standalone/drawful2/assets/e3b0c442.png", ""), W
+            return W = W.replace("data:image/png;base64,", ""), W
         }, this.start = function(H) {
             !c.isEnabled || (I(c.context, H.x, H.y), c.isDrawing = !0, c.isClean = !1, c.lines.push({
                 thickness: c.thickness,

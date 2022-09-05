@@ -15788,7 +15788,7 @@ const bC = `<div class="canvasContainer">\r
     AC = `<ul class="nav nav-colors">\r
     <li class="pull-left button-pad">\r
         <button id="undoButton" class="undo button">\r
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64"><image x="12" y="20" width="41" height="39" xlink:href="main/pp1/drawful/assets/5f12600b.false"/></svg>\r
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64"><image x="12" y="20" width="41" height="39" xlink:href="main/pp1/drawful/assets/5f12600b.png"/></svg>\r
         </button>\r
     </li>\r
     <li class="pull-left button-pad"> \r
@@ -21057,7 +21057,7 @@ const jx = Et.View.extend({
             };
         this.canvas.addEventListener("touchstart", k, !1), this.canvas.addEventListener("touchmove", k, !1), document.addEventListener("touchend", k, !1), this.canvas.addEventListener("mousedown", I, !1), this.canvas.addEventListener("mousemove", I, !1), document.addEventListener("mouseup", I, !1), this.getBase64Image = function() {
             let M = this.canvas.toDataURL("image/png");
-            return M = M.replace("main/pp1/drawful/assets/e3b0c442.png", ""), M
+            return M = M.replace("data:image/png;base64,", ""), M
         }, this.start = function(M) {
             !m.isEnabled || (m.context.strokeStyle = this.strokestyle, m.context.lineCap = "round", m.context.lineJoin = "round", m.context.lineWidth = 6, m.context.beginPath(), m.context.arc(M.x, M.y, 1, 0, 2 * Math.PI, !0), m.context.stroke(), m.context.moveTo(M.x, M.y), m.isDrawing = !0, m.isClean = !1)
         }, this.move = function(M) {

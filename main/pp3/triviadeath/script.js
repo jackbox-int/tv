@@ -15788,7 +15788,7 @@ const yC = `<div class="canvasContainer">\r
     kC = `<ul class="nav nav-colors">\r
     <li class="pull-left button-pad">\r
         <button id="undoButton" class="undo button">\r
-            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64"><image x="12" y="20" width="41" height="39" xlink:href="main/pp3/triviadeath/assets/5f12600b.false"/></svg>\r
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 64 64"><image x="12" y="20" width="41" height="39" xlink:href="main/pp3/triviadeath/assets/5f12600b.png"/></svg>\r
         </button>\r
     </li>\r
     <li class="pull-left button-pad"> \r
@@ -21076,7 +21076,7 @@ const Bx = Et.View.extend({
                 }
             }
             let Q = q.toDataURL("image/png");
-            return Q = Q.replace("main/pp3/triviadeath/assets/e3b0c442.png", ""), Q
+            return Q = Q.replace("data:image/png;base64,", ""), Q
         }, this.start = function(q) {
             !g.isEnabled || (D(g.context, q.x, q.y), g.isDrawing = !0, g.isClean = !1, g.lines.push({
                 points: [q]
