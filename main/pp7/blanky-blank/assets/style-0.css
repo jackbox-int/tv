@@ -23965,7 +23965,7 @@ button {
 .blanky-blank .MakeSingleChoice .button-group.easy.place:before,
 .blanky-blank .MakeSingleChoice .button-group.medium.place:before,
 .blanky-blank .MakeSingleChoice .button-group.hard.place:before {
-    content: "PLACE";
+    content: "ORT";
     background: #8b5ed3
 }
 
@@ -23979,7 +23979,7 @@ button {
 .blanky-blank .MakeSingleChoice .button-group.easy.thing:before,
 .blanky-blank .MakeSingleChoice .button-group.medium.thing:before,
 .blanky-blank .MakeSingleChoice .button-group.hard.thing:before {
-    content: "THING";
+    content: "DINGS";
     background: #e45e27
 }
 
