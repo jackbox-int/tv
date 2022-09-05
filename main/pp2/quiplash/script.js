@@ -21170,7 +21170,7 @@ const Hx = VC.extend({
             }
             t.question ? Ce("#state-vote #question-text").html(t.question.prompt.replace(/<BLANK>/gi, "________")) : Ce("#state-vote #question-text").html("");
             let v = "";
-            e.votesLeft > 1 ? v = " votes left" : e.votesLeft === 1 && (v = " vote left"), Ce("#vote-text").html(e.votesLeft ? `Du hast ${e.votesLeft}${v}` : "Welche gefällt dir besser?");
+            e.votesLeft > 1 ? v = " Stimmen übrig" : e.votesLeft === 1 && (v = " Stimme übrig"), Ce("#vote-text").html(e.votesLeft ? `Du hast ${e.votesLeft}${v}` : "Welche gefällt dir besser?");
             let S = "";
             if (t.choices && t.order)
                 for (let k = 0; k < t.order.length; k++) {
