@@ -16285,9 +16285,9 @@ const LC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
         <div id="buttons" class="buttons"></div>\r
         <div id="post-sketchpad" class="post-sketchpad">\r
             <div id="submit">\r
-                <button id='submitdrawing' class="button submitDrawing">Submit</button><br/>\r
+                <button id='submitdrawing' class="button submitDrawing">Senden</button><br/>\r
             </div>\r
-            <button id='censorOptions' class='button'>Censor Options</button>\r
+            <button id='censorOptions' class='button'>Zensur-Optionen</button>\r
             <div class="footer"></div>\r
         </div>\r
         </div>\r
@@ -17471,10 +17471,10 @@ const zC = `<div id="controller" class="state-controller controller-content">
             announcePrompt: !1,
             countGroupName: null,
             strings: {
-                your_choice: "Thank you. Your choice: ",
-                censor_prompt: "Censor this?",
-                censor_confirm: "Yes, Censor!",
-                censor_cancel: "No!"
+                your_choice: "Vielen Dank. Deine Wahl: ",
+                censor_prompt: "Das zensieren?",
+                censor_confirm: "Ja, zensieren!",
+                censor_cancel: "Nein!"
             }
         }
     }),
@@ -17613,7 +17613,7 @@ const zC = `<div id="controller" class="state-controller controller-content">
             })), !1
         },
         displayAudienceChoice(t) {
-            let e = "Thank you.";
+            let e = "Vielen Dank.";
             const n = t.map(a => {
                 const f = this.choicesList.children.find(v => v.model.get("index") === a);
                 return f ? f.model.get("html") || f.model.get("text") : ""
@@ -19082,10 +19082,10 @@ const _x = `<div id="controller" class="state-controller controller-content">\r
             doneText: {},
             announcePrompt: !1,
             strings: {
-                your_choice: "Thank you. Your choice: ",
-                censor_prompt: "Censor this?",
-                censor_confirm: "Yes, Censor!",
-                censor_cancel: "No!"
+                your_choice: "Vielen Dank. Deine Wahl: ",
+                censor_prompt: "Das zensieren?",
+                censor_confirm: "Ja, zensieren!",
+                censor_cancel: "Nein!"
             }
         }
     }),
@@ -21023,7 +21023,7 @@ const zx = ft.View.extend({
         })
     },
     Hx = `<div>
-    <label class="reactPrompt">React</label>
+    <label class="reactPrompt">Reagieren</label>
 </div>
 <div class="reactBarContainer">
 </div>`,
@@ -21180,9 +21180,9 @@ const zx = ft.View.extend({
         <div id="buttons" class="buttons"></div>
         <div id="post-sketchpad" class="post-sketchpad">
             <div id="submit">
-                <button id='submitdrawing' class="button submitDrawing">Submit</button><br/>
+                <button id='submitdrawing' class="button submitDrawing">Senden</button><br/>
             </div>
-            <button id='censorOptions' class='button'>Censor Options</button>
+            <button id='censorOptions' class='button'>Zensur-Optionen</button>
             <div class="footer"></div>
         </div>
         </div>
@@ -21230,7 +21230,7 @@ const zx = ft.View.extend({
         },
         sendInput(t) {
             if (this.sketchpadComponent.getLines().length === 0) {
-                Ot.show(Error("You have to draw something!"));
+                Ot.show(Error("Du musst etwas zeichnen!"));
                 return
             }
             Vn.prototype.sendInput.apply(this, [t])
@@ -21403,7 +21403,7 @@ const zx = ft.View.extend({
             }), fs.prototype.initialize.apply(this, [t])
         },
         displayAudienceChoice(t) {
-            let e = "Thank you.";
+            let e = "Vielen Dank.";
             const n = t.map(a => {
                 const f = this.choicesList.children.find(v => v.model.get("index") === a);
                 return f ? f.model.get("name") || f.model.get("title") : ""

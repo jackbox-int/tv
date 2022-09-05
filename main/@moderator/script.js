@@ -12894,118 +12894,118 @@ ${r.message}`,
         }
     }
     const Kj = {
-            BACK: "Back",
-            CANCEL: "Cancel",
-            CLOSE: "Close",
-            CONFIRM: "Confirm",
-            CREATE: "Create",
-            DELETE: "Delete",
-            DONE: "Done",
-            EDIT: "Edit",
+            BACK: "Zurück",
+            CANCEL: "Abbrechen",
+            CLOSE: "Schließen",
+            CONFIRM: "Bestätigen",
+            CREATE: "Erstellen",
+            DELETE: "Löschen",
+            DONE: "Fertig",
+            EDIT: "Bearbeiten",
             OK: "OK",
-            NO: "No",
-            PLAY: "Play",
-            PUBLISH: "Publish",
-            REMOVE: "Remove",
-            RESET: "Reset",
-            SUBMIT: "Submit",
-            TRY_AGAIN: "Try Again",
-            UNDO: "Undo",
-            YES: "Yes"
+            NO: "Nein",
+            PLAY: "Spielen",
+            PUBLISH: "Veröffentlichen",
+            REMOVE: "Löschen",
+            RESET: "Zurücksetzen",
+            SUBMIT: "Absenden",
+            TRY_AGAIN: "Nochmal versuchen",
+            UNDO: "Zurück",
+            YES: "Ja"
         },
         Vj = {
             UGC: {
-                VISIBILITY_CONTROLLER_OFF: "prompts hidden on players\u2019 devices",
-                VISIBILITY_CONTROLLER_ON: "prompts shown on players\u2019 devices",
-                VISIBILITY_SCREEN_OFF: "prompts hidden on game screen",
-                VISIBILITY_SCREEN_ON: "prompts shown on game screen"
+                VISIBILITY_CONTROLLER_OFF: "Prompts versteckt auf den Geräten",
+                VISIBILITY_CONTROLLER_ON: "Prompts sichtbar auf den Geräten",
+                VISIBILITY_SCREEN_OFF: "Prompts versteckt auf dem Spielbildschirm",
+                VISIBILITY_SCREEN_ON: "Prompts sichtbar auf dem Spielbildschirm"
             }
         },
         Yj = {
             DISCONNECTED: "Deine Verbindung wurde getrennt.",
-            DRAWING_NOTHING: "You have to draw something!",
-            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
+            DRAWING_NOTHING: "Du musst etwas zeichnen!",
+            PLAYER_KICKED: "Du wurdest von einem Moderator aus dem Spiel gekickt.",
             ROOM_DESTROYED: "Danke für's spielen!",
             ROOM_DISCONNECTED: "Verbindung getrennt",
-            TEXT_NAUGHTY: "I\u2019m afraid you can\u2019t write that. Please be respectful of other players.",
-            TEXT_NOTHING: "You can\u2019t enter nothing!",
-            TITLE: "Error"
+            TEXT_NAUGHTY: "Das kannst du leider nicht schreiben. Bitte gehe respektvoll mit deinen Mitspielern um.",
+            TEXT_NOTHING: "Du musst etwas eingeben!",
+            TITLE: "Fehler"
         },
-        qj = "LOADING",
+        qj = "LADE",
         zj = {
-            JOINED_COUNT: "x | {count} of {maxPlayers} players joined | {count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "x | {count} player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "x | {count} von {maxPlayers} Spieler sind beigetreten | {count} von {maxPlayers} Spieler sind beigetreten",
+            PLAYERS_NEEDED: "x | {count} Spieler zum starten benötigt | {count} Spieler zum starten benötigt",
+            WAITING_FOR_VIP: "Warte auf {name} um das Spiel zu starten",
+            WAITING_FOR_GAMEPAD: "Warte auf den Start vom Spiel",
+            GAME_STARTING: "Das Spiel startet",
+            BUTTON_START: "Drücke zum starten",
+            BUTTON_CANCEL: "Drücke zum abbrechen"
         },
         Xj = {
-            GALLERY_LINK: "Visit the Gallery",
-            PLAY_AGAIN: "Play again?",
-            BUTTON_SAME_PLAYERS: "Same Players",
-            BUTTON_NEW_PLAYERS: "New Players"
+            GALLERY_LINK: "Die Galerie ansehen",
+            PLAY_AGAIN: "Nochmal spielen?",
+            BUTTON_SAME_PLAYERS: "Gleiche Spieler",
+            BUTTON_NEW_PLAYERS: "Neue Spieler"
         },
         Jj = {
-            AND: "AND",
-            OR: "OR"
+            AND: "UND",
+            OR: "ODER"
         },
         Zj = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let\u2019s Go!"
+            BUTTON_SKIP: "Überspringen",
+            BUTTON_NEXT: "Weiter",
+            BUTTON_DONE: "Los geht\u2019s!"
         },
         Qj = {
-            NAME: "AUDIENCE"
+            NAME: "PUBLIKUM"
         },
         e8 = {
-            EPISODE_REPORT: "Report Episode",
-            EPISODE_UNLOAD: "Unload Episode",
-            EPISODE_VIEW_AUTHOR: "View Author",
-            EPISODES_LOAD: "Load an episode by id:",
-            EPISODES_MENU: "Episodes Menu",
-            EPISODES_SELECT: "Or select an epsiode:",
-            EPISODES_WARNING: "Warning: user generated content is not rated",
+            EPISODE_REPORT: "Episode melden",
+            EPISODE_UNLOAD: "Episode deaktivieren",
+            EPISODE_VIEW_AUTHOR: "Autor ansehen",
+            EPISODES_LOAD: "Eine Episode mit ID laden:",
+            EPISODES_MENU: "Episoden Menü",
+            EPISODES_SELECT: "Oder wähle eine Episode:",
+            EPISODES_WARNING: "Warnung: Nutzergenerierte Inhalte wurden nicht kontrolliert",
             INSTRUCTION: {
-                CREATE_TITLE: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-                LOAD: "create or load?",
-                PUBLISH: "publish your episode",
-                TITLE: "name your episode",
-                TOGGLE_VISIBILITY: "tap to show/hide prompts",
-                WRITE: "write your prompts"
+                CREATE_TITLE: "Vorneweg: Suche dir einen Namen für die Episode mit all deinen Prompts aus und klicke dann auf erstellen.",
+                LOAD: "Erstellen oder laden?",
+                PUBLISH: "Veröffentliche deine Episode",
+                TITLE: "Benenne deine Episode",
+                TOGGLE_VISIBILITY: "Tippe um Prompts ein- und auszublenden",
+                WRITE: "Schreibe deine Prompts"
             },
             WARNING: {
-                DELETE: "Are you sure you want to delete this episode?",
-                TOS: "By sharing content, you agree to our [tos]Terms of Service[/tos]",
-                TOS_AGREE: "agree and share"
+                DELETE: "Möchtest du diese Episode wirklich löschen?",
+                TOS: "Durch das Teilen der Inhalte, stimmst du unseren [tos]Nutzungsbedingungen[/tos] zu",
+                TOS_AGREE: "Zustimmen und teilen"
             },
-            BACK_TO_EPISODES: "back to episodes",
-            BACK_TO_MENU: "back to menu",
-            CREATE_NEW_EPISODE: "create a new episode",
-            PREVIOUS_EPISODES: "previous episodes",
-            PROMPT_ADD: "add prompt",
-            PROMPT_PLACEHOLDER: "enter a prompt",
-            PROMPTS_COUNT_HIDDEN: "({count} hidden)",
-            TITLE_PLACEHOLDER: "enter a title"
+            BACK_TO_EPISODES: "Zurück zu den Episoden",
+            BACK_TO_MENU: "Zurück zum Menü",
+            CREATE_NEW_EPISODE: "Erstelle eine neue Episode",
+            PREVIOUS_EPISODES: "Vorherige Episoden",
+            PROMPT_ADD: "Prompt hinzufügen",
+            PROMPT_PLACEHOLDER: "Gib einen Prompt ein",
+            PROMPTS_COUNT_HIDDEN: "({count} versteckt)",
+            TITLE_PLACEHOLDER: "Gib einen Titel ein"
         },
         t8 = {
             BROADCASTER: {
-                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-                WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
+                SUBTEXT: "Du hast deinen Account erfolgreich mit der Jackbox Audience Kit Twitch Erweiterung verknüpft.",
+                WARNING: "DIESER RAUM HAT DIE PUBLIKUM-OPTION NICHT AKTIVIERT"
             },
             RECONNECTED: {
-                TEXT: "RECONNECTED",
-                SUBTEXT: "Have fun!"
+                TEXT: "WIEDER VERBUNDEN",
+                SUBTEXT: "Viel Spaß!"
             },
             RECONNECTING: {
                 CONTROLLER: {
-                    TEXT: "CONNECTION INTERRUPTED",
-                    SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
+                    TEXT: "VERBINDUNG UNTERBROCHEN",
+                    SUBTEXT: "Versuche, neu zu verbinden ({attempt} von 5)"
                 },
                 GAME: {
-                    TEXT: "GAME CONNECTION INTERRUPTED",
-                    SUBTEXT: "Please wait while we attempt to reconnect"
+                    TEXT: "VERBINDUNG ZUM SPIEL UNTERBROCHEN",
+                    SUBTEXT: "Bitte warte, während wir eine Verbindung herstellen"
                 }
             }
         },
@@ -24833,30 +24833,30 @@ ${t}`
         }
     });
     const Nte = {
-            GAME: "Game",
-            PASSWORD: "PASSWORD"
+            GAME: "Spiel",
+            PASSWORD: "PASSWORT"
         },
         $te = {
-            KICK: "Kick?",
-            KICK_PLAYERS: "KICK PLAYERS",
+            KICK: "Kicken?",
+            KICK_PLAYERS: "SPIELER KICKEN",
             MODERATE: "Moderieren",
-            APPROVE_ALL: "Approve All",
-            REJECT_ALL: "Reject All"
+            APPROVE_ALL: "Alles erlauben",
+            REJECT_ALL: "Alles ablehnen"
         },
         Lte = {
-            ROOM_DESTROYED: "Thanks for helping out!"
+            ROOM_DESTROYED: "Danke für deine Hilfe!"
         },
         Pte = {
-            DISABLED: "Moderation Disabled",
-            KICKED: "KICKED",
-            UNSUPPORTED: "Moderation Unsupported",
-            WAITING_FOR_SUBMISSIONS: "Waiting for submissions"
+            DISABLED: "Moderation deaktiviert",
+            KICKED: "GEKICKT",
+            UNSUPPORTED: "Moderation nicht unterstützt",
+            WAITING_FOR_SUBMISSIONS: "Warte auf Eingaben"
         },
         Dte = {
-            DISABLED: "The moderation setting for this game is turned off. Turn it on and restart the game to moderate content.",
-            UNSUPPORTED: "{gameName} doesn't have anything to moderate, but thanks for wanting to help out!"
+            DISABLED: "Moderation für dieses Spiel ist ausgeschaltet. Schalte sie ein und starte das Spiel erneut, um Inhalte moderieren zu können.",
+            UNSUPPORTED: "{gameName} hat keine zu moderierenden Inhalte, aber danke, dass du helfen wolltest!"
         },
-        kte = "Submitted by:",
+        kte = "Eingesendet von:",
         Mte = {
             FORM: Nte,
             ACTION: $te,

@@ -21391,7 +21391,7 @@ const vx = lc.extend({
         });
         else if (i && i === "Lobby") {
             if (this.hideLobbyButtons(), !e.isAllowedToStartGame) {
-                this.$el.find("#earwax-lobby-text").html("Sit back and relax!"), this.showScreen("#state-lobby");
+                this.$el.find("#earwax-lobby-text").html("Lehne dich zurück und entspanne!"), this.showScreen("#state-lobby");
                 return
             }
             const o = t.lobbyState;
@@ -21439,7 +21439,7 @@ const vx = lc.extend({
             const i = t.choices || [];
             for (let o = 0; o < i.length; o++) n += `<button type="button" data-like="${o}" class="pure-input-1 earwax-like button-large pure-button button-earwax">${i[o].name}</button>`;
             this.notify(), this.$el.find("#earwax-vote").html(n), this.showScreen("#state-vote")
-        } else e === "Gameplay_CategorySelection" || e === "Gameplay_SoundSelection" ? (Le(".state-audience-wait-text").html("You\u2019re in the audience! Wait for the time to vote."), this.showScreen("#state-audience-wait")) : e === "Gameplay_Logo" ? this.showScreen("#state-logo") : this.showScreen(".state-audience-join")
+        } else e === "Gameplay_CategorySelection" || e === "Gameplay_SoundSelection" ? (Le(".state-audience-wait-text").html("Du bist im Publikum! Warte, bis du wählen kannst."), this.showScreen("#state-audience-wait")) : e === "Gameplay_Logo" ? this.showScreen("#state-logo") : this.showScreen(".state-audience-join")
     },
     hideLobbyButtons() {
         this.$el.find("#earwax-startgame").hide(), this.$el.find("#earwax-stopcountdown").hide(), Le(".earwax-endbuttons").hide()

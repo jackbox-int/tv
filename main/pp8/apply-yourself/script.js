@@ -32194,7 +32194,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             role: "region",
             class: "visually-hidden",
             "aria-label": "keyboard instructions"
-        }, [V("span", null, " Each sentence will be followed by buttons for each word in the sentence. Once a word has been added to your answer, you can focus that word in the composition and press Alt + Left or Right to change word order ")], -1),
+        }, [V("span", null, " Auf jeden Satz folgen Schaltflächen für jedes Wort im Satz. Sobald deiner Antwort ein Wort hinzugefügt wurde, kannst du dieses Wort in der Komposition fokussieren und Alt + Links oder Rechts drücken, um die Wortreihenfolge zu ändern ")], -1),
         Yoe = {
             role: "region",
             class: "prompt",
@@ -32463,7 +32463,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         ]),
         Dp = "job-achievement",
         ble = () => {
-            const e = ["Hey!", "Ah!", "Woo!", "I'm going to hide now", "Job Job!", "Working for the weekend!", "Wow!", "Bada bing.", "Booyah", "Why are you poking me?", "Gee whiz", "Hello", "Lena says hi!", "Maybe they'll let me host the game one day.", "Oh!", "Rude", "How do you do?", "Oof", "Sheesh", "No, it's not real leather", "I haven't been fed in 23 years", "I forgot my own lock combination", "If I had hands, I'd poke you back", "Have you heard of Liam? He's great!"];
+            const e = ["Hey!", "Ah!", "Woo!", "Ich verzieh mich", "Job Job!", "Hoch die Hände Wochenende!", "Wow!", "Bada bing.", "Booyah", "Hörst du mal auf mich anzutippen?", "Heiliger Bimbam", "Hallo", "Lena sagt hi!", "Vielleicht darf ich irgendwann moderieren.", "Oh!", "Gemein", "Was geht ab?", "Uff", "Sheesh", "Nein, das ist kein echtes Leder", "Ich wurde seit 23 Jahren nicht gefüttert", "Ich hab die Kombination von meinem eigenen Schloss vergessen", "Hätte ich Hände, würde ich dich auch antippen", "Kennt ihr Louis? Der Typ ist klasse!"];
             return e[Math.floor(Math.random() * e.length)]
         },
         Ele = it({
@@ -32599,7 +32599,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }, Ule, 12, Dle)])), e.isPlayer(e.player) && e.player.hasControls ? (J(), ie("div", Fle, [V("button", {
             class: "skip control",
             onClick: t[2] || (t[2] = (...c) => e.skip && e.skip(...c))
-        }, "Skip")])) : Re("", !0)])
+        }, "Weiter")])) : Re("", !0)])
     }
     const Ble = St(Ele, [
             ["render", jle]
@@ -32857,7 +32857,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             role: "region",
             class: "visually-hidden",
             "aria-label": "keyboard instructions"
-        }, [V("span", null, " Each sentence will be followed by buttons for each word in the sentence. Once a word has been added to your answer,you can focus that word in the composition and press Alt + Left or Right to change word order ")], -1),
+        }, [V("span", null, " Auf jeden Satz folgen Schaltflächen für jedes Wort im Satz. Sobald deiner Antwort ein Wort hinzugefügt wurde, kannst du dieses Wort in der Komposition fokussieren und Alt + Links oder Rechts drücken, um die Wortreihenfolge zu ändern ")], -1),
         Xle = ["aria-label"],
         zle = ["onClick"],
         Jle = {
@@ -33286,7 +33286,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         },
         Fce = V("div", {
             class: "success"
-        }, "You picked:", -1),
+        }, "Deine Wahl:", -1),
         jce = {
             class: "choice"
         };

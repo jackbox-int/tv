@@ -13122,7 +13122,7 @@ ${n.message}`,
             TEXT_NOTHING: "Du musst etwas eingeben!",
             TITLE: "Fehler"
         },
-        Z3 = "LOADING",
+        Z3 = "LADE",
         eH = {
             JOINED_COUNT: "x | {count} von {maxPlayers} Spielern sind beigetreten | {count} von {maxPlayers} Spielern sind beigetreten",
             PLAYERS_NEEDED: "x | {count} Spieler zum Starten benötigt | {count} Spieler zum Starten benötigt",
@@ -13133,31 +13133,31 @@ ${n.message}`,
             BUTTON_CANCEL: "Zum Abbrechen drücken"
         },
         tH = {
-            GALLERY_LINK: "Visit the Gallery",
-            PLAY_AGAIN: "Play again?",
-            BUTTON_SAME_PLAYERS: "Same Players",
-            BUTTON_NEW_PLAYERS: "New Players"
+            GALLERY_LINK: "Galerie besuchen",
+            PLAY_AGAIN: "Erneut spielen?",
+            BUTTON_SAME_PLAYERS: "Selbe Spieler",
+            BUTTON_NEW_PLAYERS: "Neue Spieler"
         },
         nH = {
-            AND: "AND",
-            OR: "OR"
+            AND: "UND",
+            OR: "ODER"
         },
         rH = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let\u2019s Go!"
+            BUTTON_SKIP: "Überspringen",
+            BUTTON_NEXT: "Weiter",
+            BUTTON_DONE: "Los geht's!"
         },
         iH = {
-            NAME: "AUDIENCE"
+            NAME: "PUBLIKUM"
         },
         sH = {
-            EPISODE_REPORT: "Report Episode",
-            EPISODE_UNLOAD: "Unload Episode",
-            EPISODE_VIEW_AUTHOR: "View Author",
-            EPISODES_LOAD: "Load an episode by id:",
-            EPISODES_MENU: "Episodes Menu",
-            EPISODES_SELECT: "Or select an epsiode:",
-            EPISODES_WARNING: "Warning: user generated content is not rated",
+            EPISODE_REPORT: "Episode melden",
+            EPISODE_UNLOAD: "Episode deaktivieren",
+            EPISODE_VIEW_AUTHOR: "Autor ansehen",
+            EPISODES_LOAD: "Lade eine Episode über dessen ID:",
+            EPISODES_MENU: "Episoden-Menü",
+            EPISODES_SELECT: "Oder wähle eine Episode aus:",
+            EPISODES_WARNING: "Achtung: Von Nutzern erstellte Inhalte werden nicht auf Familientauglichkeit geprüft",
             INSTRUCTION: {
                 CREATE_TITLE: 'Benenne als allererstes deine Episode, die alle deine Prompts enthalten wird und drücke dann "Erstellen".',
                 LOAD: "Erstellen oder laden?",
@@ -24335,8 +24335,8 @@ ${t}`
             ROOM_NOT_FOUND: "Ungültiger Raumcode",
             AUDIENCE_IS_FULL: "Das Publikum ist voll",
             UNABLE_TO_CONNECT: "Es konnte keine Verbindung zum Server von Jackbox Games hergestellt werden. Dies wird häufig durch Adblocker oder Privacy Extensions verursacht.",
-            UNABLE_TO_PRELOAD: "Unable to preload this game bundle",
-            KICKED: "You cannot join because you have been kicked by a moderator",
+            UNABLE_TO_PRELOAD: "Dieses Spiel konnte nicht vorzeitig geladen werden",
+            KICKED: "Du kannst nicht beitreten, da du von einem Moderator gekickt wurdest",
             REQUIRES_TWITCH_LOGIN: "Für diesen Spiel ist Twitch erforderlich",
             ROOM_IS_LOCKED: "Spiel läuft derzeit. Bitte warte, bis ein neues Spiel beginnt.",
             INCORRECT_PASSWORD: "Falsches Passwort",
@@ -24356,11 +24356,11 @@ ${t}`
         },
         dee = "Link to Jackbox Games Homepage",
         hee = {
-            APPEARANCE: "APPEARANCE",
+            APPEARANCE: "ANSICHT",
             DARK: "dark",
             HELP: "HILFE",
             TWITCH: "TWITCH",
-            LIGHT: "light",
+            LIGHT: "hell",
             LOGOUT: "ABMELDEN",
             MERCH: "MERCH",
             PAST_GAMES: "ANDERE SPIELE",
@@ -24564,7 +24564,7 @@ aus der Liste entfernt.`,
             ROOM_CODE_PLACEHOLDER: "GIB DEN 4-STELLIGEN CODE EIN"
         },
         xee = {
-            APPEARANCE: "APPEARANCE",
+            APPEARANCE: "ANSICHT",
             HELP: "HILFE",
             TWITCH: "TWITCH",
             LOGOUT: "ABMELDEN",

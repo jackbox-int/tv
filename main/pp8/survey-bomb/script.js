@@ -24993,10 +24993,10 @@ ${t}`
         },
         Fte = {
             INSTRUCTION: {
-                ORDERED: "Choose the door you think is {rank}",
-                UNORDERED: "Choose all {amount} correct doors"
+                ORDERED: "Wähle die Tür, von der du denkst sie ist {rank}",
+                UNORDERED: "Wähle alle {amount} richtigen Türen"
             },
-            REMAINING: "Remaining Choices: {remaining}"
+            REMAINING: "Verbleibende Wahlen: {remaining}"
         },
         Bte = {
             CHOOSE_ONE: "Wähle eine Tür",

@@ -21138,7 +21138,7 @@ const Hx = VC.extend({
                 return
             }
             if (this.hideLobbyButtons(), !e.isAllowedToStartGame) {
-                Ce("#quiplash-lobby-text").html("Sit back and relax!"), this.showScreen("#state-lobby");
+                Ce("#quiplash-lobby-text").html("Lehne dich zurück und entspanne!"), this.showScreen("#state-lobby");
                 return
             }
             const v = t.lobbyState;
@@ -21170,7 +21170,7 @@ const Hx = VC.extend({
             }
             t.question ? Ce("#state-vote #question-text").html(t.question.prompt.replace(/<BLANK>/gi, "________")) : Ce("#state-vote #question-text").html("");
             let v = "";
-            e.votesLeft > 1 ? v = " votes left" : e.votesLeft === 1 && (v = " vote left"), Ce("#vote-text").html(e.votesLeft ? `You have ${e.votesLeft}${v}` : "Welche gefällt dir besser?");
+            e.votesLeft > 1 ? v = " votes left" : e.votesLeft === 1 && (v = " vote left"), Ce("#vote-text").html(e.votesLeft ? `Du hast ${e.votesLeft}${v}` : "Welche gefällt dir besser?");
             let S = "";
             if (t.choices && t.order)
                 for (let k = 0; k < t.order.length; k++) {
@@ -21231,7 +21231,7 @@ const Hx = VC.extend({
         }) : this.client.isRole("audience") && (this.client.sessionSend("vote", "Quiplash Vote", {
             type: "vote",
             vote: e
-        }), Ce("#vote-text").html("Thanks, audience member!"), Ce("#quiplash-vote").html(""), this.showScreen("#state-vote")), !1
+        }), Ce("#vote-text").html("Danke, Person im Publikum!"), Ce("#quiplash-vote").html(""), this.showScreen("#state-vote")), !1
     },
     newGameSamePlayers() {
         return this.client.send("SendMessageToRoomOwner", {

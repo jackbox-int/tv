@@ -21335,7 +21335,7 @@ const zx = Ct.View.extend({
             doneText: {},
             announcePrompt: !1,
             strings: {
-                survey_finished: "Thank you for your input. You did your civic duty!"
+                survey_finished: "Danke für deine Eingabe. Du bist deiner Pflicht nachgekommen!"
             }
         }
     }),

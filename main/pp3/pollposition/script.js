@@ -21274,7 +21274,7 @@ const $x = Et.View.extend({
 
         <div class="pt-page-off state-upordowndone pollposition-page">
             <div class="container">
-                <p class='pollposition-text'>done!</p>
+                <p class='pollposition-text'>fertig!</p>
             </div>
         </div>
 
@@ -21403,7 +21403,7 @@ const Gx = lc.extend({
             }
             if (f === "PostGame") {
                 t.isAllowedToStartGame ? (ae("#pollposition-post-lobby-text").html("Was möchtet ihr machen?"), ae(".pollposition-endbuttons").show()) : ae("#pollposition-post-lobby-text").html("Lehne dich zurück und entspanne!");
-                let v = '<table class="table table-striped table-bordered"><thead><tr><th>Rank</th><th>Player</th><th>Score</th></tr></thead><tbody>';
+                let v = '<table class="table table-striped table-bordered"><thead><tr><th>Rang</th><th>Spieler</th><th>Punkte</th></tr></thead><tbody>';
                 for (o = 0; o < e.gameResults.players.length; o++) v += `<tr><td>${e.gameResults.players[o].rank.toString()}</td><td><div style='display:inline-block;vertical-align:middle'><div class='pollposition-character ${e.gameResults.players[o].icon}' style='width:32px; height:32px' /></div><span>${e.gameResults.players[o].name}</span></td><td>${e.gameResults.players[o].score}</td></tr>`;
                 v += "</tbody></table>", ae("#pollposition-game-results").html(v), this.showScreen(".state-post-lobby");
                 return
@@ -21412,7 +21412,7 @@ const Gx = lc.extend({
                 ae("#pollposition-lobby-text").html("Lehne dich zurück und entspanne!"), this.showScreen(".state-lobby");
                 return
             }
-            f === "WaitingForMore" ? ae("#pollposition-lobby-text").html("waiting for all players to join") : f === "CanStart" ? (ae("#pollposition-lobby-text").html("Drücke diesen Knopf, wenn alle beigetreten sind"), ae("#pollposition-startgame").show()) : f === "Countdown" && (ae("#pollposition-lobby-text").html("Drücke den Knopf um den Spielstart abzubrechen"), ae("#pollposition-stopcountdown").show()), this.showScreen(".state-lobby")
+            f === "WaitingForMore" ? ae("#pollposition-lobby-text").html("Warte auf den Beitritt aller Spieler") : f === "CanStart" ? (ae("#pollposition-lobby-text").html("Drücke diesen Knopf, wenn alle beigetreten sind"), ae("#pollposition-startgame").show()) : f === "Countdown" && (ae("#pollposition-lobby-text").html("Drücke den Knopf um den Spielstart abzubrechen"), ae("#pollposition-stopcountdown").show()), this.showScreen(".state-lobby")
         } else if (i === "Gameplay_Logo") this.showLogo();
         else if (i === "Gameplay_PickCategory") {
             if (n === "Gameplay_WaitForCategory") ae("#waitforcategory-text").html(`Waiting for ${e.player} to pick a category.`), this.showScreen(".state-waitforcategory");
@@ -21464,8 +21464,8 @@ const Gx = lc.extend({
                 ae("#pollposition-audiencechooseoption").html(o), this.showScreen(".state-audience-chose-option")
             } else if (e === "Gameplay_Logo") this.showLogo();
         else if (e === "Lobby" && n === "PostGame") {
-            this.hideLobbyButtons(), ae("#pollposition-post-lobby-text").html("You\u2019re in the audience!");
-            let o = '<table class="table table-striped table-bordered"><thead><tr><th>Rank</th><th>Player</th><th>Score</th></tr></thead><tbody>';
+            this.hideLobbyButtons(), ae("#pollposition-post-lobby-text").html("Du bist im Publikum!");
+            let o = '<table class="table table-striped table-bordered"><thead><tr><th>Rang</th><th>Spieler</th><th>Punkte</th></tr></thead><tbody>';
             for (i = 0; i < t.gameResults.players.length; i++) o += `<tr><td>${t.gameResults.players[i].rank.toString()}</td><td><div style='display:inline-block;vertical-align:middle'><div class='pollposition-character ${t.gameResults.players[i].icon}' style='width:32px; height:32px' /></div><span>${t.gameResults.players[i].name}</span></td><td>${t.gameResults.players[i].score}</td></tr>`;
             o += "</tbody></table>", ae("#pollposition-game-results").html(o), this.showScreen(".state-post-lobby")
         } else ae(".state-audience-wait .audience-wait-text").html("Du bist im Publikum! Warte, bis du antworten kannst."), ae(".state-audience-wait .audience-usage-text").html("Die Stimme vom Publikum wird genutzt, wenn 5 oder mehr Leute antworten."), this.showScreen(".state-audience-wait")
@@ -21527,7 +21527,7 @@ const Gx = lc.extend({
         const t = this.currentRange.getPercentage();
         if (!this.isInt(t)) {
             const n = ae("#pollposition-submit-alert");
-            return ae("#pollposition-submit-alert").html("you can't enter nothing!"), n.removeClass("alert-info"), n.addClass("alert-danger"), n.show(), !1
+            return ae("#pollposition-submit-alert").html("Du musst etwas eingeben!"), n.removeClass("alert-info"), n.addClass("alert-danger"), n.show(), !1
         }
         this.percentageInterval != null && (clearInterval(this.percentageInterval), this.percentageInterval = null), this.percentageSent = !0, this.enableLoadingButton("#pollposition-submitpercentage", !1);
         const e = {
