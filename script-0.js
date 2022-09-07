@@ -204,10 +204,10 @@ var aw = Zo((ow, Go) => {
     }
     var Ic = Pc;
 
-    function xc(t) {
+    function Ac(t) {
         return this.__data__.get(t)
     }
-    var Ac = xc;
+    var xc = Ac;
 
     function Nc(t) {
         return this.__data__.has(t)
@@ -326,13 +326,13 @@ var aw = Zo((ow, Go) => {
     function Iu(t, e) {
         return t == null ? void 0 : t[e]
     }
-    var xu = Iu,
-        Au = Pu,
-        Nu = xu;
+    var Au = Iu,
+        xu = Pu,
+        Nu = Au;
 
     function Lu(t, e) {
         var r = Nu(t, e);
-        return Au(r) ? r : void 0
+        return xu(r) ? r : void 0
     }
     var gn = Lu,
         Cu = gn,
@@ -457,8 +457,8 @@ var aw = Zo((ow, Go) => {
         return r.set(t, e), this.size += r.size == n ? 0 : 1, this
     }
     var Il = Pl,
-        xl = pl,
-        Al = El,
+        Al = pl,
+        xl = El,
         Nl = Ol,
         Ll = Tl,
         Cl = Il;
@@ -471,8 +471,8 @@ var aw = Zo((ow, Go) => {
             this.set(n[0], n[1])
         }
     }
-    gt.prototype.clear = xl;
-    gt.prototype.delete = Al;
+    gt.prototype.clear = Al;
+    gt.prototype.delete = xl;
     gt.prototype.get = Nl;
     gt.prototype.has = Ll;
     gt.prototype.set = Cl;
@@ -495,7 +495,7 @@ var aw = Zo((ow, Go) => {
         ql = lr,
         Hl = $c,
         Wl = Ic,
-        Yl = Ac,
+        Yl = xc,
         zl = Lc,
         Jl = Gl;
 
@@ -516,8 +516,8 @@ var aw = Zo((ow, Go) => {
                 return t({}, "", {}), t
             } catch {}
         }(),
-        xa = Xl,
-        hi = xa;
+        Aa = Xl,
+        hi = Aa;
 
     function Ql(t, e, r) {
         e == "__proto__" && hi ? hi(t, e, {
@@ -534,7 +534,7 @@ var aw = Zo((ow, Go) => {
     function tf(t, e, r) {
         (r !== void 0 && !ef(t[e], r) || r === void 0 && !(e in t)) && Zl(t, e, r)
     }
-    var Aa = tf;
+    var xa = tf;
 
     function rf(t) {
         return function(e, r, n) {
@@ -631,12 +631,12 @@ var aw = Zo((ow, Go) => {
     function If(t) {
         return typeof t.constructor == "function" && !Pf(t) ? Tf($f(t)) : {}
     }
-    var xf = If;
+    var Af = If;
 
-    function Af(t) {
+    function xf(t) {
         return t != null && typeof t == "object"
     }
-    var Ct = Af,
+    var Ct = xf,
         Nf = fr,
         Lf = Ct,
         Cf = "[object Arguments]";
@@ -736,14 +736,14 @@ var aw = Zo((ow, Go) => {
         $d = "[object Float32Array]",
         Pd = "[object Float64Array]",
         Id = "[object Int8Array]",
-        xd = "[object Int16Array]",
-        Ad = "[object Int32Array]",
+        Ad = "[object Int16Array]",
+        xd = "[object Int32Array]",
         Nd = "[object Uint8Array]",
         Ld = "[object Uint8ClampedArray]",
         Cd = "[object Uint16Array]",
         Dd = "[object Uint32Array]",
         q = {};
-    q[$d] = q[Pd] = q[Id] = q[xd] = q[Ad] = q[Nd] = q[Ld] = q[Cd] = q[Dd] = !0;
+    q[$d] = q[Pd] = q[Id] = q[Ad] = q[xd] = q[Nd] = q[Ld] = q[Cd] = q[Dd] = !0;
     q[hd] = q[pd] = q[Rd] = q[yd] = q[Td] = q[vd] = q[md] = q[gd] = q[_d] = q[bd] = q[Ed] = q[wd] = q[Sd] = q[Od] = q[kd] = !1;
 
     function jd(t) {
@@ -877,15 +877,15 @@ var aw = Zo((ow, Go) => {
         Ph = eh,
         Ih = qa;
 
-    function xh(t) {
+    function Ah(t) {
         return Ph(t, Ih(t))
     }
-    var Ah = xh,
-        _i = Aa,
+    var xh = Ah,
+        _i = xa,
         Nh = zr.exports,
         Lh = yf,
         Ch = mf,
-        Dh = xf,
+        Dh = Af,
         bi = Da,
         Ei = ja,
         jh = Xf,
@@ -895,7 +895,7 @@ var aw = Zo((ow, Go) => {
         Fh = ud,
         Gh = Ua,
         wi = Fa,
-        qh = Ah;
+        qh = xh;
 
     function Hh(t, e, r, n, i, a, s) {
         var o = wi(t, r),
@@ -917,7 +917,7 @@ var aw = Zo((ow, Go) => {
     }
     var Wh = Hh,
         Yh = Vl,
-        zh = Aa,
+        zh = xa,
         Jh = of,
         Vh = Wh,
         Kh = Ye,
@@ -975,7 +975,7 @@ var aw = Zo((ow, Go) => {
     }
     var op = sp,
         cp = op,
-        Oi = xa,
+        Oi = Aa,
         up = Wa,
         lp = Oi ? function(t, e) {
             return Oi(t, "toString", {
@@ -1025,12 +1025,12 @@ var aw = Zo((ow, Go) => {
         var n = typeof e;
         return (n == "number" ? Tp(r) && $p(e, r.length) : n == "string" && e in r) ? Rp(r[e], t) : !1
     }
-    var xp = Ip,
-        Ap = kp,
-        Np = xp;
+    var Ap = Ip,
+        xp = kp,
+        Np = Ap;
 
     function Lp(t) {
-        return Ap(function(e, r) {
+        return xp(function(e, r) {
             var n = -1,
                 i = r.length,
                 a = i > 1 ? r[i - 1] : void 0,
@@ -1426,8 +1426,8 @@ var aw = Zo((ow, Go) => {
                         if ($) {
                             var M = $.split("="),
                                 C = M.shift().replace(/\+/g, " "),
-                                x = M.join("=").replace(/\+/g, " ");
-                            E.append(decodeURIComponent(C), decodeURIComponent(x))
+                                A = M.join("=").replace(/\+/g, " ");
+                            E.append(decodeURIComponent(C), decodeURIComponent(A))
                         }
                     }), E
                 }
@@ -1437,10 +1437,10 @@ var aw = Zo((ow, Go) => {
                         $ = v.replace(/\r?\n[\t ]+/g, " ");
                     return $.split(/\r?\n/).forEach(function(M) {
                         var C = M.split(":"),
-                            x = C.shift().trim();
-                        if (x) {
+                            A = C.shift().trim();
+                        if (A) {
                             var g = C.join(":").trim();
-                            E.append(x, g)
+                            E.append(A, g)
                         }
                     }), E
                 }
@@ -1487,31 +1487,31 @@ var aw = Zo((ow, Go) => {
                     return new Promise(function($, M) {
                         var C = new re(v, E);
                         if (C.signal && C.signal.aborted) return M(new s.DOMException("Aborted", "AbortError"));
-                        var x = new XMLHttpRequest;
+                        var A = new XMLHttpRequest;
 
                         function g() {
-                            x.abort()
+                            A.abort()
                         }
-                        x.onload = function() {
+                        A.onload = function() {
                             var S = {
-                                status: x.status,
-                                statusText: x.statusText,
-                                headers: me(x.getAllResponseHeaders() || "")
+                                status: A.status,
+                                statusText: A.statusText,
+                                headers: me(A.getAllResponseHeaders() || "")
                             };
-                            S.url = "responseURL" in x ? x.responseURL : S.headers.get("X-Request-URL");
-                            var T = "response" in x ? x.response : x.responseText;
+                            S.url = "responseURL" in A ? A.responseURL : S.headers.get("X-Request-URL");
+                            var T = "response" in A ? A.response : A.responseText;
                             $(new Y(T, S))
-                        }, x.onerror = function() {
+                        }, A.onerror = function() {
                             M(new TypeError("Network request failed"))
-                        }, x.ontimeout = function() {
+                        }, A.ontimeout = function() {
                             M(new TypeError("Network request failed"))
-                        }, x.onabort = function() {
+                        }, A.onabort = function() {
                             M(new s.DOMException("Aborted", "AbortError"))
-                        }, x.open(C.method, C.url, !0), C.credentials === "include" ? x.withCredentials = !0 : C.credentials === "omit" && (x.withCredentials = !1), "responseType" in x && o.blob && (x.responseType = "blob"), C.headers.forEach(function(S, T) {
-                            x.setRequestHeader(T, S)
-                        }), C.signal && (C.signal.addEventListener("abort", g), x.onreadystatechange = function() {
-                            x.readyState === 4 && C.signal.removeEventListener("abort", g)
-                        }), x.send(typeof C._bodyInit > "u" ? null : C._bodyInit)
+                        }, A.open(C.method, C.url, !0), C.credentials === "include" ? A.withCredentials = !0 : C.credentials === "omit" && (A.withCredentials = !1), "responseType" in A && o.blob && (A.responseType = "blob"), C.headers.forEach(function(S, T) {
+                            A.setRequestHeader(T, S)
+                        }), C.signal && (C.signal.addEventListener("abort", g), A.onreadystatechange = function() {
+                            A.readyState === 4 && C.signal.removeEventListener("abort", g)
+                        }), A.send(typeof C._bodyInit > "u" ? null : C._bodyInit)
                     })
                 }
                 return z.polyfill = !0, a.fetch || (a.fetch = z, a.Headers = k, a.Request = re, a.Response = Y), s.Headers = k, s.Request = re, s.Response = Y, s.fetch = z, Object.defineProperty(s, "__esModule", {
@@ -1871,21 +1871,21 @@ var aw = Zo((ow, Go) => {
         vy = Function.prototype.toString,
         my = String.prototype.match,
         kn = String.prototype.slice,
-        Ae = String.prototype.replace,
+        xe = String.prototype.replace,
         gy = String.prototype.toUpperCase,
         Pi = String.prototype.toLowerCase,
         Ka = RegExp.prototype.test,
         Ii = Array.prototype.concat,
         Se = Array.prototype.join,
         _y = Array.prototype.slice,
-        xi = Math.floor,
+        Ai = Math.floor,
         Kr = typeof BigInt == "function" ? BigInt.prototype.valueOf : null,
-        xr = Object.getOwnPropertySymbols,
+        Ar = Object.getOwnPropertySymbols,
         Xr = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? Symbol.prototype.toString : null,
         ct = typeof Symbol == "function" && typeof Symbol.iterator == "object",
         oe = typeof Symbol == "function" && Symbol.toStringTag && (typeof Symbol.toStringTag === ct ? "object" : "symbol") ? Symbol.toStringTag : null,
         Xa = Object.prototype.propertyIsEnumerable,
-        Ai = (typeof Reflect == "function" ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(t) {
+        xi = (typeof Reflect == "function" ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(t) {
             return t.__proto__
         } : null);
 
@@ -1893,14 +1893,14 @@ var aw = Zo((ow, Go) => {
         if (t === 1 / 0 || t === -1 / 0 || t !== t || t && t > -1e3 && t < 1e3 || Ka.call(/e/, e)) return e;
         var r = /[0-9](?=(?:[0-9]{3})+(?![0-9]))/g;
         if (typeof t == "number") {
-            var n = t < 0 ? -xi(-t) : xi(t);
+            var n = t < 0 ? -Ai(-t) : Ai(t);
             if (n !== t) {
                 var i = String(n),
                     a = kn.call(e, i.length + 1);
-                return Ae.call(i, r, "$&_") + "." + Ae.call(Ae.call(a, /([0-9]{3})/g, "$&_"), /_$/, "")
+                return xe.call(i, r, "$&_") + "." + xe.call(xe.call(a, /([0-9]{3})/g, "$&_"), /_$/, "")
             }
         }
-        return Ae.call(e, r, "$&_")
+        return xe.call(e, r, "$&_")
     }
     var Qr = cy,
         Li = Qr.custom,
@@ -1948,7 +1948,7 @@ var aw = Zo((ow, Go) => {
                 return "[Function" + (O ? ": " + O : " (anonymous)") + "]" + (k.length > 0 ? " { " + Se.call(k, ", ") + " }" : "")
             }
             if (Za(e)) {
-                var U = ct ? Ae.call(String(e), /^(Symbol\(.*\))_[^)]*$/, "$1") : Xr.call(e);
+                var U = ct ? xe.call(String(e), /^(Symbol\(.*\))_[^)]*$/, "$1") : Xr.call(e);
                 return typeof e == "object" && !ct ? Ot(U) : U
             }
             if (Cy(e)) {
@@ -1982,16 +1982,16 @@ var aw = Zo((ow, Go) => {
                     K.push(w(z, e))
                 }), ji("Set", er.call(e), K, m)
             }
-            if (xy(e)) return Ar("WeakMap");
-            if (Ly(e)) return Ar("WeakSet");
-            if (Ay(e)) return Ar("WeakRef");
+            if (Ay(e)) return xr("WeakMap");
+            if (Ly(e)) return xr("WeakSet");
+            if (xy(e)) return xr("WeakRef");
             if (ky(e)) return Ot(w(Number(e)));
             if (Ty(e)) return Ot(w(Kr.call(e)));
             if (Ry(e)) return Ot(py.call(e));
             if (Oy(e)) return Ot(w(String(e)));
             if (!wy(e) && !Di(e)) {
                 var le = Ut(e, w),
-                    re = Ai ? Ai(e) === Object.prototype : e instanceof Object || e.constructor === Object,
+                    re = xi ? xi(e) === Object.prototype : e instanceof Object || e.constructor === Object,
                     W = e instanceof Object ? "" : "null prototype",
                     me = !re && oe && Object(e) === e && oe in e ? kn.call(De(e), 8, -1) : W ? "Object" : "",
                     Y = re || typeof e.constructor != "function" ? "" : e.constructor.name ? e.constructor.name + " " : "",
@@ -2007,7 +2007,7 @@ var aw = Zo((ow, Go) => {
     }
 
     function Ey(t) {
-        return Ae.call(String(t), /"/g, "&quot;")
+        return xe.call(String(t), /"/g, "&quot;")
     }
 
     function Zr(t) {
@@ -2094,7 +2094,7 @@ var aw = Zo((ow, Go) => {
         return !1
     }
 
-    function xy(t) {
+    function Ay(t) {
         if (!Rt || !t || typeof t != "object") return !1;
         try {
             Rt.call(t, Rt);
@@ -2108,7 +2108,7 @@ var aw = Zo((ow, Go) => {
         return !1
     }
 
-    function Ay(t) {
+    function xy(t) {
         if (!$i || !t || typeof t != "object") return !1;
         try {
             return $i.call(t), !0
@@ -2154,7 +2154,7 @@ var aw = Zo((ow, Go) => {
                 n = "... " + r + " more character" + (r > 1 ? "s" : "");
             return ts(kn.call(t, 0, e.maxStringLength), e) + n
         }
-        var i = Ae.call(Ae.call(t, /(['\\])/g, "\\$1"), /[\x00-\x1f]/g, Dy);
+        var i = xe.call(xe.call(t, /(['\\])/g, "\\$1"), /[\x00-\x1f]/g, Dy);
         return Qa(i, "single", e)
     }
 
@@ -2174,7 +2174,7 @@ var aw = Zo((ow, Go) => {
         return "Object(" + t + ")"
     }
 
-    function Ar(t) {
+    function xr(t) {
         return t + " { ? }"
     }
 
@@ -2216,14 +2216,14 @@ var aw = Zo((ow, Go) => {
             n.length = t.length;
             for (var i = 0; i < t.length; i++) n[i] = Pe(t, i) ? e(t[i], t) : ""
         }
-        var a = typeof xr == "function" ? xr(t) : [],
+        var a = typeof Ar == "function" ? Ar(t) : [],
             s;
         if (ct) {
             s = {};
             for (var o = 0; o < a.length; o++) s["$" + a[o]] = a[o]
         }
         for (var c in t) !Pe(t, c) || r && String(Number(c)) === c && c < t.length || ct && s["$" + c] instanceof Symbol || (Ka.call(/[^\w$]/, c) ? n.push(e(c, t) + ": " + e(t[c], t)) : n.push(c + ": " + e(t[c], t)));
-        if (typeof xr == "function")
+        if (typeof Ar == "function")
             for (var f = 0; f < a.length; f++) Xa.call(t, a[f]) && n.push("[" + e(a[f]) + "]: " + e(t[a[f]], t));
         return n
     }
@@ -2491,8 +2491,8 @@ var aw = Zo((ow, Go) => {
                 }
                 typeof te.get(Cr) > "u" && (ie = 0)
             }
-            if (typeof c == "function" ? N = c(r, N) : N instanceof Date ? N = m(N) : n === "comma" && Re(N) && (N = tn.maybeMap(N, function(x) {
-                    return x instanceof Date ? m(x) : x
+            if (typeof c == "function" ? N = c(r, N) : N instanceof Date ? N = m(N) : n === "comma" && Re(N) && (N = tn.maybeMap(N, function(A) {
+                    return A instanceof Date ? m(A) : A
                 })), N === null) {
                 if (a) return o && !k ? o(r, ne.encoder, U, "key", w) : r;
                 N = ""
@@ -2715,12 +2715,12 @@ var aw = Zo((ow, Go) => {
             this.code = e.code, this.token = e.token, this.host = e.host
         }
     }
-    class xv {
+    class Av {
         constructor(e) {
             this.appId = e.appId, this.appTag = e.appTag, this.audienceEnabled = e.audienceEnabled, this.code = e.code, this.host = e.host, this.audienceHost = e.audienceHost, this.locked = e.locked, this.full = e.full, this.moderationEnabled = e.moderationEnabled, this.passwordRequired = e.passwordRequired, this.twitchLocked = e.twitchLocked, this.locale = e.locale, this.keepalive = e.keepalive, this.controllerBranch = e.controllerBranch
         }
     }
-    class Av {
+    class xv {
         constructor(e) {
             this.connections = e.connections
         }
@@ -2736,8 +2736,8 @@ var aw = Zo((ow, Go) => {
     class Lv {}
     var pr = {
         CreateRoomReply: Iv,
-        GetRoomReply: xv,
-        GetAudienceReply: Av,
+        GetRoomReply: Av,
+        GetAudienceReply: xv,
         RoomExit: Nv,
         RoomLock: Lv
     };
@@ -3131,12 +3131,12 @@ var aw = Zo((ow, Go) => {
             super(e), this.code = 2012, this.message = e && e.message ? e.message : "invalid license"
         }
     }
-    class xs extends B {
+    class As extends B {
         constructor(e) {
             super(e), this.code = 2013, this.message = e && e.message ? e.message : "room not found"
         }
     }
-    class As extends B {
+    class xs extends B {
         constructor(e) {
             super(e), this.code = 2014, this.message = e && e.message ? e.message : "requested role does not exist"
         }
@@ -3243,8 +3243,8 @@ var aw = Zo((ow, Go) => {
         EcastRoomIsFull: $s,
         EcastLicenseNotFound: Ps,
         EcastLicenseCheckFailed: Is,
-        EcastRoomNotFound: xs,
-        EcastInvalidRole: As,
+        EcastRoomNotFound: As,
+        EcastInvalidRole: xs,
         EcastTwitchLoginRequired: Ns,
         EcastInvalidOption: Ls,
         EcastPasswordRequired: Cs,
@@ -3279,8 +3279,8 @@ var aw = Zo((ow, Go) => {
         2010: $s,
         2011: Ps,
         2012: Is,
-        2013: xs,
-        2014: As,
+        2013: As,
+        2014: xs,
         2015: Ns,
         2016: Ls,
         2017: Cs,
@@ -3342,7 +3342,7 @@ var aw = Zo((ow, Go) => {
 }`
         }
     }
-    var xn = {
+    var An = {
         CountGroup: tm
     };
     class rm {
@@ -3359,7 +3359,7 @@ var aw = Zo((ow, Go) => {
 }`
         }
     }
-    var An = {
+    var xn = {
         GCounter: rm
     };
     class nm {
@@ -3669,11 +3669,11 @@ var aw = Zo((ow, Go) => {
         ClientWelcome: $m,
         ClientConnected: Pm,
         ClientDisconnected: Im,
-        ClientKicked: xm,
-        ClientSend: Am
+        ClientKicked: Am,
+        ClientSend: xm
     } = In, {
         CountGroup: Nm
-    } = xn, {
+    } = An, {
         DoodleEntity: Lm,
         DoodleLine: Cm,
         DoodleLineRemoved: Dm
@@ -3689,7 +3689,7 @@ var aw = Zo((ow, Go) => {
         LockEntity: Gm
     } = Om, {
         GCounter: qm
-    } = An, {
+    } = xn, {
         GetAudienceReply: Hm,
         RoomExit: Wm,
         RoomLock: Ym
@@ -3795,13 +3795,13 @@ var aw = Zo((ow, Go) => {
                     role: e.role
                 });
             case "client/kicked":
-                return new xm({
+                return new Am({
                     id: e.id,
                     banned: e.banned,
                     reason: e.reason
                 });
             case "client/send":
-                return new Am({
+                return new xm({
                     to: e.to,
                     from: e.from,
                     body: e.body,
@@ -3948,10 +3948,10 @@ var aw = Zo((ow, Go) => {
         } = In,
         {
             CountGroup: ug
-        } = xn,
+        } = An,
         {
             GCounter: lg
-        } = An,
+        } = xn,
         {
             Notification: Yi
         } = Js,
@@ -4499,17 +4499,17 @@ var aw = Zo((ow, Go) => {
         ArtifactEntity: Tg
     } = Ks, {
         GCounter: $g
-    } = An, {
+    } = xn, {
         NumberEntity: Pg
     } = eo, {
         TextEntity: Ig
     } = Cn, {
-        DoodleEntity: xg
+        DoodleEntity: Ag
     } = jn, {
-        ObjectEntity: Ag
+        ObjectEntity: xg
     } = Nn, {
         CountGroup: Ng
-    } = xn, {
+    } = An, {
         DropEntity: Lg
     } = Qs, {
         OK: Cg
@@ -4531,11 +4531,11 @@ var aw = Zo((ow, Go) => {
         RoomExit: Dg,
         OK: Cg,
         ArtifactEntity: Tg,
-        DoodleEntity: xg,
+        DoodleEntity: Ag,
         NumberEntity: Pg,
         CountGroup: Ng,
         GCounter: $g,
-        ObjectEntity: Ag,
+        ObjectEntity: xg,
         PNCounter: Mg,
         TextEntity: Ig,
         TextRing: jg
@@ -5195,17 +5195,17 @@ var aw = Zo((ow, Go) => {
                 var l = d.indexOf("?");
                 return l >= 0 ? d.slice(0, l) : d
             }
-            var x = function() {
+            var A = function() {
                 this.urlMap = {}
             };
-            x.prototype.attachWebSocket = function(l, p) {
+            A.prototype.attachWebSocket = function(l, p) {
                 var u = C(p),
                     h = this.urlMap[u];
                 if (h && h.server && h.websockets.indexOf(l) === -1) return h.websockets.push(l), h.server
-            }, x.prototype.addMembershipToRoom = function(l, p) {
+            }, A.prototype.addMembershipToRoom = function(l, p) {
                 var u = this.urlMap[C(l.url)];
                 u && u.server && u.websockets.indexOf(l) !== -1 && (u.roomMemberships[p] || (u.roomMemberships[p] = []), u.roomMemberships[p].push(l))
-            }, x.prototype.attachServer = function(l, p) {
+            }, A.prototype.attachServer = function(l, p) {
                 var u = C(p),
                     h = this.urlMap[u];
                 if (!h) return this.urlMap[u] = {
@@ -5213,11 +5213,11 @@ var aw = Zo((ow, Go) => {
                     websockets: [],
                     roomMemberships: {}
                 }, l
-            }, x.prototype.serverLookup = function(l) {
+            }, A.prototype.serverLookup = function(l) {
                 var p = C(l),
                     u = this.urlMap[p];
                 if (u) return u.server
-            }, x.prototype.websocketsLookup = function(l, p, u) {
+            }, A.prototype.websocketsLookup = function(l, p, u) {
                 var h = C(l),
                     _, b = this.urlMap[h];
                 if (_ = b ? b.websockets : [], p) {
@@ -5227,22 +5227,22 @@ var aw = Zo((ow, Go) => {
                 return u ? _.filter(function(P) {
                     return P !== u
                 }) : _
-            }, x.prototype.removeServer = function(l) {
+            }, A.prototype.removeServer = function(l) {
                 delete this.urlMap[C(l)]
-            }, x.prototype.removeWebSocket = function(l, p) {
+            }, A.prototype.removeWebSocket = function(l, p) {
                 var u = C(p),
                     h = this.urlMap[u];
                 h && (h.websockets = E(h.websockets, function(_) {
                     return _ === l
                 }))
-            }, x.prototype.removeMembershipFromRoom = function(l, p) {
+            }, A.prototype.removeMembershipFromRoom = function(l, p) {
                 var u = this.urlMap[C(l.url)],
                     h = u.roomMemberships[p];
                 u && h !== null && (u.roomMemberships[p] = E(h, function(_) {
                     return _ === l
                 }))
             };
-            var g = new x,
+            var g = new A,
                 S = {
                     CLOSE_NORMAL: 1e3,
                     CLOSE_GOING_AWAY: 1001,
@@ -6477,8 +6477,8 @@ var aw = Zo((ow, Go) => {
             e[r] = () => {}
         }), e
     }
-    let A;
-    typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__ ? A = Bn("logger", Xi) : A = Xi();
+    let x;
+    typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__ ? x = Bn("logger", Xi) : x = Xi();
 
     function Pt(t, e = 0) {
         return typeof t != "string" || e === 0 || t.length <= e ? t : `${t.substr(0,e)}...`
@@ -6672,7 +6672,7 @@ var aw = Zo((ow, Go) => {
             var n = r.createElement("iframe");
             n.hidden = !0, r.head.appendChild(n), n.contentWindow && n.contentWindow.fetch && (e = on(n.contentWindow.fetch)), r.head.removeChild(n)
         } catch (i) {
-            (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", i)
+            (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", i)
         }
         return e
     }
@@ -6712,7 +6712,7 @@ var aw = Zo((ow, Go) => {
                 $_();
                 break;
             default:
-                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn("unknown instrumentation type:", t);
+                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn("unknown instrumentation type:", t);
                 return
         }
     }
@@ -6726,7 +6726,7 @@ var aw = Zo((ow, Go) => {
             for (var r of It[t] || []) try {
                 r(e)
             } catch (n) {
-                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.error(`Error while triggering instrumentation handler.
+                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.error(`Error while triggering instrumentation handler.
 Type: ${t}
 Name: ${Ce(r)}
 Error:`, n)
@@ -7007,7 +7007,7 @@ Error:`, n)
         a.value || (a.value = e || ""), a.type || (a.type = r || "Error")
     }
 
-    function xt(t, e) {
+    function At(t, e) {
         var r = fo(t);
         if (!!r) {
             var n = {
@@ -7049,7 +7049,7 @@ Error:`, n)
 
     function ho(t, e = 3, r = 100 * 1024) {
         var n = Fe(t, e);
-        return A_(n) > r ? ho(t, e - 1, r) : n
+        return x_(n) > r ? ho(t, e - 1, r) : n
     }
 
     function un(t, e, r = 1 / 0, n = 1 / 0, i = P_()) {
@@ -7087,12 +7087,12 @@ Error:`, n)
         }
     }
 
-    function x_(t) {
+    function A_(t) {
         return ~-encodeURI(t).split(/%..|./).length
     }
 
-    function A_(t) {
-        return x_(JSON.stringify(t))
+    function x_(t) {
+        return A_(JSON.stringify(t))
     }
     var ke;
     (function(t) {
@@ -7663,7 +7663,7 @@ ${JSON.stringify(o)}
                     var c = o({
                         ...r
                     }, n);
-                    (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && o.id && c === null && A.log(`Event processor "${o.id}" dropped event`), Fn(c) ? c.then(f => this._notifyEventProcessors(e, f, n, i + 1).then(a)).then(null, s) : this._notifyEventProcessors(e, c, n, i + 1).then(a).then(null, s)
+                    (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && o.id && c === null && x.log(`Event processor "${o.id}" dropped event`), Fn(c) ? c.then(f => this._notifyEventProcessors(e, f, n, i + 1).then(a)).then(null, s) : this._notifyEventProcessors(e, c, n, i + 1).then(a).then(null, s)
                 }
             })
         }
@@ -7831,7 +7831,7 @@ ${JSON.stringify(o)}
             try {
                 return r.getIntegration(e)
             } catch {
-                return (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn(`Cannot retrieve integration ${e.id} from the current Hub`), null
+                return (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn(`Cannot retrieve integration ${e.id} from the current Hub`), null
             }
         }
         startTransaction(e, r) {
@@ -7907,7 +7907,7 @@ ${JSON.stringify(o)}
             var n = _r(),
                 i = n.__SENTRY__;
             if (i && i.extensions && typeof i.extensions[e] == "function") return i.extensions[e].apply(this, r);
-            (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn(`Extension method ${e} couldn't be found, doing nothing.`)
+            (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn(`Extension method ${e} couldn't be found, doing nothing.`)
         }
     }
 
@@ -7921,27 +7921,27 @@ ${JSON.stringify(o)}
 
     function ca(t) {
         var e = _r(),
-            r = xe(e);
+            r = Ae(e);
         return Kn(e, t), r
     }
 
     function Q() {
         var t = _r();
-        return (!mo(t) || xe(t).isOlderThan(Vn)) && Kn(t, new Mt), Mn() ? Z_(t) : xe(t)
+        return (!mo(t) || Ae(t).isOlderThan(Vn)) && Kn(t, new Mt), Mn() ? Z_(t) : Ae(t)
     }
 
     function Z_(t) {
         try {
             var e = _r().__SENTRY__,
                 r = e && e.extensions && e.extensions.domain && e.extensions.domain.active;
-            if (!r) return xe(t);
-            if (!mo(r) || xe(r).isOlderThan(Vn)) {
-                var n = xe(t).getStackTop();
+            if (!r) return Ae(t);
+            if (!mo(r) || Ae(r).isOlderThan(Vn)) {
+                var n = Ae(t).getStackTop();
                 Kn(r, new Mt(n.client, Ne.clone(n.scope)))
             }
-            return xe(r)
+            return Ae(r)
         } catch {
-            return xe(t)
+            return Ae(t)
         }
     }
 
@@ -7949,7 +7949,7 @@ ${JSON.stringify(o)}
         return !!(t && t.__SENTRY__ && t.__SENTRY__.hub)
     }
 
-    function xe(t) {
+    function Ae(t) {
         return Bn("hub", () => new Mt, t)
     }
 
@@ -8103,7 +8103,7 @@ ${JSON.stringify(o)}
     function lb(t) {
         var e = {};
         return t.forEach(r => {
-            e[r.name] = r, ua.indexOf(r.name) === -1 && (r.setupOnce(Jn, Q), ua.push(r.name), (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.log(`Integration installed: ${r.name}`))
+            e[r.name] = r, ua.indexOf(r.name) === -1 && (r.setupOnce(Jn, Q), ua.push(r.name), (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.log(`Integration installed: ${r.name}`))
         }), e
     }
     var fa = "Not capturing exception because it's already been captured.";
@@ -8129,11 +8129,11 @@ ${JSON.stringify(o)}
                     ...e.transportOptions,
                     url: r
                 })
-            } else(typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn("No DSN provided, client will not do anything.")
+            } else(typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn("No DSN provided, client will not do anything.")
         }
         captureException(e, r, n) {
             if (na(e)) {
-                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.log(fa);
+                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.log(fa);
                 return
             }
             let i = r && r.event_id;
@@ -8150,7 +8150,7 @@ ${JSON.stringify(o)}
         }
         captureEvent(e, r, n) {
             if (r && r.originalException && na(r.originalException)) {
-                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.log(fa);
+                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.log(fa);
                 return
             }
             let i = r && r.event_id;
@@ -8160,10 +8160,10 @@ ${JSON.stringify(o)}
         }
         captureSession(e) {
             if (!this._isEnabled()) {
-                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn("SDK not enabled, will not capture session.");
+                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn("SDK not enabled, will not capture session.");
                 return
             }
-            typeof e.release != "string" ? (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn("Discarded session because of missing or non-string release") : (this.sendSession(e), dt(e, {
+            typeof e.release != "string" ? (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn("Discarded session because of missing or non-string release") : (this.sendSession(e), dt(e, {
                 init: !1
             }))
         }
@@ -8193,7 +8193,7 @@ ${JSON.stringify(o)}
             try {
                 return this._integrations[e.id] || null
             } catch {
-                return (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn(`Cannot retrieve integration ${e.id} from the current Client`), null
+                return (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn(`Cannot retrieve integration ${e.id} from the current Client`), null
             }
         }
         sendEvent(e, r = {}) {
@@ -8212,7 +8212,7 @@ ${JSON.stringify(o)}
         recordDroppedEvent(e, r) {
             if (this._options.sendClientReports) {
                 var n = `${e}:${r}`;
-                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.log(`Adding outcome: "${n}"`), this._outcomes[n] = this._outcomes[n] + 1 || 1
+                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.log(`Adding outcome: "${n}"`), this._outcomes[n] = this._outcomes[n] + 1 || 1
             }
         }
         _updateSessionFromEvent(e, r) {
@@ -8316,7 +8316,7 @@ ${JSON.stringify(o)}
             return this._processEvent(e, r, n).then(i => i.event_id, i => {
                 if (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) {
                     var a = i;
-                    a.logLevel === "log" ? A.log(a.message) : A.warn(a)
+                    a.logLevel === "log" ? x.log(a.message) : x.warn(a)
                 }
             })
         }
@@ -8352,8 +8352,8 @@ Reason: ${o}`))
         }
         _sendEnvelope(e) {
             this._transport && this._dsn ? this._transport.send(e).then(null, r => {
-                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.error("Error while sending event:", r)
-            }) : (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.error("Transport disabled")
+                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.error("Error while sending event:", r)
+            }) : (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.error("Transport disabled")
         }
         _clearOutcomes() {
             var e = this._outcomes;
@@ -8381,7 +8381,7 @@ Reason: ${o}`))
     }
 
     function db(t, e) {
-        e.debug === !0 && (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__ ? A.enable() : console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle."));
+        e.debug === !0 && (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__ ? x.enable() : console.warn("[Sentry] Cannot initialize SDK with `debug` option using a non-debug bundle."));
         var r = Q(),
             n = r.getScope();
         n && n.update(e.initialScope);
@@ -8409,12 +8409,12 @@ Reason: ${o}`))
                 y = () => e({
                     body: yo(c, t.textEncoder)
                 }).then(m => {
-                    m.statusCode !== void 0 && (m.statusCode < 200 || m.statusCode >= 300) && (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn(`Sentry responded with status code ${m.statusCode} to sent event.`), n = z_(n, m)
+                    m.statusCode !== void 0 && (m.statusCode < 200 || m.statusCode >= 300) && (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn(`Sentry responded with status code ${m.statusCode} to sent event.`), n = z_(n, m)
                 }, m => {
-                    (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.error("Failed while sending event:", m), f("network_error")
+                    (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.error("Failed while sending event:", m), f("network_error")
                 });
             return r.add(y).then(m => m, m => {
-                if (m instanceof ae) return (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.error("Skipped sending event due to full buffer"), f("queue_overflow"), We();
+                if (m instanceof ae) return (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.error("Skipped sending event due to full buffer"), f("queue_overflow"), We();
                 throw m
             })
         }
@@ -8425,15 +8425,15 @@ Reason: ${o}`))
     }
     var da = "7.11.1";
     let ha;
-    class At {
+    class xt {
         constructor() {
-            At.prototype.__init.call(this)
+            xt.prototype.__init.call(this)
         }
         static __initStatic() {
             this.id = "FunctionToString"
         }
         __init() {
-            this.name = At.id
+            this.name = xt.id
         }
         setupOnce() {
             ha = Function.prototype.toString, Function.prototype.toString = function(...e) {
@@ -8442,7 +8442,7 @@ Reason: ${o}`))
             }
         }
     }
-    At.__initStatic();
+    xt.__initStatic();
     var pb = [/^Script error\.?$/, /^Javascript error: Script error\.? on line 0$/];
     class nt {
         static __initStatic() {
@@ -8483,11 +8483,11 @@ Reason: ${o}`))
     }
 
     function vb(t, e) {
-        return e.ignoreInternal && Eb(t) ? ((typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn(`Event dropped due to being internal Sentry Error.
-Event: ${qe(t)}`), !0) : mb(t, e.ignoreErrors) ? ((typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn(`Event dropped due to being matched by \`ignoreErrors\` option.
-Event: ${qe(t)}`), !0) : gb(t, e.denyUrls) ? ((typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn(`Event dropped due to being matched by \`denyUrls\` option.
+        return e.ignoreInternal && Eb(t) ? ((typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn(`Event dropped due to being internal Sentry Error.
+Event: ${qe(t)}`), !0) : mb(t, e.ignoreErrors) ? ((typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn(`Event dropped due to being matched by \`ignoreErrors\` option.
+Event: ${qe(t)}`), !0) : gb(t, e.denyUrls) ? ((typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn(`Event dropped due to being matched by \`denyUrls\` option.
 Event: ${qe(t)}.
-Url: ${nr(t)}`), !0) : _b(t, e.allowUrls) ? !1 : ((typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn(`Event dropped due to not being matched by \`allowUrls\` option.
+Url: ${nr(t)}`), !0) : _b(t, e.allowUrls) ? !1 : ((typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn(`Event dropped due to not being matched by \`allowUrls\` option.
 Event: ${qe(t)}.
 Url: ${nr(t)}`), !0)
     }
@@ -8517,7 +8517,7 @@ Url: ${nr(t)}`), !0)
             } = t.exception.values && t.exception.values[0] || {};
             return [`${r}`, `${e}: ${r}`]
         } catch {
-            return (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.error(`Cannot extract message for event ${qe(t)}`), []
+            return (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.error(`Cannot extract message for event ${qe(t)}`), []
         }
         return []
     }
@@ -8545,7 +8545,7 @@ Url: ${nr(t)}`), !0)
             } catch {}
             return e ? wb(e) : null
         } catch {
-            return (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.error(`Cannot extract url for event ${qe(t)}`), null
+            return (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.error(`Cannot extract url for event ${qe(t)}`), null
         }
     }
 
@@ -8615,7 +8615,7 @@ Url: ${nr(t)}`), !0)
     function Tb(t, e, r, n) {
         var i = r && r.syntheticException || void 0,
             a = Qn(t, e, i, n);
-        return xt(a), a.level = "error", r && r.event_id && (a.event_id = r.event_id), We(a)
+        return At(a), a.level = "error", r && r.event_id && (a.event_id = r.event_id), We(a)
     }
 
     function $b(t, e, r = "info", n, i) {
@@ -8646,11 +8646,11 @@ Url: ${nr(t)}`), !0)
         if (no(e)) return qr(t, e);
         if (ft(e) || Un(e)) {
             var y = e;
-            return a = Sb(t, y, r, i), xt(a, {
+            return a = Sb(t, y, r, i), At(a, {
                 synthetic: !0
             }), a
         }
-        return a = hn(t, e, r, n), cn(a, `${e}`, void 0), xt(a, {
+        return a = hn(t, e, r, n), cn(a, `${e}`, void 0), At(a, {
             synthetic: !0
         }), a
     }
@@ -8692,7 +8692,7 @@ Url: ${nr(t)}`), !0)
             }
         }
         setupOnce() {
-            this.options.console && Ie("console", Ib), this.options.dom && Ie("dom", Pb(this.options.dom)), this.options.xhr && Ie("xhr", xb), this.options.fetch && Ie("fetch", Ab), this.options.history && Ie("history", Nb)
+            this.options.console && Ie("console", Ib), this.options.dom && Ie("dom", Pb(this.options.dom)), this.options.xhr && Ie("xhr", Ab), this.options.fetch && Ie("fetch", xb), this.options.history && Ie("history", Nb)
         }
     }
     Nt.__initStatic();
@@ -8737,7 +8737,7 @@ Url: ${nr(t)}`), !0)
         })
     }
 
-    function xb(t) {
+    function Ab(t) {
         if (t.endTimestamp) {
             if (t.xhr.__sentry_own_request__) return;
             const {
@@ -8762,7 +8762,7 @@ Url: ${nr(t)}`), !0)
         }
     }
 
-    function Ab(t) {
+    function xb(t) {
         !t.endTimestamp || t.fetchData.url.match(/sentry_key/) && t.fetchData.method === "POST" || (t.error ? Q().addBreadcrumb({
             category: "fetch",
             data: t.fetchData,
@@ -8813,7 +8813,7 @@ Url: ${nr(t)}`), !0)
             var n = r.contentWindow;
             n && n.fetch && (e = n.fetch), t.head.removeChild(r)
         } catch (i) {
-            (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", i)
+            (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", i)
         }
         return Yt = e.bind(be)
     }
@@ -8832,7 +8832,7 @@ Url: ${nr(t)}`), !0)
                 credentials: "omit",
                 keepalive: !0
             }).then(null, s => {
-                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.error(s)
+                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.error(s)
             })
         }
     }
@@ -8873,19 +8873,19 @@ Url: ${nr(t)}`), !0)
         _flushOutcomes() {
             var e = this._clearOutcomes();
             if (e.length === 0) {
-                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.log("No outcomes to send");
+                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.log("No outcomes to send");
                 return
             }
             if (!this._dsn) {
-                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.log("No dsn provided, will not send outcomes");
+                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.log("No dsn provided, will not send outcomes");
                 return
-            }(typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.log("Sending outcomes:", e);
+            }(typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.log("Sending outcomes:", e);
             var r = Eo(this._dsn, this._options),
                 n = G_(e, this._options.tunnel && Gn(this._dsn));
             try {
                 Lb(r, yo(n))
             } catch (i) {
-                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.error(i)
+                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.error(i)
             }
         }
     }
@@ -9016,7 +9016,7 @@ Url: ${nr(t)}`), !0)
                 return t.apply(this, c)
             } catch (f) {
                 throw tE(), eb(y => {
-                    y.addEventProcessor(m => (e.mechanism && (cn(m, void 0, void 0), xt(m, e.mechanism)), m.extra = {
+                    y.addEventProcessor(m => (e.mechanism && (cn(m, void 0, void 0), At(m, e.mechanism)), m.extra = {
                         ...m.extra,
                         arguments: o
                     }, m)), go(f)
@@ -9070,7 +9070,7 @@ Url: ${nr(t)}`), !0)
 
     function rE() {
         Ie("error", t => {
-            const [e, r, n] = xo();
+            const [e, r, n] = Ao();
             if (!e.getIntegration(Le)) return;
             const {
                 msg: i,
@@ -9088,7 +9088,7 @@ Url: ${nr(t)}`), !0)
 
     function nE() {
         Ie("unhandledrejection", t => {
-            const [e, r, n] = xo();
+            const [e, r, n] = Ao();
             if (!e.getIntegration(Le)) return;
             let i = t;
             try {
@@ -9147,11 +9147,11 @@ Url: ${nr(t)}`), !0)
     }
 
     function sE(t) {
-        (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.log(`Global Handler attached: ${t}`)
+        (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.log(`Global Handler attached: ${t}`)
     }
 
     function Io(t, e, r, n) {
-        xt(r, {
+        At(r, {
             handled: !1,
             type: n
         }), t.captureEvent(r, {
@@ -9159,7 +9159,7 @@ Url: ${nr(t)}`), !0)
         })
     }
 
-    function xo() {
+    function Ao() {
         var t = Q(),
             e = t.getClient(),
             r = e && e.getOptions() || {
@@ -9316,14 +9316,14 @@ Url: ${nr(t)}`), !0)
 
     function hE(t, e, r, n, i) {
         if (!n.exception || !n.exception.values || !i || !je(i.originalException, Error)) return n;
-        var a = Ao(t, r, i.originalException, e);
+        var a = xo(t, r, i.originalException, e);
         return n.exception.values = [...a, ...n.exception.values], n
     }
 
-    function Ao(t, e, r, n, i = []) {
+    function xo(t, e, r, n, i = []) {
         if (!je(r[n], Error) || i.length + 1 >= e) return i;
         var a = Oo(t, r[n]);
-        return Ao(t, e, r[n], n, [a, ...i])
+        return xo(t, e, r[n], n, [a, ...i])
     }
     var Ue = V();
     class at {
@@ -9386,7 +9386,7 @@ Url: ${nr(t)}`), !0)
                 var a = r().getIntegration(st);
                 if (a) {
                     try {
-                        if (pE(i, a._previousEvent)) return (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn("Event dropped due to being a duplicate of previously captured event."), null
+                        if (pE(i, a._previousEvent)) return (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn("Event dropped due to being a duplicate of previously captured event."), null
                     } catch {
                         return a._previousEvent = i
                     }
@@ -9453,7 +9453,7 @@ Url: ${nr(t)}`), !0)
             return
         }
     }
-    var mE = [new nt, new At, new Lt, new Nt, new Le, new it, new st, new at];
+    var mE = [new nt, new xt, new Lt, new Nt, new Le, new it, new st, new at];
 
     function gE(t = {}) {
         if (t.defaultIntegrations === void 0 && (t.defaultIntegrations = mE), t.release === void 0) {
@@ -9480,7 +9480,7 @@ Url: ${nr(t)}`), !0)
         var t = V(),
             e = t.document;
         if (typeof e > "u") {
-            (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && A.warn("Session tracking in non-browser environment with @sentry/browser is not supported.");
+            (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn("Session tracking in non-browser environment with @sentry/browser is not supported.");
             return
         }
         var r = Q();
@@ -9708,7 +9708,7 @@ Url: ${nr(t)}`), !0)
         $E = /\/\?/g,
         PE = "/?([^/]+|)",
         IE = "(?:/^|^)",
-        xE = "";
+        AE = "";
 
     function Do(t) {
         return t === void 0 && (t = "/"), ti() ? location.pathname + location.search + location.hash : t
@@ -9722,7 +9722,7 @@ Url: ${nr(t)}`), !0)
         return typeof t == "string"
     }
 
-    function AE(t) {
+    function xE(t) {
         return typeof t == "function"
     }
 
@@ -9771,7 +9771,7 @@ Url: ${nr(t)}`), !0)
                 params: a
             }
         } else o = e.path;
-        var c = new RegExp(o, xE),
+        var c = new RegExp(o, AE),
             f = n.match(c);
         if (f) {
             var y = ir(e.path) ? NE(f, s) : f.groups ? f.groups : f.slice(1);
@@ -10147,7 +10147,7 @@ Url: ${nr(t)}`), !0)
 
         function te(g) {
             return this.routes = s = s.filter(function(S) {
-                return ir(g) ? J(S.path) !== J(g) : AE(g) ? g !== S.handler : String(S.path) !== String(g)
+                return ir(g) ? J(S.path) !== J(g) : xE(g) ? g !== S.handler : String(S.path) !== String(g)
             }), this
         }
 
@@ -10283,10 +10283,10 @@ Url: ${nr(t)}`), !0)
             })
         }
 
-        function x(g) {
+        function A(g) {
             g.instance.__dirty = !1, g.instance.__waiting.length > 0 && g.instance.__waiting.shift()()
         }
-        this.root = i, this.routes = s, this.destroyed = o, this.current = a, this.__freezeListening = !1, this.__waiting = [], this.__dirty = !1, this.__markAsClean = x, this.on = k, this.off = te, this.resolve = U, this.navigate = ee, this.navigateByName = N, this.destroy = ue, this.notFound = pe, this.updatePageLinks = K, this.link = re, this.hooks = W, this.extractGETParameters = function(g) {
+        this.root = i, this.routes = s, this.destroyed = o, this.current = a, this.__freezeListening = !1, this.__waiting = [], this.__dirty = !1, this.__markAsClean = A, this.on = k, this.off = te, this.resolve = U, this.navigate = ee, this.navigateByName = N, this.destroy = ue, this.notFound = pe, this.updatePageLinks = K, this.link = re, this.hooks = W, this.extractGETParameters = function(g) {
             return sr(m(g))
         }, this.lastResolved = me, this.generate = Y, this.getLinkPath = fe, this.match = E, this.matchLocation = $, this.getCurrentLocation = v, this.addBeforeHook = M.bind(this, "before"), this.addAfterHook = M.bind(this, "after"), this.addAlreadyHook = M.bind(this, "already"), this.addLeaveHook = M.bind(this, "leave"), this.getRoute = C, this._pathToMatchObject = z, this._clean = J, this._checkForAHash = m, this._setCurrent = function(g) {
             return a = n.current = g
@@ -10499,7 +10499,7 @@ Url: ${nr(t)}`), !0)
     const ZE = () => {
             pt.resolve()
         },
-        ew = "qa",
+        ew = "production",
         tw = 1,
         rw = {
             branch: "main",
@@ -10852,155 +10852,6 @@ Url: ${nr(t)}`), !0)
                         version: "5.0.0"
                     }
                 }
-            },
-            roomerang: {
-                sha: "ebfef3e47c410a55306fae03f2121b5e3d0d1995",
-                lastUpdated: 1662142827243,
-                version: "5.15.27-roomerang.rc",
-                type: "production",
-                bundles: {
-                    htmf: {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "roomerang/pp9/htmf"
-                    }
-                }
-            },
-            "q3-ugc-bug-fix": {
-                sha: "229d9a80a66ecce2a43444baeb9680b0fa1df945",
-                lastUpdated: 1661533773212,
-                version: "5.4.2-q3-ugc-bug-fix.rc",
-                type: "production",
-                bundles: {
-                    quiplash3: {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "q3-ugc-bug-fix/pp7/quiplash3"
-                    }
-                }
-            },
-            "fix-undefined-vue-i18n": {
-                sha: "c5b31673064bb991817dd49fdbe0334307efa464",
-                lastUpdated: 1661749924870,
-                version: "5.7.2-fix-undefined-vue-i18n.rc",
-                type: "production",
-                bundles: {
-                    "@connect": {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "fix-undefined-vue-i18n/@connect"
-                    },
-                    "@moderator": {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "fix-undefined-vue-i18n/@moderator"
-                    }
-                }
-            },
-            "new-url-images": {
-                sha: "3d7e949d1934cc6bb62075116f3972871e734bd1",
-                lastUpdated: 1661743227749,
-                version: "5.6.2-new-url-images.rc",
-                type: "production",
-                bundles: {
-                    auction: {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "new-url-images/pp2/auction"
-                    },
-                    bombintern: {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "new-url-images/pp2/bombintern"
-                    },
-                    earwax: {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "new-url-images/pp2/earwax"
-                    },
-                    quiplash: {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "new-url-images/pp2/quiplash"
-                    },
-                    awshirt: {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "new-url-images/pp3/awshirt"
-                    },
-                    quiplash2: {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "new-url-images/pp3/quiplash2"
-                    },
-                    triviadeath: {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "new-url-images/pp3/triviadeath"
-                    },
-                    drawful2: {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "new-url-images/standalone/drawful2"
-                    }
-                }
-            },
-            "localstorage-galleries": {
-                sha: "89ca1e8c13c8d392bb8a643aab2df00b240863ba",
-                lastUpdated: 1662479226474,
-                version: "5.19.5-localstorage-galleries.rc",
-                type: "production",
-                bundles: {
-                    "@connect": {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "localstorage-galleries/@connect"
-                    }
-                }
-            },
-            antique: {
-                sha: "a0407e8176c6c7cabe8d8fa41f761f681a320d5d",
-                lastUpdated: 1662139914038,
-                version: "5.14.41-antique.rc",
-                type: "production",
-                bundles: {
-                    "@connect": {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "antique/@connect"
-                    },
-                    "antique-freak": {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "antique/pp9/antique-freak"
-                    }
-                }
-            },
-            fourbage: {
-                sha: "ddd0dcdba8f145fe2352693feae56cf0c2832b96",
-                lastUpdated: 1662147078434,
-                version: "5.15.64-fourbage.rc",
-                type: "production",
-                bundles: {
-                    fourbage: {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "fourbage/pp9/fourbage"
-                    }
-                }
-            },
-            "fix-tko-suggestions": {
-                sha: "aae3d14858665b0dda85b85a1a52a51b485c04e1",
-                lastUpdated: 1662475095082,
-                version: "5.19.2-fix-tko-suggestions.rc",
-                type: "production",
-                bundles: {
-                    "awshirt-tjsp": {
-                        file: "script.js",
-                        css: ["assets/style-0.css"],
-                        base: "fix-tko-suggestions/tjsp/awshirt"
-                    }
-                }
             }
         },
         iw = {
@@ -11025,4 +10876,4 @@ Url: ${nr(t)}`), !0)
     ZE()
 });
 export default aw();
-//# sourceMappingURL=49ecc5ce.js.map
+//# sourceMappingURL=72b6b78b.js.map
