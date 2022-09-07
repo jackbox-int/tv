@@ -21076,7 +21076,7 @@ const fR = je.View.extend({
                 alertText: e.text,
                 alertAvatars: e.avatars,
                 alertColor: e.color,
-                infoRole: "NEEDS HELP",
+                infoRole: "SUCHT HILFE",
                 alertPoints: e.points
             })
         }
@@ -21265,7 +21265,7 @@ class vR {
         this.currentState.state !== e && (this.update.pendingState = e)
     }
     parseRoleFromAvatar(e) {
-        return e.includes("Adult") ? "ADULT" : e.includes("Child") ? "CHILD" : e.includes("Teen") ? "TEEN" : ""
+        return e.includes("Adult") ? "ELTERN" : e.includes("Child") ? "KIND" : e.includes("Teen") ? "TEENIE" : ""
     }
     parsePlayerData(e) {
         this.update.playerText = e.playerInfo && e.playerInfo.name ? e.playerInfo.name : null, this.update.playerColor = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerAvatar = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerRole = e.playerInfo && e.playerInfo.role ? e.playerInfo.role.id : null
@@ -21273,86 +21273,86 @@ class vR {
     parseEmergencyData(e) {
         e.playerThatCausedEmergency || (e.playerThatCausedEmergency = {
             avatar: "Audience",
-            name: "The Cat"
-        }), this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [e.playerThatCausedEmergency.avatar], this.update.infoText = `BLAME ${e.playerThatCausedEmergency.name}`, this.update.infoRole = "DID THIS"
+            name: "Die Katze"
+        }), this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [e.playerThatCausedEmergency.avatar], this.update.infoText = `BESCHULDIGE ${e.playerThatCausedEmergency.name}`, this.update.infoRole = "SCHULDIG"
     }
     parseCancelerData(e) {
         const n = e.captain || {};
-        this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [n.avatar], this.update.infoText = `STOPPING ${n.name}`, this.update.infoRole = "SELFISH"
+        this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [n.avatar], this.update.infoText = `${n.name} AUFHALTEN`, this.update.infoRole = "EGOISTISCH"
     }
     parseCanceledByData(e) {
         const n = e.captain || {};
-        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoText = `${n.name} IS SCOLDING YOU`, this.update.infoRole = "KILLJOY"
+        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoText = `${n.name} TADELT DICH`, this.update.infoRole = "SPASSBREMSE"
     }
     parseAllCollabData(e) {
         const n = this.otherParticipants;
-        this.update.infoColor = this.update.playerColor, this.update.infoAvatars = n.map(i => i.avatar), e.waitingFor ? e.waitingFor.length === 1 ? this.update.infoText = "WAITING FOR 1 MORE" : (this.update.infoText = `WAITING FOR ${e.waitingFor.length} OTHERS`, this.update.infoRole = "THE FAM") : this.update.infoText = "EVERYONE IS HERE"
+        this.update.infoColor = this.update.playerColor, this.update.infoAvatars = n.map(i => i.avatar), e.waitingFor ? e.waitingFor.length === 1 ? this.update.infoText = "WARTE AUF 1 WEITERE PERSON" : (this.update.infoText = `WARTE AUF ${e.waitingFor.length} WEITERE PERSONEN`, this.update.infoRole = "DIE FAMILIE") : this.update.infoText = "ALLE SIND DA"
     }
     parseOpenCollabData(e) {
         const n = e.captain,
             i = this.participants,
             o = this.otherParticipants;
         if (e.state === "WaitingForAny") {
-            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [], this.update.infoText = "WAITING FOR HELPERS";
+            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [], this.update.infoText = "WARTE AUF HELFER";
             return
         }
         if (!n) {
-            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [], this.update.infoText = "CAPTAIN HAS LEFT";
+            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [], this.update.infoText = "DER KAPITÄN IST GEGANGEN";
             return
         }
         if (this.isCaptain) {
-            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = i.map(r => r.avatar), this.update.infoRole = this.parseContextualParticipantRole(e.state), this.update.playerRole = this.parseContextualCaptainRole(e.state), i.length === 1 ? this.update.infoText = `${i[0].name} IS HELPING` : this.update.infoText = `YOU HAVE ${i.length} HELPERS`;
+            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = i.map(r => r.avatar), this.update.infoRole = this.parseContextualParticipantRole(e.state), this.update.playerRole = this.parseContextualCaptainRole(e.state), i.length === 1 ? this.update.infoText = `${i[0].name} HILFT DIR` : this.update.infoText = `DU HAST ${i.length} HELFER`;
             return
         }
-        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoRole = this.parseContextualParticipantRole(e.state), o.forEach(r => this.update.infoAvatars.push(r.avatar)), o.length === 0 ? this.update.infoText = `HELPING ${n.name}` : this.update.infoText = `${n.name} HAS ${i.length} HELPERS`
+        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoRole = this.parseContextualParticipantRole(e.state), o.forEach(r => this.update.infoAvatars.push(r.avatar)), o.length === 0 ? this.update.infoText = `DU HILFST ${n.name}` : this.update.infoText = `${n.name} HAT ${i.length} HELFER`
     }
     parseHelpCollabData(e) {
         const n = e.captain,
             i = this.participants;
         if (this.isCaptain) {
-            this.update.infoColor = i[0].avatar, this.update.infoAvatars = [i[0].avatar], this.update.infoText = `WORKING WITH ${i[0].name}`, this.update.infoRole = this.parseContextualCaptainRole(e.state), this.update.playerRole = this.parseContextualParticipantRole(e.state);
+            this.update.infoColor = i[0].avatar, this.update.infoAvatars = [i[0].avatar], this.update.infoText = `MIT ${i[0].name} ARBEITEN`, this.update.infoRole = this.parseContextualCaptainRole(e.state), this.update.playerRole = this.parseContextualParticipantRole(e.state);
             return
         }
-        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoText = `WORKING WITH ${n.name}`, this.update.infoRole = this.parseContextualParticipantRole(e.state), this.update.playerRole = this.parseContextualCaptainRole(e.state)
+        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoText = `MIT ${n.name} ARBEITEN`, this.update.infoRole = this.parseContextualParticipantRole(e.state), this.update.playerRole = this.parseContextualCaptainRole(e.state)
     }
     parseContextualCaptainRole(e) {
         switch (e = e.replace("Participant", "").replace("Captain", ""), e) {
             case "FindMechanic":
-                return "DESCRIBER";
+                return "BESCHREIBER";
             case "GatherMechanic":
-                return "INSTRUCTOR";
+                return "ANWEISER";
             case "GizmosMechanic":
-                return "INSTRUCTOR";
+                return "ANWEISER";
             case "InstructionsMechanic":
-                return "ASSISTANT";
+                return "ASSISTENT";
             case "SearchMechanic":
-                return "SEARCHER";
+                return "SUCHER";
             case "TextMechanic":
-                return "READER";
+                return "LESER";
             case "TravelMechanic":
                 return "NAVIGATOR";
             default:
-                return "HELPER"
+                return "HELFER"
         }
     }
     parseContextualParticipantRole(e) {
         switch (e = e.replace("Participant", "").replace("Captain", ""), e) {
             case "FindMechanic":
-                return "FINDER";
+                return "SUCHER";
             case "GatherMechanic":
-                return "GATHERERS";
+                return "SAMMLER";
             case "GizmosMechanic":
-                return "OPERATOR";
+                return "ANWENDER";
             case "InstructionsMechanic":
-                return "INSTRUCTOR";
+                return "ANWEISER";
             case "SearchMechanic":
-                return "SEARCHERS";
+                return "SUCHER";
             case "TextMechanic":
-                return "WRITER";
+                return "SCHREIBER";
             case "TravelMechanic":
-                return "DRIVER";
+                return "FAHRER";
             default:
-                return "NEEDER"
+                return "BEDÜRFTIG"
         }
     }
     parseAlerts(e, n) {
@@ -21361,7 +21361,7 @@ class vR {
             const o = n.find(r => r.id === i.task.id);
             return {
                 id: i.task.id,
-                text: `${i.player.name} needs help`,
+                text: `${i.player.name} braucht Hilfe`,
                 avatars: [i.player.avatar],
                 color: i.player.avatar,
                 points: o ? o.participationPoints : 0
@@ -21441,9 +21441,9 @@ const wR = je.View.extend({
                 observe: ["status", "alert"],
                 updateMethod: "html",
                 onGet([t, e]) {
-                    return this.model.isAvailableOpenOrAll() || t === "CAN_ASK_FOR_HELP" ? "ASK FOR HELP" : t === "WAITING_FOR_HELP" ? "WAITING FOR HELP" : e && this.model.needsHelp() ? `
+                    return this.model.isAvailableOpenOrAll() || t === "CAN_ASK_FOR_HELP" ? "BITTE UM HILFE" : t === "WAITING_FOR_HELP" ? "WARTE AUF HILFE" : e && this.model.needsHelp() ? `
                             <div class="avatar head ${e.player.avatar}"></div>
-                            <span>HELP</span> ${e.player.name}
+                            <span>HELFE</span> ${e.player.name}
                         ` : ""
                 },
                 attributes: [{
@@ -21599,13 +21599,13 @@ const wR = je.View.extend({
             ".title": {
                 observe: "playerInfo",
                 onGet(t) {
-                    return `${t.role.id} TASK LIST`
+                    return `${"ADULT" == t.role.id ? "ELTERN" : "TEEN" == t.role.id ? "TEENIE" : "KIND"}-AUFGABENLISTE`
                 }
             },
             ".empty": {
                 observe: "playerInfo",
                 onGet(t) {
-                    return `Chill... No ${t.role.id} Tasks Available Right Now`
+                    return `Ruhig... Gerade sind keine ${"ADULT" == t.role.id ? "Eltern" : "TEEN" == t.role.id ? "Teenie" : "Kind"}-Aufgaben frei`
                 }
             },
             ".success": {
@@ -21660,7 +21660,7 @@ const wR = je.View.extend({
                 if (t.wasCanceled && t.playerThatCanceled) {
                     this.triggerMethod("result", {
                         type: "fail",
-                        message: `${t.playerThatCanceled.name}<br/>STOPPED</br>YOU!`
+                        message: `${t.playerThatCanceled.name}<br/>HAT DICH</br>GESTOPPT!`
                     });
                     return
                 }
@@ -21688,26 +21688,26 @@ const wR = je.View.extend({
         model: new ze.Model,
         hideTimer: null,
         countUpInterval: null,
-        failText: ["TOO<br/>BAD", "NOT<br/>GREAT", "NO<br/>GOOD", "THUMBS<br/>DOWN"],
-        emergencyText: ["CRISIS<br/>AVERTED", "PHEW!", "MERCY!", "SAVED<br/>THE DAY", "THAT<br/>WAS<br/>CLOSE", "HEROIC<br/>SAVE", "THANK<br/>HADES"],
-        selfishText: ["DEVILISH", "YOU<br/>DEVIL!", "SNEAKY!", "HOPE<br/>YOU'RE<br/>HAPPY", "DEMONIC", "GOT AWAY WITH IT", "DIABOLICAL", "FIENDISH", "DEVIOUS", "SLY DEVIL", "NOBODY SAW", "AT WHAT<br/>COST?"],
-        cancelerText: ["FAMILY<br/>HERO", "YOU<br/>TELL 'EM!", "THIS IS<br/>YOUR<br/>HOUSE", "ORDER<br/>RESTORED", "FUN<br/>CANCELED", "JOY<br/>AVERTED", "RULES<br/>ARE<br/>RULES", "YOU ARE<br/>THE LAW", "KAPOW!"],
-        successText: ["NICE<br/>ONE", "GOT<br/>IT", "GOOD<br/>JOB", "GREAT<br/>WORK", "WELL<br/>DONE", "GREAT", "GOOD<br/>FOR YOU", "BEAUTIFUL", "YOU<br/>DID IT", "TERRIFIC", "NICE<br/>GOING", "MUY<br/>BIEN", "SUPERB", "KEEP<br/>IT UP", "WAY<br/>TO GO", "COOL<br/>MOVES", "HECK<br/>YEAH", "NOT<br/>BAD", "DEEECENT", "BRAVO"],
-        storyText: ["WOAH!", "HOLY<br/>SMOKES", "BIG<br/>POINTS", "HUGE", "SO GREAT", "MASSIVE<br/>WIN", "HUMDINGER", "SPICY", "DING<br/>DING", "YES<br/>PLEASE", "PLOT<br/>POINT"],
+        failText: ["SCHADE", "SCHLECHT", "NICHT<br/>GUT", "DAUMEN<br/>RUNTER", "AMATEUR"],
+        emergencyText: ["KRISE<br/>ABGEWENDET", "PUH!", "NOCHMAL<br/>GLÜCK<br/>GEHABT", "DEN TAG<br/>GERETTET", "DAS<br/>WAR<br/>KNAPP", "HELDEN<br/>HAFT", "HADES<br/>SEI<br/>DANK"],
+        selfishText: ["TEUFLISCH", "DU<br/>TEUFEL!", "RAFFINIERT!", "BIST DU<br/>JETZT<br/>ZUFRIEDEN?", "DÄMONISCH", "NOCH MAL<br/>DAVON<br/>GEKOMMEN", "DIABOLISCH", "HINTER<br/>LISTIG", "VERSCHLAGEN", "SCHLITZOHR", "UNTER<br/>DEM<br/>RADAR", "ZU<br/>WELCHEM<br/>PREIS?"],
+        cancelerText: ["HELD<br/>DES<br/>HAUSES", "KEINE<br/>GNADE", "DAS IST<br/>DEIN HAUS", "ORDNUNG<br/>BEWAHRT", "SPASS<br/>BEENDET", "DAS<br/>WAR<br/>KNAPP", "REGELN<br/>SIND<br/>REGELN", "DU BIST<br/>DAS GESETZ", "EISKALT!"],
+        successText: ["GUTE<br/>ARBEIT", "GESCHAFFT", "GUTE<br/>LEISTUNG", "EXZELLENT", "GUT<br/>GEMACHT", "TOLL", "GUT<br/>FÜR DICH", "WUNDERBAR", "PERFEKT", "GRANDIOS", "LÄUFT<br/>DOCH", "MUY<br/>BIEN", "SUPERB", "MACH<br/>WEITER<br/>SO", "SO UND<br/>NICHT<br/>ANDERS", "COOLE<br/>MOVES", "YEAH!", "NICHT<br/>SCHLECHT", "PERFEKT", "BRAVO"],
+        storyText: ["WOW!", "HEILIGER<br/>BIMBAM", "DAS GIBT<br/>PUNKTE", "UNGLAUBLICH", "GROSSARTIG", "GROSSER<br/>ERFOLG", "MORDSKERL", "RATTEN<br/>SCHARF", "DING<br/>DING", "OH<br/>JUNGE", "GEILO"],
         messages: {
-            EAT_BUGS: "Tasty!<br/>Chomp more!",
-            POSE_FOR_PIC: "Adorable!<br/>Keep hamming!",
-            SHOW_BELLY: "Good flop!<br/>Flop again!",
-            SHOW_CLAWS: "Great!<br/>Keep holding!",
-            FIGHT_VACUUM: "Nice!<br/>Keep fighting!",
-            DESTROY_LITTER: "Nice mess!<br/>Go again!",
-            LAY_ON_LAPTOP: "Great!<br/>Hold your<br/>ground!",
-            VOMIT: "Almost!<br/>Keep horking!",
-            DART_OUT: "Sneaky!<br/>Go again!",
-            SCRATCH_CHAIR: "Great!<br/>Scratch again!",
-            KNOCK_ITEMS: "Nice!<br/>Keep<br/>smacking!",
-            PAW_WATER: "Refreshing!<br/>Go again!",
-            SHOW_BELLY_TRAP: "Good flop!<br/>Flop again!"
+            EAT_BUGS: "Lecker!<br/>Mampf mehr!",
+            POSE_FOR_PIC: "Bezaubernd!<br/>Mehr Fotos!",
+            SHOW_BELLY: "Eine Augenweide!<br/>Nicht nachlassen!",
+            SHOW_CLAWS: "Spitze!<br/>Weiter reinhängen!",
+            FIGHT_VACUUM: "Super!<br/>Kämpf weiter!",
+            DESTROY_LITTER: "Schönes Chaos!<br/>Weiter so!",
+            LAY_ON_LAPTOP: "Toll!<br/>Behaupte dich<br/>weiter!",
+            VOMIT: "Fast!<br/>Weiter würgen!",
+            DART_OUT: "Hinterlistig!<br/>Weiter so!",
+            SCRATCH_CHAIR: "Genial!<br/>Weiter kratzen!",
+            KNOCK_ITEMS: "Gut!<br/>Weiter stoßen!",
+            PAW_WATER: "Erfrischend!<br/>Nochmal!",
+            SHOW_BELLY_TRAP: "Eine Augenweide!<br/>Nicht nachlassen!"
         },
         bindings: {
             ":el": {
@@ -21790,7 +21790,7 @@ const wR = je.View.extend({
         }
     }),
     MR = `<div class="clamp">
-    <p class="info">This task can\u2019t start without helpers. Yell at your family to join you.</br>Or you can leave this task by tapping the X.</p>
+    <p class="info">Diese Aufgabe kann ohne Helfer nicht beginnen. Schreie deine Familie an, damit sie dir hilft.<br>Oder verlasse diese Aufgabe, indem du auf das x drückst.</p>
 </div>
 <button class="leave"></button>
 <div class="instructions-container">
@@ -21834,10 +21834,10 @@ const wR = je.View.extend({
     }),
     IR = `<div class="scrollable">
     <div class="clamp">
-        <div class="info">This task can't start until everyone is here.</div>
-        <div class="waiting">Waiting for:</div>
+        <div class="info">Diese Aufgabe kann erst starten, wenn jeder hier ist.</div>
+        <div class="waiting">Warte auf:</div>
         <div class="players"></div>
-        <div class="info">Guilt these family members into joining!</div>
+        <div class="info">Zwinge diese Familienmitglieder dazu, sich anzuschließen!</div>
     </div>
 </div>
 <button class="leave"></button>
@@ -21891,7 +21891,7 @@ const wR = je.View.extend({
             })
         }
     }),
-    UR = `<p>THE HOUSE IS ON FIRE!</p>
+    UR = `<p>DAS HAUS STEHT IN FLAMMEN!</p>
 <div class="starter"></div>
 <div class="fixer"></div>`,
     FR = je.View.extend({
@@ -21902,13 +21902,13 @@ const wR = je.View.extend({
             ".starter": {
                 observe: "playerThatCausedEmergency",
                 onGet(t) {
-                    return t ? `${t.name} selfish action caused it` : "BUG: NO PLAYER CAUSED THIS WHY?"
+                    return t ? `Das egoistische Verhalten von ${t.name} hat diesen Notfall verursacht` : "BUG: NO PLAYER CAUSED THIS WHY? IST HALT SO, REG DICH AB"
                 }
             },
             ".fixer": {
                 observe: "captain",
                 onGet(t) {
-                    return `${t.name} has to fix it`
+                    return `${t.name} muss das in Ordnung bringen`
                 }
             }
         },
@@ -23944,119 +23944,119 @@ const Jy = {
             tapsRequired: 25,
             waitInMs: 450,
             scene: "AudienceSpawnEatBugs",
-            successTitle: "So helpful!",
-            successText: "You deserve a delicious treat"
+            successTitle: "So hilfreich!",
+            successText: "Da verdient jemand ein Leckerli"
         },
         POSE_FOR_PIC: {
             state: "HoldMechanic",
             durationInMs: 1e4,
             scene: "AudienceSpawnPoseForPic",
-            successTitle: "Too cute!",
-            successText: "Someone's gotta post these pics"
+            successTitle: "So niedlich!",
+            successText: "Jemand muss diese Bilder posten"
         },
         SHOW_BELLY: {
             state: "RotateMechanic",
             direction: "CLOCKWISE",
             rotationsInDeg: 9e3,
             scene: "AudienceSpawnShowBelly",
-            successTitle: "So fluffy!",
-            successText: "You earned a nice belly rub"
+            successTitle: "So flauschig!",
+            successText: "Da hat sich jemand eine Streicheleinheit verdient"
         },
         SHOW_CLAWS: {
             state: "HoldMechanic",
             durationInMs: 1e4,
             scene: "AudienceSpawnShowClaws",
-            successTitle: "So patient!",
-            successText: "Now the family can clip your claws"
+            successTitle: "So geduldig!",
+            successText: "Jetzt kann die Familie deine Krallen schneiden"
         },
         FIGHT_VACUUM: {
             state: "TapResultingMechanic",
             tapsRequired: 25,
             waitInMs: 450,
             scene: "AudienceSpawnFightVacuum",
-            successTitle: "You broke the vacuum!",
-            successText: "Now someone has to get it fixed"
+            successTitle: "Der Staubsauger ist Schrott!",
+            successText: "Jetzt muss ihn jemand reparieren lassen"
         },
         DESTROY_LITTER: {
             state: "TapResultingMechanic",
             tapsRequired: 35,
             waitInMs: 250,
             scene: "AudienceSpawnDestroyLitter",
-            successTitle: "Big mess!",
-            successText: "Now someone has to sweep it up"
+            successTitle: "Großes Chaos!",
+            successText: "Jetzt muss das jemand aufräumen"
         },
         LAY_ON_LAPTOP: {
             state: "HoldMechanic",
             durationInMs: 1e4,
             scene: "AudienceSpawnLayOnLaptop",
-            successTitle: "You claimed the laptop!",
-            successText: "It will take a mighty shove to move you"
+            successTitle: "Der Laptop ist in deinem Besitz!",
+            successText: "Jetzt braucht es einen gewaltigen Schubs, um dich davon runterzukriegen"
         },
         VOMIT: {
             state: "TapResultingMechanic",
             tapsRequired: 35,
             waitInMs: 250,
             scene: "AudienceSpawnVomit",
-            successTitle: "You puked!",
-            successText: "Now someone has to clean it up"
+            successTitle: "Du hast dich übergeben!",
+            successText: "Jetzt muss das jemand aufwischen"
         },
         DART_OUT: {
             state: "TapResultingMechanic",
             tapsRequired: 35,
             waitInMs: 250,
             scene: "AudienceSpawnDartOut",
-            successTitle: "You escaped!",
-            successText: "Now the family has to find you"
+            successTitle: "Du bist weggelaufen!",
+            successText: "Jetzt muss die Familie dich finden"
         },
         SCRATCH_CHAIR: {
             state: "TapResultingMechanic",
             tapsRequired: 35,
             waitInMs: 250,
             scene: "AudienceSpawnScratchChair",
-            successTitle: "Chair ruined!",
-            successText: "Someone's definitely going to scold you for this"
+            successTitle: "Stuhl zerstört!",
+            successText: "Jetzt wird dich garantiert jemand ausschimpfen"
         },
         KNOCK_ITEMS: {
             state: "TapResultingMechanic",
             tapsRequired: 35,
             waitInMs: 250,
             scene: "AudienceSpawnKnockItems",
-            successTitle: "You showed that crap who's boss!",
-            successText: "Now someone has to pick up your mess"
+            successTitle: "Du hast diesem Schrott gezeigt, wer hier der Boss ist!",
+            successText: "Jetzt muss jemand deine Unordnung wegräumen"
         },
         PAW_WATER: {
             state: "HoldMechanic",
             durationInMs: 1e4,
             scene: "AudienceSpawnPawWater",
-            successTitle: "Your water now!",
-            successText: "Someone has to fill a new glass if they want their own"
+            successTitle: "Dein Wasser und zwar dalli!",
+            successText: "Jetzt muss sich jemand ein neues Glas auffüllen"
         },
         SHOW_BELLY_TRAP: {
             state: "RotateMechanic",
             direction: "CLOCKWISE",
             rotationsInDeg: 9e3,
             scene: "AudienceSpawnShowBelly",
-            successTitle: "Your trap is set!",
-            successText: "When the family tries to pet you, they'll get a surprise scratch"
+            successTitle: "Falle bereit!",
+            successText: "Versucht die Familie dich zu streicheln, macht sie überraschende Bekanntschaft mit deinen Krallen"
         }
     },
     JD = {
         ADULT: {
             state: "ScrubMechanic",
-            instructions: "Fuss at <NAME> for being selfish",
+            instructions: "Ermahne <NAME> für das egoistische Verhalten",
             distance: "LONG",
             scene: "CancelerAdult"
         },
         TEEN: {
             state: "RotateMechanic",
-            instructions: "Roll your eyes at <NAME> to make them feel bad",
+            instructions: "Verdrehe deine Augen, um bei <NAME> schlechtes Gewissen auszulösen",
             direction: "CLOCKWISE",
             rotationsInDeg: 6480,
             scene: "CancelerTeen"
         },
         CHILD: {
             state: "TapResultingMechanic",
-            instructions: "Throw a tantrum because <NAME> is being selfish",
+            instructions: "Bekomme einen Wutanfall, weil <NAME> egoistisch ist",
             tapsRequired: 20,
             waitInMs: 250,
             scene: "CancelerChild"
@@ -24098,7 +24098,7 @@ const Jy = {
         className: "audience-success",
         template: ke.template(ZD),
         model: new ze.Model,
-        waitingText: ["Waiting for<br/>the next<br/>opurrrtunity", "Taking a little<br/>cat nap", "Nothing to do<br/>right meow", "Mischief<br/>is on a<br/>temporary paws", "Wait fur<br/>a moment", "More tasks<br/>just a<br/>whisker away"],
+        waitingText: ["Warte auf<br/>die nächste<br/>Miauglichkeit", "Zeit für einen<br/>Schönheitsschlaf", "Miaugenblicklich<br/>nichts zu tun", "Unheil muss<br/>kurz seine<br/>Pfoten ausstrecken", "Kurze Pause<br/>am Kratzbaum", "Mehr Aufgaben<br/>nur einen<br/>Katzensprung entfernt"],
         bindings: {
             ".waiting": {
                 observe: "waitingText",
@@ -24149,8 +24149,8 @@ const Jy = {
             }, 5);
             const t = this.model.get("taskResult"),
                 e = Jy[t.id] || {
-                    successTitle: "You did it!",
-                    successText: "Now the family has to deal with your shenanigans."
+                    successTitle: "Geschafft!",
+                    successText: "Jetzt muss sich die Familie mit deinem Blödsinn herumschlagen"
                 };
             this.model.set({
                 waitingText: ke.sample(this.waitingText),
@@ -24160,7 +24160,7 @@ const Jy = {
         }
     }),
     $D = `
-<p class="prompt">This Week's Challenge</p>
+<p class="prompt">Herausforderung der Woche</p>
 <div class="stone-panel">
     <div class="grade"></div>
     <p class="title title-outline"></p>
@@ -24168,10 +24168,10 @@ const Jy = {
 </div>
 <div class="stone-buttons">
     <div class="button-wrapper">
-        <button class="stone-button prev"><span>previous<br/>episode</span></button>
+        <button class="stone-button prev"><span>Vorherige<br/>Folge</span></button>
     </div>
     <div class="button-wrapper">
-        <button class="stone-button next"><span>next<br/>episode</span></button>
+        <button class="stone-button next"><span>Nächste<br/>Folge</span></button>
     </div>
 </div>
 `,
@@ -24271,7 +24271,7 @@ const Jy = {
         <div id="characters" class="charactersContainer"></div>
     </div>
     <div id="artifactId" class="artifactContainer text">
-        <a id="artifactLink" aria-label="Visit the Gallery" class="artifactLink" target="_blank">
+        <a id="artifactLink" aria-label="Besuche die Galerie" class="artifactLink" target="_blank">
             <button id="artifactButton" class="artifactButton"></button>
         </a>
     </div>
@@ -24354,7 +24354,7 @@ const Jy = {
     oS = `<div class="scrollable">
     <div class="clamp">
         <div class="dialed"></div>
-        <button class="clear">CLEAR</button>
+        <button class="clear">LÖSCHEN</button>
         <div class="handset">
             <button class="key" data-dial="1"><div class="key-move">1</div></button>
             <button class="key" data-dial="2"><div class="key-move">2</div></button>
@@ -24369,347 +24369,347 @@ const Jy = {
             <button class="key" data-dial="0"><div class="key-move">0</div></button>
             <button class="key key-pound" data-dial="#"><div class="key-move">#</div></button>
         </div>
-        <button class="button phonebook-button"><div class="icon"></div>OPEN PHONEBOOK</button>
+        <button class="button phonebook-button"><div class="icon"></div>TELEFONBUCH ÖFFNEN</button>
     </div>
 </div>
 <div class="phonebook">
     <div class="listings">
-        <h2>The Town Phonebook</h2>
-        <h3>A</h3>
-        <dl class="listing"><dt>Abram Vorman</dt><dd>791-9666</dd></dl>
-        <dl class="listing"><dt>Act Like You've Been There Drama School</dt><dd>979-5678</dd></dl>
-        <dl class="listing"><dt>Adrian Goof</dt><dd>222-2288</dd></dl>
-        <dl class="listing"><dt>Agatha Coffin</dt><dd>718-6543</dd></dl>
-        <dl class="listing"><dt>Agnes Longbottom</dt><dd>666-9898</dd></dl>
-        <dl class="listing"><dt>Aileen Twaddle</dt><dd>431-9426</dd></dl>
-        <dl class="listing"><dt>Ajay Gilderoy, MD</dt><dd>537-6976</dd></dl>
-        <dl class="listing"><dt>Alejandra Raisinette</dt><dd>929-1066</dd></dl>
-        <dl class="listing"><dt>Alfred J. Charon Post Office</dt><dd>642-3217</dd></dl>
-        <dl class="listing"><dt>All-Is-Frost Ice Cream</dt><dd>456-4567</dd></dl>
-        <dl class="listing"><dt>Amelia Smelting-Foxery</dt><dd>606-5678</dd></dl>
-        <dl class="listing"><dt>Angry Geese Park</dt><dd>373-7322</dd></dl>
-        <dl class="listing"><dt>Animal Control</dt><dd>885-6663</dd></dl>
-        <dl class="listing"><dt>Anne's House of Door Keys</dt><dd>981-2681</dd></dl>
-        <dl class="listing"><dt>Antenna Rippers Car Wash</dt><dd>822-7788</dd></dl>
-        <dl class="listing"><dt>Armando Quixote</dt><dd>543-3421</dd></dl>
-        <dl class="listing"><dt>Artie Clickman</dt><dd>266-6789</dd></dl>
-        <dl class="listing"><dt>Ashok Kumarvelous</dt><dd>310-1983</dd></dl>
-        <dl class="listing"><dt>Aspen Fantismo</dt><dd>210-2223</dd></dl>
-        <dl class="listing"><dt>Aster Roth Train Station</dt><dd>987-3000</dd></dl>
-        <dl class="listing"><dt>Aunt Flemm</dt><dd>881-5432</dd></dl>
-        <dl class="listing"><dt>Aunt Hecuba</dt><dd>210-5999</dd></dl>
-        <h3>B</h3>
-        <dl class="listing"><dt>Bacon Barn, The</dt><dd>567-6789</dd></dl>
-        <dl class="listing"><dt>Baskets of Robins</dt><dd>969-3587</dd></dl>
-        <dl class="listing"><dt>Bass Instincts Guitar Lessons</dt><dd>456-6229</dd></dl>
-        <dl class="listing"><dt>Ben Jacobs</dt><dd>210-7822</dd></dl>
-        <dl class="listing"><dt>Berdie Fabble</dt><dd>973-5040</dd></dl>
-        <dl class="listing"><dt>Beshave Yourself</dt><dd>981-2681</dd></dl>
-        <dl class="listing"><dt>BigBand Internet Service</dt><dd>849-8765</dd></dl>
-        <dl class="listing"><dt>Big Rock Astronomical Observatory</dt><dd>222-5577</dd></dl>
-        <dl class="listing"><dt>Big Snake Pond</dt><dd>252-2345</dd></dl>
-        <dl class="listing"><dt>Bike Milder</dt><dd>464-8769</dd></dl>
-        <dl class="listing"><dt>Bill's Bankrupt Independent Theater</dt><dd>955-6665</dd></dl>
-        <dl class="listing"><dt>Bobo\u2019s: Home of the Thrown Kebabs</dt><dd>987-8484</dd></dl>
-        <dl class="listing"><dt>Bob Robson\u2019s Single-Use Autos</dt><dd>789-5432</dd></dl>
-        <dl class="listing"><dt>Boniface Cheebles</dt><dd>738-4666</dd></dl>
-        <dl class="listing"><dt>Bonk Crockley</dt><dd>495-0123</dd></dl>
-        <dl class="listing"><dt>Brassy Brenda's Trumpet Lessons</dt><dd>363-5678</dd></dl>
-        <dl class="listing"><dt>Brenda Yanluo</dt><dd>571-5550</dd></dl>
-        <dl class="listing"><dt>Broken Seat Cinemas</dt><dd>567-8888</dd></dl>
-        <dl class="listing"><dt>Bud Needletoes</dt><dd>432-0666</dd></dl>
-        <dl class="listing"><dt>Bug-B-Bye-Bye Exterminators</dt><dd>502-4242</dd></dl>
-        <dl class="listing"><dt>Build-A-Bra-Workshop</dt><dd>858-0099</dd></dl>
-        <dl class="listing"><dt>Burpie Hale</dt><dd>366-8934</dd></dl>
-        <dl class="listing"><dt>Butter Trough, The</dt><dd>965-0000</dd></dl>
-        <dl class="listing"><dt>Buy 'n Food</dt><dd>863-1010</dd></dl>
-        <dl class="listing"><dt>By-The-Pound Buffet</dt><dd>678-4444</dd></dl>
-        <h3>C</h3>
-        <dl class="listing"><dt>Cabbage Thompson Jr.</dt><dd>414-6555</dd></dl>
-        <dl class="listing"><dt>Caked n' Loaded</dt><dd>666-2345</dd></dl>
-        <dl class="listing"><dt>Calgary Chumprints</dt><dd>444-1234</dd></dl>
-        <dl class="listing"><dt>Can-Do Kendo</dt><dd>876-2220</dd></dl>
-        <dl class="listing"><dt>Carmella Whoopingcough</dt><dd>328-5184</dd></dl>
-        <dl class="listing"><dt>Carnival Wilson</dt><dd>503-9666</dd></dl>
-        <dl class="listing"><dt>Car Side, The</dt><dd>320-3339</dd></dl>
-        <dl class="listing"><dt>Cash 4 Gold 4 Seeds 4 Less</dt><dd>444-3894</dd></dl>
-        <dl class="listing"><dt>Cassiel Seraph</dt><dd>706-3456</dd></dl>
-        <dl class="listing"><dt>Cave O\u2019 Savings</dt><dd>432-1554</dd></dl>
-        <dl class="listing"><dt>Cecelia Baggage</dt><dd>234-2130</dd></dl>
-        <dl class="listing"><dt>Ceramic Panic</dt><dd>931-2929</dd></dl>
-        <dl class="listing"><dt>Chap-Pier-One</dt><dd>543-2220</dd></dl>
-        <dl class="listing"><dt>Chase McClure</dt><dd>939-5552</dd></dl>
-        <dl class="listing"><dt>Chatty Carl</dt><dd>938-8765</dd></dl>
-        <dl class="listing"><dt>Chib Spittleton</dt><dd>222-2226</dd></dl>
-        <dl class="listing"><dt>Chikn 4 U</dt><dd>678-8881</dd></dl>
-        <dl class="listing"><dt>Chili Fountain, The</dt><dd>789-0001</dd></dl>
-        <dl class="listing"><dt>Choir Beware Singing Lessons</dt><dd>376-4440</dd></dl>
-        <dl class="listing"><dt>Cirque du Squirrel</dt><dd>595-4554</dd></dl>
-        <dl class="listing"><dt>City Hall</dt><dd>987-6543</dd></dl>
-        <dl class="listing"><dt>C.J. O\u2019Ballyhoo\u2019s American Eatery</dt><dd>535-7777</dd></dl>
-        <dl class="listing"><dt>Clearance-Meat Jerky Club</dt><dd>787-7740</dd></dl>
-        <dl class="listing"><dt>Cliff Cholera</dt><dd>319-6057</dd></dl>
-        <dl class="listing"><dt>Clora Head</dt><dd>982-0222</dd></dl>
-        <dl class="listing"><dt>Cloverton's Rec Center</dt><dd>321-8666</dd></dl>
-        <dl class="listing"><dt>Container Contentment</dt><dd>765-2222</dd></dl>
-        <dl class="listing"><dt>Contemporary Art Museum For Dads</dt><dd>984-1234</dd></dl>
-        <dl class="listing"><dt>Coral\u2019s Jr. Seafood</dt><dd>712-1234</dd></dl>
-        <dl class="listing"><dt>Corduroy P. Munke</dt><dd>321-8593</dd></dl>
-        <dl class="listing"><dt>Corky Zigzag, MD</dt><dd>987-0123</dd></dl>
-        <dl class="listing"><dt>Corncob McBilge</dt><dd>917-4751</dd></dl>
-        <dl class="listing"><dt>Cornwallace Stickle</dt><dd>750-1234</dd></dl>
-        <dl class="listing"><dt>Coward Appleton</dt><dd>446-4949</dd></dl>
-        <dl class="listing"><dt>Coyo Kaleido</dt><dd>672-6868</dd></dl>
-        <dl class="listing"><dt>Craig Jacobs</dt><dd>719-0044</dd></dl>
-        <dl class="listing"><dt>Crimp Beardbody</dt><dd>406-8068</dd></dl>
-        <dl class="listing"><dt>Cyrus McNabbers</dt><dd>780-8436</dd></dl>
-        <h3>D</h3>
-        <dl class="listing"><dt>Daphne Ornery</dt><dd>409-2876</dd></dl>
-        <dl class="listing"><dt>Daredare Si</dt><dd>845-9876</dd></dl>
-        <dl class="listing"><dt>Decent Kitty Care</dt><dd>937-4999</dd></dl>
-        <dl class="listing"><dt>Delilah Hucksuckle</dt><dd>765-8451</dd></dl>
-        <dl class="listing"><dt>Dellbert Mints</dt><dd>999-5552</dd></dl>
-        <dl class="listing"><dt>Devils Family</dt><dd>552-9481</dd></dl>
-        <dl class="listing"><dt>Dirt Pile Park</dt><dd>543-3939</dd></dl>
-        <dl class="listing"><dt>DJ Mixmaster Max Mustermann</dt><dd>750-1116</dd></dl>
-        <dl class="listing"><dt>Dog & Cat Repair</dt><dd>439-0000</dd></dl>
-        <dl class="listing"><dt>Donna Chaffington's Dance Studio</dt><dd>737-9876</dd></dl>
-        <dl class="listing"><dt>Doug\u2019s Yoga and Bait</dt><dd>432-8222</dd></dl>
-        <dl class="listing"><dt>Drawing-A-Blank Art Supplies</dt><dd>372-7799</dd></dl>
-        <dl class="listing"><dt>Dr. Meowski DVM</dt><dd>432-7069</dd></dl>
-        <dl class="listing"><dt>Dumpy\u2019s Discount Cargo Pants</dt><dd>567-1356</dd></dl>
-        <h3>E</h3>
-        <dl class="listing"><dt>Edith Wickerbasket</dt><dd>898-2525</dd></dl>
-        <dl class="listing"><dt>Eerie Acres Retirement Home</dt><dd>527-5550</dd></dl>
-        <dl class="listing"><dt>Elfrieda Mulberry</dt><dd>679-6870</dd></dl>
-        <dl class="listing"><dt>Emily's Slightly Corrupted Gems</dt><dd>777-0999</dd></dl>
-        <dl class="listing"><dt>Emmaline Morris</dt><dd>876-2220</dd></dl>
-        <dl class="listing"><dt>E.Roy Finley, DDS</dt><dd>965-8104</dd></dl>
-        <dl class="listing"><dt>Ezekiel Horsefeather</dt><dd>543-4040</dd></dl>
-        <h3>F</h3>
-        <dl class="listing"><dt>Fanciful Aunt Home Decor</dt><dd>345-7018</dd></dl>
-        <dl class="listing"><dt>Fancy Pants Cinemas</dt><dd>389-1450</dd></dl>
-        <dl class="listing"><dt>Fedora Jenkins</dt><dd>317-9933</dd></dl>
-        <dl class="listing"><dt>Ferd Parkington</dt><dd>424-3076</dd></dl>
-        <dl class="listing"><dt>Ferguson's Discount Piano Lessons</dt><dd>444-0123</dd></dl>
-        <dl class="listing"><dt>Fine Aid Pharmacy</dt><dd>795-5678</dd></dl>
-        <dl class="listing"><dt>Fix-Is-In Construction, The</dt><dd>876-8765</dd></dl>
-        <dl class="listing"><dt>Flint Pemples</dt><dd>545-6543</dd></dl>
-        <dl class="listing"><dt>Florence Butt</dt><dd>321-3737</dd></dl>
-        <dl class="listing"><dt>Foggy Lagoon Park</dt><dd>434-1234</dd></dl>
-        <dl class="listing"><dt>Forrest Smallmouth</dt><dd>543-4321</dd></dl>
-        <dl class="listing"><dt>Fragrant Phil's Taxi Service</dt><dd>987-2224</dd></dl>
-        <dl class="listing"><dt>Frank Spongeman, MD</dt><dd>923-0001</dd></dl>
-        <dl class="listing"><dt>Fulano de Tallgrass</dt><dd>678-6666</dd></dl>
-        <h3>G</h3>
-        <dl class="listing"><dt>Gaberdine Joey: Aussie Kids Clothing, The</dt><dd>789-6271</dd></dl>
-        <dl class="listing"><dt>Gabriel Tootlebloom</dt><dd>375-4539</dd></dl>
-        <dl class="listing"><dt>Gale Tiddlywinks</dt><dd>310-9876</dd></dl>
-        <dl class="listing"><dt>Garland McRae</dt><dd>696-4449</dd></dl>
-        <dl class="listing"><dt>Gary Tengu</dt><dd>456-4444</dd></dl>
-        <dl class="listing"><dt>Gas N\u2019 Sushi</dt><dd>565-4443</dd></dl>
-        <dl class="listing"><dt>Gears N Beers Autoshop and Brewery</dt><dd>678-2512</dd></dl>
-        <dl class="listing"><dt>Gently Used Produce</dt><dd>743-3535</dd></dl>
-        <dl class="listing"><dt>Gertrude Dixie</dt><dd>765-7744</dd></dl>
-        <dl class="listing"><dt>Gijs F Unas III</dt><dd>730-5749</dd></dl>
-        <dl class="listing"><dt>Ginny St. Porridge</dt><dd>777-0999</dd></dl>
-        <dl class="listing"><dt>Gnute Ipswitch</dt><dd>210-9292</dd></dl>
-        <dl class="listing"><dt>Gortnoy Cornmedley</dt><dd>486-3788</dd></dl>
-        <dl class="listing"><dt>Greasy Fork, The</dt><dd>262-5757</dd></dl>
-        <dl class="listing"><dt>Gretta Grisspiddler</dt><dd>323-0444</dd></dl>
-        <dl class="listing"><dt>Gristle Spot, The</dt><dd>939-1234</dd></dl>
-        <h3>H</h3>
-        <dl class="listing"><dt>Halley Jacobs</dt><dd>598-0404</dd></dl>
-        <dl class="listing"><dt>Ham By The Foot</dt><dd>247-1082</dd></dl>
-        <dl class="listing"><dt>Hand Turkey Art Museum</dt><dd>934-7654</dd></dl>
-        <dl class="listing"><dt>Happy Bowel Vegan Buffet, The</dt><dd>765-5049</dd></dl>
-        <dl class="listing"><dt>Happy Hamsmanning</dt><dd>504-1333</dd></dl>
-        <dl class="listing"><dt>Happy Scales Lizard Salon</dt><dd>765-3210</dd></dl>
-        <dl class="listing"><dt>Harvey Nutts</dt><dd>627-9238</dd></dl>
-        <dl class="listing"><dt>Heapin\u2019 Heaps o\u2019 Heaps</dt><dd>418-5000</dd></dl>
-        <dl class="listing"><dt>Heck Pancake</dt><dd>237-9000</dd></dl>
-        <dl class="listing"><dt>Holly T. Small</dt><dd>931-2929</dd></dl>
-        <dl class="listing"><dt>Horace Oaf</dt><dd>213-6363</dd></dl>
-        <h3>I</h3>
-        <dl class="listing"><dt>Ignacio Firestarter</dt><dd>525-6008</dd></dl>
-        <dl class="listing"><dt>Imp Fancy</dt><dd>444-7722</dd></dl>
-        <dl class="listing"><dt>Infernal Affairs</dt><dd>722-1333</dd></dl>
-        <dl class="listing"><dt>Insect Relocation Services</dt><dd>567-6999</dd></dl>
-        <dl class="listing"><dt>International Museum of Corn Dogs, The</dt><dd>423-7676</dd></dl>
-        <dl class="listing"><dt>Investinal Fortitude Savings and Loan</dt><dd>333-9988</dd></dl>
-        <dl class="listing"><dt>Isaac Jephcots</dt><dd>636-3333</dd></dl>
-        <dl class="listing"><dt>Ivy Trickle</dt><dd>565-2226</dd></dl>
-        <h3>J</h3>
-        <dl class="listing"><dt>Janet Borgleman, DDS</dt><dd>321-8765</dd></dl>
-        <dl class="listing"><dt>Jean Duponte Cristo</dt><dd>222-9876</dd></dl>
-        <dl class="listing"><dt>Jeff \u201CGeoff\u201D Jefferstein</dt><dd>710-1111</dd></dl>
-        <dl class="listing"><dt>Jeff Hansen</dt><dd>764-9999</dd></dl>
-        <dl class="listing"><dt>Jen\u2019s Vegan Bathmats</dt><dd>469-5599</dd></dl>
-        <dl class="listing"><dt>Jim James Jonatheux, DDS</dt><dd>678-8281</dd></dl>
-        <dl class="listing"><dt>Jimminy Myron Crankenfitz</dt><dd>948-7779</dd></dl>
-        <dl class="listing"><dt>Jimmy Duranto</dt><dd>343-4567</dd></dl>
-        <dl class="listing"><dt>Joanna Custardio</dt><dd>888-4321</dd></dl>
-        <dl class="listing"><dt>John Boring</dt><dd>262-1010</dd></dl>
-        <dl class="listing"><dt>John Kangaroo</dt><dd>234-8270</dd></dl>
-        <dl class="listing"><dt>Johnny Gumlately</dt><dd>876-9999</dd></dl>
-        <dl class="listing"><dt>John\u2019s Irregular Casket Shop</dt><dd>555-1747</dd></dl>
-        <dl class="listing"><dt>J. \u201COnion\u201D Crotchswaddle</dt><dd>909-2214</dd></dl>
-        <dl class="listing"><dt>Jos Joskens Yo-Yo's</dt><dd>987-1111</dd></dl>
-        <dl class="listing"><dt>Just Old Calendars</dt><dd>242-3636</dd></dl>
-        <h3>K</h3>
-        <dl class="listing"><dt>Karen\u2019s Non-Possessed Doll Shop</dt><dd>663-8880</dd></dl>
-        <dl class="listing"><dt>Kate Stark</dt><dd>376-4440</dd></dl>
-        <dl class="listing"><dt>Kayla Swift</dt><dd>210-2222</dd></dl>
-        <dl class="listing"><dt>Kelly Paleczny</dt><dd>321-8666</dd></dl>
-        <dl class="listing"><dt>Kevin Pullman, DDS</dt><dd>979-7575</dd></dl>
-        <dl class="listing"><dt>Kip Ortiz</dt><dd>678-6789</dd></dl>
-        <dl class="listing"><dt>Kiss Pista's Pistachio Kisses</dt><dd>959-3456</dd></dl>
-        <dl class="listing"><dt>Kurt I. Mukha</dt><dd>771-4441</dd></dl>
-        <h3>L</h3>
-        <dl class="listing"><dt>Lacey\u2019s Tablecloths & Gowns</dt><dd>765-7222</dd></dl>
-        <dl class="listing"><dt>Lefty\u2019s Unpaired Gloves</dt><dd>567-4445</dd></dl>
-        <dl class="listing"><dt>Lem N. Forlolz</dt><dd>737-9876</dd></dl>
-        <dl class="listing"><dt>Leon Fishbucket</dt><dd>444-3335</dd></dl>
-        <dl class="listing"><dt>Leroy Bowditch</dt><dd>313-7333</dd></dl>
-        <dl class="listing"><dt>Lightly Stolen Cars</dt><dd>992-0005</dd></dl>
-        <dl class="listing"><dt>Li Kumari</dt><dd>454-4321</dd></dl>
-        <dl class="listing"><dt>Lil \u201CLi\u2019l Goober\u201D Goober</dt><dd>288-4444</dd></dl>
-        <dl class="listing"><dt>Little Lord Little League Fields</dt><dd>234-3333</dd></dl>
-        <dl class="listing"><dt>Logan Lee</dt><dd>204-6660</dd></dl>
-        <dl class="listing"><dt>Luella Bedwetter</dt><dd>496-4567</dd></dl>
-        <dl class="listing"><dt>Luke Poodtootle</dt><dd>660-8888</dd></dl>
-        <dl class="listing"><dt>Lulabelle Gertz-Smalley</dt><dd>432-9819</dd></dl>
-        <h3>M</h3>
-        <dl class="listing"><dt>Mabel Rustbucket</dt><dd>919-8789</dd></dl>
-        <dl class="listing"><dt>Madam Harriet's Psychic Hotline</dt><dd>948-6565</dd></dl>
-        <dl class="listing"><dt>Manny Manananggal</dt><dd>484-3344</dd></dl>
-        <dl class="listing"><dt>Man Vanderslice</dt><dd>965-8866</dd></dl>
-        <dl class="listing"><dt>Marjorie Humid</dt><dd>734-7111</dd></dl>
-        <dl class="listing"><dt>Marty and the Fuzz Drive-Time Radio</dt><dd>483-7654</dd></dl>
-        <dl class="listing"><dt>Matilda Lampfoot</dt><dd>765-7779</dd></dl>
-        <dl class="listing"><dt>Melon Ballerz</dt><dd>682-0000</dd></dl>
-        <dl class="listing"><dt>Mengano Wu</dt><dd>765-8882</dd></dl>
-        <dl class="listing"><dt>Mid-life Crisis Sports Cars</dt><dd>333-0777</dd></dl>
-        <dl class="listing"><dt>Miles of Aisles Discount Market</dt><dd>754-1152</dd></dl>
-        <dl class="listing"><dt>Mind Your Own Beeswax Candlemaking Studio</dt><dd>712-8889</dd></dl>
-        <dl class="listing"><dt>Misc. Rib Shack</dt><dd>259-1112</dd></dl>
-        <dl class="listing"><dt>Mom Fatherman</dt><dd>757-6867</dd></dl>
-        <dl class="listing"><dt>Mordechai H. Sizzle</dt><dd>261-6543</dd></dl>
-        <dl class="listing"><dt>Morten Menigmandible</dt><dd>631-5555</dd></dl>
-        <dl class="listing"><dt>Mostly No-Kill Pest Removal</dt><dd>540-2288</dd></dl>
-        <dl class="listing"><dt>Murry Bruin</dt><dd>886-3331</dd></dl>
-        <dl class="listing"><dt>Museum of \u201CArt\u201D, The</dt><dd>910-5959</dd></dl>
-        <dl class="listing"><dt>Museum of Benches, The</dt><dd>228-8909</dd></dl>
-        <dl class="listing"><dt>Museum of Clever Bumper Stickers</dt><dd>345-9999</dd></dl>
-        <dl class="listing"><dt>Museum of Potato Chips That Look Like Things</dt><dd>880-3300</dd></dl>
-        <dl class="listing"><dt>Museum of Science and Hearsay</dt><dd>306-3333</dd></dl>
-        <dl class="listing"><dt>Mysterious Crevice Park</dt><dd>272-4237</dd></dl>
-        <dl class="listing"><dt>Mystic Philip's High Quality Medium Service</dt><dd>730-7774</dd></dl>
-        <h3>N</h3>
-        <dl class="listing"><dt>Nan D. Bear</dt><dd>966-2222</dd></dl>
-        <dl class="listing"><dt>National Aeronautics and Space Administration</dt><dd>567-5642</dd></dl>
-        <dl class="listing"><dt>Nine Circles Circular</dt><dd>636-6688</dd></dl>
-        <dl class="listing"><dt>Nothing But Toilet Seats</dt><dd>619-7878</dd></dl>
-        <h3>O</h3>
-        <dl class="listing"><dt>Old Bones Creamery</dt><dd>987-7079</dd></dl>
-        <dl class="listing"><dt>Old Raisin Winery</dt><dd>234-3444</dd></dl>
-        <dl class="listing"><dt>Ol\u2019 Hambone\u2019s Pig Petting Zoo</dt><dd>539-3555</dd></dl>
-        <dl class="listing"><dt>Omnipresent Studios</dt><dd>379-1444</dd></dl>
-        <h3>P</h3>
-        <dl class="listing"><dt>Party Township</dt><dd>208-9494</dd></dl>
-        <dl class="listing"><dt>Pay-By-The-Minute Roller Coasters</dt><dd>345-7711</dd></dl>
-        <dl class="listing"><dt>Penny Plinkstein</dt><dd>937-3331</dd></dl>
-        <dl class="listing"><dt>PensCrafters 1-Hour Pens</dt><dd>949-5454</dd></dl>
-        <dl class="listing"><dt>Pepa Z. Depa</dt><dd>579-1177</dd></dl>
-        <dl class="listing"><dt>Pepper-Phonies Vegan Pizza</dt><dd>646-5555</dd></dl>
-        <dl class="listing"><dt>Pet Vet, The</dt><dd>654-5555</dd></dl>
-        <dl class="listing"><dt>Pho-getta Bout It!</dt><dd>943-5432</dd></dl>
-        <dl class="listing"><dt>Pinco Pallino's Pastry Palace</dt><dd>656-4321</dd></dl>
-        <dl class="listing"><dt>Pizza Fun Time</dt><dd>678-8883</dd></dl>
-        <dl class="listing"><dt>Planetarium of the Apes</dt><dd>567-7000</dd></dl>
-        <dl class="listing"><dt>Poopsie Gumball</dt><dd>345-9933</dd></dl>
-        <dl class="listing"><dt>Poorly Labelled Salt and/or Sugar Supply</dt><dd>838-4422</dd></dl>
-        <dl class="listing"><dt>Popsicle Stick Louvre</dt><dd>626-6818</dd></dl>
-        <dl class="listing"><dt>Porch Debris Warehouse</dt><dd>444-5389</dd></dl>
-        <dl class="listing"><dt>Pretentious Home & Yard</dt><dd>350-0123</dd></dl>
-        <dl class="listing"><dt>Priya Gildong</dt><dd>778-4466</dd></dl>
-        <dl class="listing"><dt>Psychic Enemies Network</dt><dd>678-3131</dd></dl>
-        <h3>Q</h3>
-        <dl class="listing"><dt>Quik Fix-A-Vac</dt><dd>471-3210</dd></dl>
-        <dl class="listing"><dt>Quite-A-Repair</dt><dd>465-2222</dd></dl>
-        <h3>R</h3>
-        <dl class="listing"><dt>Rebecca Impundulu</dt><dd>252-6694</dd></dl>
-        <dl class="listing"><dt>Ride or Don't Taxi Service</dt><dd>307-7555</dd></dl>
-        <dl class="listing"><dt>Riley Phoenix</dt><dd>654-2555</dd></dl>
-        <dl class="listing"><dt>Rivers Bank</dt><dd>274-7722</dd></dl>
-        <dl class="listing"><dt>Rob Camitti\u2019s Superfluous Cars</dt><dd>367-7154</dd></dl>
-        <dl class="listing"><dt>Rodent Capture & Rapture</dt><dd>904-8444</dd></dl>
-        <dl class="listing"><dt>Ronald Stoolback</dt><dd>456-1923</dd></dl>
-        <dl class="listing"><dt>Ryan DiGiorgi</dt><dd>444-0123</dd></dl>
-        <dl class="listing"><dt>Rye Dash: Fastest Bread in Town</dt><dd>323-0444</dd></dl>
-        <h3>S</h3>
-        <dl class="listing"><dt>Salon And Hair-Well</dt><dd>432-1554</dd></dl>
-        <dl class="listing"><dt>Samuel Raintoot</dt><dd>222-3335</dd></dl>
-        <dl class="listing"><dt>Santiago Lemontoe</dt><dd>210-8898</dd></dl>
-        <dl class="listing"><dt>Scenic Underlook</dt><dd>634-3355</dd></dl>
-        <dl class="listing"><dt>Shelby Hoddle</dt><dd>790-8811</dd></dl>
-        <dl class="listing"><dt>Sherman Lyness</dt><dd>838-5559</dd></dl>
-        <dl class="listing"><dt>Shirt-Outta-Luck Dry Cleaners</dt><dd>345-0006</dd></dl>
-        <dl class="listing"><dt>Sidney Hammockman</dt><dd>345-5111</dd></dl>
-        <dl class="listing"><dt>Slow and Steady Pigeon Messaging Service</dt><dd>976-0001</dd></dl>
-        <dl class="listing"><dt>Smarm to Table Sarcastic Grocers</dt><dd>738-1234</dd></dl>
-        <dl class="listing"><dt>Snarf & Hurl</dt><dd>577-5432</dd></dl>
-        <dl class="listing"><dt>Special Agent Normal Neighborman</dt><dd>272-4422</dd></dl>
-        <dl class="listing"><dt>Speedy Getaway Travel Agency</dt><dd>693-3399</dd></dl>
-        <dl class="listing"><dt>Spoons \u2018R We</dt><dd>345-3355</dd></dl>
-        <dl class="listing"><dt>Srednestatisticheskiy Sedans</dt><dd>210-4444</dd></dl>
-        <dl class="listing"><dt>Stad's Thawed Pre-Jawed Scrod</dt><dd>277-2227</dd></dl>
-        <dl class="listing"><dt>Steve Phlansby</dt><dd>386-5013</dd></dl>
-        <dl class="listing"><dt>Sylvester Brunch</dt><dd>282-5222</dd></dl>
-        <h3>T</h3>
-        <dl class="listing"><dt>Tad Thoodle</dt><dd>252-9974</dd></dl>
-        <dl class="listing"><dt>Take Me for a Ride Cab Co.</dt><dd>565-1333</dd></dl>
-        <dl class="listing"><dt>Teeds Wyvern</dt><dd>879-1234</dd></dl>
-        <dl class="listing"><dt>Teenage Waistline</dt><dd>654-5063</dd></dl>
-        <dl class="listing"><dt>TGIH Year-Round Halloween Depot</dt><dd>326-6190</dd></dl>
-        <dl class="listing"><dt>Three Minute Escape Rooms</dt><dd>654-9876</dd></dl>
-        <dl class="listing"><dt>Thurman Nogood</dt><dd>939-5656</dd></dl>
-        <dl class="listing"><dt>Tim Simian Chimp Mechanic</dt><dd>603-4000</dd></dl>
-        <dl class="listing"><dt>Tipsy Tune's Unsteady Autos</dt><dd>456-6229</dd></dl>
-        <dl class="listing"><dt>Toadboy's Slightly Used Reptiles</dt><dd>678-2512</dd></dl>
-        <dl class="listing"><dt>Tom Pudding</dt><dd>424-6737</dd></dl>
-        <dl class="listing"><dt>Toot Pootladder</dt><dd>678-1717</dd></dl>
-        <dl class="listing"><dt>Trent Jormbo</dt><dd>345-8886</dd></dl>
-        <dl class="listing"><dt>TV Addict's Guide</dt><dd>338-5544</dd></dl>
-        <h3>U</h3>
-        <dl class="listing"><dt>Under the Counter Pharmacy</dt><dd>637-3210</dd></dl>
-        <dl class="listing"><dt>U. Xie</dt><dd>234-3333</dd></dl>
-        <h3>V</h3>
-        <dl class="listing"><dt>Vance VanVan\u2019s Van Lot</dt><dd>293-5971</dd></dl>
-        <dl class="listing"><dt>Vardenis Pavardenis</dt><dd>345-8333</dd></dl>
-        <dl class="listing"><dt>Vestworld</dt><dd>787-1111</dd></dl>
-        <dl class="listing"><dt>Vincent Pricecheck</dt><dd>555-0003</dd></dl>
-        <dl class="listing"><dt>Vivian Stickler, DDS</dt><dd>210-2555</dd></dl>
-        <h3>W</h3>
-        <dl class="listing"><dt>Walken Clinic, The</dt><dd>567-0007</dd></dl>
-        <dl class="listing"><dt>Wang Zutano</dt><dd>242-4678</dd></dl>
-        <dl class="listing"><dt>Waterdance</dt><dd>915-1508</dd></dl>
-        <dl class="listing"><dt>Welcome to Yarnia</dt><dd>935-5511</dd></dl>
-        <dl class="listing"><dt>We 'R Toys</dt><dd>502-5678</dd></dl>
-        <dl class="listing"><dt>Wilford O\u2019Hicks</dt><dd>885-3434</dd></dl>
-        <dl class="listing"><dt>Wok This Way</dt><dd>696-0666</dd></dl>
-        <dl class="listing"><dt>Wreckin' Crew Theatre</dt><dd>399-6444</dd></dl>
-        <dl class="listing"><dt>Wylie Skidd</dt><dd>526-1947</dd></dl>
-        <h3>Y</h3>
-        <dl class="listing"><dt>Yakkin' Zack AM Radio Show</dt><dd>383-4222</dd></dl>
-        <dl class="listing"><dt>Yakkity Kayak Whitewater Rafting</dt><dd>949-1112</dd></dl>
-        <dl class="listing"><dt>Yamada Honeycomb</dt><dd>277-2227</dd></dl>
-        <dl class="listing"><dt>Yosup's To-Go Cups</dt><dd>333-0777</dd></dl>
-        <h3>Z</h3>
-        <dl class="listing"><dt>Zak Zakaryas</dt><dd>949-1112</dd></dl>
-        <dl class="listing"><dt>Zhang P\xE9rez, MD</dt><dd>841-6804</dd></dl>
-        <dl class="listing"><dt>Zippy Zip Memorial Post Office</dt><dd>987-6551</dd></dl>
-        <dl class="listing"><dt>Zuzu\u2019s Kettles</dt><dd>248-4949</dd></dl>
+        <h2>Telefonbuch der Stadt</h2>
+        <h3>A</h3> 
+        <dl class="listing"><dt>Abram Vormann</dt><dd>791-9666</dd></dl> 
+        <dl class="listing"><dt>Adrian Doof</dt><dd>222-2288</dd></dl> 
+        <dl class="listing"><dt>Agatha Sargnagel</dt><dd>718-6543</dd></dl> 
+        <dl class="listing"><dt>Agnes Rübezahl</dt><dd>666-9898</dd></dl> 
+        <dl class="listing"><dt>Aileen Kresse</dt><dd>431-9426</dd></dl> 
+        <dl class="listing"><dt>Ailina Pocken, Dr. med.</dt><dd>537-6976</dd></dl> 
+        <dl class="listing"><dt>Alejandra Molotow</dt><dd>929-1066</dd></dl> 
+        <dl class="listing"><dt>Alfreds Poststelle</dt><dd>642-3217</dd></dl> 
+        <dl class="listing"><dt>Alles Schockgefrostet</dt><dd>456-4567</dd></dl> 
+        <dl class="listing"><dt>Alterchen Krausewitzes Schweine-Streichelzoo</dt><dd>539-3555</dd></dl> 
+        <dl class="listing"><dt>Amelia Schmeichler</dt><dd>606-5678</dd></dl> 
+        <dl class="listing"><dt>Aggressive Rentner-Park</dt><dd>373-7322</dd></dl> 
+        <dl class="listing"><dt>Anne Schüssels Haus der Haustürschlüssel</dt><dd>981-2681</dd></dl> 
+        <dl class="listing"><dt>Antennenreißers Autowäsche</dt><dd>822-7788</dd></dl> 
+        <dl class="listing"><dt>Aren Fantismo</dt><dd>210-2223</dd></dl> 
+        <dl class="listing"><dt>Armando Coyote</dt><dd>543-3421</dd></dl> 
+        <dl class="listing"><dt>Artie Klicker</dt><dd>266-6789</dd></dl> 
+        <dl class="listing"><dt>Ash Ketchup</dt><dd>310-1983</dd></dl> 
+        <dl class="listing"><dt>Aus einem Guss</dt><dd>666-2345</dd></dl> 
+        <h3>B</h3> 
+        <dl class="listing"><dt>Baconbar, Die</dt><dd>567-6789</dd></dl> 
+        <dl class="listing"><dt>Bass Instincts Gitarrenschule</dt><dd>456-6229</dd></dl> 
+        <dl class="listing"><dt>Bellbara Miausten, Dr. med. vet.</dt><dd>432-7069</dd></dl> 
+        <dl class="listing"><dt>Ben Terries</dt><dd>210-7822</dd></dl> 
+        <dl class="listing"><dt>Benjamin Rössle</dt><dd>495-0123</dd></dl> 
+        <dl class="listing"><dt>Bernd Vollkorn</dt><dd>973-5040</dd></dl> 
+        <dl class="listing"><dt>Bh-Bastelworkshop</dt><dd>858-0099</dd></dl> 
+        <dl class="listing"><dt>BigBand Internet</dt><dd>849-8765</dd></dl> 
+        <dl class="listing"><dt>Bigamiegarten</dt><dd>252-2345</dd></dl> 
+        <dl class="listing"><dt>Biggi Millerin</dt><dd>464-8769</dd></dl> 
+        <dl class="listing"><dt>Bild der Dämonin</dt><dd>722-1333</dd></dl> 
+        <dl class="listing"><dt>Bills Bankrottes Kleinkunsttheater</dt><dd>955-6665</dd></dl> 
+        <dl class="listing"><dt>Bob Robsons Einwegautos</dt><dd>789-5432</dd></dl> 
+        <dl class="listing"><dt>Bobs geworfene Döner</dt><dd>987-8484</dd></dl> 
+        <dl class="listing"><dt>Brechers To-Go-Becher</dt><dd>333-0777</dd></dl> 
+        <dl class="listing"><dt>Brenda Yanluo</dt><dd>571-5550</dd></dl> 
+        <dl class="listing"><dt>Brigitte Probocop, Zahnärztin</dt><dd>965-8104</dd></dl> 
+        <dl class="listing"><dt>Bud Zähnefletsch</dt><dd>432-0666</dd></dl> 
+        <dl class="listing"><dt>Burpie Hale</dt><dd>366-8934</dd></dl> 
+        <h3>C</h3> 
+        <dl class="listing"><dt>Cacie Thompson Jr.</dt><dd>414-6555</dd></dl> 
+        <dl class="listing"><dt>Calle Hornung</dt><dd>444-1234</dd></dl> 
+        <dl class="listing"><dt>Carmen Flegel</dt><dd>328-5184</dd></dl> 
+        <dl class="listing"><dt>Carnival Wilfried der Siebte</dt><dd>503-9666</dd></dl> 
+        <dl class="listing"><dt>Caroline Riedl</dt><dd>222-2226</dd></dl> 
+        <dl class="listing"><dt>Carsten Legende</dt><dd>939-5552</dd></dl> 
+        <dl class="listing"><dt>Cassandra Weberknecht</dt><dd>706-3456</dd></dl> 
+        <dl class="listing"><dt>Celina Ringsgwandl</dt><dd>234-2130</dd></dl> 
+        <dl class="listing"><dt>Chap-Pier-Eins</dt><dd>543-2220</dd></dl> 
+        <dl class="listing"><dt>Christoph Giraffenhals</dt><dd>406-8068</dd></dl> 
+        <dl class="listing"><dt>Cindy Tratsch</dt><dd>938-8765</dd></dl> 
+        <dl class="listing"><dt>Cirque du Eichhörnchen</dt><dd>595-4554</dd></dl> 
+        <dl class="listing"><dt>C.J. O’Ballyhoos amerikanisches Diner</dt><dd>535-7777</dd></dl> 
+        <dl class="listing"><dt>Clara Cholera</dt><dd>319-6057</dd></dl> 
+        <dl class="listing"><dt>Clara Kopfschmerz</dt><dd>982-0222</dd></dl> 
+        <dl class="listing"><dt>Clas Verlauf</dt><dd>719-0044</dd></dl> 
+        <dl class="listing"><dt>Clever Fit - Freizeithalle</dt><dd>321-8666</dd></dl> 
+        <dl class="listing"><dt>Constantin Proktor, Dr.</dt><dd>987-0123</dd></dl> 
+        <dl class="listing"><dt>Cornelia Chors Gesangsstunden</dt><dd>376-4440</dd></dl> 
+        <dl class="listing"><dt>Coyo Kaleido</dt><dd>672-6868</dd></dl> 
+        <dl class="listing"><dt>Cyrus Hauschild</dt><dd>780-8436</dd></dl> 
+        <h3>D</h3> 
+        <dl class="listing"><dt>Dagobert Katzenminz</dt><dd>999-5552</dd></dl> 
+        <dl class="listing"><dt>Dämo - Dämonische Mode</dt><dd>444-7722</dd></dl> 
+        <dl class="listing"><dt>Daniel Ehm</dt><dd>845-9876</dd></dl> 
+        <dl class="listing"><dt>Daphne Ormanie</dt><dd>409-2876</dd></dl> 
+        <dl class="listing"><dt>Dolores seriöse Katzenpflege</dt><dd>937-4999</dd></dl> 
+        <dl class="listing"><dt>Delilah Grigowski</dt><dd>765-8451</dd></dl> 
+        <dl class="listing"><dt>DJ Mixmaster Max Mustermann</dt><dd>750-1116</dd></dl> 
+        <dl class="listing"><dt>Dounias Tanzstudio</dt><dd>737-9876</dd></dl> 
+        <dl class="listing"><dt>Dougs Yoga- und Fischereibedarf</dt><dd>432-8222</dd></dl> 
+        <dl class="listing"><dt>Dreckhäufchen-Park</dt><dd>543-3939</dd></dl> 
+        <dl class="listing"><dt>Drei-Minuten-Escape Room</dt><dd>654-9876</dd></dl> 
+        <h3>E</h3> 
+        <dl class="listing"><dt>Edith Feigl</dt><dd>898-2525</dd></dl> 
+        <dl class="listing"><dt>Elke Ahorns Seniorenresidenz</dt><dd>527-5550</dd></dl> 
+        <dl class="listing"><dt>Elfride Maulbeer</dt><dd>679-6870</dd></dl> 
+        <dl class="listing"><dt>Emilys leicht lädierte Edelsteine</dt><dd>777-0999</dd></dl> 
+        <dl class="listing"><dt>Emmaline Durand</dt><dd>876-2220</dd></dl> 
+        <dl class="listing"><dt>Eric Edelblut</dt><dd>917-4751</dd></dl> 
+        <dl class="listing"><dt>Ezekiel Häcker</dt><dd>543-4040</dd></dl> 
+        <h3>F</h3> 
+        <dl class="listing"><dt>Fanatische Träume Kinos</dt><dd>389-1450</dd></dl> 
+        <dl class="listing"><dt>Fandago - Alte Leute Möbel</dt><dd>345-7018</dd></dl> 
+        <dl class="listing"><dt>Fedora Kittsteiner</dt><dd>317-9933</dd></dl> 
+        <dl class="listing"><dt>Fenias Discount-Klavierunterricht</dt><dd>444-0123</dd></dl> 
+        <dl class="listing"><dt>Findige Apotheke</dt><dd>795-5678</dd></dl> 
+        <dl class="listing"><dt>Fix-am-Werk-Baubetrieb</dt><dd>876-8765</dd></dl> 
+        <dl class="listing"><dt>Fladen ohne Maden</dt><dd>743-3535</dd></dl> 
+        <dl class="listing"><dt>Flint Zitzelsberger</dt><dd>545-6543</dd></dl> 
+        <dl class="listing"><dt>Florian Heck</dt><dd>321-3737</dd></dl> 
+        <dl class="listing"><dt>Frank Schwammmann, Dr.</dt><dd>923-0001</dd></dl> 
+        <dl class="listing"><dt>Fräulein Agathes Dufttaxi</dt><dd>987-2224</dd></dl> 
+        <dl class="listing"><dt>Fred Parkington</dt><dd>424-3076</dd></dl> 
+        <dl class="listing"><dt>Friseuse mit Getöse</dt><dd>981-2681</dd></dl> 
+        <dl class="listing"><dt>Fritzl Schnitzl</dt><dd>678-8881</dd></dl> 
+        <dl class="listing"><dt>Fulano de Rasenmeh</dt><dd>678-6666</dd></dl> 
+        <h3>G</h3> 
+        <dl class="listing"><dt>Gabriela Pusteblume</dt><dd>375-4539</dd></dl> 
+        <dl class="listing"><dt>Garet Flitzebogen</dt><dd>310-9876</dd></dl> 
+        <dl class="listing"><dt>Garland McRae</dt><dd>696-4449</dd></dl> 
+        <dl class="listing"><dt>Gary-Josef Joos</dt><dd>456-4444</dd></dl> 
+        <dl class="listing"><dt>Gasthaus \"Zur fettigen Gabel\"</dt><dd>262-5757</dd></dl> 
+        <dl class="listing"><dt>Gerd und Susis Sushi-Tankstelle</dt><dd>565-4443</dd></dl> 
+        <dl class="listing"><dt>Geringfügig gestohlene Autos</dt><dd>992-0005</dd></dl> 
+        <dl class="listing"><dt>Gertrude Dixie</dt><dd>765-7744</dd></dl> 
+        <dl class="listing"><dt>Gijs F Unas III</dt><dd>730-5749</dd></dl> 
+        <dl class="listing"><dt>Gitta St. Porridge</dt><dd>777-0999</dd></dl> 
+        <dl class="listing"><dt>Gold Bar An- und Verkauf</dt><dd>444-3894</dd></dl> 
+        <dl class="listing"><dt>Gordon Maismischer</dt><dd>486-3788</dd></dl> 
+        <dl class="listing"><dt>Greta Grießspeier</dt><dd>323-0444</dd></dl> 
+        <dl class="listing"><dt>Grill Spot, Der</dt><dd>939-1234</dd></dl> 
+        <dl class="listing"><dt>Gudrun Pfennigfuchser</dt><dd>210-9292</dd></dl> 
+        <h3>H</h3> 
+        <dl class="listing"><dt>Haike Jacobs</dt><dd>598-0404</dd></dl> 
+        <dl class="listing"><dt>Happy Bowel - Veganes Buffet</dt><dd>765-5049</dd></dl> 
+        <dl class="listing"><dt>Hannah Halberstadt</dt><dd>504-1333</dd></dl> 
+        <dl class="listing"><dt>Harvey Plem</dt><dd>627-9238</dd></dl> 
+        <dl class="listing"><dt>Helga Pfannkuch</dt><dd>237-9000</dd></dl> 
+        <dl class="listing"><dt>Himmelsgleiche Kraftfahrzeuge</dt><dd>418-5000</dd></dl> 
+        <dl class="listing"><dt>Hochnebelpark</dt><dd>434-1234</dd></dl> 
+        <dl class="listing"><dt>Holger Hobel</dt><dd>931-2929</dd></dl> 
+        <h3>I</h3> 
+        <dl class="listing"><dt>Ida Rübeweich</dt><dd>213-6363</dd></dl> 
+        <dl class="listing"><dt>Ignacio Feuerstarter</dt><dd>525-6008</dd></dl> 
+        <dl class="listing"><dt>Ingos Cargohosen Imperium</dt><dd>567-1356</dd></dl> 
+        <dl class="listing"><dt>Insekten-Umzugsservice</dt><dd>567-6999</dd></dl> 
+        <dl class="listing"><dt>Internationales Museum der Hot Dogs</dt><dd>423-7676</dd></dl> 
+        <dl class="listing"><dt>Irene Sticker</dt><dd>565-2226</dd></dl> 
+        <dl class="listing"><dt>Isaac Allergo</dt><dd>636-3333</dd></dl> 
+        <dl class="listing"><dt>Ixion Lebensmittel</dt><dd>863-1010</dd></dl> 
+        <h3>J</h3> 
+        <dl class="listing"><dt>Jakobus Gurgel Zahnarzt, Dr.</dt><dd>321-8765</dd></dl> 
+        <dl class="listing"><dt>Jeff “Geoff” Jefferstein</dt><dd>710-1111</dd></dl> 
+        <dl class="listing"><dt>Jeff Hansen</dt><dd>764-9999</dd></dl> 
+        <dl class="listing"><dt>Jendra Duponte Cristo</dt><dd>222-9876</dd></dl> 
+        <dl class="listing"><dt>Jens vegane Badematten</dt><dd>469-5599</dd></dl> 
+        <dl class="listing"><dt>Jim James Jakobsen Zahnarzt</dt><dd>678-8281</dd></dl> 
+        <dl class="listing"><dt>Jiminy B. Zirpe</dt><dd>948-7779</dd></dl> 
+        <dl class="listing"><dt>Jimmy Grützner</dt><dd>343-4567</dd></dl> 
+        <dl class="listing"><dt>Joanna Salomon</dt><dd>888-4321</dd></dl> 
+        <dl class="listing"><dt>John Ohnefleiß</dt><dd>262-1010</dd></dl> 
+        <dl class="listing"><dt>John Kaltherz</dt><dd>234-8270</dd></dl> 
+        <dl class="listing"><dt>Johnny Sorgenfrei</dt><dd>876-9999</dd></dl> 
+        <dl class="listing"><dt>Johns illegale Secondhand-Särge</dt><dd>555-1747</dd></dl> 
+        <dl class="listing"><dt>Jonathan Kerzenzieher</dt><dd>909-2214</dd></dl> 
+        <dl class="listing"><dt>Josh Josmanns Jo-Jos</dt><dd>987-1111</dd></dl> 
+        <dl class="listing"><dt>Justo - Designkalender-Restposten</dt><dd>242-3636</dd></dl> 
+        <h3>K</h3> 
+        <dl class="listing"><dt>Kapitalfatal AG</dt><dd>333-9988</dd></dl> 
+        <dl class="listing"><dt>Karens nicht verfluchte Püppchen</dt><dd>663-8880</dd></dl> 
+        <dl class="listing"><dt>Karls Käferbeseitigung</dt><dd>502-4242</dd></dl> 
+        <dl class="listing"><dt>Karl von den Kleinen</dt><dd>750-1234</dd></dl> 
+        <dl class="listing"><dt>Kate Stark</dt><dd>376-4440</dd></dl> 
+        <dl class="listing"><dt>Katzen- & Hundewerkstatt</dt><dd>439-0000</dd></dl> 
+        <dl class="listing"><dt>Kayla Swift</dt><dd>210-2222</dd></dl> 
+        <dl class="listing"><dt>Keine-Ratenzahlung-Achterbahnen</dt><dd>345-7711</dd></dl> 
+        <dl class="listing"><dt>Kelly Bleichzny</dt><dd>321-8666</dd></dl> 
+        <dl class="listing"><dt>Kendo-Kumpels</dt><dd>876-2220</dd></dl> 
+        <dl class="listing"><dt>Keramikdynamik</dt><dd>931-2929</dd></dl> 
+        <dl class="listing"><dt>Kevin Ziehmal, Dr.</dt><dd>979-7575</dd></dl> 
+        <dl class="listing"><dt>Kip Ortiz</dt><dd>678-6789</dd></dl> 
+        <dl class="listing"><dt>Klappstuhl Kinos</dt><dd>567-8888</dd></dl> 
+        <dl class="listing"><dt>Konstantins Kisten Kabuff</dt><dd>765-2222</dd></dl> 
+        <dl class="listing"><dt>Kröten-Karls fast neue Reptilien</dt><dd>678-2512</dd></dl> 
+        <dl class="listing"><dt>Künstlerbedarf Wucher</dt><dd>372-7799</dd></dl> 
+        <dl class="listing"><dt>Kurt P. Anade</dt><dd>771-4441</dd></dl> 
+        <h3>L</h3> 
+        <dl class="listing"><dt>Laceys Tischtücher & Vorhänge</dt><dd>765-7222</dd></dl> 
+        <dl class="listing"><dt>Langer Lulatsch Basketballteam</dt><dd>234-3333</dd></dl> 
+        <dl class="listing"><dt>Leftys Secondhand-Socken</dt><dd>567-4445</dd></dl> 
+        <dl class="listing"><dt>Lennard Verleihnix</dt><dd>737-9876</dd></dl> 
+        <dl class="listing"><dt>Leon Fischeimer</dt><dd>444-3335</dd></dl> 
+        <dl class="listing"><dt>Leroy Quiplish</dt><dd>313-7333</dd></dl> 
+        <dl class="listing"><dt>Li Kumari</dt><dd>454-4321</dd></dl> 
+        <dl class="listing"><dt>Lindana Zerberus</dt><dd>288-4444</dd></dl> 
+        <dl class="listing"><dt>Löffel-Land</dt><dd>345-3355</dd></dl> 
+        <dl class="listing"><dt>Logan Lee</dt><dd>204-6660</dd></dl> 
+        <dl class="listing"><dt>Luella Badewetter</dt><dd>496-4567</dd></dl> 
+        <dl class="listing"><dt>Luise Gertz-Schmitstinstein</dt><dd>432-9819</dd></dl> 
+        <dl class="listing"><dt>Luke Scheibenkleister</dt><dd>660-8888</dd></dl> 
+        <h3>M</h3> 
+        <dl class="listing"><dt>Mable Rostnagel</dt><dd>919-8789</dd></dl> 
+        <dl class="listing"><dt>Madam Harriets Hellseher-Hotline</dt><dd>948-6565</dd></dl> 
+        <dl class="listing"><dt>Manny Manananggal</dt><dd>484-3344</dd></dl> 
+        <dl class="listing"><dt>Man von der Blau</dt><dd>965-8866</dd></dl> 
+        <dl class="listing"><dt>Marjorie Humid</dt><dd>734-7111</dd></dl> 
+        <dl class="listing"><dt>Martin Wuschelkopf und die Stau-Radioshow</dt><dd>483-7654</dd></dl> 
+        <dl class="listing"><dt>Matilda Lampenstein</dt><dd>765-7779</dd></dl> 
+        <dl class="listing"><dt>MBA - Mein Bienenwachs-Kerzen-Atelier</dt><dd>712-8889</dd></dl> 
+        <dl class="listing"><dt>Meeresfrüchtchen Imbiss</dt><dd>712-1234</dd></dl> 
+        <dl class="listing"><dt>Meist Qualfrei - Schädlingsbekämpfung</dt><dd>540-2288</dd></dl> 
+        <dl class="listing"><dt>Melonen für Millionen</dt><dd>682-0000</dd></dl> 
+        <dl class="listing"><dt>Mengano Wu</dt><dd>765-8882</dd></dl> 
+        <dl class="listing"><dt>Mett and Greet Metzgerei</dt><dd>247-1082</dd></dl> 
+        <dl class="listing"><dt>Mid-Life-Crisis Sportwägen</dt><dd>333-0777</dd></dl> 
+        <dl class="listing"><dt>Mildreds Rippchenspelunke</dt><dd>259-1112</dd></dl> 
+        <dl class="listing"><dt>Mittelstädter Bahnhof</dt><dd>987-3000</dd></dl> 
+        <dl class="listing"><dt>Mom Papamann</dt><dd>757-6867</dd></dl> 
+        <dl class="listing"><dt>Monika G. Brutzel</dt><dd>261-6543</dd></dl> 
+        <dl class="listing"><dt>Morten Krautschick</dt><dd>631-5555</dd></dl> 
+        <dl class="listing"><dt>Murry Brian</dt><dd>886-3331</dd></dl> 
+        <dl class="listing"><dt>Museum der “Künste”</dt><dd>910-5959</dd></dl> 
+        <dl class="listing"><dt>Museum der Fürze</dt><dd>228-8909</dd></dl> 
+        <dl class="listing"><dt>Museum der handwerklich begabten Tiere</dt><dd>934-7654</dd></dl> 
+        <dl class="listing"><dt>Museum der pfiffigen Stoßstangenaufkleber</dt><dd>345-9999</dd></dl> 
+        <dl class="listing"><dt>Museum der Chips, die wie Promis aussehen</dt><dd>880-3300</dd></dl> 
+        <dl class="listing"><dt>Museum der Wissenschaften und Gerüchte</dt><dd>306-3333</dd></dl> 
+        <dl class="listing"><dt>Musterland Discount</dt><dd>754-1152</dd></dl> 
+        <dl class="listing"><dt>Mysteriöser Schluchtenpark</dt><dd>272-4237</dd></dl> 
+        <dl class="listing"><dt>Mystischer Philipp - SERIÖSER Wahrsager-Service</dt><dd>730-7774</dd></dl> 
+        <h3>N</h3> 
+        <dl class="listing"><dt>Nadine Nebenrolle</dt><dd>966-2222</dd></dl> 
+        <dl class="listing"><dt>National Aeronautics and Space Administration</dt><dd>567-5642</dd></dl> 
+        <dl class="listing"><dt>Neuer Tratsch von morgen</dt><dd>636-6688</dd></dl> 
+        <dl class="listing"><dt>Nichts als Klobrillen</dt><dd>619-7878</dd></dl> 
+        <h3>O</h3> 
+        <dl class="listing"><dt>Ottermilch Konditorei</dt><dd>987-7079</dd></dl> 
+        <dl class="listing"><dt>Omnipräsente Filmstudios</dt><dd>379-1444</dd></dl> 
+        <h3>P</h3> 
+        <dl class="listing"><dt>Partyalarm</dt><dd>208-9494</dd></dl> 
+        <dl class="listing"><dt>Paulas Trompetenschule</dt><dd>363-5678</dd></dl> 
+        <dl class="listing"><dt>Penny Pantel</dt><dd>937-3331</dd></dl> 
+        <dl class="listing"><dt>PensCrafters Billostifte</dt><dd>949-5454</dd></dl> 
+        <dl class="listing"><dt>Peppa Schmutz</dt><dd>579-1177</dd></dl> 
+        <dl class="listing"><dt>Pfefferrands vegane Pizza</dt><dd>646-5555</dd></dl> 
+        <dl class="listing"><dt>Pho-Po Taiwanesisches Essen</dt><dd>943-5432</dd></dl> 
+        <dl class="listing"><dt>Pinco Pallinos Pastapalast</dt><dd>656-4321</dd></dl> 
+        <dl class="listing"><dt>Pista Trames Pistazienträume</dt><dd>959-3456</dd></dl> 
+        <dl class="listing"><dt>Pizza-Fun</dt><dd>678-8883</dd></dl> 
+        <dl class="listing"><dt>Planetarium der Affen</dt><dd>567-7000</dd></dl> 
+        <dl class="listing"><dt>Poopsie Gummiball</dt><dd>345-9933</dd></dl> 
+        <dl class="listing"><dt>Poro Gerümpelmarkt</dt><dd>444-5389</dd></dl> 
+        <dl class="listing"><dt>Promistalker Verlag</dt><dd>350-0123</dd></dl> 
+        <dl class="listing"><dt>Priska Biolek</dt><dd>778-4466</dd></dl> 
+        <dl class="listing"><dt>Psirella - Hellseherin und Medium</dt><dd>678-3131</dd></dl> 
+        <dl class="listing"><dt>Pusteblumen-Louvre</dt><dd>626-6818</dd></dl> 
+        <h3>Q</h3> 
+        <dl class="listing"><dt>Quik Gerätereparatur</dt><dd>471-3210</dd></dl> 
+        <dl class="listing"><dt>Quite-A-Repair</dt><dd>465-2222</dd></dl> 
+        <h3>R</h3> 
+        <dl class="listing"><dt>Rathaus</dt><dd>987-6543</dd></dl> 
+        <dl class="listing"><dt>Ratte und Maus aus dem Haus</dt><dd>904-8444</dd></dl> 
+        <dl class="listing"><dt>Rebecca Impundulu</dt><dd>252-6694</dd></dl> 
+        <dl class="listing"><dt>Rein oder Raus-Taxiservice</dt><dd>307-7555</dd></dl> 
+        <dl class="listing"><dt>Riley Phoenix</dt><dd>654-2555</dd></dl> 
+        <dl class="listing"><dt>Rinderwahn - Fleischboxversand</dt><dd>787-7740</dd></dl> 
+        <dl class="listing"><dt>Robert Voßgrönes überflüssige Autos</dt><dd>367-7154</dd></dl> 
+        <dl class="listing"><dt>Roggensprint - Der Brotexpress</dt><dd>323-0444</dd></dl> 
+        <dl class="listing"><dt>Ronald Rückenlehne</dt><dd>456-1923</dd></dl> 
+        <dl class="listing"><dt>Ryan Ahrendt</dt><dd>444-0123</dd></dl> 
+        <h3>S</h3> 
+        <dl class="listing"><dt>Salon der schönen Haare</dt><dd>432-1554</dd></dl> 
+        <dl class="listing"><dt>Samuel Schmaus</dt><dd>222-3335</dd></dl> 
+        <dl class="listing"><dt>Santiago Zitronenzeh</dt><dd>210-8898</dd></dl> 
+        <dl class="listing"><dt>Sascha Sägemehl</dt><dd>321-8593</dd></dl> 
+        <dl class="listing"><dt>Schickes Panorama</dt><dd>634-3355</dd></dl> 
+        <dl class="listing"><dt>Schlecht beschriftete Salz- und Zuckerlieferungen</dt><dd>838-4422</dd></dl> 
+        <dl class="listing"><dt>Schluck & Spuck</dt><dd>577-5432</dd></dl> 
+        <dl class="listing"><dt>“Schmier + Bier” Autohaus & Brauerei</dt><dd>678-2512</dd></dl> 
+        <dl class="listing"><dt>Schmüller Drogerie</dt><dd>738-1234</dd></dl> 
+        <dl class="listing"><dt>“Schnelle Flucht”-Reisebüro</dt><dd>693-3399</dd></dl> 
+        <dl class="listing"><dt>Schuppenglück Eidechsensalon</dt><dd>765-3210</dd></dl> 
+        <dl class="listing"><dt>Shelby Venturini</dt><dd>790-8811</dd></dl> 
+        <dl class="listing"><dt>Sherman Laber</dt><dd>838-5559</dd></dl> 
+        <dl class="listing"><dt>Shirt im Glück-Reinigung</dt><dd>345-0006</dd></dl> 
+        <dl class="listing"><dt>Singa Fernsehfrau</dt><dd>345-5111</dd></dl> 
+        <dl class="listing"><dt>Sparland</dt><dd>432-1554</dd></dl> 
+        <dl class="listing"><dt>Srednestatisticheskiy Sedans</dt><dd>210-4444</dd></dl> 
+        <dl class="listing"><dt>Stads angetauter Kabeljau</dt><dd>277-2227</dd></dl> 
+        <dl class="listing"><dt>Stell Dich Zur Schau - Theaterschule</dt><dd>979-5678</dd></dl> 
+        <dl class="listing"><dt>Steve Pemsel</dt><dd>386-5013</dd></dl> 
+        <dl class="listing"><dt>Stolzbank</dt><dd>274-7722</dd></dl> 
+        <dl class="listing"><dt>Superagent Norm Nachbarmann</dt><dd>272-4422</dd></dl> 
+        <dl class="listing"><dt>Sylvester Brunch</dt><dd>282-5222</dd></dl> 
+        <h3>T</h3> 
+        <dl class="listing"><dt>Talisman Taxi-Service</dt><dd>565-1333</dd></dl> 
+        <dl class="listing"><dt>Tante Glut</dt><dd>881-5432</dd></dl> 
+        <dl class="listing"><dt>Tante Hecuba</dt><dd>210-5999</dd></dl> 
+        <dl class="listing"><dt>Teenager-Taille</dt><dd>654-5063</dd></dl> 
+        <dl class="listing"><dt>Teufel, Fam.</dt><dd>552-9481</dd></dl> 
+        <dl class="listing"><dt>Tex-Mex</dt><dd>789-0001</dd></dl> 
+        <dl class="listing"><dt>TGIH Gänzjähriger Halloween-Fachladen</dt><dd>326-6190</dd></dl> 
+        <dl class="listing"><dt>Thaddäus Taddel</dt><dd>252-9974</dd></dl> 
+        <dl class="listing"><dt>Theodolius Wimmer</dt><dd>879-1234</dd></dl> 
+        <dl class="listing"><dt>Thorsten Schinken</dt><dd>678-1717</dd></dl> 
+        <dl class="listing"><dt>Thorsten “Tattedl” Apfelkern</dt><dd>446-4949</dd></dl> 
+        <dl class="listing"><dt>Thurman Böserbub</dt><dd>939-5656</dd></dl> 
+        <dl class="listing"><dt>Tierfänger</dt><dd>885-6663</dd></dl> 
+        <dl class="listing"><dt>Tim Simian Affen-Mechatroniker</dt><dd>603-4000</dd></dl> 
+        <dl class="listing"><dt>Tipsy Tunes Fast-Totalschäden</dt><dd>456-6229</dd></dl> 
+        <dl class="listing"><dt>Tom Pudding</dt><dd>424-6737</dd></dl> 
+        <dl class="listing"><dt>Tracht und Trächtig - Dirndl in Übergrößen</dt><dd>789-6271</dd></dl> 
+        <dl class="listing"><dt>Trent Jormbo</dt><dd>345-8886</dd></dl> 
+        <dl class="listing"><dt>Trödel - Tauben-Übermittlungsdienst</dt><dd>976-0001</dd></dl> 
+        <dl class="listing"><dt>TV-Analog</dt><dd>338-5544</dd></dl>
+        <h3>U</h3> 
+        <dl class="listing"><dt>“Unter den Tresen”-Apotheke</dt><dd>637-3210</dd></dl> 
+        <dl class="listing"><dt>Urknall Sternwarte</dt><dd>222-5577</dd></dl> 
+        <dl class="listing"><dt>Uschi Vollspecht</dt><dd>738-4666</dd></dl> 
+        <dl class="listing"><dt>U. Xie</dt><dd>234-3333</dd></dl> 
+        <h3>V</h3> 
+        <dl class="listing"><dt>Vance VanVans Vans</dt><dd>293-5971</dd></dl> 
+        <dl class="listing"><dt>Vardenis Pavardenis</dt><dd>345-8333</dd></dl> 
+        <dl class="listing"><dt>Vestworld</dt><dd>787-1111</dd></dl> 
+        <dl class="listing"><dt>Vier Fellfreunde - Tierklinik</dt><dd>654-5555</dd></dl> 
+        <dl class="listing"><dt>Vincent Preisvergleich</dt><dd>555-0003</dd></dl> 
+        <dl class="listing"><dt>Volker Waldschrat</dt><dd>543-4321</dd></dl> 
+        <dl class="listing"><dt>Vivian Stickler, Zahnärztin</dt><dd>210-2555</dd></dl> 
+        <h3>W</h3> 
+        <dl class="listing"><dt>Walken-Klinik, Die</dt><dd>567-0007</dd></dl> 
+        <dl class="listing"><dt>Wang Zutano</dt><dd>242-4678</dd></dl> 
+        <dl class="listing"><dt>Waterdance</dt><dd>915-1508</dd></dl> 
+        <dl class="listing"><dt>Weingut Altbewährt</dt><dd>234-3444</dd></dl> 
+        <dl class="listing"><dt>We \'R Toys</dt><dd>502-5678</dd></dl> 
+        <dl class="listing"><dt>Werner Sorglos</dt><dd>885-3434</dd></dl> 
+        <dl class="listing"><dt>Wilfried Wolfram</dt><dd>526-1947</dd></dl> 
+        <dl class="listing"><dt>Willkommen in Garnia</dt><dd>935-5511</dd></dl> 
+        <dl class="listing"><dt>Wir klauen dein Auto</dt><dd>320-3339</dd></dl> 
+        <dl class="listing"><dt>Wok This Way</dt><dd>696-0666</dd></dl> 
+        <dl class="listing"><dt>Wreckin\' Crew Theater</dt><dd>399-6444</dd></dl> 
+        <h3>Y</h3> 
+        <dl class="listing"><dt>Yaction Kayak Wildwasser-Rafting</dt><dd>949-1112</dd></dl> 
+        <dl class="listing"><dt>Yakkin\' Zacks Radio-Morgenshow</dt><dd>383-4222</dd></dl> 
+        <dl class="listing"><dt>Yamada Honigwabe</dt><dd>277-2227</dd></dl> 
+        <h3>Z</h3> 
+        <dl class="listing"><dt>Zak Zakaryas</dt><dd>949-1112</dd></dl> 
+        <dl class="listing"><dt>Zhang Pérez, Dr.</dt><dd>841-6804</dd></dl> 
+        <dl class="listing"><dt>Zechbrauerei</dt><dd>969-3587</dd></dl> 
+        <dl class="listing"><dt>Zeitgenössisches Kunstmuseum für Väter</dt><dd>984-1234</dd></dl> 
+        <dl class="listing"><dt>Zentnerweise Fleisch-Buffet</dt><dd>678-4444</dd></dl> 
+        <dl class="listing"><dt>Zippy Zip Postamt für Trauerbriefe</dt><dd>987-6551</dd></dl> 
+        <dl class="listing"><dt>Zur Butterforelle</dt><dd>965-0000</dd></dl> 
+        <dl class="listing"><dt>Zuzus Kessel</dt><dd>248-4949</dd></dl>
     </div>
 </div>
 <button class="leave"></button>
@@ -24797,7 +24797,7 @@ const Jy = {
             e && atob && (e = atob(e)), this.triggerMethod("result", {
                 type: "fail",
                 category: e ? "number" : "",
-                message: e || "WRONG<br/>NUMBER"
+                message: e || "FALSCHE<br/>NUMMER"
             }), this.model.setUpdate({
                 dialed: "",
                 isWaiting: !1
@@ -26448,7 +26448,7 @@ const aT = `
         }
     }),
     qT = `
-    <input type="text" class="screen" placeholder="ENTER" maxlength="8"/>
+    <input type="text" class="screen" placeholder="EINGEBEN" maxlength="8"/>
 `,
     gT = je.View.extend({
         className: "gizmo gizmo-text",
@@ -26586,7 +26586,7 @@ const aT = `
             </div>
             <div id="panel-region"></div>
         </div>
-        <button class="button submit">SUBMIT</button>
+        <button class="button submit">ABSENDEN</button>
     </div>
 </div>
 <button class="leave"></button>
@@ -26626,7 +26626,7 @@ const aT = `
                 observe: ["state", "participant", "captain"],
                 updateMethod: "html",
                 onGet([t, e, n]) {
-                    return t === "GizmosMechanicCaptain" ? `You are setting the gizmos. Ask <span class="player-name ${e.avatar}">${e.name}</span> for the correct settings.` : `These are the correct gizmo settings. Describe them to <span class="player-name ${n.avatar}">${n.name}</span>.`
+                    return t === "GizmosMechanicCaptain" ? `Du stellst das Gerät ein. Frage <span class="player-name ${e.avatar}">${e.name}</span> nach den richtigen Einstellungen.` : `Das sind die richtigen Einstellungen für das Gerät. Beschreibe sie <span class="player-name ${n.avatar}">${n.name}</span>.`
                 }
             },
             ".gizmo-panel": {
@@ -26665,7 +26665,7 @@ const aT = `
                 isWaiting: !1
             }), this.triggerMethod("result", {
                 type: "fail",
-                message: "TRY<br/>AGAIN"
+                message: "VERSUCH<br/>ES<br/>NOCHMAL"
             }))
         },
         onSubmitClick() {
@@ -28015,7 +28015,7 @@ const CT = je.View.extend({
     <div class="info"></div>
     <div id="items-region"></div>
     <div id="gesture-ui"></div>
-    <button class="button found">I FOUND IT!<div class="selected-item item"></div></button>
+    <button class="button found">DAS IST ES!<div class="selected-item item"></div></button>
 </div>
 <button class="leave"></button>
 <div class="instructions-container">
@@ -28067,7 +28067,7 @@ const CT = je.View.extend({
                 observe: "participant",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Ask <span class="player-name ${t.avatar}">${t.name}</span> to describe the item you need to find.` : ""
+                    return t ? `Bitte <span class="player-name ${t.avatar}">${t.name}</span> den von dir gesuchten Gegenstand zu beschreiben.` : ""
                 }
             },
             ".found": {
@@ -28115,7 +28115,7 @@ const CT = je.View.extend({
                 isWaiting: !1
             }), this.triggerMethod("result", {
                 type: "fail",
-                message: "TRY<br/>AGAIN"
+                message: "VERSUCH<br/>ES<br/>NOCHMAL"
             }))
         },
         getItems() {
@@ -28270,7 +28270,7 @@ const CT = je.View.extend({
                 observe: "captain",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Describe this item to <span class="player-name ${t.avatar}">${t.name}</span>.` : ""
+                    return t ? `Beschreibe <span class="player-name ${t.avatar}">${t.name}</span> diesen Gegenstand.` : ""
                 }
             },
             ".item": {
@@ -28294,7 +28294,7 @@ const CT = je.View.extend({
     }),
     OT = `<div class="scrollable">
     <div class="clamp">
-        <div class="info">You have the instructions. Tell your gatherers what you need:</div>
+        <div class="info">Du hast die Anweisungen. Sage deinen Sammlern, was du brauchst:</div>
         <div class="requirements"></div>
     </div>
 </div>
@@ -28315,7 +28315,7 @@ const CT = je.View.extend({
             ".instructions": {
                 observe: "name",
                 onGet(t) {
-                    return `Gather items for ${t}`
+                    return `Sammle Gegenstände für ${t}`
                 }
             },
             ".score": {
@@ -28340,7 +28340,7 @@ const CT = je.View.extend({
                     }), e.forEach(V => {
                         let A = "item";
                         n.find(c => c.id === V.id) && (A += " selected"), i += `<div class="${A}">${V.name} <em>${V.location||""}</em></div>`
-                    }), o.length && (i += `<div class="extra-title">${o.length} unneeded ${o.length===1?"item":"items"} must be put back!</div>`, i += `<div class="item extra">${o.join(", ")}</div>`), i
+                    }), o.length && (i += `<div class="extra-title">${o.length} ${o.length===1?"unnötiger Gegenstand muss":"unnötige Gegenstände müssen"} zurückgelegt werden!</div>`, i += `<div class="item extra">${o.join(", ")}</div>`), i
                 }
             }
         },
@@ -28443,7 +28443,7 @@ const CT = je.View.extend({
             ".instructions": {
                 observe: "name",
                 onGet(t) {
-                    return `Gather items for ${t}`
+                    return `Sammle Gegenstände für ${t}`
                 }
             },
             ".score": {
@@ -28458,7 +28458,7 @@ const CT = je.View.extend({
                 observe: ["locationName", "captain"],
                 updateMethod: "html",
                 onGet([t, e]) {
-                    return e ? `Ask <span class="player-name ${e.avatar}">${e.name}</span> what you need to gather from ${t}` : ""
+                    return e ? `Frage <span class="player-name ${e.avatar}">${e.name}</span> was aus ${t} benötigt wird` : ""
                 }
             },
             ".location": {
@@ -48499,12 +48499,12 @@ const L0 = E.extend({
                 class: "text-0",
                 type: "div",
                 pos: [400, 1200],
-                html: "LOOK AWAY"
+                html: "SCHAU WEG"
             }, {
                 class: "text-1",
                 type: "div",
                 pos: [300, 2200],
-                html: "NO ONE WANTS<br/>TO SEE THIS"
+                html: "NIEMAND WILL<br/>DAS SEHEN"
             }, {
                 class: "pants",
                 type: "img",
@@ -58689,7 +58689,7 @@ const bc = E.extend({
             class: "text",
             type: "div",
             pos: [564, 198],
-            html: "<p>Breaking News!!! The gronking continues to plague the world's youth. No one understands anything.</p>"
+            html: "<p>Eilmeldung!!! Die Klenk-Plage trifft weiterhin die Jugend der Welt. Niemand versteht irgendwas.</p>"
         }, ...a.elementsFromSprite("sprite", ["tv"])],
         onLoadComplete() {
             s.set(".e.text", {
@@ -58714,7 +58714,7 @@ const bc = E.extend({
                 class: "text",
                 type: "div",
                 pos: [564, 198],
-                html: "<p>Breaking News!!! The gronking continues to plague the world's youth. No one understands anything.</p>"
+                html: "<p>Eilmeldung!!! Die Klenk-Plage trifft weiterhin die Jugend der Welt. Niemand versteht irgendwas.</p>"
             }, ...a.elementsFromSprite("sprite", ["tv"])]
         }],
         onLoadComplete() {
@@ -72286,9 +72286,9 @@ const bc = E.extend({
                     type: "div",
                     pos: [100, 758],
                     html: `
-                    <p>DEVIL</p>
+                    <p>TEUFEL</p>
                     <p>${t.name}</p>
-                    <p>DEVILLE, UNDERWORLD</p>
+                    <p>DÄMONIEN, UNTERWELT</p>
                     <p>${o}</p>
                     <p>${r}</p>
                 `
@@ -74909,7 +74909,7 @@ const Yse = E.extend({
                 observe: ["location", "isMistake"],
                 updateMethod: "html",
                 onGet([t, e]) {
-                    return e ? X.exports.sample(this.mistakeText) : `SEARCH ${t}`
+                    return e ? X.exports.sample(this.mistakeText) : `${t} SUCHEN`
                 },
                 classes: {
                     mistake: "isMistake"
@@ -77453,7 +77453,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
         tapTimeoutLength: 500,
         rotateTimeout: null,
         rotateTimeoutLength: 150,
-        successText: ["NICE ONE", "GOT IT", "GOOD JOB", "GREAT WORK", "WELL DONE"],
+        successText: ["GUT GEMACHT", "SPITZE", "GUTE ARBEIT", "SUPER", "PERFEKT"],
         bindings: {
             ".leave": {
                 observe: "canLeave",
@@ -77471,7 +77471,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
             ".info": {
                 observe: ["infoText", "isWaiting"],
                 onGet([t, e]) {
-                    return e ? "WAIT" : t || ""
+                    return e ? "WARTE" : t || ""
                 },
                 classes: {
                     waiting: "isWaiting",
@@ -77483,7 +77483,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 observe: "participant",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Ask <span class="player-name ${t.avatar}">${t.name}</span> what to do.` : ""
+                    return t ? `Frage <span class="player-name ${t.avatar}">${t.name}</span> was du machen sollst.` : ""
                 },
                 classes: {
                     conceal: {
@@ -77508,7 +77508,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 isWaiting: !1
             }), t.changed.currentStepIndex === void 0 ? this.triggerMethod("result", {
                 type: "fail",
-                message: "TRY<br/>AGAIN"
+                message: "VERSUCH<br/>ES<br/>NOCHMAL"
             }) : (this.model.setUpdate({
                 isWaiting: !1,
                 isSuccess: !0,
@@ -77726,7 +77726,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 observe: "captain",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Give <span class="player-name ${t.avatar}">${t.name}</span> these instructions. Steps will be crossed off as they\u2019re completed.` : ""
+                    return t ? `Gebe <span class="player-name ${t.avatar}">${t.name}</span> diese Anweisungen. Schritte werden durchgestrichen, nachdem sie erledigt wurden.` : ""
                 }
             },
             ".steps": {
@@ -77748,23 +77748,23 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
         getStepText(t) {
             switch (t.mechanic) {
                 case "ROTATE_CLOCK":
-                    return `${t.instructions} by rotating right twice`;
+                    return `${t.instructions} durch zweimaliges Drehen nach rechts`;
                 case "ROTATE_COUNTER":
-                    return `${t.instructions} by rotating left twice`;
+                    return `${t.instructions} durch zweimaliges Drehen nach links`;
                 case "TAP":
-                    return `${t.instructions} by tapping once`;
+                    return `${t.instructions} durch einmaliges Drücken`;
                 case "TAP_3":
-                    return `${t.instructions} by triple tapping`;
+                    return `${t.instructions} durch dreimaliges Drücken`;
                 case "TAP_HOLD":
-                    return `${t.instructions} by tapping and holding for 3 seconds`;
+                    return `${t.instructions} durch Drücken und für 3 Sekunden gedrückt halten`;
                 case "SWIPE_UP":
-                    return `${t.instructions} by swiping up`;
+                    return `${t.instructions} durch Wischen nach oben`;
                 case "SWIPE_DOWN":
-                    return `${t.instructions} by swiping down`;
+                    return `${t.instructions} durch Wischen nach unten`;
                 case "SWIPE_LEFT":
-                    return `${t.instructions} by swiping left`;
+                    return `${t.instructions} durch Wischen nach links`;
                 case "SWIPE_RIGHT":
-                    return `${t.instructions} by swiping right`;
+                    return `${t.instructions} durch Wischen nach rechts`;
                 default:
                     return ""
             }
@@ -77779,7 +77779,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
         tagName: "button",
         className: "button location",
         template: ke.template('<div class="name"></div>'),
-        prefixes: ["LOOK", "CHECK", "SEARCH"],
+        prefixes: ["SCHAUE", "PRÜFE", "SUCHE"],
         events: {
             click: "onClick"
         },
@@ -77817,7 +77817,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
             const t = this.model.get("distance"),
                 e = this.distanceMap[t] || 5e3;
             this.model.setUpdate({
-                infoText: "SCRUB",
+                infoText: "SCHRUBBEN",
                 distanceInPx: e,
                 lastDistance: 0,
                 distanceScrubbed: 0
@@ -77869,7 +77869,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
     <div class="progress">
         <div class="progress-bar"></div>
     </div>
-    <div class="info">SCRUB TO SEARCH</div>
+    <div class="info">SCHRUBBE ZUM SUCHEN</div>
 `,
     _oe = hu.extend({
         className: "gesture scrub",
@@ -77945,7 +77945,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
             ".info": {
                 observe: "name",
                 onGet(t) {
-                    return `Tap any location to search for ${t}`
+                    return `Tippe auf einen Ort, um dort nach ${t} zu suchen`
                 }
             },
             ".leave": {
@@ -78050,7 +78050,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 observe: "participant",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Read <span class="player-name ${t.avatar}">${t.name}</span> this word. Spelling and spaces count!` : ""
+                    return t ? `Lese <span class="player-name ${t.avatar}">${t.name}</span> dieses Wort vor. Beachte Rechtschreibung und Leerzeichen!` : ""
                 }
             },
             ".word": "correctText"
@@ -78067,9 +78067,9 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
     iae = `<div class="clamp">
     <div class="info"></div>
     <form>
-        <input type="text" name="word" placeholder="ENTER WORD" maxlength=40
+        <input type="text" name="word" placeholder="WORT EINGEBEN" maxlength=40
             autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-        <button type="submit" class="button submit">SUBMIT</button>
+        <button type="submit" class="button submit">ABSENDEN</button>
     </form>
 </div>
 <button class="leave"></button>
@@ -78106,7 +78106,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 observe: "captain",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Ask <span class="player-name ${t.avatar}">${t.name}</span> for the word you need.` : ""
+                    return t ? `Frage <span class="player-name ${t.avatar}">${t.name}</span> nach dem benötigten Wort.` : ""
                 }
             },
             "input[name=word]": "word",
@@ -78137,7 +78137,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 isWaiting: !1
             }), this.triggerMethod("result", {
                 type: "fail",
-                message: "TRY<br/>AGAIN"
+                message: "VERSUCH<br/>ES<br/>NOCHMAL"
             }))
         },
         isPaused(t, e) {
@@ -81110,7 +81110,7 @@ const rae = je.View.extend({
                 observe: ["participant", "destination"],
                 updateMethod: "html",
                 onGet([t, e]) {
-                    return !t || !e ? "" : `Ask <span class="player-name ${t.avatar}">${t.name}</span> for directions to ${e.name}`
+                    return !t || !e ? "" : `Frage <span class="player-name ${t.avatar}">${t.name}</span> nach dem Weg zu ${e.name}`
                 }
             },
             ".scene-box-wrapper": {
@@ -84369,7 +84369,7 @@ const lae = je.View.extend({
         useTaps: !0,
         setup() {
             this.model.setUpdate({
-                infoText: "TAP AND HOLD",
+                infoText: "TIPPEN UND GEDRÜCKT HALTEN",
                 elapsedInMs: 0
             }), this.listenTo(this.model, "change:isPaused", this.onIsPausedChange)
         },
@@ -84430,7 +84430,7 @@ const lae = je.View.extend({
         }),
         setup() {
             this.boundOnKeyDown = this.onKeyDown.bind(this), document.addEventListener("keydown", this.boundOnKeyDown), this.model.setUpdate({
-                infoText: "DO NOTHING",
+                infoText: "NICHTS MACHEN",
                 elapsedInMs: 0
             }), this.listenTo(this.model, "change:isPaused", this.onIsPausedChange)
         },
@@ -84455,13 +84455,13 @@ const lae = je.View.extend({
         getMistakeMessage(t) {
             switch (t) {
                 case "key":
-                    return "YOU HIT A KEY!";
+                    return "DU HAST EINE TASTE GEDRÜCKT!";
                 case "mouse":
-                    return "YOU MOVED THE CURSOR!";
+                    return "DU HAST DEN CURSOR BEWEGT!";
                 case "touch":
-                    return "YOU TOUCHED!";
+                    return "DU HAST ES BERÜHRT!";
                 case "move":
-                    return "YOU MOVED!";
+                    return "DU HAST DICH BEWEGT!";
                 default:
                     return ""
             }
@@ -84495,7 +84495,7 @@ const lae = je.View.extend({
         isRotating: !1,
         setup() {
             const t = this.model.get("direction").toLowerCase() || "clockwise",
-                e = t === "clockwise" ? "ROTATE RIGHT" : "ROTATE LEFT";
+                e = t === "clockwise" ? "NACH RECHTS DREHEN" : "NACH LINKS DREHEN";
             this.model.setUpdate({
                 demoClass: t,
                 infoText: e,
@@ -84519,7 +84519,7 @@ const lae = je.View.extend({
             let r = 0;
             if (n === "clockwise" ? r = o / i * 100 : n === "counter" && o !== 0 ? r = -o / i * 100 : r = Math.abs(o) / i * 100, r < 0) {
                 this.sceneView.onMistake(), this.model.set({
-                    mistakeText: "WRONG WAY",
+                    mistakeText: "FALSCHE RICHTUNG",
                     mistake: !0
                 });
                 return
@@ -84592,13 +84592,13 @@ const lae = je.View.extend({
                 n = e[t];
             if (t === e.length) {
                 this.model.setUpdate({
-                    infoText: "DONE!"
+                    infoText: "FERTIG!"
                 });
                 return
             }
             this.model.setUpdate({
                 demoClass: n ? `swipe-${n.toLowerCase()}` : "",
-                infoText: n ? `SWIPE ${n}` : ""
+                infoText: n ? `NACH ${n.replace(/UP/ZL, "OBEN").replace(/DOWN/ZL, "UNTEN").replace(/RIGHT/ZL, "RECHTS").replace(/LEFT/ZL, "LINKS")} WISCHEN` : ""
             })
         },
         onSwipeEnd(t) {
@@ -84674,7 +84674,7 @@ const lae = je.View.extend({
         setup() {
             let t = this.model.get("wait") || 0;
             this.model.get("category") === "EMERGENCY" && (t = 500), this.throttledTap = X.exports.throttle(this.onTap, t, !0), this.listenTo(this.model, "change:tapsLeft", this.onTapsLeftChange), this.model.setUpdate({
-                infoText: "TAP",
+                infoText: "TIPPEN",
                 isWaiting: !1,
                 isWaitingForTimer: !1,
                 isWaitingForServer: !1
@@ -84735,7 +84735,7 @@ const lae = je.View.extend({
         useTaps: !0,
         setup() {
             this.model.setUpdate({
-                infoText: "TAP",
+                infoText: "TIPPEN",
                 isWaiting: !1,
                 tapsLeft: this.model.get("tapsRequired")
             })
@@ -84794,7 +84794,7 @@ const mae = `${_1}
         <div class="scene-box-wrapper">
             <div class="scene-box">
                 <div class="hand"></div>
-                <p>LOOK UP AND LISTEN</p>
+                <p>SCHAUEN UND HÖREN</p>
             </div>
         </div>
         <div class="doh"></div>
@@ -84908,9 +84908,9 @@ const mae = `${_1}
             if (t.playerInfo = {
                     avatar: "Audience",
                     role: {
-                        id: "THE CAT"
+                        id: "DIE KATZE"
                     },
-                    name: t.catName || "THE CAT"
+                    name: t.catName || "DIE KATZE"
                 }, t.state !== "AudienceMechanic") return;
             const e = this.model.get("blob"),
                 n = e ? e.catTaskWorkingOn : null;
