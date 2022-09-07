@@ -21360,13 +21360,13 @@ const Xx = cc.extend({
         if (!t || this.lastMessage && this.lastMessage.id === t.id) return;
         this.lastMessage = t;
         const e = await Gx(Object.assign({
-            "../images/bank_arrow.png": () => Ri(() => import("./assets/bank_arrow.bc369641.js"), []),
-            "../images/buyer0_arrow.png": () => Ri(() => import("./assets/buyer0_arrow.2c1457f7.js"), []),
-            "../images/buyer1_arrow.png": () => Ri(() => import("./assets/buyer1_arrow.6488b809.js"), []),
-            "../images/buyer2_arrow.png": () => Ri(() => import("./assets/buyer2_arrow.74324be2.js"), []),
-            "../images/dog_arrow.png": () => Ri(() => import("./assets/dog_arrow.035272f5.js"), []),
-            "../images/greg_arrow.png": () => Ri(() => import("./assets/greg_arrow.a4543b5d.js"), []),
-            "../images/oldman_arrow.png": () => Ri(() => import("./assets/oldman_arrow.80ef9f3e.js"), [])
+            "../images/bank_arrow.png": () => Ri(() => import("main/pp2/auction/assets/bank_arrow.bc369641.js"), []),
+            "../images/buyer0_arrow.png": () => Ri(() => import("main/pp2/auction/assets/buyer0_arrow.2c1457f7.js"), []),
+            "../images/buyer1_arrow.png": () => Ri(() => import("main/pp2/auction/assets/buyer1_arrow.6488b809.js"), []),
+            "../images/buyer2_arrow.png": () => Ri(() => import("main/pp2/auction/assets/buyer2_arrow.74324be2.js"), []),
+            "../images/dog_arrow.png": () => Ri(() => import("main/pp2/auction/assets/dog_arrow.035272f5.js"), []),
+            "../images/greg_arrow.png": () => Ri(() => import("main/pp2/auction/assets/greg_arrow.a4543b5d.js"), []),
+            "../images/oldman_arrow.png": () => Ri(() => import("main/pp2/auction/assets/oldman_arrow.80ef9f3e.js"), [])
         }), `../images/${t.sender.id}_arrow.png`);
         this.htmlWhenOff = "", this.htmlWhenOff += `<div class="auction-messager"><img src="${e.default}"></div>`, this.htmlWhenOff += `<div class="message-content text-content"><p>${t.text}</p></div>`;
         const n = _e("#auction-message"),
