@@ -21268,7 +21268,7 @@ class vR {
         return e.includes("Adult") ? "ELTERN" : e.includes("Child") ? "KIND" : e.includes("Teen") ? "TEENIE" : ""
     }
     parsePlayerData(e) {
-        this.update.playerText = e.playerInfo && e.playerInfo.name ? e.playerInfo.name : null, this.update.playerColor = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerAvatar = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerRole = e.playerInfo && e.playerInfo.role ? e.playerInfo.role.id : null
+        this.update.playerText = e.playerInfo && e.playerInfo.name ? e.playerInfo.name : null, this.update.playerColor = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerAvatar = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerRole = e.playerInfo && e.playerInfo.role ? e.playerInfo.role.id == "ADULT" ? "ELTERN" : e.playerInfo.role.id == "TEEN" ? "TEENIE" : e.playerInfo.role.id == "CHILD" ? "KIND" : e.playerInfo.role.id : null
     }
     parseEmergencyData(e) {
         e.playerThatCausedEmergency || (e.playerThatCausedEmergency = {
@@ -24739,7 +24739,7 @@ const Jy = {
             ".instructions": {
                 observe: "listingName",
                 onGet(t) {
-                    return `Call "${t}"`
+                    return `Rufe "${t}" an`
                 }
             },
             ".score": {
@@ -74875,7 +74875,7 @@ const Yse = E.extend({
         className: "search-scene",
         progressCounter: 0,
         cloudCounter: 0,
-        mistakeText: ["IT'S NOT<br/>HERE", "NO LUCK", "DIDN'T<br/>FIND IT", "NOPE"],
+        mistakeText: ["PECH<br/>GEHABT", "KEIN<br/>GLÜCK", "FALSCHER<br/>ORT", "NOPE"],
         imageManifest: {
             sprite: new URL("main/pp7/everyday/assets/43bbeef4.png", self.location).href
         },
