@@ -46447,11 +46447,11 @@ const L0 = E.extend({
                 ease: "none"
             }, "<").add(() => {
                 this.model.setUpdate({
-                    infoText: "TAP AND HOLD"
+                    infoText: "TIPPEN UND GEDRÜCKT HALTEN"
                 })
             }).add(() => {
                 this.model.setUpdate({
-                    infoText: "DEAL WITH IT"
+                    infoText: "SAU COOL"
                 })
             }).to(".e.shades", {
                 y: 400
@@ -75186,7 +75186,7 @@ const Yse = E.extend({
             class: "text",
             type: "div",
             pos: [50, 50],
-            html: "<span>TAP AND HOLD!</span>"
+            html: "<span>TIPPEN UND GEDRÜCKT HALTEN!</span>"
         }],
         initializeTimeline() {
             const t = this.model.get("durationInMs");
@@ -75384,7 +75384,7 @@ const Yse = E.extend({
             class: "text",
             type: "div",
             pos: [50, 50],
-            html: "<span>ROTATE!</span>"
+            html: "<span>DREHEN!</span>"
         }],
         onLoadComplete() {
             const t = this.model.get("direction");
@@ -75406,12 +75406,12 @@ const Yse = E.extend({
             class: "text background",
             type: "div",
             pos: [50, 50],
-            html: "<span>SCRUB!</span>"
+            html: "<span>SCHRUBBEN!</span>"
         }, {
             class: "text foreground",
             type: "div",
             pos: [50, 50],
-            html: "<span>SCRUB!</span>"
+            html: "<span>SCHRUBBEN!</span>"
         }],
         initializeTimeline() {
             s.set(".e.foreground", {
@@ -75523,7 +75523,7 @@ const Yse = E.extend({
             class: "text",
             type: "div",
             pos: [50, 50],
-            html: "<span>TAP!</span>"
+            html: "<span>TIPPEN!</span>"
         }]
     }),
     joe = E.extend({
@@ -84598,7 +84598,7 @@ const lae = je.View.extend({
             }
             this.model.setUpdate({
                 demoClass: n ? `swipe-${n.toLowerCase()}` : "",
-                infoText: n ? `NACH ${n.replace(/UP/ZL, "OBEN").replace(/DOWN/ZL, "UNTEN").replace(/RIGHT/ZL, "RECHTS").replace(/LEFT/ZL, "LINKS")} WISCHEN` : ""
+                infoText: n ? `NACH ${n.replace(/UP/gi, "OBEN").replace(/DOWN/gi, "UNTEN").replace(/RIGHT/gi, "RECHTS").replace(/LEFT/gi, "LINKS")} WISCHEN` : ""
             })
         },
         onSwipeEnd(t) {
