@@ -9,7 +9,7 @@ var aL = (e, t) => () => (t || e((t = {
     exports: {}
 }).exports, t), t.exports);
 var Re = (e, t, n) => (sL(e, typeof t != "symbol" ? t + "" : t, n), n);
-var Ore = aL((Cre, Aw) => {
+var wre = aL((Are, Aw) => {
     const oL = function() {
         const t = document.createElement("link").relList;
         if (t && t.supports && t.supports("modulepreload")) return;
@@ -26294,9 +26294,12 @@ from your past games list.`,
         },
         ere = {
             class: "version"
+        },
+        tre = {
+            href: "/manifest"
         };
 
-    function tre(e, t, n, r, s, o) {
+    function nre(e, t, n, r, s, o) {
         const c = Qt("AppearanceRadio"),
             u = Qt("PreferredBranch");
         return z(), Q("nav", Yne, [Y("ul", null, [e.isTwitchAuthenticated ? (z(), Q("li", {
@@ -26338,13 +26341,13 @@ from your past games list.`,
             target: "_blank",
             href: "https://www.instagram.com/playjackboxgames",
             onClick: t[10] || (t[10] = f => e.onLinkClick("https://www.instagram.com/playjackboxgames"))
-        })]), Y("li", ere, Ce(e.version), 1)])])
+        })]), Y("li", ere, [Y("a", tre, Ce(e.version), 1)])])])
     }
-    const nre = yt(Vne, [
-            ["render", tre],
-            ["__scopeId", "data-v-7c1b89a9"]
+    const rre = yt(Vne, [
+            ["render", nre],
+            ["__scopeId", "data-v-1e5a97d3"]
         ]),
-        rre = ze({
+        ire = ze({
             components: {
                 PastGame: Cw
             },
@@ -26365,28 +26368,28 @@ from your past games list.`,
                 }
             }
         }),
-        ire = {
+        sre = {
             key: 0,
             class: "past-games"
         },
-        sre = {
+        are = {
             class: "constrain"
         },
-        are = {
+        ore = {
             key: 0,
             class: "top-items"
         },
-        ore = {
+        cre = {
             key: 1,
             class: "empty"
         };
 
-    function cre(e, t, n, r, s, o) {
+    function lre(e, t, n, r, s, o) {
         const c = Qt("PastGame");
-        return e.artifacts ? (z(), Q("div", ire, [Y("div", sre, [e.artifacts.artifacts.length ? (z(), Q("div", are, [Y("h3", null, Ce(e.$t("PAST_GAMES.TITLE")), 1), Y("button", {
+        return e.artifacts ? (z(), Q("div", sre, [Y("div", are, [e.artifacts.artifacts.length ? (z(), Q("div", ore, [Y("h3", null, Ce(e.$t("PAST_GAMES.TITLE")), 1), Y("button", {
             class: "manage",
             onClick: t[0] || (t[0] = (...u) => e.onManageClick && e.onManageClick(...u))
-        }, Ce(e.isManaging ? e.$t("ACTION.DONE") : e.$t("PAST_GAMES.MANAGE")), 1)])) : (z(), Q("p", ore, Ce(e.$t("PAST_GAMES.EMPTY")), 1)), ft(Qb, {
+        }, Ce(e.isManaging ? e.$t("ACTION.DONE") : e.$t("PAST_GAMES.MANAGE")), 1)])) : (z(), Q("p", cre, Ce(e.$t("PAST_GAMES.EMPTY")), 1)), ft(Qb, {
             name: "list-transition"
         }, {
             default: Kr(() => [(z(!0), Q(ut, null, Ar(e.artifacts.artifacts, (u, f) => (z(), nr(c, {
@@ -26400,14 +26403,14 @@ from your past games list.`,
             _: 1
         })])])) : Ae("", !0)
     }
-    const lre = yt(rre, [
-            ["render", cre],
+    const ure = yt(ire, [
+            ["render", lre],
             ["__scopeId", "data-v-d14b28d3"]
         ]),
-        ure = ze({
+        fre = ze({
             components: {
-                Menu: nre,
-                PastGames: lre
+                Menu: rre,
+                PastGames: ure
             },
             props: {
                 artifacts: Object,
@@ -26439,34 +26442,34 @@ from your past games list.`,
                 }
             }
         }),
-        fre = e => (da("data-v-0c67992c"), e = e(), ha(), e),
-        dre = {
+        dre = e => (da("data-v-0c67992c"), e = e(), ha(), e),
+        hre = {
             key: 0,
             class: "top-bar"
         },
-        hre = {
+        pre = {
             class: "constrain"
         },
-        pre = fre(() => Y("div", {
+        gre = dre(() => Y("div", {
             class: "logo"
         }, null, -1)),
-        gre = {
+        mre = {
             key: 0,
             class: "indicator"
         };
 
-    function mre(e, t, n, r, s, o) {
+    function vre(e, t, n, r, s, o) {
         const c = Qt("PastGames"),
             u = Qt("Menu");
-        return e.twitch ? (z(), Q("div", dre, [Y("header", {
+        return e.twitch ? (z(), Q("div", hre, [Y("header", {
             class: "header",
             onKeyup: t[0] || (t[0] = Hs((...f) => e.onHamburgerClick && e.onHamburgerClick(...f), ["enter"])),
             onClick: t[1] || (t[1] = (...f) => e.onHamburgerClick && e.onHamburgerClick(...f))
-        }, [Y("div", hre, [pre, Y("div", {
+        }, [Y("div", pre, [gre, Y("div", {
             class: Ye(["hamburger", {
                 close: e.openedTo !== null
             }])
-        }, null, 2), !e.openedTo && e.hasUnseenGames ? (z(), Q("div", gre)) : Ae("", !0), e.twitch.user ? (z(), Q("div", {
+        }, null, 2), !e.openedTo && e.hasUnseenGames ? (z(), Q("div", mre)) : Ae("", !0), e.twitch.user ? (z(), Q("div", {
             key: 1,
             class: "avatar",
             style: ca(`background-image: url(${e.twitch.user.profile_image_url});`)
@@ -26497,15 +26500,15 @@ from your past games list.`,
             _: 1
         })])) : Ae("", !0)
     }
-    const vre = yt(ure, [
-            ["render", mre],
+    const _re = yt(fre, [
+            ["render", vre],
             ["__scopeId", "data-v-0c67992c"]
         ]),
-        _re = ze({
+        yre = ze({
             name: "@connect",
             components: {
                 Connect: Bte,
-                TopBar: vre,
+                TopBar: _re,
                 RecentGames: pne,
                 SlideBanner: Nne
             },
@@ -26566,20 +26569,20 @@ from your past games list.`,
                 }
             }
         }),
-        yre = {
+        Ere = {
             class: "form"
         },
-        Ere = {
+        bre = {
             class: "constrain"
         },
-        bre = {
+        Tre = {
             key: 0,
             class: "bottom-logo",
             target: "_blank",
             href: "https://www.jackboxgames.com/?utm_source=jackboxtv&utm_medium=logo&utm_campaign=jackboxgames"
         };
 
-    function Tre(e, t, n, r, s, o) {
+    function Sre(e, t, n, r, s, o) {
         const c = Qt("Fatal"),
             u = Qt("TopBar"),
             f = Qt("Connect"),
@@ -26597,22 +26600,22 @@ from your past games list.`,
             artifacts: e.artifacts,
             onTwitchLoginWasClicked: e.onTwitchLoginClick,
             onTwitchLogoutWasClicked: e.onTwitchLogoutClick
-        }, null, 8, ["twitch", "artifacts", "onTwitchLoginWasClicked", "onTwitchLogoutWasClicked"]), Y("div", yre, [Y("div", Ere, [ft(f, {
+        }, null, 8, ["twitch", "artifacts", "onTwitchLoginWasClicked", "onTwitchLogoutWasClicked"]), Y("div", Ere, [Y("div", bre, [ft(f, {
             match: e.options.match,
             "twitch-user": e.twitch.user
-        }, null, 8, ["match", "twitch-user"]), ft(h), e.recentGames.length ? Ae("", !0) : (z(), Q("a", bre, Ce(e.$t("HOMEPAGE_LINK")), 1))])]), ft(g, {
+        }, null, 8, ["match", "twitch-user"]), ft(h), e.recentGames.length ? Ae("", !0) : (z(), Q("a", Tre, Ce(e.$t("HOMEPAGE_LINK")), 1))])]), ft(g, {
             "recent-games": e.recentGames,
             onPastGamesWasClicked: e.onPastGamesClick
         }, null, 8, ["recent-games", "onPastGamesWasClicked"]), ft(y)], 2))
     }
-    const Sre = yt(_re, [
-        ["render", Tre],
+    const Ore = yt(yre, [
+        ["render", Sre],
         ["__scopeId", "data-v-74f892c9"]
     ]);
     window.tv.register({
         mount: e => {
             var s, o;
-            let t = xP(Sre, {
+            let t = xP(Ore, {
                 options: e
             });
             t.config.unwrapInjectedRef = !0;
@@ -26637,5 +26640,5 @@ from your past games list.`,
         })
     })
 });
-export default Ore();
-//# sourceMappingURL=a77d459e.js.map
+export default wre();
+//# sourceMappingURL=4b49c82a.js.map
