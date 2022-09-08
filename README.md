@@ -2,6 +2,8 @@
 
 You will have to port over most of your translations manually.
 
+If using Github Pages, choose *Deploy from branch*
+
 ---
 
 *IMPORTANT NOTE:* When changing the titles of games, **You ONLY need to change them in the** @connect **and** @moderator **scripts.** Changing them in any other file is unnecessary.
