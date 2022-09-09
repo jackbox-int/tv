@@ -9530,28 +9530,29 @@ Url: ${nr(t)}`), !0)
                 return this.registered.connect(e)
             });
             G(this, "mount", e => {
-                var a, s, o, c;
+                var s, o, c, f;
                 if (!this.registered.mount) {
                     console.error("[loader] There is not a registered app to mount"), this.showLoaderError();
                     return
                 }
-                if (this.registered.unmount && this.registered.unmount(), this.registered.info) {
-                    const f = this.registered.info(e);
+                const r = document.getElementsByClassName("loader-status")[0];
+                if (r && r.remove(), this.registered.unmount && this.registered.unmount(), this.registered.info) {
+                    const y = this.registered.info(e);
                     _o({
-                        branch: f.branch,
-                        "app.tag": f.tag,
-                        "app.type": f.type,
-                        "app.version": f.version,
-                        "app.wrapper": f.wrapper
-                    }), Ta.pageView(f.tag)
+                        branch: y.branch,
+                        "app.tag": y.tag,
+                        "app.type": y.type,
+                        "app.version": y.version,
+                        "app.wrapper": y.wrapper
+                    }), Ta.pageView(y.tag)
                 }
-                Kt.setup(e.app, (o = (a = e.room) == null ? void 0 : a.code) != null ? o : (s = e.client) == null ? void 0 : s.code);
-                const r = document.querySelectorAll("[data-tv-style]"),
-                    i = Array.from(document.querySelectorAll("[data-tv-prefetch]")).map(f => {
-                        const y = document.createElement("link");
-                        return y.rel = "stylesheet", y.href = f.href, y.setAttribute("data-tv-style", ""), y
+                Kt.setup(e.app, (c = (s = e.room) == null ? void 0 : s.code) != null ? c : (o = e.client) == null ? void 0 : o.code);
+                const n = document.querySelectorAll("[data-tv-style]"),
+                    a = Array.from(document.querySelectorAll("[data-tv-prefetch]")).map(y => {
+                        const m = document.createElement("link");
+                        return m.rel = "stylesheet", m.href = y.href, m.setAttribute("data-tv-style", ""), m
                     });
-                document.head.append(...i), r.forEach(f => f.remove()), this.registered.unmount = (c = this.registered.mount(e)) != null ? c : void 0, delete this.registered.connect, delete this.registered.mount, delete this.registered.info
+                document.head.append(...a), n.forEach(y => y.remove()), this.registered.unmount = (f = this.registered.mount(e)) != null ? f : void 0, delete this.registered.connect, delete this.registered.mount, delete this.registered.info
             });
             G(this, "debugLoad", async (e, r) => {
                 throw new Error("[Loader] Debug controllers are not avaialble in production builds")
@@ -9601,8 +9602,9 @@ Url: ${nr(t)}`), !0)
         }
         showLoaderError() {
             var a;
-            const e = document.getElementsByClassName("loader-status")[0],
-                r = document.createElement("p"),
+            const e = document.getElementsByClassName("loader-status")[0];
+            if (!e) return;
+            const r = document.createElement("p"),
                 n = navigator.languages[0],
                 i = (a = ga[n]) != null ? a : ga.en;
             e.classList.add("error"), r.textContent = i.RETRY, e.append(r), e.addEventListener("click", () => window.location.reload())
@@ -10529,16 +10531,16 @@ Url: ${nr(t)}`), !0)
         iw = 1,
         aw = {
             branch: "main",
-            sha: "a29d7d679b32aa82cb9550446ef81ca484e2b417",
-            lastUpdated: 1662576244235,
-            version: "5.22.0",
+            sha: "14aaf57241d1437f8e07173c8ddff4bdaed08669",
+            lastUpdated: 1662663821753,
+            version: "5.23.0",
             type: "production"
         },
         sw = {
             main: {
-                sha: "a29d7d679b32aa82cb9550446ef81ca484e2b417",
-                lastUpdated: 1662576244235,
-                version: "5.22.0",
+                sha: "14aaf57241d1437f8e07173c8ddff4bdaed08669",
+                lastUpdated: 1662663821753,
+                version: "5.23.0",
                 type: "production",
                 bundles: {
                     "@connect": {
@@ -10623,7 +10625,7 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp2/earwax",
-                        version: "5.10.0"
+                        version: "5.23.0"
                     },
                     fibbage2: {
                         file: "script.js",
@@ -10902,4 +10904,4 @@ Url: ${nr(t)}`), !0)
     rw()
 });
 export default cw();
-//# sourceMappingURL=e3c9c21c.js.map
+//# sourceMappingURL=d8afcc11.js.map

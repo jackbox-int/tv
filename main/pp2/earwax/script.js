@@ -15405,7 +15405,7 @@ const y0 = `<div class="canvasContainer">\r
             this.width = i, this.height = o, this.finalWidth = e * f, this.finalHeight = n * f, this.offsetX = .5 * (i - this.finalWidth), this.offsetY = .5 * (o - this.finalHeight), this.dy = this.transmitting ? Math.min(-100, this.dy) : 0, this.ddy = this.transmitting ? -1200 : 0, this.transmitting || (this.y = 0), this.advance(t)
         },
         render() {
-            if (console.log("render"), !this.video) return;
+            if (!this.video) return;
             const t = mo();
             t.save(), t.translate(this.x, this.y), this.preview ? t.drawImage(this.preview, 0, 0) : this.mirror ? (t.scale(-1, 1), t.drawImage(this.video, this.offsetX - Di().width, this.offsetY, this.finalWidth, this.finalHeight)) : t.drawImage(this.video, this.offsetX, this.offsetY, this.finalWidth, this.finalHeight), t.restore(), !this.preview && this.mask && this.image && (t.scale(1, 1), t.drawImage(this.image, this.x, this.y, Di().width, Di().height))
         }
@@ -15590,12 +15590,12 @@ const y0 = `<div class="canvasContainer">\r
     }),
     C0 = si.extend({
         defaults: {
+            sizesToSend: null,
+            mask: !0,
             size: {
                 width: 300,
                 height: 408
             },
-            sizesToSend: null,
-            mask: !0,
             strings: {
                 exitButton: "X",
                 switchButton: `
@@ -21518,4 +21518,4 @@ const vx = lc.extend({
 jC({
     MainView: vx
 });
-//# sourceMappingURL=90a7cd07.js.map
+//# sourceMappingURL=bf8c3f65.js.map
