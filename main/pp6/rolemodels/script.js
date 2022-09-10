@@ -15375,9 +15375,9 @@ class Ot {
     }
 }
 const xC = `<div class="canvasContainer">\r
-    <video id="cameraVideo" class="cameraVideo" autoplay playsinline crossorigin="anonymous" class=""></video>\r
+    <video id="cameraVideo" class="cameraVideo" autoplay playsinline class=""></video>\r
     <canvas id='cameraCanvas' class="cameraCanvas resizableCanvas" width="300px" height="408px" class=""></canvas>\r
-    <img id="cameraImage" crossorigin="anonymous" class="cameraImage visuallyhidden" />\r
+    <img id="cameraImage" class="cameraImage visuallyhidden" />\r
 </div>\r
 <div class="cameraControls">\r
     <button id="exitButton" class="button exitButton"></button>\r
@@ -15404,7 +15404,7 @@ const xC = `<div class="canvasContainer">\r
         mirror: !0,
         mask: !0,
         update(t) {
-            if (this.video || (this.video = document.getElementById("cameraVideo")), this.image || (this.image = document.getElementById("Mask")), !this.video || !this.image) return;
+            if (this.video || (this.video = document.getElementById("cameraVideo"), this.video.setAttribute("crossorigin", "anonymous")), this.image || (this.image = document.getElementById("Mask"), this.image.setAttribute("crossorigin", "anonymous")), !this.video || !this.image) return;
             const e = this.video.videoWidth,
                 n = this.video.videoHeight,
                 i = Mi().width,
@@ -15539,8 +15539,8 @@ const xC = `<div class="canvasContainer">\r
             this.currentStream && this.stopMediaTracks(), this.facingMode = this.facingMode === "user" ? "environment" : "user", this.cameraSprite.mirror = this.facingMode === "user", this.startCamera()
         },
         snapshotClicked() {
-            const t = new Image;
-            t.crossOrigin = "anonymous", t.src = this.canvas.toDataURL(), this.model.set("image", t), this.model.set("transmitting", !1)
+            const t = this.canvas.toDataURL();
+            this.model.set("image", t), this.model.set("transmitting", !1)
         },
         confirmClicked() {
             const t = this.model.get("sizesToSend") || [{
@@ -21387,4 +21387,4 @@ const Zx = Vx.extend({
 zx({
     MainView: Zx
 });
-//# sourceMappingURL=ac169e60.js.map
+//# sourceMappingURL=4a30e3cb.js.map

@@ -222,11 +222,11 @@ var cw = Qo((lw, Fo) => {
         Mc = vt,
         Bc = Mc.Symbol,
         Pa = Bc,
-        oi = Pa,
+        ci = Pa,
         Ia = Object.prototype,
         Uc = Ia.hasOwnProperty,
         Fc = Ia.toString,
-        St = oi ? oi.toStringTag : void 0;
+        St = ci ? ci.toStringTag : void 0;
 
     function Gc(t) {
         var e = Uc.call(t, St),
@@ -246,15 +246,15 @@ var cw = Qo((lw, Fo) => {
         return Wc.call(t)
     }
     var zc = Yc,
-        ci = Pa,
+        ui = Pa,
         Jc = qc,
         Vc = zc,
         Kc = "[object Null]",
         Xc = "[object Undefined]",
-        ui = ci ? ci.toStringTag : void 0;
+        li = ui ? ui.toStringTag : void 0;
 
     function Qc(t) {
-        return t == null ? t === void 0 ? Xc : Kc : ui && ui in Object(t) ? Jc(t) : Vc(t)
+        return t == null ? t === void 0 ? Xc : Kc : li && li in Object(t) ? Jc(t) : Vc(t)
     }
     var fr = Qc;
 
@@ -275,18 +275,18 @@ var cw = Qo((lw, Fo) => {
         var e = eu(t);
         return e == nu || e == iu || e == ru || e == au
     }
-    var mn = su,
+    var gn = su,
         ou = vt,
         cu = ou["__core-js_shared__"],
         uu = cu,
         kr = uu,
-        li = function() {
+        fi = function() {
             var t = /[^.]+$/.exec(kr && kr.keys && kr.keys.IE_PROTO || "");
             return t ? "Symbol(src)_1." + t : ""
         }();
 
     function lu(t) {
-        return !!li && li in t
+        return !!fi && fi in t
     }
     var fu = lu,
         du = Function.prototype,
@@ -304,7 +304,7 @@ var cw = Qo((lw, Fo) => {
         return ""
     }
     var yu = pu,
-        vu = mn,
+        vu = gn,
         mu = fu,
         gu = Ye,
         _u = yu,
@@ -334,18 +334,18 @@ var cw = Qo((lw, Fo) => {
         var r = xu(t, e);
         return Au(r) ? r : void 0
     }
-    var gn = Nu,
-        Lu = gn,
+    var _n = Nu,
+        Lu = _n,
         Cu = vt,
         Du = Lu(Cu, "Map"),
         Aa = Du,
-        ju = gn,
+        ju = _n,
         Mu = ju(Object, "create"),
         dr = Mu,
-        fi = dr;
+        di = dr;
 
     function Bu() {
-        this.__data__ = fi ? fi(null) : {}, this.size = 0
+        this.__data__ = di ? di(null) : {}, this.size = 0
     }
     var Uu = Bu;
 
@@ -405,15 +405,15 @@ var cw = Qo((lw, Fo) => {
     mt.prototype.has = ol;
     mt.prototype.set = cl;
     var ul = mt,
-        di = ul,
+        hi = ul,
         ll = lr,
         fl = Aa;
 
     function dl() {
         this.size = 0, this.__data__ = {
-            hash: new di,
+            hash: new hi,
             map: new(fl || ll),
-            string: new di
+            string: new hi
         }
     }
     var hl = dl;
@@ -509,7 +509,7 @@ var cw = Qo((lw, Fo) => {
     _t.prototype.has = Yl;
     _t.prototype.set = zl;
     var Jl = _t,
-        Vl = gn,
+        Vl = _n,
         Kl = function() {
             try {
                 var t = Vl(Object, "defineProperty");
@@ -517,18 +517,18 @@ var cw = Qo((lw, Fo) => {
             } catch {}
         }(),
         xa = Kl,
-        hi = xa;
+        pi = xa;
 
     function Xl(t, e, r) {
-        e == "__proto__" && hi ? hi(t, e, {
+        e == "__proto__" && pi ? pi(t, e, {
             configurable: !0,
             enumerable: !0,
             value: r,
             writable: !0
         }) : t[e] = r
     }
-    var _n = Xl,
-        Ql = _n,
+    var bn = Xl,
+        Ql = bn,
         Zl = cr;
 
     function ef(t, e, r) {
@@ -549,7 +549,7 @@ var cw = Qo((lw, Fo) => {
         nf = rf,
         af = nf(),
         sf = af,
-        zr = {
+        Jr = {
             exports: {}
         };
     (function(t, e) {
@@ -567,12 +567,12 @@ var cw = Qo((lw, Fo) => {
             return f.copy(w), w
         }
         t.exports = c
-    })(zr, zr.exports);
-    var of = vt, cf = of.Uint8Array, uf = cf, pi = uf;
+    })(Jr, Jr.exports);
+    var of = vt, cf = of.Uint8Array, uf = cf, yi = uf;
 
     function lf(t) {
         var e = new t.constructor(t.byteLength);
-        return new pi(e).set(new pi(t)), e
+        return new yi(e).set(new yi(t)), e
     }
     var ff = lf,
         df = ff;
@@ -591,12 +591,12 @@ var cw = Qo((lw, Fo) => {
     }
     var vf = yf,
         mf = Ye,
-        yi = Object.create,
+        vi = Object.create,
         gf = function() {
             function t() {}
             return function(e) {
                 if (!mf(e)) return {};
-                if (yi) return yi(e);
+                if (vi) return vi(e);
                 t.prototype = e;
                 var r = new t;
                 return t.prototype = void 0, r
@@ -642,14 +642,14 @@ var cw = Qo((lw, Fo) => {
         return Nf(t) && xf(t) == Lf
     }
     var Df = Cf,
-        vi = Df,
+        mi = Df,
         jf = Ct,
         Da = Object.prototype,
         Mf = Da.hasOwnProperty,
         Bf = Da.propertyIsEnumerable,
-        Uf = vi(function() {
+        Uf = mi(function() {
             return arguments
-        }()) ? vi : function(t) {
+        }()) ? mi : function(t) {
             return jf(t) && Mf.call(t, "callee") && !Bf.call(t, "callee")
         },
         ja = Uf,
@@ -661,14 +661,14 @@ var cw = Qo((lw, Fo) => {
         return typeof t == "number" && t > -1 && t % 1 == 0 && t <= Gf
     }
     var Ba = qf,
-        Hf = mn,
+        Hf = gn,
         Wf = Ba;
 
     function Yf(t) {
         return t != null && Wf(t.length) && !Hf(t)
     }
-    var bn = Yf,
-        zf = bn,
+    var En = Yf,
+        zf = En,
         Jf = Ct;
 
     function Vf(t) {
@@ -754,7 +754,7 @@ var cw = Qo((lw, Fo) => {
         }
     }
     var Bd = Md,
-        Jr = {
+        Vr = {
             exports: {}
         };
     (function(t, e) {
@@ -770,19 +770,19 @@ var cw = Qo((lw, Fo) => {
                 } catch {}
             }();
         t.exports = o
-    })(Jr, Jr.exports);
+    })(Vr, Vr.exports);
     var Ud = jd,
         Fd = Bd,
-        mi = Jr.exports,
-        gi = mi && mi.isTypedArray,
-        Gd = gi ? Fd(gi) : Ud,
+        gi = Vr.exports,
+        _i = gi && gi.isTypedArray,
+        Gd = _i ? Fd(_i) : Ud,
         Fa = Gd;
 
     function qd(t, e) {
         if (!(e === "constructor" && typeof t[e] == "function") && e != "__proto__") return t[e]
     }
     var Ga = qd,
-        Hd = _n,
+        Hd = bn,
         Wd = cr,
         Yd = Object.prototype,
         zd = Yd.hasOwnProperty;
@@ -793,7 +793,7 @@ var cw = Qo((lw, Fo) => {
     }
     var Vd = Jd,
         Kd = Vd,
-        Xd = _n;
+        Xd = bn;
 
     function Qd(t, e, r, n) {
         var i = !r;
@@ -865,7 +865,7 @@ var cw = Qo((lw, Fo) => {
     var Sh = wh,
         Oh = ph,
         kh = Sh,
-        Rh = bn;
+        Rh = En;
 
     function Th(t) {
         return Rh(t) ? Oh(t, !0) : kh(t)
@@ -878,39 +878,39 @@ var cw = Qo((lw, Fo) => {
         return $h(t, Ph(t))
     }
     var Ah = Ih,
-        _i = Na,
-        xh = zr.exports,
+        bi = Na,
+        xh = Jr.exports,
         Nh = pf,
         Lh = vf,
         Ch = If,
-        bi = ja,
-        Ei = Ma,
+        Ei = ja,
+        wi = Ma,
         Dh = Kf,
         jh = Vt.exports,
-        Mh = mn,
+        Mh = gn,
         Bh = Ye,
         Uh = cd,
         Fh = Fa,
-        wi = Ga,
+        Si = Ga,
         Gh = Ah;
 
     function qh(t, e, r, n, i, a, s) {
-        var o = wi(t, r),
-            c = wi(e, r),
+        var o = Si(t, r),
+            c = Si(e, r),
             f = s.get(c);
         if (f) {
-            _i(t, r, f);
+            bi(t, r, f);
             return
         }
         var y = a ? a(o, c, r + "", t, e, s) : void 0,
             m = y === void 0;
         if (m) {
-            var w = Ei(c),
+            var w = wi(c),
                 O = !w && jh(c),
                 k = !w && !O && Fh(c);
-            y = c, w || O || k ? Ei(o) ? y = o : Dh(o) ? y = Lh(o) : O ? (m = !1, y = xh(c, !0)) : k ? (m = !1, y = Nh(c, !0)) : y = [] : Uh(c) || bi(c) ? (y = o, bi(o) ? y = Gh(o) : (!Bh(o) || Mh(o)) && (y = Ch(c))) : m = !1
+            y = c, w || O || k ? wi(o) ? y = o : Dh(o) ? y = Lh(o) : O ? (m = !1, y = xh(c, !0)) : k ? (m = !1, y = Nh(c, !0)) : y = [] : Uh(c) || Ei(c) ? (y = o, Ei(o) ? y = Gh(o) : (!Bh(o) || Mh(o)) && (y = Ch(c))) : m = !1
         }
-        m && (s.set(c, y), i(y, c, n, a, s), s.delete(c)), _i(t, r, y)
+        m && (s.set(c, y), i(y, c, n, a, s), s.delete(c)), bi(t, r, y)
     }
     var Hh = qh,
         Wh = Jl,
@@ -952,12 +952,12 @@ var cw = Qo((lw, Fo) => {
     }
     var tp = ep,
         rp = tp,
-        Si = Math.max;
+        Oi = Math.max;
 
     function np(t, e, r) {
-        return e = Si(e === void 0 ? t.length - 1 : e, 0),
+        return e = Oi(e === void 0 ? t.length - 1 : e, 0),
             function() {
-                for (var n = arguments, i = -1, a = Si(n.length - e, 0), s = Array(a); ++i < a;) s[i] = n[e + i];
+                for (var n = arguments, i = -1, a = Oi(n.length - e, 0), s = Array(a); ++i < a;) s[i] = n[e + i];
                 i = -1;
                 for (var o = Array(e + 1); ++i < e;) o[i] = n[i];
                 return o[e] = r(s), rp(t, this, o)
@@ -972,10 +972,10 @@ var cw = Qo((lw, Fo) => {
     }
     var sp = ap,
         op = sp,
-        Oi = xa,
+        ki = xa,
         cp = Ya,
-        up = Oi ? function(t, e) {
-            return Oi(t, "toString", {
+        up = ki ? function(t, e) {
+            return ki(t, "toString", {
                 configurable: !0,
                 enumerable: !1,
                 value: op(e),
@@ -1013,7 +1013,7 @@ var cw = Qo((lw, Fo) => {
     }
     var Op = Sp,
         kp = cr,
-        Rp = bn,
+        Rp = En,
         Tp = qa,
         $p = Ye;
 
@@ -1045,7 +1045,7 @@ var cw = Qo((lw, Fo) => {
     Dp(function(t, e, r) {
         Cp(t, e, r)
     });
-    const ri = class {
+    const ni = class {
         static get serverUrl() {
             var r;
             const e = (r = this.getQueryParam("server")) != null ? r : this.getQueryParam("s");
@@ -1134,8 +1134,8 @@ var cw = Qo((lw, Fo) => {
             return !(e.x < n.left || e.x > n.left + n.width || e.y < n.top || e.y > n.top + n.height)
         }
     };
-    let Te = ri;
-    G(Te, "queryParams", new URLSearchParams(window.location.search)), G(Te, "getQueryParam", e => ri.queryParams.get(e)), G(Te, "sleep", e => new Promise(r => {
+    let Te = ni;
+    G(Te, "queryParams", new URLSearchParams(window.location.search)), G(Te, "getQueryParam", e => ni.queryParams.get(e)), G(Te, "sleep", e => new Promise(r => {
         window.setTimeout(r, e)
     }));
     class Kt {
@@ -1232,7 +1232,7 @@ var cw = Qo((lw, Fo) => {
         }
     }
     G(Kt, "defaultNamespace", "tv");
-    var Vr = {
+    var Kr = {
         exports: {}
     };
     (function(t, e) {
@@ -1518,7 +1518,7 @@ var cw = Qo((lw, Fo) => {
         })(n), n.fetch.ponyfill = !0, delete n.fetch.polyfill;
         var i = n;
         e = i.fetch, e.default = i.fetch, e.fetch = i.fetch, e.Headers = i.Headers, e.Request = i.Request, e.Response = i.Response, t.exports = e
-    })(Vr, Vr.exports);
+    })(Kr, Kr.exports);
     var jp = function() {
             if (typeof Symbol != "function" || typeof Object.getOwnPropertySymbols != "function") return !1;
             if (typeof Symbol.iterator == "symbol") return !0;
@@ -1538,10 +1538,10 @@ var cw = Qo((lw, Fo) => {
             }
             return !0
         },
-        ki = typeof Symbol < "u" && Symbol,
+        Ri = typeof Symbol < "u" && Symbol,
         Mp = jp,
         Bp = function() {
-            return typeof ki != "function" || typeof Symbol != "function" || typeof ki("foo") != "symbol" || typeof Symbol("bar") != "symbol" ? !1 : Mp()
+            return typeof Ri != "function" || typeof Symbol != "function" || typeof Ri("foo") != "symbol" || typeof Symbol("bar") != "symbol" ? !1 : Mp()
         },
         Up = "Function.prototype.bind called on incompatible ",
         Rr = Array.prototype.slice,
@@ -1563,8 +1563,8 @@ var cw = Qo((lw, Fo) => {
             return i
         },
         Hp = qp,
-        En = Function.prototype.bind || Hp,
-        Wp = En,
+        wn = Function.prototype.bind || Hp,
+        Wp = wn,
         Yp = Wp.call(Function.call, Object.prototype.hasOwnProperty),
         L, ot = SyntaxError,
         za = Function,
@@ -1680,7 +1680,7 @@ var cw = Qo((lw, Fo) => {
             }
             return et[e] = r, r
         },
-        Ri = {
+        Ti = {
             "%ArrayBufferPrototype%": ["ArrayBuffer", "prototype"],
             "%ArrayPrototype%": ["Array", "prototype"],
             "%ArrayProto_entries%": ["Array", "prototype", "entries"],
@@ -1733,11 +1733,11 @@ var cw = Qo((lw, Fo) => {
             "%WeakMapPrototype%": ["WeakMap", "prototype"],
             "%WeakSetPrototype%": ["WeakSet", "prototype"]
         },
-        Dt = En,
+        Dt = wn,
         Xt = Yp,
         Kp = Dt.call(Function.call, Array.prototype.concat),
         Xp = Dt.call(Function.apply, Array.prototype.splice),
-        Ti = Dt.call(Function.call, String.prototype.replace),
+        $i = Dt.call(Function.call, String.prototype.replace),
         Qt = Dt.call(Function.call, String.prototype.slice),
         Qp = Dt.call(Function.call, RegExp.prototype.exec),
         Zp = /[^%.[\]]+|\[(?:(-?\d+(?:\.\d+)?)|(["'])((?:(?!\2)[^\\]|\\.)*?)\2)\]|(?=(?:\.|\[\])(?:\.|\[\]|%$))/g,
@@ -1748,14 +1748,14 @@ var cw = Qo((lw, Fo) => {
             if (r === "%" && n !== "%") throw new ot("invalid intrinsic syntax, expected closing `%`");
             if (n === "%" && r !== "%") throw new ot("invalid intrinsic syntax, expected opening `%`");
             var i = [];
-            return Ti(e, Zp, function(a, s, o, c) {
-                i[i.length] = o ? Ti(c, ey, "$1") : s || a
+            return $i(e, Zp, function(a, s, o, c) {
+                i[i.length] = o ? $i(c, ey, "$1") : s || a
             }), i
         },
         ry = function(e, r) {
             var n = e,
                 i;
-            if (Xt(Ri, n) && (i = Ri[n], n = "%" + i[0] + "%"), Xt(et, n)) {
+            if (Xt(Ti, n) && (i = Ti[n], n = "%" + i[0] + "%"), Xt(et, n)) {
                 var a = et[n];
                 if (a === Ve && (a = Vp(n)), typeof a > "u" && !r) throw new Ze("intrinsic " + e + " exists, but is not available. Please file an issue!");
                 return {
@@ -1766,7 +1766,7 @@ var cw = Qo((lw, Fo) => {
             }
             throw new ot("intrinsic " + e + " does not exist!")
         },
-        wn = function(e, r) {
+        Sn = function(e, r) {
             if (typeof e != "string" || e.length === 0) throw new Ze("intrinsic name must be a non-empty string");
             if (arguments.length > 1 && typeof r != "boolean") throw new Ze('"allowMissing" argument must be a boolean');
             if (Qp(/^%?[^%]*%?$/g, e) === null) throw new ot("`%` may not be present anywhere but at the beginning and end of the intrinsic name");
@@ -1802,8 +1802,8 @@ var cw = Qo((lw, Fo) => {
             exports: {}
         };
     (function(t) {
-        var e = En,
-            r = wn,
+        var e = wn,
+            r = Sn,
             n = r("%Function.prototype.apply%"),
             i = r("%Function.prototype.call%"),
             a = r("%Reflect.apply%", !0) || e.call(i, n),
@@ -1834,7 +1834,7 @@ var cw = Qo((lw, Fo) => {
             value: f
         }) : t.exports.apply = f
     })(Ja);
-    var Va = wn,
+    var Va = Sn,
         Ka = Ja.exports,
         ny = Ka(Va("String.prototype.indexOf")),
         iy = function(e, r) {
@@ -1849,59 +1849,59 @@ var cw = Qo((lw, Fo) => {
             value: "Module"
         })),
         oy = ec(sy);
-    var Sn = typeof Map == "function" && Map.prototype,
-        Pr = Object.getOwnPropertyDescriptor && Sn ? Object.getOwnPropertyDescriptor(Map.prototype, "size") : null,
-        Zt = Sn && Pr && typeof Pr.get == "function" ? Pr.get : null,
-        cy = Sn && Map.prototype.forEach,
-        On = typeof Set == "function" && Set.prototype,
-        Ir = Object.getOwnPropertyDescriptor && On ? Object.getOwnPropertyDescriptor(Set.prototype, "size") : null,
-        er = On && Ir && typeof Ir.get == "function" ? Ir.get : null,
-        uy = On && Set.prototype.forEach,
+    var On = typeof Map == "function" && Map.prototype,
+        Pr = Object.getOwnPropertyDescriptor && On ? Object.getOwnPropertyDescriptor(Map.prototype, "size") : null,
+        Zt = On && Pr && typeof Pr.get == "function" ? Pr.get : null,
+        cy = On && Map.prototype.forEach,
+        kn = typeof Set == "function" && Set.prototype,
+        Ir = Object.getOwnPropertyDescriptor && kn ? Object.getOwnPropertyDescriptor(Set.prototype, "size") : null,
+        er = kn && Ir && typeof Ir.get == "function" ? Ir.get : null,
+        uy = kn && Set.prototype.forEach,
         ly = typeof WeakMap == "function" && WeakMap.prototype,
         Rt = ly ? WeakMap.prototype.has : null,
         fy = typeof WeakSet == "function" && WeakSet.prototype,
         Tt = fy ? WeakSet.prototype.has : null,
         dy = typeof WeakRef == "function" && WeakRef.prototype,
-        $i = dy ? WeakRef.prototype.deref : null,
+        Pi = dy ? WeakRef.prototype.deref : null,
         hy = Boolean.prototype.valueOf,
         py = Object.prototype.toString,
         yy = Function.prototype.toString,
         vy = String.prototype.match,
-        kn = String.prototype.slice,
+        Rn = String.prototype.slice,
         xe = String.prototype.replace,
         my = String.prototype.toUpperCase,
-        Pi = String.prototype.toLowerCase,
+        Ii = String.prototype.toLowerCase,
         Xa = RegExp.prototype.test,
-        Ii = Array.prototype.concat,
+        Ai = Array.prototype.concat,
         Se = Array.prototype.join,
         gy = Array.prototype.slice,
-        Ai = Math.floor,
-        Kr = typeof BigInt == "function" ? BigInt.prototype.valueOf : null,
+        xi = Math.floor,
+        Xr = typeof BigInt == "function" ? BigInt.prototype.valueOf : null,
         Ar = Object.getOwnPropertySymbols,
-        Xr = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? Symbol.prototype.toString : null,
+        Qr = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? Symbol.prototype.toString : null,
         ct = typeof Symbol == "function" && typeof Symbol.iterator == "object",
         oe = typeof Symbol == "function" && Symbol.toStringTag && (typeof Symbol.toStringTag === ct ? "object" : "symbol") ? Symbol.toStringTag : null,
         Qa = Object.prototype.propertyIsEnumerable,
-        xi = (typeof Reflect == "function" ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(t) {
+        Ni = (typeof Reflect == "function" ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(t) {
             return t.__proto__
         } : null);
 
-    function Ni(t, e) {
+    function Li(t, e) {
         if (t === 1 / 0 || t === -1 / 0 || t !== t || t && t > -1e3 && t < 1e3 || Xa.call(/e/, e)) return e;
         var r = /[0-9](?=(?:[0-9]{3})+(?![0-9]))/g;
         if (typeof t == "number") {
-            var n = t < 0 ? -Ai(-t) : Ai(t);
+            var n = t < 0 ? -xi(-t) : xi(t);
             if (n !== t) {
                 var i = String(n),
-                    a = kn.call(e, i.length + 1);
+                    a = Rn.call(e, i.length + 1);
                 return xe.call(i, r, "$&_") + "." + xe.call(xe.call(a, /([0-9]{3})/g, "$&_"), /_$/, "")
             }
         }
         return xe.call(e, r, "$&_")
     }
-    var Qr = oy,
-        Li = Qr.custom,
-        Ci = es(Li) ? Li : null,
+    var Zr = oy,
+        Ci = Zr.custom,
+        Di = es(Ci) ? Ci : null,
         _y = function t(e, r, n, i) {
             var a = r || {};
             if (Pe(a, "quoteStyle") && a.quoteStyle !== "single" && a.quoteStyle !== "double") throw new TypeError('option "quoteStyle" must be "single" or "double"');
@@ -1918,14 +1918,14 @@ var cw = Qo((lw, Fo) => {
             if (typeof e == "number") {
                 if (e === 0) return 1 / 0 / e > 0 ? "0" : "-0";
                 var c = String(e);
-                return o ? Ni(e, c) : c
+                return o ? Li(e, c) : c
             }
             if (typeof e == "bigint") {
                 var f = String(e) + "n";
-                return o ? Ni(e, f) : f
+                return o ? Li(e, f) : f
             }
             var y = typeof a.depth > "u" ? 5 : a.depth;
-            if (typeof n > "u" && (n = 0), n >= y && y > 0 && typeof e == "object") return Zr(e) ? "[Array]" : "[Object]";
+            if (typeof n > "u" && (n = 0), n >= y && y > 0 && typeof e == "object") return en(e) ? "[Array]" : "[Object]";
             var m = jy(a, n);
             if (typeof i > "u") i = [];
             else if (ts(i, e) >= 0) return "[Circular]";
@@ -1939,30 +1939,30 @@ var cw = Qo((lw, Fo) => {
                 }
                 return t(z, a, n + 1, i)
             }
-            if (typeof e == "function" && !Di(e)) {
+            if (typeof e == "function" && !ji(e)) {
                 var O = $y(e),
                     k = Ut(e, w);
                 return "[Function" + (O ? ": " + O : " (anonymous)") + "]" + (k.length > 0 ? " { " + Se.call(k, ", ") + " }" : "")
             }
             if (es(e)) {
-                var U = ct ? xe.call(String(e), /^(Symbol\(.*\))_[^)]*$/, "$1") : Xr.call(e);
+                var U = ct ? xe.call(String(e), /^(Symbol\(.*\))_[^)]*$/, "$1") : Qr.call(e);
                 return typeof e == "object" && !ct ? Ot(U) : U
             }
             if (Ly(e)) {
-                for (var ee = "<" + Pi.call(String(e.nodeName)), N = e.attributes || [], te = 0; te < N.length; te++) ee += " " + N[te].name + "=" + Za(by(N[te].value), "double", a);
-                return ee += ">", e.childNodes && e.childNodes.length && (ee += "..."), ee += "</" + Pi.call(String(e.nodeName)) + ">", ee
+                for (var ee = "<" + Ii.call(String(e.nodeName)), N = e.attributes || [], te = 0; te < N.length; te++) ee += " " + N[te].name + "=" + Za(by(N[te].value), "double", a);
+                return ee += ">", e.childNodes && e.childNodes.length && (ee += "..."), ee += "</" + Ii.call(String(e.nodeName)) + ">", ee
             }
-            if (Zr(e)) {
+            if (en(e)) {
                 if (e.length === 0) return "[]";
                 var ie = Ut(e, w);
-                return m && !Dy(ie) ? "[" + en(ie, m) + "]" : "[ " + Se.call(ie, ", ") + " ]"
+                return m && !Dy(ie) ? "[" + tn(ie, m) + "]" : "[ " + Se.call(ie, ", ") + " ]"
             }
             if (wy(e)) {
                 var ue = Ut(e, w);
-                return !("cause" in Error.prototype) && "cause" in e && !Qa.call(e, "cause") ? "{ [" + String(e) + "] " + Se.call(Ii.call("[cause]: " + w(e.cause), ue), ", ") + " }" : ue.length === 0 ? "[" + String(e) + "]" : "{ [" + String(e) + "] " + Se.call(ue, ", ") + " }"
+                return !("cause" in Error.prototype) && "cause" in e && !Qa.call(e, "cause") ? "{ [" + String(e) + "] " + Se.call(Ai.call("[cause]: " + w(e.cause), ue), ", ") + " }" : ue.length === 0 ? "[" + String(e) + "]" : "{ [" + String(e) + "] " + Se.call(ue, ", ") + " }"
             }
             if (typeof e == "object" && s) {
-                if (Ci && typeof e[Ci] == "function" && Qr) return Qr(e, {
+                if (Di && typeof e[Di] == "function" && Zr) return Zr(e, {
                     depth: y - n
                 });
                 if (s !== "symbol" && typeof e.inspect == "function") return e.inspect()
@@ -1971,29 +1971,29 @@ var cw = Qo((lw, Fo) => {
                 var pe = [];
                 return cy.call(e, function(z, v) {
                     pe.push(w(v, e, !0) + " => " + w(z, e))
-                }), ji("Map", Zt.call(e), pe, m)
+                }), Mi("Map", Zt.call(e), pe, m)
             }
             if (xy(e)) {
                 var K = [];
                 return uy.call(e, function(z) {
                     K.push(w(z, e))
-                }), ji("Set", er.call(e), K, m)
+                }), Mi("Set", er.call(e), K, m)
             }
             if (Iy(e)) return xr("WeakMap");
             if (Ny(e)) return xr("WeakSet");
             if (Ay(e)) return xr("WeakRef");
             if (Oy(e)) return Ot(w(Number(e)));
-            if (Ry(e)) return Ot(w(Kr.call(e)));
+            if (Ry(e)) return Ot(w(Xr.call(e)));
             if (ky(e)) return Ot(hy.call(e));
             if (Sy(e)) return Ot(w(String(e)));
-            if (!Ey(e) && !Di(e)) {
+            if (!Ey(e) && !ji(e)) {
                 var le = Ut(e, w),
-                    re = xi ? xi(e) === Object.prototype : e instanceof Object || e.constructor === Object,
+                    re = Ni ? Ni(e) === Object.prototype : e instanceof Object || e.constructor === Object,
                     W = e instanceof Object ? "" : "null prototype",
-                    me = !re && oe && Object(e) === e && oe in e ? kn.call(De(e), 8, -1) : W ? "Object" : "",
+                    me = !re && oe && Object(e) === e && oe in e ? Rn.call(De(e), 8, -1) : W ? "Object" : "",
                     Y = re || typeof e.constructor != "function" ? "" : e.constructor.name ? e.constructor.name + " " : "",
-                    fe = Y + (me || W ? "[" + Se.call(Ii.call([], me || [], W || []), ": ") + "] " : "");
-                return le.length === 0 ? fe + "{}" : m ? fe + "{" + en(le, m) + "}" : fe + "{ " + Se.call(le, ", ") + " }"
+                    fe = Y + (me || W ? "[" + Se.call(Ai.call([], me || [], W || []), ": ") + "] " : "");
+                return le.length === 0 ? fe + "{}" : m ? fe + "{" + tn(le, m) + "}" : fe + "{ " + Se.call(le, ", ") + " }"
             }
             return String(e)
         };
@@ -2007,7 +2007,7 @@ var cw = Qo((lw, Fo) => {
         return xe.call(String(t), /"/g, "&quot;")
     }
 
-    function Zr(t) {
+    function en(t) {
         return De(t) === "[object Array]" && (!oe || !(typeof t == "object" && oe in t))
     }
 
@@ -2015,7 +2015,7 @@ var cw = Qo((lw, Fo) => {
         return De(t) === "[object Date]" && (!oe || !(typeof t == "object" && oe in t))
     }
 
-    function Di(t) {
+    function ji(t) {
         return De(t) === "[object RegExp]" && (!oe || !(typeof t == "object" && oe in t))
     }
 
@@ -2038,17 +2038,17 @@ var cw = Qo((lw, Fo) => {
     function es(t) {
         if (ct) return t && typeof t == "object" && t instanceof Symbol;
         if (typeof t == "symbol") return !0;
-        if (!t || typeof t != "object" || !Xr) return !1;
+        if (!t || typeof t != "object" || !Qr) return !1;
         try {
-            return Xr.call(t), !0
+            return Qr.call(t), !0
         } catch {}
         return !1
     }
 
     function Ry(t) {
-        if (!t || typeof t != "object" || !Kr) return !1;
+        if (!t || typeof t != "object" || !Xr) return !1;
         try {
-            return Kr.call(t), !0
+            return Xr.call(t), !0
         } catch {}
         return !1
     }
@@ -2106,9 +2106,9 @@ var cw = Qo((lw, Fo) => {
     }
 
     function Ay(t) {
-        if (!$i || !t || typeof t != "object") return !1;
+        if (!Pi || !t || typeof t != "object") return !1;
         try {
-            return $i.call(t), !0
+            return Pi.call(t), !0
         } catch {}
         return !1
     }
@@ -2149,7 +2149,7 @@ var cw = Qo((lw, Fo) => {
         if (t.length > e.maxStringLength) {
             var r = t.length - e.maxStringLength,
                 n = "... " + r + " more character" + (r > 1 ? "s" : "");
-            return rs(kn.call(t, 0, e.maxStringLength), e) + n
+            return rs(Rn.call(t, 0, e.maxStringLength), e) + n
         }
         var i = xe.call(xe.call(t, /(['\\])/g, "\\$1"), /[\x00-\x1f]/g, Cy);
         return Za(i, "single", e)
@@ -2175,8 +2175,8 @@ var cw = Qo((lw, Fo) => {
         return t + " { ? }"
     }
 
-    function ji(t, e, r, n) {
-        var i = n ? en(r, n) : Se.call(r, ", ");
+    function Mi(t, e, r, n) {
+        var i = n ? tn(r, n) : Se.call(r, ", ");
         return t + " (" + e + ") {" + i + "}"
     }
 
@@ -2198,7 +2198,7 @@ var cw = Qo((lw, Fo) => {
         }
     }
 
-    function en(t, e) {
+    function tn(t, e) {
         if (t.length === 0) return "";
         var r = `
 ` + e.prev + e.base;
@@ -2207,7 +2207,7 @@ var cw = Qo((lw, Fo) => {
     }
 
     function Ut(t, e) {
-        var r = Zr(t),
+        var r = en(t),
             n = [];
         if (r) {
             n.length = t.length;
@@ -2224,29 +2224,29 @@ var cw = Qo((lw, Fo) => {
             for (var f = 0; f < a.length; f++) Qa.call(t, a[f]) && n.push("[" + e(a[f]) + "]: " + e(t[a[f]], t));
         return n
     }
-    var Rn = wn,
+    var Tn = Sn,
         bt = iy,
         My = _y,
-        By = Rn("%TypeError%"),
-        Ft = Rn("%WeakMap%", !0),
-        Gt = Rn("%Map%", !0),
+        By = Tn("%TypeError%"),
+        Ft = Tn("%WeakMap%", !0),
+        Gt = Tn("%Map%", !0),
         Uy = bt("WeakMap.prototype.get", !0),
         Fy = bt("WeakMap.prototype.set", !0),
         Gy = bt("WeakMap.prototype.has", !0),
         qy = bt("Map.prototype.get", !0),
         Hy = bt("Map.prototype.set", !0),
         Wy = bt("Map.prototype.has", !0),
-        Tn = function(t, e) {
+        $n = function(t, e) {
             for (var r = t, n;
                 (n = r.next) !== null; r = n)
                 if (n.key === e) return r.next = n.next, n.next = t.next, t.next = n, n
         },
         Yy = function(t, e) {
-            var r = Tn(t, e);
+            var r = $n(t, e);
             return r && r.value
         },
         zy = function(t, e, r) {
-            var n = Tn(t, e);
+            var n = $n(t, e);
             n ? n.value = r : t.next = {
                 key: e,
                 next: t.next,
@@ -2254,7 +2254,7 @@ var cw = Qo((lw, Fo) => {
             }
         },
         Jy = function(t, e) {
-            return !!Tn(t, e)
+            return !!$n(t, e)
         },
         Vy = function() {
             var e, r, n, i = {
@@ -2291,7 +2291,7 @@ var cw = Qo((lw, Fo) => {
             RFC1738: "RFC1738",
             RFC3986: "RFC3986"
         },
-        $n = {
+        Pn = {
             default: Nr.RFC3986,
             formatters: {
                 RFC1738: function(t) {
@@ -2304,7 +2304,7 @@ var cw = Qo((lw, Fo) => {
             RFC1738: Nr.RFC1738,
             RFC3986: Nr.RFC3986
         },
-        Qy = $n,
+        Qy = Pn,
         Lr = Object.prototype.hasOwnProperty,
         Ge = Array.isArray,
         we = function() {
@@ -2433,10 +2433,10 @@ var cw = Qo((lw, Fo) => {
             merge: ev
         },
         as = Vy,
-        tn = is,
-        $t = $n,
+        rn = is,
+        $t = Pn,
         uv = Object.prototype.hasOwnProperty,
-        Mi = {
+        Bi = {
             brackets: function(e) {
                 return e + "[]"
             },
@@ -2455,7 +2455,7 @@ var cw = Qo((lw, Fo) => {
             fv.apply(t, Re(e) ? e : [e])
         },
         dv = Date.prototype.toISOString,
-        Bi = $t.default,
+        Ui = $t.default,
         ne = {
             addQueryPrefix: !1,
             allowDots: !1,
@@ -2463,10 +2463,10 @@ var cw = Qo((lw, Fo) => {
             charsetSentinel: !1,
             delimiter: "&",
             encode: !0,
-            encoder: tn.encode,
+            encoder: rn.encode,
             encodeValuesOnly: !1,
-            format: Bi,
-            formatter: $t.formatters[Bi],
+            format: Ui,
+            formatter: $t.formatters[Ui],
             indices: !1,
             serializeDate: function(e) {
                 return dv.call(e)
@@ -2488,13 +2488,13 @@ var cw = Qo((lw, Fo) => {
                 }
                 typeof te.get(Cr) > "u" && (ie = 0)
             }
-            if (typeof c == "function" ? N = c(r, N) : N instanceof Date ? N = m(N) : n === "comma" && Re(N) && (N = tn.maybeMap(N, function(A) {
+            if (typeof c == "function" ? N = c(r, N) : N instanceof Date ? N = m(N) : n === "comma" && Re(N) && (N = rn.maybeMap(N, function(A) {
                     return A instanceof Date ? m(A) : A
                 })), N === null) {
                 if (a) return o && !k ? o(r, ne.encoder, U, "key", w) : r;
                 N = ""
             }
-            if (hv(N) || tn.isBuffer(N)) {
+            if (hv(N) || rn.isBuffer(N)) {
                 if (o) {
                     var K = k ? r : o(r, ne.encoder, U, "key", w);
                     if (n === "comma" && k) {
@@ -2566,8 +2566,8 @@ var cw = Qo((lw, Fo) => {
             var s = [];
             if (typeof r != "object" || r === null) return "";
             var o;
-            e && e.arrayFormat in Mi ? o = e.arrayFormat : e && "indices" in e ? o = e.indices ? "indices" : "repeat" : o = "indices";
-            var c = Mi[o];
+            e && e.arrayFormat in Bi ? o = e.arrayFormat : e && "indices" in e ? o = e.indices ? "indices" : "repeat" : o = "indices";
+            var c = Bi[o];
             if (e && "commaRoundTrip" in e && typeof e.commaRoundTrip != "boolean") throw new TypeError("`commaRoundTrip` must be a boolean, or absent");
             var f = c === "comma" && e && e.commaRoundTrip;
             i || (i = Object.keys(r)), n.sort && i.sort(n.sort);
@@ -2580,7 +2580,7 @@ var cw = Qo((lw, Fo) => {
             return n.charsetSentinel && (n.charset === "iso-8859-1" ? k += "utf8=%26%2310003%3B&" : k += "utf8=%E2%9C%93&"), O.length > 0 ? k + O : ""
         },
         ut = is,
-        rn = Object.prototype.hasOwnProperty,
+        nn = Object.prototype.hasOwnProperty,
         mv = Array.isArray,
         Z = {
             allowDots: !1,
@@ -2627,7 +2627,7 @@ var cw = Qo((lw, Fo) => {
                         O, k;
                     w === -1 ? (O = r.decoder(y, Z.decoder, f, "key"), k = r.strictNullHandling ? null : "") : (O = r.decoder(y.slice(0, w), Z.decoder, f, "key"), k = ut.maybeMap(os(y.slice(w + 1), r), function(U) {
                         return r.decoder(U, Z.decoder, f, "value")
-                    })), k && r.interpretNumericEntities && f === "iso-8859-1" && (k = gv(k)), y.indexOf("[]=") > -1 && (k = mv(k) ? [k] : k), rn.call(n, O) ? n[O] = ut.combine(n[O], k) : n[O] = k
+                    })), k && r.interpretNumericEntities && f === "iso-8859-1" && (k = gv(k)), y.indexOf("[]=") > -1 && (k = mv(k) ? [k] : k), nn.call(n, O) ? n[O] = ut.combine(n[O], k) : n[O] = k
                 } return n
         },
         wv = function(t, e, r, n) {
@@ -2655,11 +2655,11 @@ var cw = Qo((lw, Fo) => {
                     f = c ? a.slice(0, c.index) : a,
                     y = [];
                 if (f) {
-                    if (!n.plainObjects && rn.call(Object.prototype, f) && !n.allowPrototypes) return;
+                    if (!n.plainObjects && nn.call(Object.prototype, f) && !n.allowPrototypes) return;
                     y.push(f)
                 }
                 for (var m = 0; n.depth > 0 && (c = o.exec(a)) !== null && m < n.depth;) {
-                    if (m += 1, !n.plainObjects && rn.call(Object.prototype, c[1].slice(1, -1)) && !n.allowPrototypes) return;
+                    if (m += 1, !n.plainObjects && nn.call(Object.prototype, c[1].slice(1, -1)) && !n.allowPrototypes) return;
                     y.push(c[1])
                 }
                 return c && y.push("[" + a.slice(c.index) + "]"), wv(y, r, n, i)
@@ -2701,7 +2701,7 @@ var cw = Qo((lw, Fo) => {
         },
         Rv = vv,
         Tv = kv,
-        $v = $n,
+        $v = Pn,
         cs = {
             formats: $v,
             parse: Tv,
@@ -2738,7 +2738,7 @@ var cw = Qo((lw, Fo) => {
         RoomExit: xv,
         RoomLock: Nv
     };
-    const Ui = Vr.exports,
+    const Fi = Kr.exports,
         Lv = cs,
         {
             CreateRoomReply: Cv,
@@ -2764,7 +2764,7 @@ var cw = Qo((lw, Fo) => {
             };
             e.password && (r.password = e.password), e.moderatorPassword && (r.moderatorPassword = e.moderatorPassword), e.twitchLocked && (r.twitchLocked = e.twitchLocked), e.locale && (r.locale = e.locale), e.keepalive && (r.keepalive = e.keepalive), e.controllerBranch && (r.controllerBranch = e.controllerBranch);
             let n = this.url("/rooms", r),
-                s = await (await Ui(n, {
+                s = await (await Fi(n, {
                     method: "POST"
                 })).json();
             if (!s.ok) throw new Error(`failed to create room: ${s.error}`);
@@ -2777,7 +2777,7 @@ var cw = Qo((lw, Fo) => {
         }
         async getRoom(e) {
             let r = this.url(`/rooms/${e.code}`),
-                i = await (await Ui(r)).json();
+                i = await (await Fi(r)).json();
             if (!i.ok) throw new Error(`unable to get room with options ${JSON.stringify(e)}: ${i.error}`);
             let a = i.body;
             return new Dv({
@@ -2804,11 +2804,11 @@ var cw = Qo((lw, Fo) => {
         Ke = null;
     typeof WebSocket < "u" ? Ke = WebSocket : typeof MozWebSocket < "u" ? Ke = MozWebSocket : typeof ve < "u" ? Ke = ve.WebSocket || ve.MozWebSocket : typeof window < "u" ? Ke = window.WebSocket || window.MozWebSocket : typeof self < "u" && (Ke = self.WebSocket || self.MozWebSocket);
     var Bv = Ke,
-        Pn = {
+        In = {
             exports: {}
         },
         tt = typeof Reflect == "object" ? Reflect : null,
-        Fi = tt && typeof tt.apply == "function" ? tt.apply : function(e, r, n) {
+        Gi = tt && typeof tt.apply == "function" ? tt.apply : function(e, r, n) {
             return Function.prototype.apply.call(e, r, n)
         },
         zt;
@@ -2828,13 +2828,13 @@ var cw = Qo((lw, Fo) => {
     function F() {
         F.init.call(this)
     }
-    Pn.exports = F;
-    Pn.exports.once = Hv;
+    In.exports = F;
+    In.exports.once = Hv;
     F.EventEmitter = F;
     F.prototype._events = void 0;
     F.prototype._eventsCount = 0;
     F.prototype._maxListeners = void 0;
-    var Gi = 10;
+    var qi = 10;
 
     function yr(t) {
         if (typeof t != "function") throw new TypeError('The "listener" argument must be of type Function. Received type ' + typeof t)
@@ -2842,11 +2842,11 @@ var cw = Qo((lw, Fo) => {
     Object.defineProperty(F, "defaultMaxListeners", {
         enumerable: !0,
         get: function() {
-            return Gi
+            return qi
         },
         set: function(t) {
             if (typeof t != "number" || t < 0 || us(t)) throw new RangeError('The value of "defaultMaxListeners" is out of range. It must be a non-negative number. Received ' + t + ".");
-            Gi = t
+            qi = t
         }
     });
     F.init = function() {
@@ -2877,9 +2877,9 @@ var cw = Qo((lw, Fo) => {
         }
         var c = a[e];
         if (c === void 0) return !1;
-        if (typeof c == "function") Fi(c, this, r);
+        if (typeof c == "function") Gi(c, this, r);
         else
-            for (var f = c.length, y = ys(c, f), n = 0; n < f; ++n) Fi(y[n], this, r);
+            for (var f = c.length, y = ys(c, f), n = 0; n < f; ++n) Gi(y[n], this, r);
         return !0
     };
 
@@ -3318,7 +3318,7 @@ var cw = Qo((lw, Fo) => {
             this.id = e.id, this.banned = e.banned, this.reason = e.reason
         }
     }
-    var In = {
+    var An = {
         ClientConnected: Kv,
         ClientDisconnected: Xv,
         ClientKicked: Zv,
@@ -3339,7 +3339,7 @@ var cw = Qo((lw, Fo) => {
 }`
         }
     }
-    var An = {
+    var xn = {
         CountGroup: em
     };
     class tm {
@@ -3356,7 +3356,7 @@ var cw = Qo((lw, Fo) => {
 }`
         }
     }
-    var xn = {
+    var Nn = {
         GCounter: tm
     };
     class rm {
@@ -3393,7 +3393,7 @@ var cw = Qo((lw, Fo) => {
             return `ObjectEcho{message: ${this.message}}`
         }
     }
-    var Nn = {
+    var Ln = {
         ObjectEntity: nm,
         ObjectEcho: im
     };
@@ -3411,7 +3411,7 @@ var cw = Qo((lw, Fo) => {
 }`
         }
     }
-    var Ln = {
+    var Cn = {
         PNCounter: am
     };
     class sm {
@@ -3457,7 +3457,7 @@ var cw = Qo((lw, Fo) => {
 }`
         }
     }
-    var Cn = {
+    var Dn = {
         TextEntity: um,
         TextEcho: lm
     };
@@ -3475,7 +3475,7 @@ var cw = Qo((lw, Fo) => {
 }`
         }
     }
-    var Dn = {
+    var jn = {
         TextRing: fm
     };
     class dm {
@@ -3539,7 +3539,7 @@ var cw = Qo((lw, Fo) => {
 }`
         }
     }
-    var jn = {
+    var Mn = {
         DoodleEntity: hm,
         DoodleLine: pm,
         DoodleLineRemoved: ym
@@ -3668,13 +3668,13 @@ var cw = Qo((lw, Fo) => {
         ClientDisconnected: Pm,
         ClientKicked: Im,
         ClientSend: Am
-    } = In, {
-        CountGroup: xm
     } = An, {
+        CountGroup: xm
+    } = xn, {
         DoodleEntity: Nm,
         DoodleLine: Lm,
         DoodleLineRemoved: Cm
-    } = jn, {
+    } = Mn, {
         StackEntity: Dm,
         StackElement: jm,
         StackElements: Mm
@@ -3686,7 +3686,7 @@ var cw = Qo((lw, Fo) => {
         LockEntity: Fm
     } = Sm, {
         GCounter: Gm
-    } = xn, {
+    } = Nn, {
         GetAudienceReply: qm,
         RoomExit: Hm,
         RoomLock: Wm
@@ -3699,21 +3699,21 @@ var cw = Qo((lw, Fo) => {
     } = to, {
         ObjectEcho: Vm,
         ObjectEntity: Km
-    } = Nn, {
-        PNCounter: qi
     } = Ln, {
+        PNCounter: Hi
+    } = Cn, {
         Reply: Xm
     } = Ks, {
         TextEcho: Qm,
         TextEntity: Zm
-    } = Cn, {
-        TextRing: eg
     } = Dn, {
-        createError: Hi,
+        TextRing: eg
+    } = jn, {
+        createError: Wi,
         ObservedError: tg
     } = Js;
 
-    function nn(t, e, r) {
+    function an(t, e, r) {
         switch (t) {
             case "ok":
                 return new zm;
@@ -3727,14 +3727,14 @@ var cw = Qo((lw, Fo) => {
                     from: e.from
                 });
             case "error":
-                return Hi({
+                return Wi({
                     code: e.code,
                     message: e.msg
                 });
             case "error/observed":
                 return new tg({
                     to: e.to,
-                    error: Hi({
+                    error: Wi({
                         code: e.error.code,
                         message: e.error.msg
                     })
@@ -3817,7 +3817,7 @@ var cw = Qo((lw, Fo) => {
                 if (e.entities) {
                     let i = {};
                     Object.entries(e.entities).forEach(([a, s]) => {
-                        i[a] = nn(s[0], s[1], s[2])
+                        i[a] = an(s[0], s[1], s[2])
                     }), n.entities = i
                 }
                 return n
@@ -3884,7 +3884,7 @@ var cw = Qo((lw, Fo) => {
                     connections: e.connections
                 });
             case "audience":
-                return new qi({
+                return new Hi({
                     key: t,
                     count: e[1]
                 });
@@ -3907,7 +3907,7 @@ var cw = Qo((lw, Fo) => {
                     meta: r
                 });
             case "audience/pn-counter":
-                return new qi({
+                return new Hi({
                     key: e.key,
                     count: e.count,
                     meta: r
@@ -3924,40 +3924,40 @@ var cw = Qo((lw, Fo) => {
             pc: e.pc,
             re: e.re,
             opcode: r,
-            result: nn(r, e.result)
+            result: an(r, e.result)
         }) : new Ym({
             pc: e.pc,
             opcode: r,
-            result: nn(r, e.result)
+            result: an(r, e.result)
         })
     }
     var ng = {
         parseResponseMessage: rg
     };
-    const Wi = Bv,
+    const Yi = Bv,
         ig = cs,
-        ag = Pn.exports,
+        ag = In.exports,
         {
             CallError: sg
         } = Js,
         {
             ClientWelcome: og
-        } = In,
-        {
-            CountGroup: cg
         } = An,
         {
-            GCounter: ug
+            CountGroup: cg
         } = xn,
         {
-            Notification: Yi
+            GCounter: ug
+        } = Nn,
+        {
+            Notification: zi
         } = Vs,
         {
             ObjectEntity: Dr
-        } = Nn,
+        } = Ln,
         {
             PNCounter: lg
-        } = Ln,
+        } = Cn,
         {
             Reply: fg
         } = Ks,
@@ -3966,21 +3966,21 @@ var cw = Qo((lw, Fo) => {
         } = cm,
         {
             TextEntity: jr
-        } = Cn,
+        } = Dn,
         {
             TextRing: hg
-        } = Dn,
+        } = jn,
         {
             parseResponseMessage: pg
         } = ng,
         {
             DoodleEntity: yg
-        } = jn,
+        } = Mn,
         {
             StackEntity: vg
         } = Qs,
         mg = 1e3 + Math.floor(Math.random() * 500),
-        zi = 13e3;
+        Ji = 13e3;
     class gg extends ag {
         constructor(e) {
             if (super(), this.debug = e.debug || !1, !e.host) throw new Error("unable to create ecast WSClient: no host provided");
@@ -4024,11 +4024,11 @@ var cw = Qo((lw, Fo) => {
                     f = y => {
                         a(y), s = !0
                     };
-                this.conn = new Wi(n, "ecast-v0"), this.conn.onmessage = y => {
+                this.conn = new Yi(n, "ecast-v0"), this.conn.onmessage = y => {
                     this.debugLog(`recv <- ${JSON.stringify(JSON.parse(y.data),null,2)}`);
                     const m = pg(y);
                     if (m instanceof fg) this.onReply(m);
-                    else if (m instanceof Yi) {
+                    else if (m instanceof zi) {
                         if (m.result instanceof og) o = !0, this.id = m.result.id, this.deviceId = m.result.deviceId, this.entities = m.result.entities, this.secret = m.result.secret, m.result.name && (this.name = m.result.name), c(m.result);
                         else if (!s) {
                             f(m.result);
@@ -4068,14 +4068,14 @@ var cw = Qo((lw, Fo) => {
                     this.debugLog("unable to reconnect!", n), this.emit("socketClose", n);
                     return
                 }
-                if (r >= zi) {
+                if (r >= Ji) {
                     this.debugLog("reconnect failed!", n), this.emit("socketClose", n);
                     return
                 }
                 e += 1, this.debugLog("waiting", r), this.emit("connection", {
                     status: "waiting",
                     attempt: e
-                }), await this.sleep(r), r = Math.min(zi, r * 2)
+                }), await this.sleep(r), r = Math.min(Ji, r * 2)
             }
         }
         disconnect() {
@@ -4085,7 +4085,7 @@ var cw = Qo((lw, Fo) => {
             const r = e.re,
                 n = this.pending[r];
             if (!n) {
-                const i = new Yi(e);
+                const i = new zi(e);
                 i.re = r, this.emit("notification", i);
                 return
             }
@@ -4096,7 +4096,7 @@ var cw = Qo((lw, Fo) => {
         }
         send(e, r = {}) {
             if (!this.conn) throw new Error("No connection available");
-            if (this.conn.readyState !== Wi.OPEN) throw new Error(`Socket not ready to send, readyState is ${this.conn.readyState}`);
+            if (this.conn.readyState !== Yi.OPEN) throw new Error(`Socket not ready to send, readyState is ${this.conn.readyState}`);
             const n = ++this.seq,
                 i = new dg({
                     seq: n,
@@ -4492,21 +4492,21 @@ var cw = Qo((lw, Fo) => {
     } = pr, {
         ClientWelcome: Og,
         ClientDisconnected: kg
-    } = In, {
+    } = An, {
         ArtifactEntity: Rg
     } = Xs, {
         GCounter: Tg
-    } = xn, {
+    } = Nn, {
         NumberEntity: $g
     } = to, {
         TextEntity: Pg
-    } = Cn, {
+    } = Dn, {
         DoodleEntity: Ig
-    } = jn, {
+    } = Mn, {
         ObjectEntity: Ag
-    } = Nn, {
+    } = Ln, {
         CountGroup: xg
-    } = An, {
+    } = xn, {
         DropEntity: Ng
     } = Zs, {
         OK: Lg
@@ -4514,10 +4514,10 @@ var cw = Qo((lw, Fo) => {
         RoomExit: Cg
     } = pr, {
         TextRing: Dg
-    } = Dn, {
+    } = jn, {
         PNCounter: jg
-    } = Ln;
-    var Ji = {
+    } = Cn;
+    var Vi = {
         APIClient: bg,
         WSClient: Eg,
         ClientWelcome: Og,
@@ -4927,7 +4927,7 @@ var cw = Qo((lw, Fo) => {
             features: ["kicking"],
             categoryId: "LineupGame"
         }],
-        Vi = t => Mg.find(e => e.tag === t || e.categoryId === t);
+        Ki = t => Mg.find(e => e.tag === t || e.categoryId === t);
 
     function Jt(...t) {
         console.log(...t)
@@ -5341,7 +5341,7 @@ var cw = Qo((lw, Fo) => {
                 return h && (b.target = h, b.srcElement = h, b.currentTarget = h), b
             }
 
-            function ni(d, l, p) {
+            function ii(d, l, p) {
                 d.readyState = X.CLOSING;
                 var u = g.serverLookup(d.url),
                     h = ye({
@@ -5392,7 +5392,7 @@ var cw = Qo((lw, Fo) => {
             }
             var Er = new WeakMap;
 
-            function ii(d) {
+            function ai(d) {
                 if (Er.has(d)) return Er.get(d);
                 var l = new Proxy(d, {
                     get: function(u, h) {
@@ -5400,7 +5400,7 @@ var cw = Qo((lw, Fo) => {
                             b === void 0 && (b = {});
                             var R = b.code || S.CLOSE_NORMAL,
                                 P = b.reason || "";
-                            ni(l, R, P)
+                            ii(l, R, P)
                         } : h === "send" ? function(b) {
                             b = Bt(b), d.dispatchEvent(Be({
                                 type: "message",
@@ -5453,7 +5453,7 @@ var cw = Qo((lw, Fo) => {
             var X = function(d) {
                 function l(u, h) {
                     d.call(this), this._onopen = null, this._onmessage = null, this._onerror = null, this._onclose = null, this.url = Ho(u), h = Wo(h), this.protocol = h[0] || "", this.binaryType = "blob", this.readyState = l.CONNECTING;
-                    var _ = ii(this),
+                    var _ = ai(this),
                         b = g.attachWebSocket(_, this.url);
                     z(function() {
                         if (b)
@@ -5542,8 +5542,8 @@ var cw = Qo((lw, Fo) => {
                         if (b > 123) throw new SyntaxError(T.CLOSE_ERROR + " The message must not be greater than 123 bytes.")
                     }
                     if (!(this.readyState === l.CLOSING || this.readyState === l.CLOSED)) {
-                        var R = ii(this);
-                        this.readyState === l.CONNECTING ? Go(R, h || S.CLOSE_ABNORMAL, _) : ni(R, h || S.CLOSE_NO_STATUS, _)
+                        var R = ai(this);
+                        this.readyState === l.CONNECTING ? Go(R, h || S.CLOSE_ABNORMAL, _) : ii(R, h || S.CLOSE_NO_STATUS, _)
                     }
                 }, Object.defineProperties(l.prototype, p), l
             }(M);
@@ -5554,30 +5554,30 @@ var cw = Qo((lw, Fo) => {
                 }, [])
             };
 
-            function ai() {
+            function si() {
                 return typeof window < "u" ? window : typeof process == "object" && typeof Bg == "function" && typeof ve == "object" ? ve : this
             }
-            var si = {
+            var oi = {
                     mock: !0,
                     verifyClient: null,
                     selectProtocol: null
                 },
                 wr = function(d) {
                     function l(p, u) {
-                        u === void 0 && (u = si), d.call(this);
+                        u === void 0 && (u = oi), d.call(this);
                         var h = new fe(p);
                         h.pathname || (h.pathname = "/"), this.url = h.toString(), this.originalWebSocket = null;
                         var _ = g.attachServer(this, this.url);
                         if (!_) throw this.dispatchEvent(de({
                             type: "error"
                         })), new Error("A mock server is already listening on this url");
-                        this.options = Object.assign({}, si, u), this.options.mock && this.mockWebsocket()
+                        this.options = Object.assign({}, oi, u), this.options.mock && this.mockWebsocket()
                     }
                     return d && (l.__proto__ = d), l.prototype = Object.create(d && d.prototype), l.prototype.constructor = l, l.prototype.mockWebsocket = function() {
-                        var u = ai();
+                        var u = si();
                         this.originalWebSocket = u.WebSocket, u.WebSocket = X
                     }, l.prototype.restoreWebsocket = function() {
-                        var u = ai();
+                        var u = si();
                         this.originalWebSocket !== null && (u.WebSocket = this.originalWebSocket), this.originalWebSocket = null
                     }, l.prototype.stop = function(u) {
                         u === void 0 && (u = function() {}), this.options.mock && this.restoreWebsocket(), g.removeServer(this.url), typeof u == "function" && u()
@@ -5900,7 +5900,7 @@ var cw = Qo((lw, Fo) => {
             return this.markerMap[this.currentMarkerItemIndex]
         }
         get getRoomReply() {
-            return new Ji.GetRoomReply({
+            return new Vi.GetRoomReply({
                 appId: "",
                 appTag: this.roomData.appTag,
                 audienceEnabled: !0,
@@ -6155,7 +6155,7 @@ var cw = Qo((lw, Fo) => {
             n !== void 0 && (i.re = n), this.sockets.server.send(JSON.stringify(i))
         }
         createClient() {
-            const e = new Ji.WSClient({
+            const e = new Vi.WSClient({
                 host: this.url,
                 code: "DBUG",
                 name: this.clientData.name,
@@ -6219,7 +6219,7 @@ var cw = Qo((lw, Fo) => {
         return typeof __SENTRY_BROWSER_BUNDLE__ < "u" && !!__SENTRY_BROWSER_BUNDLE__
     }
 
-    function Mn() {
+    function Bn() {
         return !Wg() && Object.prototype.toString.call(typeof process < "u" ? process : 0) === "[object process]"
     }
 
@@ -6229,10 +6229,10 @@ var cw = Qo((lw, Fo) => {
     var zg = {};
 
     function V() {
-        return Mn() ? global : typeof window < "u" ? window : typeof self < "u" ? self : zg
+        return Bn() ? global : typeof window < "u" ? window : typeof self < "u" ? self : zg
     }
 
-    function Bn(t, e, r) {
+    function Un(t, e, r) {
         var n = r || V(),
             i = n.__SENTRY__ = n.__SENTRY__ || {},
             a = i[t] || (i[t] = e());
@@ -6259,7 +6259,7 @@ var cw = Qo((lw, Fo) => {
         return Et(t, "ErrorEvent")
     }
 
-    function Ki(t) {
+    function Xi(t) {
         return Et(t, "DOMError")
     }
 
@@ -6279,7 +6279,7 @@ var cw = Qo((lw, Fo) => {
         return Et(t, "Object")
     }
 
-    function Un(t) {
+    function Fn(t) {
         return typeof Event < "u" && je(t, Event)
     }
 
@@ -6291,7 +6291,7 @@ var cw = Qo((lw, Fo) => {
         return Et(t, "RegExp")
     }
 
-    function Fn(t) {
+    function Gn(t) {
         return Boolean(t && t.then && typeof t.then == "function")
     }
 
@@ -6311,7 +6311,7 @@ var cw = Qo((lw, Fo) => {
         }
     }
 
-    function an(t, e) {
+    function sn(t, e) {
         try {
             let o = t;
             var r = 5,
@@ -6365,7 +6365,7 @@ var cw = Qo((lw, Fo) => {
         return t === "http" || t === "https"
     }
 
-    function Gn(t, e = !1) {
+    function qn(t, e = !1) {
         const {
             host: r,
             path: n,
@@ -6454,7 +6454,7 @@ var cw = Qo((lw, Fo) => {
         }
     }
 
-    function Xi() {
+    function Qi() {
         let t = !1;
         var e = {
             enable: () => {
@@ -6475,13 +6475,13 @@ var cw = Qo((lw, Fo) => {
         }), e
     }
     let x;
-    typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__ ? x = Bn("logger", Xi) : x = Xi();
+    typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__ ? x = Un("logger", Qi) : x = Qi();
 
     function Pt(t, e = 0) {
         return typeof t != "string" || e === 0 || t.length <= e ? t : `${t.substr(0,e)}...`
     }
 
-    function Qi(t, e) {
+    function Zi(t, e) {
         if (!Array.isArray(t)) return "";
         var r = [];
         for (let i = 0; i < t.length; i++) {
@@ -6495,7 +6495,7 @@ var cw = Qo((lw, Fo) => {
         return r.join(e)
     }
 
-    function qn(t, e) {
+    function Hn(t, e) {
         return lt(t) ? Kg(e) ? e.test(t) : typeof e == "string" ? t.indexOf(e) !== -1 : !1 : !1
     }
 
@@ -6510,7 +6510,7 @@ var cw = Qo((lw, Fo) => {
         }
     }
 
-    function Hn(t, e, r) {
+    function Wn(t, e, r) {
         Object.defineProperty(t, e, {
             value: r,
             writable: !0,
@@ -6520,10 +6520,10 @@ var cw = Qo((lw, Fo) => {
 
     function uo(t, e) {
         var r = e.prototype || {};
-        t.prototype = e.prototype = r, Hn(t, "__sentry_original__", e)
+        t.prototype = e.prototype = r, Wn(t, "__sentry_original__", e)
     }
 
-    function Wn(t) {
+    function Yn(t) {
         return t.__sentry_original__
     }
 
@@ -6536,28 +6536,28 @@ var cw = Qo((lw, Fo) => {
             message: t.message,
             name: t.name,
             stack: t.stack,
-            ...ea(t)
+            ...ta(t)
         };
-        if (Un(t)) {
+        if (Fn(t)) {
             var e = {
                 type: t.type,
-                target: Zi(t.target),
-                currentTarget: Zi(t.currentTarget),
-                ...ea(t)
+                target: ea(t.target),
+                currentTarget: ea(t.currentTarget),
+                ...ta(t)
             };
             return typeof CustomEvent < "u" && je(t, CustomEvent) && (e.detail = t.detail), e
         } else return t
     }
 
-    function Zi(t) {
+    function ea(t) {
         try {
-            return Vg(t) ? an(t) : Object.prototype.toString.call(t)
+            return Vg(t) ? sn(t) : Object.prototype.toString.call(t)
         } catch {
             return "<unknown>"
         }
     }
 
-    function ea(t) {
+    function ta(t) {
         if (typeof t == "object" && t !== null) {
             var e = {};
             for (var r in t) Object.prototype.hasOwnProperty.call(t, r) && (e[r] = t[r]);
@@ -6576,18 +6576,18 @@ var cw = Qo((lw, Fo) => {
         return ""
     }
 
-    function Yn(t) {
+    function zn(t) {
         var e = new Map;
-        return sn(t, e)
+        return on(t, e)
     }
 
-    function sn(t, e) {
+    function on(t, e) {
         if (ft(t)) {
             var r = e.get(t);
             if (r !== void 0) return r;
             var n = {};
             e.set(t, n);
-            for (var i of Object.keys(t)) typeof t[i] < "u" && (n[i] = sn(t[i], e));
+            for (var i of Object.keys(t)) typeof t[i] < "u" && (n[i] = on(t[i], e));
             return n
         }
         if (Array.isArray(t)) {
@@ -6595,7 +6595,7 @@ var cw = Qo((lw, Fo) => {
             if (r !== void 0) return r;
             var n = [];
             return e.set(t, n), t.forEach(o => {
-                n.push(sn(o, e))
+                n.push(on(o, e))
             }), n
         }
         return t
@@ -6646,7 +6646,7 @@ var cw = Qo((lw, Fo) => {
         }
     }
 
-    function zn() {
+    function Jn() {
         if (!("fetch" in V())) return !1;
         try {
             return new Headers, new Request(""), new Response, !0
@@ -6655,19 +6655,19 @@ var cw = Qo((lw, Fo) => {
         }
     }
 
-    function on(t) {
+    function cn(t) {
         return t && /^function fetch\(\)\s+\{\s+\[native code\]\s+\}$/.test(t.toString())
     }
 
     function h_() {
-        if (!zn()) return !1;
+        if (!Jn()) return !1;
         var t = V();
-        if (on(t.fetch)) return !0;
+        if (cn(t.fetch)) return !0;
         let e = !1;
         var r = t.document;
         if (r && typeof r.createElement == "function") try {
             var n = r.createElement("iframe");
-            n.hidden = !0, r.head.appendChild(n), n.contentWindow && n.contentWindow.fetch && (e = on(n.contentWindow.fetch)), r.head.removeChild(n)
+            n.hidden = !0, r.head.appendChild(n), n.contentWindow && n.contentWindow.fetch && (e = cn(n.contentWindow.fetch)), r.head.removeChild(n)
         } catch (i) {
             (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn("Could not create sandbox iframe for pure fetch check, bailing to window.fetch: ", i)
         }
@@ -6683,10 +6683,10 @@ var cw = Qo((lw, Fo) => {
     }
     var H = V(),
         It = {},
-        ta = {};
+        ra = {};
 
     function y_(t) {
-        if (!ta[t]) switch (ta[t] = !0, t) {
+        if (!ra[t]) switch (ra[t] = !0, t) {
             case "console":
                 v_();
                 break;
@@ -6874,7 +6874,7 @@ Error:`, n)
         return !0
     }
 
-    function ra(t, e = !1) {
+    function na(t, e = !1) {
         return r => {
             if (!(!r || Wt === r) && !O_(r)) {
                 var n = r.type === "keypress" ? "input" : r.type;
@@ -6896,7 +6896,7 @@ Error:`, n)
     function k_() {
         if ("document" in H) {
             var t = Ee.bind(null, "dom"),
-                e = ra(t, !0);
+                e = na(t, !0);
             H.document.addEventListener("click", e, !1), H.document.addEventListener("keypress", e, !1), ["EventTarget", "Node"].forEach(r => {
                 var n = H[r] && H[r].prototype;
                 !n || !n.hasOwnProperty || !n.hasOwnProperty("addEventListener") || (se(n, "addEventListener", function(i) {
@@ -6908,7 +6908,7 @@ Error:`, n)
                                     refCount: 0
                                 };
                             if (!y.handler) {
-                                var m = ra(t);
+                                var m = na(t);
                                 y.handler = m, i.call(this, a, m, o)
                             }
                             y.refCount += 1
@@ -6997,7 +6997,7 @@ Error:`, n)
         return n ? n.type && n.value ? `${n.type}: ${n.value}` : n.type || n.value || r || "<unknown>" : r || "<unknown>"
     }
 
-    function cn(t, e, r) {
+    function un(t, e, r) {
         var n = t.exception = t.exception || {},
             i = n.values = n.values || [],
             a = i[0] = i[0] || {};
@@ -7026,17 +7026,17 @@ Error:`, n)
         }
     }
 
-    function na(t) {
+    function ia(t) {
         if (t && t.__sentry_captured__) return !0;
         try {
-            Hn(t, "__sentry_captured__", !0)
+            Wn(t, "__sentry_captured__", !0)
         } catch {}
         return !1
     }
 
     function Fe(t, e = 1 / 0, r = 1 / 0) {
         try {
-            return un("", t, e, r)
+            return ln("", t, e, r)
         } catch (n) {
             return {
                 ERROR: `**non-serializable** (${n})`
@@ -7049,7 +7049,7 @@ Error:`, n)
         return A_(n) > r ? po(t, e - 1, r) : n
     }
 
-    function un(t, e, r = 1 / 0, n = 1 / 0, i = $_()) {
+    function ln(t, e, r = 1 / 0, n = 1 / 0, i = $_()) {
         const [a, s] = i;
         if (e === null || ["number", "boolean", "string"].includes(typeof e) && !Qg(e)) return e;
         var o = P_(t, e);
@@ -7060,7 +7060,7 @@ Error:`, n)
         var c = e;
         if (c && typeof c.toJSON == "function") try {
             var f = c.toJSON();
-            return un("", f, r - 1, n, i)
+            return ln("", f, r - 1, n, i)
         } catch {}
         var y = Array.isArray(e) ? [] : {};
         let m = 0;
@@ -7072,7 +7072,7 @@ Error:`, n)
                     break
                 }
                 var k = w[O];
-                y[O] = un(O, k, r - 1, n, i), m += 1
+                y[O] = ln(O, k, r - 1, n, i), m += 1
             } return s(e), y
     }
 
@@ -7107,7 +7107,7 @@ Error:`, n)
         })
     }
 
-    function ln(t) {
+    function fn(t) {
         return new ce((e, r) => {
             r(t)
         })
@@ -7176,7 +7176,7 @@ Error:`, n)
         __init5() {
             this._setResult = (e, r) => {
                 if (this._state === ke.PENDING) {
-                    if (Fn(r)) {
+                    if (Gn(r)) {
                         r.then(this._resolve, this._reject);
                         return
                     }
@@ -7208,7 +7208,7 @@ Error:`, n)
         }
 
         function i(s) {
-            if (!r()) return ln(new ae("Not adding Promise due to buffer limit reached."));
+            if (!r()) return fn(new ae("Not adding Promise due to buffer limit reached."));
             var o = s();
             return e.indexOf(o) === -1 && e.push(o), o.then(() => n(o)).then(null, () => n(o).then(null, () => {})), o
         }
@@ -7252,7 +7252,7 @@ Error:`, n)
     function L_(t) {
         return t === "warn" ? "warning" : N_.includes(t) ? t : "log"
     }
-    var fn = {
+    var dn = {
         nowSeconds: () => Date.now() / 1e3
     };
 
@@ -7277,12 +7277,12 @@ Error:`, n)
             return
         }
     }
-    var Gr = Mn() ? D_() : C_(),
-        ia = Gr === void 0 ? fn : {
+    var Gr = Bn() ? D_() : C_(),
+        aa = Gr === void 0 ? dn : {
             nowSeconds: () => (Gr.timeOrigin + Gr.now()) / 1e3
         },
-        mr = fn.nowSeconds.bind(fn),
-        yo = ia.nowSeconds.bind(ia);
+        mr = dn.nowSeconds.bind(dn),
+        yo = aa.nowSeconds.bind(aa);
     (() => {
         const {
             performance: t
@@ -7310,7 +7310,7 @@ Error:`, n)
         return [r, [...n, e]]
     }
 
-    function aa(t, e) {
+    function sa(t, e) {
         var r = t[1];
         r.forEach(n => {
             var i = n[0].type;
@@ -7318,7 +7318,7 @@ Error:`, n)
         })
     }
 
-    function dn(t, e) {
+    function hn(t, e) {
         var r = e || new TextEncoder;
         return r.encode(t)
     }
@@ -7328,7 +7328,7 @@ Error:`, n)
         let i = JSON.stringify(r);
 
         function a(o) {
-            typeof i == "string" ? i = typeof o == "string" ? i + o : [dn(i, e), o] : i.push(typeof o == "string" ? dn(o, e) : o)
+            typeof i == "string" ? i = typeof o == "string" ? i + o : [hn(i, e), o] : i.push(typeof o == "string" ? hn(o, e) : o)
         }
         for (var s of n) {
             const [o, c] = s;
@@ -7348,8 +7348,8 @@ ${JSON.stringify(o)}
     }
 
     function B_(t, e) {
-        var r = typeof t.data == "string" ? dn(t.data, e) : t.data;
-        return [Yn({
+        var r = typeof t.data == "string" ? hn(t.data, e) : t.data;
+        return [zn({
             type: "attachment",
             length: r.length,
             filename: t.filename,
@@ -7367,7 +7367,7 @@ ${JSON.stringify(o)}
         user_report: "default"
     };
 
-    function sa(t) {
+    function oa(t) {
         return U_[t]
     }
 
@@ -7460,7 +7460,7 @@ ${JSON.stringify(o)}
     }
 
     function K_(t) {
-        return Yn({
+        return zn({
             sid: `${t.sid}`,
             init: t.init,
             started: new Date(t.started * 1e3).toISOString(),
@@ -7477,7 +7477,7 @@ ${JSON.stringify(o)}
             }
         })
     }
-    var oa = 100;
+    var ca = 100;
     class Ne {
         constructor() {
             this._notifyingListeners = !1, this._scopeListeners = [], this._eventProcessors = [], this._breadcrumbs = [], this._attachments = [], this._user = {}, this._tags = {}, this._extra = {}, this._contexts = {}, this._sdkProcessingMetadata = {}
@@ -7597,7 +7597,7 @@ ${JSON.stringify(o)}
             return this._breadcrumbs = [], this._tags = {}, this._extra = {}, this._user = {}, this._contexts = {}, this._level = void 0, this._transactionName = void 0, this._fingerprint = void 0, this._requestSession = void 0, this._span = void 0, this._session = void 0, this._notifyScopeListeners(), this._attachments = [], this
         }
         addBreadcrumb(e, r) {
-            var n = typeof r == "number" ? Math.min(r, oa) : oa;
+            var n = typeof r == "number" ? Math.min(r, ca) : ca;
             if (n <= 0) return this;
             var i = {
                 timestamp: mr(),
@@ -7660,7 +7660,7 @@ ${JSON.stringify(o)}
                     var c = o({
                         ...r
                     }, n);
-                    (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && o.id && c === null && x.log(`Event processor "${o.id}" dropped event`), Fn(c) ? c.then(f => this._notifyEventProcessors(e, f, n, i + 1).then(a)).then(null, s) : this._notifyEventProcessors(e, c, n, i + 1).then(a).then(null, s)
+                    (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && o.id && c === null && x.log(`Event processor "${o.id}" dropped event`), Gn(c) ? c.then(f => this._notifyEventProcessors(e, f, n, i + 1).then(a)).then(null, s) : this._notifyEventProcessors(e, c, n, i + 1).then(a).then(null, s)
                 }
             })
         }
@@ -7675,19 +7675,19 @@ ${JSON.stringify(o)}
     }
 
     function mo() {
-        return Bn("globalEventProcessors", () => [])
+        return Un("globalEventProcessors", () => [])
     }
 
-    function Jn(t) {
+    function Vn(t) {
         mo().push(t)
     }
-    var Vn = 4,
+    var Kn = 4,
         X_ = 100;
     class Mt {
         __init() {
             this._stack = [{}]
         }
-        constructor(e, r = new Ne, n = Vn) {
+        constructor(e, r = new Ne, n = Kn) {
             this._version = n, Mt.prototype.__init.call(this), this.getStackTop().scope = r, e && this.bindClient(e)
         }
         isOlderThan(e) {
@@ -7815,11 +7815,11 @@ ${JSON.stringify(o)}
             r && n && e(r)
         }
         run(e) {
-            var r = ca(this);
+            var r = ua(this);
             try {
                 e(this)
             } finally {
-                ca(r)
+                ua(r)
             }
         }
         getIntegration(e) {
@@ -7916,15 +7916,15 @@ ${JSON.stringify(o)}
         }, t
     }
 
-    function ca(t) {
+    function ua(t) {
         var e = _r(),
             r = Ae(e);
-        return Kn(e, t), r
+        return Xn(e, t), r
     }
 
     function Q() {
         var t = _r();
-        return (!go(t) || Ae(t).isOlderThan(Vn)) && Kn(t, new Mt), Mn() ? Q_(t) : Ae(t)
+        return (!go(t) || Ae(t).isOlderThan(Kn)) && Xn(t, new Mt), Bn() ? Q_(t) : Ae(t)
     }
 
     function Q_(t) {
@@ -7932,9 +7932,9 @@ ${JSON.stringify(o)}
             var e = _r().__SENTRY__,
                 r = e && e.extensions && e.extensions.domain && e.extensions.domain.active;
             if (!r) return Ae(t);
-            if (!go(r) || Ae(r).isOlderThan(Vn)) {
+            if (!go(r) || Ae(r).isOlderThan(Kn)) {
                 var n = Ae(t).getStackTop();
-                Kn(r, new Mt(n.client, Ne.clone(n.scope)))
+                Xn(r, new Mt(n.client, Ne.clone(n.scope)))
             }
             return Ae(r)
         } catch {
@@ -7947,10 +7947,10 @@ ${JSON.stringify(o)}
     }
 
     function Ae(t) {
-        return Bn("hub", () => new Mt, t)
+        return Un("hub", () => new Mt, t)
     }
 
-    function Kn(t, e) {
+    function Xn(t, e) {
         if (!t) return !1;
         var r = t.__SENTRY__ = t.__SENTRY__ || {};
         return r.hub = e, !0
@@ -8029,7 +8029,7 @@ ${JSON.stringify(o)}
                     sdk: i
                 },
                 ...!!n && {
-                    dsn: Gn(e)
+                    dsn: qn(e)
                 }
             },
             s = "aggregates" in t ? [{
@@ -8072,26 +8072,26 @@ ${JSON.stringify(o)}
                 sdk: e
             },
             ...!!r && {
-                dsn: Gn(n)
+                dsn: qn(n)
             },
             ...t.type === "transaction" && a && {
-                trace: Yn({
+                trace: zn({
                     ...a
                 })
             }
         }
     }
-    var ua = [];
+    var la = [];
 
-    function la(t) {
+    function fa(t) {
         return t.reduce((e, r) => (e.every(n => r.name !== n.name) && e.push(r), e), [])
     }
 
     function lb(t) {
         var e = t.defaultIntegrations && [...t.defaultIntegrations] || [],
             r = t.integrations;
-        let n = [...la(e)];
-        Array.isArray(r) ? n = [...n.filter(s => r.every(o => o.name !== s.name)), ...la(r)] : typeof r == "function" && (n = r(n), n = Array.isArray(n) ? n : [n]);
+        let n = [...fa(e)];
+        Array.isArray(r) ? n = [...n.filter(s => r.every(o => o.name !== s.name)), ...fa(r)] : typeof r == "function" && (n = r(n), n = Array.isArray(n) ? n : [n]);
         var i = n.map(s => s.name),
             a = "Debug";
         return i.indexOf(a) !== -1 && n.push(...n.splice(i.indexOf(a), 1)), n
@@ -8100,10 +8100,10 @@ ${JSON.stringify(o)}
     function fb(t) {
         var e = {};
         return t.forEach(r => {
-            e[r.name] = r, ua.indexOf(r.name) === -1 && (r.setupOnce(Jn, Q), ua.push(r.name), (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.log(`Integration installed: ${r.name}`))
+            e[r.name] = r, la.indexOf(r.name) === -1 && (r.setupOnce(Vn, Q), la.push(r.name), (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.log(`Integration installed: ${r.name}`))
         }), e
     }
-    var fa = "Not capturing exception because it's already been captured.";
+    var da = "Not capturing exception because it's already been captured.";
     class Qe {
         __init() {
             this._integrations = {}
@@ -8129,8 +8129,8 @@ ${JSON.stringify(o)}
             } else(typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.warn("No DSN provided, client will not do anything.")
         }
         captureException(e, r, n) {
-            if (na(e)) {
-                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.log(fa);
+            if (ia(e)) {
+                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.log(da);
                 return
             }
             let i = r && r.event_id;
@@ -8146,8 +8146,8 @@ ${JSON.stringify(o)}
             })), a
         }
         captureEvent(e, r, n) {
-            if (r && r.originalException && na(r.originalException)) {
-                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.log(fa);
+            if (r && r.originalException && ia(r.originalException)) {
+                (typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.log(da);
                 return
             }
             let i = r && r.event_id;
@@ -8322,9 +8322,9 @@ ${JSON.stringify(o)}
                 beforeSend: i,
                 sampleRate: a
             } = this.getOptions();
-            if (!this._isEnabled()) return ln(new ae("SDK not enabled, will not capture event.", "log"));
+            if (!this._isEnabled()) return fn(new ae("SDK not enabled, will not capture event.", "log"));
             var s = e.type === "transaction";
-            return !s && typeof a == "number" && Math.random() > a ? (this.recordDroppedEvent("sample_rate", "error"), ln(new ae(`Discarding event because it's not included in the random sample (sampling rate = ${a})`, "log"))) : this._prepareEvent(e, r, n).then(o => {
+            return !s && typeof a == "number" && Math.random() > a ? (this.recordDroppedEvent("sample_rate", "error"), fn(new ae(`Discarding event because it's not included in the random sample (sampling rate = ${a})`, "log"))) : this._prepareEvent(e, r, n).then(o => {
                 if (o === null) throw this.recordDroppedEvent("event_processor", e.type || "error"), new ae("An event processor returned null, will not send event.", "log");
                 var c = r.data && r.data.__sentry__ === !0;
                 if (c || s || !i) return o;
@@ -8367,7 +8367,7 @@ Reason: ${o}`))
 
     function db(t) {
         var e = "`beforeSend` method has to return `null` or a valid event.";
-        if (Fn(t)) return t.then(r => {
+        if (Gn(t)) return t.then(r => {
             if (!(ft(r) || r === null)) throw new ae(e);
             return r
         }, r => {
@@ -8393,14 +8393,14 @@ Reason: ${o}`))
 
         function a(s) {
             var o = [];
-            if (aa(s, (m, w) => {
-                    var O = sa(w);
+            if (sa(s, (m, w) => {
+                    var O = oa(w);
                     W_(n, O) ? t.recordDroppedEvent("ratelimit_backoff", O) : o.push(m)
                 }), o.length === 0) return We();
             var c = gr(s[0], o),
                 f = m => {
-                    aa(c, (w, O) => {
-                        t.recordDroppedEvent(m, sa(O))
+                    sa(c, (w, O) => {
+                        t.recordDroppedEvent(m, oa(O))
                     })
                 },
                 y = () => e({
@@ -8420,8 +8420,8 @@ Reason: ${o}`))
             flush: i
         }
     }
-    var da = "7.11.1";
-    let ha;
+    var ha = "7.11.1";
+    let pa;
     class xt {
         constructor() {
             xt.prototype.__init.call(this)
@@ -8433,9 +8433,9 @@ Reason: ${o}`))
             this.name = xt.id
         }
         setupOnce() {
-            ha = Function.prototype.toString, Function.prototype.toString = function(...e) {
-                var r = Wn(this) || this;
-                return ha.apply(r, e)
+            pa = Function.prototype.toString, Function.prototype.toString = function(...e) {
+                var r = Yn(this) || this;
+                return pa.apply(r, e)
             }
         }
     }
@@ -8490,19 +8490,19 @@ Url: ${nr(t)}`), !0)
     }
 
     function gb(t, e) {
-        return !e || !e.length ? !1 : Eb(t).some(r => e.some(n => qn(r, n)))
+        return !e || !e.length ? !1 : Eb(t).some(r => e.some(n => Hn(r, n)))
     }
 
     function _b(t, e) {
         if (!e || !e.length) return !1;
         var r = nr(t);
-        return r ? e.some(n => qn(r, n)) : !1
+        return r ? e.some(n => Hn(r, n)) : !1
     }
 
     function bb(t, e) {
         if (!e || !e.length) return !0;
         var r = nr(t);
-        return r ? e.some(n => qn(r, n)) : !0
+        return r ? e.some(n => Hn(r, n)) : !0
     }
 
     function Eb(t) {
@@ -8547,7 +8547,7 @@ Url: ${nr(t)}`), !0)
     }
 
     function So(t, e) {
-        var r = Xn(t, e),
+        var r = Qn(t, e),
             n = {
                 type: e && e.name,
                 value: Tb(e)
@@ -8561,7 +8561,7 @@ Url: ${nr(t)}`), !0)
         var i = {
             exception: {
                 values: [{
-                    type: Un(e) ? e.constructor.name : n ? "UnhandledRejection" : "Error",
+                    type: Fn(e) ? e.constructor.name : n ? "UnhandledRejection" : "Error",
                     value: `Non-Error ${n?"promise rejection":"exception"} captured with keys: ${u_(e)}`
                 }]
             },
@@ -8570,7 +8570,7 @@ Url: ${nr(t)}`), !0)
             }
         };
         if (r) {
-            var a = Xn(t, r);
+            var a = Qn(t, r);
             a.length && (i.exception.values[0].stacktrace = {
                 frames: a
             })
@@ -8586,7 +8586,7 @@ Url: ${nr(t)}`), !0)
         }
     }
 
-    function Xn(t, e) {
+    function Qn(t, e) {
         var r = e.stacktrace || e.stack || "",
             n = Rb(e);
         try {
@@ -8611,29 +8611,29 @@ Url: ${nr(t)}`), !0)
 
     function $b(t, e, r, n) {
         var i = r && r.syntheticException || void 0,
-            a = Qn(t, e, i, n);
+            a = Zn(t, e, i, n);
         return At(a), a.level = "error", r && r.event_id && (a.event_id = r.event_id), We(a)
     }
 
     function Pb(t, e, r = "info", n, i) {
         var a = n && n.syntheticException || void 0,
-            s = hn(t, e, a, i);
+            s = pn(t, e, a, i);
         return s.level = r, n && n.event_id && (s.event_id = n.event_id), We(s)
     }
 
-    function Qn(t, e, r, n, i) {
+    function Zn(t, e, r, n, i) {
         let a;
         if (ao(e) && e.error) {
             var s = e;
             return qr(t, s.error)
         }
-        if (Ki(e) || Jg(e)) {
+        if (Xi(e) || Jg(e)) {
             var o = e;
             if ("stack" in e) a = qr(t, e);
             else {
-                var c = o.name || (Ki(o) ? "DOMError" : "DOMException"),
+                var c = o.name || (Xi(o) ? "DOMError" : "DOMException"),
                     f = o.message ? `${c}: ${o.message}` : c;
-                a = hn(t, f, r, n), cn(a, f)
+                a = pn(t, f, r, n), un(a, f)
             }
             return "code" in o && (a.tags = {
                 ...a.tags,
@@ -8641,23 +8641,23 @@ Url: ${nr(t)}`), !0)
             }), a
         }
         if (io(e)) return qr(t, e);
-        if (ft(e) || Un(e)) {
+        if (ft(e) || Fn(e)) {
             var y = e;
             return a = Ob(t, y, r, i), At(a, {
                 synthetic: !0
             }), a
         }
-        return a = hn(t, e, r, n), cn(a, `${e}`, void 0), At(a, {
+        return a = pn(t, e, r, n), un(a, `${e}`, void 0), At(a, {
             synthetic: !0
         }), a
     }
 
-    function hn(t, e, r, n) {
+    function pn(t, e, r, n) {
         var i = {
             message: e
         };
         if (n && r) {
-            var a = Xn(t, r);
+            var a = Qn(t, r);
             a.length && (i.exception = {
                 values: [{
                     value: e,
@@ -8699,7 +8699,7 @@ Url: ${nr(t)}`), !0)
             let n, i = typeof t == "object" ? t.serializeAttribute : void 0;
             typeof i == "string" && (i = [i]);
             try {
-                n = r.event.target ? an(r.event.target, i) : an(r.event, i)
+                n = r.event.target ? sn(r.event.target, i) : sn(r.event, i)
             } catch {
                 n = "<unknown>"
             }
@@ -8723,10 +8723,10 @@ Url: ${nr(t)}`), !0)
                 logger: "console"
             },
             level: L_(t.level),
-            message: Qi(t.args, " ")
+            message: Zi(t.args, " ")
         };
         if (t.level === "assert")
-            if (t.args[0] === !1) e.message = `Assertion failed: ${Qi(t.args.slice(1)," ")||"console.assert"}`, e.data.arguments = t.args.slice(1);
+            if (t.args[0] === !1) e.message = `Assertion failed: ${Zi(t.args.slice(1)," ")||"console.assert"}`, e.data.arguments = t.args.slice(1);
             else return;
         Q().addBreadcrumb(e, {
             input: t.args,
@@ -8801,7 +8801,7 @@ Url: ${nr(t)}`), !0)
 
     function ko() {
         if (Yt) return Yt;
-        if (on(be.fetch)) return Yt = be.fetch.bind(be);
+        if (cn(be.fetch)) return Yt = be.fetch.bind(be);
         var t = be.document;
         let e = be.fetch;
         if (t && typeof t.createElement == "function") try {
@@ -8821,7 +8821,7 @@ Url: ${nr(t)}`), !0)
         if (n) {
             var i = be.navigator.sendBeacon.bind(be.navigator);
             i(t, e)
-        } else if (zn()) {
+        } else if (Jn()) {
             var a = ko();
             a(t, {
                 body: e,
@@ -8840,9 +8840,9 @@ Url: ${nr(t)}`), !0)
                 name: "sentry.javascript.browser",
                 packages: [{
                     name: "npm:@sentry/browser",
-                    version: da
+                    version: ha
                 }],
-                version: da
+                version: ha
             }, super(e), e.sendClientReports && Hr.document && Hr.document.addEventListener("visibilitychange", () => {
                 Hr.document.visibilityState === "hidden" && this._flushOutcomes()
             })
@@ -8878,7 +8878,7 @@ Url: ${nr(t)}`), !0)
                 return
             }(typeof __SENTRY_DEBUG__ > "u" || __SENTRY_DEBUG__) && x.log("Sending outcomes:", e);
             var r = bo(this._dsn, this._options),
-                n = F_(e, this._options.tunnel && Gn(this._dsn));
+                n = F_(e, this._options.tunnel && qn(this._dsn));
             try {
                 Cb(r, vo(n))
             } catch (i) {
@@ -8932,7 +8932,7 @@ Url: ${nr(t)}`), !0)
         Fb = 40,
         Gb = 50;
 
-    function Zn(t, e, r, n) {
+    function ei(t, e, r, n) {
         var i = {
             filename: t,
             function: e,
@@ -8951,7 +8951,7 @@ Url: ${nr(t)}`), !0)
                     n && (e[2] = n[1], e[3] = n[2], e[4] = n[3])
                 }
                 const [i, a] = Ro(e[1] || br, e[2]);
-                return Zn(a, i, e[3] ? +e[3] : void 0, e[4] ? +e[4] : void 0)
+                return ei(a, i, e[3] ? +e[3] : void 0, e[4] ? +e[4] : void 0)
             }
         },
         Yb = [Ub, Wb],
@@ -8967,14 +8967,14 @@ Url: ${nr(t)}`), !0)
                 }
                 let i = e[3],
                     a = e[1] || br;
-                return [a, i] = Ro(a, i), Zn(i, a, e[4] ? +e[4] : void 0, e[5] ? +e[5] : void 0)
+                return [a, i] = Ro(a, i), ei(i, a, e[4] ? +e[4] : void 0, e[5] ? +e[5] : void 0)
             }
         },
         Kb = [Gb, Vb],
         Xb = /^\s*at (?:((?:\[object object\])?.+) )?\(?((?:file|ms-appx|https?|webpack|blob):.*?):(\d+)(?::(\d+))?\)?\s*$/i,
         Qb = t => {
             var e = Xb.exec(t);
-            return e ? Zn(e[2], e[1] || br, +e[3], e[4] ? +e[4] : void 0) : void 0
+            return e ? ei(e[2], e[1] || br, +e[3], e[4] ? +e[4] : void 0) : void 0
         },
         Zb = [Fb, Qb],
         eE = [Yb, Kb, Zb],
@@ -8984,15 +8984,15 @@ Url: ${nr(t)}`), !0)
                 n = t.indexOf("safari-web-extension") !== -1;
             return r || n ? [t.indexOf("@") !== -1 ? t.split("@")[0] : br, r ? `safari-extension:${e}` : `safari-web-extension:${e}`] : [t, e]
         };
-    let pn = 0;
+    let yn = 0;
 
     function To() {
-        return pn > 0
+        return yn > 0
     }
 
     function rE() {
-        pn += 1, setTimeout(() => {
-            pn -= 1
+        yn += 1, setTimeout(() => {
+            yn -= 1
         })
     }
 
@@ -9001,7 +9001,7 @@ Url: ${nr(t)}`), !0)
         try {
             var n = t.__sentry_wrapped__;
             if (n) return n;
-            if (Wn(t)) return t
+            if (Yn(t)) return t
         } catch {
             return t
         }
@@ -9013,7 +9013,7 @@ Url: ${nr(t)}`), !0)
                 return t.apply(this, c)
             } catch (f) {
                 throw rE(), tb(y => {
-                    y.addEventProcessor(m => (e.mechanism && (cn(m, void 0, void 0), At(m, e.mechanism)), m.extra = {
+                    y.addEventProcessor(m => (e.mechanism && (un(m, void 0, void 0), At(m, e.mechanism)), m.extra = {
                         ...m.extra,
                         arguments: o
                     }, m)), Z_(f)
@@ -9023,7 +9023,7 @@ Url: ${nr(t)}`), !0)
         try {
             for (var a in t) Object.prototype.hasOwnProperty.call(t, a) && (i[a] = t[a])
         } catch {}
-        uo(i, t), Hn(t, "__sentry_wrapped__", i);
+        uo(i, t), Wn(t, "__sentry_wrapped__", i);
         try {
             var s = Object.getOwnPropertyDescriptor(i, "name");
             s.configurable && Object.defineProperty(i, "name", {
@@ -9077,7 +9077,7 @@ Url: ${nr(t)}`), !0)
                 error: c
             } = t;
             if (!(To() || c && c.__sentry_own_request__)) {
-                var f = c === void 0 && lt(i) ? sE(i, a, s, o) : $o(Qn(r, c || i, void 0, n, !1), a, s, o);
+                var f = c === void 0 && lt(i) ? sE(i, a, s, o) : $o(Zn(r, c || i, void 0, n, !1), a, s, o);
                 f.level = "error", Po(e, c, f, "onerror")
             }
         })
@@ -9092,7 +9092,7 @@ Url: ${nr(t)}`), !0)
                 "reason" in t ? i = t.reason : "detail" in t && "reason" in t.detail && (i = t.detail.reason)
             } catch {}
             if (To() || i && i.__sentry_own_request__) return !0;
-            var a = so(i) ? aE(i) : Qn(r, i, void 0, n, !0);
+            var a = so(i) ? aE(i) : Zn(r, i, void 0, n, !0);
             a.level = "error", Po(e, i, a, "onunhandledrejection")
         })
     }
@@ -9185,7 +9185,7 @@ Url: ${nr(t)}`), !0)
         }
         setupOnce() {
             var e = V();
-            this._options.setTimeout && se(e, "setTimeout", pa), this._options.setInterval && se(e, "setInterval", pa), this._options.requestAnimationFrame && se(e, "requestAnimationFrame", uE), this._options.XMLHttpRequest && "XMLHttpRequest" in e && se(XMLHttpRequest.prototype, "send", lE);
+            this._options.setTimeout && se(e, "setTimeout", ya), this._options.setInterval && se(e, "setInterval", ya), this._options.requestAnimationFrame && se(e, "requestAnimationFrame", uE), this._options.XMLHttpRequest && "XMLHttpRequest" in e && se(XMLHttpRequest.prototype, "send", lE);
             var r = this._options.eventTarget;
             if (r) {
                 var n = Array.isArray(r) ? r : cE;
@@ -9195,7 +9195,7 @@ Url: ${nr(t)}`), !0)
     }
     Lt.__initStatic();
 
-    function pa(t) {
+    function ya(t) {
         return function(...e) {
             var r = e[0];
             return e[0] = ht(r, {
@@ -9241,7 +9241,7 @@ Url: ${nr(t)}`), !0)
                                 type: "instrument"
                             }
                         },
-                        o = Wn(a);
+                        o = Yn(a);
                     return o && (s.mechanism.data.handler = Ce(o)), ht(a, s)
                 })
             }), t.apply(this, e)
@@ -9303,7 +9303,7 @@ Url: ${nr(t)}`), !0)
         }
         setupOnce() {
             var e = Q().getClient();
-            !e || Jn((r, n) => {
+            !e || Vn((r, n) => {
                 var i = Q().getIntegration(it);
                 return i ? pE(e.getOptions().stackParser, i._key, i._limit, r, n) : r
             })
@@ -9334,7 +9334,7 @@ Url: ${nr(t)}`), !0)
             this.name = at.id
         }
         setupOnce() {
-            Jn(e => {
+            Vn(e => {
                 if (Q().getIntegration(at)) {
                     if (!Ue.navigator && !Ue.location && !Ue.document) return e;
                     var r = e.request && e.request.url || Ue.location && Ue.location.href;
@@ -9407,14 +9407,14 @@ Url: ${nr(t)}`), !0)
     }
 
     function mE(t, e) {
-        var r = ya(e),
-            n = ya(t);
+        var r = va(e),
+            n = va(t);
         return !(!r || !n || r.type !== n.type || r.value !== n.value || !No(t, e) || !xo(t, e))
     }
 
     function xo(t, e) {
-        let r = va(t),
-            n = va(e);
+        let r = ma(t),
+            n = ma(e);
         if (!r && !n) return !0;
         if (r && !n || !r && n || (r = r, n = n, n.length !== r.length)) return !1;
         for (let s = 0; s < n.length; s++) {
@@ -9438,11 +9438,11 @@ Url: ${nr(t)}`), !0)
         }
     }
 
-    function ya(t) {
+    function va(t) {
         return t.exception && t.exception.values && t.exception.values[0]
     }
 
-    function va(t) {
+    function ma(t) {
         var e = t.exception;
         if (e) try {
             return e.values[0].stacktrace.frames
@@ -9462,12 +9462,12 @@ Url: ${nr(t)}`), !0)
             ...t,
             stackParser: f_(t.stackParser || tE),
             integrations: lb(t),
-            transport: t.transport || (zn() ? jb : Bb)
+            transport: t.transport || (Jn() ? jb : Bb)
         };
         hb(Db, r), t.autoSessionTracking && bE()
     }
 
-    function ma(t) {
+    function ga(t) {
         t.startSession({
             ignoreDuration: !0
         }), t.captureSession()
@@ -9481,18 +9481,18 @@ Url: ${nr(t)}`), !0)
             return
         }
         var r = Q();
-        !r.captureSession || (ma(r), Ie("history", ({
+        !r.captureSession || (ga(r), Ie("history", ({
             from: n,
             to: i
         }) => {
-            n === void 0 || n === i || ma(Q())
+            n === void 0 || n === i || ga(Q())
         }))
     }
     const EE = "UNABLE TO LOAD. TAP TO TRY AGAIN.",
         wE = {
             RETRY: EE
         },
-        ga = {
+        _a = {
             en: wE
         };
     class Lo {
@@ -9606,7 +9606,7 @@ Url: ${nr(t)}`), !0)
             if (!e) return;
             const r = document.createElement("p"),
                 n = navigator.languages[0],
-                i = (a = ga[n]) != null ? a : ga.en;
+                i = (a = _a[n]) != null ? a : _a.en;
             e.classList.add("error"), r.textContent = i.RETRY, e.append(r), e.addEventListener("click", () => window.location.reload())
         }
     }
@@ -9627,7 +9627,7 @@ Url: ${nr(t)}`), !0)
             isPublic: !0
         }],
         OE = t => SE.find(e => e.tag === t);
-    class _a extends Lo {
+    class ba extends Lo {
         constructor() {
             super(...arguments);
             G(this, "debugLoad", async (r, n) => {
@@ -9657,14 +9657,14 @@ Url: ${nr(t)}`), !0)
                 if (!o) throw new Error(`No app found with tag ${r}`);
                 return `/@fs/${window.tv.manifest.root}}/apps/${o}/src/json/${n}.json`
             }
-            const i = (s = Vi(r)) == null ? void 0 : s.directory;
+            const i = (s = Ki(r)) == null ? void 0 : s.directory;
             if (!i) throw new Error(`No game found with tag ${r}`);
             return `/@fs/${window.tv.manifest.root}/games/${i}/src/json/${n}.json`
         }
         getBundlePath(r, n, i) {
             var o;
             if (n[0] === "@") return `${r}/${n}/json/${i}.json`;
-            const a = (o = Vi(n)) == null ? void 0 : o.directory;
+            const a = (o = Ki(n)) == null ? void 0 : o.directory;
             if (!a) throw new Error(`No game found with tag ${n}`);
             const s = a.replaceAll("/", "-");
             return `${r}/${s}/json/${i}.json`
@@ -9677,7 +9677,7 @@ Url: ${nr(t)}`), !0)
             return r === "cloud" ? s = this.getCloudPath(i, a) : n === "** hmr **" || n === "** dist **" ? s = this.getLocalPath(i, a) : s = this.getBundlePath(n, i, a), await (await fetch(s)).json()
         }
     }
-    const ba = {
+    const Ea = {
             EcastEntityNotFound: 2005,
             EcastFilterError: 2021
         },
@@ -9692,12 +9692,12 @@ Url: ${nr(t)}`), !0)
                 beforeSend: async (e, r) => {
                     if (r.originalException) {
                         const n = r.originalException;
-                        if (n.code === ba.EcastEntityNotFound) return eb("no entity found having key", {
+                        if (n.code === Ea.EcastEntityNotFound) return eb("no entity found having key", {
                             extra: {
                                 exception: r.originalException
                             }
                         }), null;
-                        if (n.code === ba.EcastFilterError) return null
+                        if (n.code === Ea.EcastFilterError) return null
                     }
                     if (window.tv.onError) try {
                         const n = await window.tv.onError(e, r);
@@ -9724,7 +9724,7 @@ Url: ${nr(t)}`), !0)
         LE = "";
 
     function Co(t) {
-        return t === void 0 && (t = "/"), ti() ? location.pathname + location.search + location.hash : t
+        return t === void 0 && (t = "/"), ri() ? location.pathname + location.search + location.hash : t
     }
 
     function J(t) {
@@ -9754,7 +9754,7 @@ Url: ${nr(t)}`), !0)
         return [J(e[0]), e.slice(1).join("")]
     }
 
-    function ei(t) {
+    function ti(t) {
         for (var e = {}, r = t.split("&"), n = 0; n < r.length; n++) {
             var i = r[n].split("=");
             if (i[0] !== "") {
@@ -9769,7 +9769,7 @@ Url: ${nr(t)}`), !0)
         var r = sr(J(t.currentLocationPath)),
             n = r[0],
             i = r[1],
-            a = i === "" ? null : ei(i),
+            a = i === "" ? null : ti(i),
             s = [],
             o;
         if (ir(e.path)) {
@@ -9837,7 +9837,7 @@ Url: ${nr(t)}`), !0)
         }), n && (r.resolveOptions = n), r
     }
 
-    function ti() {
+    function ri() {
         return typeof window < "u"
     }
 
@@ -9868,7 +9868,7 @@ Url: ${nr(t)}`), !0)
         return Array.isArray(e) || (e = [e]), Array.isArray(r) || (r = [r]), [t, e, r]
     };
 
-    function Ea(t, e) {
+    function wa(t, e) {
         typeof t.currentLocationPath > "u" && (t.currentLocationPath = t.to = Co(t.instance.root)), t.currentLocationPath = t.instance._checkForAHash(t.currentLocationPath), e()
     }
 
@@ -9891,20 +9891,20 @@ Url: ${nr(t)}`), !0)
     function UE(t, e) {
         t.navigateOptions.force === !0 ? (t.instance._setCurrent([t.instance._pathToMatchObject(t.to)]), e(!1)) : e()
     }
-    var wa = ti(),
+    var Sa = ri(),
         FE = jo();
 
     function GE(t, e) {
         if (ze(t.navigateOptions, "updateBrowserURL")) {
             var r = ("/" + t.to).replace(/\/\//g, "/"),
-                n = wa && t.resolveOptions && t.resolveOptions.hash === !0;
+                n = Sa && t.resolveOptions && t.resolveOptions.hash === !0;
             FE ? (history[t.navigateOptions.historyAPIMethod || "pushState"](t.navigateOptions.stateObj || {}, t.navigateOptions.title || "", n ? "#" + r : r), location && location.hash && (t.instance.__freezeListening = !0, setTimeout(function() {
                 if (!n) {
                     var i = location.hash;
                     location.hash = "", location.hash = i
                 }
                 t.instance.__freezeListening = !1
-            }, 1))) : wa && (window.location.href = t.to)
+            }, 1))) : Sa && (window.location.href = t.to)
         }
         e()
     }
@@ -9998,7 +9998,7 @@ Url: ${nr(t)}`), !0)
                 hashString: s,
                 data: null,
                 route: r,
-                params: a !== "" ? ei(a) : null
+                params: a !== "" ? ti(a) : null
             };
             t.matches = [o], t.match = o
         }
@@ -10017,22 +10017,22 @@ Url: ${nr(t)}`), !0)
         ze(t.navigateOptions, "updateState") && t.instance._setCurrent(t.matches), e()
     }
     var Uo = [YE, qE, HE, WE],
-        Sa = [Mo, zE, Oe.if(function(t) {
+        Oa = [Mo, zE, Oe.if(function(t) {
             var e = t.notFoundHandled;
             return e
         }, Uo.concat([Bo]), [JE, VE])];
 
-    function yn() {
-        return yn = Object.assign || function(t) {
+    function vn() {
+        return vn = Object.assign || function(t) {
             for (var e = 1; e < arguments.length; e++) {
                 var r = arguments[e];
                 for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (t[n] = r[n])
             }
             return t
-        }, yn.apply(this, arguments)
+        }, vn.apply(this, arguments)
     }
 
-    function Oa(t, e) {
+    function ka(t, e) {
         var r = 0;
 
         function n() {
@@ -10040,7 +10040,7 @@ Url: ${nr(t)}`), !0)
                 Bo(t, e);
                 return
             }
-            Oe(Uo, yn({}, t, {
+            Oe(Uo, vn({}, t, {
                 match: t.matches[r]
             }), function() {
                 r += 1, n()
@@ -10053,23 +10053,23 @@ Url: ${nr(t)}`), !0)
         t.instance.__markAsClean(t)
     }
 
-    function vn() {
-        return vn = Object.assign || function(t) {
+    function mn() {
+        return mn = Object.assign || function(t) {
             for (var e = 1; e < arguments.length; e++) {
                 var r = arguments[e];
                 for (var n in r) Object.prototype.hasOwnProperty.call(r, n) && (t[n] = r[n])
             }
             return t
-        }, vn.apply(this, arguments)
+        }, mn.apply(this, arguments)
     }
-    var ka = "[data-navigo]";
+    var Ra = "[data-navigo]";
 
     function KE(t, e) {
         var r = e || {
                 strategy: "ONE",
                 hash: !1,
                 noMatchWarning: !1,
-                linksSelector: ka
+                linksSelector: Ra
             },
             n = this,
             i = "/",
@@ -10077,7 +10077,7 @@ Url: ${nr(t)}`), !0)
             s = [],
             o = !1,
             c, f = jo(),
-            y = ti();
+            y = ri();
         t ? i = J(t) : console.warn('Navigo requires a root path in its constructor. If not provided will use "/" as default.');
 
         function m(g) {
@@ -10124,12 +10124,12 @@ Url: ${nr(t)}`), !0)
                 to: g,
                 currentLocationPath: g,
                 navigateOptions: {},
-                resolveOptions: vn({}, r, S)
+                resolveOptions: mn({}, r, S)
             };
-            return Oe([Ea, Wr, Oe.if(function(D) {
+            return Oe([wa, Wr, Oe.if(function(D) {
                 var j = D.matches;
                 return j && j.length > 0
-            }, Oa, Sa)], T, Yr), T.matches ? T.matches : !1
+            }, ka, Oa)], T, Yr), T.matches ? T.matches : !1
         }
 
         function ee(g, S) {
@@ -10150,7 +10150,7 @@ Url: ${nr(t)}`), !0)
             Oe([BE, UE, Wr, Oe.if(function(D) {
                 var j = D.matches;
                 return j && j.length > 0
-            }, Oa, Sa), GE, Yr], T, Yr)
+            }, ka, Oa), GE, Yr], T, Yr)
         }
 
         function N(g, S, T) {
@@ -10199,7 +10199,7 @@ Url: ${nr(t)}`), !0)
         }
 
         function le() {
-            return y ? [].slice.call(document.querySelectorAll(r.linksSelector || ka)) : []
+            return y ? [].slice.call(document.querySelectorAll(r.linksSelector || Ra)) : []
         }
 
         function re(g) {
@@ -10235,7 +10235,7 @@ Url: ${nr(t)}`), !0)
             var S = sr(J(g)),
                 T = S[0],
                 D = S[1],
-                j = D === "" ? null : ei(D),
+                j = D === "" ? null : ti(D),
                 ge = ar(g),
                 Me = O(T, function() {}, [c], T);
             return {
@@ -10270,7 +10270,7 @@ Url: ${nr(t)}`), !0)
                 to: S,
                 currentLocationPath: S
             };
-            Ea(D, function() {}), typeof g == "string" && (g = typeof T > "u" || T ? w(g) : g);
+            wa(D, function() {}), typeof g == "string" && (g = typeof T > "u" || T ? w(g) : g);
             var j = Do(D, {
                 name: String(g),
                 path: g,
@@ -10350,7 +10350,7 @@ Url: ${nr(t)}`), !0)
     `
     }
 
-    function Ra(t) {
+    function zr(t) {
         if (!window.tv.debugMap) return;
         const e = document.createElement("style");
         e.innerHTML = QE(), document.getElementsByTagName("html")[0].append(e);
@@ -10494,19 +10494,23 @@ Url: ${nr(t)}`), !0)
         },
         "/([A-Za-z]{4})": t => {
             const e = t;
-            e.params || (e.params = {}), e.params.code || (e.params.code = e.hashString), window.tv.load({
+            e.params || (e.params = {}), e.params.code || (e.params.code = e.url), window.tv.load({
                 app: "@connect",
-                match: e
+                match: e,
+                autoMount: !0
             })
         },
         "/manifest": t => {
             tw()
         },
         "/debug": t => {
-            Ra()
+            zr()
         },
         "/debug/:app": t => {
-            Ra(t.data.app)
+            zr(t.data.app)
+        },
+        "/debug/local/:app": t => {
+            zr(t.data.app)
         },
         "/debug/local/:app/:file/:marker": t => {
             window.tv.debugLoad("local", t)
@@ -10531,23 +10535,23 @@ Url: ${nr(t)}`), !0)
         iw = 1,
         aw = {
             branch: "main",
-            sha: "14aaf57241d1437f8e07173c8ddff4bdaed08669",
-            lastUpdated: 1662663821753,
-            version: "5.23.0",
+            sha: "80a78163c01014e6cbac00c0ece59997d92679e5",
+            lastUpdated: 1662746483948,
+            version: "5.27.0",
             type: "production"
         },
         sw = {
             main: {
-                sha: "14aaf57241d1437f8e07173c8ddff4bdaed08669",
-                lastUpdated: 1662663821753,
-                version: "5.23.0",
+                sha: "80a78163c01014e6cbac00c0ece59997d92679e5",
+                lastUpdated: 1662746483948,
+                version: "5.27.0",
                 type: "production",
                 bundles: {
                     "@connect": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@connect",
-                        version: "5.22.0"
+                        version: "5.27.0"
                     },
                     "the-wheel": {
                         file: "script.js",
@@ -10751,7 +10755,7 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp6/rolemodels",
-                        version: "5.16.0"
+                        version: "5.25.0"
                     },
                     triviadeath2: {
                         file: "script.js",
@@ -10775,7 +10779,7 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp7/jackboxtalks",
-                        version: "5.6.0"
+                        version: "5.25.0"
                     },
                     quiplash3: {
                         file: "script.js",
@@ -10829,7 +10833,7 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/tjsp/triviadeath2",
-                        version: "5.21.0"
+                        version: "5.24.0"
                     },
                     "murder-detectives": {
                         file: "script.js",
@@ -10889,7 +10893,7 @@ Url: ${nr(t)}`), !0)
             branches: sw
         },
         or = ow,
-        kt = _a ? new _a(or) : new Lo(or);
+        kt = ba ? new ba(or) : new Lo(or);
     window.tv = {
         debugLoad: kt.debugLoad,
         load: kt.load,
@@ -10904,4 +10908,4 @@ Url: ${nr(t)}`), !0)
     rw()
 });
 export default cw();
-//# sourceMappingURL=d8afcc11.js.map
+//# sourceMappingURL=06526581.js.map

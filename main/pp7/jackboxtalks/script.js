@@ -15375,9 +15375,9 @@ class Ot {
     }
 }
 const kC = `<div class="canvasContainer">\r
-    <video id="cameraVideo" class="cameraVideo" autoplay playsinline crossorigin="anonymous" class=""></video>\r
+    <video id="cameraVideo" class="cameraVideo" autoplay playsinline class=""></video>\r
     <canvas id='cameraCanvas' class="cameraCanvas resizableCanvas" width="300px" height="408px" class=""></canvas>\r
-    <img id="cameraImage" crossorigin="anonymous" class="cameraImage visuallyhidden" />\r
+    <img id="cameraImage" class="cameraImage visuallyhidden" />\r
 </div>\r
 <div class="cameraControls">\r
     <button id="exitButton" class="button exitButton"></button>\r
@@ -15404,7 +15404,7 @@ const kC = `<div class="canvasContainer">\r
         mirror: !0,
         mask: !0,
         update(t) {
-            if (this.video || (this.video = document.getElementById("cameraVideo")), this.image || (this.image = document.getElementById("Mask")), !this.video || !this.image) return;
+            if (this.video || (this.video = document.getElementById("cameraVideo"), this.video.setAttribute("crossorigin", "anonymous")), this.image || (this.image = document.getElementById("Mask"), this.image.setAttribute("crossorigin", "anonymous")), !this.video || !this.image) return;
             const e = this.video.videoWidth,
                 n = this.video.videoHeight,
                 i = Pi().width,
@@ -15413,7 +15413,7 @@ const kC = `<div class="canvasContainer">\r
             this.width = i, this.height = a, this.finalWidth = e * f, this.finalHeight = n * f, this.offsetX = .5 * (i - this.finalWidth), this.offsetY = .5 * (a - this.finalHeight), this.dy = this.transmitting ? Math.min(-100, this.dy) : 0, this.ddy = this.transmitting ? -1200 : 0, this.transmitting || (this.y = 0), this.advance(t)
         },
         render() {
-            if (console.log("render"), !this.video) return;
+            if (!this.video) return;
             const t = Co();
             t.save(), t.translate(this.x, this.y), this.preview ? t.drawImage(this.preview, 0, 0) : this.mirror ? (t.scale(-1, 1), t.drawImage(this.video, this.offsetX - Pi().width, this.offsetY, this.finalWidth, this.finalHeight)) : t.drawImage(this.video, this.offsetX, this.offsetY, this.finalWidth, this.finalHeight), t.restore(), !this.preview && this.mask && this.image && (t.scale(1, 1), t.drawImage(this.image, this.x, this.y, Pi().width, Pi().height))
         }
@@ -15539,8 +15539,8 @@ const kC = `<div class="canvasContainer">\r
             this.currentStream && this.stopMediaTracks(), this.facingMode = this.facingMode === "user" ? "environment" : "user", this.cameraSprite.mirror = this.facingMode === "user", this.startCamera()
         },
         snapshotClicked() {
-            const t = new Image;
-            t.crossOrigin = "anonymous", t.src = this.canvas.toDataURL(), this.model.set("image", t), this.model.set("transmitting", !1)
+            const t = this.canvas.toDataURL();
+            this.model.set("image", t), this.model.set("transmitting", !1)
         },
         confirmClicked() {
             const t = this.model.get("sizesToSend") || [{
@@ -15598,12 +15598,12 @@ const kC = `<div class="canvasContainer">\r
     }),
     AC = Tn.extend({
         defaults: {
+            sizesToSend: null,
+            mask: !0,
             size: {
                 width: 300,
                 height: 408
             },
-            sizesToSend: null,
-            mask: !0,
             strings: {
                 exitButton: "X",
                 switchButton: `
@@ -21721,4 +21721,4 @@ const d1 = Bx.extend({
 Ux({
     MainView: d1
 });
-//# sourceMappingURL=a97504f7.js.map
+//# sourceMappingURL=1c7ff2d7.js.map

@@ -124,7 +124,7 @@
 
 .jbg[data-v-c4d5a30d] {
     --accent: #4254F4;
-    --alert: #CF2929;
+    --alert: #cf2929;
     --shadows: rgba(128, 128, 128, .4);
     --backgroundPrimary: #fff;
     --backgroundSecondary: #e0e0e0;
@@ -777,7 +777,7 @@
 
 .jbg[data-v-2c53389f] {
     --accent: #4254F4;
-    --alert: #CF2929;
+    --alert: #cf2929;
     --shadows: rgba(128, 128, 128, .4);
     --backgroundPrimary: #fff;
     --backgroundSecondary: #e0e0e0;
@@ -1114,7 +1114,7 @@
 
 .jbg[data-v-a7272d53] {
     --accent: #4254F4;
-    --alert: #CF2929;
+    --alert: #cf2929;
     --shadows: rgba(128, 128, 128, .4);
     --backgroundPrimary: #fff;
     --backgroundSecondary: #e0e0e0;
@@ -1410,7 +1410,7 @@ hr[data-v-a7272d53] {
 
 .jbg[data-v-39debcb6] {
     --accent: #4254F4;
-    --alert: #CF2929;
+    --alert: #cf2929;
     --shadows: rgba(128, 128, 128, .4);
     --backgroundPrimary: #fff;
     --backgroundSecondary: #e0e0e0;
@@ -1648,7 +1648,7 @@ hr[data-v-a7272d53] {
 
 .jbg[data-v-fdbdeb06] {
     --accent: #4254F4;
-    --alert: #CF2929;
+    --alert: #cf2929;
     --shadows: rgba(128, 128, 128, .4);
     --backgroundPrimary: #fff;
     --backgroundSecondary: #e0e0e0;
@@ -1890,7 +1890,7 @@ button.twitch[data-v-fdbdeb06] {
 
 .jbg[data-v-dc92e8d3] {
     --accent: #4254F4;
-    --alert: #CF2929;
+    --alert: #cf2929;
     --shadows: rgba(128, 128, 128, .4);
     --backgroundPrimary: #fff;
     --backgroundSecondary: #e0e0e0;
@@ -2256,7 +2256,7 @@ button.twitch[data-v-fdbdeb06] {
 
 .jbg[data-v-0a136edf] {
     --accent: #4254F4;
-    --alert: #CF2929;
+    --alert: #cf2929;
     --shadows: rgba(128, 128, 128, .4);
     --backgroundPrimary: #fff;
     --backgroundSecondary: #e0e0e0;
@@ -2854,17 +2854,17 @@ body {
     text-shadow: 1px 1px white
 }
 
-.dialing[data-v-7910c4df] {
+.dialing[data-v-d505b66f] {
     display: flex;
     flex-direction: column;
     align-items: center
 }
 
-.dialing canvas[data-v-7910c4df] {
+.dialing canvas[data-v-d505b66f] {
     width: clamp(150px, min(100%, 60vh), 640px)
 }
 
-.dialing .reset[data-v-7910c4df] {
+.dialing .reset[data-v-d505b66f] {
     display: block;
     padding: 20px 50px;
     border: none;
@@ -2914,17 +2914,17 @@ body {
     height: clamp(250px, min(112.5vw, 80vh), 640px)
 }
 
-.dropping[data-v-e131f4a2] {
+.dropping[data-v-9ed855c4] {
     display: flex;
     flex-direction: column
 }
 
-.dropping canvas[data-v-e131f4a2] {
+.dropping canvas[data-v-9ed855c4] {
     width: 100%;
     align-self: center
 }
 
-.dropping .prompt[data-v-e131f4a2] {
+.dropping .prompt[data-v-9ed855c4] {
     position: relative;
     top: -10px;
     left: calc(-50vw + 50%);
@@ -3052,13 +3052,13 @@ body {
     line-height: 2.4rem
 }
 
-.scratching[data-v-d774ec7d] {
+.scratching[data-v-608c1f3f] {
     display: flex;
     flex-direction: column;
     align-items: center
 }
 
-.scratching canvas[data-v-d774ec7d] {
+.scratching canvas[data-v-608c1f3f] {
     width: clamp(150px, min(100%, 65vh), 640px);
     border: none;
     background-color: transparent;
@@ -3067,15 +3067,15 @@ body {
     background-size: contain
 }
 
-.locale-de .scratching canvas[data-v-d774ec7d],
-.locale-es .scratching canvas[data-v-d774ec7d],
-.locale-es-XL .scratching canvas[data-v-d774ec7d],
-.locale-fr .scratching canvas[data-v-d774ec7d],
-.locale-it .scratching canvas[data-v-d774ec7d] {
+.locale-de .scratching canvas[data-v-608c1f3f],
+.locale-es .scratching canvas[data-v-608c1f3f],
+.locale-es-XL .scratching canvas[data-v-608c1f3f],
+.locale-fr .scratching canvas[data-v-608c1f3f],
+.locale-it .scratching canvas[data-v-608c1f3f] {
     background-image: url(392ebe7b.png)
 }
 
-.waiting[data-v-ca37b0cc] {
+.waiting[data-v-bda0bfa2] {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -3083,11 +3083,11 @@ body {
     height: 100%
 }
 
-.waiting .logo[data-v-ca37b0cc] {
+.waiting .logo[data-v-bda0bfa2] {
     flex-grow: 1
 }
 
-.waiting .logo img[data-v-ca37b0cc] {
+.waiting .logo img[data-v-bda0bfa2] {
     position: relative;
     top: 50%;
     left: 50%;
@@ -3492,55 +3492,55 @@ body {
 
 @keyframes rainbow-shadow {
     0% {
-        text-shadow: 0px 0px transparent, -10px -7px red, 1px 9px orange, 11px 8px orange, -5px 10px yellow, 3px -9px yellow, -3px -10px green, 1px 2px green, -8px 12px blue, 9px 6px blue, -2px 10px purple, 12px 9px purple, 11px 0px red
+        text-shadow: 0px 0px transparent, 3px 3px red, 2px 4px orange, 0px -7px orange, 4px -10px yellow, 12px 9px yellow, -3px 10px green, -9px -11px green, -9px -9px blue, 5px 3px blue, -4px -2px purple, 7px -11px purple, 7px 5px red
     }
 
     8.3333333333% {
-        text-shadow: 0px 0px transparent, 4px -9px orange, 2px -7px orange, -3px 4px yellow, -11px 3px yellow, 9px -2px green, 7px -1px green, 8px 4px blue, 6px 6px blue, -8px 10px purple, 5px -10px purple, 0px 11px red, -5px 8px red
+        text-shadow: 0px 0px transparent, 8px 11px orange, 5px -11px orange, -8px 12px yellow, 5px 2px yellow, 2px 6px green, -8px 1px green, 12px -11px blue, -9px 5px blue, 11px -2px purple, 1px 11px purple, 4px -6px red, 3px -4px red
     }
 
     16.6666666667% {
-        text-shadow: 0px 0px transparent, 7px -2px orange, 12px 7px yellow, 2px -9px yellow, -1px 0px green, 6px 2px green, -3px 7px blue, -9px -1px blue, -9px 6px purple, 1px 9px purple, 3px -8px red, 9px 6px red, 0px 8px orange
+        text-shadow: 0px 0px transparent, -1px 5px orange, 12px -4px yellow, 2px 7px yellow, 9px 1px green, -8px 4px green, 0px 10px blue, -8px -8px blue, -6px 0px purple, -1px 9px purple, 7px -11px red, -5px 8px red, 11px -8px orange
     }
 
     25% {
-        text-shadow: 0px 0px transparent, -4px 8px yellow, -5px -8px yellow, -6px -8px green, -9px -7px green, 11px -7px blue, -1px 2px blue, 4px 12px purple, -5px 11px purple, 1px -6px red, -10px -6px red, -9px 0px orange, 10px 4px orange
+        text-shadow: 0px 0px transparent, 6px -3px yellow, 12px 12px yellow, -4px 10px green, -1px -10px green, -2px -5px blue, 6px 4px blue, -6px -2px purple, -6px -7px purple, -2px -11px red, 11px -1px red, -4px 4px orange, 5px 7px orange
     }
 
     33.3333333333% {
-        text-shadow: 0px 0px transparent, -6px 5px yellow, 10px -1px green, 8px -3px green, 12px -5px blue, -9px -3px blue, 7px 0px purple, 10px -10px purple, -3px -6px red, -7px -8px red, 9px 3px orange, -5px 9px orange, 11px -10px yellow
+        text-shadow: 0px 0px transparent, -8px 7px yellow, 2px -2px green, -7px -6px green, -9px -2px blue, -5px 2px blue, -6px 1px purple, -11px 11px purple, -6px 8px red, -4px 4px red, 12px -4px orange, 3px -5px orange, 8px 2px yellow
     }
 
     41.6666666667% {
-        text-shadow: 0px 0px transparent, 6px 2px green, 6px 0px green, 9px 1px blue, -7px 1px blue, -11px -4px purple, 2px -6px purple, 8px -2px red, 4px 0px red, -10px 4px orange, -4px 11px orange, 1px 5px yellow, -9px -10px yellow
+        text-shadow: 0px 0px transparent, -7px 7px green, -4px -1px green, -7px -7px blue, 11px 11px blue, 7px 2px purple, -5px 4px purple, 12px -8px red, 3px 1px red, 3px -10px orange, 7px -5px orange, 4px -3px yellow, -9px -9px yellow
     }
 
     50% {
-        text-shadow: 0px 0px transparent, -10px -9px green, -7px -3px blue, 7px -3px blue, -3px 12px purple, 6px 3px purple, -4px 0px red, -7px -4px red, -6px -7px orange, -4px 11px orange, 8px -4px yellow, 4px 5px yellow, 2px -10px green
+        text-shadow: 0px 0px transparent, 12px 0px green, 2px 4px blue, 7px 0px blue, -11px -6px purple, -6px 11px purple, 4px 1px red, 4px 9px red, 2px 8px orange, 10px -5px orange, 3px 5px yellow, -2px -1px yellow, 1px -11px green
     }
 
     58.3333333333% {
-        text-shadow: 0px 0px transparent, 2px -1px blue, -9px -5px blue, 8px 1px purple, -11px -6px purple, -3px 2px red, -1px -10px red, 10px 7px orange, -6px -11px orange, 1px 0px yellow, 9px -8px yellow, 0px 4px green, 6px 12px green
+        text-shadow: 0px 0px transparent, -10px 8px blue, -1px -11px blue, -8px 2px purple, -9px 12px purple, 1px 1px red, -7px -10px red, 5px -4px orange, 6px 9px orange, -4px -2px yellow, -6px 11px yellow, 9px 11px green, 4px -1px green
     }
 
     66.6666666667% {
-        text-shadow: 0px 0px transparent, -6px 7px blue, 8px 11px purple, 11px -6px purple, -6px -2px red, 9px 11px red, -9px -3px orange, 0px -10px orange, 10px 3px yellow, 4px -1px yellow, -8px -4px green, -4px -6px green, 10px 6px blue
+        text-shadow: 0px 0px transparent, -10px -11px blue, 5px 1px purple, 5px 0px purple, 10px -6px red, -2px -4px red, 6px -3px orange, 9px 7px orange, -7px -10px yellow, -6px -5px yellow, 10px 8px green, -6px -3px green, 5px 12px blue
     }
 
     75% {
-        text-shadow: 0px 0px transparent, -11px 0px purple, -6px -2px purple, -9px -2px red, 10px 12px red, 7px 2px orange, -6px 8px orange, 9px 0px yellow, 1px 4px yellow, -10px 10px green, 3px -4px green, -8px 6px blue, -10px 2px blue
+        text-shadow: 0px 0px transparent, 7px -5px purple, -4px 2px purple, 2px -11px red, 10px 8px red, -8px -5px orange, -7px -6px orange, -8px 9px yellow, -11px 10px yellow, 4px -8px green, 6px -2px green, 9px 3px blue, -11px -2px blue
     }
 
     83.3333333333% {
-        text-shadow: 0px 0px transparent, -6px -11px purple, -6px -6px red, -9px 8px red, 9px 7px orange, 5px -4px orange, 2px -10px yellow, -9px -10px yellow, 9px -9px green, -10px 2px green, -9px -2px blue, -5px 7px blue, -9px 11px purple
+        text-shadow: 0px 0px transparent, 7px 4px purple, 8px 8px red, 10px 12px red, 10px 2px orange, -10px 5px orange, -3px 9px yellow, 8px 9px yellow, 8px 9px green, -3px -1px green, -7px 3px blue, 0px -7px blue, -7px 6px purple
     }
 
     91.6666666667% {
-        text-shadow: 0px 0px transparent, 10px 6px red, 8px 10px red, -2px -1px orange, -9px 6px orange, 12px -10px yellow, 6px -1px yellow, 2px 10px green, -10px 10px green, -5px 12px blue, 4px 1px blue, -4px 2px purple, -10px 4px purple
+        text-shadow: 0px 0px transparent, -10px 5px red, 0px -2px red, -3px -8px orange, 1px -4px orange, 8px -6px yellow, -10px 7px yellow, -11px -5px green, -9px 7px green, 10px 6px blue, -3px -8px blue, 2px 9px purple, -1px 3px purple
     }
 
     to {
-        text-shadow: 0px 0px transparent, 7px 8px red, -10px 6px orange, 2px 7px orange, 5px 9px yellow, -4px 3px yellow, 1px -1px green, -4px 6px green, -1px -1px blue, 2px -10px blue, -6px -11px purple, 6px 6px purple, 6px -8px red
+        text-shadow: 0px 0px transparent, -5px -3px red, -5px 11px orange, 1px -10px orange, 10px 12px yellow, -8px 2px yellow, -4px -9px green, 10px 1px green, 8px -1px blue, -11px -9px blue, 10px -4px purple, 7px 1px purple, 10px 3px red
     }
 }
 
