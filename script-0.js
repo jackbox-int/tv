@@ -10535,16 +10535,16 @@ Url: ${nr(t)}`), !0)
         iw = 1,
         aw = {
             branch: "main",
-            sha: "80a78163c01014e6cbac00c0ece59997d92679e5",
-            lastUpdated: 1662746483948,
-            version: "5.27.0",
+            sha: "bef2238ee3efe58533db2a62c66579c15b880ace",
+            lastUpdated: 1663358917148,
+            version: "5.28.0",
             type: "production"
         },
         sw = {
             main: {
-                sha: "80a78163c01014e6cbac00c0ece59997d92679e5",
-                lastUpdated: 1662746483948,
-                version: "5.27.0",
+                sha: "bef2238ee3efe58533db2a62c66579c15b880ace",
+                lastUpdated: 1663358917148,
+                version: "5.28.0",
                 type: "production",
                 bundles: {
                     "@connect": {
@@ -10563,7 +10563,7 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp8/drawful-animate",
-                        version: "5.0.0"
+                        version: "5.28.0"
                     },
                     "@moderator": {
                         file: "script.js",
@@ -10908,4 +10908,4 @@ Url: ${nr(t)}`), !0)
     rw()
 });
 export default cw();
-//# sourceMappingURL=06526581.js.map
+//# sourceMappingURL=a370c9e6.js.map
