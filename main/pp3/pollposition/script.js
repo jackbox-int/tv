@@ -21432,7 +21432,7 @@ const Gx = lc.extend({
             else {
                 ae(".state-chooseupordown .survey-text").html(e.survey), ae(".question-text").html(e.question), ae("#chooseupordown-text").html("Denkst du, die richtige Antwort ist:");
                 let f = "";
-                for (o = 0; o < e.choices.length; o++) f += `<button type='button' data-choice='${e.choices[o].id.toString()}' class='pollposition-button pollposition-high-low-button pollposition-choice-button'><span>${e.choices[o].id.toString().replace("_"," ")}</span></button>`;
+                for (o = 0; o < e.choices.length; o++) f += `<button type='button' data-choice='${e.choices[o].id.toString()}' class='pollposition-button pollposition-high-low-button pollposition-choice-button'><span>${new Map([["Much_Higher","Viel mehr"],["Much_Lower","Viel weniger"],["Higher","Mehr"],["Lower","Weniger"]]).get(e.choices[o].id)}</span></button>`;
                 ae("#pollposition-chooseupordown").html(f), this.showScreen(".state-chooseupordown")
             }
         else if (i === "Gameplay_ChooseMultiple")
