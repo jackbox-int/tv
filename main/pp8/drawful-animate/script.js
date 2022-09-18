@@ -10877,16 +10877,16 @@ ${n.message}`,
             BUTTON_NEW_PLAYERS: "New Players"
         },
         qj = {
-            AND: "AND",
-            OR: "OR"
+            AND: "UND",
+            OR: "ODER"
         },
         Xj = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let\u2019s Go!"
+            BUTTON_SKIP: "Überspringen",
+            BUTTON_NEXT: "Weiter",
+            BUTTON_DONE: "Los geht\u2019s!"
         },
         zj = {
-            NAME: "AUDIENCE"
+            NAME: "PUBLIKUM"
         },
         Jj = {
             EPISODE_REPORT: "Report Episode",
