@@ -17471,10 +17471,10 @@ const FC = `<div id="controller" class="state-controller controller-content">
             announcePrompt: !1,
             countGroupName: null,
             strings: {
-                your_choice: "Thank you. Your choice: ",
-                censor_prompt: "Censor this?",
-                censor_confirm: "Yes, Censor!",
-                censor_cancel: "No!"
+                your_choice: "Danke. Deine Wahl: ",
+                censor_prompt: "Das zensieren?",
+                censor_confirm: "Ja, Zensieren!",
+                censor_cancel: "Nein!"
             }
         }
     }),
@@ -17613,7 +17613,7 @@ const FC = `<div id="controller" class="state-controller controller-content">
             })), !1
         },
         displayAudienceChoice(t) {
-            let e = "Thank you.";
+            let e = "Danke.";
             const n = t.map(a => {
                 const f = this.choicesList.children.find(v => v.model.get("index") === a);
                 return f ? f.model.get("html") || f.model.get("text") : ""
