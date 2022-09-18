@@ -21440,7 +21440,7 @@ const Gx = lc.extend({
             else {
                 if (ae(".state-choosemultiple .question-text").html(e.question), n === "Gameplay_ChooseMultiple") {
                     let f = "";
-                    for (o = 0; o < t.choices.length; o++) t.choices[o].picked ? f += `<button type='button' data-choice='-1' class='pollposition-button pollposition-choice-button' disabled><span>${t.choices[o].text}</span></button>` : f += `<button type='button' data-choice='${o}' class='pollposition-button pollposition-choice-button'><span>${new Map(["Much_Higher","Viel mehr"],["Much_Lower","Viel weniger"],["Higher","Mehr"],["Lower","Weniger"]).get(t.choices[o].id)}</span></button>`;
+                    for (o = 0; o < t.choices.length; o++) t.choices[o].picked ? f += `<button type='button' data-choice='-1' class='pollposition-button pollposition-choice-button' disabled><span>${t.choices[o].text}</span></button>` : f += `<button type='button' data-choice='${o}' class='pollposition-button pollposition-choice-button'><span>${t.choices[o].text}</span></button>`;
                     ae(".state-choosemultiple .selection-text").html(t.selection), ae("#pollposition-choosemultiple").html(f)
                 } else ae(".state-choosemultiple .selection-text").html(""), ae("#pollposition-choosemultiple").html("");
                 this.showScreen(".state-choosemultiple")
