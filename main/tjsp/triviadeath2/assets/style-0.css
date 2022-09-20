@@ -104,7 +104,8 @@
     --inputSecondary: #353f4d;
     --textPrimary: #f5f7f7;
     --textSecondary: #8c939c;
-    --textButton: #f5f7f7
+    --textButton: #f5f7f7;
+    color-scheme: dark
 }
 
 @media (prefers-color-scheme: dark) {
@@ -118,7 +119,8 @@
         --inputSecondary: #353f4d;
         --textPrimary: #f5f7f7;
         --textSecondary: #8c939c;
-        --textButton: #f5f7f7
+        --textButton: #f5f7f7;
+        color-scheme: dark
     }
 }
 
@@ -757,7 +759,8 @@
     --inputSecondary: #353f4d;
     --textPrimary: #f5f7f7;
     --textSecondary: #8c939c;
-    --textButton: #f5f7f7
+    --textButton: #f5f7f7;
+    color-scheme: dark
 }
 
 @media (prefers-color-scheme: dark) {
@@ -771,7 +774,8 @@
         --inputSecondary: #353f4d;
         --textPrimary: #f5f7f7;
         --textSecondary: #8c939c;
-        --textButton: #f5f7f7
+        --textButton: #f5f7f7;
+        color-scheme: dark
     }
 }
 
@@ -1094,7 +1098,8 @@
     --inputSecondary: #353f4d;
     --textPrimary: #f5f7f7;
     --textSecondary: #8c939c;
-    --textButton: #f5f7f7
+    --textButton: #f5f7f7;
+    color-scheme: dark
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1108,7 +1113,8 @@
         --inputSecondary: #353f4d;
         --textPrimary: #f5f7f7;
         --textSecondary: #8c939c;
-        --textButton: #f5f7f7
+        --textButton: #f5f7f7;
+        color-scheme: dark
     }
 }
 
@@ -1390,7 +1396,8 @@ hr[data-v-a7272d53] {
     --inputSecondary: #353f4d;
     --textPrimary: #f5f7f7;
     --textSecondary: #8c939c;
-    --textButton: #f5f7f7
+    --textButton: #f5f7f7;
+    color-scheme: dark
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1404,7 +1411,8 @@ hr[data-v-a7272d53] {
         --inputSecondary: #353f4d;
         --textPrimary: #f5f7f7;
         --textSecondary: #8c939c;
-        --textButton: #f5f7f7
+        --textButton: #f5f7f7;
+        color-scheme: dark
     }
 }
 
@@ -1628,7 +1636,8 @@ hr[data-v-a7272d53] {
     --inputSecondary: #353f4d;
     --textPrimary: #f5f7f7;
     --textSecondary: #8c939c;
-    --textButton: #f5f7f7
+    --textButton: #f5f7f7;
+    color-scheme: dark
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1642,7 +1651,8 @@ hr[data-v-a7272d53] {
         --inputSecondary: #353f4d;
         --textPrimary: #f5f7f7;
         --textSecondary: #8c939c;
-        --textButton: #f5f7f7
+        --textButton: #f5f7f7;
+        color-scheme: dark
     }
 }
 
@@ -1870,7 +1880,8 @@ button.twitch[data-v-fdbdeb06] {
     --inputSecondary: #353f4d;
     --textPrimary: #f5f7f7;
     --textSecondary: #8c939c;
-    --textButton: #f5f7f7
+    --textButton: #f5f7f7;
+    color-scheme: dark
 }
 
 @media (prefers-color-scheme: dark) {
@@ -1884,7 +1895,8 @@ button.twitch[data-v-fdbdeb06] {
         --inputSecondary: #353f4d;
         --textPrimary: #f5f7f7;
         --textSecondary: #8c939c;
-        --textButton: #f5f7f7
+        --textButton: #f5f7f7;
+        color-scheme: dark
     }
 }
 
@@ -2236,7 +2248,8 @@ button.twitch[data-v-fdbdeb06] {
     --inputSecondary: #353f4d;
     --textPrimary: #f5f7f7;
     --textSecondary: #8c939c;
-    --textButton: #f5f7f7
+    --textButton: #f5f7f7;
+    color-scheme: dark
 }
 
 @media (prefers-color-scheme: dark) {
@@ -2250,7 +2263,8 @@ button.twitch[data-v-fdbdeb06] {
         --inputSecondary: #353f4d;
         --textPrimary: #f5f7f7;
         --textSecondary: #8c939c;
-        --textButton: #f5f7f7
+        --textButton: #f5f7f7;
+        color-scheme: dark
     }
 }
 
@@ -3492,55 +3506,55 @@ body {
 
 @keyframes rainbow-shadow {
     0% {
-        text-shadow: 0px 0px transparent, 3px 3px red, 2px 4px orange, 0px -7px orange, 4px -10px yellow, 12px 9px yellow, -3px 10px green, -9px -11px green, -9px -9px blue, 5px 3px blue, -4px -2px purple, 7px -11px purple, 7px 5px red
+        text-shadow: 0px 0px transparent, 0px -11px red, -10px 0px orange, 0px -9px orange, -9px 12px yellow, 11px 7px yellow, -9px 11px green, 7px 4px green, -2px 2px blue, 12px -10px blue, 5px 12px purple, -11px 10px purple, -10px -3px red
     }
 
     8.3333333333% {
-        text-shadow: 0px 0px transparent, 8px 11px orange, 5px -11px orange, -8px 12px yellow, 5px 2px yellow, 2px 6px green, -8px 1px green, 12px -11px blue, -9px 5px blue, 11px -2px purple, 1px 11px purple, 4px -6px red, 3px -4px red
+        text-shadow: 0px 0px transparent, -10px 0px orange, 8px 11px orange, 3px 0px yellow, 6px -3px yellow, 0px 10px green, 0px 7px green, -11px 5px blue, 7px -1px blue, 8px 2px purple, -4px -6px purple, -1px 6px red, 3px 9px red
     }
 
     16.6666666667% {
-        text-shadow: 0px 0px transparent, -1px 5px orange, 12px -4px yellow, 2px 7px yellow, 9px 1px green, -8px 4px green, 0px 10px blue, -8px -8px blue, -6px 0px purple, -1px 9px purple, 7px -11px red, -5px 8px red, 11px -8px orange
+        text-shadow: 0px 0px transparent, 11px 9px orange, -5px 6px yellow, -11px -10px yellow, 1px 1px green, 8px 0px green, 6px -11px blue, -4px 9px blue, -8px 1px purple, 2px 1px purple, -9px 8px red, -4px 8px red, -6px -6px orange
     }
 
     25% {
-        text-shadow: 0px 0px transparent, 6px -3px yellow, 12px 12px yellow, -4px 10px green, -1px -10px green, -2px -5px blue, 6px 4px blue, -6px -2px purple, -6px -7px purple, -2px -11px red, 11px -1px red, -4px 4px orange, 5px 7px orange
+        text-shadow: 0px 0px transparent, -3px -10px yellow, -10px -9px yellow, -8px 10px green, -11px 0px green, -10px -10px blue, 8px 0px blue, -8px 8px purple, 9px 3px purple, 7px -1px red, -9px -5px red, -1px 12px orange, 1px -7px orange
     }
 
     33.3333333333% {
-        text-shadow: 0px 0px transparent, -8px 7px yellow, 2px -2px green, -7px -6px green, -9px -2px blue, -5px 2px blue, -6px 1px purple, -11px 11px purple, -6px 8px red, -4px 4px red, 12px -4px orange, 3px -5px orange, 8px 2px yellow
+        text-shadow: 0px 0px transparent, 8px 6px yellow, 9px -8px green, -4px -4px green, 4px 3px blue, 8px -10px blue, -6px 11px purple, -8px 12px purple, -2px 9px red, -3px -5px red, -3px -3px orange, -3px -3px orange, -1px 10px yellow
     }
 
     41.6666666667% {
-        text-shadow: 0px 0px transparent, -7px 7px green, -4px -1px green, -7px -7px blue, 11px 11px blue, 7px 2px purple, -5px 4px purple, 12px -8px red, 3px 1px red, 3px -10px orange, 7px -5px orange, 4px -3px yellow, -9px -9px yellow
+        text-shadow: 0px 0px transparent, -6px -3px green, -1px -4px green, -10px -11px blue, 5px 1px blue, 5px -11px purple, -9px 10px purple, -1px -6px red, 7px 7px red, -9px 9px orange, 1px -3px orange, -5px 1px yellow, 2px 11px yellow
     }
 
     50% {
-        text-shadow: 0px 0px transparent, 12px 0px green, 2px 4px blue, 7px 0px blue, -11px -6px purple, -6px 11px purple, 4px 1px red, 4px 9px red, 2px 8px orange, 10px -5px orange, 3px 5px yellow, -2px -1px yellow, 1px -11px green
+        text-shadow: 0px 0px transparent, -4px 12px green, 9px 11px blue, 6px -10px blue, 12px 9px purple, -5px -8px purple, 5px -11px red, 2px 7px red, 5px 6px orange, 3px 3px orange, -1px -7px yellow, 0px 6px yellow, -9px 9px green
     }
 
     58.3333333333% {
-        text-shadow: 0px 0px transparent, -10px 8px blue, -1px -11px blue, -8px 2px purple, -9px 12px purple, 1px 1px red, -7px -10px red, 5px -4px orange, 6px 9px orange, -4px -2px yellow, -6px 11px yellow, 9px 11px green, 4px -1px green
+        text-shadow: 0px 0px transparent, -7px -11px blue, -4px 4px blue, 1px 2px purple, 8px -4px purple, 4px -3px red, 7px 5px red, -8px -3px orange, -6px -4px orange, 7px -9px yellow, 10px -8px yellow, -9px -11px green, 2px 8px green
     }
 
     66.6666666667% {
-        text-shadow: 0px 0px transparent, -10px -11px blue, 5px 1px purple, 5px 0px purple, 10px -6px red, -2px -4px red, 6px -3px orange, 9px 7px orange, -7px -10px yellow, -6px -5px yellow, 10px 8px green, -6px -3px green, 5px 12px blue
+        text-shadow: 0px 0px transparent, -8px -9px blue, 9px -11px purple, 1px 3px purple, 9px -2px red, 2px -8px red, -8px -8px orange, 0px 2px orange, -7px 10px yellow, -10px -7px yellow, -9px 3px green, -11px -4px green, -8px -10px blue
     }
 
     75% {
-        text-shadow: 0px 0px transparent, 7px -5px purple, -4px 2px purple, 2px -11px red, 10px 8px red, -8px -5px orange, -7px -6px orange, -8px 9px yellow, -11px 10px yellow, 4px -8px green, 6px -2px green, 9px 3px blue, -11px -2px blue
+        text-shadow: 0px 0px transparent, -5px -11px purple, -6px 2px purple, 5px 9px red, 11px -1px red, -6px -2px orange, 9px 2px orange, 10px -4px yellow, 5px -4px yellow, -10px 8px green, -4px -2px green, 3px -7px blue, 0px 0px blue
     }
 
     83.3333333333% {
-        text-shadow: 0px 0px transparent, 7px 4px purple, 8px 8px red, 10px 12px red, 10px 2px orange, -10px 5px orange, -3px 9px yellow, 8px 9px yellow, 8px 9px green, -3px -1px green, -7px 3px blue, 0px -7px blue, -7px 6px purple
+        text-shadow: 0px 0px transparent, 10px -5px purple, -10px 11px red, 2px 3px red, 11px 2px orange, 0px 5px orange, -5px 12px yellow, -3px 9px yellow, -6px -11px green, 8px -8px green, 8px 11px blue, -3px 7px blue, 3px 5px purple
     }
 
     91.6666666667% {
-        text-shadow: 0px 0px transparent, -10px 5px red, 0px -2px red, -3px -8px orange, 1px -4px orange, 8px -6px yellow, -10px 7px yellow, -11px -5px green, -9px 7px green, 10px 6px blue, -3px -8px blue, 2px 9px purple, -1px 3px purple
+        text-shadow: 0px 0px transparent, -2px -4px red, 0px -10px red, -6px 0px orange, -6px 9px orange, -11px -4px yellow, 9px 7px yellow, 10px 0px green, -9px 3px green, 10px -5px blue, 6px -8px blue, -7px 3px purple, -4px -10px purple
     }
 
     to {
-        text-shadow: 0px 0px transparent, -5px -3px red, -5px 11px orange, 1px -10px orange, 10px 12px yellow, -8px 2px yellow, -4px -9px green, 10px 1px green, 8px -1px blue, -11px -9px blue, 10px -4px purple, 7px 1px purple, 10px 3px red
+        text-shadow: 0px 0px transparent, -1px 0px red, 6px -4px orange, 6px 5px orange, 6px -10px yellow, 5px 4px yellow, -8px -3px green, 4px 8px green, 6px 11px blue, 4px 5px blue, 3px 2px purple, 6px -2px purple, -5px 11px red
     }
 }
 
