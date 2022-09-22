@@ -21628,7 +21628,7 @@ const Hx = mt.View.extend({
             "#chosen": {
                 observe: "chosen",
                 onGet(t) {
-                    return t ? "Thanks! Every vote counts!" : null
+                    return t ? "Danke! Jede Stimme zählt!" : null
                 }
             }
         }),
@@ -21659,7 +21659,7 @@ const Hx = mt.View.extend({
                 vote: n
             }), this.model.setUpdate({
                 prompt: {
-                    text: `Thank you. Your choice: ${this.blob.choices[n].text}`
+                    text: `Danke. Deine Wahl: ${this.blob.choices[n].text}`
                 },
                 choices: []
             })), !1
@@ -21802,7 +21802,7 @@ const g1 = Tc.extend({
         return t.playerInfo = t.playerInfo || {}, t.playerInfo.username = t.playerName || "Audience", t.state === "Gameplay" && (t.state = "Logo"), t.state === "Lobby" && (this.client.isRole("player") || (t.state = "Logo"), t.playerIsVIP = t.isAllowedToStartGame, t.playerCanStartGame = t.isAllowedToStartGame, t.playerCanCensor = t.canCensor, t.gameCanStart = ["CanStart", "Countdown", "PostGame"].indexOf(t.lobbyState) !== -1, t.gameIsStarting = t.lobbyState === "Countdown", t.gameFinished = t.lobbyState === "PostGame", t.sketchpad && (t.sketchpad.live = !0)), t.state === "EnterSingleText" && (t.prompt = {
             html: t.text
         }, t.doneText = {
-            html: "Thanks"
+            html: "Danke"
         }), t.state === "MakeSingleChoice" && (t.chosen === !1 && (t.chosen = null), t.choices = t.choices.map(e => (e.html = e.html ? e.html : e.text, e.text = void 0, e))), t.censorablePlayers && delete t.censorablePlayers, t
     },
     formatSessionMessage(t) {
