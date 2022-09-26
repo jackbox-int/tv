@@ -21331,7 +21331,7 @@ const Gx = VC.extend({
         }
         if (i === "Lobby") {
             if (this.hideLobbyButtons(), !e.isAllowedToStartGame) {
-                se("#lobby-text").html("Sit back and relax!"), this.showScreen("#state-lobby"), this.setupWithDollInfo(e.dollInfo);
+                se("#lobby-text").html("Lehne dich zurück und entspanne!"), this.showScreen("#state-lobby"), this.setupWithDollInfo(e.dollInfo);
                 return
             }
             const g = t.lobbyState;
