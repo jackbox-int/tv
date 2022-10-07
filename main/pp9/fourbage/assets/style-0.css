@@ -2658,7 +2658,7 @@ body {
     margin: 0 auto
 }
 
-.lobby[data-v-83dda9e6] {
+.lobby[data-v-45339b0f] {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -2666,7 +2666,7 @@ body {
     align-items: center
 }
 
-.lobby .lobby-content[data-v-83dda9e6] {
+.lobby .lobby-content[data-v-45339b0f] {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -2676,27 +2676,27 @@ body {
     -ms-overflow-style: none
 }
 
-.lobby .lobby-content[data-v-83dda9e6]::-webkit-scrollbar {
+.lobby .lobby-content[data-v-45339b0f]::-webkit-scrollbar {
     background: transparent;
     width: 0px
 }
 
-.lobby .lobby-logo[data-v-83dda9e6] {
+.lobby .lobby-logo[data-v-45339b0f] {
     margin-bottom: 10px
 }
 
-.lobby .avatar-instruction[data-v-83dda9e6] {
+.lobby .avatar-instruction[data-v-45339b0f] {
     text-align: center
 }
 
-.lobby .avatar-container[data-v-83dda9e6] {
+.lobby .avatar-container[data-v-45339b0f] {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 151px
 }
 
-.lobby .avatar-container .avatar-row[data-v-83dda9e6] {
+.lobby .avatar-container .avatar-row[data-v-45339b0f] {
     width: 85%;
     display: flex;
     flex-direction: row;
@@ -2705,7 +2705,7 @@ body {
     max-height: 116px
 }
 
-.lobby .avatar-container .avatar-button[data-v-83dda9e6] {
+.lobby .avatar-container .avatar-button[data-v-45339b0f] {
     width: 33%;
     color: transparent;
     background: transparent;
@@ -2716,17 +2716,17 @@ body {
     transition: all .3s ease-in-out
 }
 
-.lobby .avatar-container .avatar-button.selected[data-v-83dda9e6] {
+.lobby .avatar-container .avatar-button.selected[data-v-45339b0f] {
     z-index: 2;
     -webkit-transform: scale(1.4);
     transform: scale(1.4);
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    -webkit-animation: active-83dda9e6 .5s ease-in-out alternate infinite .2s;
-    animation: active-83dda9e6 .5s ease-in-out alternate infinite .2s
+    -webkit-animation: active-45339b0f .5s ease-in-out alternate infinite .2s;
+    animation: active-45339b0f .5s ease-in-out alternate infinite .2s
 }
 
-@-webkit-keyframes active-83dda9e6 {
+@-webkit-keyframes active-45339b0f {
     0% {
         transform: scale(1.4)
     }
@@ -2736,7 +2736,7 @@ body {
     }
 }
 
-@keyframes active-83dda9e6 {
+@keyframes active-45339b0f {
     0% {
         transform: scale(1.4)
     }
@@ -2746,23 +2746,23 @@ body {
     }
 }
 
-.lobby .avatar-container .avatar-image[data-v-83dda9e6] {
+.lobby .avatar-container .avatar-image[data-v-45339b0f] {
     width: 100%;
     filter: contrast(.3) brightness(1.4) drop-shadow(0px 4px 4px rgba(0, 0, 0, .25)) sepia(.3);
     opacity: 100
 }
 
-.lobby .avatar-container .avatar-image.unavailable[data-v-83dda9e6] {
+.lobby .avatar-container .avatar-image.unavailable[data-v-45339b0f] {
     filter: brightness(.5);
     opacity: 75%
 }
 
-.lobby .avatar-container .avatar-image.selected[data-v-83dda9e6] {
+.lobby .avatar-container .avatar-image.selected[data-v-45339b0f] {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, .25));
     opacity: 100%
 }
 
-.lobby .eay-instruction[data-v-83dda9e6] {
+.lobby .eay-instruction[data-v-45339b0f] {
     font-family: SofiaPro-Black;
     font-style: normal;
     font-weight: 600;
@@ -2772,13 +2772,13 @@ body {
     margin-bottom: 10px
 }
 
-.lobby .eay-name-change-container[data-v-83dda9e6] {
+.lobby .eay-name-change-container[data-v-45339b0f] {
     width: 85%;
     display: flex;
     flex-direction: row
 }
 
-.lobby .eay-name-change-container .eay-name-box[data-v-83dda9e6] {
+.lobby .eay-name-change-container .eay-name-box[data-v-45339b0f] {
     color: #000;
     letter-spacing: -.045em;
     font-variant-caps: all-small-caps;
@@ -2797,22 +2797,22 @@ body {
     padding-left: 20px
 }
 
-.lobby .eay-name-change-container .eay-name-submit[data-v-83dda9e6] {
+.lobby .eay-name-change-container .eay-name-submit[data-v-45339b0f] {
     padding-top: 10px;
     max-height: 44px;
     flex: 1
 }
 
-.lobby .lobby-spacer[data-v-83dda9e6] {
+.lobby .lobby-spacer[data-v-45339b0f] {
     flex: 1
 }
 
-.lobby .bottom-spacer[data-v-83dda9e6] {
+.lobby .bottom-spacer[data-v-45339b0f] {
     height: 151px;
     width: 100%
 }
 
-.lobby .fader[data-v-83dda9e6] {
+.lobby .fader[data-v-45339b0f] {
     position: absolute;
     bottom: 0px;
     z-index: 3;
@@ -2821,19 +2821,19 @@ body {
 }
 
 @media screen and (max-height: 775px) {
-    .lobby .fader[data-v-83dda9e6] {
+    .lobby .fader[data-v-45339b0f] {
         background: linear-gradient(180deg, rgba(255, 183, 45, 0) 0%, rgba(255, 194, 77, .37) 31.25%, rgba(18, 241, 255, .36) 100%)
     }
 }
 
-.lobby[data-v-83dda9e6] .controls {
+.lobby[data-v-45339b0f] .controls {
     width: 85%;
     position: absolute;
     bottom: 15px;
     z-index: 4
 }
 
-.lobby[data-v-83dda9e6] .controls .message {
+.lobby[data-v-45339b0f] .controls .message {
     bottom: 0px;
     font-family: SofiaPro-Light;
     color: #000;
@@ -2846,7 +2846,7 @@ body {
     text-transform: uppercase
 }
 
-.lobby[data-v-83dda9e6] .controls .status {
+.lobby[data-v-45339b0f] .controls .status {
     font-family: SofiaPro-Black;
     color: #fff;
     font-size: 21px;
@@ -2858,7 +2858,7 @@ body {
     text-transform: uppercase
 }
 
-.lobby[data-v-83dda9e6] .controls button.action {
+.lobby[data-v-45339b0f] .controls button.action {
     font-family: SofiaPro-Black;
     background-color: #000;
     font-weight: 700;
@@ -3037,7 +3037,7 @@ body {
     margin-bottom: 25px
 }
 
-.writing[data-v-fe9d060f] {
+.writing[data-v-fab537e3] {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -3045,13 +3045,13 @@ body {
     align-items: center
 }
 
-.writing .error-bubble[data-v-fe9d060f] {
+.writing .error-bubble[data-v-fab537e3] {
     width: 85%;
     margin-top: -25px;
     margin-bottom: 10px
 }
 
-.writing .error-container[data-v-fe9d060f] {
+.writing .error-container[data-v-fab537e3] {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -3060,11 +3060,11 @@ body {
     padding-right: 20px
 }
 
-.writing .error-container .warning-icon[data-v-fe9d060f] {
+.writing .error-container .warning-icon[data-v-fab537e3] {
     height: 100%
 }
 
-.writing .error-container .error-text[data-v-fe9d060f] {
+.writing .error-container .error-text[data-v-fab537e3] {
     margin: 10px;
     font-size: 20px;
     line-height: 90.2%;
@@ -3072,15 +3072,15 @@ body {
     text-align: left
 }
 
-.writing .error-container .error-text.truth-error[data-v-fe9d060f] {
+.writing .error-container .error-text.truth-error[data-v-fab537e3] {
     color: #ffd233
 }
 
-.writing .error-container .error-text.profanity-error[data-v-fe9d060f] {
+.writing .error-container .error-text.profanity-error[data-v-fab537e3] {
     color: #ff3e4e
 }
 
-.writing .button-separator[data-v-fe9d060f] {
+.writing .button-separator[data-v-fab537e3] {
     font-size: 22px;
     line-height: 98.2%;
     letter-spacing: -.045em;
@@ -3089,7 +3089,7 @@ body {
     margin-bottom: 20px
 }
 
-.writing .separator[data-v-fe9d060f] {
+.writing .separator[data-v-fab537e3] {
     font-family: SofiaPro-Black;
     color: #000;
     font-size: 30px;
@@ -3099,7 +3099,7 @@ body {
     text-align: left
 }
 
-.writing .joiner[data-v-fe9d060f] {
+.writing .joiner[data-v-fab537e3] {
     font-family: SofiaPro-Black;
     color: #000;
     font-size: 21px;

@@ -10540,16 +10540,16 @@ Url: ${nr(t)}`), !0)
         nw = 1,
         iw = {
             branch: "main",
-            sha: "ba21f94f511a22f60fcd1c5b7a50630d0ef9ca34",
-            lastUpdated: 1664812982913,
-            version: "5.35.0",
+            sha: "8ee62445bb9e7d61167c20db61a117ffd6a43fd6",
+            lastUpdated: 1665095156850,
+            version: "5.38.0",
             type: "production"
         },
         aw = {
             main: {
-                sha: "ba21f94f511a22f60fcd1c5b7a50630d0ef9ca34",
-                lastUpdated: 1664812982913,
-                version: "5.35.0",
+                sha: "8ee62445bb9e7d61167c20db61a117ffd6a43fd6",
+                lastUpdated: 1665095156850,
+                version: "5.38.0",
                 type: "production",
                 bundles: {
                     "@connect": {
@@ -10868,7 +10868,7 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/fourbage",
-                        version: "5.34.0"
+                        version: "5.37.0"
                     },
                     htmf: {
                         file: "script.js",
@@ -10880,7 +10880,7 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/lineup",
-                        version: "5.17.0"
+                        version: "5.38.0"
                     },
                     "range-game": {
                         file: "script.js",
@@ -10913,4 +10913,4 @@ Url: ${nr(t)}`), !0)
     tw()
 });
 export default ow();
-//# sourceMappingURL=30f9998c.js.map
+//# sourceMappingURL=f020853e.js.map
