@@ -1,0 +1,13 @@
+<svg viewBox="0 0 175 125" xmlns="http://www.w3.org/2000/svg">
+	<style type="text/css">
+		circle, path { fill: #FFFFFF; }
+	</style>
+	<circle cx="57" cy="21" r="21" />
+	<circle cx="27" cy="63" r="21" />
+	<circle cx="87.5" cy="63" r="21" />
+	<circle cx="148" cy="63" r="21" />
+	<path d="M54,116c0-14.9-12.1-27-27-27S0,101.1,0,116v9h54V116z" />
+	<path d="M175,116c0-14.9-12.1-27-27-27s-27,12.1-27,27v9h54V116z" />
+	<path d="M114.5,116c0-14.9-12.1-27-27-27s-27,12.1-27,27v9h54V116z" />
+	<circle cx="118" cy="21" r="21" />
+</svg>
