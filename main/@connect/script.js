@@ -170,7 +170,7 @@ var Ere = nL((Tre, Sw) => {
         },
         pL = /-(\w)/g,
         Ar = gl(e => e.replace(pL, (t, n) => n ? n.toUpperCase() : "")),
-        gL = /\B([A-Z])/g,
+        gL = /\B([A-Z\u2E80-\u9FFF])/g,
         ds = gl(e => e.replace(gL, "-$1").toLowerCase()),
         ml = gl(e => e.charAt(0).toUpperCase() + e.slice(1)),
         vf = gl(e => e ? `on${ml(e)}` : ""),
@@ -7588,7 +7588,7 @@ var Ere = nL((Tre, Sw) => {
             return this.htmlEscape(n).trim()
         }
         static sanitizeName(t) {
-            return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
+            return t.replace(/[^A-Z\u2E80-\u9FFF0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
         }
         static sanitizeInput(t) {
             return t.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
@@ -11610,7 +11610,7 @@ var Ere = nL((Tre, Sw) => {
                     stringify: y,
                     parse: b
                 },
-                R = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//,
+                R = /^[A-Z\u2E80-\u9FFFa-z][A-Z\u2E80-\u9FFFa-z0-9+-.]*:\/\//,
                 M = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
                 W = "[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]",
                 I = new RegExp("^" + W + "+");
@@ -14207,8 +14207,8 @@ ${n.message}`,
                 og = nC + "?",
                 cg = "[" + Xp + "]?",
                 iC = "(?:" + rg + "(?:" + [ng, cu, lu].join("|") + ")" + cg + og + ")*",
-                sC = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])",
-                aC = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])",
+                sC = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z\u2E80-\u9FFF_])",
+                aC = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z\u2E80-\u9FFF_])",
                 lg = cg + og + iC,
                 oC = "(?:" + [tC, cu, lu].join("|") + ")" + lg,
                 cC = "(?:" + [ng + Do + "?", Do, cu, lu, eC].join("|") + ")",
@@ -14217,7 +14217,7 @@ ${n.message}`,
                 uu = RegExp(ou + "(?=" + ou + ")|" + cC + lg, "g"),
                 fC = RegExp([ms + "?" + eg + "+" + sg + "(?=" + [Qp, ms, "$"].join("|") + ")", rC + "+" + ag + "(?=" + [Qp, ms + ig, "$"].join("|") + ")", ms + "?" + ig + "+" + sg, ms + "+" + ag, aC, sC, Zp, oC].join("|"), "g"),
                 dC = RegExp("[" + rg + ko + Kp + Xp + "]"),
-                hC = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
+                hC = /[a-z\u2E80-\u9FFF][A-Z\u2E80-\u9FFF]|[A-Z\u2E80-\u9FFF]{2}[a-z\u2E80-\u9FFF]|[0-9][a-zA-Z\u2E80-\u9FFF]|[a-zA-Z\u2E80-\u9FFF][0-9]|[^a-zA-Z\u2E80-\u9FFF0-9 ]/,
                 pC = ["Array", "Buffer", "DataView", "Date", "Error", "Float32Array", "Float64Array", "Function", "Int8Array", "Int16Array", "Int32Array", "Map", "Math", "Object", "Promise", "RegExp", "Set", "String", "Symbol", "TypeError", "Uint8Array", "Uint8ClampedArray", "Uint16Array", "Uint32Array", "WeakMap", "_", "clearTimeout", "isFinite", "parseInt", "setTimeout"],
                 gC = -1,
                 At = {};
@@ -20413,7 +20413,7 @@ function print() { __p += __j.call(arguments, '') }
                     return new oi.Token(oi.Token.Type.startTag, n, r, t[0])
                 }
                 return new oi.Token(oi.Token.Type.endTag, t[1].substr(1, t[1].length - 1))
-            }, e.nameChars = "[a-zA-Z0-9\\.\\-_:;/]", e.valueChars = "[a-zA-Z0-9\\.\\-_:;#/\\s]", e
+            }, e.nameChars = "[a-zA-Z0-9\\.\\-_:;/]", e.valueChars = "[a-zA-Z\u2E80-\u9FFF0-9\\.\\-_:;#/\\s]", e
         }();
     Ql.Tokenizer = mq;
     (function(e) {
