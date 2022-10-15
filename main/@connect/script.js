@@ -24332,29 +24332,29 @@ ${t}`
             WAITING: "Waiting for Room"
         },
         uee = {
-            UNSUPPORTED_BROWSER: "This game is not supported on this browser. View '?' or HELP to see a list of compatible browsers.",
-            ROOM_IS_FULL: "The game is full",
-            ROOM_NOT_FOUND: "Room not found",
-            AUDIENCE_IS_FULL: "The audience is full",
-            UNABLE_TO_CONNECT: "Unable to connect to the Jackbox Games server. This is commonly caused by adblockers or privacy extensions.",
-            UNABLE_TO_PRELOAD: "Unable to preload this game bundle",
-            KICKED: "You cannot join because you have been kicked by a moderator",
-            REQUIRES_TWITCH_LOGIN: "Game requires Twitch login",
-            ROOM_IS_LOCKED: "Game is locked",
-            INCORRECT_PASSWORD: "Incorrect password",
-            GENERIC: "Error joining this game",
-            FILTER_NAME: "This game has profanity filters enabled. Please pick a different name."
+            UNSUPPORTED_BROWSER: "本游戏无法支持正在使用的浏览器。查看'?'或帮助来检查支持的浏览器。",
+            ROOM_IS_FULL: "游戏已满",
+            ROOM_NOT_FOUND: "未找到此房间",
+            AUDIENCE_IS_FULL: "观众已满",
+            UNABLE_TO_CONNECT: "无法连接到Jackbox Games的服务器。通常是因为广告拦截或隐私保护扩展引起的。",
+            UNABLE_TO_PRELOAD: "无法预载这个游戏包",
+            KICKED: "你无法加入，因为此前你被房间管理员踢出",
+            REQUIRES_TWITCH_LOGIN: "游戏需要Twitch登陆",
+            ROOM_IS_LOCKED: "游戏已被锁定",
+            INCORRECT_PASSWORD: "密码错误",
+            GENERIC: "加入此游戏失败",
+            FILTER_NAME: "游戏启用了脏话过滤功能。请选择另一个昵称。"
         },
         fee = {
-            NAME: "NAME",
-            NAME_PLACEHOLDER: "ENTER YOUR NAME",
-            PASSWORD_PLACEHOLDER: "ENTER 5-DIGIT PASSWORD",
-            PASSWORD_REQUIRED_TITLE: "Password required",
-            PASSWORD_REQUIRED_BODY: "Please enter the password or join as an audience member",
-            PASSWORD_JOIN_AS_PLAYER: "Join as Player",
-            PASSWORD_JOIN_AS_AUDIENCE: "Join Audience",
-            ROOM_CODE: "ROOM CODE",
-            ROOM_CODE_PLACEHOLDER: "ENTER 4-LETTER CODE"
+            NAME: "名字",
+            NAME_PLACEHOLDER: "输入你的名字",
+            PASSWORD_PLACEHOLDER: "输入5个数字的密码",
+            PASSWORD_REQUIRED_TITLE: "需要密码",
+            PASSWORD_REQUIRED_BODY: "请输入密码，或作为观众加入",
+            PASSWORD_JOIN_AS_PLAYER: "作为玩家加入",
+            PASSWORD_JOIN_AS_AUDIENCE: "加入至观众",
+            ROOM_CODE: "房间代码",
+            ROOM_CODE_PLACEHOLDER: "输入4个字符的代码"
         },
         dee = "Link to Jackbox Games Homepage",
         hee = {
@@ -24397,16 +24397,16 @@ from your past games list.`,
             }
         },
         vee = {
-            GAME_FULL: "Game is full",
-            GAME_STARTED: "Game has started",
-            ROOM_NOT_FOUND: "Room not found"
+            GAME_FULL: "游戏已满",
+            GAME_STARTED: "游戏已开始",
+            ROOM_NOT_FOUND: "未找到房间"
         },
         _ee = {
-            GAME_FULL: "GAME IS FULL",
-            GAME_STARTED: "GAME HAS STARTED",
-            JOIN_AUDIENCE: "JOIN AUDIENCE",
-            RECONNECT: "RECONNECT",
-            TWITCH_LOGIN: "LOGIN WITH TWITCH"
+            GAME_FULL: "游戏已满",
+            GAME_STARTED: "游戏已开始",
+            JOIN_AUDIENCE: "加入至观众",
+            RECONNECT: "重新连接",
+            TWITCH_LOGIN: "用Twitch登陆"
         },
         yee = {
             CAMERA: "[b]HEADS UP:[/b] We\u2019re not detecting a camera, but you can still play the game without a photo. If this seems wrong, try joining with a different browser.",
