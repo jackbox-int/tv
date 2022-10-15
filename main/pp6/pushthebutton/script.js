@@ -16886,11 +16886,11 @@ const zC = `<div id="controller" class="state-controller controller-content">
             formattedActiveContentId: null,
             isLocal: !1,
             strings: {
-                wait: "Sit back and relax!",
-                vip_waiting: "Waiting for all players to join",
-                vip_canStart: "Press this button when everybody has joined",
-                vip_cancel: "Press this button to cancel game start",
-                vip_postgame: "What would you like to do now?",
+                wait: "坐下来休息一会！",
+                vip_waiting: "等待所有玩家加入至游戏内",
+                vip_canStart: "等到所有人都加入进来之后按这个键",
+                vip_cancel: "按下这个键来取消开始游戏",
+                vip_postgame: "你现在想做什么？",
                 vip_episodes_menu: "Episodes Menu",
                 vip_episodes_unload: "Unload Episode",
                 vip_episodes_report: "Report Episode",
@@ -16900,14 +16900,14 @@ const zC = `<div id="controller" class="state-controller controller-content">
                 vip_episodes_back: "Back",
                 vip_episodes_submit: "SUBMIT",
                 vip_episodes_view_author: "View Author",
-                button_start: "Everybody's In",
-                button_cancel: "Cancel",
-                button_changename: "Change Name",
-                button_sameplayers: "Same Players",
-                button_newplayers: "New Players",
-                prompt_entername: "Enter your name",
-                prompt_choosecharacter: "Select your character",
-                button_censorOptions: "Censor Options",
+                button_start: "所有人都在了",
+                button_cancel: "取消",
+                button_changename: "改名",
+                button_sameplayers: "相同玩家",
+                button_newplayers: "新一批玩家",
+                prompt_entername: "输入你的名字",
+                prompt_choosecharacter: "选择你的角色",
+                button_censorOptions: "屏蔽设置",
                 censor_prompt: ""
             }
         }
@@ -17344,10 +17344,10 @@ const zC = `<div id="controller" class="state-controller controller-content">
             LANGUAGE_NAME: "English",
             SUPPORTED_LANGUAGES: ["English", "Fran\xE7ais", "Italiano", "Deutsch", "Espa\xF1ol"],
             SUPPORTED_LOCALES: ["en", "fr", "it", "de", "es"],
-            LANGUAGE: "Language",
-            LOGIN: "Login",
-            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Disconnected",
-            STRING_ERROR_SERVER_ROOM_DESTROYED: "Thanks for playing!"
+            LANGUAGE: "语言",
+            LOGIN: "登陆",
+            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "已断开",
+            STRING_ERROR_SERVER_ROOM_DESTROYED: "感谢游戏！"
         },
         fr: {
             LANGUAGE_NAME: "Fran\xE7ais",
@@ -22267,11 +22267,11 @@ const jx = rt.View.extend({
                 classes: {
                     alien: {
                         observe: "winningRole",
-                        onGet: t => t === "Alien"
+                        onGet: t => t === "外星人"
                     },
                     human: {
                         observe: "winningRole",
-                        onGet: t => t === "Human"
+                        onGet: t => t === "人类"
                     }
                 }
             }
