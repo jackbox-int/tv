@@ -25342,13 +25342,13 @@ ${t}`
         },
         Gte = {
             INSTRUCTION: {
-                DRAWING: "选择图画",
+                DRAWING: "选择绘画",
                 SLOGAN: "选择口号"
             }
         },
         jte = {
             INSTRUCTION: {
-                DRAWING: "你想看见什么样的图画？",
+                DRAWING: "你想看见什么样的绘画？",
                 WRITING: "玩家们应该写点什么？"
             }
         },
