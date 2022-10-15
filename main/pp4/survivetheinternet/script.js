@@ -2095,7 +2095,7 @@ function Sc() {
             var he = new Se,
                 Ie = new Se,
                 De = /^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,
-                rt = /[A-Z]/g;
+                rt = /[A-Z\u2E80-\u9FFF]/g;
 
             function xt(r) {
                 return r === "true" ? !0 : r === "false" ? !1 : r === "null" ? null : r === +r + "" ? +r : De.test(r) ? JSON.parse(r) : r
@@ -5603,7 +5603,7 @@ function Eh() {
                 }, {})
             },
             bt = function(o, C) {
-                return o.replace(/@ui\.[a-zA-Z-_$0-9]*/g, function(A) {
+                return o.replace(/@ui\.[a-zA-Z\u2E80-\u9FFF-_$0-9]*/g, function(A) {
                     return C[A.slice(4)]
                 })
             },
@@ -8051,7 +8051,7 @@ const yl = class {
         return this.htmlEscape(n).trim()
     }
     static sanitizeName(e) {
-        return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
+        return e.replace(/[^A-Z\u2E80-\u9FFF0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
     }
     static sanitizeInput(e) {
         return e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
@@ -11682,7 +11682,7 @@ var uc = {
                 stringify: $,
                 parse: J
             },
-            Y = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//,
+            Y = /^[A-Z\u2E80-\u9FFFa-z][A-Z\u2E80-\u9FFFa-z0-9+-.]*:\/\//,
             re = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
             m = "[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]",
             P = new RegExp("^" + m + "+");
@@ -14561,8 +14561,8 @@ var nh = {
                 })
             };
         var ys = {
-            email: (c, h) => /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9-]{2,24}$/.test(c) ? Promise.resolve() : Promise.resolve(h || "Invalid email address"),
-            url: (c, h) => /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-z]{2,63}\b([-a-zA-Z0-9@:%_+.~#?&/=]*)$/.test(c) ? Promise.resolve() : Promise.resolve(h || "Invalid URL")
+            email: (c, h) => /^[a-zA-Z\u2E80-\u9FFF0-9.+_-]+@[a-zA-Z\u2E80-\u9FFF0-9.-]+\.[a-zA-Z\u2E80-\u9FFF0-9-]{2,24}$/.test(c) ? Promise.resolve() : Promise.resolve(h || "Invalid email address"),
+            url: (c, h) => /^https?:\/\/(www\.)?[-a-zA-Z\u2E80-\u9FFF0-9@:%._+~#=]{1,256}\.[a-z]{2,63}\b([-a-zA-Z\u2E80-\u9FFF0-9@:%_+.~#?&/=]*)$/.test(c) ? Promise.resolve() : Promise.resolve(h || "Invalid URL")
         };
 
         function Lo(c) {
@@ -17246,9 +17246,9 @@ const HC = `<div id="controller" class="state-controller controller-content">
             })
         },
         activateContentIdFromInput(t) {
-            (t.getSanitizedValue().replace(/[^A-Za-z]/gi, "").toUpperCase() || "").length < 7 || (this.triggerMethod("client:message", {
+            (t.getSanitizedValue().replace(/[^A-Z\u2E80-\u9FFFa-z]/gi, "").toUpperCase() || "").length < 7 || (this.triggerMethod("client:message", {
                 activateContentId: !0,
-                contentId: t.getSanitizedValue().replace(/[^A-Za-z]/gi, "").toUpperCase()
+                contentId: t.getSanitizedValue().replace(/[^A-Z\u2E80-\u9FFFa-z]/gi, "").toUpperCase()
             }), Ot.close())
         },
         onChildviewChildviewCharacterClick(t) {
@@ -20805,8 +20805,8 @@ const Hx = `<div id="content-region" class="content"></div>
     t.mask = {
         definitions: {
             9: "[0-9]",
-            a: "[A-Za-z]",
-            "*": "[A-Za-z0-9]"
+            a: "[A-Z\u2E80-\u9FFFa-z]",
+            "*": "[A-Z\u2E80-\u9FFFa-z0-9]"
         },
         autoclear: !0,
         dataName: "rawMaskFn",
@@ -21127,7 +21127,7 @@ const Ux = Ct.View.extend({
                     name: "class",
                     observe: "thumbnail",
                     onGet(t) {
-                        const n = (t || "").match(/images\/survivetheinternet\/photos\/([a-zA-Z]+-thumb)\.jpg/);
+                        const n = (t || "").match(/images\/survivetheinternet\/photos\/([a-zA-Z\u2E80-\u9FFF]+-thumb)\.jpg/);
                         return n ? n[1] : ""
                     }
                 }, {
@@ -21378,7 +21378,7 @@ const Qx = Fx.extend({
     },
     parseBlob(t) {
         if (t.playerInfo = t.playerInfo || {}, t.playerInfo.username = t.playerName || "Audience", t.playerInfo.color && (t.playerInfo.avatar = t.playerInfo.color.frame, t.playerInfo.topBarColor = t.playerInfo.color.dark.hexString, t.playerInfo.bgColor = t.playerInfo.color.veryLight.hexString, t.playerInfo.textColor = t.playerInfo.color.veryLight.hexString, t.playerInfo.buttonColor = t.playerInfo.color.dark.hexString), t.state === "Gameplay" && (t.state = "Logo"), t.state === "Lobby" && (this.client.isRole("player") || (t.state = "Logo"), t.playerIsVIP = t.isAllowedToStartGame, t.playerCanStartGame = t.isAllowedToStartGame, t.playerCanCensor = t.canCensor, t.gameCanStart = ["CanStart", "Countdown", "PostGame"].indexOf(t.lobbyState) !== -1, t.gameIsStarting = t.lobbyState === "Countdown", t.gameFinished = t.lobbyState === "PostGame"), t.censorablePlayers && delete t.censorablePlayers, t.state === "EnterSingleText" && t.text && t.text.aboveBlackBox) {
-            const e = t.text.aboveBlackBox.match(/images\/survivetheinternet\/photos\/([a-zA-Z]+)\.jpg/);
+            const e = t.text.aboveBlackBox.match(/images\/survivetheinternet\/photos\/([a-zA-Z\u2E80-\u9FFF]+)\.jpg/);
             if (e) {
                 const n = e[1],
                     i = this.altTexts[n];
@@ -21387,7 +21387,7 @@ const Qx = Fx.extend({
         }
         if (t.state === "Voting" && (t.choices = t.choices.map(e => {
                 if (!e.thumbnail) return e;
-                const n = e.thumbnail.match(/images\/survivetheinternet\/photos\/([a-zA-Z]+)-thumb\.jpg/);
+                const n = e.thumbnail.match(/images\/survivetheinternet\/photos\/([a-zA-Z\u2E80-\u9FFF]+)-thumb\.jpg/);
                 if (n) {
                     const i = n[1].replace("-thumb", ""),
                         a = this.altTexts[i];
@@ -21395,7 +21395,7 @@ const Qx = Fx.extend({
                 }
                 return e
             })), t.state === "MakeSingleChoice" && t.text && t.text.blackBox) {
-            const e = t.text.blackBox.match(/(.*)<img src='images\/survivetheinternet\/photos\/([a-zA-Z]+)\.jpg'\/>(.*)/);
+            const e = t.text.blackBox.match(/(.*)<img src='images\/survivetheinternet\/photos\/([a-zA-Z\u2E80-\u9FFF]+)\.jpg'\/>(.*)/);
             if (e) {
                 const n = e[2],
                     i = this.altTexts[n];

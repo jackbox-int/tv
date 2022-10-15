@@ -2088,7 +2088,7 @@ var Na = {
         var de = new ke,
             De = new ke,
             Me = /^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,
-            nt = /[A-Z]/g;
+            nt = /[A-Z\u2E80-\u9FFF]/g;
 
         function Ct(r) {
             return r === "true" ? !0 : r === "false" ? !1 : r === "null" ? null : r === +r + "" ? +r : Me.test(r) ? JSON.parse(r) : r
@@ -5595,7 +5595,7 @@ function gh() {
                 }, {})
             },
             bt = function(o, C) {
-                return o.replace(/@ui\.[a-zA-Z-_$0-9]*/g, function(O) {
+                return o.replace(/@ui\.[a-zA-Z\u2E80-\u9FFF-_$0-9]*/g, function(O) {
                     return C[O.slice(4)]
                 })
             },
@@ -8043,7 +8043,7 @@ const fl = class {
         return this.htmlEscape(n).trim()
     }
     static sanitizeName(e) {
-        return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
+        return e.replace(/[^A-Z\u2E80-\u9FFF0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
     }
     static sanitizeInput(e) {
         return e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
@@ -11674,7 +11674,7 @@ var ic = {
                 stringify: V,
                 parse: J
             },
-            G = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//,
+            G = /^[A-Z\u2E80-\u9FFFa-z][A-Z\u2E80-\u9FFFa-z0-9+-.]*:\/\//,
             Q = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
             v = "[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]",
             M = new RegExp("^" + v + "+");
@@ -14553,8 +14553,8 @@ var Yu = {
                 })
             };
         var ys = {
-            email: (c, h) => /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9-]{2,24}$/.test(c) ? Promise.resolve() : Promise.resolve(h || "Invalid email address"),
-            url: (c, h) => /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-z]{2,63}\b([-a-zA-Z0-9@:%_+.~#?&/=]*)$/.test(c) ? Promise.resolve() : Promise.resolve(h || "Invalid URL")
+            email: (c, h) => /^[a-zA-Z\u2E80-\u9FFF0-9.+_-]+@[a-zA-Z\u2E80-\u9FFF0-9.-]+\.[a-zA-Z\u2E80-\u9FFF0-9-]{2,24}$/.test(c) ? Promise.resolve() : Promise.resolve(h || "Invalid email address"),
+            url: (c, h) => /^https?:\/\/(www\.)?[-a-zA-Z\u2E80-\u9FFF0-9@:%._+~#=]{1,256}\.[a-z]{2,63}\b([-a-zA-Z\u2E80-\u9FFF0-9@:%_+.~#?&/=]*)$/.test(c) ? Promise.resolve() : Promise.resolve(h || "Invalid URL")
         };
 
         function Do(c) {
@@ -17238,9 +17238,9 @@ const VC = Et.View.extend({
             })
         },
         activateContentIdFromInput(t) {
-            (t.getSanitizedValue().replace(/[^A-Za-z]/gi, "").toUpperCase() || "").length < 7 || (this.triggerMethod("client:message", {
+            (t.getSanitizedValue().replace(/[^A-Z\u2E80-\u9FFFa-z]/gi, "").toUpperCase() || "").length < 7 || (this.triggerMethod("client:message", {
                 activateContentId: !0,
-                contentId: t.getSanitizedValue().replace(/[^A-Za-z]/gi, "").toUpperCase()
+                contentId: t.getSanitizedValue().replace(/[^A-Z\u2E80-\u9FFFa-z]/gi, "").toUpperCase()
             }), kt.close())
         },
         onChildviewChildviewCharacterClick(t) {
@@ -20797,8 +20797,8 @@ const $x = `<div id="content-region" class="content"></div>
     t.mask = {
         definitions: {
             9: "[0-9]",
-            a: "[A-Za-z]",
-            "*": "[A-Za-z0-9]"
+            a: "[A-Z\u2E80-\u9FFFa-z]",
+            "*": "[A-Z\u2E80-\u9FFFa-z0-9]"
         },
         autoclear: !0,
         dataName: "rawMaskFn",
@@ -21546,7 +21546,7 @@ const Gx = VC.extend({
         }), !1
     },
     sanitize(t) {
-        return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF!?*$+\-’'_ .,:]/gi, "").replace(/'/g, "\u2019").trim()
+        return t.replace(/[^A-Z\u2E80-\u9FFF0-9\u00A1\u0020-\u002F\u00BF-\u00FF!?*$+\-’'_ .,:]/gi, "").replace(/'/g, "\u2019").trim()
     },
     onResize() {
         const t = se(window).width(),
