@@ -88,17 +88,17 @@ var Pie = wL((xie, qO) => {
             pattern: /[0-9]/
         },
         X: {
-            pattern: /[0-9A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]/
+            pattern: /[0-9a-zA-Z]/
         },
         S: {
-            pattern: /[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]/
+            pattern: /[a-zA-Z]/
         },
         A: {
-            pattern: /[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]/,
+            pattern: /[a-zA-Z]/,
             uppercase: !0
         },
         a: {
-            pattern: /[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]/,
+            pattern: /[a-zA-Z]/,
             lowercase: !0
         },
         "!": {
@@ -367,7 +367,7 @@ var Pie = wL((xie, qO) => {
         Ms = [],
         un = () => {},
         jL = () => !1,
-        WL = /^on[^A-Z\u2E80-\u9FFF]/,
+        WL = /^on[^a-z]/,
         cc = e => WL.test(e),
         bh = e => e.startsWith("onUpdate:"),
         tr = Object.assign,
@@ -398,7 +398,7 @@ var Pie = wL((xie, qO) => {
         },
         HL = /-(\w)/g,
         wn = fc(e => e.replace(HL, (t, r) => r ? r.toUpperCase() : "")),
-        qL = /\B([A-Z\u2E80-\u9FFF])/g,
+        qL = /\B([A-Z])/g,
         os = fc(e => e.replace(qL, "-$1").toLowerCase()),
         dc = fc(e => e.charAt(0).toUpperCase() + e.slice(1)),
         gf = fc(e => e ? `on${dc(e)}` : ""),
@@ -3438,7 +3438,7 @@ var Pie = wL((xie, qO) => {
             }, t.map(n => s => !s._stopped && n && n(s))
         } else return t
     }
-    const ty = /^on[A-Z\u2E80-\u9FFF]/,
+    const ty = /^on[a-z]/,
         YP = (e, t, r, n, s = !1, a, l, c, f) => {
             t === "class" ? kP(e, n, s) : t === "style" ? xP(e, r, n) : cc(t) ? bh(t) || VP(e, t, r, n, l) : (t[0] === "." ? (t = t.slice(1), !0) : t[0] === "^" ? (t = t.slice(1), !1) : zP(e, t, n, s)) ? UP(e, t, n, a, l, c, f) : (t === "true-value" ? e._trueValue = n : t === "false-value" && (e._falseValue = n), MP(e, t, n, s))
         };
@@ -4899,7 +4899,7 @@ var Pie = wL((xie, qO) => {
             return this.htmlEscape(r).trim()
         }
         static sanitizeName(t) {
-            return t.replace(/[^A-Z\u2E80-\u9FFF0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
+            return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
         }
         static sanitizeInput(t) {
             return t.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
@@ -5182,7 +5182,7 @@ var Pie = wL((xie, qO) => {
                     };
 
                 function y(U) {
-                    if (typeof U != "string" && (U = String(U)), /[^A-Z\u2E80-\u9FFF0-9\-#$%&'*+.^_`|~]/i.test(U)) throw new TypeError("Invalid character in header field name");
+                    if (typeof U != "string" && (U = String(U)), /[^a-z0-9\-#$%&'*+.^_`|~]/i.test(U)) throw new TypeError("Invalid character in header field name");
                     return U.toLowerCase()
                 }
 
@@ -9170,8 +9170,8 @@ ${r}`,
                     stringify: y,
                     parse: b
                 },
-                P = /^[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF][A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9+-.]*:\/\//,
-                M = /^([A-Z\u2E80-\u9FFF][A-Z\u2E80-\u9FFF0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
+                P = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//,
+                M = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
                 G = "[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]",
                 C = new RegExp("^" + G + "+");
 
@@ -11673,12 +11673,12 @@ ${r.message}`,
                 _0 = "\\u20d0-\\u20ff",
                 eg = v0 + y0 + _0,
                 tg = "\\u2700-\\u27bf",
-                rg = "A-Z\u2E80-\u9FFF\\xdf-\\xf6\\xf8-\\xff",
+                rg = "a-z\\xdf-\\xf6\\xf8-\\xff",
                 E0 = "\\xac\\xb1\\xd7\\xf7",
                 b0 = "\\x00-\\x2f\\x3a-\\x40\\x5b-\\x60\\x7b-\\xbf",
                 T0 = "\\u2000-\\u206f",
                 A0 = " \\t\\x0b\\f\\xa0\\ufeff\\n\\r\\u2028\\u2029\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u202f\\u205f\\u3000",
-                ng = "A-Z\u2E80-\u9FFF\\xc0-\\xd6\\xd8-\\xde",
+                ng = "A-Z\\xc0-\\xd6\\xd8-\\xde",
                 ig = "\\ufe0e\\ufe0f",
                 sg = E0 + b0 + T0 + A0,
                 nu = "['\u2019]",
@@ -11703,8 +11703,8 @@ ${r.message}`,
                 gg = w0 + "?",
                 mg = "[" + ig + "]?",
                 I0 = "(?:" + fg + "(?:" + [ug, su, au].join("|") + ")" + mg + gg + ")*",
-                $0 = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z\u2E80-\u9FFF_])",
-                R0 = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[A-Z\u2E80-\u9FFF_])",
+                $0 = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])",
+                R0 = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])",
                 vg = mg + gg + I0,
                 L0 = "(?:" + [O0, su, au].join("|") + ")" + vg,
                 N0 = "(?:" + [ug + wo + "?", wo, su, au, S0].join("|") + ")",
@@ -11713,7 +11713,7 @@ ${r.message}`,
                 ou = RegExp(iu + "(?=" + iu + ")|" + N0 + vg, "g"),
                 x0 = RegExp([fs + "?" + lg + "+" + hg + "(?=" + [ag, fs, "$"].join("|") + ")", C0 + "+" + pg + "(?=" + [ag, fs + dg, "$"].join("|") + ")", fs + "?" + dg + "+" + hg, fs + "+" + pg, R0, $0, og, L0].join("|"), "g"),
                 D0 = RegExp("[" + fg + Oo + eg + ig + "]"),
-                M0 = /[A-Z\u2E80-\u9FFF][A-Z\u2E80-\u9FFF]|[A-Z\u2E80-\u9FFF]{2}[A-Z\u2E80-\u9FFF]|[0-9][A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]|[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF][0-9]|[^A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9 ]/,
+                M0 = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
                 U0 = ["Array", "Buffer", "DataView", "Date", "Error", "Float32Array", "Float64Array", "Function", "Int8Array", "Int16Array", "Int32Array", "Map", "Math", "Object", "Promise", "RegExp", "Set", "String", "Symbol", "TypeError", "Uint8Array", "Uint8ClampedArray", "Uint16Array", "Uint32Array", "WeakMap", "_", "clearTimeout", "isFinite", "parseInt", "setTimeout"],
                 F0 = -1,
                 Tt = {};
@@ -17939,7 +17939,7 @@ function print() { __p += __j.call(arguments, '') }
                     return new ri.Token(ri.Token.Type.startTag, r, n, t[0])
                 }
                 return new ri.Token(ri.Token.Type.endTag, t[1].substr(1, t[1].length - 1))
-            }, e.nameChars = "[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9\\.\\-_:;/]", e.valueChars = "[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9\\.\\-_:;#/\\s]", e
+            }, e.nameChars = "[a-zA-Z0-9\\.\\-_:;/]", e.valueChars = "[a-zA-Z0-9\\.\\-_:;#/\\s]", e
         }();
     Kc.Tokenizer = A5;
     (function(e) {
@@ -25602,7 +25602,7 @@ ${t}`
                     })
                 },
                 onLoadId() {
-                    const e = this.id.replace(/[^A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]/gi, "").toUpperCase();
+                    const e = this.id.replace(/[^A-Za-z]/gi, "").toUpperCase();
                     e.length === 7 && this.$emit("resolve", {
                         action: "ugc-load",
                         contentId: e

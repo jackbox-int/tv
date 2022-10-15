@@ -140,7 +140,7 @@ var jie = jL((Wie, l0) => {
         Ws = [],
         dr = () => {},
         zL = () => !1,
-        XL = /^on[^A-Z\u2E80-\u9FFF]/,
+        XL = /^on[^a-z]/,
         bc = e => XL.test(e),
         Rh = e => e.startsWith("onUpdate:"),
         sn = Object.assign,
@@ -171,7 +171,7 @@ var jie = jL((Wie, l0) => {
         },
         QL = /-(\w)/g,
         Ir = Tc(e => e.replace(QL, (t, n) => n ? n.toUpperCase() : "")),
-        eR = /\B([A-Z\u2E80-\u9FFF])/g,
+        eR = /\B([A-Z])/g,
         ds = Tc(e => e.replace(eR, "-$1").toLowerCase()),
         Sc = Tc(e => e.charAt(0).toUpperCase() + e.slice(1)),
         Of = Tc(e => e ? `on${Sc(e)}` : ""),
@@ -3211,7 +3211,7 @@ var jie = jL((Wie, l0) => {
             }, t.map(r => s => !s._stopped && r && r(s))
         } else return t
     }
-    const cy = /^on[A-Z\u2E80-\u9FFF]/,
+    const cy = /^on[a-z]/,
         tk = (e, t, n, r, s = !1, a, l, c, f) => {
             t === "class" ? jN(e, r, s) : t === "style" ? GN(e, n, r) : bc(t) ? Rh(t) || JN(e, t, n, r, l) : (t[0] === "." ? (t = t.slice(1), !0) : t[0] === "^" ? (t = t.slice(1), !1) : nk(e, t, r, s)) ? HN(e, t, r, a, l, c, f) : (t === "true-value" ? e._trueValue = r : t === "false-value" && (e._falseValue = r), KN(e, t, r, s))
         };
@@ -4672,7 +4672,7 @@ var jie = jL((Wie, l0) => {
             return this.htmlEscape(n).trim()
         }
         static sanitizeName(t) {
-            return t.replace(/[^A-Z\u2E80-\u9FFF0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
+            return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
         }
         static sanitizeInput(t) {
             return t.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
@@ -4955,7 +4955,7 @@ var jie = jL((Wie, l0) => {
                     };
 
                 function y(F) {
-                    if (typeof F != "string" && (F = String(F)), /[^A-Z\u2E80-\u9FFF0-9\-#$%&'*+.^_`|~]/i.test(F)) throw new TypeError("Invalid character in header field name");
+                    if (typeof F != "string" && (F = String(F)), /[^a-z0-9\-#$%&'*+.^_`|~]/i.test(F)) throw new TypeError("Invalid character in header field name");
                     return F.toLowerCase()
                 }
 
@@ -8943,8 +8943,8 @@ ${n}`,
                     stringify: y,
                     parse: E
                 },
-                R = /^[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF][A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9+-.]*:\/\//,
-                x = /^([A-Z\u2E80-\u9FFF][A-Z\u2E80-\u9FFF0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
+                R = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//,
+                x = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
                 U = "[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]",
                 I = new RegExp("^" + U + "+");
 
@@ -11849,12 +11849,12 @@ ${n.message}`,
                 k0 = "\\u20d0-\\u20ff",
                 ug = R0 + N0 + k0,
                 fg = "\\u2700-\\u27bf",
-                dg = "A-Z\u2E80-\u9FFF\\xdf-\\xf6\\xf8-\\xff",
+                dg = "a-z\\xdf-\\xf6\\xf8-\\xff",
                 x0 = "\\xac\\xb1\\xd7\\xf7",
                 D0 = "\\x00-\\x2f\\x3a-\\x40\\x5b-\\x60\\x7b-\\xbf",
                 M0 = "\\u2000-\\u206f",
                 F0 = " \\t\\x0b\\f\\xa0\\ufeff\\n\\r\\u2028\\u2029\\u1680\\u180e\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200a\\u202f\\u205f\\u3000",
-                hg = "A-Z\u2E80-\u9FFF\\xc0-\\xd6\\xd8-\\xde",
+                hg = "A-Z\\xc0-\\xd6\\xd8-\\xde",
                 pg = "\\ufe0e\\ufe0f",
                 gg = x0 + D0 + M0 + F0,
                 pu = "['\u2019]",
@@ -11879,8 +11879,8 @@ ${n.message}`,
                 Og = j0 + "?",
                 Cg = "[" + pg + "]?",
                 W0 = "(?:" + Eg + "(?:" + [bg, mu, vu].join("|") + ")" + Cg + Og + ")*",
-                K0 = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z\u2E80-\u9FFF_])",
-                H0 = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[A-Z\u2E80-\u9FFF_])",
+                K0 = "\\d*(?:1st|2nd|3rd|(?![123])\\dth)(?=\\b|[A-Z_])",
+                H0 = "\\d*(?:1ST|2ND|3RD|(?![123])\\dTH)(?=\\b|[a-z_])",
                 Ig = Cg + Og + W0,
                 V0 = "(?:" + [B0, mu, vu].join("|") + ")" + Ig,
                 Y0 = "(?:" + [bg + ko + "?", ko, mu, vu, U0].join("|") + ")",
@@ -11889,7 +11889,7 @@ ${n.message}`,
                 yu = RegExp(gu + "(?=" + gu + ")|" + Y0 + Ig, "g"),
                 X0 = RegExp([ms + "?" + yg + "+" + Sg + "(?=" + [mg, ms, "$"].join("|") + ")", G0 + "+" + wg + "(?=" + [mg, ms + Tg, "$"].join("|") + ")", ms + "?" + Tg + "+" + Sg, ms + "+" + wg, H0, K0, vg, V0].join("|"), "g"),
                 J0 = RegExp("[" + Eg + No + ug + pg + "]"),
-                Z0 = /[A-Z\u2E80-\u9FFF][A-Z\u2E80-\u9FFF]|[A-Z\u2E80-\u9FFF]{2}[A-Z\u2E80-\u9FFF]|[0-9][A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]|[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF][0-9]|[^A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9 ]/,
+                Z0 = /[a-z][A-Z]|[A-Z]{2}[a-z]|[0-9][a-zA-Z]|[a-zA-Z][0-9]|[^a-zA-Z0-9 ]/,
                 Q0 = ["Array", "Buffer", "DataView", "Date", "Error", "Float32Array", "Float64Array", "Function", "Int8Array", "Int16Array", "Int32Array", "Map", "Math", "Object", "Promise", "RegExp", "Set", "String", "Symbol", "TypeError", "Uint8Array", "Uint8ClampedArray", "Uint16Array", "Uint32Array", "WeakMap", "_", "clearTimeout", "isFinite", "parseInt", "setTimeout"],
                 e1 = -1,
                 Et = {};
@@ -18169,7 +18169,7 @@ function print() { __p += __j.call(arguments, '') }
                     return new si.Token(si.Token.Type.startTag, n, r, t[0])
                 }
                 return new si.Token(si.Token.Type.endTag, t[1].substr(1, t[1].length - 1))
-            }, e.nameChars = "[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9\\.\\-_:;/]", e.valueChars = "[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9\\.\\-_:;#/\\s]", e
+            }, e.nameChars = "[a-zA-Z0-9\\.\\-_:;/]", e.valueChars = "[a-zA-Z0-9\\.\\-_:;#/\\s]", e
         }();
     nu.Tokenizer = C6;
     (function(e) {

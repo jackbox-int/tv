@@ -1684,7 +1684,7 @@ function og() {
             function oe(l, p) {
                 return l.nodeName && l.nodeName.toLowerCase() === p.toLowerCase()
             }
-            var Ie = /^<([A-Z\u2E80-\u9FFF][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i;
+            var Ie = /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i;
 
             function Y(l, p, b) {
                 return C(p) ? u.grep(l, function(k, B) {
@@ -2038,7 +2038,7 @@ function og() {
                     return B ? l : de ? p.call(l) : ae ? p(l[0], b) : F
                 },
                 j = /^-ms-/,
-                N = /-([A-Z\u2E80-\u9FFF])/g;
+                N = /-([a-z])/g;
 
             function W(l, p) {
                 return p.toUpperCase()
@@ -2091,7 +2091,7 @@ function og() {
             var xe = new Pe,
                 Qe = new Pe,
                 He = /^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,
-                pt = /[A-Z\u2E80-\u9FFF]/g;
+                pt = /[A-Z]/g;
 
             function Lt(l) {
                 return l === "true" ? !0 : l === "false" ? !1 : l === "null" ? null : l === +l + "" ? +l : He.test(l) ? JSON.parse(l) : l
@@ -2203,7 +2203,7 @@ function og() {
                 }
             });
             var mt = /[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,
-                Dt = new RegExp("^(?:([+-])=|)(" + mt + ")([A-Z\u2E80-\u9FFF%]*)$", "i"),
+                Dt = new RegExp("^(?:([+-])=|)(" + mt + ")([a-z%]*)$", "i"),
                 Et = ["Top", "Right", "Bottom", "Left"],
                 cn = w.documentElement,
                 rt = function(l) {
@@ -2263,7 +2263,7 @@ function og() {
                 }
             });
             var Re = /^(?:checkbox|radio)$/i,
-                De = /<([A-Z\u2E80-\u9FFF][^\/\0>\x20\t\r\n\f]*)/i,
+                De = /<([a-z][^\/\0>\x20\t\r\n\f]*)/i,
                 Ke = /^$|^module$|\/(?:java|ecma)script/i;
             (function() {
                 var l = w.createDocumentFragment(),
@@ -2752,7 +2752,7 @@ function og() {
                     return this.pushStack(B)
                 }
             });
-            var js = new RegExp("^(" + mt + ")(?!px)[A-Z\u2E80-\u9FFF%]+$", "i"),
+            var js = new RegExp("^(" + mt + ")(?!px)[a-z%]+$", "i"),
                 Ui = function(l) {
                     var p = l.ownerDocument.defaultView;
                     return (!p || !p.opener) && (p = e), p.getComputedStyle(l)
@@ -5599,7 +5599,7 @@ function Zb() {
                 }, {})
             },
             Et = function(f, P) {
-                return f.replace(/@ui\.[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF-_$0-9]*/g, function(H) {
+                return f.replace(/@ui\.[a-zA-Z-_$0-9]*/g, function(H) {
                     return P[H.slice(4)]
                 })
             },
@@ -8047,7 +8047,7 @@ const sf = class {
         return this.htmlEscape(n).trim()
     }
     static sanitizeName(e) {
-        return e.replace(/[^A-Z\u2E80-\u9FFF0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
+        return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
     }
     static sanitizeInput(e) {
         return e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
@@ -8330,7 +8330,7 @@ var Lh = {
                 };
 
             function q(Y) {
-                if (typeof Y != "string" && (Y = String(Y)), /[^A-Z\u2E80-\u9FFF0-9\-#$%&'*+.^_`|~]/i.test(Y)) throw new TypeError("Invalid character in header field name");
+                if (typeof Y != "string" && (Y = String(Y)), /[^a-z0-9\-#$%&'*+.^_`|~]/i.test(Y)) throw new TypeError("Invalid character in header field name");
                 return Y.toLowerCase()
             }
 
@@ -11678,8 +11678,8 @@ var Wf = {
                 stringify: q,
                 parse: v
             },
-            S = /^[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF][A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9+-.]*:\/\//,
-            C = /^([A-Z\u2E80-\u9FFF][A-Z\u2E80-\u9FFF0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
+            S = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//,
+            C = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
             h = "[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]",
             w = new RegExp("^" + h + "+");
 
@@ -12906,7 +12906,7 @@ var j9 = {};
                 };
                 if (h.find("*").remove(), e.isString(u)) {
                     var ve = window;
-                    u.indexOf("this.") === 0 && (ve = this), u = u.replace(/^[A-Z\u2E80-\u9FFF]*\.(.+)$/, "$1"), O = r(ve, u)
+                    u.indexOf("this.") === 0 && (ve = this), u = u.replace(/^[a-z]*\.(.+)$/, "$1"), O = r(ve, u)
                 } else e.isFunction(u) ? O = V.call(this, u, h, M) : O = u;
                 if (O instanceof n.Collection) {
                     var be = O,
@@ -14557,8 +14557,8 @@ var P1 = {
                 })
             };
         var ZV = {
-            email: (y, x) => /^[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9.+_-]+@[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9.-]+\.[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9-]{2,24}$/.test(y) ? Promise.resolve() : Promise.resolve(x || "Invalid email address"),
-            url: (y, x) => /^https?:\/\/(www\.)?[-A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9@:%._+~#=]{1,256}\.[A-Z\u2E80-\u9FFF]{2,63}\b([-A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9@:%_+.~#?&/=]*)$/.test(y) ? Promise.resolve() : Promise.resolve(x || "Invalid URL")
+            email: (y, x) => /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9-]{2,24}$/.test(y) ? Promise.resolve() : Promise.resolve(x || "Invalid email address"),
+            url: (y, x) => /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-z]{2,63}\b([-a-zA-Z0-9@:%_+.~#?&/=]*)$/.test(y) ? Promise.resolve() : Promise.resolve(x || "Invalid URL")
         };
 
         function kp(y) {
@@ -17242,9 +17242,9 @@ const qC = `<div id="controller" class="state-controller controller-content">
             })
         },
         activateContentIdFromInput(t) {
-            (t.getSanitizedValue().replace(/[^A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]/gi, "").toUpperCase() || "").length < 7 || (this.triggerMethod("client:message", {
+            (t.getSanitizedValue().replace(/[^A-Za-z]/gi, "").toUpperCase() || "").length < 7 || (this.triggerMethod("client:message", {
                 activateContentId: !0,
-                contentId: t.getSanitizedValue().replace(/[^A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]/gi, "").toUpperCase()
+                contentId: t.getSanitizedValue().replace(/[^A-Za-z]/gi, "").toUpperCase()
             }), Qt.close())
         },
         onChildviewChildviewCharacterClick(t) {
@@ -20801,8 +20801,8 @@ const mR = `<div id="content-region" class="content"></div>
     t.mask = {
         definitions: {
             9: "[0-9]",
-            a: "[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]",
-            "*": "[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9]"
+            a: "[A-Za-z]",
+            "*": "[A-Za-z0-9]"
         },
         autoclear: !0,
         dataName: "rawMaskFn",
@@ -21983,7 +21983,7 @@ var jn = {
     ti = Array.isArray,
     Xh = /(?:-?\.?\d|\.)+/gi,
     sy = /[-+=.]*\d+[.e\-+]*\d*[e\-+]*\d*/g,
-    Zo = /[-+=.]*\d+[.e-]*\d*[A-Z\u2E80-\u9FFF%]*/g,
+    Zo = /[-+=.]*\d+[.e-]*\d*[a-z%]*/g,
     hh = /[-+=.]*\d+\.?\d*(?:e-|e\+)?\d*/gi,
     oy = /[+-]=-?[.\d]+/,
     ay = /[^,'"\[\]\s]+/gi,
@@ -23518,7 +23518,7 @@ var fq, fs, la, i0, oo, qq, ED = function() {
     Aa = Math.PI / 180,
     No = Math.atan2,
     gq = 1e8,
-    Fy = /([A-Z\u2E80-\u9FFF])/g,
+    Fy = /([A-Z])/g,
     LD = /(?:left|right|width|margin|padding|x)/i,
     BD = /[\s,\(]\S/,
     qs = {
@@ -25228,7 +25228,7 @@ const Jy = {
 var DS = /[achlmqstvz]|(-?\d*\.?\d*(?:e[\-+]?\d+)?)[0-9]/ig,
     SS = /(?:(-)?\d*\.?\d*(?:e[\-+]?\d+)?)[0-9]/ig,
     TS = /[\+\-]?\d*\.?\d+e[\+\-]?\d+/ig,
-    ES = /(^[#\.][A-Z\u2E80-\u9FFF]|[a-y][A-Z\u2E80-\u9FFF])/i,
+    ES = /(^[#\.][a-z]|[a-y][a-z])/i,
     LS = Math.PI / 180,
     BS = 180 / Math.PI,
     ys = Math.sin,
@@ -25591,7 +25591,7 @@ var gi, a0, xr, t2, kr, n2 = function() {
     YS = mA * .7,
     i2 = 1e20,
     Xr = /[-+=\.]*\d+[\.e\-\+]*\d*[e\-\+]*\d*/gi,
-    KS = /(^[#\.][A-Z\u2E80-\u9FFF]|[a-y][A-Z\u2E80-\u9FFF])/i,
+    KS = /(^[#\.][a-z]|[a-y][a-z])/i,
     WS = /[achlmqstvz]/i,
     vs = function(e) {
         return console && console.warn(e)
