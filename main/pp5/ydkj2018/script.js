@@ -1681,7 +1681,7 @@ var Na = {
         function Q(o, r) {
             return o.nodeName && o.nodeName.toLowerCase() === r.toLowerCase()
         }
-        var je = /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i;
+        var je = /^<([A-Z\u2E80-\u9FFF][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i;
 
         function G(o, r, u) {
             return oe(r) ? c.grep(o, function(p, v) {
@@ -2035,7 +2035,7 @@ var Na = {
                 return v ? o : Z ? r.call(o) : F ? r(o[0], u) : C
             },
             x = /^-ms-/,
-            A = /-([a-z])/g;
+            A = /-([A-Z\u2E80-\u9FFF])/g;
 
         function M(o, r) {
             return r.toUpperCase()
@@ -2088,7 +2088,7 @@ var Na = {
         var de = new Se,
             Oe = new Se,
             Re = /^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,
-            ot = /[A-Z]/g;
+            ot = /[A-Z\u2E80-\u9FFF]/g;
 
         function Ct(o) {
             return o === "true" ? !0 : o === "false" ? !1 : o === "null" ? null : o === +o + "" ? +o : Re.test(o) ? JSON.parse(o) : o
@@ -2200,7 +2200,7 @@ var Na = {
             }
         });
         var ht = /[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,
-            vt = new RegExp("^(?:([+-])=|)(" + ht + ")([a-z%]*)$", "i"),
+            vt = new RegExp("^(?:([+-])=|)(" + ht + ")([A-Z\u2E80-\u9FFF%]*)$", "i"),
             kt = ["Top", "Right", "Bottom", "Left"],
             Qt = L.documentElement,
             Ze = function(o) {
@@ -2260,7 +2260,7 @@ var Na = {
             }
         });
         var fe = /^(?:checkbox|radio)$/i,
-            pe = /<([a-z][^\/\0>\x20\t\r\n\f]*)/i,
+            pe = /<([A-Z\u2E80-\u9FFF][^\/\0>\x20\t\r\n\f]*)/i,
             Be = /^$|^module$|\/(?:java|ecma)script/i;
         (function() {
             var o = L.createDocumentFragment(),
@@ -2749,7 +2749,7 @@ var Na = {
                 return this.pushStack(v)
             }
         });
-        var bi = new RegExp("^(" + ht + ")(?!px)[a-z%]+$", "i"),
+        var bi = new RegExp("^(" + ht + ")(?!px)[A-Z\u2E80-\u9FFF%]+$", "i"),
             Fn = function(o) {
                 var r = o.ownerDocument.defaultView;
                 return (!r || !r.opener) && (r = e), r.getComputedStyle(o)
@@ -5595,7 +5595,7 @@ function vd() {
                 }, {})
             },
             kt = function(s, k) {
-                return s.replace(/@ui\.[a-zA-Z-_$0-9]*/g, function(_) {
+                return s.replace(/@ui\.[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF-_$0-9]*/g, function(_) {
                     return k[_.slice(4)]
                 })
             },
@@ -8043,7 +8043,7 @@ const gl = class {
         return this.htmlEscape(n).trim()
     }
     static sanitizeName(e) {
-        return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
+        return e.replace(/[^A-Z\u2E80-\u9FFF0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
     }
     static sanitizeInput(e) {
         return e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
@@ -8326,7 +8326,7 @@ var Sa = {
                 };
 
             function V(G) {
-                if (typeof G != "string" && (G = String(G)), /[^a-z0-9\-#$%&'*+.^_`|~]/i.test(G)) throw new TypeError("Invalid character in header field name");
+                if (typeof G != "string" && (G = String(G)), /[^A-Z\u2E80-\u9FFF0-9\-#$%&'*+.^_`|~]/i.test(G)) throw new TypeError("Invalid character in header field name");
                 return G.toLowerCase()
             }
 
@@ -11674,8 +11674,8 @@ var rh = {
                 stringify: V,
                 parse: X
             },
-            J = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//,
-            oe = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
+            J = /^[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF][A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9+-.]*:\/\//,
+            oe = /^([A-Z\u2E80-\u9FFF][A-Z\u2E80-\u9FFF0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
             m = "[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]",
             L = new RegExp("^" + m + "+");
 
@@ -12902,7 +12902,7 @@ var hk = {};
                 };
                 if (m.find("*").remove(), e.isString(c)) {
                     var lt = window;
-                    c.indexOf("this.") === 0 && (lt = this), c = c.replace(/^[a-z]*\.(.+)$/, "$1"), re = f(lt, c)
+                    c.indexOf("this.") === 0 && (lt = this), c = c.replace(/^[A-Z\u2E80-\u9FFF]*\.(.+)$/, "$1"), re = f(lt, c)
                 } else e.isFunction(c) ? re = y.call(this, c, m, ae) : re = c;
                 if (re instanceof n.Collection) {
                     var Ne = re,
@@ -14553,8 +14553,8 @@ var Ku = {
                 })
             };
         var br = {
-            email: (h, d) => /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9-]{2,24}$/.test(h) ? Promise.resolve() : Promise.resolve(d || "Invalid email address"),
-            url: (h, d) => /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-z]{2,63}\b([-a-zA-Z0-9@:%_+.~#?&/=]*)$/.test(h) ? Promise.resolve() : Promise.resolve(d || "Invalid URL")
+            email: (h, d) => /^[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9.+_-]+@[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9.-]+\.[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9-]{2,24}$/.test(h) ? Promise.resolve() : Promise.resolve(d || "Invalid email address"),
+            url: (h, d) => /^https?:\/\/(www\.)?[-A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9@:%._+~#=]{1,256}\.[A-Z\u2E80-\u9FFF]{2,63}\b([-A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9@:%_+.~#?&/=]*)$/.test(h) ? Promise.resolve() : Promise.resolve(d || "Invalid URL")
         };
 
         function Ms(h) {
@@ -17238,9 +17238,9 @@ const $k = `<div id="controller" class="state-controller controller-content">
             })
         },
         activateContentIdFromInput(t) {
-            (t.getSanitizedValue().replace(/[^A-Za-z]/gi, "").toUpperCase() || "").length < 7 || (this.triggerMethod("client:message", {
+            (t.getSanitizedValue().replace(/[^A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]/gi, "").toUpperCase() || "").length < 7 || (this.triggerMethod("client:message", {
                 activateContentId: !0,
-                contentId: t.getSanitizedValue().replace(/[^A-Za-z]/gi, "").toUpperCase()
+                contentId: t.getSanitizedValue().replace(/[^A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]/gi, "").toUpperCase()
             }), At.close())
         },
         onChildviewChildviewCharacterClick(t) {
@@ -20797,8 +20797,8 @@ const NC = `<div id="content-region" class="content"></div>
     t.mask = {
         definitions: {
             9: "[0-9]",
-            a: "[A-Za-z]",
-            "*": "[A-Za-z0-9]"
+            a: "[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]",
+            "*": "[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9]"
         },
         autoclear: !0,
         dataName: "rawMaskFn",

@@ -1685,7 +1685,7 @@ __p+='`), De
             function J(r, s) {
                 return r.nodeName && r.nodeName.toLowerCase() === s.toLowerCase()
             }
-            var je = /^<([a-z][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i;
+            var je = /^<([A-Z\u2E80-\u9FFF][^\/\0>:\x20\t\r\n\f]*)[\x20\t\r\n\f]*\/?>(?:<\/\1>|)$/i;
 
             function z(r, s, u) {
                 return re(s) ? f.grep(r, function(p, b) {
@@ -2039,7 +2039,7 @@ __p+='`), De
                     return b ? r : Z ? s.call(r) : U ? s(r[0], u) : x
                 },
                 k = /^-ms-/,
-                R = /-([a-z])/g;
+                R = /-([A-Z\u2E80-\u9FFF])/g;
 
             function L(r, s) {
                 return s.toUpperCase()
@@ -2092,7 +2092,7 @@ __p+='`), De
             var he = new ke,
                 De = new ke,
                 Me = /^(?:\{[\w\W]*\}|\[[\w\W]*\])$/,
-                rt = /[A-Z]/g;
+                rt = /[A-Z\u2E80-\u9FFF]/g;
 
             function Ct(r) {
                 return r === "true" ? !0 : r === "false" ? !1 : r === "null" ? null : r === +r + "" ? +r : Me.test(r) ? JSON.parse(r) : r
@@ -2204,7 +2204,7 @@ __p+='`), De
                 }
             });
             var ct = /[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,
-                yt = new RegExp("^(?:([+-])=|)(" + ct + ")([a-z%]*)$", "i"),
+                yt = new RegExp("^(?:([+-])=|)(" + ct + ")([A-Z\u2E80-\u9FFF%]*)$", "i"),
                 wt = ["Top", "Right", "Bottom", "Left"],
                 Jt = P.documentElement,
                 Je = function(r) {
@@ -2264,7 +2264,7 @@ __p+='`), De
                 }
             });
             var fe = /^(?:checkbox|radio)$/i,
-                pe = /<([a-z][^\/\0>\x20\t\r\n\f]*)/i,
+                pe = /<([A-Z\u2E80-\u9FFF][^\/\0>\x20\t\r\n\f]*)/i,
                 $e = /^$|^module$|\/(?:java|ecma)script/i;
             (function() {
                 var r = P.createDocumentFragment(),
@@ -2753,7 +2753,7 @@ __p+='`), De
                     return this.pushStack(b)
                 }
             });
-            var Ei = new RegExp("^(" + ct + ")(?!px)[a-z%]+$", "i"),
+            var Ei = new RegExp("^(" + ct + ")(?!px)[A-Z\u2E80-\u9FFF%]+$", "i"),
                 zn = function(r) {
                     var s = r.ownerDocument.defaultView;
                     return (!s || !s.opener) && (s = e), s.getComputedStyle(r)
@@ -5599,7 +5599,7 @@ __p+='`), De
                     }, {})
                 },
                 wt = function(a, _) {
-                    return a.replace(/@ui\.[a-zA-Z-_$0-9]*/g, function(O) {
+                    return a.replace(/@ui\.[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF-_$0-9]*/g, function(O) {
                         return _[O.slice(4)]
                     })
                 },
@@ -8045,7 +8045,7 @@ __p+='`), De
             return this.htmlEscape(n).trim()
         }
         static sanitizeName(e) {
-            return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
+            return e.replace(/[^A-Z\u2E80-\u9FFF0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
         }
         static sanitizeInput(e) {
             return e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
@@ -8328,7 +8328,7 @@ __p+='`), De
                     };
 
                 function V(z) {
-                    if (typeof z != "string" && (z = String(z)), /[^a-z0-9\-#$%&'*+.^_`|~]/i.test(z)) throw new TypeError("Invalid character in header field name");
+                    if (typeof z != "string" && (z = String(z)), /[^A-Z\u2E80-\u9FFF0-9\-#$%&'*+.^_`|~]/i.test(z)) throw new TypeError("Invalid character in header field name");
                     return z.toLowerCase()
                 }
 
@@ -11676,8 +11676,8 @@ __p+='`), De
                     stringify: V,
                     parse: Y
                 },
-                K = /^[A-Za-z][A-Za-z0-9+-.]*:\/\//,
-                re = /^([a-z][a-z0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
+                K = /^[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF][A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9+-.]*:\/\//,
+                re = /^([A-Z\u2E80-\u9FFF][A-Z\u2E80-\u9FFF0-9.+-]*:)?(\/\/)?([\\/]+)?([\S\s]*)/i,
                 v = "[\\x09\\x0A\\x0B\\x0C\\x0D\\x20\\xA0\\u1680\\u180E\\u2000\\u2001\\u2002\\u2003\\u2004\\u2005\\u2006\\u2007\\u2008\\u2009\\u200A\\u202F\\u205F\\u3000\\u2028\\u2029\\uFEFF]",
                 P = new RegExp("^" + v + "+");
 
@@ -12904,7 +12904,7 @@ __p+='`), De
                     };
                     if (v.find("*").remove(), e.isString(f)) {
                         var lt = window;
-                        f.indexOf("this.") === 0 && (lt = this), f = f.replace(/^[a-z]*\.(.+)$/, "$1"), se = d(lt, f)
+                        f.indexOf("this.") === 0 && (lt = this), f = f.replace(/^[A-Z\u2E80-\u9FFF]*\.(.+)$/, "$1"), se = d(lt, f)
                     } else e.isFunction(f) ? se = m.call(this, f, v, ae) : se = f;
                     if (se instanceof n.Collection) {
                         var Ve = se,
@@ -14555,8 +14555,8 @@ __p+='`), De
                     })
                 };
             var ks = {
-                email: (c, h) => /^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9.-]+\.[a-zA-Z0-9-]{2,24}$/.test(c) ? Promise.resolve() : Promise.resolve(h || "Invalid email address"),
-                url: (c, h) => /^https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-z]{2,63}\b([-a-zA-Z0-9@:%_+.~#?&/=]*)$/.test(c) ? Promise.resolve() : Promise.resolve(h || "Invalid URL")
+                email: (c, h) => /^[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9.+_-]+@[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9.-]+\.[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9-]{2,24}$/.test(c) ? Promise.resolve() : Promise.resolve(h || "Invalid email address"),
+                url: (c, h) => /^https?:\/\/(www\.)?[-A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9@:%._+~#=]{1,256}\.[A-Z\u2E80-\u9FFF]{2,63}\b([-A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9@:%_+.~#?&/=]*)$/.test(c) ? Promise.resolve() : Promise.resolve(h || "Invalid URL")
             };
 
             function Fo(c) {
@@ -17267,9 +17267,9 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 })
             },
             activateContentIdFromInput(t) {
-                (t.getSanitizedValue().replace(/[^A-Za-z]/gi, "").toUpperCase() || "").length < 7 || (this.triggerMethod("client:message", {
+                (t.getSanitizedValue().replace(/[^A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]/gi, "").toUpperCase() || "").length < 7 || (this.triggerMethod("client:message", {
                     activateContentId: !0,
-                    contentId: t.getSanitizedValue().replace(/[^A-Za-z]/gi, "").toUpperCase()
+                    contentId: t.getSanitizedValue().replace(/[^A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]/gi, "").toUpperCase()
                 }), kt.close())
             },
             onChildviewChildviewCharacterClick(t) {
@@ -20826,8 +20826,8 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
         t.mask = {
             definitions: {
                 9: "[0-9]",
-                a: "[A-Za-z]",
-                "*": "[A-Za-z0-9]"
+                a: "[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]",
+                "*": "[A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF0-9]"
             },
             autoclear: !0,
             dataName: "rawMaskFn",
@@ -22374,7 +22374,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
             },
             lobbyUgcSubmit() {
                 let t = this.sanitize(this.$el.find("#lobby-ugc-input").val());
-                return t = t.replace(/[^A-Za-z]/gi, ""), t = t.toUpperCase(), this.activateContentId(t), !1
+                return t = t.replace(/[^A-Z\u2E80-\u9FFFA-Z\u2E80-\u9FFF]/gi, ""), t = t.toUpperCase(), this.activateContentId(t), !1
             },
             activateContentId(t) {
                 return t.length && this.client.send("SendMessageToRoomOwner", {
@@ -22630,7 +22630,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 return Mt.htmlEscape(e).trim()
             },
             sanitizeInput(t) {
-                return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF!?*$+\-’'_ .,=<>:;]/gi, "")
+                return t.replace(/[^A-Z\u2E80-\u9FFF0-9\u00A1\u0020-\u002F\u00BF-\u00FF!?*$+\-’'_ .,=<>:;]/gi, "")
             },
             validateInput(t) {
                 const e = be(t.target);
