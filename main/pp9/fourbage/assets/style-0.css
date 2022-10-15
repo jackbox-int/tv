@@ -2874,7 +2874,7 @@ body {
     text-transform: uppercase
 }
 
-.post-game[data-v-37fbb3ed] {
+.post-game[data-v-50e222ba] {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -2882,28 +2882,29 @@ body {
     align-items: center
 }
 
-.post-game .artifact-link[data-v-37fbb3ed] {
-    border-radius: 10px;
-    background-image: url(1639ee15.png);
+.post-game .flavor-image[data-v-50e222ba] {
+    position: absolute;
+    bottom: 0px
+}
+
+.post-game .artifact-link[data-v-50e222ba] {
+    z-index: 2;
+    background-image: url(dd3d9bca.png);
     background-size: 85% 75%
 }
 
-.post-game .spacer[data-v-37fbb3ed] {
-    flex: 1
-}
-
-.post-game .postgame-controls[data-v-37fbb3ed] {
+.post-game .postgame-controls[data-v-50e222ba] {
+    z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center
 }
 
-.post-game[data-v-37fbb3ed] .postgame-controls {
-    width: 85%;
-    margin-bottom: 15px
+.post-game[data-v-50e222ba] .postgame-controls {
+    width: 85%
 }
 
-.post-game[data-v-37fbb3ed] .postgame-controls .message {
+.post-game[data-v-50e222ba] .postgame-controls .message {
     font-family: SofiaPro-Light;
     color: #000;
     font-size: 24px;
@@ -2914,7 +2915,7 @@ body {
     margin-bottom: 25px
 }
 
-.post-game[data-v-37fbb3ed] .postgame-controls .status {
+.post-game[data-v-50e222ba] .postgame-controls .status {
     width: 234px;
     font-family: SofiaPro-Black;
     color: #fff;
@@ -2926,7 +2927,7 @@ body {
     margin-bottom: 20px
 }
 
-.post-game[data-v-37fbb3ed] .postgame-controls button.action {
+.post-game[data-v-50e222ba] .postgame-controls button.action {
     border-radius: 10px;
     font-family: SofiaPro-Black;
     background-color: #000;
@@ -3037,7 +3038,7 @@ body {
     margin-bottom: 25px
 }
 
-.writing[data-v-fab537e3] {
+.writing[data-v-705cacaa] {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -3045,13 +3046,17 @@ body {
     align-items: center
 }
 
-.writing .error-bubble[data-v-fab537e3] {
+.writing .primary-button[data-v-705cacaa] {
+    text-transform: uppercase
+}
+
+.writing .error-bubble[data-v-705cacaa] {
     width: 85%;
     margin-top: -25px;
     margin-bottom: 10px
 }
 
-.writing .error-container[data-v-fab537e3] {
+.writing .error-container[data-v-705cacaa] {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -3060,11 +3065,11 @@ body {
     padding-right: 20px
 }
 
-.writing .error-container .warning-icon[data-v-fab537e3] {
+.writing .error-container .warning-icon[data-v-705cacaa] {
     height: 100%
 }
 
-.writing .error-container .error-text[data-v-fab537e3] {
+.writing .error-container .error-text[data-v-705cacaa] {
     margin: 10px;
     font-size: 20px;
     line-height: 90.2%;
@@ -3072,15 +3077,15 @@ body {
     text-align: left
 }
 
-.writing .error-container .error-text.truth-error[data-v-fab537e3] {
+.writing .error-container .error-text.truth-error[data-v-705cacaa] {
     color: #ffd233
 }
 
-.writing .error-container .error-text.profanity-error[data-v-fab537e3] {
+.writing .error-container .error-text.profanity-error[data-v-705cacaa] {
     color: #ff3e4e
 }
 
-.writing .button-separator[data-v-fab537e3] {
+.writing .button-separator[data-v-705cacaa] {
     font-size: 22px;
     line-height: 98.2%;
     letter-spacing: -.045em;
@@ -3089,7 +3094,7 @@ body {
     margin-bottom: 20px
 }
 
-.writing .separator[data-v-fab537e3] {
+.writing .separator[data-v-705cacaa] {
     font-family: SofiaPro-Black;
     color: #000;
     font-size: 30px;
@@ -3099,7 +3104,7 @@ body {
     text-align: left
 }
 
-.writing .joiner[data-v-fab537e3] {
+.writing .joiner[data-v-705cacaa] {
     font-family: SofiaPro-Black;
     color: #000;
     font-size: 21px;

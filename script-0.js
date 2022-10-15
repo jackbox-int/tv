@@ -10540,16 +10540,16 @@ Url: ${nr(t)}`), !0)
         nw = 1,
         iw = {
             branch: "main",
-            sha: "8ee62445bb9e7d61167c20db61a117ffd6a43fd6",
-            lastUpdated: 1665095156850,
-            version: "5.38.0",
+            sha: "106452c3b1baabf6f67866af10c86510d03f9c67",
+            lastUpdated: 1665680642726,
+            version: "5.40.0",
             type: "production"
         },
         aw = {
             main: {
-                sha: "8ee62445bb9e7d61167c20db61a117ffd6a43fd6",
-                lastUpdated: 1665095156850,
-                version: "5.38.0",
+                sha: "106452c3b1baabf6f67866af10c86510d03f9c67",
+                lastUpdated: 1665680642726,
+                version: "5.40.0",
                 type: "production",
                 bundles: {
                     "@connect": {
@@ -10868,13 +10868,13 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/fourbage",
-                        version: "5.37.0"
+                        version: "5.40.0"
                     },
                     htmf: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/htmf",
-                        version: "5.33.0"
+                        version: "5.39.0"
                     },
                     lineup: {
                         file: "script.js",
@@ -10913,4 +10913,4 @@ Url: ${nr(t)}`), !0)
     tw()
 });
 export default ow();
-//# sourceMappingURL=f020853e.js.map
+//# sourceMappingURL=ad1b8c11.js.map
