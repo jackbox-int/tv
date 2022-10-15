@@ -25335,32 +25335,32 @@ ${t}`
             UMBRELLA: "What an unexpected surprise!"
         },
         Fte = {
-            BUTTON_FIGHT: "Fight",
-            QUOTE_CHANGE: "Change",
-            QUOTE_LABEL: "Victory Quote",
-            QUOTE_SET: "Set"
+            BUTTON_FIGHT: "战斗",
+            QUOTE_CHANGE: "更改",
+            QUOTE_LABEL: "获胜名言",
+            QUOTE_SET: "设置"
         },
         Gte = {
             INSTRUCTION: {
-                DRAWING: "Choose a drawing",
-                SLOGAN: "Choose a slogan"
+                DRAWING: "选择图画",
+                SLOGAN: "选择口号"
             }
         },
         jte = {
             INSTRUCTION: {
-                DRAWING: "What would you like to see drawn?",
-                WRITING: "What should the players write?"
+                DRAWING: "你想看见什么样的图画？",
+                WRITING: "玩家们应该写点什么？"
             }
         },
         $te = {
-            INSTRUCTION: "Pick your favorite!",
-            THANKS: "Thanks for voting! Your choice:"
+            INSTRUCTION: "选择你的最爱！",
+            THANKS: "感谢你的投票！你选择的是："
         },
         Vte = {
-            INSTRUCTION: "Waiting for other players to finish!"
+            INSTRUCTION: "等待其他玩家结束！"
         },
         Wte = {
-            INSTRUCTION: "Write something funny, or clever, or anything at all!"
+            INSTRUCTION: "写点搞怪的，机智的，或者随便来点什么吧！"
         },
         Hte = {
             SUGGESTION: Pte,
