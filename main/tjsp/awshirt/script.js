@@ -10609,24 +10609,24 @@ ${r.message}`,
     let jl = Za;
     ce(jl, "isPolyfilled", !1);
     const Nj = {
-            BACK: "Back",
-            CANCEL: "Cancel",
-            CLOSE: "Close",
-            CONFIRM: "Confirm",
-            CREATE: "Create",
-            DELETE: "Delete",
-            DONE: "Done",
-            EDIT: "Edit",
-            OK: "OK",
-            NO: "No",
-            PLAY: "Play",
-            PUBLISH: "Publish",
-            REMOVE: "Remove",
-            RESET: "Reset",
-            SUBMIT: "Submit",
-            TRY_AGAIN: "Try Again",
-            UNDO: "Undo",
-            YES: "Yes"
+            BACK: "返回",
+            CANCEL: "取消",
+            CLOSE: "关闭",
+            CONFIRM: "确认",
+            CREATE: "创建",
+            DELETE: "删除",
+            DONE: "完成",
+            EDIT: "编辑",
+            OK: "确认",
+            NO: "否",
+            PLAY: "游玩",
+            PUBLISH: "发布",
+            REMOVE: "移除",
+            RESET: "重置",
+            SUBMIT: "提交",
+            TRY_AGAIN: "重试",
+            UNDO: "撤销",
+            YES: "是"
         },
         Mj = {
             UGC: {
@@ -10637,42 +10637,42 @@ ${r.message}`,
             }
         },
         Dj = {
-            DISCONNECTED: "You have been disconnected.",
-            DRAWING_NOTHING: "You have to draw something!",
-            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-            ROOM_DESTROYED: "Thanks for playing!",
-            ROOM_DISCONNECTED: "Disconnected",
-            TEXT_NAUGHTY: "I\u2019m afraid you can\u2019t write that. Please be respectful of other players.",
-            TEXT_NOTHING: "You can\u2019t enter nothing!",
-            TITLE: "Error"
+            DISCONNECTED: "你已断开连接。",
+            DRAWING_NOTHING: "你必须得画点东西！",
+            PLAYER_KICKED: "你已被一名房管踢出了游戏。",
+            ROOM_DESTROYED: "感谢游玩！",
+            ROOM_DISCONNECTED: "断开连接",
+            TEXT_NAUGHTY: "很遗憾，但你不可以写那个。请尊重其他玩家。",
+            TEXT_NOTHING: "你不可以什么都不写！",
+            TITLE: "错误"
         },
         kj = "LOADING",
         Pj = {
-            JOINED_COUNT: "x | {count} of {maxPlayers} players joined | {count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "x | {count} player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "x | 已有 {count} / {maxPlayers} 个玩家加入 | 已有 {count} / {maxPlayers} 个玩家加入",
+            PLAYERS_NEEDED: "x | 还需 {count} 名玩家才能开始 | 还需 {count} 名玩家才能开始",
+            WAITING_FOR_VIP: "等待{name}开始游戏",
+            WAITING_FOR_GAMEPAD: "等待游戏开始",
+            GAME_STARTING: "游戏正在开始中",
+            BUTTON_START: "按下以开始",
+            BUTTON_CANCEL: "按下以取消"
         },
         Bj = {
-            GALLERY_LINK: "Visit the Gallery",
-            PLAY_AGAIN: "Play again?",
-            BUTTON_SAME_PLAYERS: "Same Players",
-            BUTTON_NEW_PLAYERS: "New Players"
+            GALLERY_LINK: "查看游戏记录库",
+            PLAY_AGAIN: "再玩一次？",
+            BUTTON_SAME_PLAYERS: "相同的玩家",
+            BUTTON_NEW_PLAYERS: "新一批玩家"
         },
         xj = {
-            AND: "AND",
-            OR: "OR"
+            AND: "和",
+            OR: "或"
         },
         Uj = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let\u2019s Go!"
+            BUTTON_SKIP: "跳过",
+            BUTTON_NEXT: "下一个",
+            BUTTON_DONE: "我们上吧！"
         },
         Fj = {
-            NAME: "AUDIENCE"
+            NAME: "观众"
         },
         Gj = {
             EPISODE_REPORT: "Report Episode",
