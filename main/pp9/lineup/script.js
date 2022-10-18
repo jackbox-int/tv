@@ -4716,7 +4716,7 @@ var Vre = yL((Yre, U1) => {
             return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
         }
         static sanitizeInput(t) {
-            return t.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
+            return t = t.replace("\u2026", "..."), t.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
         }
         static sanitizeEmoji(t) {
             return t.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -17605,22 +17605,22 @@ function print() { __p += __j.call(arguments, '') }
     }, {
         exec: ky
     });
-    var e7 = pp,
+    var e9 = pp,
         CT = Function.prototype,
         Ny = CT.apply,
         xy = CT.call,
-        t7 = typeof Reflect == "object" && Reflect.apply || (e7 ? xy.bind(Ny) : function() {
+        t9 = typeof Reflect == "object" && Reflect.apply || (e9 ? xy.bind(Ny) : function() {
             return xy.apply(Ny, arguments)
         }),
         Dy = hn,
         My = pT,
-        n7 = Ip,
+        n9 = Ip,
         Fy = Un,
         $T = cs,
-        r7 = _p,
-        i7 = $T("species"),
+        r9 = _p,
+        i9 = $T("species"),
         Qf = RegExp.prototype,
-        s7 = function(e, t, n, r) {
+        s9 = function(e, t, n, r) {
             var s = $T(e),
                 a = !Fy(function() {
                     var h = {};
@@ -17631,7 +17631,7 @@ function print() { __p += __j.call(arguments, '') }
                 l = a && !Fy(function() {
                     var h = !1,
                         v = /a/;
-                    return e === "split" && (v = {}, v.constructor = {}, v.constructor[i7] = function() {
+                    return e === "split" && (v = {}, v.constructor = {}, v.constructor[i9] = function() {
                         return v
                     }, v.flags = "", v[s] = /./ [s]), v.exec = function() {
                         return h = !0, null
@@ -17642,7 +17642,7 @@ function print() { __p += __j.call(arguments, '') }
                     d = t(s, "" [e], function(h, v, f, p, m) {
                         var E = Dy(h),
                             w = v.exec;
-                        return w === n7 || w === Qf.exec ? a && !m ? {
+                        return w === n9 || w === Qf.exec ? a && !m ? {
                             done: !0,
                             value: c(v, f, p)
                         } : {
@@ -17654,80 +17654,80 @@ function print() { __p += __j.call(arguments, '') }
                     });
                 My(String.prototype, e, d[0]), My(Qf, s, d[1])
             }
-            r && r7(Qf[s], "sham", !0)
+            r && r9(Qf[s], "sham", !0)
         },
         Cp = hn,
-        a7 = Gc,
-        o7 = jc,
-        l7 = _o,
-        c7 = Cp("".charAt),
+        a9 = Gc,
+        o9 = jc,
+        l9 = _o,
+        c9 = Cp("".charAt),
         By = Cp("".charCodeAt),
-        u7 = Cp("".slice),
+        u9 = Cp("".slice),
         Uy = function(e) {
             return function(t, n) {
-                var r = o7(l7(t)),
-                    s = a7(n),
+                var r = o9(l9(t)),
+                    s = a9(n),
                     a = r.length,
                     l, c;
-                return s < 0 || s >= a ? e ? "" : void 0 : (l = By(r, s), l < 55296 || l > 56319 || s + 1 === a || (c = By(r, s + 1)) < 56320 || c > 57343 ? e ? c7(r, s) : l : e ? u7(r, s, s + 2) : (l - 55296 << 10) + (c - 56320) + 65536)
+                return s < 0 || s >= a ? e ? "" : void 0 : (l = By(r, s), l < 55296 || l > 56319 || s + 1 === a || (c = By(r, s + 1)) < 56320 || c > 57343 ? e ? c9(r, s) : l : e ? u9(r, s, s + 2) : (l - 55296 << 10) + (c - 56320) + 65536)
             }
         },
-        f7 = {
+        f9 = {
             codeAt: Uy(!1),
             charAt: Uy(!0)
         },
-        d7 = f7.charAt,
-        h7 = function(e, t, n) {
-            return t + (n ? d7(e, t).length : 1)
+        d9 = f9.charAt,
+        h9 = function(e, t, n) {
+            return t + (n ? d9(e, t).length : 1)
         },
         Gy = bi,
-        p7 = us,
-        g7 = In,
-        m7 = Mc,
-        v7 = Ip,
-        _7 = TypeError,
-        y7 = function(e, t) {
+        p9 = us,
+        g9 = In,
+        m9 = Mc,
+        v9 = Ip,
+        _9 = TypeError,
+        y9 = function(e, t) {
             var n = e.exec;
-            if (g7(n)) {
+            if (g9(n)) {
                 var r = Gy(n, e, t);
-                return r !== null && p7(r), r
+                return r !== null && p9(r), r
             }
-            if (m7(e) === "RegExp") return Gy(v7, e, t);
-            throw _7("RegExp#exec called on incompatible receiver")
+            if (m9(e) === "RegExp") return Gy(v9, e, t);
+            throw _9("RegExp#exec called on incompatible receiver")
         },
-        O7 = t7,
+        O9 = t9,
         jy = bi,
         Hc = hn,
-        b7 = s7,
-        E7 = Un,
-        T7 = us,
-        S7 = In,
-        w7 = Gc,
-        A7 = mT,
+        b9 = s9,
+        E9 = Un,
+        T9 = us,
+        S9 = In,
+        w9 = Gc,
+        A9 = mT,
         Cs = jc,
-        I7 = _o,
-        C7 = h7,
-        $7 = gp,
-        P7 = ET,
-        L7 = y7,
-        R7 = cs,
-        qd = R7("replace"),
-        k7 = Math.max,
-        N7 = Math.min,
-        x7 = Hc([].concat),
+        I9 = _o,
+        C9 = h9,
+        $9 = gp,
+        P9 = ET,
+        L9 = y9,
+        R9 = cs,
+        qd = R9("replace"),
+        k9 = Math.max,
+        N9 = Math.min,
+        x9 = Hc([].concat),
         ed = Hc([].push),
         Wy = Hc("".indexOf),
         Hy = Hc("".slice),
-        D7 = function(e) {
+        D9 = function(e) {
             return e === void 0 ? e : String(e)
         },
-        M7 = function() {
+        M9 = function() {
             return "a".replace(/./, "$0") === "$0"
         }(),
         Vy = function() {
             return /./ [qd] ? /./ [qd]("a", "$0") === "" : !1
         }(),
-        F7 = !E7(function() {
+        F9 = !E9(function() {
             var e = /./;
             return e.exec = function() {
                 var t = [];
@@ -17736,20 +17736,20 @@ function print() { __p += __j.call(arguments, '') }
                 }, t
             }, "".replace(e, "$<a>") !== "7"
         });
-    b7("replace", function(e, t, n) {
+    b9("replace", function(e, t, n) {
         var r = Vy ? "$" : "$0";
         return [function(a, l) {
-            var c = I7(this),
-                d = a == null ? void 0 : $7(a, qd);
+            var c = I9(this),
+                d = a == null ? void 0 : $9(a, qd);
             return d ? jy(d, a, c, l) : jy(t, Cs(c), a, l)
         }, function(s, a) {
-            var l = T7(this),
+            var l = T9(this),
                 c = Cs(s);
             if (typeof a == "string" && Wy(a, r) === -1 && Wy(a, "$<") === -1) {
                 var d = n(t, l, c, a);
                 if (d.done) return d.value
             }
-            var h = S7(a);
+            var h = S9(a);
             h || (a = Cs(a));
             var v = l.global;
             if (v) {
@@ -17757,40 +17757,40 @@ function print() { __p += __j.call(arguments, '') }
                 l.lastIndex = 0
             }
             for (var p = [];;) {
-                var m = L7(l, c);
+                var m = L9(l, c);
                 if (m === null || (ed(p, m), !v)) break;
                 var E = Cs(m[0]);
-                E === "" && (l.lastIndex = C7(c, A7(l.lastIndex), f))
+                E === "" && (l.lastIndex = C9(c, A9(l.lastIndex), f))
             }
             for (var w = "", C = 0, b = 0; b < p.length; b++) {
                 m = p[b];
-                for (var x = Cs(m[0]), j = k7(N7(w7(m.index), c.length), 0), G = [], W = 1; W < m.length; W++) ed(G, D7(m[W]));
+                for (var x = Cs(m[0]), j = k9(N9(w9(m.index), c.length), 0), G = [], W = 1; W < m.length; W++) ed(G, D9(m[W]));
                 var Z = m.groups;
                 if (h) {
-                    var se = x7([x], G, j, c);
+                    var se = x9([x], G, j, c);
                     Z !== void 0 && ed(se, Z);
-                    var ue = Cs(O7(a, void 0, se))
-                } else ue = P7(x, c, j, G, Z, a);
+                    var ue = Cs(O9(a, void 0, se))
+                } else ue = P9(x, c, j, G, Z, a);
                 j >= C && (w += Hy(c, C, j) + ue, C = j + x.length)
             }
             return w + Hy(c, C)
         }]
-    }, !F7 || !M7 || Vy);
-    var B7 = Bn,
-        U7 = hn,
-        G7 = function(e, t) {
-            return U7(B7[e].prototype[t])
+    }, !F9 || !M9 || Vy);
+    var B9 = Bn,
+        U9 = hn,
+        G9 = function(e, t) {
+            return U9(B9[e].prototype[t])
         },
-        j7 = G7,
-        W7 = j7("String", "replaceAll"),
-        H7 = W7,
-        V7 = H7,
-        K7 = V7,
-        Y7 = K7,
-        q7 = Y7,
-        X7 = q7;
+        j9 = G9,
+        W9 = j9("String", "replaceAll"),
+        H9 = W9,
+        V9 = H9,
+        K9 = V9,
+        Y9 = K9,
+        q9 = Y9,
+        X9 = q9;
     (function(e) {
-        e.exports = X7
+        e.exports = X9
     })(l5);
     qe({
         props: {
@@ -17918,7 +17918,7 @@ function print() { __p += __j.call(arguments, '') }
     });
     Kc.Tokenizer = void 0;
     var ri = $p,
-        z7 = function() {
+        z9 = function() {
             function e(t) {
                 this.tags = t
             }
@@ -17951,7 +17951,7 @@ function print() { __p += __j.call(arguments, '') }
                 return new ri.Token(ri.Token.Type.endTag, t[1].substr(1, t[1].length - 1))
             }, e.nameChars = "[a-zA-Z0-9\\.\\-_:;/]", e.valueChars = "[a-zA-Z0-9\\.\\-_:;#/\\s]", e
         }();
-    Kc.Tokenizer = z7;
+    Kc.Tokenizer = z9;
     (function(e) {
         Object.defineProperty(e, "__esModule", {
             value: !0
@@ -18022,7 +18022,7 @@ function print() { __p += __j.call(arguments, '') }
         value: !0
     });
     bo.Tag = void 0;
-    var J7 = function() {
+    var J9 = function() {
         function e(t) {
             var n;
             this.tagName = t.tagName, this.insertLineBreaks = t.insertLineBreaks, this.suppressLineBreaks = t.suppressLineBreaks, this.noNesting = t.noNesting, this.markupGenerator = (n = t.markupGenerator) !== null && n !== void 0 ? n : function(r, s) {
@@ -18040,14 +18040,14 @@ function print() { __p += __j.call(arguments, '') }
             })
         }, e
     }();
-    bo.Tag = J7;
+    bo.Tag = J9;
     Object.defineProperty(Vc, "__esModule", {
         value: !0
     });
     Vc.BBCodeParser = void 0;
     var Ky = PT,
         Yy = bo,
-        Z7 = function() {
+        Z9 = function() {
             function e(t, n) {
                 this.options = n, this.escapeHTML = !1, this.tags = t, n && (this.escapeHTML = n.escapeHTML)
             }
@@ -18092,7 +18092,7 @@ function print() { __p += __j.call(arguments, '') }
                 ">": "&gt;"
             }, e
         }();
-    Vc.BBCodeParser = Z7;
+    Vc.BBCodeParser = Z9;
     (function(e) {
         Object.defineProperty(e, "__esModule", {
             value: !0
@@ -18112,7 +18112,7 @@ function print() { __p += __j.call(arguments, '') }
             }
         })
     })(Wi);
-    const Q7 = {
+    const Q9 = {
         install: e => {
             const t = {
                 section: Wi.Tag.create("section", (a, l, {
@@ -18223,8 +18223,8 @@ function print() { __p += __j.call(arguments, '') }
             }, s.init()
         })
     })(LT);
-    const e9 = LT.exports,
-        t9 = qe({
+    const e7 = LT.exports,
+        t7 = qe({
             data() {
                 return {
                     showPowerNav: !1
@@ -18274,43 +18274,43 @@ function print() { __p += __j.call(arguments, '') }
             }
         }),
         Hr = e => (fo("data-v-220ec4c0"), e = e(), ho(), e),
-        n9 = {
+        n7 = {
             key: 0,
             ref: "debugNav",
             class: "debug-nav",
             tabindex: "0"
         },
-        r9 = {
+        r7 = {
             key: 0,
             class: "power-nav"
         },
-        i9 = Hr(() => X("p", null, "MARKERS", -1)),
-        s9 = ["onClick"],
-        a9 = Gr("KILL"),
-        o9 = Hr(() => X("br", null, null, -1)),
-        l9 = Gr("ROOM"),
-        c9 = [a9, o9, l9],
-        u9 = Hr(() => X("p", {
+        i7 = Hr(() => X("p", null, "MARKERS", -1)),
+        s7 = ["onClick"],
+        a7 = Gr("KILL"),
+        o7 = Hr(() => X("br", null, null, -1)),
+        l7 = Gr("ROOM"),
+        c7 = [a7, o7, l7],
+        u7 = Hr(() => X("p", {
             class: "title blurred"
         }, "DEBUG", -1)),
-        f9 = {
+        f7 = {
             key: 1,
             class: "title focused"
         },
-        d9 = {
+        d7 = {
             key: 2,
             class: "title focused"
         },
-        h9 = Hr(() => X("svg", {
+        h7 = Hr(() => X("svg", {
             viewBox: "0 0 20 10"
         }, [X("polygon", {
             points: "0,10 10,0 20,10"
         })], -1)),
-        p9 = Hr(() => X("div", {
+        p7 = Hr(() => X("div", {
             class: "visually-hidden"
         }, "Open debug menu", -1)),
-        g9 = [h9, p9],
-        m9 = Hr(() => X("svg", {
+        g7 = [h7, p7],
+        m7 = Hr(() => X("svg", {
             viewBox: "0 0 60 50"
         }, [X("polygon", {
             class: "outline",
@@ -18318,11 +18318,11 @@ function print() { __p += __j.call(arguments, '') }
         }), X("polygon", {
             points: "40,35.6 20,25 40,14.4"
         })], -1)),
-        v9 = Hr(() => X("div", {
+        v7 = Hr(() => X("div", {
             class: "visually-hidden"
         }, "Previous", -1)),
-        _9 = [m9, v9],
-        y9 = Hr(() => X("svg", {
+        _7 = [m7, v7],
+        y7 = Hr(() => X("svg", {
             viewBox: "0 0 60 50"
         }, [X("polygon", {
             class: "outline",
@@ -18330,110 +18330,110 @@ function print() { __p += __j.call(arguments, '') }
         }), X("polygon", {
             points: "40,35.6 20,25 40,14.4"
         })], -1)),
-        O9 = Hr(() => X("div", {
+        O7 = Hr(() => X("div", {
             class: "visually-hidden"
         }, "Next", -1)),
-        b9 = [y9, O9];
+        b7 = [y7, O7];
 
-    function E9(e, t, n, r, s, a) {
-        return e.replayer ? (Y(), J("div", n9, [e.showPowerNav ? (Y(), J("div", r9, [X("button", {
+    function E7(e, t, n, r, s, a) {
+        return e.replayer ? (Y(), J("div", n7, [e.showPowerNav ? (Y(), J("div", r7, [X("button", {
             class: "close",
             onClick: t[0] || (t[0] = (...l) => e.onClosePowerNavClick && e.onClosePowerNavClick(...l))
-        }, "X"), i9, X("ul", null, [(Y(!0), J(ze, null, Ar(e.replayer.markerMap, (l, c) => (Y(), J("li", {
+        }, "X"), i7, X("ul", null, [(Y(!0), J(ze, null, Ar(e.replayer.markerMap, (l, c) => (Y(), J("li", {
             key: c,
             class: he({
                 active: c === e.replayer.currentMarkerItemIndex
             }),
             onClick: d => e.onMarkerClick(c)
-        }, ht(l[1].marker), 11, s9))), 128))]), X("button", {
+        }, ht(l[1].marker), 11, s7))), 128))]), X("button", {
             class: "option",
             onClick: t[1] || (t[1] = (...l) => e.onKillClick && e.onKillClick(...l))
-        }, c9), X("button", {
+        }, c7), X("button", {
             class: "option",
             onClick: t[2] || (t[2] = (...l) => e.onDisconnectClick && e.onDisconnectClick(...l))
-        }, "DISCONNECT")])) : Ie("", !0), u9, e.replayer.markerMap.length ? (Y(), J("p", d9, ht(e.replayer.currentMarkerItemIndex) + " : " + ht(e.replayer.currentMarkerItem[1].marker) + " (" + ht(e.replayer.currentEntityItemIndex) + ") ", 1)) : (Y(), J("p", f9, "Item #" + ht(e.replayer.currentEntityItemIndex), 1)), e.showPowerNav ? Ie("", !0) : (Y(), J("button", {
+        }, "DISCONNECT")])) : Ie("", !0), u7, e.replayer.markerMap.length ? (Y(), J("p", d7, ht(e.replayer.currentMarkerItemIndex) + " : " + ht(e.replayer.currentMarkerItem[1].marker) + " (" + ht(e.replayer.currentEntityItemIndex) + ") ", 1)) : (Y(), J("p", f7, "Item #" + ht(e.replayer.currentEntityItemIndex), 1)), e.showPowerNav ? Ie("", !0) : (Y(), J("button", {
             key: 3,
             class: "open-power-nav",
             onClick: t[3] || (t[3] = (...l) => e.onOpenPowerNavClick && e.onOpenPowerNavClick(...l))
-        }, g9)), X("button", {
+        }, g7)), X("button", {
             class: "direction previous",
             onClick: t[4] || (t[4] = (...l) => e.onPreviousClick && e.onPreviousClick(...l))
-        }, _9), X("button", {
+        }, _7), X("button", {
             class: "direction next",
             onClick: t[5] || (t[5] = (...l) => e.onNextClick && e.onNextClick(...l))
-        }, b9)], 512)) : Ie("", !0)
+        }, b7)], 512)) : Ie("", !0)
     }
-    const T9 = rt(t9, [
-        ["render", E9],
+    const T7 = rt(t7, [
+        ["render", E7],
         ["__scopeId", "data-v-220ec4c0"]
     ]);
 
-    function S9(e, t) {
+    function S7(e, t) {
         for (var n = -1, r = e == null ? 0 : e.length; ++n < r && t(e[n], n, e) !== !1;);
         return e
     }
-    var w9 = S9,
-        A9 = vE,
-        I9 = A9(Object.keys, Object),
-        C9 = I9,
-        $9 = Kh,
-        P9 = C9,
-        L9 = Object.prototype,
-        R9 = L9.hasOwnProperty;
+    var w7 = S7,
+        A7 = vE,
+        I7 = A7(Object.keys, Object),
+        C7 = I7,
+        $7 = Kh,
+        P7 = C7,
+        L7 = Object.prototype,
+        R7 = L7.hasOwnProperty;
 
-    function k9(e) {
-        if (!$9(e)) return P9(e);
+    function k7(e) {
+        if (!$7(e)) return P7(e);
         var t = [];
-        for (var n in Object(e)) R9.call(e, n) && n != "constructor" && t.push(n);
+        for (var n in Object(e)) R7.call(e, n) && n != "constructor" && t.push(n);
         return t
     }
-    var N9 = k9,
-        x9 = wE,
-        D9 = N9,
-        M9 = kc;
+    var N7 = k7,
+        x7 = wE,
+        D7 = N7,
+        M7 = kc;
 
-    function F9(e) {
-        return M9(e) ? x9(e) : D9(e)
+    function F7(e) {
+        return M7(e) ? x7(e) : D7(e)
     }
-    var Yc = F9,
-        B9 = po,
-        U9 = Yc;
+    var Yc = F7,
+        B7 = po,
+        U7 = Yc;
 
-    function G9(e, t) {
-        return e && B9(t, U9(t), e)
+    function G7(e, t) {
+        return e && B7(t, U7(t), e)
     }
-    var j9 = G9,
-        W9 = po,
-        H9 = go;
+    var j7 = G7,
+        W7 = po,
+        H7 = go;
 
-    function V9(e, t) {
-        return e && W9(t, H9(t), e)
+    function V7(e, t) {
+        return e && W7(t, H7(t), e)
     }
-    var K9 = V9;
+    var K7 = V7;
 
-    function Y9(e, t) {
+    function Y7(e, t) {
         for (var n = -1, r = e == null ? 0 : e.length, s = 0, a = []; ++n < r;) {
             var l = e[n];
             t(l, n, e) && (a[s++] = l)
         }
         return a
     }
-    var q9 = Y9;
+    var q7 = Y7;
 
-    function X9() {
+    function X7() {
         return []
     }
-    var RT = X9,
-        z9 = q9,
-        J9 = RT,
-        Z9 = Object.prototype,
-        Q9 = Z9.propertyIsEnumerable,
+    var RT = X7,
+        z7 = q7,
+        J7 = RT,
+        Z7 = Object.prototype,
+        Q7 = Z7.propertyIsEnumerable,
         qy = Object.getOwnPropertySymbols,
         eK = qy ? function(e) {
-            return e == null ? [] : (e = Object(e), z9(qy(e), function(t) {
-                return Q9.call(e, t)
+            return e == null ? [] : (e = Object(e), z7(qy(e), function(t) {
+                return Q7.call(e, t)
             }))
-        } : J9,
+        } : J7,
         Pp = eK,
         tK = po,
         nK = Pp;
@@ -18662,10 +18662,10 @@ function print() { __p += __j.call(arguments, '') }
         JY = aO ? zY(aO) : XY,
         ZY = JY,
         QY = hE,
-        eq = w9,
+        eq = w7,
         tq = qh,
-        nq = j9,
-        rq = K9,
+        nq = j7,
+        rq = K7,
         iq = Jl.exports,
         sq = Hh,
         aq = iK,
@@ -18960,13 +18960,13 @@ function print() { __p += __j.call(arguments, '') }
             install: (e, t) => {
                 if (!e.config.globalProperties.$debugRecorder && !e.config.globalProperties.$debugReplayer) {
                     if (t.replayer) {
-                        e.config.globalProperties.$debugReplayer = t.replayer, e.component("Debug", T9);
+                        e.config.globalProperties.$debugReplayer = t.replayer, e.component("Debug", T7);
                         return
                     }
                     if (e.config.globalProperties.$debugRecorder = new NG(t.client, t.room), !e.config.globalProperties.$showModal) {
                         console.warn("[debugPlugin] Sending debug and feedback messages is disabled be the modalPlugin is not used.");
                         return
-                    }(!$t.isProduction || $t.getQueryParam("feedback")) && e.component("Debug", LX), new e9(() => {
+                    }(!$t.isProduction || $t.getQueryParam("feedback")) && e.component("Debug", LX), new e7(() => {
                         e.config.globalProperties.$showModal(WT)
                     })
                 }
@@ -25305,7 +25305,7 @@ ${t}`
                         locale: Bs.locale,
                         messages: Bs.mergeMessages(Z4, (h = e.messages) != null ? h : {})
                     });
-                    if (r.use(Q7), r.use(HQ), r.use(RX, {
+                    if (r.use(Q9), r.use(HQ), r.use(RX, {
                             replayer: n.replayer,
                             client: t,
                             room: n.room
@@ -26405,7 +26405,7 @@ ${t}`
     }
     const rne = rt(tne, [
             ["render", nne],
-            ["__scopeId", "data-v-4ce7a00b"]
+            ["__scopeId", "data-v-a586920a"]
         ]),
         ine = qe({
             props: {
@@ -28271,4 +28271,4 @@ ${t}`
     })
 });
 export default Vre();
-//# sourceMappingURL=d5944f4b.js.map
+//# sourceMappingURL=b597a749.js.map

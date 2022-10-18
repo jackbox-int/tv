@@ -4672,7 +4672,7 @@ var Wne = iN((Vne, wS) => {
             return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
         }
         static sanitizeInput(t) {
-            return t.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
+            return t = t.replace("\u2026", "..."), t.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
         }
         static sanitizeEmoji(t) {
             return t.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -25589,7 +25589,7 @@ ${t}`
                 unselected: e.selected.length > 0 && e.selected.indexOf(y) === -1 && e.player.context !== "pick-likes"
             }, "primary-button choice-button"]),
             disabled: g.disabled,
-            "aria-label": e.$t("ARIA.CHOICE_BUTTON"),
+            "aria-label": g.text,
             onClick: E => e.chooseOption(y)
         }, [Z("span", jre, _t(e.$bb(g.text)), 1), e.player.context === "pick-likes" ? (H(), z(et, {
             key: 0
@@ -25603,7 +25603,7 @@ ${t}`
     }
     const Wre = ze(Dre, [
             ["render", Gre],
-            ["__scopeId", "data-v-a50b5c61"]
+            ["__scopeId", "data-v-404f1f35"]
         ]),
         Hre = it({
             components: {
@@ -25679,7 +25679,7 @@ ${t}`
                 "like-button": e.state === "liking",
                 selected: e.selection === h.key
             }, "primary-button choice-button"]),
-            "aria-label": e.$t("ARIA.CHOICE_BUTTON"),
+            "aria-label": h.text,
             onClick: y => e.submitVote(h)
         }, [Ie(Z("span", zre, null, 512), [
             [f, h.text]
@@ -26138,4 +26138,4 @@ ${t}`
     })
 });
 export default Wne();
-//# sourceMappingURL=27a662c6.js.map
+//# sourceMappingURL=232c435d.js.map

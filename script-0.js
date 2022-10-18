@@ -1078,7 +1078,7 @@ var ow = Qo((uw, Fo) => {
             return e.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
         }
         static sanitizeInput(e) {
-            return e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
+            return e = e.replace("\u2026", "..."), e.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
         }
         static sanitizeEmoji(e) {
             return e.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -10540,23 +10540,23 @@ Url: ${nr(t)}`), !0)
         nw = 1,
         iw = {
             branch: "main",
-            sha: "106452c3b1baabf6f67866af10c86510d03f9c67",
-            lastUpdated: 1665680642726,
-            version: "5.40.0",
+            sha: "f90a4c293534416e7434ed83e1205e64888949a0",
+            lastUpdated: 1666066477344,
+            version: "5.42.0",
             type: "production"
         },
         aw = {
             main: {
-                sha: "106452c3b1baabf6f67866af10c86510d03f9c67",
-                lastUpdated: 1665680642726,
-                version: "5.40.0",
+                sha: "f90a4c293534416e7434ed83e1205e64888949a0",
+                lastUpdated: 1666066477344,
+                version: "5.42.0",
                 type: "production",
                 bundles: {
                     "@connect": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@connect",
-                        version: "5.32.0"
+                        version: "5.42.0"
                     },
                     "the-wheel": {
                         file: "script.js",
@@ -10574,7 +10574,7 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@moderator",
-                        version: "5.13.0"
+                        version: "5.42.0"
                     },
                     "awshirt-tjsp": {
                         file: "script.js",
@@ -10868,7 +10868,7 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/fourbage",
-                        version: "5.40.0"
+                        version: "5.41.0"
                     },
                     htmf: {
                         file: "script.js",
@@ -10880,13 +10880,13 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/lineup",
-                        version: "5.38.0"
+                        version: "5.42.0"
                     },
                     "range-game": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/range-game",
-                        version: "5.0.0"
+                        version: "5.42.0"
                     }
                 }
             }
@@ -10913,4 +10913,4 @@ Url: ${nr(t)}`), !0)
     tw()
 });
 export default ow();
-//# sourceMappingURL=ad1b8c11.js.map
+//# sourceMappingURL=a58969d4.js.map

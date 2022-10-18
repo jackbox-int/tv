@@ -2713,7 +2713,7 @@ body {
     }
 }
 
-.post-game[data-v-4ce7a00b] {
+.post-game[data-v-a586920a] {
     position: relative;
     width: 100%;
     min-height: 100%;
@@ -2721,25 +2721,25 @@ body {
     text-align: center
 }
 
-[data-v-4ce7a00b] .post-game-actions button {
+[data-v-a586920a] .post-game-actions button {
     margin-top: 10px
 }
 
-.artifact-link[data-v-4ce7a00b] {
+.artifact-link[data-v-a586920a] {
     margin-top: 10px;
-    animation: float-4ce7a00b 3s ease-in-out infinite alternate;
+    animation: float-a586920a 3s ease-in-out infinite alternate;
     filter: drop-shadow(0 7px 1px rgba(0, 0, 0, .35))
 }
 
-.classic .artifact-link[data-v-4ce7a00b] {
+.classic .artifact-link[data-v-a586920a] {
     background-image: url(d5d67144.png)
 }
 
-.forever .artifact-link[data-v-4ce7a00b] {
+.forever .artifact-link[data-v-a586920a] {
     background-image: url(ae1e3e3e.png)
 }
 
-@keyframes float-4ce7a00b {
+@keyframes float-a586920a {
     0% {
         transform: translateY(0)
     }
