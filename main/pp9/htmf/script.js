@@ -4763,7 +4763,7 @@ var Aae = TC(($ae, W2) => {
             return t.replace(/[^A-Z0-9\u00A1\u0020-\u002F\u00BF-\u00FF\u2026!?*$+\-'_ .,]/gi, "").replace(/'/g, "\u2019")
         }
         static sanitizeInput(t) {
-            return t.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
+            return t = t.replace("\u2026", "..."), t.replace(/[^\u00A1\u0020-\u007E\u00BF-\u00FF’]/gi, "")
         }
         static sanitizeEmoji(t) {
             return t.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
@@ -25918,6 +25918,9 @@ Variations of the name you've chosen may also appear in the game.`
                     return this.$t("CHALLENGE.INSTRUCTIONS.ANSWER")
                 }
             },
+            mounted() {
+                this.$vibrate()
+            },
             methods: {
                 async onChoose(e) {
                     var t;
@@ -26110,6 +26113,9 @@ Variations of the name you've chosen may also appear in the game.`
                     return this.players[this.selectedId]
                 }
             },
+            mounted() {
+                this.$vibrate()
+            },
             methods: {
                 avatarData(e) {
                     return e.avatar ? this.avatarImages[e.avatar] : this.avatarImages.gene
@@ -26262,7 +26268,7 @@ Variations of the name you've chosen may also appear in the game.`
     }
     const ise = Ze(Gie, [
         ["render", nse],
-        ["__scopeId", "data-v-6e636dbd"]
+        ["__scopeId", "data-v-476a8bd1"]
     ]);
 
     function c_(e) {
@@ -27227,4 +27233,4 @@ Variations of the name you've chosen may also appear in the game.`
     })
 });
 export default Aae();
-//# sourceMappingURL=78bf711f.js.map
+//# sourceMappingURL=c4cbc033.js.map

@@ -3363,13 +3363,13 @@ body {
     color: red
 }
 
-.eliminating[data-v-6e636dbd] {
+.eliminating[data-v-476a8bd1] {
     display: flex;
     flex-direction: column;
     padding-bottom: 50px
 }
 
-.eliminating .player[data-v-6e636dbd] {
+.eliminating .player[data-v-476a8bd1] {
     flex-grow: 1;
     position: relative;
     width: 90%;
@@ -3378,102 +3378,102 @@ body {
     transition: height .25s, width .25s
 }
 
-.eliminating .player.selected[data-v-6e636dbd] {
+.eliminating .player.selected[data-v-476a8bd1] {
     height: 150px;
     width: 100%
 }
 
-.eliminating .player.selected .details[data-v-6e636dbd] {
+.eliminating .player.selected .details[data-v-476a8bd1] {
     height: 40px
 }
 
-.eliminating .player.selected .details .avatar[data-v-6e636dbd] {
+.eliminating .player.selected .details .avatar[data-v-476a8bd1] {
     top: -20px;
     left: -10px;
     width: 85px;
     height: 85px
 }
 
-.eliminating .player.unselected[data-v-6e636dbd] {
+.eliminating .player.unselected[data-v-476a8bd1] {
     opacity: .5
 }
 
-.eliminating .player button[data-v-6e636dbd] {
+.eliminating .player button[data-v-476a8bd1] {
     background-color: #000;
     color: #fff
 }
 
-.eliminating .player input[type=radio][data-v-6e636dbd] {
+.eliminating .player input[type=radio][data-v-476a8bd1] {
     width: auto;
     min-height: 0;
     position: fixed;
     opacity: 0
 }
 
-.eliminating .player textarea[data-v-6e636dbd] {
+.eliminating .player textarea[data-v-476a8bd1] {
     width: 100%;
     padding-top: 15px;
     color: #fff;
     font-size: 1.7rem
 }
 
-.eliminating .player textarea[data-v-6e636dbd]::placeholder {
+.eliminating .player textarea[data-v-476a8bd1]::placeholder {
     font-size: 1.7rem
 }
 
-.eliminating .player textarea.gene[data-v-6e636dbd] {
+.eliminating .player textarea.gene[data-v-476a8bd1] {
     background-color: #fff9
 }
 
-.eliminating .player textarea.blue[data-v-6e636dbd] {
+.eliminating .player textarea.blue[data-v-476a8bd1] {
     background-color: #2d309699
 }
 
-.eliminating .player textarea.brown[data-v-6e636dbd] {
+.eliminating .player textarea.brown[data-v-476a8bd1] {
     background-color: #62433f99
 }
 
-.eliminating .player textarea.cyan[data-v-6e636dbd] {
+.eliminating .player textarea.cyan[data-v-476a8bd1] {
     background-color: #057a9499
 }
 
-.eliminating .player textarea.gray[data-v-6e636dbd] {
+.eliminating .player textarea.gray[data-v-476a8bd1] {
     background-color: #5e5e5e99
 }
 
-.eliminating .player textarea.green[data-v-6e636dbd] {
+.eliminating .player textarea.green[data-v-476a8bd1] {
     background-color: #55752d99
 }
 
-.eliminating .player textarea.magenta[data-v-6e636dbd] {
+.eliminating .player textarea.magenta[data-v-476a8bd1] {
     background-color: #81005899
 }
 
-.eliminating .player textarea.orange[data-v-6e636dbd] {
+.eliminating .player textarea.orange[data-v-476a8bd1] {
     background-color: #76262199
 }
 
-.eliminating .player textarea.pink[data-v-6e636dbd] {
+.eliminating .player textarea.pink[data-v-476a8bd1] {
     background-color: #b1313999
 }
 
-.eliminating .player textarea.purple[data-v-6e636dbd] {
+.eliminating .player textarea.purple[data-v-476a8bd1] {
     background-color: #51399f99
 }
 
-.eliminating .player textarea.red[data-v-6e636dbd] {
+.eliminating .player textarea.red[data-v-476a8bd1] {
     background-color: #94000c99
 }
 
-.eliminating .player textarea.teal[data-v-6e636dbd] {
+.eliminating .player textarea.teal[data-v-476a8bd1] {
     background-color: #00647599
 }
 
-.eliminating .player textarea.yellow[data-v-6e636dbd] {
+.eliminating .player textarea.yellow[data-v-476a8bd1] {
     background-color: #8d862c99
 }
 
-.eliminating .player .confirm[data-v-6e636dbd] {
+.eliminating .player .confirm[data-v-476a8bd1] {
     display: flex;
     position: relative;
     top: -20px;
@@ -3484,7 +3484,7 @@ body {
     text-transform: uppercase
 }
 
-.eliminating .player .confirm .door[data-v-6e636dbd] {
+.eliminating .player .confirm .door[data-v-476a8bd1] {
     position: absolute;
     top: -10px;
     right: -35px;
@@ -3492,7 +3492,7 @@ body {
     height: 55px
 }
 
-.eliminating .player .details[data-v-6e636dbd] {
+.eliminating .player .details[data-v-476a8bd1] {
     display: flex;
     align-items: center;
     position: relative;
@@ -3501,14 +3501,14 @@ body {
     box-shadow: 3px 5px #00000040
 }
 
-.eliminating .player .details label[data-v-6e636dbd] {
+.eliminating .player .details label[data-v-476a8bd1] {
     position: relative;
     width: 100%;
     height: 100%;
     text-align: left
 }
 
-.eliminating .player .details .avatar[data-v-6e636dbd] {
+.eliminating .player .details .avatar[data-v-476a8bd1] {
     position: absolute;
     top: -15px;
     left: -5px;
@@ -3516,90 +3516,90 @@ body {
     height: 70px
 }
 
-.eliminating .player .details .name[data-v-6e636dbd] {
+.eliminating .player .details .name[data-v-476a8bd1] {
     margin-left: 70px;
     font-size: 3rem;
     font-weight: 700;
     line-height: 1.4
 }
 
-.eliminating .player .details .name.gene[data-v-6e636dbd] {
+.eliminating .player .details .name.gene[data-v-476a8bd1] {
     color: #666
 }
 
-.eliminating .player .details .name.audience-intro[data-v-6e636dbd] {
+.eliminating .player .details .name.audience-intro[data-v-476a8bd1] {
     color: #3eaaff
 }
 
-.eliminating .player .details .name.audience-connection[data-v-6e636dbd] {
+.eliminating .player .details .name.audience-connection[data-v-476a8bd1] {
     color: #ff93c8
 }
 
-.eliminating .player .details .name.audience-quickie[data-v-6e636dbd] {
+.eliminating .player .details .name.audience-quickie[data-v-476a8bd1] {
     color: #8f8d96
 }
 
-.eliminating .player .details .name.audience-firestarter[data-v-6e636dbd] {
+.eliminating .player .details .name.audience-firestarter[data-v-476a8bd1] {
     color: #fe983b
 }
 
-.eliminating .player .details .name.audience-finale[data-v-6e636dbd] {
+.eliminating .player .details .name.audience-finale[data-v-476a8bd1] {
     color: #2f1ca4
 }
 
-.eliminating .player .details .name.blue[data-v-6e636dbd] {
+.eliminating .player .details .name.blue[data-v-476a8bd1] {
     color: #03f
 }
 
-.eliminating .player .details .name.brown[data-v-6e636dbd] {
+.eliminating .player .details .name.brown[data-v-476a8bd1] {
     color: #874b43
 }
 
-.eliminating .player .details .name.cyan[data-v-6e636dbd] {
+.eliminating .player .details .name.cyan[data-v-476a8bd1] {
     color: #00a7bd
 }
 
-.eliminating .player .details .name.gray[data-v-6e636dbd] {
+.eliminating .player .details .name.gray[data-v-476a8bd1] {
     color: #666
 }
 
-.eliminating .player .details .name.green[data-v-6e636dbd] {
+.eliminating .player .details .name.green[data-v-476a8bd1] {
     color: #9c0
 }
 
-.eliminating .player .details .name.magenta[data-v-6e636dbd] {
+.eliminating .player .details .name.magenta[data-v-476a8bd1] {
     color: #f3008f
 }
 
-.eliminating .player .details .name.orange[data-v-6e636dbd] {
+.eliminating .player .details .name.orange[data-v-476a8bd1] {
     color: #f60
 }
 
-.eliminating .player .details .name.pink[data-v-6e636dbd] {
+.eliminating .player .details .name.pink[data-v-476a8bd1] {
     color: #ff5b66
 }
 
-.eliminating .player .details .name.purple[data-v-6e636dbd] {
+.eliminating .player .details .name.purple[data-v-476a8bd1] {
     color: #63c
 }
 
-.eliminating .player .details .name.red[data-v-6e636dbd] {
+.eliminating .player .details .name.red[data-v-476a8bd1] {
     color: #f33
 }
 
-.eliminating .player .details .name.teal[data-v-6e636dbd] {
+.eliminating .player .details .name.teal[data-v-476a8bd1] {
     color: #099
 }
 
-.eliminating .player .details .name.yellow[data-v-6e636dbd] {
+.eliminating .player .details .name.yellow[data-v-476a8bd1] {
     color: #eebd00
 }
 
-.eliminating .player .reason[data-v-6e636dbd] {
+.eliminating .player .reason[data-v-476a8bd1] {
     margin: 0 5px
 }
 
-.eliminating .player .reason.submitted[data-v-6e636dbd] {
+.eliminating .player .reason.submitted[data-v-476a8bd1] {
     min-height: 65px;
     padding: 20px;
     border: none;
@@ -3797,7 +3797,7 @@ body {
 }
 
 .post-game .artifact-link[data-v-741f8f47] {
-    background-image: url(9b2db188.png);
+    background-image: url(fd23e246.png);
     margin-top: 5px
 }
 

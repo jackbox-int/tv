@@ -25397,7 +25397,7 @@ from your past games list.`,
                 }
             }
         }),
-        ru = e => (ha("data-v-c2114873"), e = e(), pa(), e),
+        ru = e => (ha("data-v-dacd4899"), e = e(), pa(), e),
         Ute = ["href"],
         Fte = ["src", "alt"],
         Bte = {
@@ -25510,7 +25510,7 @@ from your past games list.`,
     }
     const Sw = Et(xte, [
             ["render", ine],
-            ["__scopeId", "data-v-c2114873"]
+            ["__scopeId", "data-v-dacd4899"]
         ]),
         sne = ze({
             components: {
@@ -26671,4 +26671,4 @@ from your past games list.`,
     })
 });
 export default bre();
-//# sourceMappingURL=7f6c3071.js.map
+//# sourceMappingURL=1dcbb100.js.map
