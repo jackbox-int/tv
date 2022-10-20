@@ -950,12 +950,12 @@ var Wne = iN((Vne, wS) => {
     function dc(e, t) {
         return !e || !ac(t) ? !1 : (t = t.slice(2).replace(/Once$/, ""), Qe(e, t[0].toLowerCase() + t.slice(1)) || Qe(e, as(t)) || Qe(e, t))
     }
-    let lr = null,
+    let or = null,
         hc = null;
 
     function Bl(e) {
-        const t = lr;
-        return lr = e, hc = e && e.type.__scopeId || null, t
+        const t = or;
+        return or = e, hc = e && e.type.__scopeId || null, t
     }
 
     function pc(e) {
@@ -966,7 +966,7 @@ var Wne = iN((Vne, wS) => {
         hc = null
     }
 
-    function Fs(e, t = lr, r) {
+    function Fs(e, t = or, r) {
         if (!t || e._n) return e;
         const n = (...s) => {
             n._d && kv(-1);
@@ -1089,7 +1089,7 @@ var Wne = iN((Vne, wS) => {
     }
 
     function Zi(e, t, r = !1) {
-        const n = qt || lr;
+        const n = qt || or;
         if (n) {
             const s = n.parent == null ? n.vnode.appContext && n.vnode.appContext.provides : n.parent.provides;
             if (s && e in s) return s[e];
@@ -1431,7 +1431,7 @@ var Wne = iN((Vne, wS) => {
     }
 
     function Ie(e, t) {
-        const r = lr;
+        const r = or;
         if (r === null) return e;
         const n = Tc(r) || r.proxy,
             s = e.dirs || (e.dirs = []);
@@ -1479,7 +1479,7 @@ var Wne = iN((Vne, wS) => {
     }
 
     function Ch(e, t, r = !0, n = !1) {
-        const s = lr || qt;
+        const s = or || qt;
         if (s) {
             const o = s.type;
             if (e === wh) {
@@ -1519,13 +1519,13 @@ var Wne = iN((Vne, wS) => {
     }
 
     function AE(e, t, r = {}, n, s) {
-        if (lr.isCE || lr.parent && Ma(lr.parent) && lr.parent.isCE) return nt("slot", t === "default" ? null : {
+        if (or.isCE || or.parent && Ma(or.parent) && or.parent.isCE) return nt("slot", t === "default" ? null : {
             name: t
         }, n && n());
         let o = e[t];
         o && o._c && (o._d = !1), H();
         const l = o && RE(o(r)),
-            u = cr(et, {
+            u = lr(et, {
                 key: r.key || l && l.key || `_${t}`
             }, l || (n ? n() : []), l && e._ === 1 ? 64 : -2);
         return !s && u.scopeId && (u.slotScopeIds = [u.scopeId + "-s"]), o && o._c && (o._d = !0), u
@@ -1773,20 +1773,20 @@ var Wne = iN((Vne, wS) => {
         emits: ji,
         methods: ji,
         computed: ji,
-        beforeCreate: mr,
-        created: mr,
-        beforeMount: mr,
-        mounted: mr,
-        beforeUpdate: mr,
-        updated: mr,
-        beforeDestroy: mr,
-        beforeUnmount: mr,
-        destroyed: mr,
-        unmounted: mr,
-        activated: mr,
-        deactivated: mr,
-        errorCaptured: mr,
-        serverPrefetch: mr,
+        beforeCreate: gr,
+        created: gr,
+        beforeMount: gr,
+        mounted: gr,
+        beforeUpdate: gr,
+        updated: gr,
+        beforeDestroy: gr,
+        beforeUnmount: gr,
+        destroyed: gr,
+        unmounted: gr,
+        activated: gr,
+        deactivated: gr,
+        errorCaptured: gr,
+        serverPrefetch: gr,
         components: ji,
         directives: ji,
         watch: RL,
@@ -1813,7 +1813,7 @@ var Wne = iN((Vne, wS) => {
         return e
     }
 
-    function mr(e, t) {
+    function gr(e, t) {
         return e ? [...new Set([].concat(e, t))] : t
     }
 
@@ -1825,7 +1825,7 @@ var Wne = iN((Vne, wS) => {
         if (!e) return t;
         if (!t) return e;
         const r = tr(Object.create(null), e);
-        for (const n in t) r[n] = mr(e[n], t[n]);
+        for (const n in t) r[n] = gr(e[n], t[n]);
         return r
     }
 
@@ -2646,7 +2646,7 @@ var Wne = iN((Vne, wS) => {
         return UE(Z(e, t, r, n, s, o, !0))
     }
 
-    function cr(e, t, r, n, s) {
+    function lr(e, t, r, n, s) {
         return UE(nt(e, t, r, n, s, !0))
     }
 
@@ -2666,7 +2666,7 @@ var Wne = iN((Vne, wS) => {
             ref_key: t,
             ref_for: r
         }) => e != null ? Ht(e) || Qt(e) || He(e) ? {
-            i: lr,
+            i: or,
             r: e,
             k: t,
             f: !!r
@@ -2771,7 +2771,7 @@ var Wne = iN((Vne, wS) => {
     }
 
     function Se(e = "", t = !1) {
-        return t ? (H(), cr(Jr, null, e)) : nt(Jr, null, e)
+        return t ? (H(), lr(Jr, null, e)) : nt(Jr, null, e)
     }
 
     function Tn(e) {
@@ -2797,11 +2797,11 @@ var Wne = iN((Vne, wS) => {
             } else {
                 r = 32;
                 const s = t._;
-                !s && !(bc in t) ? t._ctx = lr : s === 3 && lr && (lr.slots._ === 1 ? t._ = 1 : (t._ = 2, e.patchFlag |= 1024))
+                !s && !(bc in t) ? t._ctx = or : s === 3 && or && (or.slots._ === 1 ? t._ = 1 : (t._ = 2, e.patchFlag |= 1024))
             }
         else He(t) ? (t = {
             default: t,
-            _ctx: lr
+            _ctx: or
         }, r = 32) : (t = String(t), n & 64 ? (r = 16, t = [hi(t)]) : r = 8);
         e.children = t, e.shapeFlag |= r
     }
@@ -2894,7 +2894,7 @@ var Wne = iN((Vne, wS) => {
         }, o.root = t ? t.root : o, o.emit = iL.bind(null, o), e.ce && e.ce(o), o
     }
     let qt = null;
-    const ss = () => qt || lr,
+    const ss = () => qt || or,
         zs = e => {
             qt = e, e.scope.on()
         },
@@ -4733,8 +4733,8 @@ var Wne = iN((Vne, wS) => {
             return !(t.x < n.left || t.x > n.left + n.width || t.y < n.top || t.y > n.top + n.height)
         }
     };
-    let or = Fp;
-    ge(or, "queryParams", new URLSearchParams(window.location.search)), ge(or, "getQueryParam", t => Fp.queryParams.get(t)), ge(or, "sleep", t => new Promise(r => {
+    let vr = Fp;
+    ge(vr, "queryParams", new URLSearchParams(window.location.search)), ge(vr, "getQueryParam", t => Fp.queryParams.get(t)), ge(vr, "sleep", t => new Promise(r => {
         window.setTimeout(r, t)
     }));
     class zr {
@@ -4765,8 +4765,8 @@ var Wne = iN((Vne, wS) => {
         static setup(t, r) {
             var n, s;
             delete window.tv.storage, window.tv.storage = {
-                namespace: (s = (n = or.getQueryParam("namespace")) != null ? n : or.getQueryParam("ns")) != null ? s : this.defaultNamespace,
-                isDisabled: or.queryParams.has("incognito") || or.queryParams.has("nc")
+                namespace: (s = (n = vr.getQueryParam("namespace")) != null ? n : vr.getQueryParam("ns")) != null ? s : this.defaultNamespace,
+                isDisabled: vr.queryParams.has("incognito") || vr.queryParams.has("nc")
             }, t && (window.tv.storage.tag = t), r && (window.tv.storage.code = r.toLowerCase(), this.clearCodeScopedKeys(window.tv.storage.code)), this.migrateNamespace("blobcast", this.defaultNamespace)
         }
         static get(t, r) {
@@ -5564,7 +5564,7 @@ var Wne = iN((Vne, wS) => {
         Sf = Object.getOwnPropertySymbols,
         Ed = typeof Symbol == "function" && typeof Symbol.iterator == "symbol" ? Symbol.prototype.toString : null,
         Js = typeof Symbol == "function" && typeof Symbol.iterator == "object",
-        fr = typeof Symbol == "function" && Symbol.toStringTag && (typeof Symbol.toStringTag === Js ? "object" : "symbol") ? Symbol.toStringTag : null,
+        ur = typeof Symbol == "function" && Symbol.toStringTag && (typeof Symbol.toStringTag === Js ? "object" : "symbol") ? Symbol.toStringTag : null,
         y1 = Object.prototype.propertyIsEnumerable,
         Sy = (typeof Reflect == "function" ? Reflect.getPrototypeOf : Object.getPrototypeOf) || ([].__proto__ === Array.prototype ? function(e) {
             return e.__proto__
@@ -5674,7 +5674,7 @@ var Wne = iN((Vne, wS) => {
                 var oe = pl(t, E),
                     le = Sy ? Sy(t) === Object.prototype : t instanceof Object || t.constructor === Object,
                     ue = t instanceof Object ? "" : "null prototype",
-                    Ae = !le && fr && Object(t) === t && fr in t ? Hh.call(yi(t), 8, -1) : ue ? "Object" : "",
+                    Ae = !le && ur && Object(t) === t && ur in t ? Hh.call(yi(t), 8, -1) : ue ? "Object" : "",
                     $e = le || typeof t.constructor != "function" ? "" : t.constructor.name ? t.constructor.name + " " : "",
                     fe = $e + (Ae || ue ? "[" + Sn.call(Ey.call([], Ae || [], ue || []), ": ") + "] " : "");
                 return oe.length === 0 ? fe + "{}" : y ? fe + "{" + Od(oe, y) + "}" : fe + "{ " + Sn.call(oe, ", ") + " }"
@@ -5692,31 +5692,31 @@ var Wne = iN((Vne, wS) => {
     }
 
     function Sd(e) {
-        return yi(e) === "[object Array]" && (!fr || !(typeof e == "object" && fr in e))
+        return yi(e) === "[object Array]" && (!ur || !(typeof e == "object" && ur in e))
     }
 
     function JF(e) {
-        return yi(e) === "[object Date]" && (!fr || !(typeof e == "object" && fr in e))
+        return yi(e) === "[object Date]" && (!ur || !(typeof e == "object" && ur in e))
     }
 
     function $y(e) {
-        return yi(e) === "[object RegExp]" && (!fr || !(typeof e == "object" && fr in e))
+        return yi(e) === "[object RegExp]" && (!ur || !(typeof e == "object" && ur in e))
     }
 
     function ZF(e) {
-        return yi(e) === "[object Error]" && (!fr || !(typeof e == "object" && fr in e))
+        return yi(e) === "[object Error]" && (!ur || !(typeof e == "object" && ur in e))
     }
 
     function QF(e) {
-        return yi(e) === "[object String]" && (!fr || !(typeof e == "object" && fr in e))
+        return yi(e) === "[object String]" && (!ur || !(typeof e == "object" && ur in e))
     }
 
     function e4(e) {
-        return yi(e) === "[object Number]" && (!fr || !(typeof e == "object" && fr in e))
+        return yi(e) === "[object Number]" && (!ur || !(typeof e == "object" && ur in e))
     }
 
     function t4(e) {
-        return yi(e) === "[object Boolean]" && (!fr || !(typeof e == "object" && fr in e))
+        return yi(e) === "[object Boolean]" && (!ur || !(typeof e == "object" && ur in e))
     }
 
     function b1(e) {
@@ -7316,16 +7316,16 @@ var Wne = iN((Vne, wS) => {
     var Q8 = {
         LockEntity: Z8
     };
-    class e5 {
+    class eU {
         constructor() {}
         toString() {
             return "OK"
         }
     }
     var _T = {
-        OK: e5
+        OK: eU
     };
-    class t5 {
+    class tU {
         constructor(t) {
             this.from = t.from, this.key = t.key, this.val = t.val, this.restrictions = t.restrictions, this.version = t.version, this.meta = t.meta || {}, t.acl && (this.acl = t.acl)
         }
@@ -7342,71 +7342,71 @@ var Wne = iN((Vne, wS) => {
         }
     }
     var bT = {
-        NumberEntity: t5
+        NumberEntity: tU
     };
     const {
-        ArtifactEntity: r5
+        ArtifactEntity: rU
     } = mT, {
-        ClientWelcome: n5,
-        ClientConnected: i5,
-        ClientDisconnected: s5,
-        ClientKicked: a5,
-        ClientSend: o5
+        ClientWelcome: nU,
+        ClientConnected: iU,
+        ClientDisconnected: sU,
+        ClientKicked: aU,
+        ClientSend: oU
     } = zh, {
-        CountGroup: l5
+        CountGroup: lU
     } = Xh, {
-        DoodleEntity: c5,
-        DoodleLine: u5,
-        DoodleLineRemoved: f5
+        DoodleEntity: cU,
+        DoodleLine: uU,
+        DoodleLineRemoved: fU
     } = rp, {
-        StackEntity: d5,
-        StackElement: h5,
-        StackElements: p5
+        StackEntity: dU,
+        StackElement: hU,
+        StackElements: pU
     } = vT, {
-        DropEntity: g5
+        DropEntity: gU
     } = yT, {
-        Echo: m5
+        Echo: mU
     } = J8, {
-        LockEntity: v5
+        LockEntity: vU
     } = Q8, {
-        GCounter: y5
+        GCounter: yU
     } = Jh, {
-        GetAudienceReply: _5,
-        RoomExit: b5,
-        RoomLock: E5
+        GetAudienceReply: _U,
+        RoomExit: bU,
+        RoomLock: EU
     } = Nc, {
-        Notification: T5
+        Notification: TU
     } = pT, {
-        OK: S5
+        OK: SU
     } = _T, {
-        NumberEntity: O5
+        NumberEntity: OU
     } = bT, {
-        ObjectEcho: w5,
-        ObjectEntity: C5
+        ObjectEcho: wU,
+        ObjectEntity: CU
     } = Zh, {
         PNCounter: ky
     } = Qh, {
-        Reply: $5
+        Reply: $U
     } = gT, {
-        TextEcho: I5,
-        TextEntity: A5
+        TextEcho: IU,
+        TextEntity: AU
     } = ep, {
-        TextRing: R5
+        TextRing: RU
     } = tp, {
         createError: xy,
-        ObservedError: N5
+        ObservedError: NU
     } = Ga;
 
     function $d(e, t, r) {
         switch (e) {
             case "ok":
-                return new S5;
+                return new SU;
             case "echo":
-                return new m5({
+                return new mU({
                     message: t.message
                 });
             case "lock":
-                return new v5({
+                return new vU({
                     key: t.key,
                     from: t.from
                 });
@@ -7416,7 +7416,7 @@ var Wne = iN((Vne, wS) => {
                     message: t.msg
                 });
             case "error/observed":
-                return new N5({
+                return new NU({
                     to: t.to,
                     error: xy({
                         code: t.error.code,
@@ -7426,7 +7426,7 @@ var Wne = iN((Vne, wS) => {
             case "string":
                 return t;
             case "text":
-                return new A5({
+                return new AU({
                     from: t.from,
                     key: t.key,
                     text: t.val,
@@ -7435,11 +7435,11 @@ var Wne = iN((Vne, wS) => {
                     acl: t.acl
                 });
             case "text/echo":
-                return new I5({
+                return new IU({
                     message: t.message
                 });
             case "object":
-                return new C5({
+                return new CU({
                     from: t.from,
                     key: t.key,
                     val: t.val,
@@ -7447,15 +7447,15 @@ var Wne = iN((Vne, wS) => {
                     acl: t.acl
                 });
             case "object/echo":
-                return new w5({
+                return new wU({
                     message: t.message
                 });
             case "drop":
-                return new g5({
+                return new gU({
                     key: t.key
                 });
             case "artifact":
-                return new r5({
+                return new rU({
                     key: t.key,
                     artifactId: t.artifactId,
                     categoryId: t.categoryId,
@@ -7463,7 +7463,7 @@ var Wne = iN((Vne, wS) => {
                     meta: r
                 });
             case "client/connected":
-                return new i5({
+                return new iU({
                     id: t.id,
                     userId: t.userId,
                     name: t.name,
@@ -7471,25 +7471,25 @@ var Wne = iN((Vne, wS) => {
                     reconnect: t.reconnect
                 });
             case "client/disconnected":
-                return new s5({
+                return new sU({
                     id: t.id,
                     role: t.role
                 });
             case "client/kicked":
-                return new a5({
+                return new aU({
                     id: t.id,
                     banned: t.banned,
                     reason: t.reason
                 });
             case "client/send":
-                return new o5({
+                return new oU({
                     to: t.to,
                     from: t.from,
                     body: t.body,
                     userId: t.userID
                 });
             case "client/welcome": {
-                let n = new n5({
+                let n = new nU({
                     id: t.id,
                     name: t.name,
                     secret: t.secret,
@@ -7507,7 +7507,7 @@ var Wne = iN((Vne, wS) => {
                 return n
             }
             case "doodle":
-                return new c5({
+                return new cU({
                     key: t.key,
                     colors: t.val.colors,
                     lines: t.val.lines,
@@ -7519,17 +7519,17 @@ var Wne = iN((Vne, wS) => {
                     acl: t.acl
                 });
             case "doodle/line":
-                return new u5({
+                return new uU({
                     key: t.key,
                     line: t.val
                 });
             case "doodle/line/removed":
-                return new f5({
+                return new fU({
                     key: t.key,
                     index: t.index
                 });
             case "stack":
-                return new d5({
+                return new dU({
                     key: t.key,
                     size: t.size,
                     from: t.from,
@@ -7538,17 +7538,17 @@ var Wne = iN((Vne, wS) => {
                     acl: t.acl
                 });
             case "stack/element":
-                return new h5({
+                return new hU({
                     key: t.key,
                     val: t.val
                 });
             case "stack/elements":
-                return new p5({
+                return new pU({
                     key: t.key,
                     vals: t.vals
                 });
             case "number":
-                return new O5({
+                return new OU({
                     key: t.key,
                     val: t.val,
                     restrictions: t.restrictions,
@@ -7558,13 +7558,13 @@ var Wne = iN((Vne, wS) => {
                     acl: t.acl
                 });
             case "room/exit":
-                return new b5({
+                return new bU({
                     cause: t.cause
                 });
             case "room/lock":
-                return new E5;
+                return new EU;
             case "room/get-audience":
-                return new _5({
+                return new _U({
                     connections: t.connections
                 });
             case "audience":
@@ -7573,19 +7573,19 @@ var Wne = iN((Vne, wS) => {
                     count: t[1]
                 });
             case "audience/count-group":
-                return new l5({
+                return new lU({
                     key: t.key,
                     choices: t.choices,
                     meta: r
                 });
             case "audience/text-ring":
-                return new R5({
+                return new RU({
                     key: t.key,
                     elements: t.elements,
                     meta: r
                 });
             case "audience/g-counter":
-                return new y5({
+                return new yU({
                     key: t.key,
                     count: t.count,
                     meta: r
@@ -7601,37 +7601,37 @@ var Wne = iN((Vne, wS) => {
         }
     }
 
-    function L5(e) {
+    function LU(e) {
         let t = JSON.parse(e.data),
             r = t.opcode || t.type;
-        return t.re ? new $5({
+        return t.re ? new $U({
             pc: t.pc,
             re: t.re,
             opcode: r,
             result: $d(r, t.result)
-        }) : new T5({
+        }) : new TU({
             pc: t.pc,
             opcode: r,
             result: $d(r, t.result)
         })
     }
-    var P5 = {
-        parseResponseMessage: L5
+    var PU = {
+        parseResponseMessage: LU
     };
     const Dy = g8,
-        k5 = I1,
-        x5 = qh.exports,
+        kU = I1,
+        xU = qh.exports,
         {
-            CallError: D5
+            CallError: DU
         } = Ga,
         {
-            ClientWelcome: M5
+            ClientWelcome: MU
         } = zh,
         {
-            CountGroup: F5
+            CountGroup: FU
         } = Xh,
         {
-            GCounter: U5
+            GCounter: UU
         } = Jh,
         {
             Notification: My
@@ -7640,32 +7640,32 @@ var Wne = iN((Vne, wS) => {
             ObjectEntity: If
         } = Zh,
         {
-            PNCounter: B5
+            PNCounter: BU
         } = Qh,
         {
-            Reply: j5
+            Reply: jU
         } = gT,
         {
-            Request: G5
+            Request: GU
         } = F8,
         {
             TextEntity: Af
         } = ep,
         {
-            TextRing: W5
+            TextRing: WU
         } = tp,
         {
-            parseResponseMessage: H5
-        } = P5,
+            parseResponseMessage: HU
+        } = PU,
         {
-            DoodleEntity: V5
+            DoodleEntity: VU
         } = rp,
         {
-            StackEntity: K5
+            StackEntity: KU
         } = vT,
-        Y5 = 1e3 + Math.floor(Math.random() * 500),
+        YU = 1e3 + Math.floor(Math.random() * 500),
         Fy = 13e3;
-    class q5 extends x5 {
+    class qU extends xU {
         constructor(t) {
             if (super(), this.debug = t.debug || !1, !t.host) throw new Error("unable to create ecast WSClient: no host provided");
             if (this.host = t.host, !t.code) throw new Error("unable to create ecast WSClient: no room code provided");
@@ -7697,7 +7697,7 @@ var Wne = iN((Vne, wS) => {
                 password: this.password
             };
             this.deviceId && (t["device-id"] = this.deviceId), this.twitchToken && (t["twitch-token"] = this.twitchToken), this.secret && (t.secret = this.secret), this.role === "host" && (t["host-token"] = this.token, this.replaySince > 0 && (t["replay-since"] = this.replaySince), this.syncEntities && (t["sync-entities"] = this.syncEntities));
-            const r = k5.stringify(t),
+            const r = kU.stringify(t),
                 n = this.role === "audience" || this.id > 1e7 ? `${this.scheme}://${this.host}/api/v2/audience/${this.code}/play?${r}` : `${this.scheme}://${this.host}/api/v2/rooms/${this.code}/play?${r}`;
             return new Promise((s, o) => {
                 let l = !1,
@@ -7710,10 +7710,10 @@ var Wne = iN((Vne, wS) => {
                     };
                 this.conn = new Dy(n, "ecast-v0"), this.conn.onmessage = g => {
                     this.debugLog(`recv <- ${JSON.stringify(JSON.parse(g.data),null,2)}`);
-                    const y = H5(g);
-                    if (y instanceof j5) this.onReply(y);
+                    const y = HU(g);
+                    if (y instanceof jU) this.onReply(y);
                     else if (y instanceof My) {
-                        if (y.result instanceof M5) u = !0, this.id = y.result.id, this.deviceId = y.result.deviceId, this.entities = y.result.entities, this.secret = y.result.secret, y.result.name && (this.name = y.result.name), f(y.result);
+                        if (y.result instanceof MU) u = !0, this.id = y.result.id, this.deviceId = y.result.deviceId, this.entities = y.result.entities, this.secret = y.result.secret, y.result.name && (this.name = y.result.name), f(y.result);
                         else if (!l) {
                             h(y.result);
                             return
@@ -7738,7 +7738,7 @@ var Wne = iN((Vne, wS) => {
         async reconnect() {
             this.disconnect(), this.debugLog("Attempting to reconnect");
             let t = 1,
-                r = Y5;
+                r = YU;
             for (;;) try {
                 this.emit("connection", {
                     status: "connecting",
@@ -7773,7 +7773,7 @@ var Wne = iN((Vne, wS) => {
                 s.re = r, this.emit("notification", s);
                 return
             }
-            delete this.pending[r], t.result instanceof D5 ? n.reject(t.result) : n.resolve(t.result)
+            delete this.pending[r], t.result instanceof DU ? n.reject(t.result) : n.resolve(t.result)
         }
         onNotification(t) {
             typeof t.result.whenReceived == "function" && t.result.whenReceived(this), this.emit("notification", t), this.emit(t.opcode, t.result)
@@ -7782,7 +7782,7 @@ var Wne = iN((Vne, wS) => {
             if (!this.conn) throw new Error("No connection available");
             if (this.conn.readyState !== Dy.OPEN) throw new Error(`Socket not ready to send, readyState is ${this.conn.readyState}`);
             const n = ++this.seq,
-                s = new G5({
+                s = new GU({
                     seq: n,
                     opcode: t,
                     params: r
@@ -7970,7 +7970,7 @@ var Wne = iN((Vne, wS) => {
             } = r;
             s && (n.acl = s), o && (n.colors = o), n.live = l, u != null && (n.maxPoints = u), f && (n.size = f), h && (n.weights = h);
             const g = await this.send("doodle/create", n);
-            return this.entities[t] = new V5({
+            return this.entities[t] = new VU({
                 key: t,
                 colors: o,
                 lines: [],
@@ -8021,7 +8021,7 @@ var Wne = iN((Vne, wS) => {
             };
             r && (n.acl = r);
             const s = await this.send("stack/create", n);
-            return this.entities[t] = new K5({
+            return this.entities[t] = new KU({
                 key: t,
                 size: 0,
                 meta: {
@@ -8057,7 +8057,7 @@ var Wne = iN((Vne, wS) => {
                 name: t,
                 options: r
             });
-            return this.entities[t] = new F5({
+            return this.entities[t] = new FU({
                 key: t,
                 choices: r,
                 meta: {
@@ -8082,7 +8082,7 @@ var Wne = iN((Vne, wS) => {
                 key: t,
                 count: r
             });
-            return this.entities[t] = new U5({
+            return this.entities[t] = new UU({
                 key: t,
                 count: r,
                 meta: {
@@ -8106,7 +8106,7 @@ var Wne = iN((Vne, wS) => {
                 key: t,
                 count: r
             });
-            return this.entities[t] = new B5({
+            return this.entities[t] = new BU({
                 key: t,
                 count: r,
                 meta: {
@@ -8142,7 +8142,7 @@ var Wne = iN((Vne, wS) => {
                 } = r;
             s && (n.limit = s), o && (n.accept = o), l && (n.reject = l);
             const u = await this.send("audience/text-ring/create", n);
-            return this.entities[t] = new W5({
+            return this.entities[t] = new WU({
                 key: t,
                 elements: [],
                 limit: s,
@@ -8163,65 +8163,65 @@ var Wne = iN((Vne, wS) => {
             })
         }
     }
-    var z5 = {
-        WSClient: q5
+    var zU = {
+        WSClient: qU
     };
     const {
-        APIClient: X5
+        APIClient: XU
     } = p8, {
-        WSClient: J5
-    } = z5, {
-        CreateRoomReply: Z5,
-        GetRoomReply: Q5
+        WSClient: JU
+    } = zU, {
+        CreateRoomReply: ZU,
+        GetRoomReply: QU
     } = Nc, {
-        ClientWelcome: eU,
-        ClientDisconnected: tU
+        ClientWelcome: e5,
+        ClientDisconnected: t5
     } = zh, {
-        ArtifactEntity: rU
+        ArtifactEntity: r5
     } = mT, {
-        GCounter: nU
+        GCounter: n5
     } = Jh, {
-        NumberEntity: iU
+        NumberEntity: i5
     } = bT, {
-        TextEntity: sU
+        TextEntity: s5
     } = ep, {
-        DoodleEntity: aU
+        DoodleEntity: a5
     } = rp, {
-        ObjectEntity: oU
+        ObjectEntity: o5
     } = Zh, {
-        CountGroup: lU
+        CountGroup: l5
     } = Xh, {
-        DropEntity: cU
+        DropEntity: c5
     } = yT, {
-        OK: uU
+        OK: u5
     } = _T, {
-        RoomExit: fU
+        RoomExit: f5
     } = Nc, {
-        TextRing: dU
+        TextRing: d5
     } = tp, {
-        PNCounter: hU
+        PNCounter: h5
     } = Qh;
     var wr = {
-        APIClient: X5,
-        WSClient: J5,
-        ClientWelcome: eU,
-        CreateRoomReply: Z5,
-        DropEntity: cU,
-        GetRoomReply: Q5,
-        ClientDisconnected: tU,
-        RoomExit: fU,
-        OK: uU,
-        ArtifactEntity: rU,
-        DoodleEntity: aU,
-        NumberEntity: iU,
-        CountGroup: lU,
-        GCounter: nU,
-        ObjectEntity: oU,
-        PNCounter: hU,
-        TextEntity: sU,
-        TextRing: dU
+        APIClient: XU,
+        WSClient: JU,
+        ClientWelcome: e5,
+        CreateRoomReply: ZU,
+        DropEntity: c5,
+        GetRoomReply: QU,
+        ClientDisconnected: t5,
+        RoomExit: f5,
+        OK: u5,
+        ArtifactEntity: r5,
+        DoodleEntity: a5,
+        NumberEntity: i5,
+        CountGroup: l5,
+        GCounter: n5,
+        ObjectEntity: o5,
+        PNCounter: h5,
+        TextEntity: s5,
+        TextRing: d5
     };
-    const pU = [{
+    const p5 = [{
             name: "Prototype",
             tag: "prototype",
             wrapper: "vue",
@@ -8611,12 +8611,12 @@ var Wne = iN((Vne, wS) => {
             features: ["kicking"],
             categoryId: "LineupGame"
         }],
-        Id = e => pU.find(t => t.tag === e || t.categoryId === e);
+        Id = e => p5.find(t => t.tag === e || t.categoryId === e);
 
     function Ad(...e) {
         console.log(...e)
     }
-    class gU {
+    class g5 {
         constructor(t, r) {
             ge(this, "client");
             ge(this, "room");
@@ -8866,7 +8866,7 @@ ${r}`,
         }
     }
 
-    function mU(e) {
+    function m5(e) {
         throw new Error('Could not dynamically require "' + e + '". Please configure the dynamicRequireTargets or/and ignoreDynamicRequires option of @rollup/plugin-commonjs appropriately for this require call to work.')
     }
     var Uy = {
@@ -9488,7 +9488,7 @@ ${r}`,
             };
 
             function se() {
-                return typeof window < "u" ? window : typeof process == "object" && typeof mU == "function" && typeof kt == "object" ? kt : this
+                return typeof window < "u" ? window : typeof process == "object" && typeof m5 == "function" && typeof kt == "object" ? kt : this
             }
             var re = {
                     mock: !0,
@@ -9755,7 +9755,7 @@ ${r}`,
         })()
     })(ET);
     const TT = ET.exports;
-    class vU {
+    class v5 {
         constructor(t, r, n) {
             ge(this, "DEFAULT_WIDTH", 400);
             ge(this, "DEFAULT_HEIGHT", 400);
@@ -9791,8 +9791,8 @@ ${r}`,
                     y: Math.min(Math.max(.5 * this.weight, r.y), this.canvas.height / this.scale.height - .5 * this.weight)
                 };
             return {
-                x: or.toPrecision(n.x, this.precision),
-                y: or.toPrecision(n.y, this.precision)
+                x: vr.toPrecision(n.x, this.precision),
+                y: vr.toPrecision(n.y, this.precision)
             }
         }
         drawLines() {
@@ -9856,15 +9856,15 @@ ${r}`,
                 index: this.doodle.lines.length,
                 layer: this.layer,
                 points: TT(this.points, .5).map(r => ({
-                    x: or.toPrecision(r.x, this.precision),
-                    y: or.toPrecision(r.y, this.precision)
+                    x: vr.toPrecision(r.x, this.precision),
+                    y: vr.toPrecision(r.y, this.precision)
                 })),
                 weight: this.weight
             };
             return this.isInteracting = !1, this.points = [], t
         }
     }
-    class yU {
+    class y5 {
         constructor(t, r, n, s) {
             ge(this, "renderCanvas");
             ge(this, "canvases", []);
@@ -10053,7 +10053,7 @@ ${r}`,
             }), t.stroke()
         }
     }
-    class _U {
+    class _5 {
         constructor(t, r) {
             ge(this, "stageElement");
             ge(this, "width", 400);
@@ -10116,7 +10116,7 @@ ${r}`,
             ge(this, "onTouchEnd", t => {
                 t.preventDefault(), this.interactCanvas.onUp(), this.isDrawing = !1, this.emit("up")
             });
-            r.width && (this.width = r.width), r.height && (this.height = r.height), this.stageElement = t, this.setupElements(), this.setupEvents(), r.InteractCanvas ? this.interactCanvas = new r.InteractCanvas(t, this.width, this.height, r) : this.interactCanvas = new yU(t, this.width, this.height, r)
+            r.width && (this.width = r.width), r.height && (this.height = r.height), this.stageElement = t, this.setupElements(), this.setupEvents(), r.InteractCanvas ? this.interactCanvas = new r.InteractCanvas(t, this.width, this.height, r) : this.interactCanvas = new y5(t, this.width, this.height, r)
         }
         on(t, r) {
             this.callbacks[t] = this.callbacks[t] || [], this.callbacks[t].push(r)
@@ -10325,7 +10325,7 @@ ${r.message}`,
             return t.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
         }
     }
-    const bU = {
+    const b5 = {
             BACK: "Back",
             CANCEL: "Cancel",
             CLOSE: "Close",
@@ -10345,7 +10345,7 @@ ${r.message}`,
             UNDO: "Undo",
             YES: "Yes"
         },
-        EU = {
+        E5 = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "prompts hidden on players\u2019 devices",
                 VISIBILITY_CONTROLLER_ON: "prompts shown on players\u2019 devices",
@@ -10353,7 +10353,7 @@ ${r.message}`,
                 VISIBILITY_SCREEN_ON: "prompts shown on game screen"
             }
         },
-        TU = {
+        T5 = {
             DISCONNECTED: "You have been disconnected.",
             DRAWING_NOTHING: "You have to draw something!",
             PLAYER_KICKED: "You have been kicked from the game by a moderator.",
@@ -10363,8 +10363,8 @@ ${r.message}`,
             TEXT_NOTHING: "You can\u2019t enter nothing!",
             TITLE: "Error"
         },
-        SU = "LOADING",
-        OU = {
+        S5 = "LOADING",
+        O5 = {
             JOINED_COUNT: "x | {count} of {maxPlayers} players joined | {count} of {maxPlayers} players joined",
             PLAYERS_NEEDED: "x | {count} player needed to start | {count} players needed to start",
             WAITING_FOR_VIP: "Waiting for {name} to start the game",
@@ -10373,25 +10373,25 @@ ${r.message}`,
             BUTTON_START: "Press to Start",
             BUTTON_CANCEL: "Press to Cancel"
         },
-        wU = {
+        w5 = {
             GALLERY_LINK: "Visit the Gallery",
             PLAY_AGAIN: "Play again?",
             BUTTON_SAME_PLAYERS: "Same Players",
             BUTTON_NEW_PLAYERS: "New Players"
         },
-        CU = {
+        C5 = {
             AND: "AND",
             OR: "OR"
         },
-        $U = {
+        $5 = {
             BUTTON_SKIP: "Skip",
             BUTTON_NEXT: "Next",
             BUTTON_DONE: "Let\u2019s Go!"
         },
-        IU = {
+        I5 = {
             NAME: "AUDIENCE"
         },
-        AU = {
+        A5 = {
             EPISODE_REPORT: "Report Episode",
             EPISODE_UNLOAD: "Unload Episode",
             EPISODE_VIEW_AUTHOR: "View Author",
@@ -10421,7 +10421,7 @@ ${r.message}`,
             PROMPTS_COUNT_HIDDEN: "({count} hidden)",
             TITLE_PLACEHOLDER: "enter a title"
         },
-        RU = {
+        R5 = {
             BROADCASTER: {
                 SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
                 WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
@@ -10441,20 +10441,20 @@ ${r.message}`,
                 }
             }
         },
-        NU = {
-            ACTION: bU,
-            ALT: EU,
-            ERROR: TU,
-            LOADING: SU,
-            LOBBY: OU,
-            POST_GAME: wU,
-            SEPARATOR: CU,
-            TUTORIAL: $U,
-            AUDIENCE: IU,
-            UGC: AU,
-            TOAST: RU
+        N5 = {
+            ACTION: b5,
+            ALT: E5,
+            ERROR: T5,
+            LOADING: S5,
+            LOBBY: O5,
+            POST_GAME: w5,
+            SEPARATOR: C5,
+            TUTORIAL: $5,
+            AUDIENCE: I5,
+            UGC: A5,
+            TOAST: R5
         },
-        LU = {
+        L5 = {
             BACK: "Retour",
             CANCEL: "Annuler",
             CLOSE: "Fermer",
@@ -10471,7 +10471,7 @@ ${r.message}`,
             TRY_AGAIN: "R\xE9essayer",
             YES: "Oui"
         },
-        PU = {
+        P5 = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "sujets non affich\xE9s sur les appareils des joueurs",
                 VISIBILITY_CONTROLLER_ON: "sujets affich\xE9s sur les appareils des joueurs",
@@ -10479,7 +10479,7 @@ ${r.message}`,
                 VISIBILITY_SCREEN_ON: "sujets affich\xE9s sur l'\xE9cran de jeu"
             }
         },
-        kU = {
+        k5 = {
             DISCONNECTED: "Vous avez \xE9t\xE9 d\xE9connect\xE9.",
             DRAWING_NOTHING: "Vous devez dessiner quelque chose\xA0!",
             ROOM_DESTROYED: "Merci d'avoir jou\xE9\xA0!",
@@ -10488,7 +10488,7 @@ ${r.message}`,
             TEXT_NOTHING: "Vous ne pouvez rien entrer\xA0!",
             TITLE: "Erreur"
         },
-        xU = {
+        x5 = {
             JOINED_COUNT: "x | {count} joueur sur {maxPlayers} \xE0 rejoint la partie | {count} joueurs sur {maxPlayers} ont rejoint la partie",
             PLAYERS_NEEDED: "x | {count} joueur n\xE9cessaire pour commencer | {count} joueurs n\xE9cessaires pour commencer",
             WAITING_FOR_VIP: "En attente de {name} pour commencer la partie",
@@ -10497,25 +10497,25 @@ ${r.message}`,
             BUTTON_START: "Appuyer pour commencer",
             BUTTON_CANCEL: "Appuyer pour annuler"
         },
-        DU = {
+        D5 = {
             GALLERY_LINK: "Visiter la galerie",
             PLAY_AGAIN: "Rejouer\xA0?",
             BUTTON_SAME_PLAYERS: "Les m\xEAmes joueurs",
             BUTTON_NEW_PLAYERS: "De nouveaux joueurs"
         },
-        MU = {
+        M5 = {
             AND: "ET",
             OR: "OU"
         },
-        FU = {
+        F5 = {
             BUTTON_SKIP: "Passer",
             BUTTON_NEXT: "Suivant",
             BUTTON_DONE: "Allons-y\xA0!"
         },
-        UU = {
+        U5 = {
             NAME: "SPECTATEURS"
         },
-        BU = {
+        B5 = {
             EPISODE_REPORT: "Signaler l'\xE9pisode",
             EPISODE_UNLOAD: "Retirer l'\xE9pisode",
             EPISODE_VIEW_AUTHOR: "Voir l'auteur",
@@ -10545,7 +10545,7 @@ ${r.message}`,
             PROMPTS_COUNT_HIDDEN: "({count} non affich\xE9)",
             TITLE_PLACEHOLDER: "taper un titre"
         },
-        jU = {
+        j5 = {
             BROADCASTER: {
                 SUBTEXT: "La connexion de votre compte \xE0 l'extension Twitch Jackbox Audience Kit a r\xE9ussi.",
                 WARNING: "LE PARAM\xC8TRE 'PUBLIC' N'EST PAS ACTIV\xC9 DANS CETTE SALLE."
@@ -10565,19 +10565,19 @@ ${r.message}`,
                 }
             }
         },
-        GU = {
-            ACTION: LU,
-            ALT: PU,
-            ERROR: kU,
-            LOBBY: xU,
-            POST_GAME: DU,
-            SEPARATOR: MU,
-            TUTORIAL: FU,
-            AUDIENCE: UU,
-            UGC: BU,
-            TOAST: jU
+        G5 = {
+            ACTION: L5,
+            ALT: P5,
+            ERROR: k5,
+            LOBBY: x5,
+            POST_GAME: D5,
+            SEPARATOR: M5,
+            TUTORIAL: F5,
+            AUDIENCE: U5,
+            UGC: B5,
+            TOAST: j5
         },
-        WU = {
+        W5 = {
             BACK: "Indietro",
             CANCEL: "Annulla",
             CLOSE: "Chiuda",
@@ -10594,7 +10594,7 @@ ${r.message}`,
             TRY_AGAIN: "Riprova",
             YES: "S\xEC"
         },
-        HU = {
+        H5 = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "definizioni nascoste sui dispositivi dei giocatori",
                 VISIBILITY_CONTROLLER_ON: "definizioni visualizzate sui dispositivi dei giocatori",
@@ -10602,7 +10602,7 @@ ${r.message}`,
                 VISIBILITY_SCREEN_ON: "definizioni visualizzate sullo schermo di gioco"
             }
         },
-        VU = {
+        V5 = {
             DISCONNECTED: "\xC8 stata effettuata la disconnessione.",
             DRAWING_NOTHING: "Devi disegnare qualcosa!",
             ROOM_DESTROYED: "Grazie per aver scelto di giocare con noi!",
@@ -10611,7 +10611,7 @@ ${r.message}`,
             TEXT_NOTHING: "Devi per forza inserire qualcosa!",
             TITLE: "Errore"
         },
-        KU = {
+        K5 = {
             JOINED_COUNT: "x | Sta partecipando {count} giocatore su {maxPlayers} | Stanno partecipando {count} giocatori su {maxPlayers}",
             PLAYERS_NEEDED: "x | Manca {count} giocatore per iniziare | Mancano {count} giocatori per iniziare",
             WAITING_FOR_VIP: "In attesa di {name} per iniziare la partita",
@@ -10620,25 +10620,25 @@ ${r.message}`,
             BUTTON_START: "Premi per avviare",
             BUTTON_CANCEL: "Premi per annullare"
         },
-        YU = {
+        Y5 = {
             GALLERY_LINK: "Visita la galleria",
             PLAY_AGAIN: "Vuoi giocare di nuovo?",
             BUTTON_SAME_PLAYERS: "Stessi giocatori",
             BUTTON_NEW_PLAYERS: "Nuovi giocatori"
         },
-        qU = {
+        q5 = {
             AND: "E",
             OR: "O"
         },
-        zU = {
+        z5 = {
             BUTTON_SKIP: "Salta",
             BUTTON_NEXT: "Avanti",
             BUTTON_DONE: "Iniziamo!"
         },
-        XU = {
+        X5 = {
             NAME: "PUBBLICO"
         },
-        JU = {
+        J5 = {
             EPISODE_REPORT: "Segnala episodio",
             EPISODE_UNLOAD: "Rimuovi episodio",
             EPISODE_VIEW_AUTHOR: "Mostra autore",
@@ -10668,7 +10668,7 @@ ${r.message}`,
             PROMPTS_COUNT_HIDDEN: "({count} nascosti)",
             TITLE_PLACEHOLDER: "inserisci un titolo"
         },
-        ZU = {
+        Z5 = {
             BROADCASTER: {
                 SUBTEXT: "Il collegamento del tuo account con l'estensione per Twitch Jackbox Audience Kit \xE8 andato a buon fine.",
                 WARNING: "L'IMPOSTAZIONE DEL PUBBLICO NON \xC8 ATTIVA PER QUESTA STANZA"
@@ -10688,17 +10688,17 @@ ${r.message}`,
                 }
             }
         },
-        QU = {
-            ACTION: WU,
-            ALT: HU,
-            ERROR: VU,
-            LOBBY: KU,
-            POST_GAME: YU,
-            SEPARATOR: qU,
-            TUTORIAL: zU,
-            AUDIENCE: XU,
-            UGC: JU,
-            TOAST: ZU
+        Q5 = {
+            ACTION: W5,
+            ALT: H5,
+            ERROR: V5,
+            LOBBY: K5,
+            POST_GAME: Y5,
+            SEPARATOR: q5,
+            TUTORIAL: z5,
+            AUDIENCE: X5,
+            UGC: J5,
+            TOAST: Z5
         },
         eB = {
             BACK: "Zur\xFCck",
@@ -11070,9 +11070,9 @@ ${r.message}`,
             TOAST: NB
         },
         PB = {
-            en: NU,
-            fr: GU,
-            it: QU,
+            en: N5,
+            fr: G5,
+            it: Q5,
             de: uB,
             es: EB,
             "es-XL": LB
@@ -11134,7 +11134,7 @@ ${r.message}`,
             methods: {
                 createCanvas() {
                     const e = this.$refs.canvas;
-                    this.canvas = Bn(new vU(e, this.player.doodle, this.canvasOptions))
+                    this.canvas = Bn(new v5(e, this.player.doodle, this.canvasOptions))
                 },
                 onPointerBoxStart(e) {
                     if (!this.canvas) return;
@@ -12097,9 +12097,9 @@ ${r.message}`,
                                 var Ye = te[Ve],
                                     Xe = Ye.iteratee,
                                     Lr = Ye.type,
-                                    gr = Xe(Pe);
-                                if (Lr == ie) Pe = gr;
-                                else if (!gr) {
+                                    pr = Xe(Pe);
+                                if (Lr == ie) Pe = pr;
+                                else if (!pr) {
                                     if (Lr == F) continue e;
                                     break e
                                 }
@@ -12495,7 +12495,7 @@ ${r.message}`,
                         return je(i) ? d : Hn(d, c(i))
                     }
 
-                    function hr(i) {
+                    function dr(i) {
                         return i == null ? i === r ? he : D : Ci && Ci in pt(i) ? IC(i) : jC(i)
                     }
 
@@ -12550,15 +12550,15 @@ ${r.message}`,
                     }
 
                     function Gg(i) {
-                        return At(i) && hr(i) == rr
+                        return At(i) && dr(i) == rr
                     }
 
                     function Jw(i) {
-                        return At(i) && hr(i) == xe
+                        return At(i) && dr(i) == xe
                     }
 
                     function Zw(i) {
-                        return At(i) && hr(i) == lt
+                        return At(i) && dr(i) == lt
                     }
 
                     function Sa(i, a, c, d, v) {
@@ -12627,7 +12627,7 @@ ${r.message}`,
                     }
 
                     function tC(i) {
-                        return At(i) && hr(i) == se
+                        return At(i) && dr(i) == se
                     }
 
                     function rC(i) {
@@ -12635,7 +12635,7 @@ ${r.message}`,
                     }
 
                     function nC(i) {
-                        return At(i) && al(i.length) && !!Tt[hr(i)]
+                        return At(i) && al(i.length) && !!Tt[dr(i)]
                     }
 
                     function Hg(i) {
@@ -13111,7 +13111,7 @@ ${r.message}`,
                                 v = c.length,
                                 b = v > 1 ? c[v - 1] : r,
                                 I = v > 2 ? c[2] : r;
-                            for (b = i.length > 3 && typeof b == "function" ? (v--, b) : r, I && pr(c[0], c[1], I) && (b = v < 3 ? r : b, v = 1), a = pt(a); ++d < v;) {
+                            for (b = i.length > 3 && typeof b == "function" ? (v--, b) : r, I && hr(c[0], c[1], I) && (b = v < 3 ? r : b, v = 1), a = pt(a); ++d < v;) {
                                 var R = c[d];
                                 R && i(a, R, d, b)
                             }
@@ -13256,10 +13256,10 @@ ${r.message}`,
 
                         function Pe() {
                             for (var Ye = arguments.length, Xe = K(Ye), Lr = Ye; Lr--;) Xe[Lr] = arguments[Lr];
-                            if (we) var gr = Es(Pe),
-                                Pr = kO(Xe, gr);
+                            if (we) var pr = Es(Pe),
+                                Pr = kO(Xe, pr);
                             if (d && (Xe = lm(Xe, d, v, we)), b && (Xe = cm(Xe, b, I, we)), Ye -= Pr, we && Ye < ee) {
-                                var Lt = Vn(Xe, gr);
+                                var Lt = Vn(Xe, pr);
                                 return vm(i, a, qo, Pe.placeholder, c, Xe, Lt, R, x, ee - Ye)
                             }
                             var nn = ae ? c : this,
@@ -13320,7 +13320,7 @@ ${r.message}`,
 
                     function mm(i) {
                         return function(a, c, d) {
-                            return d && typeof d != "number" && pr(a, c, d) && (c = d = r), a = Pn(a), c === r ? (c = a, a = 0) : c = Pn(c), d = d === r ? a < c ? 1 : -1 : Pn(d), lC(a, c, d, i)
+                            return d && typeof d != "number" && hr(a, c, d) && (c = d = r), a = Pn(a), c === r ? (c = a, a = 0) : c = Pn(c), d = d === r ? a < c ? 1 : -1 : Pn(d), lC(a, c, d, i)
                         }
                     }
 
@@ -13488,9 +13488,9 @@ ${r.message}`,
                             Pe || (Pe = me == "constructor")
                         }
                         if (Ve && !Pe) {
-                            var gr = i.constructor,
+                            var pr = i.constructor,
                                 Pr = a.constructor;
-                            gr != Pr && "constructor" in i && "constructor" in a && !(typeof gr == "function" && gr instanceof gr && typeof Pr == "function" && Pr instanceof Pr) && (Ve = !1)
+                            pr != Pr && "constructor" in i && "constructor" in a && !(typeof pr == "function" && pr instanceof pr && typeof Pr == "function" && Pr instanceof Pr) && (Ve = !1)
                         }
                         return b.delete(i), b.delete(a), Ve
                     }
@@ -13567,9 +13567,9 @@ ${r.message}`,
                             for (var a = []; i;) Hn(a, Vu(i)), i = Po(i);
                             return a
                         } : uf,
-                        sr = hr;
+                        sr = dr;
                     (_u && sr(new _u(new ArrayBuffer(1))) != w || ma && sr(new ma) != p || bu && sr(bu.resolve()) != Y || ms && sr(new ms) != re || va && sr(new va) != pe) && (sr = function(i) {
-                        var a = hr(i),
+                        var a = dr(i),
                             c = a == U ? i.constructor : r,
                             d = c ? Li(c) : "";
                         if (d) switch (d) {
@@ -13689,7 +13689,7 @@ ${r.message}`,
                         return a = a == null ? ve : a, !!a && (c == "number" || c != "symbol" && KS.test(i)) && i > -1 && i % 1 == 0 && i < a
                     }
 
-                    function pr(i, a, c) {
+                    function hr(i, a, c) {
                         if (!$t(c)) return !1;
                         var d = typeof a;
                         return (d == "number" ? br(c) && Nn(a, c.length) : d == "string" && a in c) ? rn(c[a], i) : !1
@@ -13870,7 +13870,7 @@ ${r.message}`,
                     }
 
                     function HC(i, a, c) {
-                        (c ? pr(i, a, c) : a === r) ? a = 1: a = Bt(We(a), 0);
+                        (c ? hr(i, a, c) : a === r) ? a = 1: a = Bt(We(a), 0);
                         var d = i == null ? 0 : i.length;
                         if (!d || a < 1) return [];
                         for (var v = 0, b = 0, I = K(Do(d / a)); v < d;) I[b++] = Hr(i, v, v += a);
@@ -13923,7 +13923,7 @@ ${r.message}`,
 
                     function e$(i, a, c, d) {
                         var v = i == null ? 0 : i.length;
-                        return v ? (c && typeof c != "number" && pr(i, a, c) && (c = 0, d = v), Kw(i, a, c, d)) : []
+                        return v ? (c && typeof c != "number" && hr(i, a, c) && (c = 0, d = v), Kw(i, a, c, d)) : []
                     }
 
                     function km(i, a, c) {
@@ -14052,7 +14052,7 @@ ${r.message}`,
 
                     function v$(i, a, c) {
                         var d = i == null ? 0 : i.length;
-                        return d ? (c && typeof c != "number" && pr(i, a, c) ? (a = 0, c = d) : (a = a == null ? 0 : We(a), c = c === r ? d : We(c)), Hr(i, a, c)) : []
+                        return d ? (c && typeof c != "number" && hr(i, a, c) ? (a = 0, c = d) : (a = a == null ? 0 : We(a), c = c === r ? d : We(c)), Hr(i, a, c)) : []
                     }
 
                     function y$(i, a) {
@@ -14270,7 +14270,7 @@ ${r.message}`,
 
                     function tI(i, a, c) {
                         var d = je(i) ? gg : Vw;
-                        return c && pr(i, a, c) && (a = r), d(i, Ne(a, 3))
+                        return c && hr(i, a, c) && (a = r), d(i, Ne(a, 3))
                     }
 
                     function rI(i, a) {
@@ -14362,7 +14362,7 @@ ${r.message}`,
                     }
 
                     function yI(i, a, c) {
-                        (c ? pr(i, a, c) : a === r) ? a = 1: a = We(a);
+                        (c ? hr(i, a, c) : a === r) ? a = 1: a = We(a);
                         var d = je(i) ? Bw : uC;
                         return d(i, a)
                     }
@@ -14381,12 +14381,12 @@ ${r.message}`,
 
                     function EI(i, a, c) {
                         var d = je(i) ? uu : hC;
-                        return c && pr(i, a, c) && (a = r), d(i, Ne(a, 3))
+                        return c && hr(i, a, c) && (a = r), d(i, Ne(a, 3))
                     }
                     var TI = Ke(function(i, a) {
                             if (i == null) return [];
                             var c = a.length;
-                            return c > 1 && pr(i, a[0], a[1]) ? a = [] : c > 2 && pr(a[0], a[1], a[2]) && (a = [a[0]]), zg(i, Jt(a, 1), [])
+                            return c > 1 && hr(i, a[0], a[1]) ? a = [] : c > 2 && hr(a[0], a[1], a[2]) && (a = [a[0]]), zg(i, Jt(a, 1), [])
                         }),
                         nl = rw || function() {
                             return Xt.Date.now()
@@ -14486,7 +14486,7 @@ ${r.message}`,
                             R !== r && im(R), ee = 0, d = x = v = R = r
                         }
 
-                        function gr() {
+                        function pr() {
                             return R === r ? I : Xe(nl())
                         }
 
@@ -14499,7 +14499,7 @@ ${r.message}`,
                             }
                             return R === r && (R = $a(Ye, a)), I
                         }
-                        return Pr.cancel = Lr, Pr.flush = gr, Pr
+                        return Pr.cancel = Lr, Pr.flush = pr, Pr
                     }
                     var OI = Ke(function(i, a) {
                             return Mg(i, 1, a)
@@ -14650,7 +14650,7 @@ ${r.message}`,
                     }
 
                     function HI(i) {
-                        return i === !0 || i === !1 || At(i) && hr(i) == Ot
+                        return i === !0 || i === !1 || At(i) && dr(i) == Ot
                     }
                     var Jn = iw || ff,
                         VI = ug ? Ar(ug) : Zw;
@@ -14682,7 +14682,7 @@ ${r.message}`,
 
                     function ef(i) {
                         if (!At(i)) return !1;
-                        var a = hr(i);
+                        var a = dr(i);
                         return a == Vt || a == xt || typeof i.message == "string" && typeof i.name == "string" && !Ia(i)
                     }
 
@@ -14692,7 +14692,7 @@ ${r.message}`,
 
                     function Ln(i) {
                         if (!$t(i)) return !1;
-                        var a = hr(i);
+                        var a = dr(i);
                         return a == Dt || a == m || a == ot || a == ce
                     }
 
@@ -14740,11 +14740,11 @@ ${r.message}`,
                     }
 
                     function Zm(i) {
-                        return typeof i == "number" || At(i) && hr(i) == O
+                        return typeof i == "number" || At(i) && dr(i) == O
                     }
 
                     function Ia(i) {
-                        if (!At(i) || hr(i) != U) return !1;
+                        if (!At(i) || dr(i) != U) return !1;
                         var a = Po(i);
                         if (a === null) return !0;
                         var c = dt.call(a, "constructor") && a.constructor;
@@ -14758,11 +14758,11 @@ ${r.message}`,
                     var Qm = hg ? Ar(hg) : rC;
 
                     function ol(i) {
-                        return typeof i == "string" || !je(i) && At(i) && hr(i) == A
+                        return typeof i == "string" || !je(i) && At(i) && dr(i) == A
                     }
 
                     function Nr(i) {
-                        return typeof i == "symbol" || At(i) && hr(i) == W
+                        return typeof i == "symbol" || At(i) && dr(i) == W
                     }
                     var Ts = pg ? Ar(pg) : nC;
 
@@ -14775,7 +14775,7 @@ ${r.message}`,
                     }
 
                     function aA(i) {
-                        return At(i) && hr(i) == Re
+                        return At(i) && dr(i) == Re
                     }
                     var oA = Jo(Au),
                         lA = Jo(function(i, a) {
@@ -14861,7 +14861,7 @@ ${r.message}`,
                             var c = -1,
                                 d = a.length,
                                 v = d > 2 ? a[2] : r;
-                            for (v && pr(a[0], a[1], v) && (d = 1); ++c < d;)
+                            for (v && hr(a[0], a[1], v) && (d = 1); ++c < d;)
                                 for (var b = a[c], I = Er(b), R = -1, x = I.length; ++R < x;) {
                                     var ee = I[R],
                                         te = i[ee];
@@ -15042,7 +15042,7 @@ ${r.message}`,
                     }
 
                     function HA(i, a, c) {
-                        if (c && typeof c != "boolean" && pr(i, a, c) && (a = c = r), c === r && (typeof a == "boolean" ? (c = a, a = r) : typeof i == "boolean" && (c = i, i = r)), i === r && a === r ? (i = 0, a = 1) : (i = Pn(i), a === r ? (a = i, i = 0) : a = Pn(a)), i > a) {
+                        if (c && typeof c != "boolean" && hr(i, a, c) && (a = c = r), c === r && (typeof a == "boolean" ? (c = a, a = r) : typeof i == "boolean" && (c = i, i = r)), i === r && a === r ? (i = 0, a = 1) : (i = Pn(i), a === r ? (a = i, i = 0) : a = Pn(a)), i > a) {
                             var d = i;
                             i = a, a = d
                         }
@@ -15112,7 +15112,7 @@ ${r.message}`,
                     }
 
                     function rR(i, a, c) {
-                        return (c ? pr(i, a, c) : a === r) ? a = 1 : a = We(a), Lu(ct(i), a)
+                        return (c ? hr(i, a, c) : a === r) ? a = 1 : a = We(a), Lu(ct(i), a)
                     }
 
                     function nR() {
@@ -15125,7 +15125,7 @@ ${r.message}`,
                     });
 
                     function sR(i, a, c) {
-                        return c && typeof c != "number" && pr(i, a, c) && (a = c = r), c = c === r ? Ge : c >>> 0, c ? (i = ct(i), i && (typeof a == "string" || a != null && !tf(a)) && (a = Rr(a), !a && ds(i)) ? Xn(en(i), 0, c) : i.split(a, c)) : []
+                        return c && typeof c != "number" && hr(i, a, c) && (a = c = r), c = c === r ? Ge : c >>> 0, c ? (i = ct(i), i && (typeof a == "string" || a != null && !tf(a)) && (a = Rr(a), !a && ds(i)) ? Xn(en(i), 0, c) : i.split(a, c)) : []
                     }
                     var aR = bs(function(i, a, c) {
                         return i + (c ? " " : "") + sf(a)
@@ -15137,7 +15137,7 @@ ${r.message}`,
 
                     function lR(i, a, c) {
                         var d = _.templateSettings;
-                        c && pr(i, a, c) && (a = r), i = ct(i), a = ll({}, a, d, _m);
+                        c && hr(i, a, c) && (a = r), i = ct(i), a = ll({}, a, d, _m);
                         var v = ll({}, a.imports, d.imports, _m),
                             b = Kt(v),
                             I = gu(v, b),
@@ -15147,11 +15147,11 @@ ${r.message}`,
                             me = vu((a.escape || Eo).source + "|" + te.source + "|" + (te === jp ? jS : Eo).source + "|" + (a.evaluate || Eo).source + "|$", "g"),
                             we = "//# sourceURL=" + (dt.call(a, "sourceURL") ? (a.sourceURL + "").replace(/\s/g, " ") : "lodash.templateSources[" + ++vO + "]") + `
 `;
-                        i.replace(me, function(Pe, Ye, Xe, Lr, gr, Pr) {
+                        i.replace(me, function(Pe, Ye, Xe, Lr, pr, Pr) {
                             return Xe || (Xe = Lr), ae += i.slice(ee, Pr).replace(qS, MO), Ye && (R = !0, ae += `' +
 __e(` + Ye + `) +
-'`), gr && (x = !0, ae += `';
-` + gr + `;
+'`), pr && (x = !0, ae += `';
+` + pr + `;
 __p += '`), Xe && (ae += `' +
 ((__t = (` + Xe + `)) == null ? '' : __t) +
 '`), ee = Pr + Pe.length, Pe
@@ -15626,7 +15626,7 @@ function print() { __p += __j.call(arguments, '') }
                     const e = this.$refs.stage,
                         t = {};
                     this.player.size && (t.width = this.player.size.width, t.height = this.player.size.height), this.player.thicknesses && (t.thickness = this.player.thicknesses[0]), this.player.colors && (t.color = this.player.colors[0]), this.player.maxPoints && (t.maxPoints = this.player.maxPoints);
-                    const r = new _U(e, t);
+                    const r = new _5(e, t);
                     r.canvas.lines = Bn([]), r.canvas.lines2 = Bn([]), this.stage = r, this.stage.on("up", () => {
                         var s;
                         if (!this.player.live) return;
@@ -16188,7 +16188,7 @@ function print() { __p += __j.call(arguments, '') }
         });
 
     function M6(e, t, r, n, s, o) {
-        return e.player ? (H(), cr(yc(e.player.kind), {
+        return e.player ? (H(), lr(yc(e.player.kind), {
             key: 0,
             player: e.player,
             class: Me({
@@ -16452,20 +16452,20 @@ function print() { __p += __j.call(arguments, '') }
         e7 = PT.bind,
         Nd = PT.call,
         t7 = LT && e7.bind(Nd, Nd),
-        dr = LT ? function(e) {
+        fr = LT ? function(e) {
             return e && t7(e)
         } : function(e) {
             return e && function() {
                 return Nd.apply(e, arguments)
             }
         },
-        kT = dr,
+        kT = fr,
         r7 = kT({}.toString),
         n7 = kT("".slice),
         kc = function(e) {
             return n7(r7(e), 8, -1)
         },
-        i7 = dr,
+        i7 = fr,
         s7 = Fr,
         a7 = kc,
         Rf = Object,
@@ -16500,7 +16500,7 @@ function print() { __p += __j.call(arguments, '') }
         Dc = function(e, t) {
             return arguments.length < 2 ? p7(Nf[e]) : Nf[e] && Nf[e][t]
         },
-        g7 = dr,
+        g7 = fr,
         xT = g7({}.isPrototypeOf),
         m7 = Dc,
         v7 = m7("navigator", "userAgent") || "",
@@ -16599,13 +16599,13 @@ function print() { __p += __j.call(arguments, '') }
         BT = function(e) {
             return B7(U7(e))
         },
-        j7 = dr,
+        j7 = fr,
         G7 = BT,
         W7 = j7({}.hasOwnProperty),
         Ei = Object.hasOwn || function(t, r) {
             return W7(G7(t), r)
         },
-        H7 = dr,
+        H7 = fr,
         V7 = 0,
         K7 = Math.random(),
         Y7 = H7(1 .toString),
@@ -16752,7 +16752,7 @@ function print() { __p += __j.call(arguments, '') }
             PROPER: xj,
             CONFIGURABLE: Dj
         },
-        Fj = dr,
+        Fj = fr,
         Uj = Cr,
         kd = op,
         Bj = Fj(Function.toString);
@@ -16774,7 +16774,7 @@ function print() { __p += __j.call(arguments, '') }
         up = {},
         Yj = Hj,
         JT = Mr,
-        Bf = dr,
+        Bf = fr,
         qj = ua,
         zj = lp,
         jf = Ei,
@@ -16931,7 +16931,7 @@ function print() { __p += __j.call(arguments, '') }
             includes: o_(!0),
             indexOf: o_(!1)
         },
-        LG = dr,
+        LG = fr,
         Wf = Ei,
         PG = xc,
         kG = NG.indexOf,
@@ -16956,7 +16956,7 @@ function print() { __p += __j.call(arguments, '') }
     var i0 = {};
     i0.f = Object.getOwnPropertySymbols;
     var UG = Dc,
-        BG = dr,
+        BG = fr,
         jG = t0,
         GG = i0,
         WG = cs,
@@ -17062,7 +17062,7 @@ function print() { __p += __j.call(arguments, '') }
             var t = e.flags;
             return t === void 0 && !("flags" in u_) && !R9(e, "flags") && N9(u_, e) ? A9(L9, e) : t
         },
-        dp = dr,
+        dp = fr,
         k9 = BT,
         x9 = Math.floor,
         Vf = dp("".charAt),
@@ -17102,7 +17102,7 @@ function print() { __p += __j.call(arguments, '') }
         },
         U9 = s0,
         B9 = bi,
-        hp = dr,
+        hp = fr,
         f_ = ho,
         j9 = Cr,
         G9 = p9,
@@ -17231,7 +17231,7 @@ function print() { __p += __j.call(arguments, '') }
             return e.exec("b").groups.a !== "b" || "b".replace(e, "$<a>c") !== "bc"
         }),
         Rs = bi,
-        Bc = dr,
+        Bc = fr,
         $W = Uc,
         IW = o0,
         AW = Q9,
@@ -17292,7 +17292,7 @@ function print() { __p += __j.call(arguments, '') }
         GW = typeof Reflect == "object" && Reflect.apply || (jW ? b_.bind(__) : function() {
             return b_.apply(__, arguments)
         }),
-        E_ = dr,
+        E_ = fr,
         T_ = e0,
         WW = vp,
         S_ = Fr,
@@ -17336,7 +17336,7 @@ function print() { __p += __j.call(arguments, '') }
             }
             n && HW(zf[s], "sham", !0)
         },
-        yp = dr,
+        yp = fr,
         YW = Fc,
         qW = Uc,
         zW = ho,
@@ -17377,7 +17377,7 @@ function print() { __p += __j.call(arguments, '') }
         },
         oH = GW,
         $_ = bi,
-        jc = dr,
+        jc = fr,
         lH = KW,
         cH = Fr,
         uH = cs,
@@ -17457,7 +17457,7 @@ function print() { __p += __j.call(arguments, '') }
         }]
     }, !wH || !OH || R_);
     var CH = Mr,
-        $H = dr,
+        $H = fr,
         IH = function(e, t) {
             return $H(CH[e].prototype[t])
         },
@@ -18643,10 +18643,10 @@ function print() { __p += __j.call(arguments, '') }
                         e.config.globalProperties.$debugReplayer = t.replayer, e.component("Debug", uV);
                         return
                     }
-                    if (e.config.globalProperties.$debugRecorder = new gU(t.client, t.room), !e.config.globalProperties.$showModal) {
+                    if (e.config.globalProperties.$debugRecorder = new g5(t.client, t.room), !e.config.globalProperties.$showModal) {
                         console.warn("[debugPlugin] Sending debug and feedback messages is disabled be the modalPlugin is not used.");
                         return
-                    }(!or.isProduction || or.getQueryParam("feedback")) && e.component("Debug", yz), new jH(() => {
+                    }(!vr.isProduction || vr.getQueryParam("feedback")) && e.component("Debug", yz), new jH(() => {
                         e.config.globalProperties.$showModal(A0)
                     })
                 }
@@ -19352,7 +19352,7 @@ function print() { __p += __j.call(arguments, '') }
         return Qs(e) ? VX(t) ? t.test(e) : typeof t == "string" ? e.indexOf(t) !== -1 : !1 : !1
     }
 
-    function ur(e, t, r) {
+    function cr(e, t, r) {
         if (t in e) {
             var n = e[t],
                 s = r(n);
@@ -19545,7 +19545,7 @@ Error:`, n)
 
     function uJ() {
         "console" in Ct && tc.forEach(function(e) {
-            e in Ct.console && ur(Ct.console, e, function(t) {
+            e in Ct.console && cr(Ct.console, e, function(t) {
                 return function(...r) {
                     fn("console", {
                         args: r,
@@ -19557,7 +19557,7 @@ Error:`, n)
     }
 
     function fJ() {
-        !oJ() || ur(Ct, "fetch", function(e) {
+        !oJ() || cr(Ct, "fetch", function(e) {
             return function(...t) {
                 var r = {
                     args: t,
@@ -19595,7 +19595,7 @@ Error:`, n)
     function pJ() {
         if ("XMLHttpRequest" in Ct) {
             var e = XMLHttpRequest.prototype;
-            ur(e, "open", function(t) {
+            cr(e, "open", function(t) {
                 return function(...r) {
                     var n = this,
                         s = r[1],
@@ -19617,13 +19617,13 @@ Error:`, n)
                             })
                         }
                     };
-                    return "onreadystatechange" in n && typeof n.onreadystatechange == "function" ? ur(n, "onreadystatechange", function(u) {
+                    return "onreadystatechange" in n && typeof n.onreadystatechange == "function" ? cr(n, "onreadystatechange", function(u) {
                         return function(...f) {
                             return l(), u.apply(n, f)
                         }
                     }) : n.addEventListener("readystatechange", l), t.apply(n, r)
                 }
-            }), ur(e, "send", function(t) {
+            }), cr(e, "send", function(t) {
                 return function(...r) {
                     return this.__sentry_xhr__ && r[0] !== void 0 && (this.__sentry_xhr__.body = r[0]), fn("xhr", {
                         args: r,
@@ -19664,7 +19664,7 @@ Error:`, n)
                 return r.apply(this, n)
             }
         }
-        ur(Ct.history, "pushState", t), ur(Ct.history, "replaceState", t)
+        cr(Ct.history, "pushState", t), cr(Ct.history, "replaceState", t)
     }
     var mJ = 1e3;
     let Ol, wl;
@@ -19712,7 +19712,7 @@ Error:`, n)
                 t = ob(e, !0);
             Ct.document.addEventListener("click", t, !1), Ct.document.addEventListener("keypress", t, !1), ["EventTarget", "Node"].forEach(r => {
                 var n = Ct[r] && Ct[r].prototype;
-                !n || !n.hasOwnProperty || !n.hasOwnProperty("addEventListener") || (ur(n, "addEventListener", function(s) {
+                !n || !n.hasOwnProperty || !n.hasOwnProperty("addEventListener") || (cr(n, "addEventListener", function(s) {
                     return function(o, l, u) {
                         if (o === "click" || o == "keypress") try {
                             var f = this,
@@ -19728,7 +19728,7 @@ Error:`, n)
                         } catch {}
                         return s.call(this, o, l, u)
                     }
-                }), ur(n, "removeEventListener", function(s) {
+                }), cr(n, "removeEventListener", function(s) {
                     return function(o, l, u) {
                         if (o === "click" || o == "keypress") try {
                             var f = this,
@@ -21181,7 +21181,7 @@ Url: ${nc(e)}`), !0)
         }
         setupOnce() {
             var t = zt();
-            this._options.setTimeout && ur(t, "setTimeout", hb), this._options.setInterval && ur(t, "setInterval", hb), this._options.requestAnimationFrame && ur(t, "requestAnimationFrame", dZ), this._options.XMLHttpRequest && "XMLHttpRequest" in t && ur(XMLHttpRequest.prototype, "send", hZ);
+            this._options.setTimeout && cr(t, "setTimeout", hb), this._options.setInterval && cr(t, "setInterval", hb), this._options.requestAnimationFrame && cr(t, "requestAnimationFrame", dZ), this._options.XMLHttpRequest && "XMLHttpRequest" in t && cr(XMLHttpRequest.prototype, "send", hZ);
             var r = this._options.eventTarget;
             if (r) {
                 var n = Array.isArray(r) ? r : fZ;
@@ -21226,7 +21226,7 @@ Url: ${nc(e)}`), !0)
             var r = this,
                 n = ["onload", "onerror", "onprogress", "onreadystatechange"];
             return n.forEach(s => {
-                s in r && typeof r[s] == "function" && ur(r, s, function(o) {
+                s in r && typeof r[s] == "function" && cr(r, s, function(o) {
                     var l = {
                             mechanism: {
                                 data: {
@@ -21247,7 +21247,7 @@ Url: ${nc(e)}`), !0)
     function pZ(e) {
         var t = zt(),
             r = t[e] && t[e].prototype;
-        !r || !r.hasOwnProperty || !r.hasOwnProperty("addEventListener") || (ur(r, "addEventListener", function(n) {
+        !r || !r.hasOwnProperty || !r.hasOwnProperty("addEventListener") || (cr(r, "addEventListener", function(n) {
             return function(s, o, l) {
                 try {
                     typeof o.handleEvent == "function" && (o.handleEvent = ea(o.handleEvent, {
@@ -21274,7 +21274,7 @@ Url: ${nc(e)}`), !0)
                     }
                 }), l])
             }
-        }), ur(r, "removeEventListener", function(n) {
+        }), cr(r, "removeEventListener", function(n) {
             return function(s, o, l) {
                 var u = o;
                 try {
@@ -21762,7 +21762,7 @@ ${t}`
         });
 
     function NQ(e, t, r, n, s, o) {
-        return H(), cr(Sc, {
+        return H(), lr(Sc, {
             name: "modal-transition"
         }, {
             default: Fs(() => [e.props ? (H(), z("div", {
@@ -21770,7 +21770,7 @@ ${t}`
                 class: Me(["modal", e.classes]),
                 onKeyup: t[0] || (t[0] = Us((...l) => e.onBackgroundClick && e.onBackgroundClick(...l), ["esc"])),
                 onClick: t[1] || (t[1] = Zr((...l) => e.onBackgroundClick && e.onBackgroundClick(...l), ["self"]))
-            }, [e.content ? (H(), cr(yc(e.content), Ec({
+            }, [e.content ? (H(), lr(yc(e.content), Ec({
                 key: 0,
                 class: "content"
             }, e.props, {
@@ -21988,7 +21988,7 @@ ${t}`
     }
     const xn = " ",
         XQ = "\r",
-        vr = `
+        mr = `
 `,
         JQ = String.fromCharCode(8232),
         ZQ = String.fromCharCode(8233);
@@ -21999,8 +21999,8 @@ ${t}`
             n = 1,
             s = 1,
             o = 0;
-        const l = oe => t[oe] === XQ && t[oe + 1] === vr,
-            u = oe => t[oe] === vr,
+        const l = oe => t[oe] === XQ && t[oe + 1] === mr,
+            u = oe => t[oe] === mr,
             f = oe => t[oe] === ZQ,
             h = oe => t[oe] === JQ,
             g = oe => l(oe) || u(oe) || f(oe) || h(oe),
@@ -22008,7 +22008,7 @@ ${t}`
             E = () => n,
             C = () => s,
             P = () => o,
-            M = oe => l(oe) || f(oe) || h(oe) ? vr : t[oe],
+            M = oe => l(oe) || f(oe) || h(oe) ? mr : t[oe],
             B = () => M(r),
             $ = () => M(r + o);
 
@@ -22104,7 +22104,7 @@ ${t}`
 
         function M(m) {
             let p = "";
-            for (; m.currentPeek() === xn || m.currentPeek() === vr;) p += m.currentPeek(), m.peek();
+            for (; m.currentPeek() === xn || m.currentPeek() === mr;) p += m.currentPeek(), m.peek();
             return p
         }
 
@@ -22193,7 +22193,7 @@ ${t}`
             if (O !== 10) return !1;
             const D = () => {
                     const Y = m.currentPeek();
-                    return Y === "{" ? $(m.peek()) : Y === "@" || Y === "%" || Y === "|" || Y === ":" || Y === "." || Y === xn || !Y ? !1 : Y === vr ? (m.peek(), D()) : $(Y)
+                    return Y === "{" ? $(m.peek()) : Y === "@" || Y === "%" || Y === "|" || Y === ":" || Y === "." || Y === xn || !Y ? !1 : Y === mr ? (m.peek(), D()) : $(Y)
                 },
                 U = D();
             return m.resetPeek(), U
@@ -22217,7 +22217,7 @@ ${t}`
         function fe(m, p = !0) {
             const O = (U = !1, Y = "", ce = !1) => {
                     const se = m.currentPeek();
-                    return se === "{" ? Y === "%" ? !1 : U : se === "@" || !se ? Y === "%" ? !0 : U : se === "%" ? (m.peek(), O(U, "%", !0)) : se === "|" ? Y === "%" || ce ? !0 : !(Y === xn || Y === vr) : se === xn ? (m.peek(), O(!0, xn, ce)) : se === vr ? (m.peek(), O(!0, vr, ce)) : !0
+                    return se === "{" ? Y === "%" ? !1 : U : se === "@" || !se ? Y === "%" ? !0 : U : se === "%" ? (m.peek(), O(U, "%", !0)) : se === "|" ? Y === "%" || ce ? !0 : !(Y === xn || Y === mr) : se === xn ? (m.peek(), O(!0, xn, ce)) : se === mr ? (m.peek(), O(!0, mr, ce)) : !0
                 },
                 D = O();
             return p && m.resetPeek(), D
@@ -22270,7 +22270,7 @@ ${t}`
                 if (O === "%")
                     if (fe(m)) p += O, m.next();
                     else break;
-                else if (O === xn || O === vr)
+                else if (O === xn || O === mr)
                     if (fe(m)) p += O, m.next();
                     else {
                         if (Ae(m)) break;
@@ -22299,10 +22299,10 @@ ${t}`
             B(m), P(m, "'");
             let p = "",
                 O = "";
-            const D = Y => Y !== _b && Y !== vr;
+            const D = Y => Y !== _b && Y !== mr;
             for (; p = Ce(m, D);) p === "\\" ? O += It(m) : O += p;
             const U = m.currentChar();
-            return U === vr || U === ri ? (y(rt.UNTERMINATED_SINGLE_QUOTE_IN_PLACEHOLDER, o(), 0), U === vr && (m.next(), P(m, "'")), O) : (P(m, "'"), O)
+            return U === mr || U === ri ? (y(rt.UNTERMINATED_SINGLE_QUOTE_IN_PLACEHOLDER, o(), 0), U === mr && (m.next(), P(m, "'")), O) : (P(m, "'"), O)
         }
 
         function It(m) {
@@ -22338,7 +22338,7 @@ ${t}`
             B(m);
             let p = "",
                 O = "";
-            const D = U => U !== "{" && U !== "}" && U !== xn && U !== vr;
+            const D = U => U !== "{" && U !== "}" && U !== xn && U !== mr;
             for (; p = Ce(m, D);) O += p;
             return O
         }
@@ -22353,7 +22353,7 @@ ${t}`
         function ot(m) {
             const p = (O = !1, D) => {
                 const U = m.currentChar();
-                return U === "{" || U === "%" || U === "@" || U === "|" || !U || U === xn ? D : U === vr ? (D += U, m.next(), p(O, D)) : (D += U, m.next(), p(!0, D))
+                return U === "{" || U === "%" || U === "@" || U === "|" || !U || U === xn ? D : U === mr ? (D += U, m.next(), p(O, D)) : (D += U, m.next(), p(!0, D))
             };
             return p(!1, "")
         }
@@ -22394,7 +22394,7 @@ ${t}`
             } = p;
             let D = null;
             const U = m.currentChar();
-            switch ((O === 8 || O === 9 || O === 12 || O === 10) && (U === vr || U === xn) && y(rt.INVALID_LINKED_FORMAT, o(), 0), U) {
+            switch ((O === 8 || O === 9 || O === 12 || O === 10) && (U === mr || U === xn) && y(rt.INVALID_LINKED_FORMAT, o(), 0), U) {
                 case "@":
                     return m.next(), D = E(p, 8, "@"), p.inLinked = !0, D;
                 case ".":
@@ -24775,7 +24775,7 @@ ${t}`
         };
 
     function Ote(e, t, r, n, s, o) {
-        return H(), cr(Sc, {
+        return H(), lr(Sc, {
             name: "toast-transition"
         }, {
             default: Fs(() => [e.isVisible && e.options ? (H(), z("div", {
@@ -24929,11 +24929,11 @@ ${t}`
             f = Mt("Debug"),
             h = Mt("Modal"),
             g = Mt("Toast");
-        return e.shouldShowFatal ? (H(), cr(l, {
+        return e.shouldShowFatal ? (H(), lr(l, {
             key: 0
         })) : (H(), z(et, {
             key: 1
-        }, [nt(u), (H(), cr(yc(e.mainView), Ec({
+        }, [nt(u), (H(), lr(yc(e.mainView), Ec({
             id: "game",
             class: e.classes
         }, e.ecastValues), null, 16, ["class"])), nt(f), nt(h), nt(g)], 64))
@@ -25168,9 +25168,8 @@ ${t}`
             },
             watch: {
                 async playerName() {
-                    this.playerName = this.playerName.toUpperCase(), this.playerName = or.sanitizeEmoji(this.playerName);
                     try {
-                        this.player.playerNameTextKey && await this.$ecast.updateText(this.player.playerNameTextKey, this.playerName)
+                        this.player.playerNameTextKey && await this.$ecast.updateText(this.player.playerNameTextKey, this.playerName.toUpperCase())
                     } catch (e) {
                         this.$handleEcastError(e)
                     }
@@ -25221,7 +25220,7 @@ ${t}`
                 }
             }
         }),
-        Vte = e => (pc("data-v-45339b0f"), e = e(), gc(), e),
+        Vte = e => (pc("data-v-daa09643"), e = e(), gc(), e),
         Kte = {
             class: "lobby"
         },
@@ -25286,7 +25285,7 @@ ${t}`
             onKeypress: t[1] || (t[1] = Us(g => e.submitName(), ["enter"]))
         }, null, 8, ["modelValue", "disabled", "aria-label"]), Ie(Z("button", {
             class: "primary-button eay-name-submit",
-            disabled: e.isSubmittingName,
+            disabled: e.isSubmittingName || e.playerName.length <= 0,
             "aria-label": e.$t("ARIA.NAME_SUBMIT"),
             onClick: t[2] || (t[2] = g => e.submitName())
         }, null, 8, Xte), [
@@ -25352,7 +25351,7 @@ ${t}`
     }
     const hre = ze(Hte, [
             ["render", dre],
-            ["__scopeId", "data-v-45339b0f"]
+            ["__scopeId", "data-v-daa09643"]
         ]),
         pre = it({
             components: {
@@ -25593,10 +25592,10 @@ ${t}`
             onClick: E => e.chooseOption(y)
         }, [Z("span", jre, _t(e.$bb(g.text)), 1), e.player.context === "pick-likes" ? (H(), z(et, {
             key: 0
-        }, [e.selected.indexOf(y) !== -1 ? (H(), cr(l, {
+        }, [e.selected.indexOf(y) !== -1 ? (H(), lr(l, {
             key: 0,
             class: "like-image full-like"
-        })) : (H(), cr(u, {
+        })) : (H(), lr(u, {
             key: 1,
             class: "like-image empty-like"
         }))], 64)) : Se("", !0)], 10, Bre))), 128))])
@@ -25683,7 +25682,7 @@ ${t}`
             onClick: y => e.submitVote(h)
         }, [Ie(Z("span", zre, null, 512), [
             [f, h.text]
-        ])], 10, qre))), 128))], 64)) : (H(), cr(l, {
+        ])], 10, qre))), 128))], 64)) : (H(), lr(l, {
             key: 1
         }))])
     }
@@ -25822,6 +25821,7 @@ ${t}`
                 async onSubmit() {
                     if (!this.player.responseKey) console.error("missing response key");
                     else if (this.isProfanityError1 || this.isProfanityError2 || this.isTruthError) console.error("can't submit disallowed text");
+                    else if (this.currentText1.length <= 0 || this.player.textKey2 && this.currentText2.length <= 0) console.error("cant submit blanks text");
                     else if (!this.isSubmitting) {
                         this.isSubmitting = !0;
                         try {
@@ -25935,7 +25935,7 @@ ${t}`
             "aria-label": e.$t("ARIA.LIE_INPUT_1"),
             sanitizers: ["html", "emoji"],
             onKeypress: t[1] || (t[1] = Us(E => e.onSubmit(), ["enter"]))
-        }, null, 8, ["modelValue", "placeholder", "maxlength", "disabled", "aria-label"]), e.isProfanityError1 ? (H(), cr(f, {
+        }, null, 8, ["modelValue", "placeholder", "maxlength", "disabled", "aria-label"]), e.isProfanityError1 ? (H(), lr(f, {
             key: 0,
             class: "error-bubble"
         }, {
@@ -25945,7 +25945,7 @@ ${t}`
                 [g, "WRITING.PROHIBITED_LANGUAGE"]
             ])])]),
             _: 1
-        })) : e.isTruthError ? (H(), cr(f, {
+        })) : e.isTruthError ? (H(), lr(f, {
             key: 1,
             class: "error-bubble"
         }, {
@@ -25955,7 +25955,7 @@ ${t}`
             _: 1
         })) : Se("", !0), e.player.textKey2 && e.player.joiningPhrase ? Ie((H(), z("span", Ine, null, 512)), [
             [g, e.player.joiningPhrase.toUpperCase()]
-        ]) : Se("", !0), e.player.textKey2 ? (H(), cr(l, {
+        ]) : Se("", !0), e.player.textKey2 ? (H(), lr(l, {
             key: 3,
             modelValue: e.currentText2,
             "onUpdate:modelValue": t[2] || (t[2] = E => e.currentText2 = E),
@@ -25966,7 +25966,7 @@ ${t}`
             "aria-label": e.$t("ARIA.LIE_INPUT_2"),
             sanitizers: ["html", "emoji"],
             onKeypress: Us(Zr(e.onSubmit, ["prevent"]), ["enter"])
-        }, null, 8, ["modelValue", "placeholder", "maxlength", "disabled", "aria-label", "onKeypress"])) : Se("", !0), e.isProfanityError2 ? (H(), cr(f, {
+        }, null, 8, ["modelValue", "placeholder", "maxlength", "disabled", "aria-label", "onKeypress"])) : Se("", !0), e.isProfanityError2 ? (H(), lr(f, {
             key: 4,
             class: "error-bubble"
         }, {
@@ -25999,7 +25999,7 @@ ${t}`
     }
     const Dne = ze(yne, [
             ["render", xne],
-            ["__scopeId", "data-v-705cacaa"]
+            ["__scopeId", "data-v-6fb6f179"]
         ]),
         Mne = it({
             bb: {
@@ -26120,7 +26120,7 @@ ${t}`
             u = Rt("t");
         return H(), z("div", {
             class: Me([e.alternateBackgroundClass, "fourbage"])
-        }, [Z("div", Fne, [e.screen ? (H(), cr(yc(e.screen[0]), Ec({
+        }, [Z("div", Fne, [e.screen ? (H(), lr(yc(e.screen[0]), Ec({
             key: 0,
             role: "main"
         }, e.screen[1]), null, 16)) : Se("", !0)]), e.info ? Ie((H(), z("span", Une, null, 512)), [
@@ -26138,4 +26138,4 @@ ${t}`
     })
 });
 export default Wne();
-//# sourceMappingURL=232c435d.js.map
+//# sourceMappingURL=c14f551e.js.map

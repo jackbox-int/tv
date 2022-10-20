@@ -3817,11 +3817,11 @@ body {
     flex-grow: 1
 }
 
-.writing .answer[data-v-73cbaae9] {
+.writing .answer[data-v-9705f499] {
     margin-top: 10px
 }
 
-.writing .answer.submitted[data-v-73cbaae9] {
+.writing .answer.submitted[data-v-9705f499] {
     width: 90%;
     min-height: 65px;
     padding: 25px 20px;
@@ -3835,7 +3835,7 @@ body {
     overflow-wrap: break-word
 }
 
-.writing .confirm[data-v-73cbaae9] {
+.writing .confirm[data-v-9705f499] {
     position: relative;
     width: 125px;
     min-height: 35px;
@@ -3846,7 +3846,7 @@ body {
     text-transform: uppercase
 }
 
-.writing .target[data-v-73cbaae9] {
+.writing .target[data-v-9705f499] {
     display: flex;
     position: relative;
     min-height: 50px;
@@ -3855,7 +3855,7 @@ body {
     box-shadow: 3px 5px #00000040
 }
 
-.writing .target .avatar[data-v-73cbaae9] {
+.writing .target .avatar[data-v-9705f499] {
     position: absolute;
     top: -20px;
     left: -10px;
@@ -3863,7 +3863,7 @@ body {
     height: 85px
 }
 
-.writing .target .details[data-v-73cbaae9] {
+.writing .target .details[data-v-9705f499] {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3871,93 +3871,93 @@ body {
     text-align: left
 }
 
-.writing .target .details .flair[data-v-73cbaae9] {
+.writing .target .details .flair[data-v-9705f499] {
     font-size: 1.6rem;
     color: #a2a2a2
 }
 
-.writing .target .details .flair[data-v-73cbaae9]:before {
+.writing .target .details .flair[data-v-9705f499]:before {
     content: "("
 }
 
-.writing .target .details .flair[data-v-73cbaae9]:after {
+.writing .target .details .flair[data-v-9705f499]:after {
     content: ")"
 }
 
-.writing .target .details .name[data-v-73cbaae9] {
+.writing .target .details .name[data-v-9705f499] {
     font-size: 2.4rem;
     font-weight: 700
 }
 
-.writing .target .details .name.gene[data-v-73cbaae9] {
+.writing .target .details .name.gene[data-v-9705f499] {
     color: #666
 }
 
-.writing .target .details .name.audience-intro[data-v-73cbaae9] {
+.writing .target .details .name.audience-intro[data-v-9705f499] {
     color: #3eaaff
 }
 
-.writing .target .details .name.audience-connection[data-v-73cbaae9] {
+.writing .target .details .name.audience-connection[data-v-9705f499] {
     color: #ff93c8
 }
 
-.writing .target .details .name.audience-quickie[data-v-73cbaae9] {
+.writing .target .details .name.audience-quickie[data-v-9705f499] {
     color: #8f8d96
 }
 
-.writing .target .details .name.audience-firestarter[data-v-73cbaae9] {
+.writing .target .details .name.audience-firestarter[data-v-9705f499] {
     color: #fe983b
 }
 
-.writing .target .details .name.audience-finale[data-v-73cbaae9] {
+.writing .target .details .name.audience-finale[data-v-9705f499] {
     color: #2f1ca4
 }
 
-.writing .target .details .name.blue[data-v-73cbaae9] {
+.writing .target .details .name.blue[data-v-9705f499] {
     color: #03f
 }
 
-.writing .target .details .name.brown[data-v-73cbaae9] {
+.writing .target .details .name.brown[data-v-9705f499] {
     color: #874b43
 }
 
-.writing .target .details .name.cyan[data-v-73cbaae9] {
+.writing .target .details .name.cyan[data-v-9705f499] {
     color: #00a7bd
 }
 
-.writing .target .details .name.gray[data-v-73cbaae9] {
+.writing .target .details .name.gray[data-v-9705f499] {
     color: #666
 }
 
-.writing .target .details .name.green[data-v-73cbaae9] {
+.writing .target .details .name.green[data-v-9705f499] {
     color: #9c0
 }
 
-.writing .target .details .name.magenta[data-v-73cbaae9] {
+.writing .target .details .name.magenta[data-v-9705f499] {
     color: #f3008f
 }
 
-.writing .target .details .name.orange[data-v-73cbaae9] {
+.writing .target .details .name.orange[data-v-9705f499] {
     color: #f60
 }
 
-.writing .target .details .name.pink[data-v-73cbaae9] {
+.writing .target .details .name.pink[data-v-9705f499] {
     color: #ff5b66
 }
 
-.writing .target .details .name.purple[data-v-73cbaae9] {
+.writing .target .details .name.purple[data-v-9705f499] {
     color: #63c
 }
 
-.writing .target .details .name.red[data-v-73cbaae9] {
+.writing .target .details .name.red[data-v-9705f499] {
     color: #f33
 }
 
-.writing .target .details .name.teal[data-v-73cbaae9] {
+.writing .target .details .name.teal[data-v-9705f499] {
     color: #099
 }
 
-.writing .target .details .name.yellow[data-v-73cbaae9] {
+.writing .target .details .name.yellow[data-v-9705f499] {
     color: #eebd00
 }
 

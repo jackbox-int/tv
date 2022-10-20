@@ -11435,8 +11435,7 @@ var bre = rL((Sre, Ow) => {
             isPublic: !0,
             directory: "pp8/apply-yourself",
             categoryId: "JobGameGame",
-            features: ["moderation"],
-            hasPreviews: !0
+            features: ["moderation", "previews"]
         }, {
             name: "Drawful Animate",
             tag: "drawful-animate",
@@ -11527,7 +11526,7 @@ var bre = rL((Sre, Ow) => {
             wrapper: "vue",
             isPublic: !0,
             directory: "pp9/lineup",
-            features: ["kicking"],
+            features: ["kicking", "previews"],
             categoryId: "LineupGame"
         }],
         Wl = e => U3.find(t => t.tag === e || t.categoryId === e);
@@ -26671,4 +26670,4 @@ from your past games list.`,
     })
 });
 export default bre();
-//# sourceMappingURL=1dcbb100.js.map
+//# sourceMappingURL=f38610d2.js.map

@@ -9,7 +9,7 @@ var yk = (t, e) => () => (e || t((e = {
     exports: {}
 }).exports, e), e.exports);
 var de = (t, e, n) => (vk(t, typeof e != "symbol" ? e + "" : e, n), n);
-var Lce = yk((Dce, UA) => {
+var Dce = yk((Fce, UA) => {
     (function() {
         const e = document.createElement("link").relList;
         if (e && e.supports && e.supports("modulepreload")) return;
@@ -1430,7 +1430,7 @@ var Lce = yk((Dce, UA) => {
         df("ec", t, e)
     }
 
-    function ke(t, e) {
+    function Ne(t, e) {
         const n = bn;
         if (n === null) return t;
         const r = vf(n) || n.proxy,
@@ -2770,7 +2770,7 @@ var Lce = yk((Dce, UA) => {
         return n.staticCount = e, n
     }
 
-    function Le(t = "", e = !1) {
+    function ke(t = "", e = !1) {
         return e ? (ee(), Lr(br, null, t)) : ut(br, null, t)
     }
 
@@ -3592,9 +3592,9 @@ var Lce = yk((Dce, UA) => {
 
     function tM(t, e, n, r, i, s) {
         const o = Dt("bb");
-        return ee(), re("div", J2, [Z("div", Q2, [t.player.prompt ? ke((ee(), re("p", Z2, null, 512)), [
+        return ee(), re("div", J2, [Z("div", Q2, [t.player.prompt ? Ne((ee(), re("p", Z2, null, 512)), [
             [o, t.player.prompt]
-        ]) : Le("", !0), (ee(!0), re(dt, null, bi(t.player.choices, (c, u) => (ee(), re("button", {
+        ]) : ke("", !0), (ee(!0), re(dt, null, bi(t.player.choices, (c, u) => (ee(), re("button", {
             key: u,
             class: Be({
                 selected: c.isSelected
@@ -11497,12 +11497,12 @@ ${n.message}`,
         const o = Dt("pointerbox-translate"),
             c = Dt("pointerbox"),
             u = Dt("t");
-        return ee(), re("div", J4, [ke((ee(), re("div", {
+        return ee(), re("div", J4, [Ne((ee(), re("div", {
             class: "stage",
             "onPointerbox:start": e[0] || (e[0] = (...h) => t.onPointerBoxStart && t.onPointerBoxStart(...h)),
             "onPointerbox:move": e[1] || (e[1] = (...h) => t.onPointerBoxMove && t.onPointerBoxMove(...h)),
             "onPointerbox:end": e[2] || (e[2] = (...h) => t.onPointerBoxEnd && t.onPointerBoxEnd(...h))
-        }, [ke(Z("canvas", Q4, null, 512), [
+        }, [Ne(Z("canvas", Q4, null, 512), [
             [o, {
                 id: "doodleCanvas",
                 width: t.pointerBoxWidth,
@@ -11510,14 +11510,14 @@ ${n.message}`,
             }]
         ])], 32)), [
             [c]
-        ]), t.hideUndo ? Le("", !0) : ke((ee(), re("button", {
+        ]), t.hideUndo ? ke("", !0) : Ne((ee(), re("button", {
             key: 0,
             class: "doodle-action undo",
             disabled: !t.canSubmit,
             onClick: e[3] || (e[3] = Xt((...h) => t.onUndo && t.onUndo(...h), ["prevent"]))
         }, null, 8, Z4)), [
             [u, "ACTION.UNDO"]
-        ]), t.hideSubmit ? Le("", !0) : ke((ee(), re("button", {
+        ]), t.hideSubmit ? ke("", !0) : Ne((ee(), re("button", {
             key: 1,
             class: "doodle-action submit",
             disabled: !t.canSubmit,
@@ -12391,23 +12391,23 @@ ${n.message}`,
                             Ee = 0,
                             Ae = _n(V, this.__takeCount__);
                         if (!f || !p && T == V && Ae == V) return Uv(a, this.__actions__);
-                        var Ne = [];
+                        var xe = [];
                         e: for (; V-- && Ee < Ae;) {
                             ie += l;
-                            for (var Ke = -1, xe = a[ie]; ++Ke < fe;) {
+                            for (var Ke = -1, Le = a[ie]; ++Ke < fe;) {
                                 var qe = se[Ke],
                                     Qe = qe.iteratee,
                                     Kn = qe.type,
-                                    An = Qe(xe);
-                                if (Kn == J) xe = An;
+                                    An = Qe(Le);
+                                if (Kn == J) Le = An;
                                 else if (!An) {
                                     if (Kn == j) continue e;
                                     break e
                                 }
                             }
-                            Ne[Ee++] = xe
+                            xe[Ee++] = Le
                         }
-                        return Ne
+                        return xe
                     }
                     Je.prototype = ba(wc.prototype), Je.prototype.constructor = Je;
 
@@ -12668,15 +12668,15 @@ ${n.message}`,
                         C || (C = new wr);
                         var Ae = C.get(a);
                         if (Ae) return Ae;
-                        C.set(a, k), My(a) ? a.forEach(function(xe) {
-                            k.add(cr(xe, l, f, xe, a, C))
-                        }) : ky(a) && a.forEach(function(xe, qe) {
-                            k.set(qe, cr(xe, l, f, qe, a, C))
+                        C.set(a, k), My(a) ? a.forEach(function(Le) {
+                            k.add(cr(Le, l, f, Le, a, C))
+                        }) : ky(a) && a.forEach(function(Le, qe) {
+                            k.set(qe, cr(Le, l, f, qe, a, C))
                         });
-                        var Ne = ie ? V ? jh : Gh : V ? Nn : en,
-                            Ke = se ? n : Ne(a);
-                        return ar(Ke || a, function(xe, qe) {
-                            Ke && (qe = xe, xe = a[qe]), Uo(k, qe, cr(xe, l, f, qe, a, C))
+                        var xe = ie ? V ? jh : Gh : V ? Nn : en,
+                            Ke = se ? n : xe(a);
+                        return ar(Ke || a, function(Le, qe) {
+                            Ke && (qe = Le, Le = a[qe]), Uo(k, qe, cr(Le, l, f, qe, a, C))
                         }), k
                     }
 
@@ -12826,13 +12826,13 @@ ${n.message}`,
                             Ee = F[0];
                         e: for (; ++fe < T && ie.length < V;) {
                             var Ae = se[fe],
-                                Ne = l ? l(Ae) : Ae;
-                            if (Ae = f || Ae !== 0 ? Ae : 0, !(Ee ? Lo(Ee, Ne) : p(ie, Ne, f))) {
+                                xe = l ? l(Ae) : Ae;
+                            if (Ae = f || Ae !== 0 ? Ae : 0, !(Ee ? Lo(Ee, xe) : p(ie, xe, f))) {
                                 for (k = C; --k;) {
                                     var Ke = F[k];
-                                    if (!(Ke ? Lo(Ke, Ne) : p(a[k], Ne, f))) continue e
+                                    if (!(Ke ? Lo(Ke, xe) : p(a[k], xe, f))) continue e
                                 }
-                                Ee && Ee.push(Ne), ie.push(Ae)
+                                Ee && Ee.push(xe), ie.push(Ae)
                             }
                         }
                         return ie
@@ -12882,11 +12882,11 @@ ${n.message}`,
                         if (Ee && !se) return C || (C = new wr), k || wa(a) ? sy(a, l, f, p, T, C) : GP(a, l, V, f, p, T, C);
                         if (!(f & S)) {
                             var Ae = se && mt.call(a, "__wrapped__"),
-                                Ne = fe && mt.call(l, "__wrapped__");
-                            if (Ae || Ne) {
+                                xe = fe && mt.call(l, "__wrapped__");
+                            if (Ae || xe) {
                                 var Ke = Ae ? a.value() : a,
-                                    xe = Ne ? l.value() : l;
-                                return C || (C = new wr), T(Ke, xe, f, p, C)
+                                    Le = xe ? l.value() : l;
+                                return C || (C = new wr), T(Ke, Le, f, p, C)
                             }
                         }
                         return Ee ? (C || (C = new wr), jP(a, l, f, p, T, C)) : !1
@@ -13007,8 +13007,8 @@ ${n.message}`,
                         if (fe) {
                             var Ee = je(V),
                                 Ae = !Ee && Pi(V),
-                                Ne = !Ee && !Ae && wa(V);
-                            se = V, Ee || Ae || Ne ? je(F) ? se = F : Bt(F) ? se = Pn(F) : Ae ? (fe = !1, se = Wv(V, !0)) : Ne ? (fe = !1, se = Hv(V, !0)) : se = [] : zo(V) || Cs(V) ? (se = F, Cs(F) ? se = Uy(F) : (!Lt(F) || si(F)) && (se = ly(V))) : fe = !1
+                                xe = !Ee && !Ae && wa(V);
+                            se = V, Ee || Ae || xe ? je(F) ? se = F : Bt(F) ? se = Pn(F) : Ae ? (fe = !1, se = Wv(V, !0)) : xe ? (fe = !1, se = Hv(V, !0)) : se = [] : zo(V) || Cs(V) ? (se = F, Cs(F) ? se = Uy(F) : (!Lt(F) || si(F)) && (se = ly(V))) : fe = !1
                         }
                         fe && (k.set(V, se), T(se, V, p, C, k), k.delete(V)), Eh(a, f, se)
                     }
@@ -13183,11 +13183,11 @@ ${n.message}`,
                                 fe = f(a[se]),
                                 Ee = fe !== n,
                                 Ae = fe === null,
-                                Ne = fe === fe,
+                                xe = fe === fe,
                                 Ke = Vn(fe);
-                            if (k) var xe = p || Ne;
-                            else ie ? xe = Ne && (p || Ee) : F ? xe = Ne && Ee && (p || !Ae) : V ? xe = Ne && Ee && !Ae && (p || !Ke) : Ae || Ke ? xe = !1 : xe = p ? fe <= l : fe < l;
-                            xe ? T = se + 1 : C = se
+                            if (k) var Le = p || xe;
+                            else ie ? Le = xe && (p || Ee) : F ? Le = xe && Ee && (p || !Ae) : V ? Le = xe && Ee && !Ae && (p || !Ke) : Ae || Ke ? Le = !1 : Le = p ? fe <= l : fe < l;
+                            Le ? T = se + 1 : C = se
                         }
                         return _n(C, Ye)
                     }
@@ -13552,22 +13552,22 @@ ${n.message}`,
                             fe = l & w,
                             Ee = l & v,
                             Ae = l & (R | $),
-                            Ne = l & W,
+                            xe = l & W,
                             Ke = Ee ? n : Vo(a);
 
-                        function xe() {
+                        function Le() {
                             for (var qe = arguments.length, Qe = q(qe), Kn = qe; Kn--;) Qe[Kn] = arguments[Kn];
-                            if (Ae) var An = Sa(xe),
+                            if (Ae) var An = Sa(Le),
                                 Yn = XI(Qe, An);
                             if (p && (Qe = Kv(Qe, p, T, Ae)), C && (Qe = Yv(Qe, C, k, Ae)), qe -= Yn, Ae && qe < ie) {
                                 var Ut = wi(Qe, An);
-                                return ty(a, l, Nc, xe.placeholder, f, Qe, Ut, F, V, ie - qe)
+                                return ty(a, l, Nc, Le.placeholder, f, Qe, Ut, F, V, ie - qe)
                             }
                             var Cr = fe ? f : this,
                                 oi = Ee ? Cr[a] : a;
-                            return qe = Qe.length, F ? Qe = rR(Qe, F) : Ne && qe > 1 && Qe.reverse(), se && V < qe && (Qe.length = V), this && this !== on && this instanceof xe && (oi = Ke || Vo(oi)), oi.apply(Cr, Qe)
+                            return qe = Qe.length, F ? Qe = rR(Qe, F) : xe && qe > 1 && Qe.reverse(), se && V < qe && (Qe.length = V), this && this !== on && this instanceof Le && (oi = Ke || Vo(oi)), oi.apply(Cr, Qe)
                         }
-                        return xe
+                        return Le
                     }
 
                     function Zv(a, l) {
@@ -13636,11 +13636,11 @@ ${n.message}`,
                             fe = se ? k : n,
                             Ee = se ? n : k,
                             Ae = se ? C : n,
-                            Ne = se ? n : C;
+                            xe = se ? n : C;
                         l |= se ? I : D, l &= ~(se ? D : I), l & N || (l &= ~(w | v));
-                        var Ke = [a, l, T, Ae, fe, Ne, Ee, F, V, ie],
-                            xe = f.apply(n, Ke);
-                        return Yh(a) && dy(xe, Ke), xe.placeholder = p, py(xe, a, l)
+                        var Ke = [a, l, T, Ae, fe, xe, Ee, F, V, ie],
+                            Le = f.apply(n, Ke);
+                        return Yh(a) && dy(Le, Ke), Le.placeholder = p, py(Le, a, l)
                     }
 
                     function Uh(a) {
@@ -13676,10 +13676,10 @@ ${n.message}`,
                         }
                         var Ee = V ? n : Wh(a),
                             Ae = [a, l, f, p, T, se, fe, C, k, F];
-                        if (Ee && eR(Ae, Ee), a = Ae[0], l = Ae[1], f = Ae[2], p = Ae[3], T = Ae[4], F = Ae[9] = Ae[9] === n ? V ? 0 : a.length : Yt(Ae[9] - ie, 0), !F && l & (R | $) && (l &= ~(R | $)), !l || l == w) var Ne = DP(a, l, f);
-                        else l == R || l == $ ? Ne = MP(a, l, F) : (l == I || l == (w | I)) && !T.length ? Ne = FP(a, l, f, p) : Ne = Nc.apply(n, Ae);
+                        if (Ee && eR(Ae, Ee), a = Ae[0], l = Ae[1], f = Ae[2], p = Ae[3], T = Ae[4], F = Ae[9] = Ae[9] === n ? V ? 0 : a.length : Yt(Ae[9] - ie, 0), !F && l & (R | $) && (l &= ~(R | $)), !l || l == w) var xe = DP(a, l, f);
+                        else l == R || l == $ ? xe = MP(a, l, F) : (l == I || l == (w | I)) && !T.length ? xe = FP(a, l, f, p) : xe = Nc.apply(n, Ae);
                         var Ke = Ee ? Dv : dy;
-                        return py(Ke(Ne, Ae), a, l)
+                        return py(Ke(xe, Ae), a, l)
                     }
 
                     function ry(a, l, f, p) {
@@ -13706,22 +13706,22 @@ ${n.message}`,
                             Ee = !0,
                             Ae = f & y ? new Es : n;
                         for (C.set(a, l), C.set(l, a); ++fe < F;) {
-                            var Ne = a[fe],
+                            var xe = a[fe],
                                 Ke = l[fe];
-                            if (p) var xe = k ? p(Ke, Ne, fe, l, a, C) : p(Ne, Ke, fe, a, l, C);
-                            if (xe !== n) {
-                                if (xe) continue;
+                            if (p) var Le = k ? p(Ke, xe, fe, l, a, C) : p(xe, Ke, fe, a, l, C);
+                            if (Le !== n) {
+                                if (Le) continue;
                                 Ee = !1;
                                 break
                             }
                             if (Ae) {
                                 if (!uh(l, function(qe, Qe) {
-                                        if (!Lo(Ae, Qe) && (Ne === qe || T(Ne, qe, f, p, C))) return Ae.push(Qe)
+                                        if (!Lo(Ae, Qe) && (xe === qe || T(xe, qe, f, p, C))) return Ae.push(Qe)
                                     })) {
                                     Ee = !1;
                                     break
                                 }
-                            } else if (!(Ne === Ke || T(Ne, Ke, f, p, C))) {
+                            } else if (!(xe === Ke || T(xe, Ke, f, p, C))) {
                                 Ee = !1;
                                 break
                             }
@@ -13773,11 +13773,11 @@ ${n.message}`,
                             if (!(k ? Ee in l : mt.call(l, Ee))) return !1
                         }
                         var Ae = C.get(a),
-                            Ne = C.get(l);
-                        if (Ae && Ne) return Ae == l && Ne == a;
+                            xe = C.get(l);
+                        if (Ae && xe) return Ae == l && xe == a;
                         var Ke = !0;
                         C.set(a, l), C.set(l, a);
-                        for (var xe = k; ++fe < V;) {
+                        for (var Le = k; ++fe < V;) {
                             Ee = F[fe];
                             var qe = a[Ee],
                                 Qe = l[Ee];
@@ -13786,9 +13786,9 @@ ${n.message}`,
                                 Ke = !1;
                                 break
                             }
-                            xe || (xe = Ee == "constructor")
+                            Le || (Le = Ee == "constructor")
                         }
-                        if (Ke && !xe) {
+                        if (Ke && !Le) {
                             var An = a.constructor,
                                 Yn = l.constructor;
                             An != Yn && "constructor" in a && "constructor" in l && !(typeof An == "function" && An instanceof An && typeof Yn == "function" && Yn instanceof Yn) && (Ke = !1)
@@ -14756,7 +14756,7 @@ ${n.message}`,
                             return p = T = n, ie = Ut, k = a.apply(oi, Cr), k
                         }
 
-                        function Ne(Ut) {
+                        function xe(Ut) {
                             return ie = Ut, F = Yo(qe, l), se ? Ae(Ut) : k
                         }
 
@@ -14767,7 +14767,7 @@ ${n.message}`,
                             return fe ? _n(Jy, C - oi) : Jy
                         }
 
-                        function xe(Ut) {
+                        function Le(Ut) {
                             var Cr = Ut - V,
                                 oi = Ut - ie;
                             return V === n || Cr >= l || Cr < 0 || fe && oi >= C
@@ -14775,7 +14775,7 @@ ${n.message}`,
 
                         function qe() {
                             var Ut = Gc();
-                            if (xe(Ut)) return Qe(Ut);
+                            if (Le(Ut)) return Qe(Ut);
                             F = Yo(qe, Ke(Ut))
                         }
 
@@ -14793,9 +14793,9 @@ ${n.message}`,
 
                         function Yn() {
                             var Ut = Gc(),
-                                Cr = xe(Ut);
+                                Cr = Le(Ut);
                             if (p = arguments, T = this, V = Ut, Cr) {
-                                if (F === n) return Ne(V);
+                                if (F === n) return xe(V);
                                 if (fe) return jv(F), F = Yo(qe, l), Ae(V)
                             }
                             return F === n && (F = Yo(qe, l)), k
@@ -15448,24 +15448,24 @@ ${n.message}`,
                             Ee = _h((l.escape || sc).source + "|" + se.source + "|" + (se === O_ ? nI : sc).source + "|" + (l.evaluate || sc).source + "|$", "g"),
                             Ae = "//# sourceURL=" + (mt.call(l, "sourceURL") ? (l.sourceURL + "").replace(/\s/g, " ") : "lodash.templateSources[" + ++NI + "]") + `
 `;
-                        a.replace(Ee, function(xe, qe, Qe, Kn, An, Yn) {
+                        a.replace(Ee, function(Le, qe, Qe, Kn, An, Yn) {
                             return Qe || (Qe = Kn), fe += a.slice(ie, Yn).replace(cI, QI), qe && (F = !0, fe += `' +
 __e(` + qe + `) +
 '`), An && (V = !0, fe += `';
 ` + An + `;
 __p += '`), Qe && (fe += `' +
 ((__t = (` + Qe + `)) == null ? '' : __t) +
-'`), ie = Yn + xe.length, xe
+'`), ie = Yn + Le.length, Le
                         }), fe += `';
 `;
-                        var Ne = mt.call(l, "variable") && l.variable;
-                        if (!Ne) fe = `with (obj) {
+                        var xe = mt.call(l, "variable") && l.variable;
+                        if (!xe) fe = `with (obj) {
 ` + fe + `
 }
 `;
-                        else if (eI.test(Ne)) throw new Ue(c);
-                        fe = (V ? fe.replace(mn, "") : fe).replace(Fe, "$1").replace(xo, "$1;"), fe = "function(" + (Ne || "obj") + `) {
-` + (Ne ? "" : `obj || (obj = {});
+                        else if (eI.test(xe)) throw new Ue(c);
+                        fe = (V ? fe.replace(mn, "") : fe).replace(Fe, "$1").replace(xo, "$1;"), fe = "function(" + (xe || "obj") + `) {
+` + (xe ? "" : `obj || (obj = {});
 `) + "var __t, __p = ''" + (F ? ", __e = _.escape" : "") + (V ? `, __j = Array.prototype.join;
 function print() { __p += __j.call(arguments, '') }
 ` : `;
@@ -15836,18 +15836,18 @@ function print() { __p += __j.call(arguments, '') }
                             se && f && typeof ie == "function" && ie.length != 1 && (V = se = !1);
                             var Ee = this.__chain__,
                                 Ae = !!this.__actions__.length,
-                                Ne = C && !Ee,
+                                xe = C && !Ee,
                                 Ke = V && !Ae;
                             if (!C && se) {
                                 k = Ke ? k : new Je(this);
-                                var xe = a.apply(k, F);
-                                return xe.__actions__.push({
+                                var Le = a.apply(k, F);
+                                return Le.__actions__.push({
                                     func: Bc,
                                     args: [fe],
                                     thisArg: n
-                                }), new lr(xe, Ee)
+                                }), new lr(Le, Ee)
                             }
-                            return Ne && Ke ? a.apply(this, F) : (xe = this.thru(fe), Ne ? p ? xe.value()[0] : xe.value() : xe)
+                            return xe && Ke ? a.apply(this, F) : (Le = this.thru(fe), xe ? p ? Le.value()[0] : Le.value() : Le)
                         })
                     }), ar(["pop", "push", "shift", "sort", "splice", "unshift"], function(a) {
                         var l = fc[a],
@@ -15962,9 +15962,9 @@ function print() { __p += __j.call(arguments, '') }
 
     function oH(t, e, n, r, i, s) {
         const o = Dt("bb");
-        return ee(), re("div", rH, [Z("div", iH, [Z("div", sH, [t.player.prompt ? ke((ee(), re("div", aH, null, 512)), [
+        return ee(), re("div", rH, [Z("div", iH, [Z("div", sH, [t.player.prompt ? Ne((ee(), re("div", aH, null, 512)), [
             [o, t.player.prompt]
-        ]) : Le("", !0), Z("div", {
+        ]) : ke("", !0), Z("div", {
             ref: "stage",
             class: "stage",
             style: Hl(t.stageDimensions)
@@ -16051,54 +16051,54 @@ function print() { __p += __j.call(arguments, '') }
             key: 0,
             class: Be(t.localClasses.message),
             textContent: _t(t.joinedCountText)
-        }, null, 10, uH)) : Le("", !0), t.player.hasControls ? (ee(), re(dt, {
+        }, null, 10, uH)) : ke("", !0), t.player.hasControls ? (ee(), re(dt, {
             key: 1
         }, [t.player.status === "waitingForMore" ? (ee(), re("p", {
             key: 0,
             class: Be(t.localClasses.status)
-        }, _t(t.neededText), 3)) : Le("", !0), t.player.status === "canStart" ? (ee(), re("button", {
+        }, _t(t.neededText), 3)) : ke("", !0), t.player.status === "canStart" ? (ee(), re("button", {
             key: 1,
             class: Be(t.localClasses.action),
             onClick: e[0] || (e[0] = (...c) => t.onStartClick && t.onStartClick(...c)),
             textContent: _t(t.startText || t.$t("LOBBY.BUTTON_START"))
-        }, null, 10, fH)) : Le("", !0), t.player.status === "countdown" ? (ee(), re("button", {
+        }, null, 10, fH)) : ke("", !0), t.player.status === "countdown" ? (ee(), re("button", {
             key: 2,
             class: Be(t.localClasses.action),
             onClick: e[1] || (e[1] = (...c) => t.onCancelClick && t.onCancelClick(...c)),
             textContent: _t(t.cancelText || t.$t("LOBBY.BUTTON_CANCEL"))
-        }, null, 10, hH)) : Le("", !0)], 64)) : t.player.gamepadStart ? (ee(), re(dt, {
+        }, null, 10, hH)) : ke("", !0)], 64)) : t.player.gamepadStart ? (ee(), re(dt, {
             key: 2
         }, [t.player.status === "waitingForMore" ? (ee(), re("p", {
             key: 0,
             class: Be(t.localClasses.status)
-        }, _t(t.neededText), 3)) : Le("", !0), t.player.status === "canStart" ? ke((ee(), re("p", {
+        }, _t(t.neededText), 3)) : ke("", !0), t.player.status === "canStart" ? Ne((ee(), re("p", {
             key: 1,
             class: Be(t.localClasses.status)
         }, null, 2)), [
             [o, "LOBBY.WAITING_FOR_GAMEPAD"]
-        ]) : Le("", !0), t.player.status === "countdown" ? ke((ee(), re("p", {
+        ]) : ke("", !0), t.player.status === "countdown" ? Ne((ee(), re("p", {
             key: 2,
             class: Be(t.localClasses.status)
         }, null, 2)), [
             [o, "LOBBY.GAME_STARTING"]
-        ]) : Le("", !0)], 64)) : (ee(), re(dt, {
+        ]) : ke("", !0)], 64)) : (ee(), re(dt, {
             key: 3
         }, [t.player.status === "waitingForMore" ? (ee(), re("p", {
             key: 0,
             class: Be(t.localClasses.status)
-        }, _t(t.neededText), 3)) : Le("", !0), t.player.status === "canStart" ? (ee(), re("p", {
+        }, _t(t.neededText), 3)) : ke("", !0), t.player.status === "canStart" ? (ee(), re("p", {
             key: 1,
             class: Be(t.localClasses.status)
-        }, _t(t.waitingForVIPText), 3)) : Le("", !0), t.player.status === "countdown" ? ke((ee(), re("p", {
+        }, _t(t.waitingForVIPText), 3)) : ke("", !0), t.player.status === "countdown" ? Ne((ee(), re("p", {
             key: 2,
             class: Be(t.localClasses.status)
         }, null, 2)), [
             [o, "LOBBY.GAME_STARTING"]
-        ]) : Le("", !0)], 64)), t.messageLocation === "bottom" ? (ee(), re("p", {
+        ]) : ke("", !0)], 64)), t.messageLocation === "bottom" ? (ee(), re("p", {
             key: 4,
             class: Be(t.localClasses.message),
             textContent: _t(t.joinedCountText)
-        }, null, 10, dH)) : Le("", !0)], 2)
+        }, null, 10, dH)) : ke("", !0)], 2)
     }
     const Bw = tt(cH, [
             ["render", pH]
@@ -16194,32 +16194,32 @@ function print() { __p += __j.call(arguments, '') }
             class: Be(["post-game-actions", {
                 vip: t.player.hasControls
             }])
-        }, [!t.messageLocation || t.messageLocation === "top" ? ke((ee(), re("p", {
+        }, [!t.messageLocation || t.messageLocation === "top" ? Ne((ee(), re("p", {
             key: 0,
             class: Be(t.localClasses.message)
         }, null, 2)), [
             [o, "POST_GAME.PLAY_AGAIN"]
-        ]) : Le("", !0), t.player.hasControls ? (ee(), re(dt, {
+        ]) : ke("", !0), t.player.hasControls ? (ee(), re(dt, {
             key: 1
-        }, [t.player.status === "waiting" ? ke((ee(), re("button", {
+        }, [t.player.status === "waiting" ? Ne((ee(), re("button", {
             key: 0,
             class: Be(t.localClasses.action),
             onClick: e[0] || (e[0] = (...c) => t.onSamePlayersClick && t.onSamePlayersClick(...c))
         }, null, 2)), [
             [o, "POST_GAME.BUTTON_SAME_PLAYERS"]
-        ]) : Le("", !0), t.player.status === "waiting" ? ke((ee(), re("button", {
+        ]) : ke("", !0), t.player.status === "waiting" ? Ne((ee(), re("button", {
             key: 1,
             class: Be(t.localClasses.action),
             onClick: e[1] || (e[1] = (...c) => t.onNewPlayersClick && t.onNewPlayersClick(...c))
         }, null, 2)), [
             [o, "POST_GAME.BUTTON_NEW_PLAYERS"]
-        ]) : Le("", !0), t.player.status === "countdown" ? ke((ee(), re("button", {
+        ]) : ke("", !0), t.player.status === "countdown" ? Ne((ee(), re("button", {
             key: 2,
             class: Be(t.localClasses.action),
             onClick: e[2] || (e[2] = (...c) => t.onCancelClick && t.onCancelClick(...c))
         }, null, 2)), [
             [o, "LOBBY.BUTTON_CANCEL"]
-        ]) : Le("", !0)], 64)) : t.player.gamepadStart ? ke((ee(), re("p", {
+        ]) : ke("", !0)], 64)) : t.player.gamepadStart ? Ne((ee(), re("p", {
             key: 2,
             class: Be(t.localClasses.status)
         }, null, 2)), [
@@ -16227,12 +16227,12 @@ function print() { __p += __j.call(arguments, '') }
         ]) : (ee(), re("p", {
             key: 3,
             class: Be(t.localClasses.status)
-        }, _t(t.waitingForVIPText), 3)), t.messageLocation === "bottom" ? ke((ee(), re("p", {
+        }, _t(t.waitingForVIPText), 3)), t.messageLocation === "bottom" ? Ne((ee(), re("p", {
             key: 4,
             class: Be(t.localClasses.message)
         }, null, 2)), [
             [o, "POST_GAME.PLAY_AGAIN"]
-        ]) : Le("", !0)], 2)) : Le("", !0)
+        ]) : ke("", !0)], 2)) : ke("", !0)
     }
     const Uw = tt(bH, [
             ["render", EH]
@@ -16318,11 +16318,11 @@ function print() { __p += __j.call(arguments, '') }
 
     function LH(t, e, n, r, i, s) {
         const o = Dt("bb");
-        return ee(), re("div", IH, [Z("div", $H, [t.player.prompt ? ke((ee(), re("p", PH, null, 512)), [
+        return ee(), re("div", IH, [Z("div", $H, [t.player.prompt ? Ne((ee(), re("p", PH, null, 512)), [
             [o, t.player.prompt]
-        ]) : Le("", !0), t.player.label ? ke((ee(), re("label", RH, null, 512)), [
+        ]) : ke("", !0), t.player.label ? Ne((ee(), re("label", RH, null, 512)), [
             [o, t.player.label]
-        ]) : Le("", !0), t.player.isMultiline ? (ee(), re("textarea", {
+        ]) : ke("", !0), t.player.isMultiline ? (ee(), re("textarea", {
             key: 2,
             id: "input",
             value: t.value,
@@ -16338,7 +16338,7 @@ function print() { __p += __j.call(arguments, '') }
             placeholder: t.player.placeholder,
             disabled: t.player.isDisabled,
             onInput: e[1] || (e[1] = (...c) => t.onValueInput && t.onValueInput(...c))
-        }, null, 40, xH)), ke(Z("button", {
+        }, null, 40, xH)), Ne(Z("button", {
             onClick: e[2] || (e[2] = Xt((...c) => t.onSubmitClick && t.onSubmitClick(...c), ["prevent"]))
         }, null, 512), [
             [o, t.player.submitText || "SUBMIT"]
@@ -16412,14 +16412,14 @@ function print() { __p += __j.call(arguments, '') }
 
     function WH(t, e, n, r, i, s) {
         const o = Dt("bb");
-        return ee(), re("div", MH, [Z("div", FH, [t.player.prompt ? ke((ee(), re("p", BH, null, 512)), [
+        return ee(), re("div", MH, [Z("div", FH, [t.player.prompt ? Ne((ee(), re("p", BH, null, 512)), [
             [o, t.player.prompt]
-        ]) : Le("", !0), (ee(!0), re(dt, null, bi(t.player.inputs, (c, u) => (ee(), re(dt, null, [c.label ? ke((ee(), re("label", {
+        ]) : ke("", !0), (ee(!0), re(dt, null, bi(t.player.inputs, (c, u) => (ee(), re(dt, null, [c.label ? Ne((ee(), re("label", {
             key: `label-${c.key}`,
             for: `input-${u}`
         }, null, 8, UH)), [
             [o, c.label]
-        ]) : Le("", !0), c.isMultiline ? (ee(), re("textarea", {
+        ]) : ke("", !0), c.isMultiline ? (ee(), re("textarea", {
             id: `input-${u}`,
             key: `input-${u}`,
             value: t.values[u],
@@ -16435,7 +16435,7 @@ function print() { __p += __j.call(arguments, '') }
             placeholder: c.placeholder,
             disabled: c.isDisabled,
             onInput: h => t.onValueInput(h, u)
-        }, null, 40, jH))], 64))), 256)), ke(Z("button", {
+        }, null, 40, jH))], 64))), 256)), Ne(Z("button", {
             onClick: e[0] || (e[0] = Xt((...c) => t.onSubmitClick && t.onSubmitClick(...c), ["prevent"]))
         }, null, 512), [
             [o, t.player.submitText || "SUBMIT"]
@@ -16461,9 +16461,9 @@ function print() { __p += __j.call(arguments, '') }
 
     function XH(t, e, n, r, i, s) {
         const o = Dt("bb");
-        return ee(), re("div", KH, [Z("div", YH, [t.player.message ? ke((ee(), re("p", zH, null, 512)), [
+        return ee(), re("div", KH, [Z("div", YH, [t.player.message ? Ne((ee(), re("p", zH, null, 512)), [
             [o, t.player.message]
-        ]) : Le("", !0)])])
+        ]) : ke("", !0)])])
     }
     const qH = tt(VH, [
         ["render", XH]
@@ -16523,7 +16523,7 @@ function print() { __p += __j.call(arguments, '') }
             href: t.link,
             "aria-label": t.$t("POST_GAME.GALLERY_LINK"),
             onClick: e[0] || (e[0] = (...o) => t.onLinkClick && t.onLinkClick(...o))
-        }, [UD(t.$slots, "default")], 10, QH)) : Le("", !0)
+        }, [UD(t.$slots, "default")], 10, QH)) : ke("", !0)
     }
     const eV = tt(JH, [
             ["render", ZH]
@@ -18319,7 +18319,7 @@ function print() { __p += __j.call(arguments, '') }
         }, cq), Z("button", {
             class: "option",
             onClick: e[2] || (e[2] = (...o) => t.onDisconnectClick && t.onDisconnectClick(...o))
-        }, "DISCONNECT")])) : Le("", !0), uq, t.replayer.markerMap.length ? (ee(), re("p", hq, _t(t.replayer.currentMarkerItemIndex) + " : " + _t(t.replayer.currentMarkerItem[1].marker) + " (" + _t(t.replayer.currentEntityItemIndex) + ") ", 1)) : (ee(), re("p", fq, "Item #" + _t(t.replayer.currentEntityItemIndex), 1)), t.showPowerNav ? Le("", !0) : (ee(), re("button", {
+        }, "DISCONNECT")])) : ke("", !0), uq, t.replayer.markerMap.length ? (ee(), re("p", hq, _t(t.replayer.currentMarkerItemIndex) + " : " + _t(t.replayer.currentMarkerItem[1].marker) + " (" + _t(t.replayer.currentEntityItemIndex) + ") ", 1)) : (ee(), re("p", fq, "Item #" + _t(t.replayer.currentEntityItemIndex), 1)), t.showPowerNav ? ke("", !0) : (ee(), re("button", {
             key: 3,
             class: "open-power-nav",
             onClick: e[3] || (e[3] = (...o) => t.onOpenPowerNavClick && t.onOpenPowerNavClick(...o))
@@ -18329,7 +18329,7 @@ function print() { __p += __j.call(arguments, '') }
         }, vq), Z("button", {
             class: "direction next",
             onClick: e[5] || (e[5] = (...o) => t.onNextClick && t.onNextClick(...o))
-        }, Eq)], 512)) : Le("", !0)
+        }, Eq)], 512)) : ke("", !0)
     }
     const Sq = tt(tq, [
         ["render", Tq],
@@ -18877,12 +18877,12 @@ function print() { __p += __j.call(arguments, '') }
                 selected: t.vibe === "bad"
             }),
             onClick: e[4] || (e[4] = o => t.onVibeClick("bad"))
-        }, bZ, 2)])], 2), Z("div", EZ, [t.content ? (ee(), re("div", TZ, [ke(Z("input", {
+        }, bZ, 2)])], 2), Z("div", EZ, [t.content ? (ee(), re("div", TZ, [Ne(Z("input", {
             "onUpdate:modelValue": e[5] || (e[5] = o => t.isContent = o),
             type: "checkbox"
         }, null, 512), [
             [G2, t.isContent]
-        ]), Z("span", null, [SZ, Z("em", null, _t(t.content), 1)])])) : Le("", !0), ke(Z("textarea", {
+        ]), Z("span", null, [SZ, Z("em", null, _t(t.content), 1)])])) : ke("", !0), Ne(Z("textarea", {
             "onUpdate:modelValue": e[6] || (e[6] = o => t.message = o),
             rows: "3",
             placeholder: "(optional) more details",
@@ -18891,7 +18891,7 @@ function print() { __p += __j.call(arguments, '') }
             [xb, t.message]
         ]), Z("button", {
             onClick: e[7] || (e[7] = Xt((...o) => t.onSubmitClick && t.onSubmitClick(...o), ["prevent"]))
-        }, _t(t.$t("ACTION.SUBMIT")), 1)])])) : t.screen === "debug" ? (ee(), re("div", wZ, [OZ, CZ, Z("div", AZ, [ke(Z("textarea", {
+        }, _t(t.$t("ACTION.SUBMIT")), 1)])])) : t.screen === "debug" ? (ee(), re("div", wZ, [OZ, CZ, Z("div", AZ, [Ne(Z("textarea", {
             "onUpdate:modelValue": e[8] || (e[8] = o => t.message = o),
             rows: "3",
             placeholder: "Enter details",
@@ -18900,7 +18900,7 @@ function print() { __p += __j.call(arguments, '') }
             [xb, t.message]
         ]), Z("button", {
             onClick: e[9] || (e[9] = Xt((...o) => t.onSubmitClick && t.onSubmitClick(...o), ["prevent"]))
-        }, _t(t.$t("ACTION.OK")), 1)])])) : Le("", !0)])
+        }, _t(t.$t("ACTION.OK")), 1)])])) : ke("", !0)])
     }
     const WO = tt(QQ, [
             ["render", IZ],
@@ -21965,11 +21965,11 @@ ${e}`
         const o = Dt("bb");
         return ee(), re("div", {
             class: Be(["error-model", t.classes])
-        }, [t.image === "tear" ? (ee(), re("img", Ire)) : t.image === "moon" ? (ee(), re("img", $re)) : (ee(), re("img", Pre)), ke(Z("h3", Rre, null, 512), [
+        }, [t.image === "tear" ? (ee(), re("img", Ire)) : t.image === "moon" ? (ee(), re("img", $re)) : (ee(), re("img", Pre)), Ne(Z("h3", Rre, null, 512), [
             [o, t.text]
-        ]), t.subtext ? ke((ee(), re("h3", Nre, null, 512)), [
+        ]), t.subtext ? Ne((ee(), re("h3", Nre, null, 512)), [
             [o, t.subtext]
-        ]) : Le("", !0), Z("div", xre, [ke(Z("button", {
+        ]) : ke("", !0), Z("div", xre, [Ne(Z("button", {
             onClick: e[0] || (e[0] = Xt(c => t.$emit("resolve"), ["prevent"]))
         }, null, 512), [
             [o, t.dismissText]
@@ -22006,11 +22006,11 @@ ${e}`
         const o = Dt("bb");
         return ee(), re("div", {
             class: Be(["options-modal", t.classes])
-        }, [ke(Z("h3", Mre, null, 512), [
+        }, [Ne(Z("h3", Mre, null, 512), [
             [o, t.text]
-        ]), t.subtext ? ke((ee(), re("h3", Fre, null, 512)), [
+        ]), t.subtext ? Ne((ee(), re("h3", Fre, null, 512)), [
             [o, t.subtext]
-        ]) : Le("", !0), Z("div", Bre, [(ee(!0), re(dt, null, bi(t.options, (c, u) => ke((ee(), re("button", {
+        ]) : ke("", !0), Z("div", Bre, [(ee(!0), re(dt, null, bi(t.options, (c, u) => Ne((ee(), re("button", {
             key: u,
             class: Be(c.classes),
             onClick: Xt(h => t.$emit("resolve", c.value), ["prevent"])
@@ -22063,7 +22063,7 @@ ${e}`
                 class: "content"
             }, t.props, {
                 onResolve: t.onResolve
-            }), null, 16, ["onResolve"])) : Le("", !0)], 34)) : Le("", !0)]),
+            }), null, 16, ["onResolve"])) : ke("", !0)], 34)) : ke("", !0)]),
             _: 1
         })
     }
@@ -25100,7 +25100,7 @@ ${e}`
                 src: Nse,
                 onClick: e[0] || (e[0] = (...o) => t.hide && t.hide(...o)),
                 onKeydown: e[1] || (e[1] = aS((...o) => t.hide && t.hide(...o), ["esc"]))
-            }, null, 32), Z("p", Lse, _t(t.options.text), 1), Z("p", kse, _t(t.options.subtext), 1), t.options.warning ? (ee(), re("p", Dse, _t(t.options.warning), 1)) : Le("", !0), t.options.type === "reconnecting" ? (ee(), re("div", Mse)) : Le("", !0)])], 2)) : Le("", !0)]),
+            }, null, 32), Z("p", Lse, _t(t.options.text), 1), Z("p", kse, _t(t.options.subtext), 1), t.options.warning ? (ee(), re("p", Dse, _t(t.options.warning), 1)) : ke("", !0), t.options.type === "reconnecting" ? (ee(), re("div", Mse)) : ke("", !0)])], 2)) : ke("", !0)]),
             _: 1
         })
     }
@@ -25367,12 +25367,12 @@ ${e}`
 
     function nae(t, e, n, r, i, s) {
         const o = Dt("bb");
-        return ee(), re("div", Zse, [ke(Z("span", null, null, 512), [
+        return ee(), re("div", Zse, [Ne(Z("span", null, null, 512), [
             [o, t.labels[0]]
         ]), Z("div", eae, [tae, Z("div", {
             class: "target",
             style: Hl(t.targetStyle)
-        }, null, 4)]), ke(Z("span", null, null, 512), [
+        }, null, 4)]), Ne(Z("span", null, null, 512), [
             [o, t.labels[1]]
         ])])
     }
@@ -25414,7 +25414,7 @@ ${e}`
         const o = un("Scale"),
             c = un("Doodle"),
             u = Dt("bb");
-        return ee(), re("div", iae, [Z("div", sae, [ke(Z("p", aae, null, 512), [
+        return ee(), re("div", iae, [Z("div", sae, [Ne(Z("p", aae, null, 512), [
             [u, t.content.content.text]
         ]), ut(o, {
             labels: [t.content.content.rangeMin, t.content.content.rangeMax],
@@ -25485,16 +25485,16 @@ ${e}`
                 key: o,
                 viewBox: "0 0 56 50",
                 class: "content"
-            }, pae)), 64)) : Le("", !0), t.type === "arrow" ? (ee(), re(dt, {
+            }, pae)), 64)) : ke("", !0), t.type === "arrow" ? (ee(), re(dt, {
                 key: 1
             }, [gae, Z("span", {
                 class: "content",
                 textContent: _t(t.guess.text)
-            }, null, 8, mae)], 64)) : Le("", !0), t.type === "text" ? (ee(), re("span", {
+            }, null, 8, mae)], 64)) : ke("", !0), t.type === "text" ? (ee(), re("span", {
                 key: 2,
                 class: "content",
                 textContent: _t(t.guess.text)
-            }, null, 8, _ae)) : Le("", !0)]),
+            }, null, 8, _ae)) : ke("", !0)]),
             _: 1
         }, 8, ["class"])
     }
@@ -28188,7 +28188,7 @@ ${e}`
                 }
             }
         }),
-        ble = t => (To("data-v-787ec668"), t = t(), So(), t),
+        ble = t => (To("data-v-259302ad"), t = t(), So(), t),
         Ele = {
             class: "guess"
         },
@@ -28196,31 +28196,41 @@ ${e}`
             class: "constrain"
         },
         Sle = {
-            class: "prompt"
+            role: "log",
+            "aria-live": "polite",
+            "aria-atomic": "true"
         },
         wle = {
-            class: "label top"
+            class: "prompt"
         },
         Ole = {
+            class: "sr"
+        },
+        Cle = {
+            class: "label top"
+        },
+        Ale = {
             class: "label bottom"
         },
-        Cle = ble(() => Z("div", {
+        Ile = ble(() => Z("div", {
             class: "bottom-panel"
         }, null, -1));
 
-    function Ale(t, e, n, r, i, s) {
+    function $le(t, e, n, r, i, s) {
         const o = un("Item"),
             c = un("Plug"),
             u = Dt("bb"),
             h = Dt("t");
-        return ee(), re("div", Ele, [Z("div", Tle, [ke(Z("p", Sle, null, 512), [
+        return ee(), re("div", Ele, [Z("div", Tle, [Z("div", Sle, [Ne(Z("p", wle, null, 512), [
             [u, t.player.content.text]
-        ]), t.isAudience && t.selection && t.isPlugged ? (ee(), re("div", {
+        ]), Ne(Z("p", Ole, null, 512), [
+            [u, t.player.response.text]
+        ])]), t.isAudience && t.selection && t.isPlugged ? (ee(), re("div", {
             key: 0,
             class: Be([{
                 "final-round": t.isFinalRound
             }, "your-selection"])
-        }, [ke(Z("p", null, null, 512), [
+        }, [Ne(Z("p", null, null, 512), [
             [h, "AUDIENCE.YOU_SELECTED"]
         ]), ut(o, {
             guess: t.selection,
@@ -28228,7 +28238,7 @@ ${e}`
         }, null, 8, ["guess"])], 2)) : (ee(), re("div", {
             key: 1,
             class: Be(["console", t.consoleClasses])
-        }, [Z("div", wle, [ke(Z("span", null, null, 512), [
+        }, [Z("div", Cle, [Ne(Z("span", null, null, 512), [
             [u, t.player.content.rangeMax]
         ])]), (ee(!0), re(dt, null, bi(t.choices, (d, g) => {
             var m;
@@ -28241,19 +28251,19 @@ ${e}`
                 "is-selected": d.index === ((m = t.selection) == null ? void 0 : m.index),
                 onClick: _ => t.onItemClick(d)
             }, null, 8, ["guess", "is-selected", "onClick"])])
-        }), 128)), Z("div", Ole, [ke(Z("span", null, null, 512), [
+        }), 128)), Z("div", Ale, [Ne(Z("span", null, null, 512), [
             [u, t.player.content.rangeMin]
-        ])]), Cle, ut(c, {
+        ])]), Ile, ut(c, {
             ref: "plug",
             class: Be(t.plugClass),
             info: t.info
         }, null, 8, ["class", "info"])], 2))])])
     }
-    const Ile = tt(yle, [
-            ["render", Ale],
-            ["__scopeId", "data-v-787ec668"]
+    const Ple = tt(yle, [
+            ["render", $le],
+            ["__scopeId", "data-v-259302ad"]
         ]),
-        $le = Xe({
+        Rle = Xe({
             components: {
                 LobbyActions: Bw
             },
@@ -28261,26 +28271,26 @@ ${e}`
                 player: Object
             }
         }),
-        Ple = {
+        Nle = {
             class: "lobby"
         },
-        Rle = {
+        xle = {
             class: "constrain"
         };
 
-    function Nle(t, e, n, r, i, s) {
+    function Lle(t, e, n, r, i, s) {
         const o = un("LobbyActions");
-        return ee(), re("div", Ple, [Z("div", Rle, [ut(o, {
+        return ee(), re("div", Nle, [Z("div", xle, [ut(o, {
             player: t.player,
             classes: {
                 action: "black"
             }
         }, null, 8, ["player"])])])
     }
-    const xle = tt($le, [
-            ["render", Nle]
+    const kle = tt(Rle, [
+            ["render", Lle]
         ]),
-        Lle = Xe({
+        Dle = Xe({
             components: {
                 GalleryLink: eV,
                 PostGameActions: Uw
@@ -28290,17 +28300,17 @@ ${e}`
                 player: Object
             }
         }),
-        kle = {
+        Mle = {
             class: "post-game"
         },
-        Dle = {
+        Fle = {
             class: "constrain"
         };
 
-    function Mle(t, e, n, r, i, s) {
+    function Ble(t, e, n, r, i, s) {
         const o = un("PostGameActions"),
             c = un("GalleryLink");
-        return ee(), re("div", kle, [Z("div", Dle, [ut(o, {
+        return ee(), re("div", Mle, [Z("div", Fle, [ut(o, {
             player: t.player,
             classes: {
                 action: "black"
@@ -28308,13 +28318,13 @@ ${e}`
         }, null, 8, ["player"]), t.artifact ? (ee(), Lr(c, {
             key: 0,
             artifact: t.artifact
-        }, null, 8, ["artifact"])) : Le("", !0)])])
+        }, null, 8, ["artifact"])) : ke("", !0)])])
     }
-    const Fle = tt(Lle, [
-            ["render", Mle],
+    const Ule = tt(Dle, [
+            ["render", Ble],
             ["__scopeId", "data-v-55f12bfc"]
         ]),
-        Ble = Xe({
+        Gle = Xe({
             components: {
                 Item: FC
             },
@@ -28383,31 +28393,31 @@ ${e}`
                 }
             }
         }),
-        Ule = {
+        jle = {
             class: "post-guess"
         },
-        Gle = {
+        Wle = {
             key: 1
         },
-        jle = {
+        Hle = {
             key: 0,
             class: "confidence-info"
         },
-        Wle = {
+        Vle = {
             class: "emotes"
         },
-        Hle = {
+        Kle = {
             class: "constrain"
         },
-        Vle = {
+        Yle = {
             class: "info"
         },
-        Kle = ["disabled", "onClick"];
+        zle = ["disabled", "onClick"];
 
-    function Yle(t, e, n, r, i, s) {
+    function Xle(t, e, n, r, i, s) {
         const o = un("Item"),
             c = Dt("t");
-        return ee(), re("div", Ule, [Z("div", {
+        return ee(), re("div", jle, [Z("div", {
             class: Be(["constrain", {
                 "final-round": t.isFinalRound
             }])
@@ -28416,11 +28426,11 @@ ${e}`
             guess: t.player.guess,
             "is-adding-confidence": t.isAddingConfidence,
             "is-selected": !1
-        }, null, 8, ["guess", "is-adding-confidence"])) : ke((ee(), re("p", Gle, null, 512)), [
+        }, null, 8, ["guess", "is-adding-confidence"])) : Ne((ee(), re("p", Wle, null, 512)), [
             [c, "NO_ANSWER"]
         ]), t.player.guess && t.player.canDoubleDown || t.hasAddedConfidence ? (ee(), re(dt, {
             key: 2
-        }, [ke(Z("button", {
+        }, [Ne(Z("button", {
             class: Be(["confidence", {
                 locked: t.hasAddedConfidence
             }]),
@@ -28430,9 +28440,9 @@ ${e}`
             onTouchend: e[3] || (e[3] = Xt((...u) => t.onConfidenceUp && t.onConfidenceUp(...u), ["prevent"]))
         }, null, 34), [
             [c, t.hasAddedConfidence ? "CONFIDENCE.LOCKED" : "CONFIDENCE.ADD"]
-        ]), t.hasAddedConfidence ? Le("", !0) : ke((ee(), re("p", jle, null, 512)), [
+        ]), t.hasAddedConfidence ? ke("", !0) : Ne((ee(), re("p", Hle, null, 512)), [
             [c, t.isAddingConfidence ? "HOLD.KEEP" : "HOLD.TAP"]
-        ])], 64)) : Le("", !0)], 2), Z("div", Wle, [Z("div", Hle, [ke(Z("p", Vle, null, 512), [
+        ])], 64)) : ke("", !0)], 2), Z("div", Vle, [Z("div", Kle, [Ne(Z("p", Yle, null, 512), [
             [c, t.canEmote ? "EMOTE.FEELINGS" : "EMOTE.SOON"]
         ]), (ee(!0), re(dt, null, bi(t.player.commentaryEmotions, u => (ee(), re("div", {
             key: u,
@@ -28442,13 +28452,13 @@ ${e}`
         }, [Z("button", {
             disabled: !t.canEmote,
             onClick: h => t.onEmoteClick(u)
-        }, null, 8, Kle)], 2))), 128))])])])
+        }, null, 8, zle)], 2))), 128))])])])
     }
-    const zle = tt(Ble, [
-            ["render", Yle],
+    const qle = tt(Gle, [
+            ["render", Xle],
             ["__scopeId", "data-v-9169562a"]
         ]),
-        Xle = Xe({
+        Jle = Xe({
             components: {
                 Input: iV,
                 Scale: MC
@@ -28504,30 +28514,30 @@ ${e}`
                 }
             }
         }),
-        qle = {
+        Qle = {
             class: "writing"
         },
-        Jle = {
+        Zle = {
             class: "constrain"
         },
-        Qle = {
+        ece = {
             class: "prompt"
         },
-        Zle = {
+        tce = {
             class: "counter"
         },
-        ece = {
+        nce = {
             key: 0,
             class: "error-text"
         },
-        tce = ["disabled"];
+        rce = ["disabled"];
 
-    function nce(t, e, n, r, i, s) {
+    function ice(t, e, n, r, i, s) {
         const o = un("Scale"),
             c = un("Input"),
             u = Dt("bb"),
             h = Dt("t");
-        return ee(), re("div", qle, [Z("div", Jle, [ke(Z("p", Qle, null, 512), [
+        return ee(), re("div", Qle, [Z("div", Zle, [Ne(Z("p", ece, null, 512), [
             [u, t.content.content.text]
         ]), ut(o, {
             labels: [t.content.content.rangeMin, t.content.content.rangeMax],
@@ -28545,19 +28555,19 @@ ${e}`
                 errored: t.error
             }),
             onInput: t.onInput
-        }, null, 8, ["modelValue", "disabled", "maxlength", "class", "onInput"]), Z("p", Zle, _t(t.remainingCharacters), 1), t.error ? (ee(), re("p", ece, _t(t.error), 1)) : Le("", !0), ke(Z("button", {
+        }, null, 8, ["modelValue", "disabled", "maxlength", "class", "onInput"]), Z("p", tce, _t(t.remainingCharacters), 1), t.error ? (ee(), re("p", nce, _t(t.error), 1)) : ke("", !0), Ne(Z("button", {
             class: "black submit",
             type: "submit",
             disabled: !t.value || t.isSubmitting
-        }, null, 8, tce), [
+        }, null, 8, rce), [
             [h, "ACTION.SUBMIT"]
         ])], 32)])])
     }
-    const rce = tt(Xle, [
-            ["render", nce],
+    const sce = tt(Jle, [
+            ["render", ice],
             ["__scopeId", "data-v-e6bb3764"]
         ]),
-        ice = Xe({
+        ace = Xe({
             props: {
                 player: Object
             },
@@ -28603,44 +28613,44 @@ ${e}`
                 }
             }
         }),
-        sce = {
+        oce = {
             class: "sync"
         },
-        ace = {
+        lce = {
             class: "constrain"
         },
-        oce = {
+        cce = {
             key: 0
         },
-        lce = {
+        uce = {
             key: 1,
             class: "prompt"
         },
-        cce = {
+        fce = {
             key: 2,
             class: "cards"
         },
-        uce = ["aria-label", "onClick"];
+        hce = ["aria-label", "onClick"];
 
-    function fce(t, e, n, r, i, s) {
+    function dce(t, e, n, r, i, s) {
         const o = Dt("t"),
             c = Dt("bb");
-        return ee(), re("div", sce, [Z("div", ace, [t.hasAnimated ? ke((ee(), re("p", oce, null, 512)), [
+        return ee(), re("div", oce, [Z("div", lce, [t.hasAnimated ? Ne((ee(), re("p", cce, null, 512)), [
             [o, "AUDIENCE.SYNC_THANKS"]
-        ]) : ke((ee(), re("p", lce, null, 512)), [
+        ]) : Ne((ee(), re("p", uce, null, 512)), [
             [c, t.player.prompt]
-        ]), t.hasAnimated ? Le("", !0) : (ee(), re("div", cce, [(ee(!0), re(dt, null, bi(t.cards, (u, h) => (ee(), re("button", {
+        ]), t.hasAnimated ? ke("", !0) : (ee(), re("div", fce, [(ee(!0), re(dt, null, bi(t.cards, (u, h) => (ee(), re("button", {
             key: h,
             "aria-label": u.text,
             class: Be(["card", u.classes]),
             onClick: Xt(d => t.onChoiceClick(h), ["prevent"])
-        }, null, 10, uce))), 128))]))])])
+        }, null, 10, hce))), 128))]))])])
     }
-    const hce = tt(ice, [
-            ["render", fce],
+    const pce = tt(ace, [
+            ["render", dce],
             ["__scopeId", "data-v-136564db"]
         ]),
-        dce = Xe({
+        gce = Xe({
             props: {
                 player: Object
             },
@@ -28657,51 +28667,51 @@ ${e}`
                 }
             }
         }),
-        pce = t => (To("data-v-c62e67bb"), t = t(), So(), t),
-        gce = {
+        mce = t => (To("data-v-c62e67bb"), t = t(), So(), t),
+        _ce = {
             class: "choices"
         },
-        mce = {
+        vce = {
             class: "constrain"
         },
-        _ce = {
+        yce = {
             class: "modal"
         },
-        vce = pce(() => Z("div", {
+        bce = mce(() => Z("div", {
             class: "chimp"
         }, null, -1)),
-        yce = {
+        Ece = {
             key: 0,
             class: "prompt"
         },
-        bce = {
+        Tce = {
             class: "separator"
         };
 
-    function Ece(t, e, n, r, i, s) {
+    function Sce(t, e, n, r, i, s) {
         const o = Dt("bb"),
             c = Dt("t");
-        return ee(), re("div", gce, [Z("div", mce, [Z("div", _ce, [vce, t.player.prompt ? ke((ee(), re("p", yce, null, 512)), [
+        return ee(), re("div", _ce, [Z("div", vce, [Z("div", yce, [bce, t.player.prompt ? Ne((ee(), re("p", Ece, null, 512)), [
             [o, t.player.prompt]
-        ]) : Le("", !0), ke(Z("button", {
+        ]) : ke("", !0), Ne(Z("button", {
             class: "yes",
             onClick: e[0] || (e[0] = Xt(u => t.onChoiceClick(1), ["prevent"]))
         }, null, 512), [
             [o, t.player.choices[1].text]
-        ]), ke(Z("div", bce, null, 512), [
+        ]), Ne(Z("div", Tce, null, 512), [
             [c, "SEPARATOR.OR"]
-        ]), ke(Z("button", {
+        ]), Ne(Z("button", {
             class: "no",
             onClick: e[1] || (e[1] = Xt(u => t.onChoiceClick(0), ["prevent"]))
         }, null, 512), [
             [o, t.player.choices[0].text]
         ])])])])
     }
-    const Tce = tt(dce, [
-            ["render", Ece],
+    const wce = tt(gce, [
+            ["render", Sce],
             ["__scopeId", "data-v-c62e67bb"]
         ]),
-        Sce = Xe({
+        Oce = Xe({
             props: {
                 player: Object
             },
@@ -28716,39 +28726,39 @@ ${e}`
                 }, 100)
             }
         }),
-        wce = "main/pp9/range-game/assets/f465c24a.png",
-        Oce = {
+        Cce = "main/pp9/range-game/assets/f465c24a.png",
+        Ace = {
             class: "waiting"
         },
-        Cce = {
+        Ice = {
             class: "constrain"
         },
-        Ace = ["alt"];
+        $ce = ["alt"];
 
-    function Ice(t, e, n, r, i, s) {
-        return ee(), re("div", Oce, [Z("div", Cce, [Z("img", {
+    function Pce(t, e, n, r, i, s) {
+        return ee(), re("div", Ace, [Z("div", Ice, [Z("img", {
             class: Be(["logo", {
                 show: t.showLogo
             }]),
-            src: wce,
+            src: Cce,
             alt: t.$t("ALT.LOGO")
-        }, null, 10, Ace)])])
+        }, null, 10, $ce)])])
     }
-    const $ce = tt(Sce, [
-            ["render", Ice],
+    const Rce = tt(Oce, [
+            ["render", Pce],
             ["__scopeId", "data-v-c1c678f7"]
         ]),
-        Pce = Xe({
+        Nce = Xe({
             components: {
                 Drawing: cae,
-                Guess: Ile,
-                PostGuess: zle,
-                Lobby: xle,
-                PostGame: Fle,
-                SingleTextEntry: rce,
-                Sync: hce,
-                TutorialChoice: Tce,
-                Waiting: $ce
+                Guess: Ple,
+                PostGuess: qle,
+                Lobby: kle,
+                PostGame: Ule,
+                SingleTextEntry: sce,
+                Sync: pce,
+                TutorialChoice: wce,
+                Waiting: Rce
             },
             ecastKeys: {
                 likes: ({
@@ -28887,28 +28897,28 @@ ${e}`
                 }
             }
         }),
-        Rce = {
+        xce = {
             key: 1,
             class: "info"
         };
 
-    function Nce(t, e, n, r, i, s) {
+    function Lce(t, e, n, r, i, s) {
         return ee(), re("div", {
             class: Be(["range", t.classes])
         }, [t.isReady && t.screen ? (ee(), Lr(pf(t.screen[0]), _f({
             key: 0,
             role: "main"
-        }, t.screen[1]), null, 16)) : Le("", !0), t.info ? (ee(), re("div", Rce, _t(t.info.name), 1)) : Le("", !0)], 2)
+        }, t.screen[1]), null, 16)) : ke("", !0), t.info ? (ee(), re("div", xce, _t(t.info.name), 1)) : ke("", !0)], 2)
     }
-    const xce = tt(Pce, [
-        ["render", Nce],
-        ["__scopeId", "data-v-417ace57"]
+    const kce = tt(Nce, [
+        ["render", Lce],
+        ["__scopeId", "data-v-3dfe38d2"]
     ]);
     Wse({
-        MainView: xce,
+        MainView: kce,
         messages: Jse,
         plugins: [Yre]
     })
 });
-export default Lce();
-//# sourceMappingURL=e2d6b453.js.map
+export default Dce();
+//# sourceMappingURL=381f2314.js.map

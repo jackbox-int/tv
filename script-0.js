@@ -4837,8 +4837,7 @@ var ow = Qo((uw, Fo) => {
             isPublic: !0,
             directory: "pp8/apply-yourself",
             categoryId: "JobGameGame",
-            features: ["moderation"],
-            hasPreviews: !0
+            features: ["moderation", "previews"]
         }, {
             name: "Drawful Animate",
             tag: "drawful-animate",
@@ -4929,7 +4928,7 @@ var ow = Qo((uw, Fo) => {
             wrapper: "vue",
             isPublic: !0,
             directory: "pp9/lineup",
-            features: ["kicking"],
+            features: ["kicking", "previews"],
             categoryId: "LineupGame"
         }],
         Ki = t => jg.find(e => e.tag === t || e.categoryId === t);
@@ -10540,23 +10539,23 @@ Url: ${nr(t)}`), !0)
         nw = 1,
         iw = {
             branch: "main",
-            sha: "7be0ef13fece0a6c0ae1ce34975b7330b59d386a",
-            lastUpdated: 1666133728958,
-            version: "5.43.0",
+            sha: "d855a90317bd6104e14b2c3d15c897a9ff02448b",
+            lastUpdated: 1666236664435,
+            version: "5.50.0",
             type: "production"
         },
         aw = {
             main: {
-                sha: "7be0ef13fece0a6c0ae1ce34975b7330b59d386a",
-                lastUpdated: 1666133728958,
-                version: "5.43.0",
+                sha: "d855a90317bd6104e14b2c3d15c897a9ff02448b",
+                lastUpdated: 1666236664435,
+                version: "5.50.0",
                 type: "production",
                 bundles: {
                     "@connect": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@connect",
-                        version: "5.43.0"
+                        version: "5.50.0"
                     },
                     "the-wheel": {
                         file: "script.js",
@@ -10862,31 +10861,31 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/antique-freak",
-                        version: "5.35.0"
+                        version: "5.47.0"
                     },
                     fourbage: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/fourbage",
-                        version: "5.41.0"
+                        version: "5.45.0"
                     },
                     htmf: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/htmf",
-                        version: "5.43.0"
+                        version: "5.46.0"
                     },
                     lineup: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/lineup",
-                        version: "5.42.0"
+                        version: "5.49.0"
                     },
                     "range-game": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/range-game",
-                        version: "5.42.0"
+                        version: "5.44.0"
                     }
                 }
             }
@@ -10913,4 +10912,4 @@ Url: ${nr(t)}`), !0)
     tw()
 });
 export default ow();
-//# sourceMappingURL=23f06b81.js.map
+//# sourceMappingURL=fab26f4c.js.map
