@@ -7316,16 +7316,16 @@ var Wne = iN((Vne, wS) => {
     var Q8 = {
         LockEntity: Z8
     };
-    class eU {
+    class e5 {
         constructor() {}
         toString() {
             return "OK"
         }
     }
     var _T = {
-        OK: eU
+        OK: e5
     };
-    class tU {
+    class t5 {
         constructor(t) {
             this.from = t.from, this.key = t.key, this.val = t.val, this.restrictions = t.restrictions, this.version = t.version, this.meta = t.meta || {}, t.acl && (this.acl = t.acl)
         }
@@ -7342,71 +7342,71 @@ var Wne = iN((Vne, wS) => {
         }
     }
     var bT = {
-        NumberEntity: tU
+        NumberEntity: t5
     };
     const {
-        ArtifactEntity: rU
+        ArtifactEntity: r5
     } = mT, {
-        ClientWelcome: nU,
-        ClientConnected: iU,
-        ClientDisconnected: sU,
-        ClientKicked: aU,
-        ClientSend: oU
+        ClientWelcome: n5,
+        ClientConnected: i5,
+        ClientDisconnected: s5,
+        ClientKicked: a5,
+        ClientSend: o5
     } = zh, {
-        CountGroup: lU
+        CountGroup: l5
     } = Xh, {
-        DoodleEntity: cU,
-        DoodleLine: uU,
-        DoodleLineRemoved: fU
+        DoodleEntity: c5,
+        DoodleLine: u5,
+        DoodleLineRemoved: f5
     } = rp, {
-        StackEntity: dU,
-        StackElement: hU,
-        StackElements: pU
+        StackEntity: d5,
+        StackElement: h5,
+        StackElements: p5
     } = vT, {
-        DropEntity: gU
+        DropEntity: g5
     } = yT, {
-        Echo: mU
+        Echo: m5
     } = J8, {
-        LockEntity: vU
+        LockEntity: v5
     } = Q8, {
-        GCounter: yU
+        GCounter: y5
     } = Jh, {
-        GetAudienceReply: _U,
-        RoomExit: bU,
-        RoomLock: EU
+        GetAudienceReply: _5,
+        RoomExit: b5,
+        RoomLock: E5
     } = Nc, {
-        Notification: TU
+        Notification: T5
     } = pT, {
-        OK: SU
+        OK: S5
     } = _T, {
-        NumberEntity: OU
+        NumberEntity: O5
     } = bT, {
-        ObjectEcho: wU,
-        ObjectEntity: CU
+        ObjectEcho: w5,
+        ObjectEntity: C5
     } = Zh, {
         PNCounter: ky
     } = Qh, {
-        Reply: $U
+        Reply: $5
     } = gT, {
-        TextEcho: IU,
-        TextEntity: AU
+        TextEcho: I5,
+        TextEntity: A5
     } = ep, {
-        TextRing: RU
+        TextRing: R5
     } = tp, {
         createError: xy,
-        ObservedError: NU
+        ObservedError: N5
     } = Ga;
 
     function $d(e, t, r) {
         switch (e) {
             case "ok":
-                return new SU;
+                return new S5;
             case "echo":
-                return new mU({
+                return new m5({
                     message: t.message
                 });
             case "lock":
-                return new vU({
+                return new v5({
                     key: t.key,
                     from: t.from
                 });
@@ -7416,7 +7416,7 @@ var Wne = iN((Vne, wS) => {
                     message: t.msg
                 });
             case "error/observed":
-                return new NU({
+                return new N5({
                     to: t.to,
                     error: xy({
                         code: t.error.code,
@@ -7426,7 +7426,7 @@ var Wne = iN((Vne, wS) => {
             case "string":
                 return t;
             case "text":
-                return new AU({
+                return new A5({
                     from: t.from,
                     key: t.key,
                     text: t.val,
@@ -7435,11 +7435,11 @@ var Wne = iN((Vne, wS) => {
                     acl: t.acl
                 });
             case "text/echo":
-                return new IU({
+                return new I5({
                     message: t.message
                 });
             case "object":
-                return new CU({
+                return new C5({
                     from: t.from,
                     key: t.key,
                     val: t.val,
@@ -7447,15 +7447,15 @@ var Wne = iN((Vne, wS) => {
                     acl: t.acl
                 });
             case "object/echo":
-                return new wU({
+                return new w5({
                     message: t.message
                 });
             case "drop":
-                return new gU({
+                return new g5({
                     key: t.key
                 });
             case "artifact":
-                return new rU({
+                return new r5({
                     key: t.key,
                     artifactId: t.artifactId,
                     categoryId: t.categoryId,
@@ -7463,7 +7463,7 @@ var Wne = iN((Vne, wS) => {
                     meta: r
                 });
             case "client/connected":
-                return new iU({
+                return new i5({
                     id: t.id,
                     userId: t.userId,
                     name: t.name,
@@ -7471,25 +7471,25 @@ var Wne = iN((Vne, wS) => {
                     reconnect: t.reconnect
                 });
             case "client/disconnected":
-                return new sU({
+                return new s5({
                     id: t.id,
                     role: t.role
                 });
             case "client/kicked":
-                return new aU({
+                return new a5({
                     id: t.id,
                     banned: t.banned,
                     reason: t.reason
                 });
             case "client/send":
-                return new oU({
+                return new o5({
                     to: t.to,
                     from: t.from,
                     body: t.body,
                     userId: t.userID
                 });
             case "client/welcome": {
-                let n = new nU({
+                let n = new n5({
                     id: t.id,
                     name: t.name,
                     secret: t.secret,
@@ -7507,7 +7507,7 @@ var Wne = iN((Vne, wS) => {
                 return n
             }
             case "doodle":
-                return new cU({
+                return new c5({
                     key: t.key,
                     colors: t.val.colors,
                     lines: t.val.lines,
@@ -7519,17 +7519,17 @@ var Wne = iN((Vne, wS) => {
                     acl: t.acl
                 });
             case "doodle/line":
-                return new uU({
+                return new u5({
                     key: t.key,
                     line: t.val
                 });
             case "doodle/line/removed":
-                return new fU({
+                return new f5({
                     key: t.key,
                     index: t.index
                 });
             case "stack":
-                return new dU({
+                return new d5({
                     key: t.key,
                     size: t.size,
                     from: t.from,
@@ -7538,17 +7538,17 @@ var Wne = iN((Vne, wS) => {
                     acl: t.acl
                 });
             case "stack/element":
-                return new hU({
+                return new h5({
                     key: t.key,
                     val: t.val
                 });
             case "stack/elements":
-                return new pU({
+                return new p5({
                     key: t.key,
                     vals: t.vals
                 });
             case "number":
-                return new OU({
+                return new O5({
                     key: t.key,
                     val: t.val,
                     restrictions: t.restrictions,
@@ -7558,13 +7558,13 @@ var Wne = iN((Vne, wS) => {
                     acl: t.acl
                 });
             case "room/exit":
-                return new bU({
+                return new b5({
                     cause: t.cause
                 });
             case "room/lock":
-                return new EU;
+                return new E5;
             case "room/get-audience":
-                return new _U({
+                return new _5({
                     connections: t.connections
                 });
             case "audience":
@@ -7573,19 +7573,19 @@ var Wne = iN((Vne, wS) => {
                     count: t[1]
                 });
             case "audience/count-group":
-                return new lU({
+                return new l5({
                     key: t.key,
                     choices: t.choices,
                     meta: r
                 });
             case "audience/text-ring":
-                return new RU({
+                return new R5({
                     key: t.key,
                     elements: t.elements,
                     meta: r
                 });
             case "audience/g-counter":
-                return new yU({
+                return new y5({
                     key: t.key,
                     count: t.count,
                     meta: r
@@ -7601,37 +7601,37 @@ var Wne = iN((Vne, wS) => {
         }
     }
 
-    function LU(e) {
+    function L5(e) {
         let t = JSON.parse(e.data),
             r = t.opcode || t.type;
-        return t.re ? new $U({
+        return t.re ? new $5({
             pc: t.pc,
             re: t.re,
             opcode: r,
             result: $d(r, t.result)
-        }) : new TU({
+        }) : new T5({
             pc: t.pc,
             opcode: r,
             result: $d(r, t.result)
         })
     }
-    var PU = {
-        parseResponseMessage: LU
+    var P5 = {
+        parseResponseMessage: L5
     };
     const Dy = g8,
-        kU = I1,
-        xU = qh.exports,
+        k5 = I1,
+        x5 = qh.exports,
         {
-            CallError: DU
+            CallError: D5
         } = Ga,
         {
-            ClientWelcome: MU
+            ClientWelcome: M5
         } = zh,
         {
-            CountGroup: FU
+            CountGroup: F5
         } = Xh,
         {
-            GCounter: UU
+            GCounter: U5
         } = Jh,
         {
             Notification: My
@@ -7640,32 +7640,32 @@ var Wne = iN((Vne, wS) => {
             ObjectEntity: If
         } = Zh,
         {
-            PNCounter: BU
+            PNCounter: B5
         } = Qh,
         {
-            Reply: jU
+            Reply: j5
         } = gT,
         {
-            Request: GU
+            Request: G5
         } = F8,
         {
             TextEntity: Af
         } = ep,
         {
-            TextRing: WU
+            TextRing: W5
         } = tp,
         {
-            parseResponseMessage: HU
-        } = PU,
+            parseResponseMessage: H5
+        } = P5,
         {
-            DoodleEntity: VU
+            DoodleEntity: V5
         } = rp,
         {
-            StackEntity: KU
+            StackEntity: K5
         } = vT,
-        YU = 1e3 + Math.floor(Math.random() * 500),
+        Y5 = 1e3 + Math.floor(Math.random() * 500),
         Fy = 13e3;
-    class qU extends xU {
+    class q5 extends x5 {
         constructor(t) {
             if (super(), this.debug = t.debug || !1, !t.host) throw new Error("unable to create ecast WSClient: no host provided");
             if (this.host = t.host, !t.code) throw new Error("unable to create ecast WSClient: no room code provided");
@@ -7697,7 +7697,7 @@ var Wne = iN((Vne, wS) => {
                 password: this.password
             };
             this.deviceId && (t["device-id"] = this.deviceId), this.twitchToken && (t["twitch-token"] = this.twitchToken), this.secret && (t.secret = this.secret), this.role === "host" && (t["host-token"] = this.token, this.replaySince > 0 && (t["replay-since"] = this.replaySince), this.syncEntities && (t["sync-entities"] = this.syncEntities));
-            const r = kU.stringify(t),
+            const r = k5.stringify(t),
                 n = this.role === "audience" || this.id > 1e7 ? `${this.scheme}://${this.host}/api/v2/audience/${this.code}/play?${r}` : `${this.scheme}://${this.host}/api/v2/rooms/${this.code}/play?${r}`;
             return new Promise((s, o) => {
                 let l = !1,
@@ -7710,10 +7710,10 @@ var Wne = iN((Vne, wS) => {
                     };
                 this.conn = new Dy(n, "ecast-v0"), this.conn.onmessage = g => {
                     this.debugLog(`recv <- ${JSON.stringify(JSON.parse(g.data),null,2)}`);
-                    const y = HU(g);
-                    if (y instanceof jU) this.onReply(y);
+                    const y = H5(g);
+                    if (y instanceof j5) this.onReply(y);
                     else if (y instanceof My) {
-                        if (y.result instanceof MU) u = !0, this.id = y.result.id, this.deviceId = y.result.deviceId, this.entities = y.result.entities, this.secret = y.result.secret, y.result.name && (this.name = y.result.name), f(y.result);
+                        if (y.result instanceof M5) u = !0, this.id = y.result.id, this.deviceId = y.result.deviceId, this.entities = y.result.entities, this.secret = y.result.secret, y.result.name && (this.name = y.result.name), f(y.result);
                         else if (!l) {
                             h(y.result);
                             return
@@ -7738,7 +7738,7 @@ var Wne = iN((Vne, wS) => {
         async reconnect() {
             this.disconnect(), this.debugLog("Attempting to reconnect");
             let t = 1,
-                r = YU;
+                r = Y5;
             for (;;) try {
                 this.emit("connection", {
                     status: "connecting",
@@ -7773,7 +7773,7 @@ var Wne = iN((Vne, wS) => {
                 s.re = r, this.emit("notification", s);
                 return
             }
-            delete this.pending[r], t.result instanceof DU ? n.reject(t.result) : n.resolve(t.result)
+            delete this.pending[r], t.result instanceof D5 ? n.reject(t.result) : n.resolve(t.result)
         }
         onNotification(t) {
             typeof t.result.whenReceived == "function" && t.result.whenReceived(this), this.emit("notification", t), this.emit(t.opcode, t.result)
@@ -7782,7 +7782,7 @@ var Wne = iN((Vne, wS) => {
             if (!this.conn) throw new Error("No connection available");
             if (this.conn.readyState !== Dy.OPEN) throw new Error(`Socket not ready to send, readyState is ${this.conn.readyState}`);
             const n = ++this.seq,
-                s = new GU({
+                s = new G5({
                     seq: n,
                     opcode: t,
                     params: r
@@ -7970,7 +7970,7 @@ var Wne = iN((Vne, wS) => {
             } = r;
             s && (n.acl = s), o && (n.colors = o), n.live = l, u != null && (n.maxPoints = u), f && (n.size = f), h && (n.weights = h);
             const g = await this.send("doodle/create", n);
-            return this.entities[t] = new VU({
+            return this.entities[t] = new V5({
                 key: t,
                 colors: o,
                 lines: [],
@@ -8021,7 +8021,7 @@ var Wne = iN((Vne, wS) => {
             };
             r && (n.acl = r);
             const s = await this.send("stack/create", n);
-            return this.entities[t] = new KU({
+            return this.entities[t] = new K5({
                 key: t,
                 size: 0,
                 meta: {
@@ -8057,7 +8057,7 @@ var Wne = iN((Vne, wS) => {
                 name: t,
                 options: r
             });
-            return this.entities[t] = new FU({
+            return this.entities[t] = new F5({
                 key: t,
                 choices: r,
                 meta: {
@@ -8082,7 +8082,7 @@ var Wne = iN((Vne, wS) => {
                 key: t,
                 count: r
             });
-            return this.entities[t] = new UU({
+            return this.entities[t] = new U5({
                 key: t,
                 count: r,
                 meta: {
@@ -8106,7 +8106,7 @@ var Wne = iN((Vne, wS) => {
                 key: t,
                 count: r
             });
-            return this.entities[t] = new BU({
+            return this.entities[t] = new B5({
                 key: t,
                 count: r,
                 meta: {
@@ -8142,7 +8142,7 @@ var Wne = iN((Vne, wS) => {
                 } = r;
             s && (n.limit = s), o && (n.accept = o), l && (n.reject = l);
             const u = await this.send("audience/text-ring/create", n);
-            return this.entities[t] = new WU({
+            return this.entities[t] = new W5({
                 key: t,
                 elements: [],
                 limit: s,
@@ -8163,65 +8163,65 @@ var Wne = iN((Vne, wS) => {
             })
         }
     }
-    var zU = {
-        WSClient: qU
+    var z5 = {
+        WSClient: q5
     };
     const {
-        APIClient: XU
+        APIClient: X5
     } = p8, {
-        WSClient: JU
-    } = zU, {
-        CreateRoomReply: ZU,
-        GetRoomReply: QU
+        WSClient: J5
+    } = z5, {
+        CreateRoomReply: Z5,
+        GetRoomReply: Q5
     } = Nc, {
-        ClientWelcome: e5,
-        ClientDisconnected: t5
+        ClientWelcome: eU,
+        ClientDisconnected: tU
     } = zh, {
-        ArtifactEntity: r5
+        ArtifactEntity: rU
     } = mT, {
-        GCounter: n5
+        GCounter: nU
     } = Jh, {
-        NumberEntity: i5
+        NumberEntity: iU
     } = bT, {
-        TextEntity: s5
+        TextEntity: sU
     } = ep, {
-        DoodleEntity: a5
+        DoodleEntity: aU
     } = rp, {
-        ObjectEntity: o5
+        ObjectEntity: oU
     } = Zh, {
-        CountGroup: l5
+        CountGroup: lU
     } = Xh, {
-        DropEntity: c5
+        DropEntity: cU
     } = yT, {
-        OK: u5
+        OK: uU
     } = _T, {
-        RoomExit: f5
+        RoomExit: fU
     } = Nc, {
-        TextRing: d5
+        TextRing: dU
     } = tp, {
-        PNCounter: h5
+        PNCounter: hU
     } = Qh;
     var wr = {
-        APIClient: XU,
-        WSClient: JU,
-        ClientWelcome: e5,
-        CreateRoomReply: ZU,
-        DropEntity: c5,
-        GetRoomReply: QU,
-        ClientDisconnected: t5,
-        RoomExit: f5,
-        OK: u5,
-        ArtifactEntity: r5,
-        DoodleEntity: a5,
-        NumberEntity: i5,
-        CountGroup: l5,
-        GCounter: n5,
-        ObjectEntity: o5,
-        PNCounter: h5,
-        TextEntity: s5,
-        TextRing: d5
+        APIClient: X5,
+        WSClient: J5,
+        ClientWelcome: eU,
+        CreateRoomReply: Z5,
+        DropEntity: cU,
+        GetRoomReply: Q5,
+        ClientDisconnected: tU,
+        RoomExit: fU,
+        OK: uU,
+        ArtifactEntity: rU,
+        DoodleEntity: aU,
+        NumberEntity: iU,
+        CountGroup: lU,
+        GCounter: nU,
+        ObjectEntity: oU,
+        PNCounter: hU,
+        TextEntity: sU,
+        TextRing: dU
     };
-    const p5 = [{
+    const pU = [{
             name: "Prototype",
             tag: "prototype",
             wrapper: "vue",
@@ -8516,8 +8516,7 @@ var Wne = iN((Vne, wS) => {
             isPublic: !0,
             directory: "pp8/apply-yourself",
             categoryId: "JobGameGame",
-            features: ["moderation"],
-            hasPreviews: !0
+            features: ["moderation", "previews"]
         }, {
             name: "Drawful Animate",
             tag: "drawful-animate",
@@ -8608,15 +8607,15 @@ var Wne = iN((Vne, wS) => {
             wrapper: "vue",
             isPublic: !0,
             directory: "pp9/lineup",
-            features: ["kicking"],
+            features: ["kicking", "previews"],
             categoryId: "LineupGame"
         }],
-        Id = e => p5.find(t => t.tag === e || t.categoryId === e);
+        Id = e => pU.find(t => t.tag === e || t.categoryId === e);
 
     function Ad(...e) {
         console.log(...e)
     }
-    class g5 {
+    class gU {
         constructor(t, r) {
             ge(this, "client");
             ge(this, "room");
@@ -8866,7 +8865,7 @@ ${r}`,
         }
     }
 
-    function m5(e) {
+    function mU(e) {
         throw new Error('Could not dynamically require "' + e + '". Please configure the dynamicRequireTargets or/and ignoreDynamicRequires option of @rollup/plugin-commonjs appropriately for this require call to work.')
     }
     var Uy = {
@@ -9488,7 +9487,7 @@ ${r}`,
             };
 
             function se() {
-                return typeof window < "u" ? window : typeof process == "object" && typeof m5 == "function" && typeof kt == "object" ? kt : this
+                return typeof window < "u" ? window : typeof process == "object" && typeof mU == "function" && typeof kt == "object" ? kt : this
             }
             var re = {
                     mock: !0,
@@ -9755,7 +9754,7 @@ ${r}`,
         })()
     })(ET);
     const TT = ET.exports;
-    class v5 {
+    class vU {
         constructor(t, r, n) {
             ge(this, "DEFAULT_WIDTH", 400);
             ge(this, "DEFAULT_HEIGHT", 400);
@@ -9864,7 +9863,7 @@ ${r}`,
             return this.isInteracting = !1, this.points = [], t
         }
     }
-    class y5 {
+    class yU {
         constructor(t, r, n, s) {
             ge(this, "renderCanvas");
             ge(this, "canvases", []);
@@ -10053,7 +10052,7 @@ ${r}`,
             }), t.stroke()
         }
     }
-    class _5 {
+    class _U {
         constructor(t, r) {
             ge(this, "stageElement");
             ge(this, "width", 400);
@@ -10116,7 +10115,7 @@ ${r}`,
             ge(this, "onTouchEnd", t => {
                 t.preventDefault(), this.interactCanvas.onUp(), this.isDrawing = !1, this.emit("up")
             });
-            r.width && (this.width = r.width), r.height && (this.height = r.height), this.stageElement = t, this.setupElements(), this.setupEvents(), r.InteractCanvas ? this.interactCanvas = new r.InteractCanvas(t, this.width, this.height, r) : this.interactCanvas = new y5(t, this.width, this.height, r)
+            r.width && (this.width = r.width), r.height && (this.height = r.height), this.stageElement = t, this.setupElements(), this.setupEvents(), r.InteractCanvas ? this.interactCanvas = new r.InteractCanvas(t, this.width, this.height, r) : this.interactCanvas = new yU(t, this.width, this.height, r)
         }
         on(t, r) {
             this.callbacks[t] = this.callbacks[t] || [], this.callbacks[t].push(r)
@@ -10325,7 +10324,7 @@ ${r.message}`,
             return t.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
         }
     }
-    const b5 = {
+    const bU = {
             BACK: "Back",
             CANCEL: "Cancel",
             CLOSE: "Close",
@@ -10345,7 +10344,7 @@ ${r.message}`,
             UNDO: "Undo",
             YES: "Yes"
         },
-        E5 = {
+        EU = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "prompts hidden on players\u2019 devices",
                 VISIBILITY_CONTROLLER_ON: "prompts shown on players\u2019 devices",
@@ -10353,7 +10352,7 @@ ${r.message}`,
                 VISIBILITY_SCREEN_ON: "prompts shown on game screen"
             }
         },
-        T5 = {
+        TU = {
             DISCONNECTED: "You have been disconnected.",
             DRAWING_NOTHING: "You have to draw something!",
             PLAYER_KICKED: "You have been kicked from the game by a moderator.",
@@ -10363,8 +10362,8 @@ ${r.message}`,
             TEXT_NOTHING: "You can\u2019t enter nothing!",
             TITLE: "Error"
         },
-        S5 = "LOADING",
-        O5 = {
+        SU = "LOADING",
+        OU = {
             JOINED_COUNT: "x | {count} of {maxPlayers} players joined | {count} of {maxPlayers} players joined",
             PLAYERS_NEEDED: "x | {count} player needed to start | {count} players needed to start",
             WAITING_FOR_VIP: "Waiting for {name} to start the game",
@@ -10373,25 +10372,25 @@ ${r.message}`,
             BUTTON_START: "Press to Start",
             BUTTON_CANCEL: "Press to Cancel"
         },
-        w5 = {
+        wU = {
             GALLERY_LINK: "Visit the Gallery",
             PLAY_AGAIN: "Play again?",
             BUTTON_SAME_PLAYERS: "Same Players",
             BUTTON_NEW_PLAYERS: "New Players"
         },
-        C5 = {
+        CU = {
             AND: "AND",
             OR: "OR"
         },
-        $5 = {
+        $U = {
             BUTTON_SKIP: "Skip",
             BUTTON_NEXT: "Next",
             BUTTON_DONE: "Let\u2019s Go!"
         },
-        I5 = {
+        IU = {
             NAME: "AUDIENCE"
         },
-        A5 = {
+        AU = {
             EPISODE_REPORT: "Report Episode",
             EPISODE_UNLOAD: "Unload Episode",
             EPISODE_VIEW_AUTHOR: "View Author",
@@ -10421,7 +10420,7 @@ ${r.message}`,
             PROMPTS_COUNT_HIDDEN: "({count} hidden)",
             TITLE_PLACEHOLDER: "enter a title"
         },
-        R5 = {
+        RU = {
             BROADCASTER: {
                 SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
                 WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
@@ -10441,20 +10440,20 @@ ${r.message}`,
                 }
             }
         },
-        N5 = {
-            ACTION: b5,
-            ALT: E5,
-            ERROR: T5,
-            LOADING: S5,
-            LOBBY: O5,
-            POST_GAME: w5,
-            SEPARATOR: C5,
-            TUTORIAL: $5,
-            AUDIENCE: I5,
-            UGC: A5,
-            TOAST: R5
+        NU = {
+            ACTION: bU,
+            ALT: EU,
+            ERROR: TU,
+            LOADING: SU,
+            LOBBY: OU,
+            POST_GAME: wU,
+            SEPARATOR: CU,
+            TUTORIAL: $U,
+            AUDIENCE: IU,
+            UGC: AU,
+            TOAST: RU
         },
-        L5 = {
+        LU = {
             BACK: "Retour",
             CANCEL: "Annuler",
             CLOSE: "Fermer",
@@ -10471,7 +10470,7 @@ ${r.message}`,
             TRY_AGAIN: "R\xE9essayer",
             YES: "Oui"
         },
-        P5 = {
+        PU = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "sujets non affich\xE9s sur les appareils des joueurs",
                 VISIBILITY_CONTROLLER_ON: "sujets affich\xE9s sur les appareils des joueurs",
@@ -10479,7 +10478,7 @@ ${r.message}`,
                 VISIBILITY_SCREEN_ON: "sujets affich\xE9s sur l'\xE9cran de jeu"
             }
         },
-        k5 = {
+        kU = {
             DISCONNECTED: "Vous avez \xE9t\xE9 d\xE9connect\xE9.",
             DRAWING_NOTHING: "Vous devez dessiner quelque chose\xA0!",
             ROOM_DESTROYED: "Merci d'avoir jou\xE9\xA0!",
@@ -10488,7 +10487,7 @@ ${r.message}`,
             TEXT_NOTHING: "Vous ne pouvez rien entrer\xA0!",
             TITLE: "Erreur"
         },
-        x5 = {
+        xU = {
             JOINED_COUNT: "x | {count} joueur sur {maxPlayers} \xE0 rejoint la partie | {count} joueurs sur {maxPlayers} ont rejoint la partie",
             PLAYERS_NEEDED: "x | {count} joueur n\xE9cessaire pour commencer | {count} joueurs n\xE9cessaires pour commencer",
             WAITING_FOR_VIP: "En attente de {name} pour commencer la partie",
@@ -10497,25 +10496,25 @@ ${r.message}`,
             BUTTON_START: "Appuyer pour commencer",
             BUTTON_CANCEL: "Appuyer pour annuler"
         },
-        D5 = {
+        DU = {
             GALLERY_LINK: "Visiter la galerie",
             PLAY_AGAIN: "Rejouer\xA0?",
             BUTTON_SAME_PLAYERS: "Les m\xEAmes joueurs",
             BUTTON_NEW_PLAYERS: "De nouveaux joueurs"
         },
-        M5 = {
+        MU = {
             AND: "ET",
             OR: "OU"
         },
-        F5 = {
+        FU = {
             BUTTON_SKIP: "Passer",
             BUTTON_NEXT: "Suivant",
             BUTTON_DONE: "Allons-y\xA0!"
         },
-        U5 = {
+        UU = {
             NAME: "SPECTATEURS"
         },
-        B5 = {
+        BU = {
             EPISODE_REPORT: "Signaler l'\xE9pisode",
             EPISODE_UNLOAD: "Retirer l'\xE9pisode",
             EPISODE_VIEW_AUTHOR: "Voir l'auteur",
@@ -10545,7 +10544,7 @@ ${r.message}`,
             PROMPTS_COUNT_HIDDEN: "({count} non affich\xE9)",
             TITLE_PLACEHOLDER: "taper un titre"
         },
-        j5 = {
+        jU = {
             BROADCASTER: {
                 SUBTEXT: "La connexion de votre compte \xE0 l'extension Twitch Jackbox Audience Kit a r\xE9ussi.",
                 WARNING: "LE PARAM\xC8TRE 'PUBLIC' N'EST PAS ACTIV\xC9 DANS CETTE SALLE."
@@ -10565,19 +10564,19 @@ ${r.message}`,
                 }
             }
         },
-        G5 = {
-            ACTION: L5,
-            ALT: P5,
-            ERROR: k5,
-            LOBBY: x5,
-            POST_GAME: D5,
-            SEPARATOR: M5,
-            TUTORIAL: F5,
-            AUDIENCE: U5,
-            UGC: B5,
-            TOAST: j5
+        GU = {
+            ACTION: LU,
+            ALT: PU,
+            ERROR: kU,
+            LOBBY: xU,
+            POST_GAME: DU,
+            SEPARATOR: MU,
+            TUTORIAL: FU,
+            AUDIENCE: UU,
+            UGC: BU,
+            TOAST: jU
         },
-        W5 = {
+        WU = {
             BACK: "Indietro",
             CANCEL: "Annulla",
             CLOSE: "Chiuda",
@@ -10594,7 +10593,7 @@ ${r.message}`,
             TRY_AGAIN: "Riprova",
             YES: "S\xEC"
         },
-        H5 = {
+        HU = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "definizioni nascoste sui dispositivi dei giocatori",
                 VISIBILITY_CONTROLLER_ON: "definizioni visualizzate sui dispositivi dei giocatori",
@@ -10602,7 +10601,7 @@ ${r.message}`,
                 VISIBILITY_SCREEN_ON: "definizioni visualizzate sullo schermo di gioco"
             }
         },
-        V5 = {
+        VU = {
             DISCONNECTED: "\xC8 stata effettuata la disconnessione.",
             DRAWING_NOTHING: "Devi disegnare qualcosa!",
             ROOM_DESTROYED: "Grazie per aver scelto di giocare con noi!",
@@ -10611,7 +10610,7 @@ ${r.message}`,
             TEXT_NOTHING: "Devi per forza inserire qualcosa!",
             TITLE: "Errore"
         },
-        K5 = {
+        KU = {
             JOINED_COUNT: "x | Sta partecipando {count} giocatore su {maxPlayers} | Stanno partecipando {count} giocatori su {maxPlayers}",
             PLAYERS_NEEDED: "x | Manca {count} giocatore per iniziare | Mancano {count} giocatori per iniziare",
             WAITING_FOR_VIP: "In attesa di {name} per iniziare la partita",
@@ -10620,25 +10619,25 @@ ${r.message}`,
             BUTTON_START: "Premi per avviare",
             BUTTON_CANCEL: "Premi per annullare"
         },
-        Y5 = {
+        YU = {
             GALLERY_LINK: "Visita la galleria",
             PLAY_AGAIN: "Vuoi giocare di nuovo?",
             BUTTON_SAME_PLAYERS: "Stessi giocatori",
             BUTTON_NEW_PLAYERS: "Nuovi giocatori"
         },
-        q5 = {
+        qU = {
             AND: "E",
             OR: "O"
         },
-        z5 = {
+        zU = {
             BUTTON_SKIP: "Salta",
             BUTTON_NEXT: "Avanti",
             BUTTON_DONE: "Iniziamo!"
         },
-        X5 = {
+        XU = {
             NAME: "PUBBLICO"
         },
-        J5 = {
+        JU = {
             EPISODE_REPORT: "Segnala episodio",
             EPISODE_UNLOAD: "Rimuovi episodio",
             EPISODE_VIEW_AUTHOR: "Mostra autore",
@@ -10668,7 +10667,7 @@ ${r.message}`,
             PROMPTS_COUNT_HIDDEN: "({count} nascosti)",
             TITLE_PLACEHOLDER: "inserisci un titolo"
         },
-        Z5 = {
+        ZU = {
             BROADCASTER: {
                 SUBTEXT: "Il collegamento del tuo account con l'estensione per Twitch Jackbox Audience Kit \xE8 andato a buon fine.",
                 WARNING: "L'IMPOSTAZIONE DEL PUBBLICO NON \xC8 ATTIVA PER QUESTA STANZA"
@@ -10688,17 +10687,17 @@ ${r.message}`,
                 }
             }
         },
-        Q5 = {
-            ACTION: W5,
-            ALT: H5,
-            ERROR: V5,
-            LOBBY: K5,
-            POST_GAME: Y5,
-            SEPARATOR: q5,
-            TUTORIAL: z5,
-            AUDIENCE: X5,
-            UGC: J5,
-            TOAST: Z5
+        QU = {
+            ACTION: WU,
+            ALT: HU,
+            ERROR: VU,
+            LOBBY: KU,
+            POST_GAME: YU,
+            SEPARATOR: qU,
+            TUTORIAL: zU,
+            AUDIENCE: XU,
+            UGC: JU,
+            TOAST: ZU
         },
         eB = {
             BACK: "Zur\xFCck",
@@ -11070,9 +11069,9 @@ ${r.message}`,
             TOAST: NB
         },
         PB = {
-            en: N5,
-            fr: G5,
-            it: Q5,
+            en: NU,
+            fr: GU,
+            it: QU,
             de: uB,
             es: EB,
             "es-XL": LB
@@ -11134,7 +11133,7 @@ ${r.message}`,
             methods: {
                 createCanvas() {
                     const e = this.$refs.canvas;
-                    this.canvas = Bn(new v5(e, this.player.doodle, this.canvasOptions))
+                    this.canvas = Bn(new vU(e, this.player.doodle, this.canvasOptions))
                 },
                 onPointerBoxStart(e) {
                     if (!this.canvas) return;
@@ -15626,7 +15625,7 @@ function print() { __p += __j.call(arguments, '') }
                     const e = this.$refs.stage,
                         t = {};
                     this.player.size && (t.width = this.player.size.width, t.height = this.player.size.height), this.player.thicknesses && (t.thickness = this.player.thicknesses[0]), this.player.colors && (t.color = this.player.colors[0]), this.player.maxPoints && (t.maxPoints = this.player.maxPoints);
-                    const r = new _5(e, t);
+                    const r = new _U(e, t);
                     r.canvas.lines = Bn([]), r.canvas.lines2 = Bn([]), this.stage = r, this.stage.on("up", () => {
                         var s;
                         if (!this.player.live) return;
@@ -18643,7 +18642,7 @@ function print() { __p += __j.call(arguments, '') }
                         e.config.globalProperties.$debugReplayer = t.replayer, e.component("Debug", uV);
                         return
                     }
-                    if (e.config.globalProperties.$debugRecorder = new g5(t.client, t.room), !e.config.globalProperties.$showModal) {
+                    if (e.config.globalProperties.$debugRecorder = new gU(t.client, t.room), !e.config.globalProperties.$showModal) {
                         console.warn("[debugPlugin] Sending debug and feedback messages is disabled be the modalPlugin is not used.");
                         return
                     }(!vr.isProduction || vr.getQueryParam("feedback")) && e.component("Debug", yz), new jH(() => {
@@ -25220,7 +25219,7 @@ ${t}`
                 }
             }
         }),
-        Vte = e => (pc("data-v-daa09643"), e = e(), gc(), e),
+        Vte = e => (pc("data-v-046ef91d"), e = e(), gc(), e),
         Kte = {
             class: "lobby"
         },
@@ -25351,7 +25350,7 @@ ${t}`
     }
     const hre = ze(Hte, [
             ["render", dre],
-            ["__scopeId", "data-v-daa09643"]
+            ["__scopeId", "data-v-046ef91d"]
         ]),
         pre = it({
             components: {
@@ -25821,7 +25820,7 @@ ${t}`
                 async onSubmit() {
                     if (!this.player.responseKey) console.error("missing response key");
                     else if (this.isProfanityError1 || this.isProfanityError2 || this.isTruthError) console.error("can't submit disallowed text");
-                    else if (this.currentText1.length <= 0 || this.player.textKey2 && this.currentText2.length <= 0) console.error("cant submit blanks text");
+                    else if (!this.isLieForMe && (this.currentText1.length <= 0 || this.player.textKey2 && this.currentText2.length <= 0)) console.error("cant submit blanks text");
                     else if (!this.isSubmitting) {
                         this.isSubmitting = !0;
                         try {
@@ -25999,7 +25998,7 @@ ${t}`
     }
     const Dne = ze(yne, [
             ["render", xne],
-            ["__scopeId", "data-v-6fb6f179"]
+            ["__scopeId", "data-v-528a8876"]
         ]),
         Mne = it({
             bb: {
@@ -26138,4 +26137,4 @@ ${t}`
     })
 });
 export default Wne();
-//# sourceMappingURL=c14f551e.js.map
+//# sourceMappingURL=635e3c0a.js.map
