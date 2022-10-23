@@ -2753,7 +2753,7 @@ svg line[data-v-158f55bc] {
     float: right
 }
 
-.item[data-v-f991d591] {
+.item[data-v-5b42a5bd] {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2769,228 +2769,229 @@ svg line[data-v-158f55bc] {
     box-shadow: inset 0 3px 3px #0006
 }
 
-.final-round .item[data-v-f991d591] {
+.final-round .item[data-v-5b42a5bd] {
     color: #000;
     font-size: 3.9vh
 }
 
-.final-round .item span[data-v-f991d591] {
+.final-round .item span[data-v-5b42a5bd] {
     opacity: .7
 }
 
-.final-round .item.item-9[data-v-f991d591] {
+.final-round .item.item-9[data-v-5b42a5bd] {
     background: #e28f24
 }
 
-.final-round .item.item-9 svg[data-v-f991d591] {
+.final-round .item.item-9 svg[data-v-5b42a5bd] {
     fill: #fde63e
 }
 
-.final-round .item.item-8[data-v-f991d591] {
+.final-round .item.item-8[data-v-5b42a5bd] {
     background: #e19939
 }
 
-.final-round .item.item-8 svg[data-v-f991d591] {
+.final-round .item.item-8 svg[data-v-5b42a5bd] {
     fill: #f7d951
 }
 
-.final-round .item.item-7[data-v-f991d591] {
+.final-round .item.item-7[data-v-5b42a5bd] {
     background: #d2a053
 }
 
-.final-round .item.item-7 svg[data-v-f991d591] {
+.final-round .item.item-7 svg[data-v-5b42a5bd] {
     fill: #e6c96c
 }
 
-.final-round .item.item-6[data-v-f991d591] {
+.final-round .item.item-6[data-v-5b42a5bd] {
     background: #caa36f
 }
 
-.final-round .item.item-6 svg[data-v-f991d591] {
+.final-round .item.item-6 svg[data-v-5b42a5bd] {
     fill: #d6b67f
 }
 
-.final-round .item.item-5[data-v-f991d591] {
+.final-round .item.item-5[data-v-5b42a5bd] {
     background: #c4af8a
 }
 
-.final-round .item.item-5 svg[data-v-f991d591] {
+.final-round .item.item-5 svg[data-v-5b42a5bd] {
     fill: #ccbc9e
 }
 
-.final-round .item.item-4[data-v-f991d591] {
+.final-round .item.item-4[data-v-5b42a5bd] {
     background: #9b9cae
 }
 
-.final-round .item.item-4 svg[data-v-f991d591] {
+.final-round .item.item-4 svg[data-v-5b42a5bd] {
     fill: #adacbc
 }
 
-.final-round .item.item-3[data-v-f991d591] {
+.final-round .item.item-3[data-v-5b42a5bd] {
     background: #8c89ad
 }
 
-.final-round .item.item-3 svg[data-v-f991d591] {
+.final-round .item.item-3 svg[data-v-5b42a5bd] {
     fill: #a6a2bc
 }
 
-.final-round .item.item-2[data-v-f991d591] {
+.final-round .item.item-2[data-v-5b42a5bd] {
     background: #7871a5
 }
 
-.final-round .item.item-2 svg[data-v-f991d591] {
+.final-round .item.item-2 svg[data-v-5b42a5bd] {
     fill: #ab9ecf
 }
 
-.final-round .item.item-1[data-v-f991d591] {
+.final-round .item.item-1[data-v-5b42a5bd] {
     background: #61599c
 }
 
-.final-round .item.item-1 svg[data-v-f991d591] {
+.final-round .item.item-1 svg[data-v-5b42a5bd] {
     fill: #a690de
 }
 
-.final-round .item.item-0[data-v-f991d591] {
+.final-round .item.item-0[data-v-5b42a5bd] {
     background: #504294
 }
 
-.final-round .item.item-0 svg[data-v-f991d591] {
+.final-round .item.item-0 svg[data-v-5b42a5bd] {
     fill: #9e7df1
 }
 
-.item.is-selected[data-v-f991d591] {
+.item.is-selected[data-v-5b42a5bd] {
     background: #00f100
 }
 
-button.item[data-v-f991d591] {
+button.item[data-v-5b42a5bd] {
     padding: 0
 }
 
 @media (hover: hover) {
-    button.item[data-v-f991d591]:hover {
+    button.item[data-v-5b42a5bd]:hover {
         background: #fff;
         box-shadow: inset 0 3px 3px #0003, 0 0 10px 5px #fff
     }
 
-    button.item.is-selected[data-v-f991d591]:hover {
+    button.item.is-selected[data-v-5b42a5bd]:hover {
         background: #00f100;
         box-shadow: inset 0 3px 3px #0003, 0 0 10px 5px #00f10080
     }
 }
 
-div.item[data-v-f991d591] {
+div.item[data-v-5b42a5bd] {
     height: auto;
     width: 80%;
     margin: 0 auto
 }
 
-div.item .display[data-v-f991d591] {
+div.item .display[data-v-5b42a5bd] {
     font-size: 5vh
 }
 
-.arrow svg[data-v-f991d591] {
+.arrow svg[data-v-5b42a5bd] {
     position: absolute;
     top: 25%;
     height: 50%
 }
 
-.arrow.item-5 svg[data-v-f991d591],
-.arrow.item-6 svg[data-v-f991d591],
-.arrow.item-7 svg[data-v-f991d591],
-.arrow.item-8 svg[data-v-f991d591],
-.arrow.item-9 svg[data-v-f991d591] {
+.arrow.item-5 svg[data-v-5b42a5bd],
+.arrow.item-6 svg[data-v-5b42a5bd],
+.arrow.item-7 svg[data-v-5b42a5bd],
+.arrow.item-8 svg[data-v-5b42a5bd],
+.arrow.item-9 svg[data-v-5b42a5bd] {
     left: 10px
 }
 
-.arrow.item-0 svg[data-v-f991d591],
-.arrow.item-1 svg[data-v-f991d591],
-.arrow.item-2 svg[data-v-f991d591],
-.arrow.item-3 svg[data-v-f991d591],
-.arrow.item-4 svg[data-v-f991d591] {
+.arrow.item-0 svg[data-v-5b42a5bd],
+.arrow.item-1 svg[data-v-5b42a5bd],
+.arrow.item-2 svg[data-v-5b42a5bd],
+.arrow.item-3 svg[data-v-5b42a5bd],
+.arrow.item-4 svg[data-v-5b42a5bd] {
     right: 10px;
     transform: rotate(180deg)
 }
 
-.stars[data-v-f991d591] {
+.stars[data-v-5b42a5bd] {
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     padding: 0 8px
 }
 
-.stars svg[data-v-f991d591] {
-    display: inline-block;
+.stars svg[data-v-5b42a5bd] {
     top: 10%;
-    max-height: 80%
+    max-height: 80%;
+    width: 100%
 }
 
-.stars .full[data-v-f991d591] {
+.stars .full[data-v-5b42a5bd] {
     stroke: #242b2c;
     stroke-width: 2px;
     stroke-linejoin: round;
     fill: transparent
 }
 
-.stars .half[data-v-f991d591] {
+.stars .half[data-v-5b42a5bd] {
     fill: transparent
 }
 
-.stars.item-1 svg:nth-of-type(1) .full[data-v-f991d591] {
+.stars.item-1 svg:nth-of-type(1) .full[data-v-5b42a5bd] {
     fill: #242b2c
 }
 
-.stars.item-2 svg:nth-of-type(1) .full[data-v-f991d591] {
+.stars.item-2 svg:nth-of-type(1) .full[data-v-5b42a5bd] {
     fill: #242b2c
 }
 
-.stars.item-3 svg:nth-of-type(-n + 2) .full[data-v-f991d591] {
+.stars.item-3 svg:nth-of-type(-n + 2) .full[data-v-5b42a5bd] {
     fill: #242b2c
 }
 
-.stars.item-4 svg:nth-of-type(-n + 2) .full[data-v-f991d591] {
+.stars.item-4 svg:nth-of-type(-n + 2) .full[data-v-5b42a5bd] {
     fill: #242b2c
 }
 
-.stars.item-5 svg:nth-of-type(-n + 3) .full[data-v-f991d591] {
+.stars.item-5 svg:nth-of-type(-n + 3) .full[data-v-5b42a5bd] {
     fill: #242b2c
 }
 
-.stars.item-6 svg:nth-of-type(-n + 3) .full[data-v-f991d591] {
+.stars.item-6 svg:nth-of-type(-n + 3) .full[data-v-5b42a5bd] {
     fill: #242b2c
 }
 
-.stars.item-7 svg:nth-of-type(-n + 4) .full[data-v-f991d591] {
+.stars.item-7 svg:nth-of-type(-n + 4) .full[data-v-5b42a5bd] {
     fill: #242b2c
 }
 
-.stars.item-8 svg:nth-of-type(-n + 4) .full[data-v-f991d591] {
+.stars.item-8 svg:nth-of-type(-n + 4) .full[data-v-5b42a5bd] {
     fill: #242b2c
 }
 
-.stars.item-9 svg .full[data-v-f991d591] {
+.stars.item-9 svg .full[data-v-5b42a5bd] {
     fill: #242b2c
 }
 
-.stars.item-0 svg:nth-of-type(1) .half[data-v-f991d591] {
+.stars.item-0 svg:nth-of-type(1) .half[data-v-5b42a5bd] {
     fill: #242b2c
 }
 
-.stars.item-2 svg:nth-of-type(2) .half[data-v-f991d591] {
+.stars.item-2 svg:nth-of-type(2) .half[data-v-5b42a5bd] {
     fill: #242b2c
 }
 
-.stars.item-4 svg:nth-of-type(3) .half[data-v-f991d591] {
+.stars.item-4 svg:nth-of-type(3) .half[data-v-5b42a5bd] {
     fill: #242b2c
 }
 
-.stars.item-6 svg:nth-of-type(4) .half[data-v-f991d591] {
+.stars.item-6 svg:nth-of-type(4) .half[data-v-5b42a5bd] {
     fill: #242b2c
 }
 
-.stars.item-8 svg:nth-of-type(5) .half[data-v-f991d591] {
+.stars.item-8 svg:nth-of-type(5) .half[data-v-5b42a5bd] {
     fill: #242b2c
 }
 
-.bar[data-v-f991d591] {
+.bar[data-v-5b42a5bd] {
     position: absolute;
     top: 0;
     left: 0;
@@ -3001,16 +3002,16 @@ div.item .display[data-v-f991d591] {
     box-shadow: inset 0 3px 3px #0006
 }
 
-.is-adding-confidence .content[data-v-f991d591] {
-    animation: doubling-shake-f991d591 .25s infinite linear
+.is-adding-confidence .content[data-v-5b42a5bd] {
+    animation: doubling-shake-5b42a5bd .25s infinite linear
 }
 
-.is-adding-confidence .bar[data-v-f991d591] {
+.is-adding-confidence .bar[data-v-5b42a5bd] {
     width: 100%;
     transition: width 1.5s linear
 }
 
-@keyframes doubling-shake-f991d591 {
+@keyframes doubling-shake-5b42a5bd {
     0% {
         transform: translate(0)
     }

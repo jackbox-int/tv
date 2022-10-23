@@ -7628,10 +7628,10 @@ var Dce = yk((Fce, UA) => {
             ClientWelcome: Z5
         } = vm,
         {
-            CountGroup: e6
+            CountGroup: e4
         } = ym,
         {
-            GCounter: t6
+            GCounter: t4
         } = bm,
         {
             Notification: EE
@@ -7640,32 +7640,32 @@ var Dce = yk((Fce, UA) => {
             ObjectEntity: Ad
         } = Em,
         {
-            PNCounter: n6
+            PNCounter: n4
         } = Tm,
         {
-            Reply: r6
+            Reply: r4
         } = $w,
         {
-            Request: i6
+            Request: i4
         } = e5,
         {
             TextEntity: Id
         } = Sm,
         {
-            TextRing: s6
+            TextRing: s4
         } = wm,
         {
-            parseResponseMessage: a6
+            parseResponseMessage: a4
         } = X5,
         {
-            DoodleEntity: o6
+            DoodleEntity: o4
         } = Om,
         {
-            StackEntity: l6
+            StackEntity: l4
         } = Rw,
-        c6 = 1e3 + Math.floor(Math.random() * 500),
+        c4 = 1e3 + Math.floor(Math.random() * 500),
         TE = 13e3;
-    class u6 extends J5 {
+    class u4 extends J5 {
         constructor(e) {
             if (super(), this.debug = e.debug || !1, !e.host) throw new Error("unable to create ecast WSClient: no host provided");
             if (this.host = e.host, !e.code) throw new Error("unable to create ecast WSClient: no room code provided");
@@ -7710,8 +7710,8 @@ var Dce = yk((Fce, UA) => {
                     };
                 this.conn = new bE(r, "ecast-v0"), this.conn.onmessage = d => {
                     this.debugLog(`recv <- ${JSON.stringify(JSON.parse(d.data),null,2)}`);
-                    const g = a6(d);
-                    if (g instanceof r6) this.onReply(g);
+                    const g = a4(d);
+                    if (g instanceof r4) this.onReply(g);
                     else if (g instanceof EE) {
                         if (g.result instanceof Z5) c = !0, this.id = g.result.id, this.deviceId = g.result.deviceId, this.entities = g.result.entities, this.secret = g.result.secret, g.result.name && (this.name = g.result.name), u(g.result);
                         else if (!o) {
@@ -7738,7 +7738,7 @@ var Dce = yk((Fce, UA) => {
         async reconnect() {
             this.disconnect(), this.debugLog("Attempting to reconnect");
             let e = 1,
-                n = c6;
+                n = c4;
             for (;;) try {
                 this.emit("connection", {
                     status: "connecting",
@@ -7782,7 +7782,7 @@ var Dce = yk((Fce, UA) => {
             if (!this.conn) throw new Error("No connection available");
             if (this.conn.readyState !== bE.OPEN) throw new Error(`Socket not ready to send, readyState is ${this.conn.readyState}`);
             const r = ++this.seq,
-                i = new i6({
+                i = new i4({
                     seq: r,
                     opcode: e,
                     params: n
@@ -7970,7 +7970,7 @@ var Dce = yk((Fce, UA) => {
             } = n;
             i && (r.acl = i), s && (r.colors = s), r.live = o, c != null && (r.maxPoints = c), u && (r.size = u), h && (r.weights = h);
             const d = await this.send("doodle/create", r);
-            return this.entities[e] = new o6({
+            return this.entities[e] = new o4({
                 key: e,
                 colors: s,
                 lines: [],
@@ -8021,7 +8021,7 @@ var Dce = yk((Fce, UA) => {
             };
             n && (r.acl = n);
             const i = await this.send("stack/create", r);
-            return this.entities[e] = new l6({
+            return this.entities[e] = new l4({
                 key: e,
                 size: 0,
                 meta: {
@@ -8057,7 +8057,7 @@ var Dce = yk((Fce, UA) => {
                 name: e,
                 options: n
             });
-            return this.entities[e] = new e6({
+            return this.entities[e] = new e4({
                 key: e,
                 choices: n,
                 meta: {
@@ -8082,7 +8082,7 @@ var Dce = yk((Fce, UA) => {
                 key: e,
                 count: n
             });
-            return this.entities[e] = new t6({
+            return this.entities[e] = new t4({
                 key: e,
                 count: n,
                 meta: {
@@ -8106,7 +8106,7 @@ var Dce = yk((Fce, UA) => {
                 key: e,
                 count: n
             });
-            return this.entities[e] = new n6({
+            return this.entities[e] = new n4({
                 key: e,
                 count: n,
                 meta: {
@@ -8142,7 +8142,7 @@ var Dce = yk((Fce, UA) => {
                 } = n;
             i && (r.limit = i), s && (r.accept = s), o && (r.reject = o);
             const c = await this.send("audience/text-ring/create", r);
-            return this.entities[e] = new s6({
+            return this.entities[e] = new s4({
                 key: e,
                 elements: [],
                 limit: i,
@@ -8163,65 +8163,65 @@ var Dce = yk((Fce, UA) => {
             })
         }
     }
-    var f6 = {
-        WSClient: u6
+    var f4 = {
+        WSClient: u4
     };
     const {
-        APIClient: h6
+        APIClient: h4
     } = P8, {
-        WSClient: d6
-    } = f6, {
-        CreateRoomReply: p6,
-        GetRoomReply: g6
+        WSClient: d4
+    } = f4, {
+        CreateRoomReply: p4,
+        GetRoomReply: g4
     } = Af, {
-        ClientWelcome: m6,
-        ClientDisconnected: _6
+        ClientWelcome: m4,
+        ClientDisconnected: _4
     } = vm, {
-        ArtifactEntity: v6
+        ArtifactEntity: v4
     } = Pw, {
-        GCounter: y6
+        GCounter: y4
     } = bm, {
-        NumberEntity: b6
+        NumberEntity: b4
     } = Lw, {
-        TextEntity: E6
+        TextEntity: E4
     } = Sm, {
-        DoodleEntity: T6
+        DoodleEntity: T4
     } = Om, {
-        ObjectEntity: S6
+        ObjectEntity: S4
     } = Em, {
-        CountGroup: w6
+        CountGroup: w4
     } = ym, {
-        DropEntity: O6
+        DropEntity: O4
     } = Nw, {
-        OK: C6
+        OK: C4
     } = xw, {
-        RoomExit: A6
+        RoomExit: A4
     } = Af, {
-        TextRing: I6
+        TextRing: I4
     } = wm, {
-        PNCounter: $6
+        PNCounter: $4
     } = Tm;
     var Dn = {
-        APIClient: h6,
-        WSClient: d6,
-        ClientWelcome: m6,
-        CreateRoomReply: p6,
-        DropEntity: O6,
-        GetRoomReply: g6,
-        ClientDisconnected: _6,
-        RoomExit: A6,
-        OK: C6,
-        ArtifactEntity: v6,
-        DoodleEntity: T6,
-        NumberEntity: b6,
-        CountGroup: w6,
-        GCounter: y6,
-        ObjectEntity: S6,
-        PNCounter: $6,
-        TextEntity: E6,
-        TextRing: I6
+        APIClient: h4,
+        WSClient: d4,
+        ClientWelcome: m4,
+        CreateRoomReply: p4,
+        DropEntity: O4,
+        GetRoomReply: g4,
+        ClientDisconnected: _4,
+        RoomExit: A4,
+        OK: C4,
+        ArtifactEntity: v4,
+        DoodleEntity: T4,
+        NumberEntity: b4,
+        CountGroup: w4,
+        GCounter: y4,
+        ObjectEntity: S4,
+        PNCounter: $4,
+        TextEntity: E4,
+        TextRing: I4
     };
-    const P6 = [{
+    const P4 = [{
             name: "Prototype",
             tag: "prototype",
             wrapper: "vue",
@@ -8516,8 +8516,7 @@ var Dce = yk((Fce, UA) => {
             isPublic: !0,
             directory: "pp8/apply-yourself",
             categoryId: "JobGameGame",
-            features: ["moderation"],
-            hasPreviews: !0
+            features: ["moderation", "previews"]
         }, {
             name: "Drawful Animate",
             tag: "drawful-animate",
@@ -8608,15 +8607,15 @@ var Dce = yk((Fce, UA) => {
             wrapper: "vue",
             isPublic: !0,
             directory: "pp9/lineup",
-            features: ["kicking"],
+            features: ["kicking", "previews"],
             categoryId: "LineupGame"
         }],
-        Fp = t => P6.find(e => e.tag === t || e.categoryId === t);
+        Fp = t => P4.find(e => e.tag === t || e.categoryId === t);
 
     function Bp(...t) {
         console.log(...t)
     }
-    class R6 {
+    class R4 {
         constructor(e, n) {
             de(this, "client");
             de(this, "room");
@@ -8866,7 +8865,7 @@ ${n}`,
         }
     }
 
-    function N6(t) {
+    function N4(t) {
         throw new Error('Could not dynamically require "' + t + '". Please configure the dynamicRequireTargets or/and ignoreDynamicRequires option of @rollup/plugin-commonjs appropriately for this require call to work.')
     }
     var SE = {
@@ -9488,7 +9487,7 @@ ${n}`,
             };
 
             function ue() {
-                return typeof window < "u" ? window : typeof process == "object" && typeof N6 == "function" && typeof jt == "object" ? jt : this
+                return typeof window < "u" ? window : typeof process == "object" && typeof N4 == "function" && typeof jt == "object" ? jt : this
             }
             var ae = {
                     mock: !0,
@@ -9755,7 +9754,7 @@ ${n}`,
         })()
     })(kw);
     const Dw = kw.exports;
-    class x6 {
+    class x4 {
         constructor(e, n, r) {
             de(this, "DEFAULT_WIDTH", 400);
             de(this, "DEFAULT_HEIGHT", 400);
@@ -9864,7 +9863,7 @@ ${n}`,
             return this.isInteracting = !1, this.points = [], e
         }
     }
-    class L6 {
+    class L4 {
         constructor(e, n, r, i) {
             de(this, "renderCanvas");
             de(this, "canvases", []);
@@ -10053,7 +10052,7 @@ ${n}`,
             }), e.stroke()
         }
     }
-    class k6 {
+    class k4 {
         constructor(e, n) {
             de(this, "stageElement");
             de(this, "width", 400);
@@ -10116,7 +10115,7 @@ ${n}`,
             de(this, "onTouchEnd", e => {
                 e.preventDefault(), this.interactCanvas.onUp(), this.isDrawing = !1, this.emit("up")
             });
-            n.width && (this.width = n.width), n.height && (this.height = n.height), this.stageElement = e, this.setupElements(), this.setupEvents(), n.InteractCanvas ? this.interactCanvas = new n.InteractCanvas(e, this.width, this.height, n) : this.interactCanvas = new L6(e, this.width, this.height, n)
+            n.width && (this.width = n.width), n.height && (this.height = n.height), this.stageElement = e, this.setupElements(), this.setupEvents(), n.InteractCanvas ? this.interactCanvas = new n.InteractCanvas(e, this.width, this.height, n) : this.interactCanvas = new L4(e, this.width, this.height, n)
         }
         on(e, n) {
             this.callbacks[e] = this.callbacks[e] || [], this.callbacks[e].push(n)
@@ -10626,7 +10625,7 @@ ${n.message}`,
             return e.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
         }
     }
-    const D6 = {
+    const D4 = {
             BACK: "Back",
             CANCEL: "Cancel",
             CLOSE: "Close",
@@ -10646,7 +10645,7 @@ ${n.message}`,
             UNDO: "Undo",
             YES: "Yes"
         },
-        M6 = {
+        M4 = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "prompts hidden on players\u2019 devices",
                 VISIBILITY_CONTROLLER_ON: "prompts shown on players\u2019 devices",
@@ -10654,7 +10653,7 @@ ${n.message}`,
                 VISIBILITY_SCREEN_ON: "prompts shown on game screen"
             }
         },
-        F6 = {
+        F4 = {
             DISCONNECTED: "You have been disconnected.",
             DRAWING_NOTHING: "You have to draw something!",
             PLAYER_KICKED: "You have been kicked from the game by a moderator.",
@@ -10664,8 +10663,8 @@ ${n.message}`,
             TEXT_NOTHING: "You can\u2019t enter nothing!",
             TITLE: "Error"
         },
-        B6 = "LOADING",
-        U6 = {
+        B4 = "LOADING",
+        U4 = {
             JOINED_COUNT: "x | {count} of {maxPlayers} players joined | {count} of {maxPlayers} players joined",
             PLAYERS_NEEDED: "x | {count} player needed to start | {count} players needed to start",
             WAITING_FOR_VIP: "Waiting for {name} to start the game",
@@ -10674,25 +10673,25 @@ ${n.message}`,
             BUTTON_START: "Press to Start",
             BUTTON_CANCEL: "Press to Cancel"
         },
-        G6 = {
+        G4 = {
             GALLERY_LINK: "Visit the Gallery",
             PLAY_AGAIN: "Play again?",
             BUTTON_SAME_PLAYERS: "Same Players",
             BUTTON_NEW_PLAYERS: "New Players"
         },
-        j6 = {
+        j4 = {
             AND: "AND",
             OR: "OR"
         },
-        W6 = {
+        W4 = {
             BUTTON_SKIP: "Skip",
             BUTTON_NEXT: "Next",
             BUTTON_DONE: "Let\u2019s Go!"
         },
-        H6 = {
+        H4 = {
             NAME: "AUDIENCE"
         },
-        V6 = {
+        V4 = {
             EPISODE_REPORT: "Report Episode",
             EPISODE_UNLOAD: "Unload Episode",
             EPISODE_VIEW_AUTHOR: "View Author",
@@ -10722,7 +10721,7 @@ ${n.message}`,
             PROMPTS_COUNT_HIDDEN: "({count} hidden)",
             TITLE_PLACEHOLDER: "enter a title"
         },
-        K6 = {
+        K4 = {
             BROADCASTER: {
                 SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
                 WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
@@ -10742,20 +10741,20 @@ ${n.message}`,
                 }
             }
         },
-        Y6 = {
-            ACTION: D6,
-            ALT: M6,
-            ERROR: F6,
-            LOADING: B6,
-            LOBBY: U6,
-            POST_GAME: G6,
-            SEPARATOR: j6,
-            TUTORIAL: W6,
-            AUDIENCE: H6,
-            UGC: V6,
-            TOAST: K6
+        Y4 = {
+            ACTION: D4,
+            ALT: M4,
+            ERROR: F4,
+            LOADING: B4,
+            LOBBY: U4,
+            POST_GAME: G4,
+            SEPARATOR: j4,
+            TUTORIAL: W4,
+            AUDIENCE: H4,
+            UGC: V4,
+            TOAST: K4
         },
-        z6 = {
+        z4 = {
             BACK: "Retour",
             CANCEL: "Annuler",
             CLOSE: "Fermer",
@@ -10772,7 +10771,7 @@ ${n.message}`,
             TRY_AGAIN: "R\xE9essayer",
             YES: "Oui"
         },
-        X6 = {
+        X4 = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "sujets non affich\xE9s sur les appareils des joueurs",
                 VISIBILITY_CONTROLLER_ON: "sujets affich\xE9s sur les appareils des joueurs",
@@ -10780,7 +10779,7 @@ ${n.message}`,
                 VISIBILITY_SCREEN_ON: "sujets affich\xE9s sur l'\xE9cran de jeu"
             }
         },
-        q6 = {
+        q4 = {
             DISCONNECTED: "Vous avez \xE9t\xE9 d\xE9connect\xE9.",
             DRAWING_NOTHING: "Vous devez dessiner quelque chose\xA0!",
             ROOM_DESTROYED: "Merci d'avoir jou\xE9\xA0!",
@@ -10789,7 +10788,7 @@ ${n.message}`,
             TEXT_NOTHING: "Vous ne pouvez rien entrer\xA0!",
             TITLE: "Erreur"
         },
-        J6 = {
+        J4 = {
             JOINED_COUNT: "x | {count} joueur sur {maxPlayers} \xE0 rejoint la partie | {count} joueurs sur {maxPlayers} ont rejoint la partie",
             PLAYERS_NEEDED: "x | {count} joueur n\xE9cessaire pour commencer | {count} joueurs n\xE9cessaires pour commencer",
             WAITING_FOR_VIP: "En attente de {name} pour commencer la partie",
@@ -10798,25 +10797,25 @@ ${n.message}`,
             BUTTON_START: "Appuyer pour commencer",
             BUTTON_CANCEL: "Appuyer pour annuler"
         },
-        Q6 = {
+        Q4 = {
             GALLERY_LINK: "Visiter la galerie",
             PLAY_AGAIN: "Rejouer\xA0?",
             BUTTON_SAME_PLAYERS: "Les m\xEAmes joueurs",
             BUTTON_NEW_PLAYERS: "De nouveaux joueurs"
         },
-        Z6 = {
+        Z4 = {
             AND: "ET",
             OR: "OU"
         },
-        e4 = {
+        e6 = {
             BUTTON_SKIP: "Passer",
             BUTTON_NEXT: "Suivant",
             BUTTON_DONE: "Allons-y\xA0!"
         },
-        t4 = {
+        t6 = {
             NAME: "SPECTATEURS"
         },
-        n4 = {
+        n6 = {
             EPISODE_REPORT: "Signaler l'\xE9pisode",
             EPISODE_UNLOAD: "Retirer l'\xE9pisode",
             EPISODE_VIEW_AUTHOR: "Voir l'auteur",
@@ -10846,7 +10845,7 @@ ${n.message}`,
             PROMPTS_COUNT_HIDDEN: "({count} non affich\xE9)",
             TITLE_PLACEHOLDER: "taper un titre"
         },
-        r4 = {
+        r6 = {
             BROADCASTER: {
                 SUBTEXT: "La connexion de votre compte \xE0 l'extension Twitch Jackbox Audience Kit a r\xE9ussi.",
                 WARNING: "LE PARAM\xC8TRE 'PUBLIC' N'EST PAS ACTIV\xC9 DANS CETTE SALLE."
@@ -10866,19 +10865,19 @@ ${n.message}`,
                 }
             }
         },
-        i4 = {
-            ACTION: z6,
-            ALT: X6,
-            ERROR: q6,
-            LOBBY: J6,
-            POST_GAME: Q6,
-            SEPARATOR: Z6,
-            TUTORIAL: e4,
-            AUDIENCE: t4,
-            UGC: n4,
-            TOAST: r4
+        i6 = {
+            ACTION: z4,
+            ALT: X4,
+            ERROR: q4,
+            LOBBY: J4,
+            POST_GAME: Q4,
+            SEPARATOR: Z4,
+            TUTORIAL: e6,
+            AUDIENCE: t6,
+            UGC: n6,
+            TOAST: r6
         },
-        s4 = {
+        s6 = {
             BACK: "Indietro",
             CANCEL: "Annulla",
             CLOSE: "Chiuda",
@@ -10895,7 +10894,7 @@ ${n.message}`,
             TRY_AGAIN: "Riprova",
             YES: "S\xEC"
         },
-        a4 = {
+        a6 = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "definizioni nascoste sui dispositivi dei giocatori",
                 VISIBILITY_CONTROLLER_ON: "definizioni visualizzate sui dispositivi dei giocatori",
@@ -10903,7 +10902,7 @@ ${n.message}`,
                 VISIBILITY_SCREEN_ON: "definizioni visualizzate sullo schermo di gioco"
             }
         },
-        o4 = {
+        o6 = {
             DISCONNECTED: "\xC8 stata effettuata la disconnessione.",
             DRAWING_NOTHING: "Devi disegnare qualcosa!",
             ROOM_DESTROYED: "Grazie per aver scelto di giocare con noi!",
@@ -10912,7 +10911,7 @@ ${n.message}`,
             TEXT_NOTHING: "Devi per forza inserire qualcosa!",
             TITLE: "Errore"
         },
-        l4 = {
+        l6 = {
             JOINED_COUNT: "x | Sta partecipando {count} giocatore su {maxPlayers} | Stanno partecipando {count} giocatori su {maxPlayers}",
             PLAYERS_NEEDED: "x | Manca {count} giocatore per iniziare | Mancano {count} giocatori per iniziare",
             WAITING_FOR_VIP: "In attesa di {name} per iniziare la partita",
@@ -10921,25 +10920,25 @@ ${n.message}`,
             BUTTON_START: "Premi per avviare",
             BUTTON_CANCEL: "Premi per annullare"
         },
-        c4 = {
+        c6 = {
             GALLERY_LINK: "Visita la galleria",
             PLAY_AGAIN: "Vuoi giocare di nuovo?",
             BUTTON_SAME_PLAYERS: "Stessi giocatori",
             BUTTON_NEW_PLAYERS: "Nuovi giocatori"
         },
-        u4 = {
+        u6 = {
             AND: "E",
             OR: "O"
         },
-        f4 = {
+        f6 = {
             BUTTON_SKIP: "Salta",
             BUTTON_NEXT: "Avanti",
             BUTTON_DONE: "Iniziamo!"
         },
-        h4 = {
+        h6 = {
             NAME: "PUBBLICO"
         },
-        d4 = {
+        d6 = {
             EPISODE_REPORT: "Segnala episodio",
             EPISODE_UNLOAD: "Rimuovi episodio",
             EPISODE_VIEW_AUTHOR: "Mostra autore",
@@ -10969,7 +10968,7 @@ ${n.message}`,
             PROMPTS_COUNT_HIDDEN: "({count} nascosti)",
             TITLE_PLACEHOLDER: "inserisci un titolo"
         },
-        p4 = {
+        p6 = {
             BROADCASTER: {
                 SUBTEXT: "Il collegamento del tuo account con l'estensione per Twitch Jackbox Audience Kit \xE8 andato a buon fine.",
                 WARNING: "L'IMPOSTAZIONE DEL PUBBLICO NON \xC8 ATTIVA PER QUESTA STANZA"
@@ -10989,19 +10988,19 @@ ${n.message}`,
                 }
             }
         },
-        g4 = {
-            ACTION: s4,
-            ALT: a4,
-            ERROR: o4,
-            LOBBY: l4,
-            POST_GAME: c4,
-            SEPARATOR: u4,
-            TUTORIAL: f4,
-            AUDIENCE: h4,
-            UGC: d4,
-            TOAST: p4
+        g6 = {
+            ACTION: s6,
+            ALT: a6,
+            ERROR: o6,
+            LOBBY: l6,
+            POST_GAME: c6,
+            SEPARATOR: u6,
+            TUTORIAL: f6,
+            AUDIENCE: h6,
+            UGC: d6,
+            TOAST: p6
         },
-        m4 = {
+        m6 = {
             BACK: "Zur\xFCck",
             CANCEL: "Abbrechen",
             CLOSE: "Schlie\xDFen",
@@ -11018,7 +11017,7 @@ ${n.message}`,
             TRY_AGAIN: "Erneut versuchen",
             YES: "Ja"
         },
-        _4 = {
+        _6 = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "Prompts auf Spielerger\xE4ten verborgen",
                 VISIBILITY_CONTROLLER_ON: "Prompts auf Spielerger\xE4ten angezeigt",
@@ -11026,7 +11025,7 @@ ${n.message}`,
                 VISIBILITY_SCREEN_ON: "Prompts auf Spielbildschirm angezeigt"
             }
         },
-        v4 = {
+        v6 = {
             DISCONNECTED: "Deine Verbindung wurde getrennt.",
             DRAWING_NOTHING: "Du musst irgendwas zeichnen!",
             ROOM_DESTROYED: "Danke f\xFCrs Spielen!",
@@ -11035,7 +11034,7 @@ ${n.message}`,
             TEXT_NOTHING: "Du musst etwas eingeben!",
             TITLE: "Fehler"
         },
-        y4 = {
+        y6 = {
             JOINED_COUNT: "x | {count} von {maxPlayers} Spielern sind beigetreten | {count} von {maxPlayers} Spielern sind beigetreten",
             PLAYERS_NEEDED: "x | {count} Spieler zum Starten ben\xF6tigt | {count} Spieler zum Starten ben\xF6tigt",
             WAITING_FOR_VIP: "Warten, bis {name} das Spiel startet",
@@ -11044,25 +11043,25 @@ ${n.message}`,
             BUTTON_START: "Zum Starten dr\xFCcken",
             BUTTON_CANCEL: "Zum Abbrechen dr\xFCcken"
         },
-        b4 = {
+        b6 = {
             GALLERY_LINK: "Galerie besuchen",
             PLAY_AGAIN: "Erneut spielen?",
             BUTTON_SAME_PLAYERS: "Selbe Spieler",
             BUTTON_NEW_PLAYERS: "Neue Spieler"
         },
-        E4 = {
+        E6 = {
             AND: "UND",
             OR: "ODER"
         },
-        T4 = {
+        T6 = {
             BUTTON_SKIP: "\xDCberspringen",
             BUTTON_NEXT: "Weiter",
             BUTTON_DONE: "Los geht's!"
         },
-        S4 = {
+        S6 = {
             NAME: "PUBLIKUM"
         },
-        w4 = {
+        w6 = {
             EPISODE_REPORT: "Episode melden",
             EPISODE_UNLOAD: "Episode deaktivieren",
             EPISODE_VIEW_AUTHOR: "Autor ansehen",
@@ -11092,7 +11091,7 @@ ${n.message}`,
             PROMPTS_COUNT_HIDDEN: "({count} versteckt)",
             TITLE_PLACEHOLDER: "Titel eingeben"
         },
-        O4 = {
+        O6 = {
             BROADCASTER: {
                 SUBTEXT: "Du hast dein Konto erfolgreich mit der Jackbox Audience Kit Twitch-Erweiterung verkn\xFCpft.",
                 WARNING: "F\xDCR DIESEN RAUM IST DIE PUBLIKUMS-EINSTELLUNG NICHT AKTIV"
@@ -11112,19 +11111,19 @@ ${n.message}`,
                 }
             }
         },
-        C4 = {
-            ACTION: m4,
-            ALT: _4,
-            ERROR: v4,
-            LOBBY: y4,
-            POST_GAME: b4,
-            SEPARATOR: E4,
-            TUTORIAL: T4,
-            AUDIENCE: S4,
-            UGC: w4,
-            TOAST: O4
+        C6 = {
+            ACTION: m6,
+            ALT: _6,
+            ERROR: v6,
+            LOBBY: y6,
+            POST_GAME: b6,
+            SEPARATOR: E6,
+            TUTORIAL: T6,
+            AUDIENCE: S6,
+            UGC: w6,
+            TOAST: O6
         },
-        A4 = {
+        A6 = {
             BACK: "Atr\xE1s",
             CANCEL: "Cancelar",
             CLOSE: "Cerrar",
@@ -11141,7 +11140,7 @@ ${n.message}`,
             TRY_AGAIN: "Volver a intentarlo",
             YES: "S\xED"
         },
-        I4 = {
+        I6 = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "los enunciados no se muestran en el dispositivo del jugador",
                 VISIBILITY_CONTROLLER_ON: "los enunciados se muestran en el dispositivo del jugador",
@@ -11149,7 +11148,7 @@ ${n.message}`,
                 VISIBILITY_SCREEN_ON: "los enunciados se muestran en la pantalla"
             }
         },
-        $4 = {
+        $6 = {
             DISCONNECTED: "Te has desconectado.",
             DRAWING_NOTHING: "\xA1Tienes que dibujar algo!",
             ROOM_DESTROYED: "\xA1Gracias por jugar!",
@@ -11158,7 +11157,7 @@ ${n.message}`,
             TEXT_NOTHING: "Tienes que escribir algo",
             TITLE: "Error"
         },
-        P4 = {
+        P6 = {
             JOINED_COUNT: "x | Se ha unido {count} de {maxPlayers} jugadores | Se han unido {count} de {maxPlayers} jugadores",
             PLAYERS_NEEDED: "x | Se necesita {count} jugador para empezar | Se necesitan {count} jugadores para empezar",
             WAITING_FOR_VIP: "Esperando a que {name} inicie la partida",
@@ -11167,25 +11166,25 @@ ${n.message}`,
             BUTTON_START: "Pulsa para empezar",
             BUTTON_CANCEL: "Pulsa para cancelar"
         },
-        R4 = {
+        R6 = {
             GALLERY_LINK: "Visita la galer\xEDa",
             PLAY_AGAIN: "\xBFJugar otra vez?",
             BUTTON_SAME_PLAYERS: "Los mismos jugadores",
             BUTTON_NEW_PLAYERS: "Otros jugadores"
         },
-        N4 = {
+        N6 = {
             AND: "Y",
             OR: "O"
         },
-        x4 = {
+        x6 = {
             BUTTON_SKIP: "Omitir",
             BUTTON_NEXT: "Siguiente",
             BUTTON_DONE: "\xA1Vamos!"
         },
-        L4 = {
+        L6 = {
             NAME: "P\xDABLICO"
         },
-        k4 = {
+        k6 = {
             EPISODE_REPORT: "Denunciar episodio",
             EPISODE_UNLOAD: "Retirar episodio",
             EPISODE_VIEW_AUTHOR: "Ver autor",
@@ -11215,7 +11214,7 @@ ${n.message}`,
             PROMPTS_COUNT_HIDDEN: "({count} ocultos)",
             TITLE_PLACEHOLDER: "escribe un t\xEDtulo"
         },
-        D4 = {
+        D6 = {
             BROADCASTER: {
                 SUBTEXT: "Has conectado tu cuenta con \xE9xito a la extensi\xF3n de Twitch del kit para p\xFAblico de Jackbox.",
                 WARNING: "ESTA SALA NO TIENE LA FUNCI\xD3N DE P\xDABLICO HABILITADA"
@@ -11235,19 +11234,19 @@ ${n.message}`,
                 }
             }
         },
-        M4 = {
-            ACTION: A4,
-            ALT: I4,
-            ERROR: $4,
-            LOBBY: P4,
-            POST_GAME: R4,
-            SEPARATOR: N4,
-            TUTORIAL: x4,
-            AUDIENCE: L4,
-            UGC: k4,
-            TOAST: D4
+        M6 = {
+            ACTION: A6,
+            ALT: I6,
+            ERROR: $6,
+            LOBBY: P6,
+            POST_GAME: R6,
+            SEPARATOR: N6,
+            TUTORIAL: x6,
+            AUDIENCE: L6,
+            UGC: k6,
+            TOAST: D6
         },
-        F4 = {
+        F6 = {
             BACK: "Volver",
             CANCEL: "Cancelar",
             CLOSE: "Cerrar",
@@ -11264,7 +11263,7 @@ ${n.message}`,
             TRY_AGAIN: "Volver a intentarlo",
             YES: "S\xED"
         },
-        B4 = {
+        B6 = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "indicaciones ocultas en los dispositivos de los jugadores",
                 VISIBILITY_CONTROLLER_ON: "indicaciones se muestran en los dispositivos de los jugadores",
@@ -11272,7 +11271,7 @@ ${n.message}`,
                 VISIBILITY_SCREEN_ON: "indicaciones se muestran en la pantalla del juego"
             }
         },
-        U4 = {
+        U6 = {
             DISCONNECTED: "Te has desconectado.",
             DRAWING_NOTHING: "\xA1Tienes que dibujar algo!",
             ROOM_DESTROYED: "\xA1Gracias por jugar!",
@@ -11281,7 +11280,7 @@ ${n.message}`,
             TEXT_NOTHING: "Tienes que escribir algo",
             TITLE: "Error"
         },
-        G4 = {
+        G6 = {
             JOINED_COUNT: "x | Se ha unido {count} de {maxPlayers} jugadores | Se han unido {count} de {maxPlayers} jugadores",
             PLAYERS_NEEDED: "x | Se necesita {count} jugador para empezar | Se necesitan {count} jugadores para empezar",
             WAITING_FOR_VIP: "Esperando a que {name} inicie la partida",
@@ -11290,25 +11289,25 @@ ${n.message}`,
             BUTTON_START: "Pulsa para empezar",
             BUTTON_CANCEL: "Pulsa para cancelar"
         },
-        j4 = {
+        j6 = {
             GALLERY_LINK: "Visita la galer\xEDa",
             PLAY_AGAIN: "\xBFJugar otra vez?",
             BUTTON_SAME_PLAYERS: "Los mismos jugadores",
             BUTTON_NEW_PLAYERS: "Otros jugadores"
         },
-        W4 = {
+        W6 = {
             AND: "Y",
             OR: "O"
         },
-        H4 = {
+        H6 = {
             BUTTON_SKIP: "Omitir",
             BUTTON_NEXT: "Siguiente",
             BUTTON_DONE: "\xA1Vamos!"
         },
-        V4 = {
+        V6 = {
             NAME: "P\xDABLICO"
         },
-        K4 = {
+        K6 = {
             EPISODE_REPORT: "Denunciar episodio",
             EPISODE_UNLOAD: "Retirar episodio",
             EPISODE_VIEW_AUTHOR: "Ver autor",
@@ -11338,7 +11337,7 @@ ${n.message}`,
             PROMPTS_COUNT_HIDDEN: "({count} oculto)",
             TITLE_PLACEHOLDER: "introducir un t\xEDtulo"
         },
-        Y4 = {
+        Y6 = {
             BROADCASTER: {
                 SUBTEXT: "Has conectado correctamente tu cuenta a la extensi\xF3n para Twitch del kit para p\xFAblico de Jackbox.",
                 WARNING: "ESTA SALA NO TIENE ACTIVADA LA OPCI\xD3N DE P\xDABLICO"
@@ -11358,27 +11357,27 @@ ${n.message}`,
                 }
             }
         },
-        z4 = {
-            ACTION: F4,
-            ALT: B4,
-            ERROR: U4,
-            LOBBY: G4,
-            POST_GAME: j4,
-            SEPARATOR: W4,
-            TUTORIAL: H4,
-            AUDIENCE: V4,
-            UGC: K4,
-            TOAST: Y4
+        z6 = {
+            ACTION: F6,
+            ALT: B6,
+            ERROR: U6,
+            LOBBY: G6,
+            POST_GAME: j6,
+            SEPARATOR: W6,
+            TUTORIAL: H6,
+            AUDIENCE: V6,
+            UGC: K6,
+            TOAST: Y6
         },
-        X4 = {
-            en: Y6,
-            fr: i4,
-            it: g4,
-            de: C4,
-            es: M4,
-            "es-XL": z4
+        X6 = {
+            en: Y4,
+            fr: i6,
+            it: g6,
+            de: C6,
+            es: M6,
+            "es-XL": z6
         },
-        q4 = Xe({
+        q6 = Xe({
             props: {
                 canvasOptions: Object,
                 hideSubmit: Boolean,
@@ -11435,7 +11434,7 @@ ${n.message}`,
             methods: {
                 createCanvas() {
                     const t = this.$refs.canvas;
-                    this.canvas = mi(new x6(t, this.player.doodle, this.canvasOptions))
+                    this.canvas = mi(new x4(t, this.player.doodle, this.canvasOptions))
                 },
                 onPointerBoxStart(t) {
                     if (!this.canvas) return;
@@ -11484,25 +11483,25 @@ ${n.message}`,
                 }
             }
         }),
-        J4 = {
+        J6 = {
             class: "doodle"
         },
-        Q4 = {
+        Q6 = {
             ref: "canvas"
         },
-        Z4 = ["disabled"],
+        Z6 = ["disabled"],
         eH = ["disabled"];
 
     function tH(t, e, n, r, i, s) {
         const o = Dt("pointerbox-translate"),
             c = Dt("pointerbox"),
             u = Dt("t");
-        return ee(), re("div", J4, [Ne((ee(), re("div", {
+        return ee(), re("div", J6, [Ne((ee(), re("div", {
             class: "stage",
             "onPointerbox:start": e[0] || (e[0] = (...h) => t.onPointerBoxStart && t.onPointerBoxStart(...h)),
             "onPointerbox:move": e[1] || (e[1] = (...h) => t.onPointerBoxMove && t.onPointerBoxMove(...h)),
             "onPointerbox:end": e[2] || (e[2] = (...h) => t.onPointerBoxEnd && t.onPointerBoxEnd(...h))
-        }, [Ne(Z("canvas", Q4, null, 512), [
+        }, [Ne(Z("canvas", Q6, null, 512), [
             [o, {
                 id: "doodleCanvas",
                 width: t.pointerBoxWidth,
@@ -11515,7 +11514,7 @@ ${n.message}`,
             class: "doodle-action undo",
             disabled: !t.canSubmit,
             onClick: e[3] || (e[3] = Xt((...h) => t.onUndo && t.onUndo(...h), ["prevent"]))
-        }, null, 8, Z4)), [
+        }, null, 8, Z6)), [
             [u, "ACTION.UNDO"]
         ]), t.hideSubmit ? ke("", !0) : Ne((ee(), re("button", {
             key: 1,
@@ -11526,7 +11525,7 @@ ${n.message}`,
             [u, "ACTION.SUBMIT"]
         ])])
     }
-    const Fw = tt(q4, [
+    const Fw = tt(q6, [
         ["render", tH]
     ]);
     var Up = {
@@ -15927,7 +15926,7 @@ function print() { __p += __j.call(arguments, '') }
                     const t = this.$refs.stage,
                         e = {};
                     this.player.size && (e.width = this.player.size.width, e.height = this.player.size.height), this.player.thicknesses && (e.thickness = this.player.thicknesses[0]), this.player.colors && (e.color = this.player.colors[0]), this.player.maxPoints && (e.maxPoints = this.player.maxPoints);
-                    const n = new k6(t, e);
+                    const n = new k4(t, e);
                     n.canvas.lines = mi([]), n.canvas.lines2 = mi([]), this.stage = n, this.stage.on("up", () => {
                         var i;
                         if (!this.player.live) return;
@@ -18931,7 +18930,7 @@ function print() { __p += __j.call(arguments, '') }
                         t.config.globalProperties.$debugReplayer = e.replayer, t.component("Debug", Sq);
                         return
                     }
-                    if (t.config.globalProperties.$debugRecorder = new R6(e.client, e.room), !t.config.globalProperties.$showModal) {
+                    if (t.config.globalProperties.$debugRecorder = new R4(e.client, e.room), !t.config.globalProperties.$showModal) {
                         console.warn("[debugPlugin] Sending debug and feedback messages is disabled be the modalPlugin is not used.");
                         return
                     }(!Wt.isProduction || Wt.getQueryParam("feedback")) && t.component("Debug", RZ), new eq(() => {
@@ -25271,7 +25270,7 @@ ${e}`
                     const s = bse({
                         fallbackLocale: "en",
                         locale: Va.locale,
-                        messages: Va.mergeMessages(X4, (h = t.messages) != null ? h : {})
+                        messages: Va.mergeMessages(X6, (h = t.messages) != null ? h : {})
                     });
                     if (r.use(ZX), r.use(Kre), r.use(NZ, {
                             replayer: n.replayer,
@@ -25452,7 +25451,7 @@ ${e}`
                 }
             }
         }),
-        Xf = t => (To("data-v-f991d591"), t = t(), So(), t),
+        Xf = t => (To("data-v-5b42a5bd"), t = t(), So(), t),
         fae = Xf(() => Z("span", {
             class: "bar",
             "aria-hidden": "true"
@@ -25484,6 +25483,8 @@ ${e}`
             }, bi(5, o => Z("svg", {
                 key: o,
                 viewBox: "0 0 56 50",
+                width: "56",
+                height: "50",
                 class: "content"
             }, pae)), 64)) : ke("", !0), t.type === "arrow" ? (ee(), re(dt, {
                 key: 1
@@ -25500,7 +25501,7 @@ ${e}`
     }
     const FC = tt(uae, [
             ["render", vae],
-            ["__scopeId", "data-v-f991d591"]
+            ["__scopeId", "data-v-5b42a5bd"]
         ]),
         yae = "main/pp9/range-game/assets/58d73f37.png",
         bae = "main/pp9/range-game/assets/5bdd7333.png",
@@ -28921,4 +28922,4 @@ ${e}`
     })
 });
 export default Dce();
-//# sourceMappingURL=381f2314.js.map
+//# sourceMappingURL=0b7c8e5e.js.map
