@@ -2908,6 +2908,7 @@ body {
 }
 
 .choosing .choices .collection-banner span.title {
+    color: #000;
     display: inline-block;
     font-size: 22px;
     height: auto;
@@ -3072,12 +3073,20 @@ body {
     text-transform: uppercase
 }
 
+@media only screen and (max-width: 539px) {
+    .fact-view .inputLine button.submit {
+        margin-bottom: var(--textheight)
+    }
+}
+
 .fact-view .inputLine .gold-button {
     font-size: 24px
 }
 
 .fact-view .error {
-    color: #000;
+    color: var(--failure);
+    margin: auto;
+    max-width: 400px;
     text-align: center
 }
 
@@ -3580,7 +3589,7 @@ body {
 }
 
 .waiting .content .prompt .line:first-child {
-    line-height: 19px;
+    line-height: 32px;
     font-size: 32px
 }
 
@@ -3852,6 +3861,7 @@ body {
     background-image: url(00d14d14.png);
     background-repeat: no-repeat;
     background-size: contain;
+    color: #000;
     font-size: 20px;
     height: 52px;
     padding-left: 20px;
