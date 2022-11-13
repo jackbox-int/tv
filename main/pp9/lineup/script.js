@@ -28541,12 +28541,11 @@ ${t}`
                 player: Object
             },
             bb: {
-                category: (e, t) => `<span class="category">${t}</span>`,
+                category: (e, t) => `<span class="category">${t.replace("&lt;br /&gt;","<br>").replace("[icon][/icon]","")}</span>`,
                 label: (e, t) => `<span class="label">${t}</span><br>`
             },
             methods: {
                 async onChoiceClick(e) {
-                    console.log(e);
                     try {
                         await this.$ecast.updateObject(this.player.responseKey, {
                             action: "choice",
@@ -28583,7 +28582,7 @@ ${t}`
     }
     const Oie = rt(mie, [
         ["render", yie],
-        ["__scopeId", "data-v-c018928e"]
+        ["__scopeId", "data-v-741ede2b"]
     ]);
     Kp.Howler.autoUnlock = !1;
     const Eie = qe({
@@ -28767,4 +28766,4 @@ ${t}`
     })
 });
 export default wie();
-//# sourceMappingURL=64d3e5aa.js.map
+//# sourceMappingURL=9d81cd02.js.map

@@ -27277,6 +27277,7 @@ Es posible que aparezcan en el juego algunas variaciones de tu nombre.`
             enterkeyhint: "done",
             placeholder: e.info.name,
             "model-value": e.name,
+            sanitizers: ["username"],
             "onUpdate:modelValue": e.onWriteName
         }, null, 8, ["placeholder", "model-value", "onUpdate:modelValue"]), e.$i18n.locale !== "en" ? (M(), G("div", jae, [x("label", Wae, Ae(e.$t("LOBBY.INSTRUCTIONS.PRONOUN")), 1), Se(x("select", {
             id: "pronoun-select",
@@ -27310,6 +27311,7 @@ Es posible que aparezcan en el juego algunas variaciones de tu nombre.`
             enterkeyhint: "done",
             "model-value": e.flair,
             placeholder: e.$t("LOBBY.PLACEHOLDER.FLAIR"),
+            sanitizers: ["emoji"],
             onBlur: e.capitalizeFlair,
             onKeypress: mo(e.onSubmitFlair, ["enter"]),
             "onUpdate:modelValue": e.onWriteFlair
@@ -27339,7 +27341,7 @@ Es posible que aparezcan en el juego algunas variaciones de tu nombre.`
     }
     const ioe = Ze(xae, [
             ["render", roe],
-            ["__scopeId", "data-v-6ae77818"]
+            ["__scopeId", "data-v-27a65fba"]
         ]),
         soe = Xe({
             extends: Vb
@@ -27989,4 +27991,4 @@ Es posible que aparezcan en el juego algunas variaciones de tu nombre.`
     })
 });
 export default ile();
-//# sourceMappingURL=6200b502.js.map
+//# sourceMappingURL=c5034888.js.map

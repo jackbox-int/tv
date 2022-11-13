@@ -25601,7 +25601,7 @@ ${e}`
                 }
             }
         }),
-        Xf = t => (To("data-v-5b42a5bd"), t = t(), So(), t),
+        Xf = t => (To("data-v-4095f63e"), t = t(), So(), t),
         Kae = Xf(() => Z("span", {
             class: "bar",
             "aria-hidden": "true"
@@ -25651,7 +25651,7 @@ ${e}`
     }
     const FC = tt(Vae, [
             ["render", Zae],
-            ["__scopeId", "data-v-5b42a5bd"]
+            ["__scopeId", "data-v-4095f63e"]
         ]),
         eoe = "main/pp9/range-game/assets/58d73f37.png",
         toe = "main/pp9/range-game/assets/5bdd7333.png",
@@ -28502,7 +28502,7 @@ ${e}`
             },
             methods: {
                 onConfidenceDown() {
-                    this.hasAddedConfidence || (this.isAddingConfidence = !0, this.confidenceTimeout = window.setTimeout(this.onConfidenceTimeout, 1500))
+                    this.hasAddedConfidence || (this.isAddingConfidence = !0, this.confidenceTimeout = window.setTimeout(this.onConfidenceTimeout, 1e3))
                 },
                 onConfidenceUp() {
                     !this.confidenceTimeout || (this.isAddingConfidence = !1, window.clearTimeout(this.confidenceTimeout), this.confidenceTimeout = null)
@@ -28607,7 +28607,7 @@ ${e}`
     }
     const Rce = tt(Tce, [
             ["render", Pce],
-            ["__scopeId", "data-v-9169562a"]
+            ["__scopeId", "data-v-4c4838d5"]
         ]),
         Nce = Xe({
             components: {
@@ -29072,4 +29072,4 @@ ${e}`
     })
 });
 export default _ue();
-//# sourceMappingURL=588a0eed.js.map
+//# sourceMappingURL=c7afe66f.js.map

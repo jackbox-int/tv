@@ -10539,23 +10539,23 @@ Url: ${nr(t)}`), !0)
         nw = 1,
         iw = {
             branch: "main",
-            sha: "9c95e1619108b7425c0a64cc534594c26f4e9cc6",
-            lastUpdated: 1666719759577,
-            version: "5.55.0",
+            sha: "c5e7935a060b98273ffafe59171d6148a6734883",
+            lastUpdated: 1668209573973,
+            version: "5.60.0",
             type: "production"
         },
         aw = {
             main: {
-                sha: "9c95e1619108b7425c0a64cc534594c26f4e9cc6",
-                lastUpdated: 1666719759577,
-                version: "5.55.0",
+                sha: "c5e7935a060b98273ffafe59171d6148a6734883",
+                lastUpdated: 1668209573973,
+                version: "5.60.0",
                 type: "production",
                 bundles: {
                     "@connect": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@connect",
-                        version: "5.55.0"
+                        version: "5.60.0"
                     },
                     "the-wheel": {
                         file: "script.js",
@@ -10873,19 +10873,25 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/htmf",
-                        version: "5.55.0"
+                        version: "5.56.0"
                     },
                     lineup: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/lineup",
-                        version: "5.55.0"
+                        version: "5.59.0"
                     },
                     "range-game": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/range-game",
-                        version: "5.55.0"
+                        version: "5.58.0"
+                    },
+                    prototype: {
+                        file: "script.js",
+                        css: ["assets/style-0.css"],
+                        base: "main/internal/prototype",
+                        version: "5.57.0"
                     }
                 }
             }
@@ -10912,4 +10918,4 @@ Url: ${nr(t)}`), !0)
     tw()
 });
 export default ow();
-//# sourceMappingURL=44834c16.js.map
+//# sourceMappingURL=0b3769df.js.map
