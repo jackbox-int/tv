@@ -4898,14 +4898,16 @@ var ow = Qo((uw, Fo) => {
             wrapper: "vue",
             isPublic: !0,
             directory: "pp9/fourbage",
-            features: ["moderation", "kicking"]
+            features: ["moderation", "kicking"],
+            categoryId: "Fibbage4Game"
         }, {
             name: "Roomerang",
             tag: "htmf",
             wrapper: "vue",
             isPublic: !0,
             directory: "pp9/htmf",
-            features: ["moderation", "kicking"]
+            features: ["moderation", "kicking"],
+            categoryId: "MakeFriendsGame"
         }, {
             name: "Junktopia",
             tag: "antique-freak",
@@ -10539,23 +10541,23 @@ Url: ${nr(t)}`), !0)
         nw = 1,
         iw = {
             branch: "main",
-            sha: "c5e7935a060b98273ffafe59171d6148a6734883",
-            lastUpdated: 1668209573973,
-            version: "5.60.0",
+            sha: "0cd4ed063a0a8517479eae2927222259a6ff7833",
+            lastUpdated: 1668708897494,
+            version: "5.62.0",
             type: "production"
         },
         aw = {
             main: {
-                sha: "c5e7935a060b98273ffafe59171d6148a6734883",
-                lastUpdated: 1668209573973,
-                version: "5.60.0",
+                sha: "0cd4ed063a0a8517479eae2927222259a6ff7833",
+                lastUpdated: 1668708897494,
+                version: "5.62.0",
                 type: "production",
                 bundles: {
                     "@connect": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@connect",
-                        version: "5.60.0"
+                        version: "5.61.0"
                     },
                     "the-wheel": {
                         file: "script.js",
@@ -10873,7 +10875,7 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/htmf",
-                        version: "5.56.0"
+                        version: "5.62.0"
                     },
                     lineup: {
                         file: "script.js",
@@ -10918,4 +10920,4 @@ Url: ${nr(t)}`), !0)
     tw()
 });
 export default ow();
-//# sourceMappingURL=0b3769df.js.map
+//# sourceMappingURL=8aacf47f.js.map

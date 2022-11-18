@@ -3096,267 +3096,294 @@ body {
     z-index: 1
 }
 
-.choice[data-v-470beb9a] {
+.choice[data-v-c897d2fe] {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
     width: 100%;
     margin: 10px 0;
+    padding-right: 35px;
     font-size: 1.7rem;
     text-align: left
 }
 
-.choice.selected[data-v-470beb9a] {
+.choice.review[data-v-c897d2fe] {
     min-height: 45px;
     padding: 5px 10px;
     background-color: #fff;
     color: #000;
     line-height: normal;
-    box-shadow: 3px 5px #00000040
+    box-shadow: 3px 5px #00000040;
+    opacity: .5
 }
 
-.choice .names-region .name[data-v-470beb9a] {
+.choice.review.selected[data-v-c897d2fe] {
+    opacity: 1
+}
+
+.choice .audience-vote[data-v-c897d2fe] {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    font-size: 1.4rem;
+    text-align: center
+}
+
+.choice .audience-vote img[data-v-c897d2fe] {
+    max-width: 30px;
+    margin-bottom: -5px;
+    transform: scaleX(-1)
+}
+
+.choice .names-region span[data-v-c897d2fe] {
+    display: inline-block
+}
+
+.choice .names-region .name[data-v-c897d2fe] {
     font-size: 2.4rem;
     font-weight: 700
 }
 
-.choice .names-region .name.gene[data-v-470beb9a] {
+.choice .names-region .name.gene[data-v-c897d2fe] {
     color: #666
 }
 
-.choice .names-region .name.audience-intro[data-v-470beb9a] {
+.choice .names-region .name.audience-intro[data-v-c897d2fe] {
     color: #3eaaff
 }
 
-.choice .names-region .name.audience-connection[data-v-470beb9a] {
+.choice .names-region .name.audience-connection[data-v-c897d2fe] {
     color: #ff93c8
 }
 
-.choice .names-region .name.audience-quickie[data-v-470beb9a] {
+.choice .names-region .name.audience-quickie[data-v-c897d2fe] {
     color: #8f8d96
 }
 
-.choice .names-region .name.audience-firestarter[data-v-470beb9a] {
+.choice .names-region .name.audience-firestarter[data-v-c897d2fe] {
     color: #fe983b
 }
 
-.choice .names-region .name.audience-finale[data-v-470beb9a] {
+.choice .names-region .name.audience-finale[data-v-c897d2fe] {
     color: #2f1ca4
 }
 
-.choice .names-region .name.blue[data-v-470beb9a] {
+.choice .names-region .name.blue[data-v-c897d2fe] {
     color: #03f
 }
 
-.choice .names-region .name.brown[data-v-470beb9a] {
+.choice .names-region .name.brown[data-v-c897d2fe] {
     color: #874b43
 }
 
-.choice .names-region .name.cyan[data-v-470beb9a] {
+.choice .names-region .name.cyan[data-v-c897d2fe] {
     color: #00a7bd
 }
 
-.choice .names-region .name.gray[data-v-470beb9a] {
+.choice .names-region .name.gray[data-v-c897d2fe] {
     color: #666
 }
 
-.choice .names-region .name.green[data-v-470beb9a] {
+.choice .names-region .name.green[data-v-c897d2fe] {
     color: #9c0
 }
 
-.choice .names-region .name.magenta[data-v-470beb9a] {
+.choice .names-region .name.magenta[data-v-c897d2fe] {
     color: #f3008f
 }
 
-.choice .names-region .name.orange[data-v-470beb9a] {
+.choice .names-region .name.orange[data-v-c897d2fe] {
     color: #f60
 }
 
-.choice .names-region .name.pink[data-v-470beb9a] {
+.choice .names-region .name.pink[data-v-c897d2fe] {
     color: #ff5b66
 }
 
-.choice .names-region .name.purple[data-v-470beb9a] {
+.choice .names-region .name.purple[data-v-c897d2fe] {
     color: #63c
 }
 
-.choice .names-region .name.red[data-v-470beb9a] {
+.choice .names-region .name.red[data-v-c897d2fe] {
     color: #f33
 }
 
-.choice .names-region .name.teal[data-v-470beb9a] {
+.choice .names-region .name.teal[data-v-c897d2fe] {
     color: #099
 }
 
-.choice .names-region .name.yellow[data-v-470beb9a] {
+.choice .names-region .name.yellow[data-v-c897d2fe] {
     color: #eebd00
 }
 
-.choice .names-region .separator[data-v-470beb9a] {
+.choice .names-region .separator[data-v-c897d2fe] {
     margin: 0 8px;
     font-size: 1.4rem;
     vertical-align: text-top
 }
 
-.choice.gene[data-v-470beb9a]:active {
+.choice.gene[data-v-c897d2fe]:active {
     background-color: #666;
     color: #fff
 }
 
-.choice.gene:active .name[data-v-470beb9a] {
+.choice.gene:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.audience-intro[data-v-470beb9a]:active {
+.choice.audience-intro[data-v-c897d2fe]:active {
     background-color: #3eaaff;
     color: #fff
 }
 
-.choice.audience-intro:active .name[data-v-470beb9a] {
+.choice.audience-intro:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.audience-connection[data-v-470beb9a]:active {
+.choice.audience-connection[data-v-c897d2fe]:active {
     background-color: #ff93c8;
     color: #fff
 }
 
-.choice.audience-connection:active .name[data-v-470beb9a] {
+.choice.audience-connection:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.audience-quickie[data-v-470beb9a]:active {
+.choice.audience-quickie[data-v-c897d2fe]:active {
     background-color: #8f8d96;
     color: #fff
 }
 
-.choice.audience-quickie:active .name[data-v-470beb9a] {
+.choice.audience-quickie:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.audience-firestarter[data-v-470beb9a]:active {
+.choice.audience-firestarter[data-v-c897d2fe]:active {
     background-color: #fe983b;
     color: #fff
 }
 
-.choice.audience-firestarter:active .name[data-v-470beb9a] {
+.choice.audience-firestarter:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.audience-finale[data-v-470beb9a]:active {
+.choice.audience-finale[data-v-c897d2fe]:active {
     background-color: #2f1ca4;
     color: #fff
 }
 
-.choice.audience-finale:active .name[data-v-470beb9a] {
+.choice.audience-finale:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.blue[data-v-470beb9a]:active {
+.choice.blue[data-v-c897d2fe]:active {
     background-color: #03f;
     color: #fff
 }
 
-.choice.blue:active .name[data-v-470beb9a] {
+.choice.blue:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.brown[data-v-470beb9a]:active {
+.choice.brown[data-v-c897d2fe]:active {
     background-color: #874b43;
     color: #fff
 }
 
-.choice.brown:active .name[data-v-470beb9a] {
+.choice.brown:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.cyan[data-v-470beb9a]:active {
+.choice.cyan[data-v-c897d2fe]:active {
     background-color: #00a7bd;
     color: #fff
 }
 
-.choice.cyan:active .name[data-v-470beb9a] {
+.choice.cyan:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.gray[data-v-470beb9a]:active {
+.choice.gray[data-v-c897d2fe]:active {
     background-color: #666;
     color: #fff
 }
 
-.choice.gray:active .name[data-v-470beb9a] {
+.choice.gray:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.green[data-v-470beb9a]:active {
+.choice.green[data-v-c897d2fe]:active {
     background-color: #9c0;
     color: #fff
 }
 
-.choice.green:active .name[data-v-470beb9a] {
+.choice.green:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.magenta[data-v-470beb9a]:active {
+.choice.magenta[data-v-c897d2fe]:active {
     background-color: #f3008f;
     color: #fff
 }
 
-.choice.magenta:active .name[data-v-470beb9a] {
+.choice.magenta:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.orange[data-v-470beb9a]:active {
+.choice.orange[data-v-c897d2fe]:active {
     background-color: #f60;
     color: #fff
 }
 
-.choice.orange:active .name[data-v-470beb9a] {
+.choice.orange:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.pink[data-v-470beb9a]:active {
+.choice.pink[data-v-c897d2fe]:active {
     background-color: #ff5b66;
     color: #fff
 }
 
-.choice.pink:active .name[data-v-470beb9a] {
+.choice.pink:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.purple[data-v-470beb9a]:active {
+.choice.purple[data-v-c897d2fe]:active {
     background-color: #63c;
     color: #fff
 }
 
-.choice.purple:active .name[data-v-470beb9a] {
+.choice.purple:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.red[data-v-470beb9a]:active {
+.choice.red[data-v-c897d2fe]:active {
     background-color: #f33;
     color: #fff
 }
 
-.choice.red:active .name[data-v-470beb9a] {
+.choice.red:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.teal[data-v-470beb9a]:active {
+.choice.teal[data-v-c897d2fe]:active {
     background-color: #099;
     color: #fff
 }
 
-.choice.teal:active .name[data-v-470beb9a] {
+.choice.teal:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
-.choice.yellow[data-v-470beb9a]:active {
+.choice.yellow[data-v-c897d2fe]:active {
     background-color: #eebd00;
     color: #fff
 }
 
-.choice.yellow:active .name[data-v-470beb9a] {
+.choice.yellow:active .name[data-v-c897d2fe] {
     color: #fff
 }
 
@@ -4607,79 +4634,98 @@ body {
     text-transform: uppercase
 }
 
-.htmf .name {
+.htmf .name,
+.htmf .percent {
     color: #000
 }
 
-.htmf .name.gene {
+.htmf .name.gene,
+.htmf .percent.gene {
     color: #666
 }
 
-.htmf .name.audience-intro {
+.htmf .name.audience-intro,
+.htmf .percent.audience-intro {
     color: #3eaaff
 }
 
-.htmf .name.audience-connection {
+.htmf .name.audience-connection,
+.htmf .percent.audience-connection {
     color: #ff93c8
 }
 
-.htmf .name.audience-quickie {
+.htmf .name.audience-quickie,
+.htmf .percent.audience-quickie {
     color: #8f8d96
 }
 
-.htmf .name.audience-firestarter {
+.htmf .name.audience-firestarter,
+.htmf .percent.audience-firestarter {
     color: #fe983b
 }
 
-.htmf .name.audience-finale {
+.htmf .name.audience-finale,
+.htmf .percent.audience-finale {
     color: #2f1ca4
 }
 
-.htmf .name.blue {
+.htmf .name.blue,
+.htmf .percent.blue {
     color: #03f
 }
 
-.htmf .name.brown {
+.htmf .name.brown,
+.htmf .percent.brown {
     color: #874b43
 }
 
-.htmf .name.cyan {
+.htmf .name.cyan,
+.htmf .percent.cyan {
     color: #00a7bd
 }
 
-.htmf .name.gray {
+.htmf .name.gray,
+.htmf .percent.gray {
     color: #666
 }
 
-.htmf .name.green {
+.htmf .name.green,
+.htmf .percent.green {
     color: #9c0
 }
 
-.htmf .name.magenta {
+.htmf .name.magenta,
+.htmf .percent.magenta {
     color: #f3008f
 }
 
-.htmf .name.orange {
+.htmf .name.orange,
+.htmf .percent.orange {
     color: #f60
 }
 
-.htmf .name.pink {
+.htmf .name.pink,
+.htmf .percent.pink {
     color: #ff5b66
 }
 
-.htmf .name.purple {
+.htmf .name.purple,
+.htmf .percent.purple {
     color: #63c
 }
 
-.htmf .name.red {
+.htmf .name.red,
+.htmf .percent.red {
     color: #f33
 }
 
-.htmf .name.teal {
+.htmf .name.teal,
+.htmf .percent.teal {
     color: #099
 }
 
-.htmf .name.yellow {
+.htmf .name.yellow,
+.htmf .percent.yellow {
     color: #eebd00
 }
 
