@@ -3038,7 +3038,7 @@ body {
     margin-bottom: 25px
 }
 
-.writing[data-v-528a8876] {
+.writing[data-v-1f6d4fb1] {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -3046,17 +3046,17 @@ body {
     align-items: center
 }
 
-.writing .primary-button[data-v-528a8876] {
+.writing .primary-button[data-v-1f6d4fb1] {
     text-transform: uppercase
 }
 
-.writing .error-bubble[data-v-528a8876] {
+.writing .error-bubble[data-v-1f6d4fb1] {
     width: 85%;
     margin-top: -25px;
     margin-bottom: 10px
 }
 
-.writing .error-container[data-v-528a8876] {
+.writing .error-container[data-v-1f6d4fb1] {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -3065,11 +3065,11 @@ body {
     padding-right: 20px
 }
 
-.writing .error-container .warning-icon[data-v-528a8876] {
+.writing .error-container .warning-icon[data-v-1f6d4fb1] {
     height: 100%
 }
 
-.writing .error-container .error-text[data-v-528a8876] {
+.writing .error-container .error-text[data-v-1f6d4fb1] {
     margin: 10px;
     font-size: 20px;
     line-height: 90.2%;
@@ -3077,15 +3077,15 @@ body {
     text-align: left
 }
 
-.writing .error-container .error-text.truth-error[data-v-528a8876] {
+.writing .error-container .error-text.truth-error[data-v-1f6d4fb1] {
     color: #ffd233
 }
 
-.writing .error-container .error-text.profanity-error[data-v-528a8876] {
+.writing .error-container .error-text.profanity-error[data-v-1f6d4fb1] {
     color: #ff3e4e
 }
 
-.writing .button-separator[data-v-528a8876] {
+.writing .button-separator[data-v-1f6d4fb1] {
     font-size: 22px;
     line-height: 98.2%;
     letter-spacing: -.045em;
@@ -3094,7 +3094,7 @@ body {
     margin-bottom: 20px
 }
 
-.writing .separator[data-v-528a8876] {
+.writing .separator[data-v-1f6d4fb1] {
     font-family: SofiaPro-Black;
     color: #000;
     font-size: 30px;
@@ -3104,7 +3104,7 @@ body {
     text-align: left
 }
 
-.writing .joiner[data-v-528a8876] {
+.writing .joiner[data-v-1f6d4fb1] {
     font-family: SofiaPro-Black;
     color: #000;
     font-size: 21px;
