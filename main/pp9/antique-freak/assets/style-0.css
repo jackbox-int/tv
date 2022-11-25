@@ -2957,7 +2957,8 @@ body {
 
 .choosing .shopping .choices .photo-button {
     display: block;
-    margin: auto auto 10px
+    margin: auto auto 10px;
+    font-size: clamp(8px, 2vw, 14px)
 }
 
 .fact-view {
@@ -3390,8 +3391,28 @@ body {
     background-image: url(cb7222b2.png)
 }
 
-.artifact-link[data-v-422acc4f] {
+.artifact-link[data-v-cc0a3df4] {
     background-image: url(927053ea.png)
+}
+
+.locale-de .artifact-link[data-v-cc0a3df4] {
+    background-image: url(cd8a7620.png)
+}
+
+.locale-es .artifact-link[data-v-cc0a3df4] {
+    background-image: url(8c6cb816.png)
+}
+
+.locale-es-XL .artifact-link[data-v-cc0a3df4] {
+    background-image: url(f8b34c56.png)
+}
+
+.locale-fr .artifact-link[data-v-cc0a3df4] {
+    background-image: url(b53bfe34.png)
+}
+
+.locale-it .artifact-link[data-v-cc0a3df4] {
+    background-image: url(0d02b674.png)
 }
 
 .post-game {

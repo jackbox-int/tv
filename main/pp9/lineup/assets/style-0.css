@@ -2713,7 +2713,7 @@ body {
     }
 }
 
-.post-game[data-v-a586920a] {
+.post-game[data-v-da4b8a82] {
     position: relative;
     width: 100%;
     min-height: 100%;
@@ -2721,25 +2721,65 @@ body {
     text-align: center
 }
 
-[data-v-a586920a] .post-game-actions button {
+[data-v-da4b8a82] .post-game-actions button {
     margin-top: 10px
 }
 
-.artifact-link[data-v-a586920a] {
+.artifact-link[data-v-da4b8a82] {
     margin-top: 10px;
-    animation: float-a586920a 3s ease-in-out infinite alternate;
+    animation: float-da4b8a82 3s ease-in-out infinite alternate;
     filter: drop-shadow(0 7px 1px rgba(0, 0, 0, .35))
 }
 
-.classic .artifact-link[data-v-a586920a] {
+.classic .artifact-link[data-v-da4b8a82] {
     background-image: url(d5d67144.png)
 }
 
-.forever .artifact-link[data-v-a586920a] {
+.locale-de .classic .artifact-link[data-v-da4b8a82] {
+    background-image: url(a11513b6.png)
+}
+
+.locale-es .classic .artifact-link[data-v-da4b8a82] {
+    background-image: url(52ab617a.png)
+}
+
+.locale-es-XL .classic .artifact-link[data-v-da4b8a82] {
+    background-image: url(efc7a111.png)
+}
+
+.locale-fr .classic .artifact-link[data-v-da4b8a82] {
+    background-image: url(3d49a744.png)
+}
+
+.locale-it .classic .artifact-link[data-v-da4b8a82] {
+    background-image: url(af160732.png)
+}
+
+.forever .artifact-link[data-v-da4b8a82] {
     background-image: url(ae1e3e3e.png)
 }
 
-@keyframes float-a586920a {
+.locale-de .forever .artifact-link[data-v-da4b8a82] {
+    background-image: url(662a9cc5.png)
+}
+
+.locale-es .forever .artifact-link[data-v-da4b8a82] {
+    background-image: url(b4bbeacc.png)
+}
+
+.locale-es-XL .forever .artifact-link[data-v-da4b8a82] {
+    background-image: url(b7d08ccd.png)
+}
+
+.locale-fr .forever .artifact-link[data-v-da4b8a82] {
+    background-image: url(81aad132.png)
+}
+
+.locale-it .forever .artifact-link[data-v-da4b8a82] {
+    background-image: url(08ae94de.png)
+}
+
+@keyframes float-da4b8a82 {
     0% {
         transform: translateY(0)
     }
@@ -2749,7 +2789,7 @@ body {
     }
 }
 
-.waiting[data-v-2449e6d9] {
+.waiting[data-v-82643ac4] {
     position: absolute;
     top: 0;
     left: 10%;
@@ -2763,12 +2803,25 @@ body {
     background-repeat: no-repeat
 }
 
-.waiting.classic[data-v-2449e6d9] {
+.waiting.classic[data-v-82643ac4] {
     background-image: url(1ccd8cb0.png)
 }
 
-.waiting.forever[data-v-2449e6d9] {
+.waiting.forever[data-v-82643ac4] {
     background-image: url(27415197.png)
+}
+
+.locale-de .waiting.forever[data-v-82643ac4] {
+    background-image: url(6306165a.png)
+}
+
+.locale-es-XL .waiting.forever[data-v-82643ac4],
+.locale-it .waiting.forever[data-v-82643ac4] {
+    background-image: url(151719fd.png)
+}
+
+.locale-fr .waiting.forever[data-v-82643ac4] {
+    background-image: url(a6ceb588.png)
 }
 
 .audience-falling[data-v-1a368d9e] {

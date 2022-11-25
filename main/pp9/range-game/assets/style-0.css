@@ -3233,11 +3233,28 @@ div.item .display[data-v-4095f63e] {
     border-radius: 0 2px 2px 0
 }
 
-.artifact-link[data-v-55f12bfc] {
+.artifact-link[data-v-702ebfec] {
     margin-top: 40px;
     border-radius: 20px;
     background-image: url(a8135241.png);
     box-shadow: 4px 4px #00000040
+}
+
+.locale-de .artifact-link[data-v-702ebfec] {
+    background-image: url(bf691d39.png)
+}
+
+.locale-es .artifact-link[data-v-702ebfec],
+.locale-es-XL .artifact-link[data-v-702ebfec] {
+    background-image: url(a04e4de9.png)
+}
+
+.locale-fr .artifact-link[data-v-702ebfec] {
+    background-image: url(bf561451.png)
+}
+
+.locale-it .artifact-link[data-v-702ebfec] {
+    background-image: url(cb442d25.png)
 }
 
 .post-guess[data-v-4c4838d5] {
@@ -3363,18 +3380,18 @@ form[data-v-e6bb3764] {
     background: rgba(255, 255, 255, .75)
 }
 
-.prompt[data-v-136564db] {
+.prompt[data-v-26d3333e] {
     margin-bottom: 10px
 }
 
-.cards[data-v-136564db] {
+.cards[data-v-26d3333e] {
     width: 100%;
     display: flex;
     gap: 10px;
     margin-bottom: 25px
 }
 
-.card[data-v-136564db] {
+.card[data-v-26d3333e] {
     width: 25%;
     height: 0;
     padding-top: 31%;
@@ -3387,39 +3404,39 @@ form[data-v-e6bb3764] {
     transition: opacity .2s, filter .1s
 }
 
-.card[data-v-136564db]:active {
+.card[data-v-26d3333e]:active {
     filter: drop-shadow(1px 2px 0 rgba(0, 0, 0, .25))
 }
 
-.card.circle[data-v-136564db] {
+.card.circle[data-v-26d3333e] {
     background-image: url(3c037882.png)
 }
 
-.card.plus[data-v-136564db] {
+.card.plus[data-v-26d3333e] {
     background-image: url(42be49bc.png)
 }
 
-.card.square[data-v-136564db] {
+.card.square[data-v-26d3333e] {
     background-image: url(33c7dca6.png)
 }
 
-.card.squiggles[data-v-136564db] {
+.card.squiggles[data-v-26d3333e] {
     background-image: url(15bd8fc9.png)
 }
 
-.card.star[data-v-136564db] {
+.card.star[data-v-26d3333e] {
     background-image: url(4d0cc4fe.png)
 }
 
-.card.selected[data-v-136564db] {
-    animation: selected-136564db 1s linear
+.card.selected[data-v-26d3333e] {
+    animation: selected-26d3333e 1s linear
 }
 
-.card.not-selected[data-v-136564db] {
-    animation: not-selected-136564db 1s linear
+.card.not-selected[data-v-26d3333e] {
+    animation: not-selected-26d3333e 1s linear
 }
 
-@keyframes selected-136564db {
+@keyframes selected-26d3333e {
     10% {
         transform: scaleX(1.1) scaleY(1.1)
     }
@@ -3433,7 +3450,7 @@ form[data-v-e6bb3764] {
     }
 }
 
-@keyframes not-selected-136564db {
+@keyframes not-selected-26d3333e {
     10% {
         opacity: .5;
         transform: scaleX(.9) scaleY(.9)
@@ -3803,7 +3820,7 @@ form[data-v-e6bb3764] {
     background-position: center bottom
 }
 
-.info[data-v-3dfe38d2] {
+.name[data-v-b41e53dd] {
     position: absolute;
     top: 0;
     left: 0;

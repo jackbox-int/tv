@@ -10366,8 +10366,8 @@ ${r.message}`,
         },
         O8 = "LOADING",
         S8 = {
-            JOINED_COUNT: "x | {count} of {maxPlayers} players joined | {count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "x | {count} player needed to start | {count} players needed to start",
+            JOINED_COUNT: "{count} of {maxPlayers} players joined",
+            PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
             WAITING_FOR_VIP: "Waiting for {name} to start the game",
             WAITING_FOR_GAMEPAD: "Waiting for the game to start",
             GAME_STARTING: "Game is starting",
@@ -10495,8 +10495,8 @@ ${r.message}`,
         },
         D8 = "CHARGEMENT",
         x8 = {
-            JOINED_COUNT: "x | {count}\xA0joueur sur {maxPlayers} a rejoint la partie | {count}\xA0joueurs sur {maxPlayers} ont rejoint la partie",
-            PLAYERS_NEEDED: "x | {count}\xA0joueur n\xE9cessaire pour commencer | {count}\xA0joueurs n\xE9cessaires pour commencer",
+            JOINED_COUNT: "1\xA0joueur sur {maxPlayers} a rejoint la partie | {count}\xA0joueurs sur {maxPlayers} ont rejoint la partie",
+            PLAYERS_NEEDED: "1\xA0joueur n\xE9cessaire pour commencer | {count}\xA0joueurs n\xE9cessaires pour commencer",
             WAITING_FOR_VIP: "En attente de {name} pour commencer la partie",
             WAITING_FOR_GAMEPAD: "En attente du d\xE9but de la partie",
             GAME_STARTING: "La partie commence",
@@ -10624,8 +10624,8 @@ ${r.message}`,
         },
         Y8 = "CARICAMENTO",
         q8 = {
-            JOINED_COUNT: "x | Sta partecipando {count} giocatore su {maxPlayers} | Stanno partecipando {count} giocatori su {maxPlayers}",
-            PLAYERS_NEEDED: "x | Manca {count} giocatore per iniziare | Mancano {count} giocatori per iniziare",
+            JOINED_COUNT: "Sta partecipando 1 giocatore su {maxPlayers} | Stanno partecipando {count} giocatori su {maxPlayers}",
+            PLAYERS_NEEDED: "Manca 1 giocatore per iniziare | Mancano {count} giocatori per iniziare",
             WAITING_FOR_VIP: "In attesa di {name} per iniziare la partita",
             WAITING_FOR_GAMEPAD: "In attesa d'iniziare la partita",
             GAME_STARTING: "La partita sta per iniziare",
@@ -10753,8 +10753,8 @@ ${r.message}`,
         },
         s5 = "LADE",
         a5 = {
-            JOINED_COUNT: "x | {count} von {maxPlayers} Spielern sind beigetreten | {count} von {maxPlayers} Spielern sind beigetreten",
-            PLAYERS_NEEDED: "x | {count} Spieler zum Starten ben\xF6tigt | {count} Spieler zum Starten ben\xF6tigt",
+            JOINED_COUNT: "{count} von {maxPlayers} Spielern sind beigetreten",
+            PLAYERS_NEEDED: "{count} Spieler zum Starten ben\xF6tigt",
             WAITING_FOR_VIP: "Warten, bis {name} das Spiel startet",
             WAITING_FOR_GAMEPAD: "Warten, bis das Spiel startet",
             GAME_STARTING: "Das Spiel beginnt",
@@ -10882,8 +10882,8 @@ ${r.message}`,
         },
         v5 = "CARGANDO",
         y5 = {
-            JOINED_COUNT: "x | Se ha unido {count} de {maxPlayers} jugadores | Se han unido {count} de {maxPlayers} jugadores",
-            PLAYERS_NEEDED: "x | Se necesita {count} jugador para empezar | Se necesitan {count} jugadores para empezar",
+            JOINED_COUNT: "Se han unido {count} de {maxPlayers} jugadores",
+            PLAYERS_NEEDED: "Se necesita 1 jugador para empezar | Se necesitan {count} jugadores para empezar",
             WAITING_FOR_VIP: "Esperando a que {name} inicie la partida",
             WAITING_FOR_GAMEPAD: "Esperando a que empiece la partida",
             GAME_STARTING: "La partida va a empezar",
@@ -11011,8 +11011,8 @@ ${r.message}`,
         },
         N5 = "CARGANDO",
         $5 = {
-            JOINED_COUNT: "x | Se unieron {count} de {maxPlayers} jugadores | Se unieron {count} de {maxPlayers} jugadores",
-            PLAYERS_NEEDED: "x | Se necesita {count} jugador para empezar | Se necesitan {count} jugadores para empezar",
+            JOINED_COUNT: "Se unieron {count} de {maxPlayers} jugadores",
+            PLAYERS_NEEDED: "Se necesita 1 jugador para empezar | Se necesitan {count} jugadores para empezar",
             WAITING_FOR_VIP: "Esperando a que {name} inicie la partida",
             WAITING_FOR_GAMEPAD: "Esperando a que empiece la partida",
             GAME_STARTING: "La partida va a empezar",
@@ -25752,7 +25752,7 @@ ${t}`
     }
     const cne = ze(sne, [
             ["render", lne],
-            ["__scopeId", "data-v-50e222ba"]
+            ["__scopeId", "data-v-4318246e"]
         ]),
         une = it({
             components: {
@@ -26358,7 +26358,7 @@ ${t}`
             },
             components: {
                 Lobby: ine,
-                Postgame: cne,
+                PostGame: cne,
                 Waiting: S0,
                 Choosing: kne,
                 Writing: wie,
@@ -26413,7 +26413,7 @@ ${t}`
                                 player: this.audience
                             }];
                         case "postGame":
-                            return ["Postgame", {
+                            return ["PostGame", {
                                 player: this.audience,
                                 artifact: this.artifact
                             }]
@@ -26425,7 +26425,7 @@ ${t}`
                                 info: this.info
                             }];
                         case "postGame":
-                            return ["Postgame", {
+                            return ["PostGame", {
                                 player: this.player,
                                 artifact: this.artifact
                             }];
@@ -26489,4 +26489,4 @@ ${t}`
     })
 });
 export default kie();
-//# sourceMappingURL=4f7d86cc.js.map
+//# sourceMappingURL=93f766cd.js.map

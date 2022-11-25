@@ -2874,7 +2874,7 @@ body {
     text-transform: uppercase
 }
 
-.post-game[data-v-50e222ba] {
+.post-game[data-v-4318246e] {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -2882,29 +2882,46 @@ body {
     align-items: center
 }
 
-.post-game .flavor-image[data-v-50e222ba] {
+.post-game .flavor-image[data-v-4318246e] {
     position: absolute;
     bottom: 0px
 }
 
-.post-game .artifact-link[data-v-50e222ba] {
-    z-index: 2;
+.post-game .artifact-link[data-v-4318246e] {
     background-image: url(dd3d9bca.png);
-    background-size: 85% 75%
+    background-size: 85% 75%;
+    z-index: 2
 }
 
-.post-game .postgame-controls[data-v-50e222ba] {
+.locale-de .post-game .artifact-link[data-v-4318246e] {
+    background-image: url(3320fdb5.png)
+}
+
+.locale-es .post-game .artifact-link[data-v-4318246e],
+.locale-es-XL .post-game .artifact-link[data-v-4318246e] {
+    background-image: url(a1a31019.png)
+}
+
+.locale-fr .post-game .artifact-link[data-v-4318246e] {
+    background-image: url(296c4aaa.png)
+}
+
+.locale-it .post-game .artifact-link[data-v-4318246e] {
+    background-image: url(d3888d4a.png)
+}
+
+.post-game .postgame-controls[data-v-4318246e] {
     z-index: 2;
     display: flex;
     flex-direction: column;
     align-items: center
 }
 
-.post-game[data-v-50e222ba] .postgame-controls {
+.post-game[data-v-4318246e] .postgame-controls {
     width: 85%
 }
 
-.post-game[data-v-50e222ba] .postgame-controls .message {
+.post-game[data-v-4318246e] .postgame-controls .message {
     font-family: SofiaPro-Light;
     color: #000;
     font-size: 24px;
@@ -2915,7 +2932,7 @@ body {
     margin-bottom: 25px
 }
 
-.post-game[data-v-50e222ba] .postgame-controls .status {
+.post-game[data-v-4318246e] .postgame-controls .status {
     width: 234px;
     font-family: SofiaPro-Black;
     color: #fff;
@@ -2927,7 +2944,7 @@ body {
     margin-bottom: 20px
 }
 
-.post-game[data-v-50e222ba] .postgame-controls button.action {
+.post-game[data-v-4318246e] .postgame-controls button.action {
     border-radius: 10px;
     font-family: SofiaPro-Black;
     background-color: #000;
