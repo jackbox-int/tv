@@ -18541,212 +18541,212 @@ function print() { __p += __j.call(arguments, '') }
     var ZY = JY,
         QY = Gh;
 
-    function e7(e, t) {
+    function e9(e, t) {
         var n = t ? QY(e.buffer) : e.buffer;
         return new e.constructor(n, e.byteOffset, e.byteLength)
     }
-    var t7 = e7,
-        n7 = /\w*$/;
+    var t9 = e9,
+        n9 = /\w*$/;
 
-    function r7(e) {
-        var t = new e.constructor(e.source, n7.exec(e));
+    function r9(e) {
+        var t = new e.constructor(e.source, n9.exec(e));
         return t.lastIndex = e.lastIndex, t
     }
-    var i7 = r7,
+    var i9 = r9,
         Xy = Cc,
         Jy = Xy ? Xy.prototype : void 0,
         Zy = Jy ? Jy.valueOf : void 0;
 
-    function s7(e) {
+    function s9(e) {
         return Zy ? Object(Zy.call(e)) : {}
     }
-    var a7 = s7,
-        o7 = Gh,
-        l7 = t7,
-        c7 = i7,
-        u7 = a7,
-        f7 = fb,
-        d7 = "[object Boolean]",
-        h7 = "[object Date]",
-        p7 = "[object Map]",
-        g7 = "[object Number]",
-        m7 = "[object RegExp]",
-        v7 = "[object Set]",
-        _7 = "[object String]",
-        y7 = "[object Symbol]",
-        O7 = "[object ArrayBuffer]",
-        E7 = "[object DataView]",
-        b7 = "[object Float32Array]",
-        T7 = "[object Float64Array]",
-        S7 = "[object Int8Array]",
-        A7 = "[object Int16Array]",
-        w7 = "[object Int32Array]",
-        I7 = "[object Uint8Array]",
-        C7 = "[object Uint8ClampedArray]",
-        $7 = "[object Uint16Array]",
-        R7 = "[object Uint32Array]";
+    var a9 = s9,
+        o9 = Gh,
+        l9 = t9,
+        c9 = i9,
+        u9 = a9,
+        f9 = fb,
+        d9 = "[object Boolean]",
+        h9 = "[object Date]",
+        p9 = "[object Map]",
+        g9 = "[object Number]",
+        m9 = "[object RegExp]",
+        v9 = "[object Set]",
+        _9 = "[object String]",
+        y9 = "[object Symbol]",
+        O9 = "[object ArrayBuffer]",
+        E9 = "[object DataView]",
+        b9 = "[object Float32Array]",
+        T9 = "[object Float64Array]",
+        S9 = "[object Int8Array]",
+        A9 = "[object Int16Array]",
+        w9 = "[object Int32Array]",
+        I9 = "[object Uint8Array]",
+        C9 = "[object Uint8ClampedArray]",
+        $9 = "[object Uint16Array]",
+        R9 = "[object Uint32Array]";
 
-    function L7(e, t, n) {
+    function L9(e, t, n) {
         var r = e.constructor;
         switch (t) {
-            case O7:
-                return o7(e);
-            case d7:
-            case h7:
+            case O9:
+                return o9(e);
+            case d9:
+            case h9:
                 return new r(+e);
-            case E7:
-                return l7(e, n);
-            case b7:
-            case T7:
-            case S7:
-            case A7:
-            case w7:
-            case I7:
-            case C7:
-            case $7:
-            case R7:
-                return f7(e, n);
-            case p7:
+            case E9:
+                return l9(e, n);
+            case b9:
+            case T9:
+            case S9:
+            case A9:
+            case w9:
+            case I9:
+            case C9:
+            case $9:
+            case R9:
+                return f9(e, n);
+            case p9:
                 return new r;
-            case g7:
-            case _7:
+            case g9:
+            case _9:
                 return new r(e);
-            case m7:
-                return c7(e);
-            case v7:
+            case m9:
+                return c9(e);
+            case v9:
                 return new r;
-            case y7:
-                return u7(e)
+            case y9:
+                return u9(e)
         }
     }
-    var P7 = L7,
-        N7 = $p,
-        k7 = _i,
-        x7 = "[object Map]";
+    var P9 = L9,
+        N9 = $p,
+        k9 = _i,
+        x9 = "[object Map]";
 
-    function D7(e) {
-        return k7(e) && N7(e) == x7
+    function D9(e) {
+        return k9(e) && N9(e) == x9
     }
-    var M7 = D7,
-        B7 = M7,
-        F7 = Vh,
+    var M9 = D9,
+        B9 = M9,
+        F9 = Vh,
         Qy = no.exports,
         eO = Qy && Qy.isMap,
-        U7 = eO ? F7(eO) : B7,
-        G7 = U7,
-        j7 = $p,
-        W7 = _i,
-        H7 = "[object Set]";
+        U9 = eO ? F9(eO) : B9,
+        G9 = U9,
+        j9 = $p,
+        W9 = _i,
+        H9 = "[object Set]";
 
-    function V7(e) {
-        return W7(e) && j7(e) == H7
+    function V9(e) {
+        return W9(e) && j9(e) == H9
     }
-    var K7 = V7,
-        q7 = K7,
-        Y7 = Vh,
+    var K9 = V9,
+        q9 = K9,
+        Y9 = Vh,
         tO = no.exports,
         nO = tO && tO.isSet,
-        z7 = nO ? Y7(nO) : q7,
-        X7 = z7,
-        J7 = lb,
-        Z7 = Tq,
-        Q7 = Kh,
-        e9 = Uq,
-        t9 = Hq,
-        n9 = Jl.exports,
-        r9 = jh,
-        i9 = nY,
-        s9 = hY,
-        a9 = EY,
-        o9 = wY,
-        l9 = $p,
-        c9 = ZY,
-        u9 = P7,
-        f9 = hb,
-        d9 = Hr,
-        h9 = to.exports,
-        p9 = G7,
-        g9 = pr,
-        m9 = X7,
-        v9 = Vc,
-        _9 = po,
-        y9 = 1,
-        O9 = 2,
-        E9 = 4,
+        z9 = nO ? Y9(nO) : q9,
+        X9 = z9,
+        J9 = lb,
+        Z9 = Tq,
+        Q9 = Kh,
+        e7 = Uq,
+        t7 = Hq,
+        n7 = Jl.exports,
+        r7 = jh,
+        i7 = nY,
+        s7 = hY,
+        a7 = EY,
+        o7 = wY,
+        l7 = $p,
+        c7 = ZY,
+        u7 = P9,
+        f7 = hb,
+        d7 = Hr,
+        h7 = to.exports,
+        p7 = G9,
+        g7 = pr,
+        m7 = X9,
+        v7 = Vc,
+        _7 = po,
+        y7 = 1,
+        O7 = 2,
+        E7 = 4,
         P0 = "[object Arguments]",
-        b9 = "[object Array]",
-        T9 = "[object Boolean]",
-        S9 = "[object Date]",
-        A9 = "[object Error]",
+        b7 = "[object Array]",
+        T7 = "[object Boolean]",
+        S7 = "[object Date]",
+        A7 = "[object Error]",
         N0 = "[object Function]",
-        w9 = "[object GeneratorFunction]",
-        I9 = "[object Map]",
-        C9 = "[object Number]",
+        w7 = "[object GeneratorFunction]",
+        I7 = "[object Map]",
+        C7 = "[object Number]",
         k0 = "[object Object]",
-        $9 = "[object RegExp]",
-        R9 = "[object Set]",
-        L9 = "[object String]",
-        P9 = "[object Symbol]",
-        N9 = "[object WeakMap]",
-        k9 = "[object ArrayBuffer]",
-        x9 = "[object DataView]",
-        D9 = "[object Float32Array]",
-        M9 = "[object Float64Array]",
-        B9 = "[object Int8Array]",
-        F9 = "[object Int16Array]",
-        U9 = "[object Int32Array]",
-        G9 = "[object Uint8Array]",
-        j9 = "[object Uint8ClampedArray]",
-        W9 = "[object Uint16Array]",
-        H9 = "[object Uint32Array]",
+        $7 = "[object RegExp]",
+        R7 = "[object Set]",
+        L7 = "[object String]",
+        P7 = "[object Symbol]",
+        N7 = "[object WeakMap]",
+        k7 = "[object ArrayBuffer]",
+        x7 = "[object DataView]",
+        D7 = "[object Float32Array]",
+        M7 = "[object Float64Array]",
+        B7 = "[object Int8Array]",
+        F7 = "[object Int16Array]",
+        U7 = "[object Int32Array]",
+        G7 = "[object Uint8Array]",
+        j7 = "[object Uint8ClampedArray]",
+        W7 = "[object Uint16Array]",
+        H7 = "[object Uint32Array]",
         yt = {};
-    yt[P0] = yt[b9] = yt[k9] = yt[x9] = yt[T9] = yt[S9] = yt[D9] = yt[M9] = yt[B9] = yt[F9] = yt[U9] = yt[I9] = yt[C9] = yt[k0] = yt[$9] = yt[R9] = yt[L9] = yt[P9] = yt[G9] = yt[j9] = yt[W9] = yt[H9] = !0;
-    yt[A9] = yt[N0] = yt[N9] = !1;
+    yt[P0] = yt[b7] = yt[k7] = yt[x7] = yt[T7] = yt[S7] = yt[D7] = yt[M7] = yt[B7] = yt[F7] = yt[U7] = yt[I7] = yt[C7] = yt[k0] = yt[$7] = yt[R7] = yt[L7] = yt[P7] = yt[G7] = yt[j7] = yt[W7] = yt[H7] = !0;
+    yt[A7] = yt[N0] = yt[N7] = !1;
 
     function Gl(e, t, n, r, s, a) {
-        var l, c = t & y9,
-            d = t & O9,
-            h = t & E9;
+        var l, c = t & y7,
+            d = t & O7,
+            h = t & E7;
         if (n && (l = s ? n(e, r, s, a) : n(e)), l !== void 0) return l;
-        if (!g9(e)) return e;
-        var v = d9(e);
+        if (!g7(e)) return e;
+        var v = d7(e);
         if (v) {
-            if (l = c9(e), !c) return r9(e, l)
+            if (l = c7(e), !c) return r7(e, l)
         } else {
-            var u = l9(e),
-                p = u == N0 || u == w9;
-            if (h9(e)) return n9(e, c);
+            var u = l7(e),
+                p = u == N0 || u == w7;
+            if (h7(e)) return n7(e, c);
             if (u == k0 || u == P0 || p && !s) {
-                if (l = d || p ? {} : f9(e), !c) return d ? s9(e, t9(l, e)) : i9(e, e9(l, e))
+                if (l = d || p ? {} : f7(e), !c) return d ? s7(e, t7(l, e)) : i7(e, e7(l, e))
             } else {
                 if (!yt[u]) return s ? e : {};
-                l = u9(e, u, c)
+                l = u7(e, u, c)
             }
         }
-        a || (a = new J7);
+        a || (a = new J9);
         var m = a.get(e);
         if (m) return m;
-        a.set(e, l), m9(e) ? e.forEach(function(C) {
+        a.set(e, l), m7(e) ? e.forEach(function(C) {
             l.add(Gl(C, t, n, C, e, a))
-        }) : p9(e) && e.forEach(function(C, E) {
+        }) : p7(e) && e.forEach(function(C, E) {
             l.set(E, Gl(C, t, n, E, e, a))
         });
-        var b = h ? d ? o9 : a9 : d ? _9 : v9,
+        var b = h ? d ? o7 : a7 : d ? _7 : v7,
             A = v ? void 0 : b(e);
-        return Z7(A || e, function(C, E) {
-            A && (E = C, C = e[E]), Q7(l, E, Gl(C, t, n, E, e, a))
+        return Z9(A || e, function(C, E) {
+            A && (E = C, C = e[E]), Q9(l, E, Gl(C, t, n, E, e, a))
         }), l
     }
-    var V9 = Gl,
-        K9 = V9,
-        q9 = 1,
-        Y9 = 4;
+    var V7 = Gl,
+        K7 = V7,
+        q7 = 1,
+        Y7 = 4;
 
-    function z9(e) {
-        return K9(e, q9 | Y9)
+    function z7(e) {
+        return K7(e, q7 | Y7)
     }
-    var x0 = z9;
-    const X9 = Ye({
+    var x0 = z7;
+    const X7 = Ye({
             emits: {
                 resolve: () => !0
             },
@@ -18791,9 +18791,9 @@ function print() { __p += __j.call(arguments, '') }
         }),
         D0 = "main/pp9/lineup/assets/ad9172fc.png",
         M0 = "main/pp9/lineup/assets/dc131b16.png",
-        J9 = "main/pp9/lineup/assets/38715b18.png",
-        Z9 = "main/pp9/lineup/assets/b0d7c822.png",
-        Q9 = "main/pp9/lineup/assets/06150f24.png",
+        J7 = "main/pp9/lineup/assets/38715b18.png",
+        Z7 = "main/pp9/lineup/assets/b0d7c822.png",
+        Q7 = "main/pp9/lineup/assets/06150f24.png",
         er = e => (uo("data-v-2c53389f"), e = e(), fo(), e),
         ez = {
             class: "jbg"
@@ -18833,17 +18833,17 @@ function print() { __p += __j.call(arguments, '') }
             class: "buttons"
         },
         hz = er(() => q("img", {
-            src: J9,
+            src: J7,
             alt: "good"
         }, null, -1)),
         pz = [hz],
         gz = er(() => q("img", {
-            src: Z9,
+            src: Z7,
             alt: "good"
         }, null, -1)),
         mz = [gz],
         vz = er(() => q("img", {
-            src: Q9,
+            src: Q7,
             alt: "bad"
         }, null, -1)),
         _z = [vz],
@@ -18921,7 +18921,7 @@ function print() { __p += __j.call(arguments, '') }
             onClick: t[9] || (t[9] = Mn((...l) => e.onSubmitClick && e.onSubmitClick(...l), ["prevent"]))
         }, ht(e.$t("ACTION.OK")), 1)])])) : Ce("", !0)])
     }
-    const B0 = rt(X9, [
+    const B0 = rt(X7, [
             ["render", wz],
             ["__scopeId", "data-v-2c53389f"]
         ]),
@@ -25326,6 +25326,7 @@ ${t}`
             })
         },
         Ute = {
+            FROM: "from",
             TO: "{left} to {right}",
             TO_WITH_TRASH: "{left} to {right}, over the trash",
             UNABLE: "blocked",
@@ -25420,6 +25421,7 @@ ${t}`
             WAIT: Yte
         },
         Xte = {
+            FROM: "de",
             TO: "{left} vers {right}",
             TO_WITH_TRASH: "{left} vers {right}, par-dessus la poubelle",
             UNABLE: "bloqu\xE9",
@@ -25514,8 +25516,9 @@ ${t}`
             WAIT: ine
         },
         ane = {
-            TO: "da {left} a {right}",
-            TO_WITH_TRASH: "da {left} a {right}, sopra la spazzatura",
+            FROM: "da",
+            TO: "{left} a {right}",
+            TO_WITH_TRASH: "{left} a {right}, sopra la spazzatura",
             UNABLE: "bloccato",
             DROPPING: "{player} sta facendo cadere {text}",
             PLACED: "{player} ha posizionato {text} a {left} di {right}",
@@ -25608,6 +25611,7 @@ ${t}`
             WAIT: pne
         },
         mne = {
+            FROM: "von",
             TO: "{left} nach {right}",
             TO_WITH_TRASH: "{left} nach {right}, \xFCber den M\xFCll",
             UNABLE: "blockiert",
@@ -25702,6 +25706,7 @@ ${t}`
             WAIT: Sne
         },
         wne = {
+            FROM: "de",
             TO: "{left} a {right}",
             TO_WITH_TRASH: "{left} a {right}, a la basura",
             UNABLE: "bloqueado",
@@ -25796,6 +25801,7 @@ ${t}`
             WAIT: kne
         },
         Dne = {
+            FROM: "de",
             TO: "{left} a la {right}",
             TO_WITH_TRASH: "{left} a la {right}, sobre la basura",
             UNABLE: "bloqueado",
@@ -27368,7 +27374,7 @@ ${t}`
                 }
             }
         }),
-        qp = e => (uo("data-v-1a368d9e"), e = e(), fo(), e),
+        qp = e => (uo("data-v-3fdd8292"), e = e(), fo(), e),
         are = qp(() => q("div", {
             class: "trash-background"
         }, null, -1)),
@@ -27493,7 +27499,7 @@ ${t}`
     }
     const Ore = rt(sre, [
             ["render", yre],
-            ["__scopeId", "data-v-1a368d9e"]
+            ["__scopeId", "data-v-3fdd8292"]
         ]),
         Ere = Ye({
             props: {
@@ -28332,7 +28338,7 @@ ${t}`
         oie = {
             viewBox: "0 0 1045 590"
         },
-        lie = nN('<filter id="shading" data-v-7fdad70d><feFlood flood-color="rgba(0, 0, 0, 0.75)" data-v-7fdad70d></feFlood><feComposite operator="out" in2="SourceGraphic" data-v-7fdad70d></feComposite><feMorphology operator="dilate" radius="15" data-v-7fdad70d></feMorphology><feGaussianBlur stdDeviation="10" data-v-7fdad70d></feGaussianBlur><feComposite operator="atop" in2="SourceGraphic" data-v-7fdad70d></feComposite></filter><rect class="frame" vector-effect="non-scaling-stroke" x="0" y="0" width="1045" height="590" rx="65" data-v-7fdad70d></rect><rect class="screen-fill" x="25" y="25" width="995" height="540" rx="40" data-v-7fdad70d></rect><rect class="screen-stroke" vector-effect="non-scaling-stroke" x="25" y="25" width="995" height="540" rx="40" data-v-7fdad70d></rect>', 4),
+        lie = nN('<filter id="shading" data-v-78ad245f><feFlood flood-color="rgba(0, 0, 0, 0.75)" data-v-78ad245f></feFlood><feComposite operator="out" in2="SourceGraphic" data-v-78ad245f></feComposite><feMorphology operator="dilate" radius="15" data-v-78ad245f></feMorphology><feGaussianBlur stdDeviation="10" data-v-78ad245f></feGaussianBlur><feComposite operator="atop" in2="SourceGraphic" data-v-78ad245f></feComposite></filter><rect class="frame" vector-effect="non-scaling-stroke" x="0" y="0" width="1045" height="590" rx="65" data-v-78ad245f></rect><rect class="screen-fill" x="25" y="25" width="995" height="540" rx="40" data-v-78ad245f></rect><rect class="screen-stroke" vector-effect="non-scaling-stroke" x="25" y="25" width="995" height="540" rx="40" data-v-78ad245f></rect>', 4),
         cie = {
             class: "lights"
         },
@@ -28463,7 +28469,7 @@ ${t}`
     }
     const gie = rt(iie, [
             ["render", pie],
-            ["__scopeId", "data-v-7fdad70d"]
+            ["__scopeId", "data-v-78ad245f"]
         ]),
         mie = "main/pp9/lineup/assets/897075ef.wav",
         vie = Ye({
@@ -28747,6 +28753,18 @@ ${t}`
             props: {
                 player: Object
             },
+            data() {
+                return {
+                    category: "",
+                    labels: []
+                }
+            },
+            mounted() {
+                const e = document.querySelector(".sequence-vote button .category");
+                e != null && e.textContent && (this.category = e.textContent);
+                const t = Array.from(document.querySelectorAll(".sequence-vote button .label"));
+                t.length && t.every(n => n.textContent) && (this.labels = t.map(n => n.textContent))
+            },
             bb: {
                 category: (e, t) => `<span class="category">${t.replace("&lt;br /&gt;","<br>").replace("[icon][/icon]","")}</span>`,
                 label: (e, t) => `<span class="label">${t}</span><br>`
@@ -28778,10 +28796,10 @@ ${t}`
             [c, e.player.prompt]
         ]) : Ce("", !0), nt(l, {
             text: e.player.choices[0].text,
-            "aria-label": "Category Birthdays Sort January to December",
+            "aria-label": `${e.category} ${e.$t("ARIA.FROM")} ${e.$t("ARIA.TO",{left:e.labels[0],right:e.labels[1]})}`,
             class: "jiggly no-team",
             onClick: t[0] || (t[0] = Mn(d => e.onChoiceClick(0), ["prevent"]))
-        }, null, 8, ["text"]), nt(l, {
+        }, null, 8, ["text", "aria-label"]), nt(l, {
             text: e.player.choices[1].text,
             class: "jiggly no-team mystery",
             onClick: t[1] || (t[1] = Mn(d => e.onChoiceClick(1), ["prevent"]))
@@ -28789,7 +28807,7 @@ ${t}`
     }
     const xie = rt(Lie, [
         ["render", kie],
-        ["__scopeId", "data-v-741ede2b"]
+        ["__scopeId", "data-v-df5b5dad"]
     ]);
     Kp.Howler.autoUnlock = !1;
     const Die = Ye({
@@ -28973,4 +28991,4 @@ ${t}`
     })
 });
 export default Uie();
-//# sourceMappingURL=1e035d43.js.map
+//# sourceMappingURL=a844b006.js.map

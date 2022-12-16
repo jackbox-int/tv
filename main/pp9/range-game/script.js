@@ -25373,8 +25373,8 @@ ${e}`
             YOU_SELECTED: "Vous avez s\xE9lectionn\xE9"
         },
         iae = {
-            ADD: "Ajouter une probabilit\xE9\xA0?",
-            LOCKED: "Probabilit\xE9 verrouill\xE9e"
+            ADD: "Ajouter confiance ?",
+            LOCKED: "Confiance verrouill\xE9e"
         },
         sae = {
             FEELINGS: "Appuyez sur une \xE9mote pour partager vos \xE9motions.",
@@ -29098,4 +29098,4 @@ ${e}`
     })
 });
 export default Tue();
-//# sourceMappingURL=ef936270.js.map
+//# sourceMappingURL=f8b41397.js.map

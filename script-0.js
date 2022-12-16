@@ -10476,6 +10476,20 @@ Url: ${nr(t)}`), !0)
                 autoMount: !0
             })
         },
+        "/past-games": t => {
+            window.tv.load({
+                app: "@connect",
+                match: t,
+                autoMount: !0
+            })
+        },
+        "/past-games/:game": t => {
+            window.tv.load({
+                app: "@connect",
+                match: t,
+                autoMount: !0
+            })
+        },
         "/moderator": t => {
             window.tv.load({
                 app: "@moderator",
@@ -10541,23 +10555,23 @@ Url: ${nr(t)}`), !0)
         nw = 1,
         iw = {
             branch: "main",
-            sha: "c967e6196604f0dcb1b149c30b7de00a44b7d940",
-            lastUpdated: 1669143779438,
-            version: "5.67.0",
+            sha: "e8b6cdcf745b3abf6e4eb03739264c5946b130a4",
+            lastUpdated: 1671143374050,
+            version: "5.76.0",
             type: "production"
         },
         aw = {
             main: {
-                sha: "c967e6196604f0dcb1b149c30b7de00a44b7d940",
-                lastUpdated: 1669143779438,
-                version: "5.67.0",
+                sha: "e8b6cdcf745b3abf6e4eb03739264c5946b130a4",
+                lastUpdated: 1671143374050,
+                version: "5.76.0",
                 type: "production",
                 bundles: {
                     "@connect": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@connect",
-                        version: "5.61.0"
+                        version: "5.76.0"
                     },
                     "the-wheel": {
                         file: "script.js",
@@ -10869,7 +10883,7 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/fourbage",
-                        version: "5.65.0"
+                        version: "5.74.0"
                     },
                     htmf: {
                         file: "script.js",
@@ -10881,13 +10895,13 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/lineup",
-                        version: "5.65.0"
+                        version: "5.73.0"
                     },
                     "range-game": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/range-game",
-                        version: "5.65.0"
+                        version: "5.70.0"
                     },
                     prototype: {
                         file: "script.js",
@@ -10920,4 +10934,4 @@ Url: ${nr(t)}`), !0)
     tw()
 });
 export default ow();
-//# sourceMappingURL=a934caff.js.map
+//# sourceMappingURL=f2d99dbe.js.map
