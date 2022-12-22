@@ -10555,23 +10555,23 @@ Url: ${nr(t)}`), !0)
         nw = 1,
         iw = {
             branch: "main",
-            sha: "e8b6cdcf745b3abf6e4eb03739264c5946b130a4",
-            lastUpdated: 1671143374050,
-            version: "5.76.0",
+            sha: "a387ff1b6574a4a57538fd2acabddb1bd59722fe",
+            lastUpdated: 1671653678774,
+            version: "5.84.0",
             type: "production"
         },
         aw = {
             main: {
-                sha: "e8b6cdcf745b3abf6e4eb03739264c5946b130a4",
-                lastUpdated: 1671143374050,
-                version: "5.76.0",
+                sha: "a387ff1b6574a4a57538fd2acabddb1bd59722fe",
+                lastUpdated: 1671653678774,
+                version: "5.84.0",
                 type: "production",
                 bundles: {
                     "@connect": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@connect",
-                        version: "5.76.0"
+                        version: "5.84.0"
                     },
                     "the-wheel": {
                         file: "script.js",
@@ -10865,7 +10865,7 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/tjsp/quiplash3",
-                        version: "5.0.0"
+                        version: "5.78.0"
                     },
                     "apply-yourself": {
                         file: "script.js",
@@ -10877,37 +10877,37 @@ Url: ${nr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/antique-freak",
-                        version: "5.65.0"
+                        version: "5.82.0"
                     },
                     fourbage: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/fourbage",
-                        version: "5.74.0"
+                        version: "5.82.0"
                     },
                     htmf: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/htmf",
-                        version: "5.66.0"
+                        version: "5.82.0"
                     },
                     lineup: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/lineup",
-                        version: "5.73.0"
+                        version: "5.83.0"
                     },
                     "range-game": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/range-game",
-                        version: "5.70.0"
+                        version: "5.82.0"
                     },
                     prototype: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/internal/prototype",
-                        version: "5.57.0"
+                        version: "5.79.0"
                     }
                 }
             }
@@ -10934,4 +10934,4 @@ Url: ${nr(t)}`), !0)
     tw()
 });
 export default ow();
-//# sourceMappingURL=f2d99dbe.js.map
+//# sourceMappingURL=9b3f1ab2.js.map

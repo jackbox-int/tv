@@ -2238,7 +2238,7 @@ button.twitch[data-v-fdbdeb06] {
     overflow: hidden
 }
 
-.jbg.schemable.theme-dark[data-v-0a136edf] {
+.jbg.schemable.theme-dark[data-v-591e1c35] {
     --accent: #4254F4;
     --alert: #ce4949;
     --shadows: rgb(4, 9, 14, .5);
@@ -2253,7 +2253,7 @@ button.twitch[data-v-fdbdeb06] {
 }
 
 @media (prefers-color-scheme: dark) {
-    .jbg.schemable.theme-device[data-v-0a136edf] {
+    .jbg.schemable.theme-device[data-v-591e1c35] {
         --accent: #4254F4;
         --alert: #ce4949;
         --shadows: rgb(4, 9, 14, .5);
@@ -2268,7 +2268,7 @@ button.twitch[data-v-fdbdeb06] {
     }
 }
 
-.jbg[data-v-0a136edf] {
+.jbg[data-v-591e1c35] {
     --accent: #4254F4;
     --alert: #cf2929;
     --shadows: rgba(128, 128, 128, .4);
@@ -2286,16 +2286,16 @@ button.twitch[data-v-fdbdeb06] {
     color: var(--textPrimary)
 }
 
-.jbg a[data-v-0a136edf] {
+.jbg a[data-v-591e1c35] {
     color: var(--accent);
     text-decoration: none
 }
 
-.jbg h1[data-v-0a136edf] {
+.jbg h1[data-v-591e1c35] {
     font-size: 2em
 }
 
-.jbg button[data-v-0a136edf] {
+.jbg button[data-v-591e1c35] {
     cursor: pointer;
     height: 48px;
     width: calc(100% - 50px);
@@ -2313,32 +2313,32 @@ button.twitch[data-v-fdbdeb06] {
     transition: color .5s, background-position .5s, box-shadow .5s
 }
 
-.jbg button .loading[data-v-0a136edf],
-.jbg button.connecting span[data-v-0a136edf] {
+.jbg button .loading[data-v-591e1c35],
+.jbg button.connecting span[data-v-591e1c35] {
     display: none
 }
 
-.jbg button.connecting .loading[data-v-0a136edf] {
+.jbg button.connecting .loading[data-v-591e1c35] {
     display: block
 }
 
-.jbg button.cancel[data-v-0a136edf] {
+.jbg button.cancel[data-v-591e1c35] {
     background-color: #ff0;
     box-shadow: 0 5px 0 0 var(--shadows)
 }
 
-.jbg button[data-v-0a136edf]:disabled {
+.jbg button[data-v-591e1c35]:disabled {
     background: var(--inputPrimary);
     color: var(--textPrimary);
     box-shadow: 0 0 0 0 var(--shadows)
 }
 
-.jbg form[data-v-0a136edf] {
+.jbg form[data-v-591e1c35] {
     margin: 0 auto 5px;
     padding: 70px 15px 0
 }
 
-.jbg label[data-v-0a136edf] {
+.jbg label[data-v-591e1c35] {
     display: inline-block;
     width: 100%;
     margin-bottom: 5px;
@@ -2347,9 +2347,9 @@ button.twitch[data-v-fdbdeb06] {
     font-size: 17px
 }
 
-.jbg input[data-v-0a136edf],
-.jbg textarea[data-v-0a136edf],
-.jbg select[data-v-0a136edf] {
+.jbg input[data-v-591e1c35],
+.jbg textarea[data-v-591e1c35],
+.jbg select[data-v-591e1c35] {
     width: 100%;
     height: 34px;
     margin-bottom: 15px;
@@ -2363,36 +2363,36 @@ button.twitch[data-v-fdbdeb06] {
     text-transform: uppercase
 }
 
-.jbg input[data-v-0a136edf]::placeholder,
-.jbg textarea[data-v-0a136edf]::placeholder,
-.jbg select[data-v-0a136edf]::placeholder {
+.jbg input[data-v-591e1c35]::placeholder,
+.jbg textarea[data-v-591e1c35]::placeholder,
+.jbg select[data-v-591e1c35]::placeholder {
     color: var(--textSecondary)
 }
 
-.jbg input[data-v-0a136edf]:disabled,
-.jbg textarea[data-v-0a136edf]:disabled,
-.jbg select[data-v-0a136edf]:disabled {
+.jbg input[data-v-591e1c35]:disabled,
+.jbg textarea[data-v-591e1c35]:disabled,
+.jbg select[data-v-591e1c35]:disabled {
     background: var(--inputPrimary);
     color: var(--textSecondary);
     cursor: not-allowed;
     user-select: none
 }
 
-.jbg textarea[data-v-0a136edf] {
+.jbg textarea[data-v-591e1c35] {
     height: auto;
     padding: 12px;
     font-size: 14px
 }
 
-.jbg .select[data-v-0a136edf] {
+.jbg .select[data-v-591e1c35] {
     position: relative
 }
 
-.jbg .select.disabled[data-v-0a136edf]:after {
+.jbg .select.disabled[data-v-591e1c35]:after {
     display: none
 }
 
-.jbg .select[data-v-0a136edf]:after {
+.jbg .select[data-v-591e1c35]:after {
     content: "\25bc";
     position: absolute;
     top: 11px;
@@ -2400,7 +2400,7 @@ button.twitch[data-v-fdbdeb06] {
     font-size: 12px
 }
 
-.jbg select[data-v-0a136edf] {
+.jbg select[data-v-591e1c35] {
     cursor: inherit;
     appearance: none;
     height: auto;
@@ -2408,49 +2408,49 @@ button.twitch[data-v-fdbdeb06] {
     -webkit-appearance: none
 }
 
-.jbg .loading[data-v-0a136edf],
-.jbg .loading[data-v-0a136edf]:before,
-.jbg .loading[data-v-0a136edf]:after {
+.jbg .loading[data-v-591e1c35],
+.jbg .loading[data-v-591e1c35]:before,
+.jbg .loading[data-v-591e1c35]:after {
     width: 12px;
     height: 12px;
     border: 2px solid #0E167D;
     border-radius: 50%;
     background: #4254F4;
     animation-fill-mode: both;
-    animation: loading-0a136edf 1.5s infinite ease-in-out
+    animation: loading-591e1c35 1.5s infinite ease-in-out
 }
 
-.jbg .loading[data-v-0a136edf] {
+.jbg .loading[data-v-591e1c35] {
     position: relative;
     margin: 18px auto;
     animation-delay: -.25s
 }
 
-.jbg .loading[data-v-0a136edf]:before,
-.jbg .loading[data-v-0a136edf]:after {
+.jbg .loading[data-v-591e1c35]:before,
+.jbg .loading[data-v-591e1c35]:after {
     content: "";
     position: absolute;
     top: -2px
 }
 
-.jbg .loading[data-v-0a136edf]:before {
+.jbg .loading[data-v-591e1c35]:before {
     left: -22px;
     animation-delay: -.5s
 }
 
-.jbg .loading[data-v-0a136edf]:after {
+.jbg .loading[data-v-591e1c35]:after {
     left: 18px
 }
 
-.jbg .disabled.loading[data-v-0a136edf],
-.jbg .disabled.loading[data-v-0a136edf]:before,
-.jbg .disabled.loading[data-v-0a136edf]:after {
+.jbg .disabled.loading[data-v-591e1c35],
+.jbg .disabled.loading[data-v-591e1c35]:before,
+.jbg .disabled.loading[data-v-591e1c35]:after {
     border: 2px solid var(--textSecondary);
     background: var(--backgroundSecondary);
-    animation-name: loading-disabled-0a136edf
+    animation-name: loading-disabled-591e1c35
 }
 
-@keyframes loading-0a136edf {
+@keyframes loading-591e1c35 {
 
     0%,
     20%,
@@ -2464,7 +2464,7 @@ button.twitch[data-v-fdbdeb06] {
     }
 }
 
-@keyframes loading-disabled-0a136edf {
+@keyframes loading-disabled-591e1c35 {
 
     0%,
     20%,
@@ -2478,7 +2478,7 @@ button.twitch[data-v-fdbdeb06] {
     }
 }
 
-.toast[data-v-0a136edf] {
+.toast[data-v-591e1c35] {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -2489,39 +2489,47 @@ button.twitch[data-v-fdbdeb06] {
     background: transparent
 }
 
-.toast.reconnecting[data-v-0a136edf] {
-    animation: reconnecting-background-0a136edf .5s infinite alternate
+.toast.reconnecting[data-v-591e1c35] {
+    animation: reconnecting-background-591e1c35 .5s infinite alternate
 }
 
-.toast .constrain[data-v-0a136edf] {
+.toast .constrain[data-v-591e1c35] {
     padding: 12px 15px
 }
 
-.toast.generic[data-v-0a136edf],
-.toast.reconnecting[data-v-0a136edf] {
+.toast.generic[data-v-591e1c35],
+.toast.reconnecting[data-v-591e1c35] {
     border-top: 6px solid #FFF;
     background: #4254F4
 }
 
-.toast.generic .text[data-v-0a136edf],
-.toast.reconnecting .text[data-v-0a136edf] {
+.toast.generic .text[data-v-591e1c35],
+.toast.generic .subtext[data-v-591e1c35],
+.toast.reconnecting .text[data-v-591e1c35],
+.toast.reconnecting .subtext[data-v-591e1c35] {
+    margin-right: 40px;
     color: #fff;
-    font-size: 14px
+    font-size: clamp(10px, 3vw, 14px)
 }
 
-.toast.generic .subtext[data-v-0a136edf],
-.toast.reconnecting .subtext[data-v-0a136edf] {
+.toast.generic .text[data-v-591e1c35],
+.toast.reconnecting .text[data-v-591e1c35] {
+    color: #fff
+}
+
+.toast.generic .subtext[data-v-591e1c35],
+.toast.reconnecting .subtext[data-v-591e1c35] {
     font-weight: 400;
-    color: #fff;
-    font-size: 14px
+    line-height: 1;
+    color: #fff
 }
 
-.toast.generic .close[data-v-0a136edf],
-.toast.reconnecting .close[data-v-0a136edf] {
+.toast.generic .close[data-v-591e1c35],
+.toast.reconnecting .close[data-v-591e1c35] {
     display: none
 }
 
-.toast.broadcaster[data-v-0a136edf] {
+.toast.broadcaster[data-v-591e1c35] {
     color: #0c0c0c;
     font-family: Rubik, sans-serif;
     font-size: 18px;
@@ -2531,7 +2539,7 @@ button.twitch[data-v-fdbdeb06] {
     height: auto
 }
 
-.toast.broadcaster .constrain[data-v-0a136edf] {
+.toast.broadcaster .constrain[data-v-591e1c35] {
     position: relative;
     padding: 12px 40px;
     background-color: #fcfcfc;
@@ -2539,7 +2547,7 @@ button.twitch[data-v-fdbdeb06] {
     box-shadow: 0 0 13px #0000003b
 }
 
-.toast.broadcaster .close[data-v-0a136edf] {
+.toast.broadcaster .close[data-v-591e1c35] {
     display: block;
     position: absolute;
     top: 16px;
@@ -2547,7 +2555,7 @@ button.twitch[data-v-fdbdeb06] {
     cursor: pointer
 }
 
-.toast.broadcaster .text[data-v-0a136edf] {
+.toast.broadcaster .text[data-v-591e1c35] {
     color: #64449b;
     height: 50px;
     line-height: 50px;
@@ -2556,18 +2564,18 @@ button.twitch[data-v-fdbdeb06] {
     background: url(7d18ac0c.svg) no-repeat center left/40px
 }
 
-.toast.broadcaster .subtext[data-v-0a136edf] {
+.toast.broadcaster .subtext[data-v-591e1c35] {
     padding-bottom: 20px
 }
 
-.toast.broadcaster .warning[data-v-0a136edf] {
+.toast.broadcaster .warning[data-v-591e1c35] {
     border-top: 1px solid #CDCDCD;
     line-height: normal;
     padding: 20px 0 20px 50px;
     background: url(92bb55df.png) no-repeat center left/40px
 }
 
-.spinner[data-v-0a136edf] {
+.spinner[data-v-591e1c35] {
     position: absolute;
     top: 15px;
     right: 15px;
@@ -2575,10 +2583,10 @@ button.twitch[data-v-fdbdeb06] {
     height: 40px;
     border: 6px solid #0E167D;
     border-radius: 20px;
-    animation: reconnecting-spinner-0a136edf 1s infinite linear reverse
+    animation: reconnecting-spinner-591e1c35 1s infinite linear reverse
 }
 
-.spinner[data-v-0a136edf]:before {
+.spinner[data-v-591e1c35]:before {
     content: "";
     position: absolute;
     top: -6px;
@@ -2590,7 +2598,7 @@ button.twitch[data-v-fdbdeb06] {
     border-radius: 20px
 }
 
-@keyframes reconnecting-background-0a136edf {
+@keyframes reconnecting-background-591e1c35 {
     0% {
         background: #4254F4
     }
@@ -2600,7 +2608,7 @@ button.twitch[data-v-fdbdeb06] {
     }
 }
 
-@keyframes reconnecting-spinner-0a136edf {
+@keyframes reconnecting-spinner-591e1c35 {
     0% {
         transform: rotate(0)
     }
@@ -2610,13 +2618,13 @@ button.twitch[data-v-fdbdeb06] {
     }
 }
 
-.toast-transition-enter-active[data-v-0a136edf],
-.toast-transition-leave-active[data-v-0a136edf] {
+.toast-transition-enter-active[data-v-591e1c35],
+.toast-transition-leave-active[data-v-591e1c35] {
     transition: bottom .15s, opacity .15s
 }
 
-.toast-transition-enter[data-v-0a136edf],
-.toast-transition-leave-to[data-v-0a136edf] {
+.toast-transition-enter[data-v-591e1c35],
+.toast-transition-leave-to[data-v-591e1c35] {
     bottom: -70px;
     opacity: 0
 }
