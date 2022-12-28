@@ -2903,7 +2903,7 @@ hr[data-v-f058cb4c] {
     border-bottom: 1px solid #505050
 }
 
-.jbg.schemable.theme-dark[data-v-43acb4dc] {
+.jbg.schemable.theme-dark[data-v-4acb2000] {
     --accent: #4254F4;
     --alert: #ce4949;
     --shadows: rgb(4, 9, 14, .5);
@@ -2918,7 +2918,7 @@ hr[data-v-f058cb4c] {
 }
 
 @media (prefers-color-scheme: dark) {
-    .jbg.schemable.theme-device[data-v-43acb4dc] {
+    .jbg.schemable.theme-device[data-v-4acb2000] {
         --accent: #4254F4;
         --alert: #ce4949;
         --shadows: rgb(4, 9, 14, .5);
@@ -2933,7 +2933,7 @@ hr[data-v-f058cb4c] {
     }
 }
 
-.jbg[data-v-43acb4dc] {
+.jbg[data-v-4acb2000] {
     --accent: #4254F4;
     --alert: #cf2929;
     --shadows: rgba(128, 128, 128, .4);
@@ -2951,16 +2951,16 @@ hr[data-v-f058cb4c] {
     color: var(--textPrimary)
 }
 
-.jbg a[data-v-43acb4dc] {
+.jbg a[data-v-4acb2000] {
     color: var(--accent);
     text-decoration: none
 }
 
-.jbg h1[data-v-43acb4dc] {
+.jbg h1[data-v-4acb2000] {
     font-size: 2em
 }
 
-.jbg button[data-v-43acb4dc] {
+.jbg button[data-v-4acb2000] {
     cursor: pointer;
     height: 48px;
     width: calc(100% - 50px);
@@ -2978,32 +2978,32 @@ hr[data-v-f058cb4c] {
     transition: color .5s, background-position .5s, box-shadow .5s
 }
 
-.jbg button .loading[data-v-43acb4dc],
-.jbg button.connecting span[data-v-43acb4dc] {
+.jbg button .loading[data-v-4acb2000],
+.jbg button.connecting span[data-v-4acb2000] {
     display: none
 }
 
-.jbg button.connecting .loading[data-v-43acb4dc] {
+.jbg button.connecting .loading[data-v-4acb2000] {
     display: block
 }
 
-.jbg button.cancel[data-v-43acb4dc] {
+.jbg button.cancel[data-v-4acb2000] {
     background-color: #ff0;
     box-shadow: 0 5px 0 0 var(--shadows)
 }
 
-.jbg button[data-v-43acb4dc]:disabled {
+.jbg button[data-v-4acb2000]:disabled {
     background: var(--inputPrimary);
     color: var(--textPrimary);
     box-shadow: 0 0 0 0 var(--shadows)
 }
 
-.jbg form[data-v-43acb4dc] {
+.jbg form[data-v-4acb2000] {
     margin: 0 auto 5px;
     padding: 70px 15px 0
 }
 
-.jbg label[data-v-43acb4dc] {
+.jbg label[data-v-4acb2000] {
     display: inline-block;
     width: 100%;
     margin-bottom: 5px;
@@ -3012,9 +3012,9 @@ hr[data-v-f058cb4c] {
     font-size: 17px
 }
 
-.jbg input[data-v-43acb4dc],
-.jbg textarea[data-v-43acb4dc],
-.jbg select[data-v-43acb4dc] {
+.jbg input[data-v-4acb2000],
+.jbg textarea[data-v-4acb2000],
+.jbg select[data-v-4acb2000] {
     width: 100%;
     height: 34px;
     margin-bottom: 15px;
@@ -3028,36 +3028,36 @@ hr[data-v-f058cb4c] {
     text-transform: uppercase
 }
 
-.jbg input[data-v-43acb4dc]::placeholder,
-.jbg textarea[data-v-43acb4dc]::placeholder,
-.jbg select[data-v-43acb4dc]::placeholder {
+.jbg input[data-v-4acb2000]::placeholder,
+.jbg textarea[data-v-4acb2000]::placeholder,
+.jbg select[data-v-4acb2000]::placeholder {
     color: var(--textSecondary)
 }
 
-.jbg input[data-v-43acb4dc]:disabled,
-.jbg textarea[data-v-43acb4dc]:disabled,
-.jbg select[data-v-43acb4dc]:disabled {
+.jbg input[data-v-4acb2000]:disabled,
+.jbg textarea[data-v-4acb2000]:disabled,
+.jbg select[data-v-4acb2000]:disabled {
     background: var(--inputPrimary);
     color: var(--textSecondary);
     cursor: not-allowed;
     user-select: none
 }
 
-.jbg textarea[data-v-43acb4dc] {
+.jbg textarea[data-v-4acb2000] {
     height: auto;
     padding: 12px;
     font-size: 14px
 }
 
-.jbg .select[data-v-43acb4dc] {
+.jbg .select[data-v-4acb2000] {
     position: relative
 }
 
-.jbg .select.disabled[data-v-43acb4dc]:after {
+.jbg .select.disabled[data-v-4acb2000]:after {
     display: none
 }
 
-.jbg .select[data-v-43acb4dc]:after {
+.jbg .select[data-v-4acb2000]:after {
     content: "\25bc";
     position: absolute;
     top: 11px;
@@ -3065,7 +3065,7 @@ hr[data-v-f058cb4c] {
     font-size: 12px
 }
 
-.jbg select[data-v-43acb4dc] {
+.jbg select[data-v-4acb2000] {
     cursor: inherit;
     appearance: none;
     height: auto;
@@ -3073,49 +3073,49 @@ hr[data-v-f058cb4c] {
     -webkit-appearance: none
 }
 
-.jbg .loading[data-v-43acb4dc],
-.jbg .loading[data-v-43acb4dc]:before,
-.jbg .loading[data-v-43acb4dc]:after {
+.jbg .loading[data-v-4acb2000],
+.jbg .loading[data-v-4acb2000]:before,
+.jbg .loading[data-v-4acb2000]:after {
     width: 12px;
     height: 12px;
     border: 2px solid #0E167D;
     border-radius: 50%;
     background: #4254F4;
     animation-fill-mode: both;
-    animation: loading-43acb4dc 1.5s infinite ease-in-out
+    animation: loading-4acb2000 1.5s infinite ease-in-out
 }
 
-.jbg .loading[data-v-43acb4dc] {
+.jbg .loading[data-v-4acb2000] {
     position: relative;
     margin: 18px auto;
     animation-delay: -.25s
 }
 
-.jbg .loading[data-v-43acb4dc]:before,
-.jbg .loading[data-v-43acb4dc]:after {
+.jbg .loading[data-v-4acb2000]:before,
+.jbg .loading[data-v-4acb2000]:after {
     content: "";
     position: absolute;
     top: -2px
 }
 
-.jbg .loading[data-v-43acb4dc]:before {
+.jbg .loading[data-v-4acb2000]:before {
     left: -22px;
     animation-delay: -.5s
 }
 
-.jbg .loading[data-v-43acb4dc]:after {
+.jbg .loading[data-v-4acb2000]:after {
     left: 18px
 }
 
-.jbg .disabled.loading[data-v-43acb4dc],
-.jbg .disabled.loading[data-v-43acb4dc]:before,
-.jbg .disabled.loading[data-v-43acb4dc]:after {
+.jbg .disabled.loading[data-v-4acb2000],
+.jbg .disabled.loading[data-v-4acb2000]:before,
+.jbg .disabled.loading[data-v-4acb2000]:after {
     border: 2px solid var(--textSecondary);
     background: var(--backgroundSecondary);
-    animation-name: loading-disabled-43acb4dc
+    animation-name: loading-disabled-4acb2000
 }
 
-@keyframes loading-43acb4dc {
+@keyframes loading-4acb2000 {
 
     0%,
     20%,
@@ -3129,7 +3129,7 @@ hr[data-v-f058cb4c] {
     }
 }
 
-@keyframes loading-disabled-43acb4dc {
+@keyframes loading-disabled-4acb2000 {
 
     0%,
     20%,
@@ -3143,8 +3143,8 @@ hr[data-v-f058cb4c] {
     }
 }
 
-label .status[data-v-43acb4dc],
-label .date[data-v-43acb4dc] {
+label .status[data-v-4acb2000],
+label .date[data-v-4acb2000] {
     float: right;
     font-size: 14px;
     font-weight: 400;
@@ -3152,29 +3152,29 @@ label .date[data-v-43acb4dc] {
     color: var(--textSecondary)
 }
 
-label .date[data-v-43acb4dc] {
+label .date[data-v-4acb2000] {
     padding-top: 4px;
     font-size: 12px
 }
 
-label .remaining[data-v-43acb4dc] {
+label .remaining[data-v-4acb2000] {
     float: right
 }
 
-.warnings[data-v-43acb4dc] {
+.warnings[data-v-4acb2000] {
     padding: 0 10px 15px
 }
 
-.warnings p[data-v-43acb4dc] {
+.warnings p[data-v-4acb2000] {
     font-size: 11px;
     text-align: center
 }
 
-.select select.no-selection[data-v-43acb4dc] {
+.select select.no-selection[data-v-4acb2000] {
     color: var(--textSecondary)
 }
 
-.select .details[data-v-43acb4dc] {
+.select .details[data-v-4acb2000] {
     position: absolute;
     top: 10px;
     right: 30px;
@@ -3183,13 +3183,13 @@ label .remaining[data-v-43acb4dc] {
     font-weight: 400
 }
 
-.tos[data-v-43acb4dc] {
+.tos[data-v-4acb2000] {
     font-size: 12px;
     text-align: center;
     color: var(--textSecondary)
 }
 
-.tos[data-v-43acb4dc] a {
+.tos[data-v-4acb2000] a {
     color: var(--accent);
     text-decoration: none
 }
