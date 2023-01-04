@@ -1626,7 +1626,7 @@ hr[data-v-a7272d53] {
     }
 }
 
-.jbg.schemable.theme-dark[data-v-fdbdeb06] {
+.jbg.schemable.theme-dark[data-v-adb60058] {
     --accent: #4254F4;
     --alert: #ce4949;
     --shadows: rgb(4, 9, 14, .5);
@@ -1641,7 +1641,7 @@ hr[data-v-a7272d53] {
 }
 
 @media (prefers-color-scheme: dark) {
-    .jbg.schemable.theme-device[data-v-fdbdeb06] {
+    .jbg.schemable.theme-device[data-v-adb60058] {
         --accent: #4254F4;
         --alert: #ce4949;
         --shadows: rgb(4, 9, 14, .5);
@@ -1656,7 +1656,7 @@ hr[data-v-a7272d53] {
     }
 }
 
-.jbg[data-v-fdbdeb06] {
+.jbg[data-v-adb60058] {
     --accent: #4254F4;
     --alert: #cf2929;
     --shadows: rgba(128, 128, 128, .4);
@@ -1674,16 +1674,16 @@ hr[data-v-a7272d53] {
     color: var(--textPrimary)
 }
 
-.jbg a[data-v-fdbdeb06] {
+.jbg a[data-v-adb60058] {
     color: var(--accent);
     text-decoration: none
 }
 
-.jbg h1[data-v-fdbdeb06] {
+.jbg h1[data-v-adb60058] {
     font-size: 2em
 }
 
-.jbg button[data-v-fdbdeb06] {
+.jbg button[data-v-adb60058] {
     cursor: pointer;
     height: 48px;
     width: calc(100% - 50px);
@@ -1701,32 +1701,32 @@ hr[data-v-a7272d53] {
     transition: color .5s, background-position .5s, box-shadow .5s
 }
 
-.jbg button .loading[data-v-fdbdeb06],
-.jbg button.connecting span[data-v-fdbdeb06] {
+.jbg button .loading[data-v-adb60058],
+.jbg button.connecting span[data-v-adb60058] {
     display: none
 }
 
-.jbg button.connecting .loading[data-v-fdbdeb06] {
+.jbg button.connecting .loading[data-v-adb60058] {
     display: block
 }
 
-.jbg button.cancel[data-v-fdbdeb06] {
+.jbg button.cancel[data-v-adb60058] {
     background-color: #ff0;
     box-shadow: 0 5px 0 0 var(--shadows)
 }
 
-.jbg button[data-v-fdbdeb06]:disabled {
+.jbg button[data-v-adb60058]:disabled {
     background: var(--inputPrimary);
     color: var(--textPrimary);
     box-shadow: 0 0 0 0 var(--shadows)
 }
 
-.jbg form[data-v-fdbdeb06] {
+.jbg form[data-v-adb60058] {
     margin: 0 auto 5px;
     padding: 70px 15px 0
 }
 
-.jbg label[data-v-fdbdeb06] {
+.jbg label[data-v-adb60058] {
     display: inline-block;
     width: 100%;
     margin-bottom: 5px;
@@ -1735,9 +1735,9 @@ hr[data-v-a7272d53] {
     font-size: 17px
 }
 
-.jbg input[data-v-fdbdeb06],
-.jbg textarea[data-v-fdbdeb06],
-.jbg select[data-v-fdbdeb06] {
+.jbg input[data-v-adb60058],
+.jbg textarea[data-v-adb60058],
+.jbg select[data-v-adb60058] {
     width: 100%;
     height: 34px;
     margin-bottom: 15px;
@@ -1751,36 +1751,36 @@ hr[data-v-a7272d53] {
     text-transform: uppercase
 }
 
-.jbg input[data-v-fdbdeb06]::placeholder,
-.jbg textarea[data-v-fdbdeb06]::placeholder,
-.jbg select[data-v-fdbdeb06]::placeholder {
+.jbg input[data-v-adb60058]::placeholder,
+.jbg textarea[data-v-adb60058]::placeholder,
+.jbg select[data-v-adb60058]::placeholder {
     color: var(--textSecondary)
 }
 
-.jbg input[data-v-fdbdeb06]:disabled,
-.jbg textarea[data-v-fdbdeb06]:disabled,
-.jbg select[data-v-fdbdeb06]:disabled {
+.jbg input[data-v-adb60058]:disabled,
+.jbg textarea[data-v-adb60058]:disabled,
+.jbg select[data-v-adb60058]:disabled {
     background: var(--inputPrimary);
     color: var(--textSecondary);
     cursor: not-allowed;
     user-select: none
 }
 
-.jbg textarea[data-v-fdbdeb06] {
+.jbg textarea[data-v-adb60058] {
     height: auto;
     padding: 12px;
     font-size: 14px
 }
 
-.jbg .select[data-v-fdbdeb06] {
+.jbg .select[data-v-adb60058] {
     position: relative
 }
 
-.jbg .select.disabled[data-v-fdbdeb06]:after {
+.jbg .select.disabled[data-v-adb60058]:after {
     display: none
 }
 
-.jbg .select[data-v-fdbdeb06]:after {
+.jbg .select[data-v-adb60058]:after {
     content: "\25bc";
     position: absolute;
     top: 11px;
@@ -1788,7 +1788,7 @@ hr[data-v-a7272d53] {
     font-size: 12px
 }
 
-.jbg select[data-v-fdbdeb06] {
+.jbg select[data-v-adb60058] {
     cursor: inherit;
     appearance: none;
     height: auto;
@@ -1796,49 +1796,49 @@ hr[data-v-a7272d53] {
     -webkit-appearance: none
 }
 
-.jbg .loading[data-v-fdbdeb06],
-.jbg .loading[data-v-fdbdeb06]:before,
-.jbg .loading[data-v-fdbdeb06]:after {
+.jbg .loading[data-v-adb60058],
+.jbg .loading[data-v-adb60058]:before,
+.jbg .loading[data-v-adb60058]:after {
     width: 12px;
     height: 12px;
     border: 2px solid #0E167D;
     border-radius: 50%;
     background: #4254F4;
     animation-fill-mode: both;
-    animation: loading-fdbdeb06 1.5s infinite ease-in-out
+    animation: loading-adb60058 1.5s infinite ease-in-out
 }
 
-.jbg .loading[data-v-fdbdeb06] {
+.jbg .loading[data-v-adb60058] {
     position: relative;
     margin: 18px auto;
     animation-delay: -.25s
 }
 
-.jbg .loading[data-v-fdbdeb06]:before,
-.jbg .loading[data-v-fdbdeb06]:after {
+.jbg .loading[data-v-adb60058]:before,
+.jbg .loading[data-v-adb60058]:after {
     content: "";
     position: absolute;
     top: -2px
 }
 
-.jbg .loading[data-v-fdbdeb06]:before {
+.jbg .loading[data-v-adb60058]:before {
     left: -22px;
     animation-delay: -.5s
 }
 
-.jbg .loading[data-v-fdbdeb06]:after {
+.jbg .loading[data-v-adb60058]:after {
     left: 18px
 }
 
-.jbg .disabled.loading[data-v-fdbdeb06],
-.jbg .disabled.loading[data-v-fdbdeb06]:before,
-.jbg .disabled.loading[data-v-fdbdeb06]:after {
+.jbg .disabled.loading[data-v-adb60058],
+.jbg .disabled.loading[data-v-adb60058]:before,
+.jbg .disabled.loading[data-v-adb60058]:after {
     border: 2px solid var(--textSecondary);
     background: var(--backgroundSecondary);
-    animation-name: loading-disabled-fdbdeb06
+    animation-name: loading-disabled-adb60058
 }
 
-@keyframes loading-fdbdeb06 {
+@keyframes loading-adb60058 {
 
     0%,
     20%,
@@ -1852,7 +1852,7 @@ hr[data-v-a7272d53] {
     }
 }
 
-@keyframes loading-disabled-fdbdeb06 {
+@keyframes loading-disabled-adb60058 {
 
     0%,
     20%,
@@ -1866,7 +1866,12 @@ hr[data-v-a7272d53] {
     }
 }
 
-button.twitch[data-v-fdbdeb06] {
+button.audience[data-v-adb60058],
+button.twitch[data-v-adb60058] {
+    line-height: 1
+}
+
+button.twitch[data-v-adb60058] {
     background: #64449B
 }
 
@@ -3366,17 +3371,18 @@ div.item .display[data-v-4095f63e] {
     transform: scale(.95)
 }
 
-form[data-v-e6bb3764] {
+form[data-v-1b6f3c82] {
     position: relative
 }
 
-.error-text[data-v-e6bb3764] {
+.error-text[data-v-1b6f3c82] {
     float: left;
-    font-size: 18px;
+    max-width: 50%;
+    font-size: 28px;
     color: #741219
 }
 
-.counter[data-v-e6bb3764] {
+.counter[data-v-1b6f3c82] {
     position: absolute;
     top: 24px;
     right: 2px;
