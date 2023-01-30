@@ -10377,24 +10377,24 @@ ${r.message}`,
         }
     }
     const R4 = {
-            BACK: "Back",
-            CANCEL: "Cancel",
-            CLOSE: "Close",
-            CONFIRM: "Confirm",
-            CREATE: "Create",
-            DELETE: "Delete",
-            DONE: "Done",
-            EDIT: "Edit",
+            BACK: "Atrás",
+            CANCEL: "Cancelar",
+            CLOSE: "Cerrar",
+            CONFIRM: "Confirmar",
+            CREATE: "Crear",
+            DELETE: "Borrar",
+            DONE: "Hecho",
+            EDIT: "Editar",
             OK: "OK",
             NO: "No",
-            PLAY: "Play",
-            PUBLISH: "Publish",
-            REMOVE: "Remove",
-            RESET: "Reset",
-            SUBMIT: "Submit",
-            TRY_AGAIN: "Try Again",
-            UNDO: "Undo",
-            YES: "Yes"
+            PLAY: "Jugar",
+            PUBLISH: "Publicar",
+            REMOVE: "Remover",
+            RESET: "Reiniciar",
+            SUBMIT: "Enviar",
+            TRY_AGAIN: "Intentarlo de nuevo",
+            UNDO: "Deshacer",
+            YES: "Sí"
         },
         L4 = {
             UGC: {
@@ -10405,42 +10405,42 @@ ${r.message}`,
             }
         },
         k4 = {
-            DISCONNECTED: "You have been disconnected.",
-            DRAWING_NOTHING: "You have to draw something!",
-            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-            ROOM_DESTROYED: "Thanks for playing!",
-            ROOM_DISCONNECTED: "Disconnected",
-            TEXT_NAUGHTY: "I\u2019m afraid you can\u2019t write that. Please be respectful of other players.",
-            TEXT_NOTHING: "You can\u2019t enter nothing!",
+            DISCONNECTED: "Has sido desconectado.",
+            DRAWING_NOTHING: "¡Tienes que dibujar algo!",
+            PLAYER_KICKED: "Has sido echado de la partida por un moderador.",
+            ROOM_DESTROYED: "¡Gracias por jugar!",
+            ROOM_DISCONNECTED: "Desconectado",
+            TEXT_NAUGHTY: "Me temo que no puedes escribir eso. Por favor sé respetuoso con otros jugadores.",
+            TEXT_NOTHING: "¡No puedes dejarlo en blanco!",
             TITLE: "Error"
         },
-        P4 = "LOADING",
+        P4 = "CARGANDO",
         x4 = {
-            JOINED_COUNT: "{count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "{count} de {maxPlayers} jugadores se unieron",
+            PLAYERS_NEEDED: "Se necesita 1 jugador para empezar | Se necesitan {count} jugadores para empezar",
+            WAITING_FOR_VIP: "Esperando a que {name} empiece la partida",
+            WAITING_FOR_GAMEPAD: "Esperando a que empiece la partida",
+            GAME_STARTING: "La partida está empezando",
+            BUTTON_START: "Pulsa para empezar",
+            BUTTON_CANCEL: "Pulsa para cancelar"
         },
         D4 = {
-            GALLERY_LINK: "Visit the Gallery",
-            PLAY_AGAIN: "Play again?",
-            BUTTON_SAME_PLAYERS: "Same Players",
-            BUTTON_NEW_PLAYERS: "New Players"
+            GALLERY_LINK: "Visita la galería",
+            PLAY_AGAIN: "¿Jugar otra vez?",
+            BUTTON_SAME_PLAYERS: "Mismos jugadores",
+            BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
         M4 = {
-            AND: "AND",
-            OR: "OR"
+            AND: "Y",
+            OR: "O"
         },
         U4 = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let\u2019s Go!"
+            BUTTON_SKIP: "Omitir",
+            BUTTON_NEXT: "Siguiente",
+            BUTTON_DONE: "¡Vamos!"
         },
         F4 = {
-            NAME: "AUDIENCE"
+            NAME: "PÚBLICO"
         },
         B4 = {
             EPISODE_REPORT: "Report Episode",
@@ -10474,21 +10474,21 @@ ${r.message}`,
         },
         j4 = {
             BROADCASTER: {
-                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-                WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
+                SUBTEXT: "Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.",
+                WARNING: "ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA"
             },
             RECONNECTED: {
-                TEXT: "RECONNECTED",
-                SUBTEXT: "Have fun!"
+                TEXT: "RECONECTADO",
+                SUBTEXT: "¡Diviértete!"
             },
             RECONNECTING: {
                 CONTROLLER: {
-                    TEXT: "CONNECTION INTERRUPTED",
-                    SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
+                    TEXT: "CONEXIÓN INTERRUMPIDA",
+                    SUBTEXT: "Intentando reconectar ({attempt} de 5)"
                 },
                 GAME: {
-                    TEXT: "GAME CONNECTION INTERRUPTED",
-                    SUBTEXT: "Please wait while we attempt to reconnect"
+                    TEXT: "CONEXIÓN DEL JUEGO INTERRUMPIDA",
+                    SUBTEXT: "Por favor espera mientras intentamos reconectarte"
                 }
             }
         },
@@ -15750,7 +15750,7 @@ function print() { __p += __j.call(arguments, '') }
             style: nl(e.stageDimensions)
         }, null, 4), z("button", {
             onClick: t[0] || (t[0] = Cr((...u) => e.onSubmitClick && e.onSubmitClick(...u), ["prevent"]))
-        }, De(e.player.submitText || "SUBMIT"), 1)])], 512)])
+        }, De(e.player.submitText || "ENVIAR"), 1)])], 512)])
     }
     const lG = He(nG, [
             ["render", cG]
@@ -16121,7 +16121,7 @@ function print() { __p += __j.call(arguments, '') }
         }, null, 40, PG)), qe(z("button", {
             onClick: t[2] || (t[2] = Cr((...u) => e.onSubmitClick && e.onSubmitClick(...u), ["prevent"]))
         }, null, 512), [
-            [c, e.player.submitText || "SUBMIT"]
+            [c, e.player.submitText || "ENVIAR"]
         ])])])
     }
     const DG = He($G, [
@@ -16218,7 +16218,7 @@ function print() { __p += __j.call(arguments, '') }
         }, null, 40, WG))], 64))), 256)), qe(z("button", {
             onClick: t[0] || (t[0] = Cr((...u) => e.onSubmitClick && e.onSubmitClick(...u), ["prevent"]))
         }, null, 512), [
-            [c, e.player.submitText || "SUBMIT"]
+            [c, e.player.submitText || "ENVIAR"]
         ])])])
     }
     const HG = He(MG, [
@@ -25063,60 +25063,60 @@ ${t}`
         },
         Wte = {
             INSTRUCTION: {
-                ORDERED: "Choose the door you think is {rank}",
-                UNORDERED: "Choose all {amount} correct doors"
+                ORDERED: "Elige la puerta que crees que es la {rank}",
+                UNORDERED: "Elige las {amount} puertas correctas"
             },
-            REMAINING: "Remaining Choices: {remaining}"
+            REMAINING: "Elecciones restantes: {remaining}"
         },
         Kte = {
-            CHOOSE_ONE: "Choose a door",
-            CHOOSE_THIS: "Choose this door"
+            CHOOSE_ONE: "Elige una puerta",
+            CHOOSE_THIS: "Elegir esta puerta"
         },
         Hte = {
-            FILTER_ERROR: "That\u2019s not allowed, enter something else!",
+            FILTER_ERROR: "Eso no está permitido, ¡ingresa otra cosa!",
             INSTRUCTION: {
-                AVATAR: "Pick your avatar",
-                NAME_TEAM: "Suggest a team name",
-                RANK_TEAM: "Rank your favorite team names"
+                AVATAR: "Elige tu avatar",
+                NAME_TEAM: "Sugiere un nombre de equipo",
+                RANK_TEAM: "Clasifica tus nombres de equipo favoritos"
             }
         },
-        Vte = "No torches",
+        Vte = "Sin antorchas",
         qte = {
-            CONFIRM: "Yeah, yeah, I got it",
+            CONFIRM: "Sí, sí, entiendo",
             SUBTEXT: {
-                ATTENTION: "[b]YOU MUST HAVE THE AUDIENCE ON TO PLAY![/b]",
-                BEST: "[b]BEST:[/b] Passwording the game and sharing the password with your desired team",
-                GOOD: "[b]ALMOST AS GOOD:[/b] Hiding the room code and setting a max player limit",
-                RECOMMEND: "We recommend the following settings to help create your desired team and audience.",
-                RESTART: "So, if you haven\u2019t done that, maybe restart the game?"
+                ATTENTION: "[b]¡DEBES TENER EL PÚBLICO ACTIVADO PARA JUGAR![/b]",
+                BEST: "[b]LO MEJOR:[/b] Ponerle contraseña a la partida y compartir la contraseña con tu equipo deseado",
+                GOOD: "[b]CASI IGUAL DE BUENO:[/b] Ocultar el código de sala y establecer un número máximo de jugadores",
+                RECOMMEND: "Recomendamos los siguientes ajustes para ayudar a crear tu equipo y púlbico deseados.",
+                RESTART: "Entonces, si no has hecho eso, ¿quizás reinicia la partida?"
             },
-            TEXT: "Welcome to Streamer Mode!"
+            TEXT: "¡Bienvenido al modo de Streamer!"
         },
         Yte = {
-            INSTRUCTION: "Remember your choices",
-            PICK_MORE: "Pick {amount} more"
+            INSTRUCTION: "Recuerda tus elecciones",
+            PICK_MORE: "Elige {amount} más"
         },
-        zte = "Switch teams",
+        zte = "Cambiar de equipo",
         Xte = "VS",
         Jte = {
             FINAL_CHANCE: {
-                BOTH: "If either team gets the next choice right, the game is over!",
-                CURRENT: "If their team gets their next choice right, the game is over!",
-                HEADER: "Elimination Moment",
-                RIVAL: "If your team gets your next choice right, the game is over!"
+                BOTH: "Si alguno de los equipos obtiene la siguiente opción correcta, ¡el juego termina!",
+                CURRENT: "Si su equipo acierta en su siguiente elección, ¡el juego termina!",
+                HEADER: "Momento de eliminación",
+                RIVAL: "Si tu equipo acierta en tu próxima elección, ¡el juego termina!"
             },
             LOSE: {
-                HEADER: "You\u2019re Trapped",
-                TEXT: ["Don\u2019t worry, apparently you were tasty.", "At least the other team is happy.", "Learn more about your friends next time.", "Still, you learned a lot about each other.", "It is pitch black. You are likely to be eaten by a grue.", "Even worse, you\u2019re damp.", "Theivery doesn\u2019t pay!", "It\u2019s okay, Laverne will keep you company.", "Enjoy the musty air.", "At least your team name was cool."]
+                HEADER: "No hay escapatoria",
+                TEXT: ["No te preocupes, aparentemente sabías muy rico.", "Al menos el otro equipo está contento.", "Aprende más de tus amigos la próxima vez.", "Aún así, aprendieron mucho el uno del otro.", "Está oscuro como boca de lobo. Es probable que te coma un grue.", "Peor aún, te mojaste.", "¡El robo no paga!", "Está bien, Laverna te hará compañía.", "Disfruta del aire mohoso.", "Al menos el nombre de tu equipo era genial."]
             },
-            SKIP_TUTORIALS: "Skip Tutorials",
+            SKIP_TUTORIALS: "Omitir tutoriales",
             UP_NEXT: {
-                HEADER: "You\u2019re Up Next",
-                TEXT: ["Get ready! You\u2019re choosing next.", "Pay attention because you\u2019re picking the next door.", "After this choice, it\u2019s your turn\u2026 so hope they fail!"]
+                HEADER: "Tú sigues",
+                TEXT: ["¡Prepárate! Te toca elegir después.", "Presta atención porque elegirás la siguiente puerta.", "Después de esta elección, es tu turno\u2026 ¡así que espera a que fracasen!"]
             },
             WIN: {
-                HEADER: "You Escaped",
-                TEXT: ["Congratulations on a job well done!", "Teamwork made this dream work.", "Don\u2019t spend all that gold you stole earlier in one place.", "Enjoy the fresh air.", "Don\u2019t forget to rate your stay!", "I\u2019m sure the other team is just fine.", "You picked your friends\u2019 knows!", "Looking forward to your next visit.", "The real treasure was the friends we lost to the depths of this mine.", "Everyone is proud of you."]
+                HEADER: "Escapaste",
+                TEXT: ["¡Felicitaciones por un trabajo bien hecho!", "El trabajo en equipo hizo que este sueño funcionara.", "No gastes todo el oro que robaste antes en un solo lugar.", "Disfruta del aire fresco.", "¡No olvides calificar tu estadía!", "Estoy segura de que el otro equipo está bien.", "¡Escogiste lo que saben tus amigos!", "Espero tu próxima visita.", "El verdadero tesoro fueron los amigos que perdimos en las profundidades de esta mina.", "Todos están orgullosos de ti."]
             }
         },
         Zte = {
@@ -25245,7 +25245,7 @@ ${t}`
             ["render", $re]
         ]),
         AS = e => {
-            const t = ["th", "st", "nd", "rd"],
+            const t = ["ta", "ra", "da", "ra"],
                 r = e % 100;
             return `${t[(r-20)%10]||t[r]||t[0]}`
         },
@@ -25721,72 +25721,72 @@ ${t}`
                 return {
                     avatarImages: {
                         0: {
-                            alt: "armored adventurer with sword",
+                            alt: "aventurero blindado con espada",
                             off: new URL("main/pp8/survey-bomb/assets/a8c3a864.png", self.location).href,
                             on: new URL("main/pp8/survey-bomb/assets/5d15f0d1.png", self.location).href
                         },
                         1: {
-                            alt: "raven with large beak",
+                            alt: "cuervo con pico grande",
                             off: new URL("main/pp8/survey-bomb/assets/b3cc8796.png", self.location).href,
                             on: new URL("main/pp8/survey-bomb/assets/53768559.png", self.location).href
                         },
                         2: {
-                            alt: "rogue with dagger and feather cap",
+                            alt: "pícaro con daga y gorro de plumas",
                             off: new URL("main/pp8/survey-bomb/assets/8b8859b6.png", self.location).href,
                             on: new URL("main/pp8/survey-bomb/assets/51d034a9.png", self.location).href
                         },
                         3: {
-                            alt: "hooded thief flipping a coin",
+                            alt: "ladrón encapuchado tirando una moneda",
                             off: new URL("main/pp8/survey-bomb/assets/8c4e5c69.png", self.location).href,
                             on: new URL("main/pp8/survey-bomb/assets/b9a7e9a5.png", self.location).href
                         },
                         4: {
-                            alt: "snail with pickaxe lashed to its shell",
+                            alt: "caracol con pico atado a su caparazón",
                             off: new URL("main/pp8/survey-bomb/assets/5eeccce0.png", self.location).href,
                             on: new URL("main/pp8/survey-bomb/assets/ba84c99e.png", self.location).href
                         },
                         5: {
-                            alt: "royalty covered by long hair while holding gem",
+                            alt: "realeza cubierta por cabello largo mientras sostiene gema",
                             off: new URL("main/pp8/survey-bomb/assets/dc10f07a.png", self.location).href,
                             on: new URL("main/pp8/survey-bomb/assets/2bee22a7.png", self.location).href
                         },
                         6: {
-                            alt: "skull-faced miner wielding shovel",
+                            alt: "minero con cara de calavera empuñando una pala",
                             off: new URL("main/pp8/survey-bomb/assets/4c894246.png", self.location).href,
                             on: new URL("main/pp8/survey-bomb/assets/11762825.png", self.location).href
                         },
                         7: {
-                            alt: "cool kid with mace riding a turtle",
+                            alt: "niño genial con maza montando una tortuga",
                             off: new URL("main/pp8/survey-bomb/assets/c3f7575c.png", self.location).href,
                             on: new URL("main/pp8/survey-bomb/assets/7e72a908.png", self.location).href
                         },
                         8: {
-                            alt: "angry flower in a boot",
+                            alt: "flor enojada en una bota",
                             off: new URL("main/pp8/survey-bomb/assets/27bc4eb8.png", self.location).href,
                             on: new URL("main/pp8/survey-bomb/assets/0b736286.png", self.location).href
                         },
                         9: {
-                            alt: "broad mountaineer gnome with large bedroll",
+                            alt: "amplio gnomo montañero con gran saco de dormir",
                             off: new URL("main/pp8/survey-bomb/assets/311e8e8e.png", self.location).href,
                             on: new URL("main/pp8/survey-bomb/assets/d4fbb597.png", self.location).href
                         },
                         10: {
-                            alt: "short brooding gnome with very tall hat",
+                            alt: "gnomo melancólico bajo con sombrero muy alto",
                             off: new URL("main/pp8/survey-bomb/assets/ff043567.png", self.location).href,
                             on: new URL("main/pp8/survey-bomb/assets/7a01f477.png", self.location).href
                         },
                         11: {
-                            alt: "capped mushroom with legs",
+                            alt: "champiñón tapado con patas",
                             off: new URL("main/pp8/survey-bomb/assets/b5ce96a7.png", self.location).href,
                             on: new URL("main/pp8/survey-bomb/assets/cd733855.png", self.location).href
                         },
                         12: {
-                            alt: "determined underling holding a sack",
+                            alt: "subordinado determinado sosteniendo un saco",
                             off: new URL("main/pp8/survey-bomb/assets/9824e903.png", self.location).href,
                             on: new URL("main/pp8/survey-bomb/assets/80e2faa9.png", self.location).href
                         },
                         13: {
-                            alt: "frog knight",
+                            alt: "caballero rana",
                             off: new URL("main/pp8/survey-bomb/assets/4ba7fa02.png", self.location).href,
                             on: new URL("main/pp8/survey-bomb/assets/26546468.png", self.location).href
                         }
@@ -26239,7 +26239,7 @@ ${t}`
                 finalChanceMsg() {
                     const e = this.isTeamFinalChance(this.teamIndexes.current),
                         t = this.isTeamFinalChance(this.teamIndexes.rival);
-                    return e && t ? this.$t("WAITING.FINAL_CHANCE.BOTH") : t ? this.$t("WAITING.FINAL_CHANCE.RIVAL") : e ? this.$t("WAITING.FINAL_CHANCE.CURRENT") : "An unknown team may be doomed by the next choice!"
+                    return e && t ? this.$t("WAITING.FINAL_CHANCE.BOTH") : t ? this.$t("WAITING.FINAL_CHANCE.RIVAL") : e ? this.$t("WAITING.FINAL_CHANCE.CURRENT") : "¡Un equipo desconocido puede estar condenado por la próxima elección!"
                 },
                 hasTeamData() {
                     return !(!this.teams || !this.teams[this.teamIndexes.current] || !this.teams[this.teamIndexes.rival])
@@ -26585,7 +26585,7 @@ ${t}`
             data() {
                 return {
                     audienceInfo: {
-                        name: "AUDIENCE"
+                        name: "PÚBLICO"
                     }
                 }
             },

@@ -13160,7 +13160,7 @@ const f1 = `<form>\r
         <div class="inputGroup">\r
             <textarea id="input-text-textarea" rows="1" class="form-control jbg-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>\r
             <span class="inlineSubmit">\r
-                <button type="submit" class="btn btn-default inlineSubmitButton" type="button"><span class="inlineSubmitText">Send</span></button>\r
+                <button type="submit" class="btn btn-default inlineSubmitButton" type="button"><span class="inlineSubmitText">Enviar</span></button>\r
             </span>\r
             <span id="helpBlock2" class="help-block errorText"></span>\r
             <div class="charCountDisplay"><span class="charRemaining">70</span></div>\r
@@ -13238,7 +13238,7 @@ const f1 = `<form>\r
             ".inlineSubmitText": {
                 observe: "inlineSubmitText",
                 onGet(e) {
-                    return e !== void 0 ? e : "Send"
+                    return e !== void 0 ? e : "Enviar"
                 }
             },
             ".form-group": {
@@ -13876,7 +13876,7 @@ var Qu = {
                 denyButtonText: "No",
                 denyButtonAriaLabel: "",
                 denyButtonColor: void 0,
-                cancelButtonText: "Cancel",
+                cancelButtonText: "Cancelar",
                 cancelButtonAriaLabel: "",
                 cancelButtonColor: void 0,
                 buttonsStyling: !0,
@@ -15498,7 +15498,7 @@ const x1 = `<div class="canvasContainer">\r
                     this.currentStream = i, this.video.srcObject = i, await this.video.play(), this.gotDevices(o)
                 } catch (i) {
                     console.error(i), Ve.show("alert", {
-                        titleText: "Unable to Access Camera",
+                        titleText: "No se pudo acceder a la cámara",
                         text: `Looks like we don't have access to your device's camera. You can refresh and try again, or choose the ${e} option instead.`,
                         willClose: () => {
                             this.cameraAccessDenied()
@@ -15506,8 +15506,8 @@ const x1 = `<div class="canvasContainer">\r
                     })
                 }
             } else Ve.show("alert", {
-                titleText: "No Camera Access",
-                text: `It looks like camera access isn't available from this browser. Try the ${e} option instead.`,
+                titleText: "No hay acceso a la cámara",
+                text: `Parece que el acceso a la cámara no está disponible desde este navegador. Prueba la opción de ${t} en su lugar.`,
                 willClose: () => {
                     this.cameraAccessDenied()
                 }
@@ -15660,8 +15660,8 @@ const x1 = `<div class="canvasContainer">\r
                     <path d="M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
                 </svg>
             `,
-                cancelButton: "Cancel",
-                confirmButton: "Confirm"
+                cancelButton: "Cancelar",
+                confirmButton: "Confirmar"
             }
         }
     }),
@@ -16282,9 +16282,9 @@ const D1 = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
         <div id="buttons" class="buttons"></div>\r
         <div id="post-sketchpad" class="post-sketchpad">\r
             <div id="submit">\r
-                <button id='submitdrawing' class="button submitDrawing">Submit</button><br/>\r
+                <button id='submitdrawing' class="button submitDrawing">Enviar</button><br/>\r
             </div>\r
-            <button id='censorOptions' class='button'>Censor Options</button>\r
+            <button id='censorOptions' class='button'>Opciones de censura</button>\r
             <div class="footer"></div>\r
         </div>\r
         </div>\r
@@ -16318,9 +16318,9 @@ const D1 = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             disabled: !1,
             debug: !1,
             strings: {
-                drawing_empty: "You must draw something!",
-                submit: "submit",
-                ERROR_REJECTED_OBJECT: "That's not allowed, enter something else!"
+                drawing_empty: "¡Tienes que dibujar algo!",
+                submit: "enviar",
+                ERROR_REJECTED_OBJECT: "Eso no está permitido, ¡ingresa otra cosa!"
             }
         }
     }),
@@ -16362,7 +16362,7 @@ const D1 = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
                 visible: !0,
                 updateView: !0,
                 onGet(e) {
-                    return e[0] || e[1] ? !1 : e[2] === void 0 ? "" : e[2].submit || "Submit"
+                    return e[0] || e[1] ? !1 : e[2] === void 0 ? "" : e[2].submit || "Enviar"
                 }
             }
         },
@@ -16522,7 +16522,7 @@ const D1 = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
         defaults: {
             state: "EnterSingleText",
             actions: [{
-                text: "submit",
+                text: "enviar",
                 action: "submit"
             }],
             allowEmpty: !1,
@@ -16539,11 +16539,11 @@ const D1 = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             autocapitalize: !1,
             className: "",
             inlineSubmit: !1,
-            inlineSubmitText: "Submit",
+            inlineSubmitText: "Enviar",
             error: "",
             strings: {
-                ERROR_NOTHING_ENTERED: "You need to enter something!",
-                ERROR_REJECTED_TEXT: "That's not allowed, enter something else! (You can change the level of filtering in the game's settings menu)"
+                ERROR_NOTHING_ENTERED: "¡Tienes que ingresar algo!",
+                ERROR_REJECTED_TEXT: "¡Eso no está permitido, ingresa otra cosa! (Puedes cambiar el nivel del filtro en el menú de ajustes del juego)"
             }
         }
     }),
@@ -16613,7 +16613,7 @@ const D1 = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             }), this.inputComponent = this.inputComponent || new eo({
                 model: new we.Model({})
             }), this.buttonsCollection = this.buttonsCollection || new we.Collection([{
-                text: "submit"
+                text: "enviar"
             }]), this.buttonsComponent = this.buttonsComponent || new Ai({
                 block: !0,
                 collection: this.buttonsCollection
@@ -16626,7 +16626,7 @@ const D1 = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             })), this.promptComponent.model.clear({
                 silent: !0
             }).set(this.model.get("prompt")), this.inputComponent.model.set(this.model.attributes), this.buttonsComponent.options.block = this.model.get("block"), this.buttonsCollection.set(this.model.get("actions") || [{
-                text: "submit",
+                text: "enviar",
                 action: "submit"
             }]), this.model.get("entryId") && this.model.get("entryId") !== this.currentEntry && (this.inputComponent.clearInput(), this.currentEntry = this.model.get("entryId")), this.$el.find(".enterSingleTextFieldset").prop("disabled", !1), this.$el.find("textarea").focus(), this.stickit(), this.model.get("autoSubmit") && this.shouldSubmit && this.onChildviewInputSubmit()
         },
@@ -16769,7 +16769,7 @@ const lc = Ne.View.extend({
     },
     showTwitchBroadcasterDialog(e) {
         let t = `<div class='icon-${this.client.roles.broadcaster.platform}'>${this.client.roles.broadcaster.name}</div>`;
-        t += "<div class='success'>You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.</div>", this.lacksAudience ? t += "<div class='warning'>THIS GAME DOESN'T HAVE AN AUDIENCE FEATURE</div>" : this.client.roomInfo.audienceEnabled || (t += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), Ve.show("custom", {
+        t += "<div class='success'>Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.</div>", this.lacksAudience ? t += "<div class='warning'>ESTE JUEGO NO TIENE FUNCIÓN DE PÚBLICO</div>" : this.client.roomInfo.audienceEnabled || (t += "<div class='warning'>ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA</div>"), Ve.show("custom", {
             html: t,
             position: "bottom",
             timer: e,
@@ -16808,8 +16808,8 @@ const lc = Ne.View.extend({
     },
     onRoomWasDestroyed() {
         yn.remove("roomCode"), yn.remove("reconnect"), Ve.show("error", {
-            titleText: "Disconnected",
-            text: "Thanks for playing!",
+            titleText: "Desconectado",
+            text: "¡Gracias por jugar!",
             willClose: () => {
                 window.location.reload(!0)
             }
@@ -16817,8 +16817,8 @@ const lc = Ne.View.extend({
     },
     onDisconnected() {
         Ve.show("error", {
-            titleText: "Disconnected",
-            text: "You have been disconnected.",
+            titleText: "Desconectado",
+            text: "Has sido desconectado.",
             willClose: () => {
                 window.location.reload(!0)
             }
@@ -16880,7 +16880,7 @@ const z1 = `<div id="controller" class="state-controller controller-content">
         <div id="characters" class="charactersContainer"></div>
     </div>
     <div id="artifactId" class="artifactContainer text">
-        <a id="artifactLink" aria-label="Visit the Gallery" class="artifactLink" target="_blank">
+        <a id="artifactLink" aria-label="Visita la galería" class="artifactLink" target="_blank">
             <button id="artifactButton" class="artifactButton"></button>
         </a>
     </div>
@@ -16914,28 +16914,28 @@ const z1 = `<div id="controller" class="state-controller controller-content">
             formattedActiveContentId: null,
             isLocal: !1,
             strings: {
-                wait: "Sit back and relax!",
-                vip_waiting: "Waiting for all players to join",
-                vip_canStart: "Press this button when everybody has joined",
-                vip_cancel: "Press this button to cancel game start",
-                vip_postgame: "What would you like to do now?",
-                vip_episodes_menu: "Episodes Menu",
-                vip_episodes_unload: "Unload Episode",
-                vip_episodes_report: "Report Episode",
-                vip_episodes_warning: "Warning: user generated content is not rated",
-                vip_episodes_load: "Load an episode by id:",
-                vip_episodes_select: "Or select an episode:",
-                vip_episodes_back: "Back",
-                vip_episodes_submit: "SUBMIT",
-                vip_episodes_view_author: "View Author",
-                button_start: "Everybody's In",
-                button_cancel: "Cancel",
-                button_changename: "Change Name",
-                button_sameplayers: "Same Players",
-                button_newplayers: "New Players",
-                prompt_entername: "Enter your name",
-                prompt_choosecharacter: "Select your character",
-                button_censorOptions: "Censor Options",
+                wait: "¡Siéntate y relájate!",
+                vip_waiting: "Esperando a que todos los jugadores se unan",
+                vip_canStart: "Pulsa este botón cuando todos se hayan unido",
+                vip_cancel: "Pulsa este botón para cancelar el inicio de la partida",
+                vip_postgame: "¿Qué quieres hacer ahora?",
+                vip_episodes_menu: "Menú de episodios",
+                vip_episodes_unload: "Retirar episodio",
+                vip_episodes_report: "Reportar episodio",
+                vip_episodes_warning: "Aviso: El contenido de los usuarios no tiene clasificación de edad",
+                vip_episodes_load: "Cargar un episodio por id:",
+                vip_episodes_select: "O selecciona un episodio:",
+                vip_episodes_back: "Atrás",
+                vip_episodes_submit: "ENVIAR",
+                vip_episodes_view_author: "Ver autor",
+                button_start: "Estamos todos",
+                button_cancel: "Cancelar",
+                button_changename: "Cambiar el nombre",
+                button_sameplayers: "Mismos jugadores",
+                button_newplayers: "Nuevos jugadores",
+                prompt_entername: "Ingresa tu nombre",
+                prompt_choosecharacter: "Selecciona tu personaje",
+                button_censorOptions: "Opciones de censura",
                 censor_prompt: ""
             }
         }
@@ -17160,7 +17160,7 @@ const z1 = `<div id="controller" class="state-controller controller-content">
                             inputAttributes: {
                                 maxlength: 12
                             },
-                            inputValidator: f => f ? f.length > 12 ? "Limit 12 characters" : null : "You need to write something!"
+                            inputValidator: f => f ? f.length > 12 ? "Límite de 12 caracteres" : null : "¡Tienes que escribir algo!"
                         });
                         if (o.dismiss) return;
                         this.triggerMethod("client:message", {
@@ -17284,7 +17284,7 @@ const z1 = `<div id="controller" class="state-controller controller-content">
 <div id="message" class="message"><h2 class="messageText"></h2></div>
 <div id="action" class="action"></div>
 <div id="artifactId" class="artifactContainer text">
-    <a id="artifactLink" aria-label="Visit the Gallery" class="artifactLink" target="_blank">
+    <a id="artifactLink" aria-label="Visita la galería" class="artifactLink" target="_blank">
         <button id="artifactButton" class="artifactButton"></button>
     </a>
 </div>
@@ -17372,10 +17372,10 @@ const z1 = `<div id="controller" class="state-controller controller-content">
             LANGUAGE_NAME: "English",
             SUPPORTED_LANGUAGES: ["English", "Fran\xE7ais", "Italiano", "Deutsch", "Espa\xF1ol"],
             SUPPORTED_LOCALES: ["en", "fr", "it", "de", "es"],
-            LANGUAGE: "Language",
-            LOGIN: "Login",
-            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Disconnected",
-            STRING_ERROR_SERVER_ROOM_DESTROYED: "Thanks for playing!"
+            LANGUAGE: "Idioma",
+            LOGIN: "Iniciar sesi\xF3n",
+            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Desconectado",
+            STRING_ERROR_SERVER_ROOM_DESTROYED: "¡Gracias por jugar!"
         },
         fr: {
             LANGUAGE_NAME: "Fran\xE7ais",
@@ -17495,10 +17495,10 @@ const z1 = `<div id="controller" class="state-controller controller-content">
             announcePrompt: !1,
             countGroupName: null,
             strings: {
-                your_choice: "Thank you. Your choice: ",
-                censor_prompt: "Censor this?",
-                censor_confirm: "Yes, Censor!",
-                censor_cancel: "No!"
+                your_choice: "Gracias. Tu elección: ",
+                censor_prompt: "¿Censurar esto?",
+                censor_confirm: "¡Sí, censurarlo!",
+                censor_cancel: "¡No!"
             }
         }
     }),
@@ -17584,7 +17584,7 @@ const z1 = `<div id="controller" class="state-controller controller-content">
             this.promptComponent.model.clear({
                 silent: !0
             }).set(this.model.get("prompt")), this.choicesList.options.block = this.model.get("block"), this.choicesList.collection.set(this.model.get("choices")), this.model.get("type") === "multiple" && ve.all(this.model.get("choices"), e => !e.disabled) && this.choicesList.collection.push({
-                text: "Submit",
+                text: "Enviar",
                 action: "submit",
                 block: !1
             }), this.model.get("isAudience") && ((this.model.get("choiceId") === void 0 || this.model.get("choiceId") !== this.getOption("choiceId")) && (this.selected = [], this.audienceChoice = void 0, this.votesLeft = void 0), this.selected.length > 0 && (this.model.get("type") === "multiple" ? this.choicesList.children.forEach(e => {
@@ -17637,7 +17637,7 @@ const z1 = `<div id="controller" class="state-controller controller-content">
             })), !1
         },
         displayAudienceChoice(e) {
-            let t = "Thank you.";
+            let t = "Gracias.";
             const n = e.map(o => {
                 const f = this.choicesList.children.find(v => v.model.get("index") === o);
                 return f ? f.model.get("html") || f.model.get("text") : ""
@@ -19106,10 +19106,10 @@ const kC = `<div id="controller" class="state-controller controller-content">\r
             doneText: {},
             announcePrompt: !1,
             strings: {
-                your_choice: "Thank you. Your choice: ",
-                censor_prompt: "Censor this?",
-                censor_confirm: "Yes, Censor!",
-                censor_cancel: "No!"
+                your_choice: "Gracias. Tu elección: ",
+                censor_prompt: "¿Censurar esto?",
+                censor_confirm: "¡Sí, censurarlo!",
+                censor_cancel: "¡No!"
             }
         }
     }),
@@ -19144,7 +19144,7 @@ const kC = `<div id="controller" class="state-controller controller-content">\r
         className: "SorterView",
         template: ve.template(`
         <div id="rankedChoicesRegion"></div>
-        <div class="instructions">Choose where this item ranks:</div>
+        <div class="instructions">Elige dónde se posiciona este artículo:</div>
         <div id="unrankedChoicesRegion"></div>
         <div id="lockInRegion"></div>
     `),
@@ -19190,7 +19190,7 @@ const kC = `<div id="controller" class="state-controller controller-content">\r
                 block: !1,
                 model: new we.Model({
                     action: "lock",
-                    html: "Lock In"
+                    html: "Bloquear"
                 })
             }), this.listenTo(this.model, "change:choices", this.update, this)
         },
@@ -19348,28 +19348,28 @@ const kC = `<div id="controller" class="state-controller controller-content">\r
             text: "",
             validActions: [],
             strings: {
-                tos_warning: "By sharing content, you agree to our Terms of service",
-                tos_warning_agree: "agree and share",
-                tos_warning_back: "back to menu",
-                create_new_episode: "create a new episode",
-                create_new_name_prompt: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-                create_new_button: "create",
-                button_back_to_episodes: "back to episodes",
-                button_back_to_menu: "back to menu",
-                previous_episodes: "previous episodes:",
-                toggle_prompts_prompt: "tap to show/hide prompts",
-                button_close: "close",
-                button_done: "done",
-                button_add: "add prompt",
-                input_placeholder: "enter a prompt",
-                label_hidden: "hidden",
-                button_edit: "edit",
-                button_save: "save",
-                button_publish: "publish",
-                button_play: "play",
-                button_delete: "delete",
-                delete_warning: "Are you sure you want to delete this episode?",
-                delete_warning_confirm: "Yes",
+                tos_warning: "Al compartir contenido, aceptas nuestros Términos de servicio",
+                tos_warning_agree: "aceptar y compartir",
+                tos_warning_back: "volver al menú",
+                create_new_episode: "crear un nuevo episodio",
+                create_new_name_prompt: "primero lo primero, ingresa un nombre para el episodio que contendrá todos tus enunciados y pulsa crear.",
+                create_new_button: "crear",
+                button_back_to_episodes: "volver a los episodios",
+                button_back_to_menu: "volver al menú",
+                previous_episodes: "episodios anteriores:",
+                toggle_prompts_prompt: "toca para mostrar/ocultar los enunciados",
+                button_close: "cerrar",
+                button_done: "listo",
+                button_add: "añadir enunciado",
+                input_placeholder: "ingresa un enunciado",
+                label_hidden: "oculto",
+                button_edit: "editar",
+                button_save: "guardar",
+                button_publish: "publicar",
+                button_play: "jugar",
+                button_delete: "borrar",
+                delete_warning: "¿Seguro que quieres eliminar este episodio?",
+                delete_warning_confirm: "Sí",
                 delete_warning_cancel: "No"
             }
         }
@@ -20446,8 +20446,8 @@ Ne.View.extend({
             </div>`;
         t += `
             <div class='success'>
-                You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.
-            </div>`, this.lacksAudience ? t += "<div class='warning'>THIS GAME DOESN'T HAVE AN AUDIENCE FEATURE</div>" : this.client.roomInfo.audienceEnabled || (t += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), Ve.show("custom", {
+                Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.
+            </div>`, this.lacksAudience ? t += "<div class='warning'>ESTE JUEGO NO TIENE FUNCIÓN DE PÚBLICO</div>" : this.client.roomInfo.audienceEnabled || (t += "<div class='warning'>ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA</div>"), Ve.show("custom", {
             html: t,
             position: "bottom",
             timer: e,
@@ -22615,14 +22615,14 @@ const wc = ph.exports,
                 <div id="lobby-main-menu"> 
                     <span id="awshirt-lobby-text" class="awshirt-lobby-text"></span>
                     <form class="pure-form">                     
-                        <button type="button" id="awshirt-startgame" class="awshirt-button button-xlarge pure-button pure-input-1">FIGHT</button> 
-                        <button type="button" id="awshirt-stopcountdown" class="awshirt-button  button-xlarge pure-button pure-input-1">CANCEL</button> 
-                        <button type="button" id="awshirt-sameplayers" class="awshirt-button  button-xlarge pure-button pure-input-1 awshirt-endbuttons">SAME PLAYERS</button> 
-                        <button type="button" id="awshirt-newplayers" class="awshirt-button  button-xlarge pure-button pure-input-1 awshirt-endbuttons">NEW PLAYERS</button>     
+                        <button type="button" id="awshirt-startgame" class="awshirt-button button-xlarge pure-button pure-input-1">LUCHAR</button> 
+                        <button type="button" id="awshirt-stopcountdown" class="awshirt-button  button-xlarge pure-button pure-input-1">CANCELAR</button> 
+                        <button type="button" id="awshirt-sameplayers" class="awshirt-button  button-xlarge pure-button pure-input-1 awshirt-endbuttons">MISMOS JUGADORES</button> 
+                        <button type="button" id="awshirt-newplayers" class="awshirt-button  button-xlarge pure-button pure-input-1 awshirt-endbuttons">NUEVOS JUGADORES</button>     
                     </form> 
  
                     <form class="pure-form"> 
-                        <button type="button" id="awshirt-lobby-menu-censor" class="menu-button lobby-button awshirt-button button-xlarge pure-button pure-input-1">Censor Menu</button>
+                        <button type="button" id="awshirt-lobby-menu-censor" class="menu-button lobby-button awshirt-button button-xlarge pure-button pure-input-1">Menú de censura</button>
                     </form> 
                     <div class="awshirt-avatars">
                     <!-- catfish, cat, kappa, redDemon, hair, fire, crow, blueDemon, fox, bun, raccoon, dog, snake, monkey, umbrella, baku -->
@@ -22645,10 +22645,10 @@ const wc = ph.exports,
                     </div>
                     <form>
                         <div id="awshirt-taunt-input-group" class="form-group">
-                            <label for="awshirt-taunt-text" class="awshirt-lobby-text">Victory Quote</label>
+                            <label for="awshirt-taunt-text" class="awshirt-lobby-text">Frase de victoria</label>
                             <div class="awshirt-button-group awshirt-taunt-group">
-                                <input id="awshirt-taunt-text" type="text" class="awshirt-input-text" placeholder="VICTORY QUOTE" autocapitalize='off' autocorrect='off' autocomplete='off' maxLength="70">
-                                <button id="awshirt-taunt-submit" class="awshirt-button-submit btn" type="submit" disabled>SET</button>
+                                <input id="awshirt-taunt-text" type="text" class="awshirt-input-text" placeholder="FRASE DE VICTORIA" autocapitalize='off' autocorrect='off' autocomplete='off' maxLength="70">
+                                <button id="awshirt-taunt-submit" class="awshirt-button-submit btn" type="submit" disabled>PONER</button>
                             </div>
                         </div>
                     </form>
@@ -22665,13 +22665,13 @@ const wc = ph.exports,
                      
                     <form class="pure-form"> 
                         <div class="pure-u-1"> 
-                            <button type="button" class="awshirt-lobby-menu-back awshirt-button button-xlarge pure-button pure-input-1" style="margin-left: 0px; margin-right: 0px;">back</button> 
+                            <button type="button" class="awshirt-lobby-menu-back awshirt-button button-xlarge pure-button pure-input-1" style="margin-left: 0px; margin-right: 0px;">atrás</button> 
                         </div> 
                          
                         <div class="pure-u-1"></div> 
                          
                         <div id="lobby-censor-players" class="pure-u-1"></div> 
-                        <div class="awshirt-text awshirt-text-alt">Hit X to CENSOR player for rest of the game, hiding their name.</div>
+                        <div class="awshirt-text awshirt-text-alt">Pulsa X para CENSURAR al jugador por el resto de la partida, ocultando su nombre.</div>
                     </form> 
                 </div> 
             </div>
@@ -22707,7 +22707,7 @@ const wc = ph.exports,
                                 </li>
                             </ul>
                             <canvas class="awshirt-sketchpad" width='600' height='600' style='background-color:white;'> 
-                              Sorry, your browser is not supported. 
+                              Lo sentimos, tu navegador no es compatible. 
                             </canvas> 
                             <ul class="awshirt-drawing-buttons nav nav-tabs awshirt-nav-backgrounds">
                                 <li class="pull-left">
@@ -22745,13 +22745,13 @@ const wc = ph.exports,
                 </div>
 
                 <div class="col-xs-12 awshirt-button-bar post-sketchpad">
-                    <button type="button" id="awshirt-drawing-audience-censor" class="awshirt-audience-censor awshirt-button capitalize btn btn-block">CENSOR AUDIENCE</button>
+                    <button type="button" id="awshirt-drawing-audience-censor" class="awshirt-audience-censor awshirt-button capitalize btn btn-block">CENSURAR PÚBLICO</button>
                     <button id="awshirt-suggestdraw" class='awshirt-button-suggestion awshirt-suggestion awshirt-button btn btn-block'> 
-                        <span id="awshirt-instructions" class='awshirt-text-instruction awshirt-text drawing-instructions'>SUGGESTION</span>
+                        <span id="awshirt-instructions" class='awshirt-text-instruction awshirt-text drawing-instructions'>SUGERENCIA</span>
                     </button> 
 
                     <p class="awshirt-text-instruction">
-                        <span id="awshirt-instructions" class='awshirt-text-instruction awshirt-text instructions'>a picture of yourself!</span>
+                        <span id="awshirt-instructions" class='awshirt-text-instruction awshirt-text instructions'>¡un autorretrato!</span>
                     </p>
                 </div>
             <!-- </div> -->
@@ -22767,7 +22767,7 @@ const wc = ph.exports,
                         <div class="row">
                             <div class="awshirt-task"></div>
                             <p class="awshirt-text-instruction">
-                                <span class='awshirt-text-instruction awshirt-text instructions'>a picture of yourself!</span>
+                                <span class='awshirt-text-instruction awshirt-text instructions'>¡un autorretrato!</span>
                             </p>
                             <label for='awshirt-title-input' id="awshirt-input-task"></label>
                             <input id='awshirt-title-input' value='' type='text' class='form-control input-lg awshirt-input-text' autocapitalize='off' autocorrect='off' autocomplete='off' maxlength='70'/>
@@ -22782,7 +22782,7 @@ const wc = ph.exports,
                                 <li class="pull-right">
                                     <div class="awshirt-button-pad">
                                         <button id="awshirt-suggesttitle" class="awshirt-suggestion awshirt-button button-input">
-                                            SUGGESTION
+                                            SUGERENCIA
                                         </button>
                                     </div>
                                 </li>
@@ -22792,14 +22792,14 @@ const wc = ph.exports,
                     </div>
 
                     <div class="col-xs-12">
-                        <button type="button" id="awshirt-input-audience-censor" class="awshirt-audience-censor awshirt-button capitalize btn btn-block">CENSOR AUDIENCE</button>
+                        <button type="button" id="awshirt-input-audience-censor" class="awshirt-audience-censor awshirt-button capitalize btn btn-block">CENSURAR PÚBLICO</button>
                     </div>
                 </fieldset>
             </form>
         </div>
 
         <div id="state-prompts-done" class="pt-page-off awshirt-page awshirt-player-avatar-large">
-            <!-- <h2>Waiting for other players to finish!</h2> -->
+            <!-- <h2>¡Esperando a que los demás jugadores terminen!</h2> -->
         </div>
 
         <div id="state-shirt" class="pt-page-off awshirt-page">
@@ -22808,7 +22808,7 @@ const wc = ph.exports,
                     <td style="vertical-align:top;">
                         <div class="awshirt-solid-bg">
                             <div class="canvas-container">
-                                <div class="pre-sketchpad-shirt awshirt-text">CHOOSE A DRAWING</div>
+                                <div class="pre-sketchpad-shirt awshirt-text">ELIGE UN DIBUJO</div>
                                 <div id="awshirt-shirttime-canvas" class="awshirt-canvas-container-box">
                                     <div class="glideShirts">
                                         <div id="awshirt-image-bullets" class="glide__bullets" data-glide-el="controls[nav]">
@@ -22847,7 +22847,7 @@ const wc = ph.exports,
                                         </div>
                                     </div>
                                 </div>
-                                <div class="pre-sketchpad-shirt awshirt-text">CHOOSE A SLOGAN</div>
+                                <div class="pre-sketchpad-shirt awshirt-text">ELIGE UN ESLOGAN</div>
                                 <div class="pre-sketchpad-shirt">
                                     <button type="submit-shirt" id="awshirt-submit-shirt" class="submit-drawing awshirt-button awshirt-button-submit"><i class="fas fa-check" aria-hidden="true"></i></button>
                                     <div id="awshirt-submitshirt-loading" style="display:none;" class="awshirt-button-loading">
@@ -22868,7 +22868,7 @@ const wc = ph.exports,
         </div>
 
         <div id="state-vote" class="pt-page-off awshirt-page container">
-            <p class="awshirt-text-instruction">Pick your favorite!</p>
+            <p class="awshirt-text-instruction">¡Elige tu favorito!</p>
             <div id="vote-buttons" class="pure-form awshirt-vote-buttons awshirt-text"></div>
         </div>
         
@@ -22881,9 +22881,9 @@ const wc = ph.exports,
                 <fieldset>
 
                     <label id="awshirt-audience-suggestion-instruction" for="audience-suggestion"></label>
-                    <input id="awshirt-audience-suggestion" class="pure-input-1 capitalize awshirt-answer-input" type="text" placeholder="ENTER A SUGGESTION" maxlength="45" autocapitalize='off' autocorrect='off' autocomplete='off'>
+                    <input id="awshirt-audience-suggestion" class="pure-input-1 capitalize awshirt-answer-input" type="text" placeholder="INGRESA UNA SUGERENCIA" maxlength="45" autocapitalize='off' autocorrect='off' autocomplete='off'>
 
-                    <button id="awshirt-audience-suggestion-submit" type="submit" class="pure-button pure-button-primary">Send</button>
+                    <button id="awshirt-audience-suggestion-submit" type="submit" class="pure-button pure-button-primary">Enviar</button>
                 </fieldset>
             </form>
         </div>
@@ -22906,10 +22906,10 @@ const wc = ph.exports,
                 <span id="awshirt-submit-alert" class="alert alert-info">Alert message goes here</span>
                 <form class="pure-form" id="awshirt-answer-field">
                     <div class="pure-u-1">
-                        <input id="awshirt-answer-input" name="awshirt-answer" class="pure-input-1 capitalize awshirt-answer-input" type="text" maxlength="45" placeholder="ANSWER HERE" autocapitalize="off" autocorrect="off" autocomplete="off">
+                        <input id="awshirt-answer-input" name="awshirt-answer" class="pure-input-1 capitalize awshirt-answer-input" type="text" maxlength="45" placeholder="RESPONDE AQUÍ" autocapitalize="off" autocorrect="off" autocomplete="off">
                     </div>
-                    <button type="submit" id="awshirt-submit-answer" class="awshirt-button button-large pure-button capitalize right"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;Send</button>
-                    <button type="submit" id="awshirt-suggestion" class="awshirt-button button-large pure-button capitalize right">Suggestion</button>
+                    <button type="submit" id="awshirt-submit-answer" class="awshirt-button button-large pure-button capitalize right"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;Enviar</button>
+                    <button type="submit" id="awshirt-suggestion" class="awshirt-button button-large pure-button capitalize right">Sugerencia</button>
                     <div id="awshirt-submit-answer-loading" style="display:none;" class="awshirt-button-loading"></div>            
                 </form>
                 <div id="awshirt-suggestions" class="pure-g"></div>
@@ -22917,7 +22917,7 @@ const wc = ph.exports,
         </div>    
         
         <div id="state-done-answering" class="pt-page-off awshirt-page">
-            <br/><span>Thanks for your answers!</span><br/>
+            <br/><span>¡Gracias por tus respuestas!</span><br/>
         </div>
     </div>
 </div>
@@ -22934,68 +22934,68 @@ const ux = `url("data:image/svg+xml;utf8,<svg id='Layer_1' data-name='Layer 1' x
         backgroundColors: ["#2f5f9d", "#d02c41", "#2a3a2a", "#0d162d", "#51346c", "#43342e", "#080808", "#505253"],
         stories: {
             cat: {
-                intro: "My mother is very ill. I must win the tournament to pay for her surgery.",
-                taunt: "I knew I could do it!"
+                intro: "Mi madre esta muy enferma. Debo ganar el torneo para pagar su cirugía.",
+                taunt: "¡Sabía que podía hacerlo!"
             },
             raccoon: {
-                intro: "I must win the tournament or the evil banker will repossess the orphanage!",
-                taunt: "I put all of my heart into winning!"
+                intro: "¡Debo ganar el torneo o el malvado banquero embargará el orfanato!",
+                taunt: "¡Puse todo de mí para ganar!"
             },
             kappa: {
-                intro: "If I win the tournament, I will get my own reality show!",
-                taunt: "Now I will be famous!"
+                intro: "¡Si gano el torneo, tendré mi propio reality show!",
+                taunt: "¡Ahora seré famoso!"
             },
             dog: {
-                intro: "WOOF! WOOF WOOF!",
-                taunt: "BARK! WOOF! BARK BARK!"
+                intro: "¡GUAU! ¡GUAU GUAU!",
+                taunt: "¡GUAU! ¡LADRIDO! ¡GUAU GUAU!"
             },
             umbrella: {
-                intro: "My dream is to open a sandal shop. I would also like to win this tournament!",
-                taunt: "What an unexpected surprise!"
+                intro: "Mi sueño es abrir una tienda de sandalias. ¡También me gustaría ganar este torneo!",
+                taunt: "¡Qué inesperada sorpresa!"
             },
             blueDemon: {
-                intro: "My shirt will put my twin\u2019s efforts to shame!",
-                taunt: "Sorry, but my skills are superior!"
+                intro: "¡Mi camiseta avergonzará los esfuerzos de mi gemelo!",
+                taunt: "Lo siento, ¡pero mis habilidades son superiores!"
             },
             redDemon: {
-                intro: "I don\u2019t care about winning, as long as I beat my twin!",
-                taunt: "I was born to be the best!"
+                intro: "No me importa ganar, ¡mientras le gane a mi gemelo!",
+                taunt: "¡Nací para ser el mejor!"
             },
             catfish: {
-                intro: "I\u2019m competing to raise Fin Rot awareness!",
-                taunt: "I win! Please donate to cure Fin Rot today!"
+                intro: "¡Estoy compitiendo para crear conciencia sobre la Podredumbre de aletas!",
+                taunt: "¡Gané! ¡Por favor donen para curar la Podredumbre de aletas hoy!"
             },
             hair: {
-                intro: "I HUNGER FOR VICTORY!",
-                taunt: "MY HUNGER HAS BEEN SATISFIED\u2026FOR NOW\u2026"
+                intro: "¡TENGO HAMBRE DE VICTORIA!",
+                taunt: "¡MI HAMBRE HA SIDO SATISFECHO\u2026POR AHORA\u2026"
             },
             bun: {
-                intro: "I\u2019ve never made t-shirts before, but I\u2019m usually pretty lucky.",
-                taunt: "I never lose!"
+                intro: "Nunca antes había hecho camisetas, pero por lo general tengo mucha suerte.",
+                taunt: "¡Nunca pierdo!"
             },
             fox: {
-                intro: "After I win the tournament, I can take a year off and finish my sitcom pilot!",
-                taunt: "Hollywood, here I come!"
+                intro: "¡Después de ganar el torneo, puedo tomarme un año libre y terminar mi piloto de sitcom!",
+                taunt: "Hollywood, ¡aquí voy!"
             },
             fire: {
-                intro: "I\u2019m just happy to get out of the house!",
-                taunt: "We\u2019re having so much fun, guys!"
+                intro: "¡Estoy feliz de salir de casa!",
+                taunt: "¡Estamos divirtiéndonos mucho, chicos!"
             },
             crow: {
-                intro: "I did not mean to enter this tournament! It was a clerical error!",
-                taunt: "What is happening? Did I win?"
+                intro: "¡No era mi intención participar en este torneo! ¡Fue un error administrativo!",
+                taunt: "¿Qué pasa? ¿Gané?"
             },
             monkey: {
-                intro: "If I don\u2019t win the tournament, I guess I\u2019ll go paint houses for my uncle.",
-                taunt: "I deserve this!"
+                intro: "Si no gano el torneo, supongo que iré a pintar casas para mi tío.",
+                taunt: "¡Me merezco esto!"
             },
             baku: {
-                intro: "Winning the tournament is my life-long dream!",
-                taunt: "All my dreams are coming true!"
+                intro: "¡Ganar el torneo es el sueño de toda mi vida!",
+                taunt: "¡Todos mis sueños se vuelven realidad!"
             },
             snake: {
-                intro: "I do not have arms, but my love of t-shirts is strong. I will win the tournament!",
-                taunt: "I am honored to accept this victory."
+                intro: "No tengo brazos, pero mi amor por las camisetas es fuerte. ¡Ganaré el torneo!",
+                taunt: "Me siento honrado de aceptar esta victoria."
             }
         },
         events: {
@@ -23061,13 +23061,13 @@ const ux = `url("data:image/svg+xml;utf8,<svg id='Layer_1' data-name='Layer 1' x
         setPlayerTaunt() {
             const e = this.$el.find("#awshirt-taunt-text"),
                 t = this.$el.find("#awshirt-taunt-submit");
-            if (e.prop("disabled")) e.prop("disabled", !1), t.html("SET"), e.focus(), e.select();
+            if (e.prop("disabled")) e.prop("disabled", !1), t.html("PONER"), e.focus(), e.select();
             else {
                 const n = e.val();
                 if (this.sanitize(n).length === 0) return !1;
                 this.client.send("SendMessageToRoomOwner", {
                     taunt: n
-                }), e.prop("disabled", !0), t.blur(), t.html("CHANGE")
+                }), e.prop("disabled", !0), t.blur(), t.html("CAMBIAR")
             }
             return !1
         },
@@ -23092,7 +23092,7 @@ const ux = `url("data:image/svg+xml;utf8,<svg id='Layer_1' data-name='Layer 1' x
             return lt(".awshirt-undo").prop("disabled", !0), this.currentCanvas.undoLine(), lt(".awshirt-undo").prop("disabled", !1), !1
         },
         submitDrawing() {
-            if (this.currentCanvas.isClean) return alert("You have to draw something!"), !1;
+            if (this.currentCanvas.isClean) return alert("¡Tienes que dibujar algo!"), !1;
             this.enableLoadingButton("#awshirt-submitdrawing", !1);
             const e = {
                 pictureLines: this.currentCanvas.getLines(),
@@ -23103,7 +23103,7 @@ const ux = `url("data:image/svg+xml;utf8,<svg id='Layer_1' data-name='Layer 1' x
         submitTitle() {
             const e = this.sanitize(this.$el.find("#awshirt-title-input").val()).toUpperCase(),
                 t = this.$el.find("#awshirt-submit-alert");
-            return e.length === 0 ? (t.html("You can't enter nothing!"), t.removeClass("alert-info"), t.addClass("alert-danger"), t.show(), !1) : (this.client.send("SendMessageToRoomOwner", {
+            return e.length === 0 ? (t.html("¡No puedes dejarlo en blanco!"), t.removeClass("alert-info"), t.addClass("alert-danger"), t.show(), !1) : (this.client.send("SendMessageToRoomOwner", {
                 msg: e,
                 answer: !0
             }), this.$el.find("#awshirt-title-input").val(""), this.$el.find("#awshirt-title-input").closest("form").find('button[type="submit"]').prop("disabled", !0), this.$el.find("#awshirt-title-input").focus(), t.hide(), !1)
@@ -23111,7 +23111,7 @@ const ux = `url("data:image/svg+xml;utf8,<svg id='Layer_1' data-name='Layer 1' x
         submitSuggestion() {
             const e = this.sanitize(this.$el.find("#awshirt-audience-suggestion").val()).toUpperCase(),
                 t = this.$el.find("#awshirt-submit-alert");
-            return e.length === 0 ? (t.html("You can't enter nothing!"), t.removeClass("alert-info"), t.addClass("alert-danger"), t.show(), !1) : (this.client.sessionSend("comment", "AwShirt Comments", {
+            return e.length === 0 ? (t.html("¡No puedes dejarlo en blanco!"), t.removeClass("alert-info"), t.addClass("alert-danger"), t.show(), !1) : (this.client.sessionSend("comment", "AwShirt Comments", {
                 type: "comment",
                 comment: e
             }), this.$el.find("#awshirt-audience-suggestion").val(""), this.$el.find("#awshirt-audience-suggestion").focus(), t.hide(), !1)
@@ -23161,7 +23161,7 @@ const ux = `url("data:image/svg+xml;utf8,<svg id='Layer_1' data-name='Layer 1' x
             let o = e.lobbyState,
                 f = 0;
             if (this.currentAnswerQuestionId = -1, n === "RoomFull") {
-                Ve.show(Error("The room is full"), {
+                Ve.show(Error("La sala está llena"), {
                     willClose: () => {
                         window.location.reload(!0)
                     }
@@ -23169,7 +23169,7 @@ const ux = `url("data:image/svg+xml;utf8,<svg id='Layer_1' data-name='Layer 1' x
                 return
             }
             if (n === "GameLocked") {
-                Ve.show(Error("Game is in progress. Please wait for a new game to start."), {
+                Ve.show(Error("La partida está en curso. Espera a que comience otra."), {
                     willClose: () => {
                         window.location.reload(!0)
                     }
@@ -23200,10 +23200,10 @@ const ux = `url("data:image/svg+xml;utf8,<svg id='Layer_1' data-name='Layer 1' x
                     this.$el.find(".gallery-link").html(D), yi.add(v, this.getOption("appTag")), this.$el.find("#awshirt-lobby-postgame").show()
                 } else this.$el.find("#awshirt-lobby-postgame").hide();
                 if (!t.isAllowedToStartGame) {
-                    this.$el.find("#awshirt-lobby-text").html("Sit back and relax!"), this.showScreen("#state-lobby");
+                    this.$el.find("#awshirt-lobby-text").html("¡Siéntate y relájate!"), this.showScreen("#state-lobby");
                     return
                 }
-                e.sendDefaultColor && this.sendDefaultColor(), o || (o = t.state.split("_")[1]), o === "WaitingForMore" ? (this.$el.find("#awshirt-lobby-text").html("Waiting for all players to join"), lt(".awshirt-avatars").show(), this.$el.find("#awshirt-taunt-input-group").show()) : o === "CanStart" ? (this.$el.find("#awshirt-lobby-text").html("Press this button when everybody has joined"), this.$el.find("#awshirt-startgame").show(), lt(".awshirt-avatars").show(), this.$el.find("#awshirt-taunt-input-group").show()) : o === "Countdown" ? (this.$el.find("#awshirt-lobby-text").html("Press this button to cancel game start"), this.$el.find("#awshirt-stopcountdown").show(), lt(".awshirt-avatars").hide(), this.$el.find("#awshirt-taunt-input-group").hide()) : o === "PostGame" && (this.$el.find("#awshirt-lobby-text").html("What do you want to do?"), lt(".awshirt-endbuttons").show(), lt(".awshirt-avatars").hide(), this.$el.find("#awshirt-taunt-input-group").hide()), this.showScreen("#state-lobby")
+                e.sendDefaultColor && this.sendDefaultColor(), o || (o = t.state.split("_")[1]), o === "WaitingForMore" ? (this.$el.find("#awshirt-lobby-text").html("Esperando a que todos los jugadores se unan"), lt(".awshirt-avatars").show(), this.$el.find("#awshirt-taunt-input-group").show()) : o === "CanStart" ? (this.$el.find("#awshirt-lobby-text").html("Pulsa este botón cuando todos se hayan unido"), this.$el.find("#awshirt-startgame").show(), lt(".awshirt-avatars").show(), this.$el.find("#awshirt-taunt-input-group").show()) : o === "Countdown" ? (this.$el.find("#awshirt-lobby-text").html("Pulsa este botón para cancelar el inicio de la partida"), this.$el.find("#awshirt-stopcountdown").show(), lt(".awshirt-avatars").hide(), this.$el.find("#awshirt-taunt-input-group").hide()) : o === "PostGame" && (this.$el.find("#awshirt-lobby-text").html("¿Qué quieres hacer?"), lt(".awshirt-endbuttons").show(), lt(".awshirt-avatars").hide(), this.$el.find("#awshirt-taunt-input-group").hide()), this.showScreen("#state-lobby")
             } else if (i === "Logo") lt(".player-title-bar").hide(), lt(".awshirt-message-panel").show(), this.showScreen("#state-logo");
             else if (i && i.split("_")[0] === "Gameplay")
                 if (n && n.split("_")[0] === "Gameplay") {
@@ -23215,13 +23215,13 @@ const ux = `url("data:image/svg+xml;utf8,<svg id='Layer_1' data-name='Layer 1' x
                             });
                             break;
                         case "DrawingComplete":
-                            lt(".awshirt-audience-censor").hide(), this.$el.find("#awshirt-message").html("Waiting for other players to finish!"), t.canCensor && e.canDoSuggestions && (lt(".awshirt-audience-censor").show(), this.$el.find("#awshirt-message").append('<div class="col-xs-12"><button type="button" id="awshirt-drawing-audience-censor" class="awshirt-audience-censor awshirt-button capitalize btn btn-block">CENSOR AUDIENCE</button></div>')), lt(".awshirt-message-panel").show(), this.showScreen("#state-drawing-done");
+                            lt(".awshirt-audience-censor").hide(), this.$el.find("#awshirt-message").html("¡Esperando a que los demás jugadores terminen!"), t.canCensor && e.canDoSuggestions && (lt(".awshirt-audience-censor").show(), this.$el.find("#awshirt-message").append('<div class="col-xs-12"><button type="button" id="awshirt-drawing-audience-censor" class="awshirt-audience-censor awshirt-button capitalize btn btn-block">CENSURAR PÚBLICO</button></div>')), lt(".awshirt-message-panel").show(), this.showScreen("#state-drawing-done");
                             break;
                         case "InputPrompt":
                             lt(".instructions").html(t.task), t.suggestion ? (lt(".instructions").html(t.task), lt(".awshirt-suggestion").show(), lt(".awshirt-suggestion").prop("disabled", !1), lt(".instructions").show()) : (lt(".instructions").html(t.alert), lt(".awshirt-suggestion").hide(), lt(".instructions").show()), lt(".awshirt-audience-censor").hide(), t.canCensor && e.canDoSuggestions && lt(".awshirt-audience-censor").show(), this.showScreen("#state-input");
                             break;
                         case "PromptsDone":
-                            this.$el.find("#awshirt-audience-censor-done").hide(), this.$el.find("#awshirt-message").html("Waiting for other players to finish!"), t.canCensor && e.canDoSuggestions && (this.$el.find("#awshirt-audience-censor-done").show(), this.$el.find("#awshirt-message").append('<div class="col-xs-12"><button type="button" id="awshirt-drawing-audience-censor" class="awshirt-audience-censor awshirt-button capitalize btn btn-block">CENSOR AUDIENCE</button></div>')), lt(".awshirt-message-panel").show(), this.showScreen("#state-prompts-done");
+                            this.$el.find("#awshirt-audience-censor-done").hide(), this.$el.find("#awshirt-message").html("¡Esperando a que los demás jugadores terminen!"), t.canCensor && e.canDoSuggestions && (this.$el.find("#awshirt-audience-censor-done").show(), this.$el.find("#awshirt-message").append('<div class="col-xs-12"><button type="button" id="awshirt-drawing-audience-censor" class="awshirt-audience-censor awshirt-button capitalize btn btn-block">CENSURAR PÚBLICO</button></div>')), lt(".awshirt-message-panel").show(), this.showScreen("#state-prompts-done");
                             break;
                         case "ShirtTime": {
                             if (lt(".player-title-bar").hide(), this.currentCanvas || this.startDrawingInterface(t.playerColors), this.$el.find("#toggle-prompt").data("params", 0), t.drawings && lt(".awshirt-drawing").length !== t.drawings.length) {
@@ -23263,7 +23263,7 @@ const ux = `url("data:image/svg+xml;utf8,<svg id='Layer_1' data-name='Layer 1' x
                             break
                         }
                         case "ShirtsDone":
-                            this.$el.find("#awshirt-audience-censor-done").hide(), t.canCensor && e.canDoSuggestions && this.$el.find("#awshirt-audience-censor-done").show(), this.$el.find("#awshirt-message").html("Waiting for other players to finish!"), lt(".awshirt-message-panel").show(), this.showScreen("#state-shirts-done");
+                            this.$el.find("#awshirt-audience-censor-done").hide(), t.canCensor && e.canDoSuggestions && this.$el.find("#awshirt-audience-censor-done").show(), this.$el.find("#awshirt-message").html("¡Esperando a que los demás jugadores terminen!"), lt(".awshirt-message-panel").show(), this.showScreen("#state-shirts-done");
                             break
                     }
                 } else this.showScreen("#state-logo");
@@ -23279,11 +23279,11 @@ const ux = `url("data:image/svg+xml;utf8,<svg id='Layer_1' data-name='Layer 1' x
                             A = lt(this.renderTemplate(this.$el.find("#awshirt-vote-button").html(), k));
                         A.find(".awshirt-vote-button").css("background-color", t.choices[t.order[f]].background), y.push(A[0].outerHTML)
                     }
-                    this.$el.find("#vote-buttons").html(y.join("<span>OR</span>")), t.censorOnly && lt(".awshirt-vote-button").prop("disabled", !0), this.showScreen("#state-vote");
+                    this.$el.find("#vote-buttons").html(y.join("<span>O</span>")), t.censorOnly && lt(".awshirt-vote-button").prop("disabled", !0), this.showScreen("#state-vote");
                     break
                 }
                 case "DoneVoting":
-                    this.$el.find("#awshirt-message").html("Waiting for other players to finish!"), lt(".awshirt-message-panel").show(), this.showScreen("#state-voting-done");
+                    this.$el.find("#awshirt-message").html("¡Esperando a que los demás jugadores terminen!"), lt(".awshirt-message-panel").show(), this.showScreen("#state-voting-done");
                     break
             }
         },
@@ -23308,7 +23308,7 @@ const ux = `url("data:image/svg+xml;utf8,<svg id='Layer_1' data-name='Layer 1' x
                         this.$el.find(".gallery-link").attr("href", v);
                         const k = `<img src="${y}" />`;
                         this.$el.find(".gallery-link").html(k), yi.add(i, this.getOption("appTag"))
-                    } else this.$el.find("#awshirt-audience").html("Sit back and relax!");
+                    } else this.$el.find("#awshirt-audience").html("¡Siéntate y relájate!");
                     this.showScreen("#state-audience");
                     break
                 }
@@ -23320,10 +23320,10 @@ const ux = `url("data:image/svg+xml;utf8,<svg id='Layer_1' data-name='Layer 1' x
                         o = e.instruction;
                     switch (i) {
                         case "Gameplay_ShirtTime":
-                            this.$el.find("#awshirt-audience").html("Training in progress..."), this.showScreen("#state-audience");
+                            this.$el.find("#awshirt-audience").html("Entrenamiento en progreso..."), this.showScreen("#state-audience");
                             break;
                         case "Suggestions":
-                            e.canDoSuggestions ? (this.$el.find("#awshirt-audience-suggestion-instruction").html(o), this.showScreen("#state-audience-suggestions")) : (this.$el.find("#awshirt-audience").html("Training in progress..."), this.showScreen("#state-audience"));
+                            e.canDoSuggestions ? (this.$el.find("#awshirt-audience-suggestion-instruction").html(o), this.showScreen("#state-audience-suggestions")) : (this.$el.find("#awshirt-audience").html("Entrenamiento en progreso..."), this.showScreen("#state-audience"));
                             break;
                         default:
                             this.$el.find("#awshirt-audience").html(""), this.showScreen("#state-audience");
@@ -23342,7 +23342,7 @@ const ux = `url("data:image/svg+xml;utf8,<svg id='Layer_1' data-name='Layer 1' x
                             f = lt(this.renderTemplate(this.$el.find("#awshirt-vote-button").html(), o));
                         f.find(".awshirt-vote-button").css("background-color", e.choices[e.order[n]].background), i.push(f[0].outerHTML)
                     }
-                    this.$el.find("#vote-buttons").html(i.join("<span>OR</span>")), this.showScreen("#state-vote");
+                    this.$el.find("#vote-buttons").html(i.join("<span>O</span>")), this.showScreen("#state-vote");
                     break
                 }
             }
@@ -23404,7 +23404,7 @@ const ux = `url("data:image/svg+xml;utf8,<svg id='Layer_1' data-name='Layer 1' x
             const t = lt(e.target).data("index");
             return this.client.isRole("player") ? this.client.send("SendMessageToRoomOwner", {
                 vote: t
-            }) : this.client.isRole("audience") && (this.$el.find("#awshirt-audience").html("Thanks for voting!"), this.showScreen("#state-audience"), this.client.sessionSend("vote", "AwShirt Vote", {
+            }) : this.client.isRole("audience") && (this.$el.find("#awshirt-audience").html("¡Gracias por votar!"), this.showScreen("#state-audience"), this.client.sessionSend("vote", "AwShirt Vote", {
                 type: "vote",
                 vote: t
             })), lt(".awshirt-vote-button").removeClass("selected"), lt(e.target).addClass("selected"), !1

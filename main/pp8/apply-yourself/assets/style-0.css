@@ -4336,7 +4336,7 @@ body {
 
 .sinkvoting .fib .empty:before {
     border-radius: 20px;
-    content: "Drag here";
+    content: "Arrastra aquí";
     color: var(--text);
     font-family: Bourton;
     font-size: 16px;

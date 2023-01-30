@@ -11149,8 +11149,8 @@ ${n.message}`,
         ZK = {
             GALLERY_LINK: "Visita la galer\xEDa",
             PLAY_AGAIN: "\xBFJugar otra vez?",
-            BUTTON_SAME_PLAYERS: "Los mismos jugadores",
-            BUTTON_NEW_PLAYERS: "Otros jugadores"
+            BUTTON_SAME_PLAYERS: "Mismos jugadores",
+            BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
         QK = {
             AND: "Y",
@@ -11272,8 +11272,8 @@ ${n.message}`,
         sW = {
             GALLERY_LINK: "Visita la galer\xEDa",
             PLAY_AGAIN: "\xBFJugar otra vez?",
-            BUTTON_SAME_PLAYERS: "Los mismos jugadores",
-            BUTTON_NEW_PLAYERS: "Otros jugadores"
+            BUTTON_SAME_PLAYERS: "Mismos jugadores",
+            BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
         aW = {
             AND: "Y",

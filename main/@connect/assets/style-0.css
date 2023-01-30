@@ -4285,7 +4285,7 @@ button.audience.connecting:before {
     background-color: var(--accent);
     color: var(--textButton);
     line-height: 1.5;
-    text-transform: uppercase;
+    text-transform: none;
     box-shadow: 0 5px 0 0 var(--shadows);
     transition: color .5s, background-position .5s, box-shadow .5s
 }
@@ -4495,7 +4495,8 @@ button.audience.connecting:before {
     font-size: 16px;
     text-align: center;
     overflow-x: hidden;
-    white-space: nowrap
+    white-space: nowrap;
+    text-transform: none;
 }
 
 @media only screen and (max-width: 375px) {

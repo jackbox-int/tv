@@ -10823,118 +10823,118 @@ ${n.message}`,
     let Bl = qa;
     le(Bl, "isPolyfilled", !1);
     const jj = {
-            BACK: "Back",
-            CANCEL: "Cancel",
-            CLOSE: "Close",
-            CONFIRM: "Confirm",
-            CREATE: "Create",
-            DELETE: "Delete",
-            DONE: "Done",
-            EDIT: "Edit",
+            BACK: "Atrás",
+            CANCEL: "Cancelar",
+            CLOSE: "Cerrar",
+            CONFIRM: "Confirmar",
+            CREATE: "Crear",
+            DELETE: "Borrar",
+            DONE: "Hecho",
+            EDIT: "Editar",
             OK: "OK",
             NO: "No",
-            PLAY: "Play",
-            PUBLISH: "Publish",
-            REMOVE: "Remove",
-            RESET: "Reset",
-            SUBMIT: "Submit",
-            TRY_AGAIN: "Try Again",
-            UNDO: "Undo",
-            YES: "Yes"
+            PLAY: "Jugar",
+            PUBLISH: "Publicar",
+            REMOVE: "Remover",
+            RESET: "Reiniciar",
+            SUBMIT: "Enviar",
+            TRY_AGAIN: "Inténtalo de nuevo",
+            UNDO: "Deshacer",
+            YES: "Sí"
         },
         Wj = {
             UGC: {
-                VISIBILITY_CONTROLLER_OFF: "prompts hidden on players\u2019 devices",
-                VISIBILITY_CONTROLLER_ON: "prompts shown on players\u2019 devices",
-                VISIBILITY_SCREEN_OFF: "prompts hidden on game screen",
-                VISIBILITY_SCREEN_ON: "prompts shown on game screen"
+                VISIBILITY_CONTROLLER_OFF: "enunciados ocultos en los dispositivos de los jugadores",
+                VISIBILITY_CONTROLLER_ON: "enunciados mostrados en los dispositivos de los jugadores",
+                VISIBILITY_SCREEN_OFF: "enunciados ocultos en la pantalla del juego",
+                VISIBILITY_SCREEN_ON: "enunciados mostrados en la pantalla del juego"
             }
         },
         Kj = {
-            DISCONNECTED: "You have been disconnected.",
-            DRAWING_NOTHING: "You have to draw something!",
-            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-            ROOM_DESTROYED: "Thanks for playing!",
-            ROOM_DISCONNECTED: "Disconnected",
-            TEXT_NAUGHTY: "I\u2019m afraid you can\u2019t write that. Please be respectful of other players.",
-            TEXT_NOTHING: "You can\u2019t enter nothing!",
+            DISCONNECTED: "Has sido desconectado.",
+            DRAWING_NOTHING: "¡Tienes que dibujar algo!",
+            PLAYER_KICKED: "Has sido echado de la partida por un moderador",
+            ROOM_DESTROYED: "¡Gracias por jugar!",
+            ROOM_DISCONNECTED: "Desconectado",
+            TEXT_NAUGHTY: "Me temo que no puedes escribir eso. Por favor sé respetuoso con los otros jugadores.",
+            TEXT_NOTHING: "¡No puedes dejarlo en blanco!",
             TITLE: "Error"
         },
-        Hj = "LOADING",
+        Hj = "CARGANDO",
         Vj = {
-            JOINED_COUNT: "x | {count} of {maxPlayers} players joined | {count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "x | {count} player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "x | {count} de {maxPlayers} jugadores se unieron | {count} de {maxPlayers} jugadores se unieron",
+            PLAYERS_NEEDED: "x | Se necesita {count} jugador para empezar | Se necesitan {count} jugadores para empezar",
+            WAITING_FOR_VIP: "Esperando a que {name} empiece la partida",
+            WAITING_FOR_GAMEPAD: "Esperando a que empiece la partida",
+            GAME_STARTING: "La partida está empezando",
+            BUTTON_START: "Pulsa para empezar",
+            BUTTON_CANCEL: "Pulsa para cancelar"
         },
         Yj = {
-            GALLERY_LINK: "Visit the Gallery",
-            PLAY_AGAIN: "Play again?",
-            BUTTON_SAME_PLAYERS: "Same Players",
-            BUTTON_NEW_PLAYERS: "New Players"
+            GALLERY_LINK: "Visita la galería",
+            PLAY_AGAIN: "¿Jugar otra vez?",
+            BUTTON_SAME_PLAYERS: "Mismos jugadores",
+            BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
         qj = {
-            AND: "AND",
-            OR: "OR"
+            AND: "Y",
+            OR: "O"
         },
         Xj = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let\u2019s Go!"
+            BUTTON_SKIP: "Omitir",
+            BUTTON_NEXT: "Siguiente",
+            BUTTON_DONE: "¡Vamos!"
         },
         zj = {
-            NAME: "AUDIENCE"
+            NAME: "PÚBLICO"
         },
         Jj = {
-            EPISODE_REPORT: "Report Episode",
-            EPISODE_UNLOAD: "Unload Episode",
-            EPISODE_VIEW_AUTHOR: "View Author",
-            EPISODES_LOAD: "Load an episode by id:",
-            EPISODES_MENU: "Episodes Menu",
-            EPISODES_SELECT: "Or select an epsiode:",
-            EPISODES_WARNING: "Warning: user generated content is not rated",
+            EPISODE_REPORT: "Reportar episodio",
+            EPISODE_UNLOAD: "Retirar episodio",
+            EPISODE_VIEW_AUTHOR: "Ver autor",
+            EPISODES_LOAD: "Cargar un episodio por id:",
+            EPISODES_MENU: "Menú de episodios",
+            EPISODES_SELECT: "O selecciona un episodio:",
+            EPISODES_WARNING: "Aviso: el contenido generado por el usuario no tiene clasificación de edad",
             INSTRUCTION: {
-                CREATE_TITLE: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-                LOAD: "create or load?",
-                PUBLISH: "publish your episode",
-                TITLE: "name your episode",
-                TOGGLE_VISIBILITY: "tap to show/hide prompts",
-                WRITE: "write your prompts"
+                CREATE_TITLE: "primero lo primero, ingresa un nombre para el episodio que contendrá todos tus enunciados y dale a crear.",
+                LOAD: "¿crear o cargar?",
+                PUBLISH: "publicar tu episodio",
+                TITLE: "nombrar a tu episodio",
+                TOGGLE_VISIBILITY: "toca para mostrar/ocultar enunciados",
+                WRITE: "escribe tus enunciados"
             },
             WARNING: {
-                DELETE: "Are you sure you want to delete this episode?",
-                TOS: "By sharing content, you agree to our [tos]Terms of Service[/tos]",
-                TOS_AGREE: "agree and share"
+                DELETE: "¿Seguro que quieres borrar este episodio?",
+                TOS: "Al compartir contenido, aceptas las [tos]Condiciones del Servicio[/tos]",
+                TOS_AGREE: "aceptar y compartir"
             },
-            BACK_TO_EPISODES: "back to episodes",
-            BACK_TO_MENU: "back to menu",
-            CREATE_NEW_EPISODE: "create a new episode",
-            PREVIOUS_EPISODES: "previous episodes",
-            PROMPT_ADD: "add prompt",
-            PROMPT_PLACEHOLDER: "enter a prompt",
-            PROMPTS_COUNT_HIDDEN: "({count} hidden)",
-            TITLE_PLACEHOLDER: "enter a title"
+            BACK_TO_EPISODES: "volver a los episodios",
+            BACK_TO_MENU: "volver al menú",
+            CREATE_NEW_EPISODE: "crear un nuevo episodio",
+            PREVIOUS_EPISODES: "episodios anteriores",
+            PROMPT_ADD: "añadir enunciado",
+            PROMPT_PLACEHOLDER: "ingresa un enunciado",
+            PROMPTS_COUNT_HIDDEN: "({count} ocultos)",
+            TITLE_PLACEHOLDER: "ingresa un título"
         },
         Zj = {
             BROADCASTER: {
-                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-                WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
+                SUBTEXT: "Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.",
+                WARNING: "ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA"
             },
             RECONNECTED: {
-                TEXT: "RECONNECTED",
-                SUBTEXT: "Have fun!"
+                TEXT: "RECONECTADO",
+                SUBTEXT: "¡Diviértete!"
             },
             RECONNECTING: {
                 CONTROLLER: {
-                    TEXT: "CONNECTION INTERRUPTED",
-                    SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
+                    TEXT: "CONEXIÓN INTERRUMPIDA",
+                    SUBTEXT: "Intentando reconectar ({attempt} de 5)"
                 },
                 GAME: {
-                    TEXT: "GAME CONNECTION INTERRUPTED",
-                    SUBTEXT: "Please wait while we attempt to reconnect"
+                    TEXT: "CONEXIÓN CON EL JUEGO INTERRUMPIDA",
+                    SUBTEXT: "Por favor espera mientras intentamos reconectar"
                 }
             }
         },
@@ -16166,7 +16166,7 @@ function print() { __p += __j.call(arguments, '') }
             style: Fr(e.stageDimensions)
         }, null, 4), R("button", {
             onClick: t[0] || (t[0] = Fe((...c) => e.onSubmitClick && e.onSubmitClick(...c), ["prevent"]))
-        }, fe(e.player.submitText || "SUBMIT"), 1)])], 512)])
+        }, fe(e.player.submitText || "ENVIAR"), 1)])], 512)])
     }
     const U0 = st(c4, [
             ["render", p4]
@@ -16634,7 +16634,7 @@ function print() { __p += __j.call(arguments, '') }
         }, null, 40, q4))], 64))), 256)), qe(R("button", {
             onClick: t[0] || (t[0] = Fe((...c) => e.onSubmitClick && e.onSubmitClick(...c), ["prevent"]))
         }, null, 512), [
-            [l, e.player.submitText || "SUBMIT"]
+            [l, e.player.submitText || "ENVIAR"]
         ])])])
     }
     const z4 = st(j4, [
@@ -25558,83 +25558,83 @@ ${t}`
             })
         },
         tne = {
-            VIP_PORTRAIT_WARNING: "you sure you want to start before everyone\u2019s avatars are in?",
+            VIP_PORTRAIT_WARNING: "¿seguro que quieres empezar antes de que estén los avatares de todos?",
             VIP_PORTRAIT_WARNING_CANCEL: "no",
-            VIP_PORTRAIT_WARNING_CONFIRM: "yes",
-            VIP_EPISODES_MENU: "episodes menu",
-            VIP_EPISODES_UNLOAD: "unload episode",
-            VIP_EPISODES_REPORT: "report episode",
-            VIP_EPISODES_WARNING: "warning: user generated content is not rated",
-            VIP_EPISODES_LOAD: "load an episode by ID:",
-            VIP_EPISODES_SELECT: "or select an episode:",
-            VIP_EPISODES_BACK: "back",
-            VIP_EPISODES_SUBMIT: "submit",
-            VIP_EPISODES_VIEW_AUTHOR: "view author"
+            VIP_PORTRAIT_WARNING_CONFIRM: "sí",
+            VIP_EPISODES_MENU: "menú de episodios",
+            VIP_EPISODES_UNLOAD: "retirar episodio",
+            VIP_EPISODES_REPORT: "reportar episodio",
+            VIP_EPISODES_WARNING: "aviso: los episodios de los usuarios no tienen clasificación de edad",
+            VIP_EPISODES_LOAD: "cargar un episodio por ID:",
+            VIP_EPISODES_SELECT: "o selecciona un episodio:",
+            VIP_EPISODES_BACK: "atrás",
+            VIP_EPISODES_SUBMIT: "enviar",
+            VIP_EPISODES_VIEW_AUTHOR: "ver autor"
         },
         nne = {
-            SLIDE_1_TITLE: "You will create a simple animation.",
-            SLIDE_1_ITEM_1: "Draw your first frame.",
-            SLIDE_1_ITEM_2: "Then tap on the frame 2 tab.",
-            SLIDE_2_TITLE: "Draw your second frame.",
-            SLIDE_2_ITEM_1: "You\u2019ll see your first drawing for reference.",
-            SLIDE_2_ITEM_2: "The faded lines will not appear in the animation.",
-            SLIDE_3_TITLE: "You have 3 colors.",
-            SLIDE_3_ITEM_1: "Every player has a different set of colors.",
-            SLIDE_3_ITEM_2: "There is NO eraser.",
-            SLIDE_4_TITLE: "When BOTH frames are done, tap the Submit button.",
-            SLIDE_4_ITEM_1: "You can alternate between tabs before submitting.",
-            SLIDE_5_TITLE: "And presto, it\u2019s your avatar!"
+            SLIDE_1_TITLE: "Crearás una animación simple.",
+            SLIDE_1_ITEM_1: "Dibuja tu primer fotograma.",
+            SLIDE_1_ITEM_2: "Luego toca la pestaña del fotograma 2.",
+            SLIDE_2_TITLE: "Dibuja tu segundo fotograma.",
+            SLIDE_2_ITEM_1: "Verás tu primer dibujo como referencia.",
+            SLIDE_2_ITEM_2: "Las líneas desvanecidas no aparecerán en la animación.",
+            SLIDE_3_TITLE: "Tienes 3 colores.",
+            SLIDE_3_ITEM_1: "Cada jugador tiene un conjunto de colores diferente.",
+            SLIDE_3_ITEM_2: "No hay borrador.",
+            SLIDE_4_TITLE: "Cuando AMBOS fotogramas estén listos, toca el botón Enviar.",
+            SLIDE_4_ITEM_1: "Puedes alternar entre pestañas antes de enviar.",
+            SLIDE_5_TITLE: "¡Y presto, es tu avatar!"
         },
         rne = {
-            BUTTON_ADD: "add prompt",
-            BUTTON_BACK_TO_EPISODES: "back to episodes",
-            BUTTON_BACK_TO_MENU: "back to menu",
-            BUTTON_CLOSE: "close",
-            BUTTON_DELETE: "delete",
-            BUTTON_DONE: "done",
-            BUTTON_EDIT: "edit",
-            BUTTON_PLAY: "play",
-            BUTTON_PUBLISH: "publish",
-            BUTTON_SAVE: "save",
-            CREATE_NEW_BUTTON: "create",
-            CREATE_NEW_EPISODE: "create a new episode",
-            CREATE_NEW_NAME_PROMPT: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-            DELETE_WARNING: "are you sure you want to delete this episode?",
+            BUTTON_ADD: "añadir enunciado",
+            BUTTON_BACK_TO_EPISODES: "volver a los episodios",
+            BUTTON_BACK_TO_MENU: "volver al menú",
+            BUTTON_CLOSE: "cerrar",
+            BUTTON_DELETE: "borrar",
+            BUTTON_DONE: "listo",
+            BUTTON_EDIT: "editar",
+            BUTTON_PLAY: "jugar",
+            BUTTON_PUBLISH: "publicar",
+            BUTTON_SAVE: "guardar",
+            CREATE_NEW_BUTTON: "crear",
+            CREATE_NEW_EPISODE: "crear un nuevo episodio",
+            CREATE_NEW_NAME_PROMPT: "en primer lugar, ponle un nombre al episodio que contendrá tus enunciados y dale a crear.",
+            DELETE_WARNING: "¿seguro que quieres borrar este episodio?",
             DELETE_WARNING_CANCEL: "no",
-            DELETE_WARNING_CONFIRM: "yes",
-            INPUT_PLACEHOLDER: "enter a prompt",
-            TITLE_INPUT_PLACEHOLDER: "enter a title",
-            LABEL_HIDDEN: "hidden",
-            PREVIOUS_EPISODES: "previous episodes",
-            TOGGLE_PROMPTS_PROMPT: "tap to show/hide prompts",
-            TOS_WARNING: "by sharing content, you agree to our [tos]Terms of Service[/tos]",
-            TOS_WARNING_AGREE: "agree and share",
-            TOS_WARNING_BACK: "back to menu",
-            HEADER_DEFAULT: "create or load?",
-            HEADER_TITLE: "name your episode",
-            HEADER_WRITE: "write your prompts",
-            HEADER_PUBLISH: "publish your episode"
+            DELETE_WARNING_CONFIRM: "sí",
+            INPUT_PLACEHOLDER: "ingresa un enunciado",
+            TITLE_INPUT_PLACEHOLDER: "ingresa un título",
+            LABEL_HIDDEN: "oculto",
+            PREVIOUS_EPISODES: "episodios anteriores",
+            TOGGLE_PROMPTS_PROMPT: "toca para mostrar u ocultar los enunciados",
+            TOS_WARNING: "al compartir contenidos, aceptas las [tos]condiciones del servicio[/tos]",
+            TOS_WARNING_AGREE: "aceptar y compartir",
+            TOS_WARNING_BACK: "volver al menú",
+            HEADER_DEFAULT: "¿crear o cargar?",
+            HEADER_TITLE: "nombra tu episodio",
+            HEADER_WRITE: "escribe tus enunciados",
+            HEADER_PUBLISH: "publica tu episodio"
         },
         ine = {
-            DONE: "thanks for your answer. if the audience nailed it, we\u2019ll let you know.",
-            BUTTON_SUBMIT: "send",
-            FRIEND_HINT: "psst\u2026 they/them pronouns are used in titles",
-            PROMPT: "write an answer below that will fool the others",
-            FILTER_ERROR: "that's not allowed, enter something else! (you can change the level of filtering in the game's settings menu)"
+            DONE: "gracias por tu respuesta. si el público lo acertó, te lo haremos saber.",
+            BUTTON_SUBMIT: "enviar",
+            FRIEND_HINT: "psst… los adjetivos en los títulos no denotan género",
+            PROMPT: "escribe una respuesta a continuación que engañará a los demás",
+            FILTER_ERROR: "eso no está permitido, ¡ingresa otra cosa! (puedes cambiar el nivel de filtrado en el menú de ajustes del juego)"
         },
         sne = {
-            BUTTON_SUBMIT: "submit",
-            FRAME_1: "frame 1",
-            FRAME_2: "frame 2"
+            BUTTON_SUBMIT: "enviar",
+            FRAME_1: "fotograma 1",
+            FRAME_2: "fotograma 2"
         },
         ane = {
-            DONE_TEXT: "thanks! stand by to see results."
+            DONE_TEXT: "¡gracias! prepárate para ver los resultados."
         },
         one = {
-            DOUBLEDOWN_USED: "already used",
-            DOUBLEDOWN_PER_ROUND: "(once per round)",
-            DOUBLEDOWN_PER_GAME: "(once per game)",
-            DOUBLEDOWN_TEXT: "double down?"
+            DOUBLEDOWN_USED: "ya usado",
+            DOUBLEDOWN_PER_ROUND: "(una vez por ronda)",
+            DOUBLEDOWN_PER_GAME: "(una vez por partida)",
+            DOUBLEDOWN_TEXT: "¿doblas la apuesta?"
         },
         lne = {
             LOBBY: tne,
@@ -26173,14 +26173,14 @@ ${t}`
                 selected: e.chosenKey === e.player.countGroupChoices[0]
             }]),
             disabled: e.isSubmitting,
-            "aria-label": "Slide top row right",
+            "aria-label": "Deslizar la fila superior a la derecha",
             onClick: t[0] || (t[0] = Fe(l => e.voteClicked(l, 0), ["prevent"]))
         }, null, 10, tre), R("button", {
             class: we(["circle-button left", {
                 selected: e.chosenKey === e.player.countGroupChoices[1]
             }]),
             disabled: e.isSubmitting,
-            "aria-label": "Slide top row left",
+            "aria-label": "Deslizar la fila superior a la izquierda",
             onClick: t[1] || (t[1] = Fe(l => e.voteClicked(l, 1), ["prevent"]))
         }, null, 10, nre), R("div", {
             class: we([{
@@ -26209,14 +26209,14 @@ ${t}`
                 selected: e.chosenKey === e.player.countGroupChoices[2]
             }]),
             disabled: e.isSubmitting,
-            "aria-label": "Slide bottom row right",
+            "aria-label": "Deslizar la fila inferior a la derecha",
             onClick: t[2] || (t[2] = Fe(l => e.voteClicked(l, 2), ["prevent"]))
         }, null, 10, ire), R("button", {
             class: we(["circle-button left", {
                 selected: e.chosenKey === e.player.countGroupChoices[3]
             }]),
             disabled: e.isSubmitting,
-            "aria-label": "Slide bottom row left",
+            "aria-label": "Deslizar la fila inferior a la izquierda",
             onClick: t[3] || (t[3] = Fe(l => e.voteClicked(l, 3), ["prevent"]))
         }, null, 10, sre)]), e.timer ? (U(), G("div", are, [R("span", {
             class: "timer-bar",
@@ -26766,7 +26766,7 @@ ${t}`
         }, null, 8, Qre)) : de("", !0), e.player.validActions.length === 0 ? (U(), G("div", eie, nie)) : de("", !0), e.player.validActions.includes("add") ? (U(), G("div", rie, [iie, R("div", sie, [R("div", aie, [R("div", null, fe(e.promptCharacterCount), 1), R("textarea", {
             id: "promptTextarea",
             ref: "promptTextarea",
-            "aria-label": "add a prompt",
+            "aria-label": "añadir un enunciado",
             rows: "1",
             value: e.answer,
             maxlength: e.player.maxContentLength,
@@ -27027,7 +27027,7 @@ ${t}`
         }, null, 8, zie), R("button", {
             class: "submit",
             type: "submit",
-            value: "Submit",
+            value: "Enviar",
             disabled: !e.hasAnswer
         }, fe(e.submitText), 9, Jie)])], 8, jie)], 32))])])
     }

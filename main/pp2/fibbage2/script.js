@@ -13159,7 +13159,7 @@ const cC = `<form>\r
         <div class="inputGroup">\r
             <textarea id="input-text-textarea" rows="1" class="form-control jbg-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>\r
             <span class="inlineSubmit">\r
-                <button type="submit" class="btn btn-default inlineSubmitButton" type="button"><span class="inlineSubmitText">Send</span></button>\r
+                <button type="submit" class="btn btn-default inlineSubmitButton" type="button"><span class="inlineSubmitText">Enviar</span></button>\r
             </span>\r
             <span id="helpBlock2" class="help-block errorText"></span>\r
             <div class="charCountDisplay"><span class="charRemaining">70</span></div>\r
@@ -13237,7 +13237,7 @@ const cC = `<form>\r
             ".inlineSubmitText": {
                 observe: "inlineSubmitText",
                 onGet(t) {
-                    return t !== void 0 ? t : "Send"
+                    return t !== void 0 ? t : "Enviar"
                 }
             },
             ".form-group": {
@@ -13875,7 +13875,7 @@ var Xu = {
                 denyButtonText: "No",
                 denyButtonAriaLabel: "",
                 denyButtonColor: void 0,
-                cancelButtonText: "Cancel",
+                cancelButtonText: "Cancelar",
                 cancelButtonAriaLabel: "",
                 cancelButtonColor: void 0,
                 buttonsStyling: !0,
@@ -15497,16 +15497,16 @@ const yC = `<div class="canvasContainer">\r
                     this.currentStream = i, this.video.srcObject = i, await this.video.play(), this.gotDevices(a)
                 } catch (i) {
                     console.error(i), Ot.show("alert", {
-                        titleText: "Unable to Access Camera",
-                        text: `Looks like we don't have access to your device's camera. You can refresh and try again, or choose the ${t} option instead.`,
+                        titleText: "No se pudo acceder a la cámara",
+                        text: `Parece que no tenemos acceso a la cámara de tu dispositivo. Puedes refrescar y volver a intentarlo, o elegir la opción de ${t} en su lugar.`,
                         willClose: () => {
                             this.cameraAccessDenied()
                         }
                     })
                 }
             } else Ot.show("alert", {
-                titleText: "No Camera Access",
-                text: `It looks like camera access isn't available from this browser. Try the ${t} option instead.`,
+                titleText: "No hay acceso a la cámara",
+                text: `Parece que el acceso a la cámara no está disponible desde este navegador. Prueba la opción de ${t} en su lugar.`,
                 willClose: () => {
                     this.cameraAccessDenied()
                 }
@@ -15659,8 +15659,8 @@ const yC = `<div class="canvasContainer">\r
                     <path d="M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
                 </svg>
             `,
-                cancelButton: "Cancel",
-                confirmButton: "Confirm"
+                cancelButton: "Cancelar",
+                confirmButton: "Confirmar"
             }
         }
     }),
@@ -16281,9 +16281,9 @@ const OC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
         <div id="buttons" class="buttons"></div>\r
         <div id="post-sketchpad" class="post-sketchpad">\r
             <div id="submit">\r
-                <button id='submitdrawing' class="button submitDrawing">Submit</button><br/>\r
+                <button id='submitdrawing' class="button submitDrawing">Enviar</button><br/>\r
             </div>\r
-            <button id='censorOptions' class='button'>Censor Options</button>\r
+            <button id='censorOptions' class='button'>Opciones de censura</button>\r
             <div class="footer"></div>\r
         </div>\r
         </div>\r
@@ -16317,9 +16317,9 @@ const OC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             disabled: !1,
             debug: !1,
             strings: {
-                drawing_empty: "You must draw something!",
-                submit: "submit",
-                ERROR_REJECTED_OBJECT: "That's not allowed, enter something else!"
+                drawing_empty: "¡Tienes que dibujar algo!",
+                submit: "enviar",
+                ERROR_REJECTED_OBJECT: "Eso no está permitido, ¡ingresa otra cosa!"
             }
         }
     }),
@@ -16361,7 +16361,7 @@ const OC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
                 visible: !0,
                 updateView: !0,
                 onGet(t) {
-                    return t[0] || t[1] ? !1 : t[2] === void 0 ? "" : t[2].submit || "Submit"
+                    return t[0] || t[1] ? !1 : t[2] === void 0 ? "" : t[2].submit || "Enviar"
                 }
             }
         },
@@ -16521,7 +16521,7 @@ const OC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
         defaults: {
             state: "EnterSingleText",
             actions: [{
-                text: "submit",
+                text: "enviar",
                 action: "submit"
             }],
             allowEmpty: !1,
@@ -16538,11 +16538,11 @@ const OC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             autocapitalize: !1,
             className: "",
             inlineSubmit: !1,
-            inlineSubmitText: "Submit",
+            inlineSubmitText: "Enviar",
             error: "",
             strings: {
-                ERROR_NOTHING_ENTERED: "You need to enter something!",
-                ERROR_REJECTED_TEXT: "That's not allowed, enter something else! (You can change the level of filtering in the game's settings menu)"
+                ERROR_NOTHING_ENTERED: "¡Tienes que ingresar algo!",
+                ERROR_REJECTED_TEXT: "¡Eso no está permitido, ingresa otra cosa! (Puedes cambiar el nivel del filtro en el menú de ajustes del juego)"
             }
         }
     }),
@@ -16612,7 +16612,7 @@ const OC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             }), this.inputComponent = this.inputComponent || new to({
                 model: new ot.Model({})
             }), this.buttonsCollection = this.buttonsCollection || new ot.Collection([{
-                text: "submit"
+                text: "enviar"
             }]), this.buttonsComponent = this.buttonsComponent || new fi({
                 block: !0,
                 collection: this.buttonsCollection
@@ -16625,7 +16625,7 @@ const OC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             })), this.promptComponent.model.clear({
                 silent: !0
             }).set(this.model.get("prompt")), this.inputComponent.model.set(this.model.attributes), this.buttonsComponent.options.block = this.model.get("block"), this.buttonsCollection.set(this.model.get("actions") || [{
-                text: "submit",
+                text: "enviar",
                 action: "submit"
             }]), this.model.get("entryId") && this.model.get("entryId") !== this.currentEntry && (this.inputComponent.clearInput(), this.currentEntry = this.model.get("entryId")), this.$el.find(".enterSingleTextFieldset").prop("disabled", !1), this.$el.find("textarea").focus(), this.stickit(), this.model.get("autoSubmit") && this.shouldSubmit && this.onChildviewInputSubmit()
         },
@@ -16768,7 +16768,7 @@ const BC = Et.View.extend({
         },
         showTwitchBroadcasterDialog(t) {
             let e = `<div class='icon-${this.client.roles.broadcaster.platform}'>${this.client.roles.broadcaster.name}</div>`;
-            e += "<div class='success'>You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.</div>", this.lacksAudience ? e += "<div class='warning'>THIS GAME DOESN'T HAVE AN AUDIENCE FEATURE</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), Ot.show("custom", {
+            e += "<div class='success'>Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.</div>", this.lacksAudience ? e += "<div class='warning'>ESTE JUEGO NO TIENE FUNCIÓN DE PÚBLICO</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA</div>"), Ot.show("custom", {
                 html: e,
                 position: "bottom",
                 timer: t,
@@ -16807,8 +16807,8 @@ const BC = Et.View.extend({
         },
         onRoomWasDestroyed() {
             en.remove("roomCode"), en.remove("reconnect"), Ot.show("error", {
-                titleText: "Disconnected",
-                text: "Thanks for playing!",
+                titleText: "Desconectado",
+                text: "¡Gracias por jugar!",
                 willClose: () => {
                     window.location.reload(!0)
                 }
@@ -16816,8 +16816,8 @@ const BC = Et.View.extend({
         },
         onDisconnected() {
             Ot.show("error", {
-                titleText: "Disconnected",
-                text: "You have been disconnected.",
+                titleText: "Desconectado",
+                text: "Has sido desconectado.",
                 willClose: () => {
                     window.location.reload(!0)
                 }
@@ -16852,7 +16852,7 @@ const BC = Et.View.extend({
         <div id="characters" class="charactersContainer"></div>
     </div>
     <div id="artifactId" class="artifactContainer text">
-        <a id="artifactLink" aria-label="Visit the Gallery" class="artifactLink" target="_blank">
+        <a id="artifactLink" aria-label="Visita la galería" class="artifactLink" target="_blank">
             <button id="artifactButton" class="artifactButton"></button>
         </a>
     </div>
@@ -16886,28 +16886,28 @@ const BC = Et.View.extend({
             formattedActiveContentId: null,
             isLocal: !1,
             strings: {
-                wait: "Sit back and relax!",
-                vip_waiting: "Waiting for all players to join",
-                vip_canStart: "Press this button when everybody has joined",
-                vip_cancel: "Press this button to cancel game start",
-                vip_postgame: "What would you like to do now?",
-                vip_episodes_menu: "Episodes Menu",
-                vip_episodes_unload: "Unload Episode",
-                vip_episodes_report: "Report Episode",
-                vip_episodes_warning: "Warning: user generated content is not rated",
-                vip_episodes_load: "Load an episode by id:",
-                vip_episodes_select: "Or select an episode:",
-                vip_episodes_back: "Back",
-                vip_episodes_submit: "SUBMIT",
-                vip_episodes_view_author: "View Author",
-                button_start: "Everybody's In",
-                button_cancel: "Cancel",
-                button_changename: "Change Name",
-                button_sameplayers: "Same Players",
-                button_newplayers: "New Players",
-                prompt_entername: "Enter your name",
-                prompt_choosecharacter: "Select your character",
-                button_censorOptions: "Censor Options",
+                wait: "¡Siéntate y relájate!",
+                vip_waiting: "Esperando a que todos los jugadores se unan",
+                vip_canStart: "Pulsa este botón cuando todos se hayan unido",
+                vip_cancel: "Pulsa este botón para cancelar el inicio de la partida",
+                vip_postgame: "¿Qué quieres hacer ahora?",
+                vip_episodes_menu: "Menú de episodios",
+                vip_episodes_unload: "Retirar episodio",
+                vip_episodes_report: "Reportar episodio",
+                vip_episodes_warning: "Aviso: El contenido de los usuarios no tiene clasificación de edad",
+                vip_episodes_load: "Cargar un episodio por id:",
+                vip_episodes_select: "O selecciona un episodio:",
+                vip_episodes_back: "Atrás",
+                vip_episodes_submit: "ENVIAR",
+                vip_episodes_view_author: "Ver autor",
+                button_start: "Estamos todos",
+                button_cancel: "Cancelar",
+                button_changename: "Cambiar el nombre",
+                button_sameplayers: "Mismos jugadores",
+                button_newplayers: "Nuevos jugadores",
+                prompt_entername: "Ingresa tu nombre",
+                prompt_choosecharacter: "Selecciona tu personaje",
+                button_censorOptions: "Opciones de censura",
                 censor_prompt: ""
             }
         }
@@ -17132,7 +17132,7 @@ const BC = Et.View.extend({
                             inputAttributes: {
                                 maxlength: 12
                             },
-                            inputValidator: d => d ? d.length > 12 ? "Limit 12 characters" : null : "You need to write something!"
+                            inputValidator: d => d ? d.length > 12 ? "Límite de 12 caracteres" : null : "¡Tienes que escribir algo!"
                         });
                         if (a.dismiss) return;
                         this.triggerMethod("client:message", {
@@ -17256,7 +17256,7 @@ const BC = Et.View.extend({
 <div id="message" class="message"><h2 class="messageText"></h2></div>
 <div id="action" class="action"></div>
 <div id="artifactId" class="artifactContainer text">
-    <a id="artifactLink" aria-label="Visit the Gallery" class="artifactLink" target="_blank">
+    <a id="artifactLink" aria-label="Visita la galería" class="artifactLink" target="_blank">
         <button id="artifactButton" class="artifactButton"></button>
     </a>
 </div>
@@ -17344,10 +17344,10 @@ const BC = Et.View.extend({
             LANGUAGE_NAME: "English",
             SUPPORTED_LANGUAGES: ["English", "Fran\xE7ais", "Italiano", "Deutsch", "Espa\xF1ol"],
             SUPPORTED_LOCALES: ["en", "fr", "it", "de", "es"],
-            LANGUAGE: "Language",
-            LOGIN: "Login",
-            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Disconnected",
-            STRING_ERROR_SERVER_ROOM_DESTROYED: "Thanks for playing!"
+            LANGUAGE: "Idioma",
+            LOGIN: "Iniciar sesi\xF3n",
+            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Desconectado",
+            STRING_ERROR_SERVER_ROOM_DESTROYED: "¡Gracias por jugar!"
         },
         fr: {
             LANGUAGE_NAME: "Fran\xE7ais",
@@ -17467,10 +17467,10 @@ const BC = Et.View.extend({
             announcePrompt: !1,
             countGroupName: null,
             strings: {
-                your_choice: "Thank you. Your choice: ",
-                censor_prompt: "Censor this?",
-                censor_confirm: "Yes, Censor!",
-                censor_cancel: "No!"
+                your_choice: "Gracias. Tu elección: ",
+                censor_prompt: "¿Censurar esto?",
+                censor_confirm: "¡Sí, censurarlo!",
+                censor_cancel: "¡No!"
             }
         }
     }),
@@ -17556,7 +17556,7 @@ const BC = Et.View.extend({
             this.promptComponent.model.clear({
                 silent: !0
             }).set(this.model.get("prompt")), this.choicesList.options.block = this.model.get("block"), this.choicesList.collection.set(this.model.get("choices")), this.model.get("type") === "multiple" && at.all(this.model.get("choices"), t => !t.disabled) && this.choicesList.collection.push({
-                text: "Submit",
+                text: "Enviar",
                 action: "submit",
                 block: !1
             }), this.model.get("isAudience") && ((this.model.get("choiceId") === void 0 || this.model.get("choiceId") !== this.getOption("choiceId")) && (this.selected = [], this.audienceChoice = void 0, this.votesLeft = void 0), this.selected.length > 0 && (this.model.get("type") === "multiple" ? this.choicesList.children.forEach(t => {
@@ -17609,7 +17609,7 @@ const BC = Et.View.extend({
             })), !1
         },
         displayAudienceChoice(t) {
-            let e = "Thank you.";
+            let e = "Gracias.";
             const n = t.map(a => {
                 const d = this.choicesList.children.find(m => m.model.get("index") === a);
                 return d ? d.model.get("html") || d.model.get("text") : ""
@@ -19078,10 +19078,10 @@ const xx = `<div id="controller" class="state-controller controller-content">\r
             doneText: {},
             announcePrompt: !1,
             strings: {
-                your_choice: "Thank you. Your choice: ",
-                censor_prompt: "Censor this?",
-                censor_confirm: "Yes, Censor!",
-                censor_cancel: "No!"
+                your_choice: "Gracias. Tu elección: ",
+                censor_prompt: "¿Censurar esto?",
+                censor_confirm: "¡Sí, censurarlo!",
+                censor_cancel: "¡No!"
             }
         }
     }),
@@ -19116,7 +19116,7 @@ const xx = `<div id="controller" class="state-controller controller-content">\r
         className: "SorterView",
         template: at.template(`
         <div id="rankedChoicesRegion"></div>
-        <div class="instructions">Choose where this item ranks:</div>
+        <div class="instructions">Elige dónde se posiciona este artículo:</div>
         <div id="unrankedChoicesRegion"></div>
         <div id="lockInRegion"></div>
     `),
@@ -19162,7 +19162,7 @@ const xx = `<div id="controller" class="state-controller controller-content">\r
                 block: !1,
                 model: new ot.Model({
                     action: "lock",
-                    html: "Lock In"
+                    html: "Bloquear"
                 })
             }), this.listenTo(this.model, "change:choices", this.update, this)
         },
@@ -19320,28 +19320,28 @@ const xx = `<div id="controller" class="state-controller controller-content">\r
             text: "",
             validActions: [],
             strings: {
-                tos_warning: "By sharing content, you agree to our Terms of service",
-                tos_warning_agree: "agree and share",
-                tos_warning_back: "back to menu",
-                create_new_episode: "create a new episode",
-                create_new_name_prompt: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-                create_new_button: "create",
-                button_back_to_episodes: "back to episodes",
-                button_back_to_menu: "back to menu",
-                previous_episodes: "previous episodes:",
-                toggle_prompts_prompt: "tap to show/hide prompts",
-                button_close: "close",
-                button_done: "done",
-                button_add: "add prompt",
-                input_placeholder: "enter a prompt",
-                label_hidden: "hidden",
-                button_edit: "edit",
-                button_save: "save",
-                button_publish: "publish",
-                button_play: "play",
-                button_delete: "delete",
-                delete_warning: "Are you sure you want to delete this episode?",
-                delete_warning_confirm: "Yes",
+                tos_warning: "Al compartir contenido, aceptas nuestros Términos de servicio",
+                tos_warning_agree: "aceptar y compartir",
+                tos_warning_back: "volver al menú",
+                create_new_episode: "crear un nuevo episodio",
+                create_new_name_prompt: "primero lo primero, ingresa un nombre para el episodio que contendrá todos tus enunciados y pulsa crear.",
+                create_new_button: "crear",
+                button_back_to_episodes: "volver a los episodios",
+                button_back_to_menu: "volver al menú",
+                previous_episodes: "episodios anteriores:",
+                toggle_prompts_prompt: "toca para mostrar/ocultar los enunciados",
+                button_close: "cerrar",
+                button_done: "listo",
+                button_add: "añadir enunciado",
+                input_placeholder: "ingresa un enunciado",
+                label_hidden: "oculto",
+                button_edit: "editar",
+                button_save: "guardar",
+                button_publish: "publicar",
+                button_play: "jugar",
+                button_delete: "borrar",
+                delete_warning: "¿Seguro que quieres eliminar este episodio?",
+                delete_warning_confirm: "Sí",
                 delete_warning_cancel: "No"
             }
         }
@@ -20418,8 +20418,8 @@ Et.View.extend({
             </div>`;
         e += `
             <div class='success'>
-                You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.
-            </div>`, this.lacksAudience ? e += "<div class='warning'>THIS GAME DOESN'T HAVE AN AUDIENCE FEATURE</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), Ot.show("custom", {
+                Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.
+            </div>`, this.lacksAudience ? e += "<div class='warning'>ESTE JUEGO NO TIENE FUNCIÓN DE PÚBLICO</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA</div>"), Ot.show("custom", {
             html: e,
             position: "bottom",
             timer: t,
@@ -21032,10 +21032,10 @@ const $x = Et.View.extend({
 			<div class="container">\r
 				<br /><span id="fibbage-lobby-text"></span><br />\r
 				<form class="pure-form">\r
-					<button type="button" id="fibbage-startgame" class="button-fibbage button-xlarge pure-button pure-input-1">EVERYBODY'S IN</button>\r
-					<button type="button" id="fibbage-stopcountdown" class="button-fibbage  button-xlarge pure-button pure-input-1">CANCEL</button>\r
-					<button type="button" id="fibbage-sameplayers" class="button-fibbage  button-xlarge pure-button pure-input-1 fibbage-endbuttons">SAME PLAYERS</button>\r
-					<button type="button" id="fibbage-newplayers" class="button-fibbage  button-xlarge pure-button pure-input-1 fibbage-endbuttons">NEW PLAYERS</button>	\r
+					<button type="button" id="fibbage-startgame" class="button-fibbage button-xlarge pure-button pure-input-1">ESTAMOS TODOS</button>\r
+					<button type="button" id="fibbage-stopcountdown" class="button-fibbage  button-xlarge pure-button pure-input-1">CANCELAR</button>\r
+					<button type="button" id="fibbage-sameplayers" class="button-fibbage  button-xlarge pure-button pure-input-1 fibbage-endbuttons">MISMOS JUGADORES</button>\r
+					<button type="button" id="fibbage-newplayers" class="button-fibbage  button-xlarge pure-button pure-input-1 fibbage-endbuttons">NUEVOS JUGADORES</button>	\r
 				</form>\r
 			</div>\r
 		</div>\r
@@ -21052,7 +21052,7 @@ const $x = Et.View.extend({
 \r
         <div class="pt-page-off state-pickbloop fibbage-page">\r
 			<div class="container">\r
-				<br /><span>SELECT YOUR SOUND FOR THE GAME!</span><br />\r
+				<br /><span>¡SELECCIONA TU SONIDO PARA LA PARTIDA!</span><br />\r
 				<div class="button-container">\r
 					<form class="pure-form">\r
 						<fieldset class="bloop-fieldset">\r
@@ -21064,7 +21064,7 @@ const $x = Et.View.extend({
 \r
 		<div class="pt-page-off state-choosing fibbage-page">\r
 			<div class="container">\r
-				<br /><span>You're choosing the category!</span><br />\r
+				<br /><span>¡Estás eligiendo la categoría!</span><br />\r
 				<div class="button-container">\r
 					<form class="pure-form">\r
 						<fieldset class="button-fieldset">\r
@@ -21081,10 +21081,10 @@ const $x = Et.View.extend({
 				<div id="fibbage-submit-alert" class="alert alert-info">Alert message goes here</div>\r
 				<form class="pure-form" id="fibbage-enterlie-field">\r
 					<div class="pure-u-1">\r
-						<input id="fibbage-lie-input" name="fibbage-lie" class="pure-input-1 capitalize jbg-input fibbage-lie-input" type="text" maxlength="45" placeholder="ENTER A LIE" autocapitalize="off" autocorrect="off" autocomplete="off">\r
+						<input id="fibbage-lie-input" name="fibbage-lie" class="pure-input-1 capitalize jbg-input fibbage-lie-input" type="text" maxlength="45" placeholder="INGRESA UNA MENTIRA" autocapitalize="off" autocorrect="off" autocomplete="off">\r
 					</div>\r
-					<button type="button" id="fibbage-lieforme" class="button-fibbage button-large pure-button capitalize left">Lie for me<br/>(Half Points)</button>\r
-					<button type="submit" id="fibbage-submitlie" class="button-fibbage button-large pure-button capitalize right"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;SEND</button>\r
+					<button type="button" id="fibbage-lieforme" class="button-fibbage button-large pure-button capitalize left">Miente por mí<br/>(Mitad de puntos)</button>\r
+					<button type="submit" id="fibbage-submitlie" class="button-fibbage button-large pure-button capitalize right"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;ENVIAR</button>\r
 					<div id="fibbage-submitlie-loading" style="display:none;" class="button-fibbage-loading"></div>\r
 				</form>\r
 				<div id="fibbage-suggestions" class="pure-g"></div>\r
@@ -21098,9 +21098,9 @@ const $x = Et.View.extend({
 				<br />\r
 				<form id="fibbage-defib" class="pure-form">\r
 					<button type="button" data-param="defib" class="pure-input-1 fibbage-defib-button button-large pure-button button-fibbage button-fibbage-defib">\r
-						<img class="defib-icon" src='main/pp2/fibbage2/fibbage2/defib.png' />&nbsp;&nbsp;&nbsp;&nbsp;DE<font color="red">FIB</font>RILLATOR\r
+						<img class="defib-icon" src='main/pp2/fibbage2/fibbage2/defib.png' />&nbsp;&nbsp;&nbsp;&nbsp;DES<font color="red">FIB</font>RILADOR\r
 					</button>\r
-					<br /><span>CUT YOUR CHOICES DOWN TO TWO!</span>\r
+					<br /><span>¡REDUCE TUS OPCIONES A DOS!</span>\r
 				</form>\r
 			</div>\r
 		</div>\r
@@ -21114,11 +21114,11 @@ const $x = Et.View.extend({
 		</div>\r
 \r
 		<div class="pt-page-off state-liereceived fibbage-page">\r
-			<br /><span>LIE ENTERED!<br />WAITING FOR OTHER PLAYERS.</span><br />\r
+			<br /><span>¡MENTIRA INGRESADA!<br/>ESPERANDO A LOS OTROS JUGADORES.</span><br />\r
 		</div>\r
 \r
 		<div class="pt-page-off state-lyingdone fibbage-page">\r
-			<br /><span>LYING IS DONE!</span><br />\r
+			<br /><span>¡TERMINASTE DE MENTIR!</span><br />\r
 		</div>		\r
 \r
 		<div class="pt-page-off state-notchoosing fibbage-page">\r
@@ -21132,11 +21132,11 @@ const $x = Et.View.extend({
             <img style="margin-left:auto; margin-right:auto; max-width:75%; max-height:75%;"  src='main/pp2/fibbage2/fibbage2/logo.png'>\r
 			<span>\r
 				<br /><br />\r
-				You can \u201CLike\u201D your favorite lies (one Like per question).\r
+				Puedes darle \u201CLike\u201D a tus mentiras favoritas (un Like por pregunta).\r
 				<br /><br />\r
-				- AND -\r
+				- Y -\r
 				<br /><br />\r
-				You can play along by guessing the Truth on each question! Get a perfect 7/7 score and receive a free, weird bonus fact \u2013 great for parties!\r
+				¡Puedes jugar adivinando la Verdad en cada pregunta! Obtén un puntaje perfecto de 7/7 y recibe un dato adicional extraño y gratuito \u2013 ¡ideal para fiestas!\r
 			</span>\r
 			<br />\r
 		</div>\r
@@ -21144,7 +21144,7 @@ const $x = Et.View.extend({
 		<div class="pt-page-off state-audience-postgame fibbage-page">\r
 			<div class="container">\r
 				<br /><img style="margin-left:auto; margin-right:auto; max-width:75%; max-height:75%;"  src='main/pp2/fibbage2/fibbage2/logo.png'>\r
-				<br /><br /><span>FINAL SCORE</span><br /><br />\r
+				<br /><br /><span>PUNTAJE FINAL</span><br /><br />\r
 				<span id="audience-postgame-score" class="audience-score"></span><br /><br />\r
 				<span id="audience-postgame-score-quip"></span><br /><br />\r
 				<div class="audience-bonus-fact"><span id="audience-bonus-fact" class="audience-bonus-fact"></span></div><br />\r
@@ -21155,7 +21155,7 @@ const $x = Et.View.extend({
 		<div class="pt-page-off state-audience-score fibbage-page">\r
 			<div class="container">\r
 				<br /><img style="margin-left:auto; margin-right:auto; max-width:75%; max-height:75%;"  src='main/pp2/fibbage2/fibbage2/logo.png'>\r
-				<br /><br /><span>YOUR SCORE SO FAR</span><br /><br />\r
+				<br /><br /><span>TU PUNTAJE HASTA AHORA</span><br /><br />\r
 				<span id="audience-score" class="audience-score"></span><br /><br />\r
 				<span id="audience-score-quip"></span>\r
 			</div>\r
@@ -21187,41 +21187,41 @@ const zx = BC.extend({
     currentLike: "",
     currentQuip: "",
     currentFact: "",
-    bonusFacts: ["During the 1988 Iditarod dog sled race in Alaska, John Suter competed not with a team of traditional sled dogs, but with a team of poodles! (He lost.)", "The barking sounds of the velociraptors in Jurassic Park were made by recording the sound of turtles mating.", "Seattle\u2019s 2011 census report revealed that citizens had more dogs than children.", "Former U.S. President Warren G. Harding once lost the White House china in a poker match!", "The inventors of bubble wrap were initially trying to make a plastic wallpaper!", "Poodle Clipping was a demonstration sport in the 1900 Olympics!", "Doritos were invented at Disneyland!", "Dr. Seuss proposed to his wife while she was riding on the back of his motorcycle!", "In 2015, the Atlanta Falcons were fined $350,000 and lost a 2016 NFL draft pick after they were caught blasting fake crowd noise out of their stadium speakers.", "One of the first prototypes of the Apple mouse was constructed out of a butter dish and a roll-on deodorant!", "There\u2019s a Baltimore-based metal band whose lead singer is an African Grey parrot. They\u2019re called Hatebeak.", "Andrew Lloyd Weber\u2019s musical score for the sequel to The Phantom of the Opera was, and this is true, deleted by his cat.", "Disney animators were instructed to make Aladdin resemble Tom Cruise and Michael J. Fox.", "The first sports bra was constructed by sewing two jock straps together!", "Before portraying them as owners of a burger restaurant, the creator of Bob\u2019s Burgers intended for the Belchers to be a family of cannibals!", "Fan of Breaking Bad? The real people who live in Walter White\u2019s house probably aren\u2019t, because people keep imitating a famous scene by throwing pizzas on their roof.", "If you travel to the Italian town of Laglio, be warned. There\u2019s a 500 Euro fine for getting too close to George Clooney. (He loves to vacation there.)", "If you\u2019re looking for that perfect place for your next party or wedding, consider the Sixth Floor Museum, which is now available for rental. It\u2019s the building from which Lee Harvey Oswald allegedly shot JFK! Romantic!", "A Los Angeles tree that was planted in 2001 in memory of George Harrison\u2019s life also ceased to be in 2015 after it was killed by\u2026 beetles.", "New York City averages about 2,100 exploding manholes per year, many of which seriously injure passersby. That\u2019s only about 6 per day, don\u2019t worry. You\u2019ll probably be fine."],
-    reaction01: ["Annnnd you lost. But keep playing! You can\u2019t do any worse!", "Down and out in the first round. But keep playing to partially salvage your reputation!", "Lost on the first question. But keep playing for the second place prize of NOTHING!", "Lost in the first round! But keep playing and we won\u2019t tell people how you utterly, utterly failed.", "Lost in the first round. But hey, defy the odds against you and keep playing for a chance to get a perfect score!", "And just like that you\u2019ve lost. Your parents still think you\u2019re a winner though, so keep playing for them!"],
-    reaction11: ["Nailed it! Now just do that six more times. No pressure!", "Boom! You\u2019re flying high!", "Great start! You can do this...unless the mounting pressure makes you crack!", "Perfect so far! These are the things memories are made of!!!", "And the streak begins! You got this!!! (Unless you don\u2019t. We\u2019ll see.)", "One for one! You are invincible and nothing can stop you!"],
-    reaction02: ["Okay, you\u2019re still not gonna win, but you\u2019re playing for fun! Right? Right?!", "If the goal was to get them all wrong, then YOU\u2019RE DOING GREAT!!!", "And the streak continues! It\u2019s not a good streak but\u2026 IT CONTINUES!!!", "You\u2019re completely out of it, but we salute your never-give-up spirit!!!", "You\u2019re completely out of it, but keep playing! What else you gonna do?", "Ok, new goal: Try to go 0 for 3!", "Alright, 0 for 2. You can only go up (or farther down) from here!"],
-    reaction12: ["You\u2019ve answered half of them right...but more importantly, you\u2019ve answered half of them wrong.", "You\u2019ve gotten 50% of them right! But there\u2019s a 100% chance you won\u2019t win!", "On one hand, you got one out of two right! But that hand doesn\u2019t matter. Sorry.", "One out of two ain\u2019t bad. It ain\u2019t good enough to win, but it ain\u2019t bad.", "One out of two. Math is hard but that\u2019s roughly a success rate of 46%.", "You\u2019ve gotten 50% of them right! Be 50% excited!"],
-    reaction22: ["Perfect score! Keep it up because it doesn\u2019t get any easier from here.", "Is your brain even breaking a sweat yet? Do brains sweat? Don\u2019t answer that, you might ruin your perfect score.", "Two for two! It\u2019s time to get mildly but not too excited!", "Perfect score so far! Be confident, but don\u2019t be cocky.", "According to our genius math dog who counts with his paws, you\u2019re on your way to a perfect score!", "You\u2019re perfect! Well, your score is."],
-    reaction03: ["But keep playing because we want to see how bad this can get.", "You\u2019re not letting your cat play for you, are you?", "So, you haven\u2019t gotten any right. Big deal. Accomplishing things is overrated. You just keep doing what you\u2019re doing, which is nothing!", "Keep going. You can\u2019t get them all wrong. Right? Right?! (We don\u2019t expect you to know the correct answer to that.)", "0 for 3. No need to panic. Stay calm until you\u2019re 0 for 4.", "You get an A for effort. Still a big F for score, though."],
-    reaction13: ["You obviously can\u2019t spot a lie and should probably stay off the internet.", "Is it futile to continue? Yes, but do it anyway!", "One for three. You\u2019re dumping a giant third on this game.", "Just one correct, but remember: A score is just a number that dictates whether you win or not.", "One out of three. Prove that you are more than just a fraction!"],
-    reaction23: ["Two for three. You\u2019re not gonna win, but at least you\u2019re not embarrassing yourself.", "Two outta three. Dig deep into yourself and find the courage to go on!", "A perfect score is still not out of the question, in an alternate reality.", "Whatever you do, don\u2019t get them all right from here on out or it\u2019ll be excruciating"],
-    reaction33: ["Three for three! Nobody\u2019s sneaking any BS past you!", "Three in a row! That\u2019s officially a streak! You\u2019re streaking!", "Three for three! Are you peeking at the back of the game screen where all the answers are printed in tiny upside-down type?", "Three for three! You need a water or anything? No? Ok, keep going!", "Three for three! We don\u2019t want to jinx you but you\u2019re going to get a perfect score!"],
-    reaction04: ["Okay, okay. This is bad. You have to keep going. You have to get one right.", "You obviously can\u2019t spot a lie. We can help you if you send us your credit card and social security numbers.", "This is terrible. We can\u2019t stand to look, yet\u2026 we can\u2019t look away. Please keep going, it\u2019s entertaining.", "Zero for four. You think Rocky would stop now? No way! He LOVES Fibbage.", "In case it wasn\u2019t clear, pick the ones that AREN\u2019T lies."],
-    reaction14: ["One right, three wrong. You\u2019re hopeless, but we admire you coming back for more punishment.", "One for four. A blindfolded mouse could do better. (We\u2019ve done the research.)", "On the plus side, you\u2019re probably a really good child and/or parent.", "One out of four. Let\u2019s see if that can become one out of seven! Yeah!", "You\u2019re just pressing buttons, aren\u2019t you?"],
-    reaction24: ["Two for four. Just do twice as good next time and you\u2019ve got this!", "Two for four. At this rate, you\u2019ll get 3.5 right!", "Keep reaching for halfway to the stars! Be the best mediocre you can be!", "If you believe in yourself, anything is possible! Except a perfect score. That\u2019s long gone at this point.", "Two out of four. You\u2019ve seen the face of adversity. Slap it and keep playing!"],
-    reaction34: ["Three out of four. That one wrong answer will haunt you forever!", "So close! One day you\u2019ll look back on this failure and laugh.", "Remember that ONE ANSWER you missed? We do.", "Usually, three out of four is good. This is not one of those times."],
-    reaction44: ["Perfect so far! Don\u2019t choke!", "Okay, we get it. You\u2019re smart. Don\u2019t blow it, brainiac.", "C\u2019mon! Just admit you\u2019re cheating! You have inside information\u2026 a spy in our offices\u2026 something.", "Wow, still perfect! You\u2019re starting to make us sweat.", "Four for four. That\u2019s fun to say out loud. Try it!"],
-    reaction05: ["Okay, this hurts. But you\u2019ve got to finish. You\u2019ve endured this much.", "A baby could\u2019ve gotten ONE right!", "We want to insult you, but it\u2019s too easy and that makes us feel bad.", "Zero for five. You remind us of a certain Jamaican bobsled team.", "Well, there\u2019s no way to sugarcoat this. You\u2019re doing pretty well. (We tried.)", "Zero for five! Lesser players would quit. Wait, there can\u2019t be lesser players."],
-    reaction15: ["Somehow, it would seem better if you had just missed them all, you know?", "You\u2019re great! (We figured you\u2019d probably believe that, too.)", "Don\u2019t quit your day job. Or your night job.", "You\u2019re no longer an underdog. You\u2019re now the dog that\u2019s under the underdog.", "One out of five. But who cares? Your hair looks fantastic!"],
-    reaction25: ["Just two more questions and you can be put out of your misery.", "Okay, the strategy next time is to ignore your instincts.", "Even if you had gotten twice as many right, it still wouldn\u2019t be enough!!!", "Not good. But, as Gandhi once said, \u201CKeep playing!\u201D", "Just two correct. If you can find the will to live on, you\u2019re more than welcome to keep playing."],
-    reaction35: ["It\u2019s still not gonna happen, but it\u2019s the journey that counts.", "Even though you\u2019re technically a loser, you\u2019re kind of a half-winner in our eyes!", "Two questions left. Do it for pride.", "We had you pegged as a middle-of-the-road player, and look! You are!", "Three out of five. Clutch your amulet and find the strength to go on!"],
-    reaction45: ["You\u2019re on pace for the 90% award! Unfortunately, there\u2019s no such thing!", "You had one hiccup. Next time try holding your breath for the whole game.", "Four out of five looks good, but it still gets you squat. Hope you like squat!", "Great effort! You\u2019ll still get nothing\u2026 but GREAT EFFORT!!!", "Hey, you\u2019ve only missed one after five questions! Celebrate by whispering \u201Cyay!\u201D"],
-    reaction55: ["Two questions left to perfection. Relax, and be one with the Fibbage.", "Are you a carpenter or general contractor or manicurist or nailmaker? Because you are nailing this.", "Just two more. We\u2019re so nervous for you!", "Perfect score after five! Now comes the real pressure. Don\u2019t blow it.", "Wow, we can\u2019t trip you up. We blame it on the terrible lies the players are putting in."],
-    reaction06: ["This has been nothing short of a trainwreck.", "Again, we\u2019d to insult you, but I\u2019m not sure you would understand it.", "Shhhhh. It\u2019ll all be over soon.", "Look, the past is the past. The future is bright!", "Let\u2019s talk about anything else but your score."],
-    reaction16: ["Okay, you just need one more right to go from crappy to stinky.", "Good news: With this score you\u2019ve just won the title of Most Gullible Person in The World!", "One out of six. At least you aren\u2019t one of those losers who has zero!", "Just one out of six. But think about how sweet 2 out of 7 would be! Smell it!", "One out of six. We bet you\u2019ve learned a lot about yourself though!"],
-    reaction26: ["You know what? Next time just cheat.", "Okay, not your best showing\u2026 at least we hope this isn\u2019t your best.", "Sure, you could\u2019ve stopped several questions ago, but what\u2019s so bad about embarrassment?!", "We\u2019re not sure what makes you tick, except that it\u2019s obviously not the will to reach perfection!", "Average. Vanilla. Ho-hum. Any of those adjectives are too good for your performance."],
-    reaction36: ["Most people would\u2019ve looked at this crappy score and quit. Way to gut it out!", "Three out of six. We owe you a half of a congrats!"],
-    reaction46: ["4 correct, 2 incorrect. Unfortunately two horrific wrongs don\u2019t make a right.", "It\u2019s hard to criticize this score. Hard, but not impossible. It\u2019s a relatively bad score.", "4 out of 6 correct. You\u2019re two thirds of a winner!!!", "4 out of 6 correct. If Fibbage were a government job, you\u2019d be killing it!", "After six questions, you have four right. Let\u2019s double-check that\u2026 yes, that\u2019s right."],
-    reaction56: ["Let\u2019s get the next one right, so the one you missed will sting even more!", "5 out of 6 is pretty good. Pointless and without reward, but pretty good!", "Five out of six! We\u2019re not allowed to make trophies for that, so make your own!.", "You\u2019ve only missed one! Too bad we can\u2019t be bribed to change it\u2026 or can we? You know our address."],
-    reaction66: ["Just one more left! Don\u2019t crack under the pressure like so many before you!", "Don\u2019t screw it up now and ruin the greatest moment of your life!", "You\u2019re a well-oiled Fibbage machine! You look greasy but oil will do that!", "6 for 6! You\u2019re not falling for these weak lies!", "Apparently, you\u2019ve confused Fibbage for old carpet, because you are tearing it up!", "Are you ready for Fibbage fame? If not, quit now or hand the controller to an idiot.", "Perfect after six! Eternal glory is just one question away!", "Perfect after six! What a crazy ride this has been! We\u2019re putting together a touching montage right now!"],
-    reaction07: ["Let us never speak of this again.", "A big goose egg. No, you know what? We won\u2019t insult a perfectly good egg like that.", "You did it! You failed in the most complete way possible!!!", "You did it! Zero for seven! Take that, success!", "Slow clap.", "At least you had fun, right? Probably not.", "People said it couldn\u2019t be done, but you proved them wrong!"],
-    reaction17: ["How the heck did you get one right?", "This score has set video games back a decade.", "We won\u2019t tell anyone about this score if you won\u2019t.", "Do you just believe everything anyone tells you?", "One for seven. You may be a loser but you\u2019re no quitter!"],
-    reaction27: ["We don\u2019t want to discourage you, but that was terrible and this game probably isn\u2019t for you.", "Were you distracted by shiny, jingling keys while you were playing?", "Winning isn\u2019t everything. It\u2019s just 5 better than what you did.", "On the plus side, your haters are happy.", "Hit the showers. Better yet, take a nice, long bath. Better yet, pick up a book and try to learn something."],
-    reaction37: ["Well, you stuck it out to the end like a champ. Except for winning. Champs win.", "At least you finished. You can go ahead and call yourself The Finisher \u2013 we won\u2019t tell anyone what really happened.", "You\u2019re probably discouraged enough, so here\u2019s a positive image: puppies riding baby pigs. Feel better.", "Don\u2019t worry. You\u2019ll get them next time! (Although we\u2019re not betting on it.)", "Let this inspire you to go on and do something with your life! (Something that doesn\u2019t involve recognizing obvious lies.)"],
-    reaction47: ["Well, you got more right than wrong\u2026 so that\u2019s already better than most referees, psychics, and teenagers trying to identify Mexico on a map!", "Look, getting four out of seven happens to all of us. It doesn\u2019t make you any less of a Fibbage player.", "Hey, the average player gets 4/7. Nah\u2026 just kidding, they do better than that.", "Keep being you. Not great, not bad. Just you."],
-    reaction57: ["Sorry you didn\u2019t win, but on the bright side, no one expected you to win anyway!", "You only missed two, but a quick recap: You weren\u2019t supposed to miss any.", "Well, you only missed two. Two huge, irrevocable mistakes.", "Now you have something to strive for in the offseason.", "Don\u2019t look at them as two mistakes. Look at them as two goofs. Goofs is funnier.", "Partially moderately respectable!"],
-    reaction67: ["Six out of seven! It\u2019s no different than getting zero out of seven, but still, good job.", "You were so close!!! The important thing is not to dwell on it tonight in your nightmares.", "So close! That\u2019s the type of thing that would drive most people nuts. Oh well. Have a good day!", "You might not realize this, but 6/7 is as close to a perfect score as you be get without actually getting one.", "This will either make you stronger or absolutely destroy you. Send us a post card and let us know.", "There is a lesson in here. Not sure what. But there is, probably."],
+    bonusFacts: ["Durante la carrera de trineos tirados por perros Iditarod de 1988 en Alaska, John Suter no compitió con un equipo de perros de trineo tradicional, ¡sino con un equipo de caniches! (Perdió).", "Los ladridos de los velocirraptores en Jurassic Park se hicieron grabando el sonido del apareamiento de las tortugas.", "El informe del censo de Seattle de 2011 reveló que los ciudadanos tenían más perros que niños.", "¡El ex presidente de los EE. UU., Warren G. Harding, una vez perdió la porcelana de la Casa Blanca en un partido de póquer!", "¡Los inventores del papel de burbujas inicialmente estaban tratando de hacer un papel tapiz de plástico!", "¡Recorte de pelo de Caniches fue un deporte de demostración en los Juegos Olímpicos de 1900!", "¡Los Doritos se inventaron en Disneylandia!", "¡El Dr. Seuss le propuso matrimonio a su esposa mientras ella viajaba en la parte trasera de su motocicleta!", "En 2015, los Atlanta Falcons fueron multados con $350.000 dólares y perdieron una selección del draft de la NFL de 2016 después de que los sorprendieran emitiendo ruido falso de multitud en los parlantes de su estadio.", "¡Uno de los primeros prototipos del mouse de Apple se construyó con un plato de mantequilla y un desodorante de bola!", "Hay una banda de metal con sede en Baltimore cuyo cantante principal es un loro gris africano. Se llaman Hatebeak.", "La partitura musical de Andrew Lloyd Weber para la secuela de El fantasma de la ópera fue, y es cierto, borrada por su gato.", "Los animadores de Disney recibieron instrucciones de hacer que Aladdin se pareciera a Tom Cruise y a Michael J. Fox.", "¡El primer sostén deportivo se construyó cosiendo dos suspensorios juntos!", "Antes de retratarlos como dueños de un restaurante de hamburguesas, el creador de Bob’s Burgers pretendía que los Belcher fueran una familia de caníbales.", "¿Fan de Breaking Bad? Las personas reales que viven en la casa de Walter White probablemente no lo sean, porque la gente sigue imitando una escena famosa tirando pizzas en el techo.", "Si viajas a la ciudad italiana de Laglio, ten cuidado. Hay una multa de 500 Euros por acercarse demasiado a George Clooney. (Le encanta ir de vacaciones allí).", "Si estás buscando el lugar perfecto para tu próxima fiesta o boda, considera el Sixth Floor Museum, que ahora está disponible para alquiler. ¡Es el edificio desde el que supuestamente Lee Harvey Oswald le disparó a JFK! ¡Romántico!", "Un árbol de Los Ángeles que se plantó en 2001 en memoria de la vida de George Harrison también dejó de existir en 2015 después de que lo mataran\u2026 escarabajos (beetles en inglés).", "La ciudad de Nueva York tiene un promedio de alrededor de 2.100 bocas de acceso que explotan por año, muchas de las cuales lesionan gravemente a los transeúntes. Eso es solo alrededor de 6 por día, no te preocupes. Probablemente estarás bien."],
+    reaction01: ["Yyyyy perdiste. ¡Pero sigue jugando! ¡No te puede ir peor!", "Abajo y fuera en la primera ronda. ¡Pero sigue jugando para salvar parcialmente tu reputación!", "Perdiste en la primera pregunta. ¡Pero sigue jugando por el premio del segundo lugar de NADA!", "¡Perdiste en la primera ronda! Pero sigue jugando y no le diremos a la gente cómo fallaste totalmente por completo.", "Perdiste en la primera ronda. Pero oye, ¡desafía las probabilidades en tu contra y sigue jugando para tener la oportunidad de obtener un puntaje perfecto!", "Y así has perdido. Sin embargo, tus padres todavía creen que eres genial, ¡así que sigue jugando por ellos!"],
+    reaction11: ["¡Lo lograste! Ahora solo haz eso seis veces más. ¡Sin presión!", "¡Búm! ¡Estás volando alto!", "¡Gran comienzo! Puedes hacer esto... ¡a menos que la creciente presión te haga estallar!", "¡Perfecto hasta ahora! ¡¡¡Estas son las cosas de las que están hechos los recuerdos!!!", "¡Y comienza la racha! ¡¡¡Tú puedes!!! (A menos que no. Ya veremos).", "¡Uno por uno! ¡Eres invencible y nada puede detenerte!"],
+    reaction02: ["Okey, aún no vas a ganar, ¡pero estás jugando por diversión! ¿Verdad? ¡¿Verdad?!", "Si el objetivo era equivocarse en todas, ¡¡¡LO ESTÁS HACIENDO MUY BIEN!!!", "¡Y la racha continúa! No es una buena racha pero\u2026 ¡¡¡CONTINÚA!!!", "Estás completamente fuera, ¡pero saludamos tu espíritu de nunca rendirte!", "Estás completamente fuera, ¡pero sigue jugando! ¿Qué más vas a hacer?", "Ok, nueva meta: ¡Intenta hacer 0 de 3!", "Muy bien, 0 de 2. ¡Solo puedes subir (o bajar más) desde aquí!"],
+    reaction12: ["Has respondido correctamente a la mitad de ellas... pero, lo que es más importante, ha respondido incorrectamente a la mitad de ellas.", "¡Has acertado el 50% de ellas! ¡Pero hay un 100% de posibilidades de que no ganes!", "Por un lado, ¡has acertado uno de dos! Pero ese lado no importa. Disculpas.", "Uno de dos no está mal. No es lo suficientemente bueno para ganar, pero no es malo.", "Uno de dos. Las matemáticas son difíciles, pero eso es aproximadamente una tasa de éxito del 46%.", "¡Has acertado el 50% de ellas! ¡Deberías estar 50% emocionado!"],
+    reaction22: ["¡Puntaje perfecto! Sigue así porque no se vuelve más fácil desde aquí.", "¿Tu cerebro ya está sudando? ¿Los cerebros sudan? No respondas eso, podrías arruinar tu puntaje perfecto.", "¡Dos de dos! ¡Es hora de emocionarse levemente pero no demasiado!", "¡Puntaje perfecto hasta ahora! Ten confianza, pero no seas arrogante.", "De acuerdo con nuestro perro matemático genio que cuenta con sus patas, ¡estás en camino de obtener un puntaje perfecto!", "¡Eres perfecto! Bueno, tu puntaje es."],
+    reaction03: ["Pero sigue jugando porque queremos ver lo mal que se puede poner esto.", "No estás dejando que tu gato juegue por ti, ¿verdad?", "Así que, no has acertado. Qué cosa. Lograr cosas está sobrevalorado. ¡Sigue haciendo lo que estás haciendo, que es nada!", "Sigue así. No puedes equivocarte con todas. ¿Verdad? ¡¿Verdad?! (No esperamos que sepas la respuesta correcta).", "0 de 3. No hay que entrar en pánico. Mantén la calma hasta que hagas 0 de 4.", "Tienes un 10 por el esfuerzo. Aunque sigues teniendo un gran 0 por el puntaje."],
+    reaction13: ["Obviamente no puedes detectar una mentira y probablemente deberías alejarte de Internet.", "¿Es inútil continuar? Sí, ¡pero hazlo de todos modos!", "Una de tres. Estás arruinando un tercio gigante en este juego.", "Solo una correcta, pero recuerda: un puntaje es solo un número que dicta si ganas o no.", "Una de tres. ¡Demuestra que eres más que una fracción!"],
+    reaction23: ["Dos de tres. No vas a ganar, pero al menos no te avergüenzas.", "Dos de tres. ¡Sumérgete en tu propio cuerpo y encuentra el coraje para seguir adelante!", "Un puntaje perfecto todavía no está fuera de discusión, en una realidad alternativa.", "Hagas lo que hagas, no lo hagas bien de aquí en adelante o será espantoso"],
+    reaction33: ["¡Tres de tres! ¡Nadie te está engañando con alguna tontería!", "¡Tres consecutivas! ¡Eso es oficialmente una racha! ¡Estás en racha!", "¡Tres de tres! ¿Estás mirando la parte de atrás de la pantalla del juego donde todas las respuestas están impresas en pequeñas letras al revés?", "¡Tres de tres! ¿Necesitas agua o algo? ¿No? Bien, ¡sigue adelante!", "¡Tres de tres! No queremos mufarla, ¡pero obtendrás un puntaje perfecto!"],
+    reaction04: ["Okey, okey. Esto es malo. Tienes que continuar. Tienes que acertar una.", "Obviamente no puedes detectar una mentira. Podemos ayudarte si nos envías tu tarjeta de crédito y números de seguro social.", "Esto es terrible. No podemos soportar mirar, y aún así\u2026 no podemos mirar hacia otro lado. Sigue así, es entretenido.", "Cero de cuatro. ¿Crees que Rocky se detendría ahora? ¡De ninguna manera! ADORA Fibbage.", "En caso de que no haya quedado claro, elige las que NO SON mentiras."],
+    reaction14: ["Una correcta, tres incorrectas. No tienes remedio, pero admiramos que regreses por más castigo.", "Una de cuatro. Un ratón con los ojos vendados podría hacerlo mejor. (Hicimos la investigación).", "En el lado positivo, probablemente seas un buen niño/a y/o padre/madre.", "Una de cuatro. ¡Veamos si eso puede convertirse en una de siete! ¡Sí!", "Solo estás presionando botones, ¿no es así?"],
+    reaction24: ["Dos de cuatro. ¡Solo haz el doble de bien la próxima vez y podrás hacerlo!", "Dos de cuatro. A este ritmo, ¡obtendrás 3,5 correctamente!", "¡Sigue alcanzando la mitad del camino hacia las estrellas! ¡Sé el mejor mediocre que puedas ser!", "¡Si crees en ti mismo/a, todo es posible! Excepto un puntaje perfecto. Eso se ha ido hace mucho en este punto.", "Dos de cuatro. Has visto la cara de la adversidad. ¡Dale una cachetada y sigue jugando!"],
+    reaction34: ["Tres de cuatro. ¡Esa respuesta incorrecta te perseguirá para siempre!", "¡Tan cerca! Un día recordarás este fracaso y te reirás.", "¿Recuerdas ESA RESPUESTA en donde fallaste? Nosotros sí.", "Por lo general, tres de cuatro es bueno. Este no es uno de esos casos."],
+    reaction44: ["¡Perfecto hasta ahora! ¡No te atores!", "Okey, lo entendemos. Eres inteligente. No lo arruines, cerebrito.", "¡Vamos! ¡Solo admite que estás haciendo trampa! Tienes información interna\u2026 un espía en nuestras oficinas\u2026 algo.", "¡Wow, tu puntaje sigue siendo perfecto! Estás empezando a hacernos sudar.", "Cuatro de cuatro. Es divertido decirlo en voz alta. ¡Inténtalo!"],
+    reaction05: ["Okey, esto duele. Pero tienes que terminar. Has soportado tanto.", "¡Un bebé podría haber acertado UNA!", "Queremos insultarte, pero es demasiado fácil y eso nos hace sentir mal.", "Cero de cinco. Nos recuerdas a cierto equipo de trineo de Jamaica.", "Bueno, no hay forma de endulzar esto. Lo estás haciendo bastante bien. (Lo intentamos).", "¡Cero de cinco! Los jugadores inferiores renunciarían. Espera, no puede haber jugadores inferiores."],
+    reaction15: ["De alguna manera, parecería mejor si hubieras errado todas, ¿sabes?", "¡Eres genial! (Pensamos que probablemente también lo creerías).", "No renuncies a tu trabajo diurno. O a tu trabajo nocturno.", "Ya no eres un segundón. Ahora eres el segundo que está debajo del Don.", "Una de cinco. ¿Pero a quién le importa? ¡Tu cabello se ve fantástico!"],
+    reaction25: ["Solo dos preguntas más y puede acabar tu sufrimiento.", "Okey, la estrategia la próxima vez es ignorar tus instintos.", "¡¡¡Incluso si hubieras acertado el doble, no sería suficiente!!!", "No es bueno. Pero, como dijo una vez Gandhi, \u201C¡Sigue jugando!\u201D", "Solo dos correctas. Si puedes encontrar la voluntad de seguir viviendo, eres más que bienvenido/a a seguir jugando."],
+    reaction35: ["Todavía no va a suceder, pero es el viaje lo que cuenta.", "Aunque técnicamente perdiste, ¡a nuestros ojos eres medio ganador!", "Quedan dos preguntas. Hazlo por orgullo.", "Te habíamos catalogado como un jugador intermedio, ¡y mira! ¡Lo eres!", "Tres de cinco. ¡Agarra tu amuleto y encuentra la fuerza para continuar!"],
+    reaction45: ["¡Estás en camino para el premio del 90%! Desafortunadamente, ¡no existe tal cosa!", "Tuviste un tropiezo. La próxima vez intenta correr sin los cordones desatados.", "Cuatro de cinco se ve bien, pero aun así te pone en cuclillas. ¡Espero que te gusten las sentadillas!", "¡Gran esfuerzo! Seguirás sin recibir nada\u2026 pero ¡¡¡GRAN ESFUERZO!!!", "¡Oye, solo le erraste a una después de cinco preguntas! Celebra susurrando \u201C¡yey!\u201D"],
+    reaction55: ["Dos preguntas para la perfección. Relájate y sé uno con el Fibbage.", "¿Eres carpintero, contratista general, manicurista o fabricante de uñas? Porque estás pegando en el clavo.", "Solo dos más. ¡Estamos tan nerviosos por ti!", "¡Puntaje perfecto después de cinco! Ahora viene la verdadera presión. No lo arruines.", "Wow, no podemos hacerte tropezar. Le echamos la culpa a las terribles mentiras que están poniendo los jugadores."],
+    reaction06: ["Esto ha sido nada menos que un desastre total.", "Una vez más, te insultaríamos, pero no estamos seguros de que lo entiendas.", "Shhhhh. Todo terminará pronto.", "Mira, el pasado es el pasado. ¡El futuro es brillante!", "Hablemos de cualquier otra cosa que no sea tu puntaje."],
+    reaction16: ["Está bien, solo necesitas una correcta más para pasar de asqueroso a apestoso.", "Buenas noticias: ¡Con este puntaje acabas de ganar el título de la persona más crédula del mundo!", "Una de seis. ¡Al menos no eres uno de esos perdedores que tiene cero!", "Solo una de seis. ¡Pero piensa en lo dulce que sería 2 de 7! ¡Huélelo!", "Una de seis. Sin embargo, ¡apostamos a que has aprendido mucho sobre ti mismo/a!"],
+    reaction26: ["¿Sabes que? La próxima vez solo haz trampa.", "Está bien, no es tu mejor demostración\u2026 al menos esperamos que esto no sea lo mejor.", "Claro, podrías haber parado hace varias preguntas, pero ¡¿qué tiene de malo la vergüenza?!", "No estamos seguros de qué te motiva, ¡excepto que obviamente no es la voluntad de alcanzar la perfección!", "Promedio. Vainilla. Ho-hum. Cualquiera de esos adjetivos es demasiado bueno para tu desempeño."],
+    reaction36: ["La mayoría de la gente habría mirado este puntaje feo y se habría dado por vencido. ¡Qué manera de lograrlo!", "Tres de seis. ¡Te debemos la mitad de unas felicidades!"],
+    reaction46: ["4 correctas, 2 incorrectas. Desafortunadamente, dos horribles errores no hacen un acierto.", "Es difícil criticar este puntaje. Difícil, pero no imposible. Es un puntaje relativamente malo.", "4 de 6 correctas. ¡¡¡Eres dos tercios de un ganador!!!", "4 de 6 correctas. Si Fibbage fuera un trabajo del gobierno, ¡lo estarías haciendo muy bien!", "Después de seis preguntas, tienes cuatro correctas. Verifiquemos esto\u2026 sí, así es."],
+    reaction56: ["¡Contesta bien la próxima, para que la que erraste te duela aún más!", "5 de 6 es bastante bueno. Sin sentido y sin recompensa, ¡pero bastante bueno!", "¡Cinco de seis! No se nos permite hacer trofeos para eso, ¡así que haz los tuyos!", "¡Solo le erraste a una! Lástima que no nos puedan sobornar para cambiarlo\u2026 ¿o sí? Conoces nuestra dirección."],
+    reaction66: ["¡Solo queda una más! ¡No te derrumbes bajo la presión como muchos antes que tú!", "¡No lo arruines ahora y estropees el mejor momento de tu vida!", "¡Eres una máquina de Fibbage bien engrasada! ¡Te ves grasoso pero el aceite hará eso!", "¡6 de 6! ¡No estás cayendo con estas débiles mentiras!", "Aparentemente, has confundido Fibbage con una alfombra vieja, ¡porque la estás rompiendo!", "¿Estás listo/a para la fama de Fibbage? Si no es así, sal ahora o dale el control a un idiota.", "¡Perfecto después de seis! ¡La gloria eterna está a solo una pregunta de distancia!", "¡Perfecto después de seis! ¡Qué loco viaje ha sido este! ¡Estamos armando un montaje conmovedor ahora mismo!"],
+    reaction07: ["Nunca más hablemos de esto.", "Un huevo de gallina grande. No, ¿sabes qué? No insultaremos un huevo perfectamente bueno así.", "¡Lo hiciste! ¡¡¡Fallaste de la manera más completa posible!!!", "¡Lo hiciste! ¡Cero de siete! ¡Toma eso, éxito!", "Aplauso lento.", "Al menos te divertiste, ¿verdad? Probablemente no.", "La gente dijo que no se podía hacer, ¡pero les demostraste las equivocaciones!"],
+    reaction17: ["¿Cómo diablos acertaste una?", "Este puntaje ha hecho retroceder a los videojuegos una década.", "No le diremos a nadie sobre este puntaje si tú no lo haces.", "¿Te crees todo lo que te dicen?", "Una de siete. Puede que hayas perdido, ¡pero no te rindes!"],
+    reaction27: ["No queremos desanimarte, pero eso fue terrible y probablemente este juego no sea para ti.", "¿Te distrajeron las teclas brillantes y tintineantes mientras jugabas?", "Ganar no lo es todo. Es solo 5 veces mejor que lo que hiciste.", "En el lado positivo, tus haters están felices.", "Tómate una ducha. Mejor aún, date un buen y largo baño. Mejor aún, toma un libro y trata de aprender algo."],
+    reaction37: ["Bueno, aguantaste hasta el final como un campeón. Excepto por ganar. Los campeones ganan.", "Al menos terminaste. Puedes ahora llamarte El Acabador \u2013 no le diremos a nadie lo que realmente sucedió.", "Probablemente estés lo suficientemente desanimado, así que aquí hay una imagen positiva: perritos montando cerditos. Siéntete mejor.", "No te preocupes. ¡Las acertarás la próxima vez! (Aunque no apostamos por ello).", "¡Deja que esto te inspire a seguir adelante y hacer algo con tu vida! (Algo que no implique reconocer mentiras obvias)."],
+    reaction47: ["Bueno, tuviste más aciertos que errores\u2026 ¡así que eso ya es mejor que la mayoría de los árbitros, psíquicos y adolescentes que intentan identificar a México en un mapa!", "Mira, sacar cuatro de siete nos pasa a todos. No te hace menos jugador de Fibbage.", "Oye, el jugador promedio obtiene 4/7. Nah\u2026 es una broma, lo hacen mejor que eso.", "Sigue siendo tú. No genial, no malo. Solo tú."],
+    reaction57: ["Lamentamos que no hayas ganado, pero por el lado positivo, ¡nadie esperaba que ganaras de todos modos!", "Solo te erraste a dos, pero para que recuerdes: se suponía que no le erraras a ninguna.", "Bueno, solo le erraste a dos. Dos grandes e irrevocables errores.", "Ahora tienes algo por lo que eforzarte en tu tiempo libre.", "No los mires como dos errores. Míralos como dos tonterías. Las tonterías son más divertidas.", "¡Parcialmente moderadamente respetable!"],
+    reaction67: ["¡Seis de siete! No es diferente a obtener cero de siete, pero aun así, buen trabajo.", "¡¡¡Estuviste tan cerca!!! Lo importante es no pensar en ello esta noche en tus pesadillas.", "¡Tan cerca! Ese es el tipo de cosa que volvería loca a la mayoría de las personas. Oh bueno. ¡Que tengas un buen día!", "Quizás no te des cuenta de esto, pero 6/7 es lo más cercano a un puntaje perfecto que puedes obtener sin obtener uno.", "Esto te hará más fuerte o te destruirá por completo. Envíanos una postal y háznoslo saber.", "Hay una lección aquí. No estamos seguro de qué. Pero la hay, probablemente."],
     events: {
         "click #fibbage-startgame": "startGame",
         "click #fibbage-stopcountdown": "stopCountdown",
@@ -21255,18 +21255,18 @@ const zx = BC.extend({
             if (n && n.split("_")[0] === "Lobby") {
                 this.hideLobbyButtons(), se("#player").css("background-color", t.playerColor);
                 const a = n.split("_")[1];
-                a === "WaitingForMore" ? se("#fibbage-lobby-text").html("Waiting for all players to join") : a === "CanStart" ? (se("#fibbage-lobby-text").html("Press this button when everybody has joined"), se("#fibbage-startgame").show()) : a === "Countdown" ? (se("#fibbage-lobby-text").html("Press this button to cancel game start"), se("#fibbage-stopcountdown").show()) : a === "PostGameHost" ? (se("#fibbage-lobby-text").html("What do you want to do?"), se(".fibbage-endbuttons").show()) : a === "PostGame" && se("#fibbage-lobby-text").html("Waiting for host decision"), this.showScreen(".state-lobby")
+                a === "WaitingForMore" ? se("#fibbage-lobby-text").html("Esperando a que todos los jugadores se unan") : a === "CanStart" ? (se("#fibbage-lobby-text").html("Pulsa este botón cuando todos se hayan unido"), se("#fibbage-startgame").show()) : a === "Countdown" ? (se("#fibbage-lobby-text").html("Pulsa este botón para cancelar el inicio de la partida"), se("#fibbage-stopcountdown").show()) : a === "PostGameHost" ? (se("#fibbage-lobby-text").html("¿Qué quieres hacer?"), se(".fibbage-endbuttons").show()) : a === "PostGame" && se("#fibbage-lobby-text").html("Esperando la decisión del anfitrión"), this.showScreen(".state-lobby")
             }
         } else if (i === "Gameplay_EndShortie") this.showScreen(".state-nothing");
         else if (i === "Gameplay_EndGame") this.showScreen(".state-nothing");
         else if (i === "Gameplay_Logo") this.showScreen(".state-nothing");
-        else if (i === "Gameplay_Round") se(".round-text").html(`ROUND ${e.round}`), this.showScreen(".state-round");
+        else if (i === "Gameplay_Round") se(".round-text").html(`RONDA ${e.round}`), this.showScreen(".state-round");
         else if (i === "Gameplay_CategorySelection" && n === "Gameplay_CategorySelection")
             if (t.isChoosing) {
                 let a = "";
                 for (let d = 0; d < e.choices.length; d++) a += `<button type="button" data-num="${d}" class="fibbage-category-button button-fibbage button-large pure-button pure-input-1">${Mt.safeText(e.choices[d])}</button>`;
                 se(".button-fieldset").html(a), this.showScreen(".state-choosing")
-            } else se("#notchoosing").html(`${Mt.safeText(e.choosingPlayerName)} is picking a category`), this.showScreen(".state-notchoosing");
+            } else se("#notchoosing").html(`${Mt.safeText(e.choosingPlayerName)} está eligiendo una categoría`), this.showScreen(".state-notchoosing");
         else if (i === "Gameplay_EnterLie")
             if (n === "Gameplay_EnterLie") {
                 if (this.activeScreen !== ".state-enterlie") {
@@ -21277,14 +21277,14 @@ const zx = BC.extend({
                 }
                 if (t.showError) {
                     const a = se("#fibbage-submit-alert");
-                    se("#fibbage-submit-alert").html("You entered the truth! Enter a lie!"), a.addClass("alert-info"), a.removeClass("alert-danger"), a.show()
+                    se("#fibbage-submit-alert").html("¡Ingresaste la verdad! ¡Ingresa una mentira!"), a.addClass("alert-info"), a.removeClass("alert-danger"), a.show()
                 }
                 this.showScreen(".state-enterlie")
             } else n === "Gameplay_LieReceived" && this.showScreen(".state-liereceived");
         else if (i === "Gameplay_LyingDone") this.showScreen(".state-lyingdone");
         else if (i === "Gameplay_ChooseLie" && n === "Gameplay_ChooseLie")
             if (t.choosingDone || t.chosen !== void 0) {
-                se("#chooselikes-choice").html(t.chosen ? `You chose: ${t.chosen}` : "You didn't make a choice"), se("#chooselikes-text").html("Award bonus likes");
+                se("#chooselikes-choice").html(t.chosen ? `Elegiste: ${t.chosen}` : "No hiciste una elección"), se("#chooselikes-text").html("Concede likes de bonificación");
                 let d = "";
                 for (let m = 0; m < t.choices.length; m++) {
                     const S = t.likes.indexOf(t.choices[m]) >= 0,
@@ -21294,13 +21294,13 @@ const zx = BC.extend({
                 }
                 se("#fibbage-chooselikes").html(d), this.showScreen(".state-chooselikes")
             } else {
-                se("#chooselie-text").html("find the truth!");
+                se("#chooselie-text").html("¡encuentra la verdad!");
                 let d = "";
                 for (let m = 0; m < t.choices.length; m++) d += `<button type="button" data-num="${m}" class="pure-input-1 fibbage-lie-button button-large pure-button button-fibbage">${Mt.safeText(t.choices[m])}</button>`;
                 t.hasDefib ? se("#fibbage-defib").show() : se("#fibbage-defib").hide(), se("#fibbage-chooselie").html(d), this.showScreen(".state-chooselie")
             }
         else if (i === "Gameplay_ChooseLike" && n === "Gameplay_ChooseLike") {
-            se("#chooselikes-choice").html(t.chosen ? `You chose: ${t.chosen}` : "You didn't make a choice"), se("#chooselikes-text").html("Award bonus likes");
+            se("#chooselikes-choice").html(t.chosen ? `Elegiste: ${t.chosen}` : "No hiciste una elección"), se("#chooselikes-text").html("Concede likes de bonificación");
             let a = "";
             for (let d = 0; d < t.choices.length; d++) {
                 const m = t.likes.indexOf(t.choices[d]) >= 0,
@@ -21313,7 +21313,7 @@ const zx = BC.extend({
     },
     updateAudienceLikes() {
         const t = this.model.get("room");
-        se("#audience-chooselikes-choice").html(`You chose: ${this.currentChoice===""?"NO ANSWER!":this.currentChoice}`), se("#audience-chooselikes-text").html("Award a like");
+        se("#audience-chooselikes-choice").html(`Elegiste: ${this.currentChoice===""?"¡SIN RESPUESTA!":this.currentChoice}`), se("#audience-chooselikes-text").html("Concede un like");
         const e = this.currentLike !== "";
         let n = "";
         for (let i = 0; i < t.choices.length; i++) {
@@ -21336,17 +21336,17 @@ const zx = BC.extend({
         } else if (e === "Gameplay_ChooseLike") this.updateAudienceLikes();
         else if (e === "Lobby_PostGame") this.numCorrect = 0, this.currentFact = "", this.currentQuip = "";
         else if (e === "Gameplay_Logo") this.showScreen(".state-audience-join"), this.currentQuip = "";
-        else if (e === "Gameplay_CategorySelection") se("#notchoosing").html(`${Mt.safeText(t.choosingPlayerName)} is picking a category`), this.showScreen(".state-notchoosing");
+        else if (e === "Gameplay_CategorySelection") se("#notchoosing").html(`${Mt.safeText(t.choosingPlayerName)} está eligiendo una categoría`), this.showScreen(".state-notchoosing");
         else if (e === "Gameplay_Round") se(".round-text").html(`ROUND ${t.round}`), this.showScreen(".state-round");
         else if (e === "Gameplay_EnterLie") this.showScreen(".state-audience-join");
         else if (e === "Gameplay_LyingDone") this.showScreen(".state-audience-join");
         else if (e === "Gameplay_EndGame") {
             if (se("#audience-postgame-score").html(`<span>${this.numCorrect}/7</span>`), this.numCorrect === 7) {
-                if (se("#audience-postgame-score-quip").html("You won a free bonus fact!"), this.currentFact === "") {
+                if (se("#audience-postgame-score-quip").html("¡Has ganado un dato de bonificación gratis!"), this.currentFact === "") {
                     const n = this.bonusFacts;
                     this.currentFact = n[Math.floor(Math.random() * n.length)]
                 }
-                se("#audience-bonus-fact").html(this.currentFact), se("#audience-bonus-quip").html("Play again to win more"), se(".audience-bonus-fact").show(), se(".audience-bonus-quip").show()
+                se("#audience-bonus-fact").html(this.currentFact), se("#audience-bonus-quip").html("Juega otra vez para ganar más"), se(".audience-bonus-fact").show(), se(".audience-bonus-quip").show()
             } else {
                 const n = this[`reaction${this.numCorrect.toString()}7`];
                 this.currentQuip = n[Math.floor(Math.random() * n.length)], se("#audience-postgame-score-quip").html(this.currentQuip), se("#audience-bonus-fact").html(""), se("#audience-bonus-quip").html(""), se(".audience-bonus-fact").hide(), se(".audience-bonus-quip").hide()
@@ -21392,7 +21392,7 @@ const zx = BC.extend({
         let t = this.sanitize(se("#fibbage-lie-input").val()).toUpperCase();
         if (t = t.replace(/\s\s+/g, " ").trim(), t.length === 0) {
             const e = se("#fibbage-submit-alert");
-            return se("#fibbage-submit-alert").html("You can't enter nothing! Use a suggestion if you need help!"), e.removeClass("alert-info"), e.addClass("alert-danger"), e.show(), !1
+            return se("#fibbage-submit-alert").html("¡No puedes dejarlo en blanco! ¡Usa una sugerencia si necesitas ayuda!"), e.removeClass("alert-info"), e.addClass("alert-danger"), e.show(), !1
         }
         return this.client.send("SendMessageToRoomOwner", {
             lieEntered: t,

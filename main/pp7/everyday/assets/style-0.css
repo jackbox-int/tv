@@ -26358,7 +26358,7 @@ li>a.button-color.active[data-color="#000000"] {
 }
 
 .everyday .info-bar.emergency .info-text:after {
-    content: "!!! EMERGENCY !!!";
+    content: "¡¡¡ EMERGENCIA !!!";
     position: absolute;
     top: 0;
     left: 0;
@@ -28001,7 +28001,7 @@ li>a.button-color.active[data-color="#000000"] {
 }
 
 .everyday .gizmos .gizmo-panel.interactive:after {
-    content: "TAP ON EACH GIZMO TO CHANGE";
+    content: "TOCA EN CADA APARATO PARA CAMBIARLO";
     position: absolute;
     bottom: 2px;
     left: 0%;
@@ -28735,7 +28735,7 @@ li>a.button-color.active[data-color="#000000"] {
 }
 
 .everyday .gizmo-panel.interactive .gizmo.gizmo-light:after {
-    content: "CODE SELECT";
+    content: "ELEGIR CÓDIGO";
     position: absolute;
     top: 83%;
     left: 0%;

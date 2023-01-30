@@ -23203,7 +23203,7 @@ li>a.button-color.active[data-color="#000000"] {
 }
 
 .jokeboat .playerTopBarView:before {
-    content: "IN CASE OF LOSS, RETURN TO:";
+    content: "EN CASO DE PÉRDIDA, REGRESE A:";
     position: absolute;
     top: 10px;
     left: 0;

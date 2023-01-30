@@ -10815,23 +10815,23 @@ ${n.message}`,
     let Wl = no;
     re(Wl, "isPolyfilled", !1);
     const sW = {
-            BACK: "Back",
-            CANCEL: "Cancel",
-            CLOSE: "Close",
-            CREATE: "Create",
-            DELETE: "Delete",
-            DONE: "Done",
-            EDIT: "Edit",
+            BACK: "Atrás",
+            CANCEL: "Cancelar",
+            CLOSE: "Cerrar",
+            CREATE: "Crear",
+            DELETE: "Borrar",
+            DONE: "Hecho",
+            EDIT: "Editar",
             OK: "OK",
             NO: "No",
-            PLAY: "Play",
-            PUBLISH: "Publish",
-            REMOVE: "Remove",
-            RESET: "Reset",
-            SUBMIT: "Submit",
-            TRY_AGAIN: "Try Again",
-            UNDO: "Undo",
-            YES: "Yes"
+            PLAY: "Jugar",
+            PUBLISH: "Publicar",
+            REMOVE: "Remover",
+            RESET: "Reiniciar",
+            SUBMIT: "Enviar",
+            TRY_AGAIN: "Intentarlo de nuevo",
+            UNDO: "Deshacer",
+            YES: "Sí"
         },
         aW = {
             UGC: {
@@ -10842,42 +10842,42 @@ ${n.message}`,
             }
         },
         oW = {
-            DISCONNECTED: "You have been disconnected.",
-            DRAWING_NOTHING: "You have to draw something!",
-            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-            ROOM_DESTROYED: "Thanks for playing!",
-            ROOM_DISCONNECTED: "Disconnected",
-            TEXT_NAUGHTY: "I\u2019m afraid you can\u2019t write that. Please be respectful of other players.",
-            TEXT_NOTHING: "You can\u2019t enter nothing!",
+            DISCONNECTED: "Has sido desconectado.",
+            DRAWING_NOTHING: "¡Tienes que dibujar algo!",
+            PLAYER_KICKED: "Has sido echado de la partida por un moderador.",
+            ROOM_DESTROYED: "¡Gracias por jugar!",
+            ROOM_DISCONNECTED: "Desconectado",
+            TEXT_NAUGHTY: "Me temo que no puedes escribir eso. Por favor sé respetuoso con otros jugadores.",
+            TEXT_NOTHING: "¡No puedes dejarlo en blanco!",
             TITLE: "Error"
         },
-        lW = "LOADING",
+        lW = "CARGANDO",
         cW = {
-            JOINED_COUNT: "x | {count} of {maxPlayers} players joined | {count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "x | {count} player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "x | Se han unido {count} de {maxPlayers} jugadores | Se han unido {count} de {maxPlayers} jugadores",
+            PLAYERS_NEEDED: "x | Se necesita {count} jugador para empezar | Se necesitan {count} jugadores para empezar",
+            WAITING_FOR_VIP: "Esperando a que {name} empiece la partida",
+            WAITING_FOR_GAMEPAD: "Esperando a que empiece la partida",
+            GAME_STARTING: "La partida está empezando",
+            BUTTON_START: "Pulsa para empezar",
+            BUTTON_CANCEL: "Pulsa para cancelar"
         },
         uW = {
-            GALLERY_LINK: "Visit the Gallery",
-            PLAY_AGAIN: "Play again?",
-            BUTTON_SAME_PLAYERS: "Same Players",
-            BUTTON_NEW_PLAYERS: "New Players"
+            GALLERY_LINK: "Visita la galería",
+            PLAY_AGAIN: "¿Otra vez?",
+            BUTTON_SAME_PLAYERS: "Mismos jugadores",
+            BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
         fW = {
-            AND: "AND",
-            OR: "OR"
+            AND: "Y",
+            OR: "O"
         },
         dW = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let\u2019s Go!"
+            BUTTON_SKIP: "Omitir",
+            BUTTON_NEXT: "Siguiente",
+            BUTTON_DONE: "¡Vamos!"
         },
         hW = {
-            NAME: "AUDIENCE"
+            NAME: "PÚBLICO"
         },
         pW = {
             EPISODE_REPORT: "Report Episode",
@@ -10911,21 +10911,21 @@ ${n.message}`,
         },
         gW = {
             BROADCASTER: {
-                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-                WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
+                SUBTEXT: "Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.",
+                WARNING: "ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA"
             },
             RECONNECTED: {
-                TEXT: "RECONNECTED",
-                SUBTEXT: "Have fun!"
+                TEXT: "RECONECTADO",
+                SUBTEXT: "¡Diviértete!"
             },
             RECONNECTING: {
                 CONTROLLER: {
-                    TEXT: "CONNECTION INTERRUPTED",
-                    SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
+                    TEXT: "CONEXIÓN INTERRUMPIDA",
+                    SUBTEXT: "Intentando reconectar ({attempt} de 5)"
                 },
                 GAME: {
-                    TEXT: "GAME CONNECTION INTERRUPTED",
-                    SUBTEXT: "Please wait while we attempt to reconnect"
+                    TEXT: "CONEXIÓN DEL JUEGO INTERRUMPIDA",
+                    SUBTEXT: "Por favor espera mientras intentamos reconectarte"
                 }
             }
         },
@@ -25548,32 +25548,32 @@ ${t}`
                 })
             })
         },
-        pne = "sent",
+        pne = "enviado",
         gne = {
-            SLIDE_0_TITLE: "In Weapons Drawn, every player is both a detective and a murderer.",
-            SLIDE_0_ITEM_1: "Murder guests brought by other players.",
-            SLIDE_0_ITEM_2: "Solve other murders to distract from your own.",
-            SLIDE_1_TITLE: "Each murder weapon you draw must contain a letter from your name.",
-            SLIDE_1_ITEM_1: 'This is your "calling card."',
-            SLIDE_1_ITEM_2: "Keep it a secret!",
-            SLIDE_2_TITLE: "Hide your letter as part of your drawing.",
-            SLIDE_2_ITEM_1: "Move your letter, then draw the weapon around it.",
-            SLIDE_2_ITEM_2: "Be on the lookout for other players\u2019 letters.",
-            SLIDE_3_TITLE: "Everyone brings two secret guests to the party.",
-            SLIDE_3_ITEM_1: "Give your guest a name that stands out, but won\u2019t lead back to you.",
-            SLIDE_3_ITEM_2: "Murder guests by guessing which player brought them.",
-            SLIDE_3_ITEM_3: "Your weapon is left behind as evidence.",
-            SLIDE_4_TITLE: "Pro Tips:",
-            SLIDE_4_ITEM_1: "Talk to each other and share your theories to get to a majority vote.",
-            SLIDE_4_ITEM_2: "Each player only draws each weapon once. Use this to eliminate suspects."
+            SLIDE_0_TITLE: "En Trazo del Crimen, cada jugador es detective y asesino a la vez.",
+            SLIDE_0_ITEM_1: "Asesina a los invitados traídos por otros jugadores.",
+            SLIDE_0_ITEM_2: "Resuelve otros asesinatos para distraer a los demás de los tuyos.",
+            SLIDE_1_TITLE: "Cada arma homicida que saques debe contener una letra de tu nombre.",
+            SLIDE_1_ITEM_1: 'Esta es tu "tarjeta de visita".',
+            SLIDE_1_ITEM_2: "¡Manténla en secreto!",
+            SLIDE_2_TITLE: "Esconde tu letra como parte del dibujo.",
+            SLIDE_2_ITEM_1: "Mueve tu letra, luego dibuja el arma a su alrededor.",
+            SLIDE_2_ITEM_2: "Debes estar atento a las letras de los otros jugadores.",
+            SLIDE_3_TITLE: "Todos traen dos invitados secretos a la fiesta.",
+            SLIDE_3_ITEM_1: "Dale a tu invitado un nombre que destaque, pero que no te delate.",
+            SLIDE_3_ITEM_2: "Asesina a los invitados adivinando qué jugador los trajo.",
+            SLIDE_3_ITEM_3: "Tu arma quedará como evidencia.",
+            SLIDE_4_TITLE: "Consejos profesionales:",
+            SLIDE_4_ITEM_1: "Hablen entre ustedes y compartan sus teorías para llegar a una votación mayoritaria.",
+            SLIDE_4_ITEM_2: "Cada jugador sólo saca cada arma una vez. Usa esto para eliminar a los sospechosos."
         },
         mne = {
-            TAB_MOVE: "MOVE",
-            TAB_DRAW: "DRAW"
+            TAB_MOVE: "MOVER",
+            TAB_DRAW: "DIBUJAR"
         },
         vne = {
-            WRITE_SOMETHING: "You need to write something!",
-            FILTER_ERROR: "That's not allowed, enter something else! (You can change the level of filtering in the game's settings menu)"
+            WRITE_SOMETHING: "¡Tienes que escribir algo!",
+            FILTER_ERROR: "Eso no está permitido, ¡escribe otra cosa! (Puedes cambiar el nivel de filtrado en el menú de ajustes del juego)"
         },
         yne = {
             SENT: pne,
@@ -26654,7 +26654,7 @@ ${t}`
             disabled: e.isSubmitting
         }, [Fe(H("div", ure, null, 512), [
             [l, e.player.prompt]
-        ]), e.hasWarning ? (V(), X("div", fre, " Vote for someone! Quick! ")) : (V(), X("div", {
+        ]), e.hasWarning ? (V(), X("div", fre, " ¡Vota por alguien! ¡Rápido! ")) : (V(), X("div", {
             key: 1,
             ref: "nipple",
             class: $e(`nippleContainer numPlayers${e.player.numPlayers}`)
@@ -26671,7 +26671,7 @@ ${t}`
         }, [c.lines && c.lines.length > 0 ? (V(), X("img", {
             key: 0,
             class: "drawing",
-            alt: `${c.text} drawing`,
+            alt: `${c.text} - dibujo`,
             src: e.getWeaponImage(c)
         }, null, 8, pre)) : Se("", !0), Fe(H("span", gre, null, 512), [
             [l, c.text]
@@ -26987,7 +26987,7 @@ ${t}`
         },
         hie = H("img", {
             class: "logo",
-            alt: "weapons drawn logo",
+            alt: "logo de trazo del crimen",
             src: cie
         }, null, -1),
         pie = [hie];

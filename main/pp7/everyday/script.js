@@ -13163,7 +13163,7 @@ const N9 = `<form>\r
         <div class="inputGroup">\r
             <textarea id="input-text-textarea" rows="1" class="form-control jbg-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>\r
             <span class="inlineSubmit">\r
-                <button type="submit" class="btn btn-default inlineSubmitButton" type="button"><span class="inlineSubmitText">Send</span></button>\r
+                <button type="submit" class="btn btn-default inlineSubmitButton" type="button"><span class="inlineSubmitText">Enviar</span></button>\r
             </span>\r
             <span id="helpBlock2" class="help-block errorText"></span>\r
             <div class="charCountDisplay"><span class="charRemaining">70</span></div>\r
@@ -13241,7 +13241,7 @@ const N9 = `<form>\r
             ".inlineSubmitText": {
                 observe: "inlineSubmitText",
                 onGet(t) {
-                    return t !== void 0 ? t : "Send"
+                    return t !== void 0 ? t : "Enviar"
                 }
             },
             ".form-group": {
@@ -13879,7 +13879,7 @@ var P1 = {
                 denyButtonText: "No",
                 denyButtonAriaLabel: "",
                 denyButtonColor: void 0,
-                cancelButtonText: "Cancel",
+                cancelButtonText: "Cancelar",
                 cancelButtonAriaLabel: "",
                 cancelButtonColor: void 0,
                 buttonsStyling: !0,
@@ -15501,16 +15501,16 @@ const $9 = `<div class="canvasContainer">\r
                     this.currentStream = i, this.video.srcObject = i, await this.video.play(), this.gotDevices(o)
                 } catch (i) {
                     console.error(i), Qt.show("alert", {
-                        titleText: "Unable to Access Camera",
-                        text: `Looks like we don't have access to your device's camera. You can refresh and try again, or choose the ${t} option instead.`,
+                        titleText: "No se pudo acceder a la cámara",
+                        text: `Parece que no tenemos acceso a la cámara de tu dispositivo. Puedes refrescar y volver a intentarlo, o elegir la opción de ${t} en su lugar.`,
                         willClose: () => {
                             this.cameraAccessDenied()
                         }
                     })
                 }
             } else Qt.show("alert", {
-                titleText: "No Camera Access",
-                text: `It looks like camera access isn't available from this browser. Try the ${t} option instead.`,
+                titleText: "No hay acceso a la cámara",
+                text: `Parece que el acceso a la cámara no está disponible desde este navegador. Prueba la opción de ${t} en su lugar.`,
                 willClose: () => {
                     this.cameraAccessDenied()
                 }
@@ -15663,8 +15663,8 @@ const $9 = `<div class="canvasContainer">\r
                     <path d="M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
                 </svg>
             `,
-                cancelButton: "Cancel",
-                confirmButton: "Confirm"
+                cancelButton: "Cancelar",
+                confirmButton: "Confirmar"
             }
         }
     }),
@@ -16285,9 +16285,9 @@ const AC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
         <div id="buttons" class="buttons"></div>\r
         <div id="post-sketchpad" class="post-sketchpad">\r
             <div id="submit">\r
-                <button id='submitdrawing' class="button submitDrawing">Submit</button><br/>\r
+                <button id='submitdrawing' class="button submitDrawing">Enviar</button><br/>\r
             </div>\r
-            <button id='censorOptions' class='button'>Censor Options</button>\r
+            <button id='censorOptions' class='button'>Opciones de censura</button>\r
             <div class="footer"></div>\r
         </div>\r
         </div>\r
@@ -16321,9 +16321,9 @@ const AC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             disabled: !1,
             debug: !1,
             strings: {
-                drawing_empty: "You must draw something!",
-                submit: "submit",
-                ERROR_REJECTED_OBJECT: "That's not allowed, enter something else!"
+                drawing_empty: "¡Tienes que dibujar algo!",
+                submit: "enviar",
+                ERROR_REJECTED_OBJECT: "Eso no está permitido, ¡ingresa otra cosa!"
             }
         }
     }),
@@ -16365,7 +16365,7 @@ const AC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
                 visible: !0,
                 updateView: !0,
                 onGet(t) {
-                    return t[0] || t[1] ? !1 : t[2] === void 0 ? "" : t[2].submit || "Submit"
+                    return t[0] || t[1] ? !1 : t[2] === void 0 ? "" : t[2].submit || "Enviar"
                 }
             }
         },
@@ -16525,7 +16525,7 @@ const AC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
         defaults: {
             state: "EnterSingleText",
             actions: [{
-                text: "submit",
+                text: "enviar",
                 action: "submit"
             }],
             allowEmpty: !1,
@@ -16542,11 +16542,11 @@ const AC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             autocapitalize: !1,
             className: "",
             inlineSubmit: !1,
-            inlineSubmitText: "Submit",
+            inlineSubmitText: "Enviar",
             error: "",
             strings: {
-                ERROR_NOTHING_ENTERED: "You need to enter something!",
-                ERROR_REJECTED_TEXT: "That's not allowed, enter something else! (You can change the level of filtering in the game's settings menu)"
+                ERROR_NOTHING_ENTERED: "¡Tienes que ingresar algo!",
+                ERROR_REJECTED_TEXT: "¡Eso no está permitido, ingresa otra cosa! (Puedes cambiar el nivel del filtro en el menú de ajustes del juego)"
             }
         }
     }),
@@ -16616,7 +16616,7 @@ const AC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             }), this.inputComponent = this.inputComponent || new Fl({
                 model: new ze.Model({})
             }), this.buttonsCollection = this.buttonsCollection || new ze.Collection([{
-                text: "submit"
+                text: "enviar"
             }]), this.buttonsComponent = this.buttonsComponent || new ks({
                 block: !0,
                 collection: this.buttonsCollection
@@ -16629,7 +16629,7 @@ const AC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             })), this.promptComponent.model.clear({
                 silent: !0
             }).set(this.model.get("prompt")), this.inputComponent.model.set(this.model.attributes), this.buttonsComponent.options.block = this.model.get("block"), this.buttonsCollection.set(this.model.get("actions") || [{
-                text: "submit",
+                text: "enviar",
                 action: "submit"
             }]), this.model.get("entryId") && this.model.get("entryId") !== this.currentEntry && (this.inputComponent.clearInput(), this.currentEntry = this.model.get("entryId")), this.$el.find(".enterSingleTextFieldset").prop("disabled", !1), this.$el.find("textarea").focus(), this.stickit(), this.model.get("autoSubmit") && this.shouldSubmit && this.onChildviewInputSubmit()
         },
@@ -16772,7 +16772,7 @@ je.View.extend({
     },
     showTwitchBroadcasterDialog(t) {
         let e = `<div class='icon-${this.client.roles.broadcaster.platform}'>${this.client.roles.broadcaster.name}</div>`;
-        e += "<div class='success'>You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.</div>", this.lacksAudience ? e += "<div class='warning'>THIS GAME DOESN'T HAVE AN AUDIENCE FEATURE</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), Qt.show("custom", {
+        e += "<div class='success'>Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.</div>", this.lacksAudience ? e += "<div class='warning'>ESTE JUEGO NO TIENE FUNCIÓN DE PÚBLICO</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA</div>"), Qt.show("custom", {
             html: e,
             position: "bottom",
             timer: t,
@@ -16811,8 +16811,8 @@ je.View.extend({
     },
     onRoomWasDestroyed() {
         Jt.remove("roomCode"), Jt.remove("reconnect"), Qt.show("error", {
-            titleText: "Disconnected",
-            text: "Thanks for playing!",
+            titleText: "Desconectado",
+            text: "¡Gracias por jugar!",
             willClose: () => {
                 window.location.reload(!0)
             }
@@ -16820,8 +16820,8 @@ je.View.extend({
     },
     onDisconnected() {
         Qt.show("error", {
-            titleText: "Disconnected",
-            text: "You have been disconnected.",
+            titleText: "Desconectado",
+            text: "Has sido desconectado.",
             willClose: () => {
                 window.location.reload(!0)
             }
@@ -16856,7 +16856,7 @@ const qC = `<div id="controller" class="state-controller controller-content">
         <div id="characters" class="charactersContainer"></div>
     </div>
     <div id="artifactId" class="artifactContainer text">
-        <a id="artifactLink" aria-label="Visit the Gallery" class="artifactLink" target="_blank">
+        <a id="artifactLink" aria-label="Visita la galería" class="artifactLink" target="_blank">
             <button id="artifactButton" class="artifactButton"></button>
         </a>
     </div>
@@ -16890,28 +16890,28 @@ const qC = `<div id="controller" class="state-controller controller-content">
             formattedActiveContentId: null,
             isLocal: !1,
             strings: {
-                wait: "Sit back and relax!",
-                vip_waiting: "Waiting for all players to join",
-                vip_canStart: "Press this button when everybody has joined",
-                vip_cancel: "Press this button to cancel game start",
-                vip_postgame: "What would you like to do now?",
-                vip_episodes_menu: "Episodes Menu",
-                vip_episodes_unload: "Unload Episode",
-                vip_episodes_report: "Report Episode",
-                vip_episodes_warning: "Warning: user generated content is not rated",
-                vip_episodes_load: "Load an episode by id:",
-                vip_episodes_select: "Or select an episode:",
-                vip_episodes_back: "Back",
-                vip_episodes_submit: "SUBMIT",
-                vip_episodes_view_author: "View Author",
-                button_start: "Everybody's In",
-                button_cancel: "Cancel",
-                button_changename: "Change Name",
-                button_sameplayers: "Same Players",
-                button_newplayers: "New Players",
-                prompt_entername: "Enter your name",
-                prompt_choosecharacter: "Select your character",
-                button_censorOptions: "Censor Options",
+                wait: "¡Siéntate y relájate!",
+                vip_waiting: "Esperando a que todos los jugadores se unan",
+                vip_canStart: "Pulsa este botón cuando todos se hayan unido",
+                vip_cancel: "Pulsa este botón para cancelar el inicio de la partida",
+                vip_postgame: "¿Qué quieres hacer ahora?",
+                vip_episodes_menu: "Menú de episodios",
+                vip_episodes_unload: "Retirar episodio",
+                vip_episodes_report: "Reportar episodio",
+                vip_episodes_warning: "Aviso: El contenido de los usuarios no tiene clasificación de edad",
+                vip_episodes_load: "Cargar un episodio por id:",
+                vip_episodes_select: "O selecciona un episodio:",
+                vip_episodes_back: "Atrás",
+                vip_episodes_submit: "ENVIAR",
+                vip_episodes_view_author: "Ver autor",
+                button_start: "Estamos todos",
+                button_cancel: "Cancelar",
+                button_changename: "Cambiar el nombre",
+                button_sameplayers: "Mismos jugadores",
+                button_newplayers: "Nuevos jugadores",
+                prompt_entername: "Ingresa tu nombre",
+                prompt_choosecharacter: "Selecciona tu personaje",
+                button_censorOptions: "Opciones de censura",
                 censor_prompt: ""
             }
         }
@@ -17136,7 +17136,7 @@ const qC = `<div id="controller" class="state-controller controller-content">
                             inputAttributes: {
                                 maxlength: 12
                             },
-                            inputValidator: r => r ? r.length > 12 ? "Limit 12 characters" : null : "You need to write something!"
+                            inputValidator: r => r ? r.length > 12 ? "Límite de 12 caracteres" : null : "¡Tienes que escribir algo!"
                         });
                         if (o.dismiss) return;
                         this.triggerMethod("client:message", {
@@ -17260,7 +17260,7 @@ const qC = `<div id="controller" class="state-controller controller-content">
 <div id="message" class="message"><h2 class="messageText"></h2></div>
 <div id="action" class="action"></div>
 <div id="artifactId" class="artifactContainer text">
-    <a id="artifactLink" aria-label="Visit the Gallery" class="artifactLink" target="_blank">
+    <a id="artifactLink" aria-label="Visita la galería" class="artifactLink" target="_blank">
         <button id="artifactButton" class="artifactButton"></button>
     </a>
 </div>
@@ -17348,10 +17348,10 @@ const qC = `<div id="controller" class="state-controller controller-content">
             LANGUAGE_NAME: "English",
             SUPPORTED_LANGUAGES: ["English", "Fran\xE7ais", "Italiano", "Deutsch", "Espa\xF1ol"],
             SUPPORTED_LOCALES: ["en", "fr", "it", "de", "es"],
-            LANGUAGE: "Language",
-            LOGIN: "Login",
-            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Disconnected",
-            STRING_ERROR_SERVER_ROOM_DESTROYED: "Thanks for playing!"
+            LANGUAGE: "Idioma",
+            LOGIN: "Iniciar sesi\xF3n",
+            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Desconectado",
+            STRING_ERROR_SERVER_ROOM_DESTROYED: "¡Gracias por jugar!"
         },
         fr: {
             LANGUAGE_NAME: "Fran\xE7ais",
@@ -17471,10 +17471,10 @@ const qC = `<div id="controller" class="state-controller controller-content">
             announcePrompt: !1,
             countGroupName: null,
             strings: {
-                your_choice: "Thank you. Your choice: ",
-                censor_prompt: "Censor this?",
-                censor_confirm: "Yes, Censor!",
-                censor_cancel: "No!"
+                your_choice: "Gracias. Tu elección: ",
+                censor_prompt: "¿Censurar esto?",
+                censor_confirm: "¡Sí, censurarlo!",
+                censor_cancel: "¡No!"
             }
         }
     }),
@@ -17560,7 +17560,7 @@ const qC = `<div id="controller" class="state-controller controller-content">
             this.promptComponent.model.clear({
                 silent: !0
             }).set(this.model.get("prompt")), this.choicesList.options.block = this.model.get("block"), this.choicesList.collection.set(this.model.get("choices")), this.model.get("type") === "multiple" && ke.all(this.model.get("choices"), t => !t.disabled) && this.choicesList.collection.push({
-                text: "Submit",
+                text: "Enviar",
                 action: "submit",
                 block: !1
             }), this.model.get("isAudience") && ((this.model.get("choiceId") === void 0 || this.model.get("choiceId") !== this.getOption("choiceId")) && (this.selected = [], this.audienceChoice = void 0, this.votesLeft = void 0), this.selected.length > 0 && (this.model.get("type") === "multiple" ? this.choicesList.children.forEach(t => {
@@ -17613,7 +17613,7 @@ const qC = `<div id="controller" class="state-controller controller-content">
             })), !1
         },
         displayAudienceChoice(t) {
-            let e = "Thank you.";
+            let e = "Gracias.";
             const n = t.map(o => {
                 const r = this.choicesList.children.find(V => V.model.get("index") === o);
                 return r ? r.model.get("html") || r.model.get("text") : ""
@@ -19082,10 +19082,10 @@ const tR = `<div id="controller" class="state-controller controller-content">\r
             doneText: {},
             announcePrompt: !1,
             strings: {
-                your_choice: "Thank you. Your choice: ",
-                censor_prompt: "Censor this?",
-                censor_confirm: "Yes, Censor!",
-                censor_cancel: "No!"
+                your_choice: "Gracias. Tu elección: ",
+                censor_prompt: "¿Censurar esto?",
+                censor_confirm: "¡Sí, censurarlo!",
+                censor_cancel: "¡No!"
             }
         }
     }),
@@ -19120,7 +19120,7 @@ const tR = `<div id="controller" class="state-controller controller-content">\r
         className: "SorterView",
         template: ke.template(`
         <div id="rankedChoicesRegion"></div>
-        <div class="instructions">Choose where this item ranks:</div>
+        <div class="instructions">Elige dónde se posiciona este artículo:</div>
         <div id="unrankedChoicesRegion"></div>
         <div id="lockInRegion"></div>
     `),
@@ -19166,7 +19166,7 @@ const tR = `<div id="controller" class="state-controller controller-content">\r
                 block: !1,
                 model: new ze.Model({
                     action: "lock",
-                    html: "Lock In"
+                    html: "Bloquear"
                 })
             }), this.listenTo(this.model, "change:choices", this.update, this)
         },
@@ -19324,28 +19324,28 @@ const tR = `<div id="controller" class="state-controller controller-content">\r
             text: "",
             validActions: [],
             strings: {
-                tos_warning: "By sharing content, you agree to our Terms of service",
-                tos_warning_agree: "agree and share",
-                tos_warning_back: "back to menu",
-                create_new_episode: "create a new episode",
-                create_new_name_prompt: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-                create_new_button: "create",
-                button_back_to_episodes: "back to episodes",
-                button_back_to_menu: "back to menu",
-                previous_episodes: "previous episodes:",
-                toggle_prompts_prompt: "tap to show/hide prompts",
-                button_close: "close",
-                button_done: "done",
-                button_add: "add prompt",
-                input_placeholder: "enter a prompt",
-                label_hidden: "hidden",
-                button_edit: "edit",
-                button_save: "save",
-                button_publish: "publish",
-                button_play: "play",
-                button_delete: "delete",
-                delete_warning: "Are you sure you want to delete this episode?",
-                delete_warning_confirm: "Yes",
+                tos_warning: "Al compartir contenido, aceptas nuestros Términos de servicio",
+                tos_warning_agree: "aceptar y compartir",
+                tos_warning_back: "volver al menú",
+                create_new_episode: "crear un nuevo episodio",
+                create_new_name_prompt: "primero lo primero, ingresa un nombre para el episodio que contendrá todos tus enunciados y pulsa crear.",
+                create_new_button: "crear",
+                button_back_to_episodes: "volver a los episodios",
+                button_back_to_menu: "volver al menú",
+                previous_episodes: "episodios anteriores:",
+                toggle_prompts_prompt: "toca para mostrar/ocultar los enunciados",
+                button_close: "cerrar",
+                button_done: "listo",
+                button_add: "añadir enunciado",
+                input_placeholder: "ingresa un enunciado",
+                label_hidden: "oculto",
+                button_edit: "editar",
+                button_save: "guardar",
+                button_publish: "publicar",
+                button_play: "jugar",
+                button_delete: "borrar",
+                delete_warning: "¿Seguro que quieres eliminar este episodio?",
+                delete_warning_confirm: "Sí",
                 delete_warning_cancel: "No"
             }
         }
@@ -20422,8 +20422,8 @@ const Ho = je.View.extend({
             </div>`;
         e += `
             <div class='success'>
-                You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.
-            </div>`, this.lacksAudience ? e += "<div class='warning'>THIS GAME DOESN'T HAVE AN AUDIENCE FEATURE</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), Qt.show("custom", {
+                Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.
+            </div>`, this.lacksAudience ? e += "<div class='warning'>ESTE JUEGO NO TIENE FUNCIÓN DE PÚBLICO</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA</div>"), Qt.show("custom", {
             html: e,
             position: "bottom",
             timer: t,
@@ -21076,7 +21076,7 @@ const fR = je.View.extend({
                 alertText: e.text,
                 alertAvatars: e.avatars,
                 alertColor: e.color,
-                infoRole: "NEEDS HELP",
+                infoRole: "NECESITA AYUDA",
                 alertPoints: e.points
             })
         }
@@ -21265,94 +21265,94 @@ class vR {
         this.currentState.state !== e && (this.update.pendingState = e)
     }
     parseRoleFromAvatar(e) {
-        return e.includes("Adult") ? "ADULT" : e.includes("Child") ? "CHILD" : e.includes("Teen") ? "TEEN" : ""
+        return e.includes("Adult") ? "ADULTO" : e.includes("Child") ? "NIÑO" : e.includes("Teen") ? "JOVEN" : ""
     }
     parsePlayerData(e) {
-        this.update.playerText = e.playerInfo && e.playerInfo.name ? e.playerInfo.name : null, this.update.playerColor = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerAvatar = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerRole = e.playerInfo && e.playerInfo.role ? e.playerInfo.role.id : null
+        this.update.playerText = e.playerInfo && e.playerInfo.name ? e.playerInfo.name : null, this.update.playerColor = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerAvatar = e.playerInfo && e.playerInfo.avatar ? e.playerInfo.avatar : null, this.update.playerRole = e.playerInfo && e.playerInfo.role ? e.playerInfo.role.id === "ADULT" ? "ADULTO" : e.playerInfo.role.id === "TEEN" ? "JOVEN": e.playerInfo.role.id === "CHILD" ? "NIÑO": e.playerInfo.role.id : null
     }
     parseEmergencyData(e) {
         e.playerThatCausedEmergency || (e.playerThatCausedEmergency = {
             avatar: "Audience",
-            name: "The Cat"
-        }), this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [e.playerThatCausedEmergency.avatar], this.update.infoText = `BLAME ${e.playerThatCausedEmergency.name}`, this.update.infoRole = "DID THIS"
+            name: "El gato"
+        }), this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [e.playerThatCausedEmergency.avatar], this.update.infoText = `CULPA A ${e.playerThatCausedEmergency.name}`, this.update.infoRole = "HIZO ESTO"
     }
     parseCancelerData(e) {
         const n = e.captain || {};
-        this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [n.avatar], this.update.infoText = `STOPPING ${n.name}`, this.update.infoRole = "SELFISH"
+        this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [n.avatar], this.update.infoText = `DETENIENDO A ${n.name}`, this.update.infoRole = "EGOÍSTA"
     }
     parseCanceledByData(e) {
         const n = e.captain || {};
-        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoText = `${n.name} IS SCOLDING YOU`, this.update.infoRole = "KILLJOY"
+        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoText = `${n.name} TE ESTÁ REGAÑANDO`, this.update.infoRole = "AGUAFIESTAS"
     }
     parseAllCollabData(e) {
         const n = this.otherParticipants;
-        this.update.infoColor = this.update.playerColor, this.update.infoAvatars = n.map(i => i.avatar), e.waitingFor ? e.waitingFor.length === 1 ? this.update.infoText = "WAITING FOR 1 MORE" : (this.update.infoText = `WAITING FOR ${e.waitingFor.length} OTHERS`, this.update.infoRole = "THE FAM") : this.update.infoText = "EVERYONE IS HERE"
+        this.update.infoColor = this.update.playerColor, this.update.infoAvatars = n.map(i => i.avatar), e.waitingFor ? e.waitingFor.length === 1 ? this.update.infoText = "ESPERANDO A UNO MÁS" : (this.update.infoText = `ESPERANDO A ${e.waitingFor.length} MÁS`, this.update.infoRole = "LA FAMILIA") : this.update.infoText = "TODOS ESTÁN AQUÍ"
     }
     parseOpenCollabData(e) {
         const n = e.captain,
             i = this.participants,
             o = this.otherParticipants;
         if (e.state === "WaitingForAny") {
-            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [], this.update.infoText = "WAITING FOR HELPERS";
+            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [], this.update.infoText = "ESPERANDO AYUDANTES";
             return
         }
         if (!n) {
-            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [], this.update.infoText = "CAPTAIN HAS LEFT";
+            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = [], this.update.infoText = "EL CAPITÁN SE HA IDO";
             return
         }
         if (this.isCaptain) {
-            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = i.map(r => r.avatar), this.update.infoRole = this.parseContextualParticipantRole(e.state), this.update.playerRole = this.parseContextualCaptainRole(e.state), i.length === 1 ? this.update.infoText = `${i[0].name} IS HELPING` : this.update.infoText = `YOU HAVE ${i.length} HELPERS`;
+            this.update.infoColor = this.update.playerColor, this.update.infoAvatars = i.map(r => r.avatar), this.update.infoRole = this.parseContextualParticipantRole(e.state), this.update.playerRole = this.parseContextualCaptainRole(e.state), i.length === 1 ? this.update.infoText = `${i[0].name} ESTÁ AYUDANDO` : this.update.infoText = `TIENES ${i.length} AYUDANTES`;
             return
         }
-        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoRole = this.parseContextualParticipantRole(e.state), o.forEach(r => this.update.infoAvatars.push(r.avatar)), o.length === 0 ? this.update.infoText = `HELPING ${n.name}` : this.update.infoText = `${n.name} HAS ${i.length} HELPERS`
+        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoRole = this.parseContextualParticipantRole(e.state), o.forEach(r => this.update.infoAvatars.push(r.avatar)), o.length === 0 ? this.update.infoText = `AYUDANDO A ${n.name}` : this.update.infoText = `${n.name} TIENE ${i.length} AYUDANTES`
     }
     parseHelpCollabData(e) {
         const n = e.captain,
             i = this.participants;
         if (this.isCaptain) {
-            this.update.infoColor = i[0].avatar, this.update.infoAvatars = [i[0].avatar], this.update.infoText = `WORKING WITH ${i[0].name}`, this.update.infoRole = this.parseContextualCaptainRole(e.state), this.update.playerRole = this.parseContextualParticipantRole(e.state);
+            this.update.infoColor = i[0].avatar, this.update.infoAvatars = [i[0].avatar], this.update.infoText = `TRABAJANDO CON ${i[0].name}`, this.update.infoRole = this.parseContextualCaptainRole(e.state), this.update.playerRole = this.parseContextualParticipantRole(e.state);
             return
         }
-        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoText = `WORKING WITH ${n.name}`, this.update.infoRole = this.parseContextualParticipantRole(e.state), this.update.playerRole = this.parseContextualCaptainRole(e.state)
+        this.update.infoColor = n.avatar, this.update.infoAvatars = [n.avatar], this.update.infoText = `TRABAJANDO CON ${n.name}`, this.update.infoRole = this.parseContextualParticipantRole(e.state), this.update.playerRole = this.parseContextualCaptainRole(e.state)
     }
     parseContextualCaptainRole(e) {
         switch (e = e.replace("Participant", "").replace("Captain", ""), e) {
             case "FindMechanic":
-                return "DESCRIBER";
+                return "DESCRIPTOR";
             case "GatherMechanic":
                 return "INSTRUCTOR";
             case "GizmosMechanic":
                 return "INSTRUCTOR";
             case "InstructionsMechanic":
-                return "ASSISTANT";
+                return "ASISTENTE";
             case "SearchMechanic":
-                return "SEARCHER";
+                return "BUSCADOR";
             case "TextMechanic":
-                return "READER";
+                return "LECTOR";
             case "TravelMechanic":
-                return "NAVIGATOR";
+                return "NAVEGADOR";
             default:
-                return "HELPER"
+                return "AYUDANTE"
         }
     }
     parseContextualParticipantRole(e) {
         switch (e = e.replace("Participant", "").replace("Captain", ""), e) {
             case "FindMechanic":
-                return "FINDER";
+                return "BUSCADOR";
             case "GatherMechanic":
-                return "GATHERERS";
+                return "RECOLECTORES";
             case "GizmosMechanic":
-                return "OPERATOR";
+                return "OPERADOR";
             case "InstructionsMechanic":
                 return "INSTRUCTOR";
             case "SearchMechanic":
-                return "SEARCHERS";
+                return "BUSCADORES";
             case "TextMechanic":
-                return "WRITER";
+                return "ESCRITOR";
             case "TravelMechanic":
-                return "DRIVER";
+                return "CONDUCTOR";
             default:
-                return "NEEDER"
+                return "SUMINISTRADOR"
         }
     }
     parseAlerts(e, n) {
@@ -21361,7 +21361,7 @@ class vR {
             const o = n.find(r => r.id === i.task.id);
             return {
                 id: i.task.id,
-                text: `${i.player.name} needs help`,
+                text: `${i.player.name} necesita ayuda`,
                 avatars: [i.player.avatar],
                 color: i.player.avatar,
                 points: o ? o.participationPoints : 0
@@ -21441,9 +21441,9 @@ const wR = je.View.extend({
                 observe: ["status", "alert"],
                 updateMethod: "html",
                 onGet([t, e]) {
-                    return this.model.isAvailableOpenOrAll() || t === "CAN_ASK_FOR_HELP" ? "ASK FOR HELP" : t === "WAITING_FOR_HELP" ? "WAITING FOR HELP" : e && this.model.needsHelp() ? `
+                    return this.model.isAvailableOpenOrAll() || t === "CAN_ASK_FOR_HELP" ? "PEDIR AYUDA" : t === "WAITING_FOR_HELP" ? "ESPERANDO AYUDA" : e && this.model.needsHelp() ? `
                             <div class="avatar head ${e.player.avatar}"></div>
-                            <span>HELP</span> ${e.player.name}
+                            <span>AYUDAR A</span> ${e.player.name}
                         ` : ""
                 },
                 attributes: [{
@@ -21599,13 +21599,13 @@ const wR = je.View.extend({
             ".title": {
                 observe: "playerInfo",
                 onGet(t) {
-                    return `${t.role.id} TASK LIST`
+                    return `TAREAS DE ${ t.role.id === "ADULT" ? "ADULTO" : t.role.id === "TEEN" ? "JOVEN" : "NIÑO"}`
                 }
             },
             ".empty": {
                 observe: "playerInfo",
                 onGet(t) {
-                    return `Chill... No ${t.role.id} Tasks Available Right Now`
+                    return `Calma... no hay tareas disponibles de ${t.role.id === "ADULT" ? "adulto" : t.role.id === "TEEN" ? "joven" : "niño"}`
                 }
             },
             ".success": {
@@ -21660,7 +21660,7 @@ const wR = je.View.extend({
                 if (t.wasCanceled && t.playerThatCanceled) {
                     this.triggerMethod("result", {
                         type: "fail",
-                        message: `${t.playerThatCanceled.name}<br/>STOPPED</br>YOU!`
+                        message: `${t.playerThatCanceled.name}<br/>TE</br>DETUVO`
                     });
                     return
                 }
@@ -21688,26 +21688,26 @@ const wR = je.View.extend({
         model: new ze.Model,
         hideTimer: null,
         countUpInterval: null,
-        failText: ["TOO<br/>BAD", "NOT<br/>GREAT", "NO<br/>GOOD", "THUMBS<br/>DOWN"],
-        emergencyText: ["CRISIS<br/>AVERTED", "PHEW!", "MERCY!", "SAVED<br/>THE DAY", "THAT<br/>WAS<br/>CLOSE", "HEROIC<br/>SAVE", "THANK<br/>HADES"],
-        selfishText: ["DEVILISH", "YOU<br/>DEVIL!", "SNEAKY!", "HOPE<br/>YOU'RE<br/>HAPPY", "DEMONIC", "GOT AWAY WITH IT", "DIABOLICAL", "FIENDISH", "DEVIOUS", "SLY DEVIL", "NOBODY SAW", "AT WHAT<br/>COST?"],
-        cancelerText: ["FAMILY<br/>HERO", "YOU<br/>TELL 'EM!", "THIS IS<br/>YOUR<br/>HOUSE", "ORDER<br/>RESTORED", "FUN<br/>CANCELED", "JOY<br/>AVERTED", "RULES<br/>ARE<br/>RULES", "YOU ARE<br/>THE LAW", "KAPOW!"],
-        successText: ["NICE<br/>ONE", "GOT<br/>IT", "GOOD<br/>JOB", "GREAT<br/>WORK", "WELL<br/>DONE", "GREAT", "GOOD<br/>FOR YOU", "BEAUTIFUL", "YOU<br/>DID IT", "TERRIFIC", "NICE<br/>GOING", "MUY<br/>BIEN", "SUPERB", "KEEP<br/>IT UP", "WAY<br/>TO GO", "COOL<br/>MOVES", "HECK<br/>YEAH", "NOT<br/>BAD", "DEEECENT", "BRAVO"],
-        storyText: ["WOAH!", "HOLY<br/>SMOKES", "BIG<br/>POINTS", "HUGE", "SO GREAT", "MASSIVE<br/>WIN", "HUMDINGER", "SPICY", "DING<br/>DING", "YES<br/>PLEASE", "PLOT<br/>POINT"],
+        failText: ["QUÉ<br/>MAL", "NO ES<br/>BUENO", "NO MUY<br/>BIEN", "PULGAR<br/>ABAJO"],
+        emergencyText: ["CRISIS<br/>EVITADA", "¡FIU!", "¡PIEDAD!", "SALVASTE<br/>EL DÍA", "ESTUVO<br/>MUY<br/>CERCA", "SALVADA<br/>HERÓICA", "GRACIAS A<br/>HADES"],
+        selfishText: ["DIABÓLICO", "¡PEQUEÑO<br/>DEMONIO!", "¡FURTIVO!", "ESPERO<br/>QUE<br/>ESTÉS FELIZ", "DEMONÍACO", "TE SALISTE CON LA TUYA", "DIABÓLICO", "INFERNAL", "RETORCIDO", "DIABLO ASTUTO", "NADIE LO VIO", "¿A QUÉ<br/>COSTO?"],
+        cancelerText: ["HÉROE DE<br/>LA FAMILIA", "¡ASÍ<br/>SE HACE!", "ESTA ES<br/>TU<br/>CASA", "ORDEN<br/>RESTAURADO", "DIVERSIÓN<br/>CANCELADA", "ALEGRÍA<br/>EVITADA", "REGLAS<br/>SON<br/>REGLAS", "TÚ ERES<br/>LA LEY", "¡KAPOW!"],
+        successText: ["BIEN<br/>HECHO", "LO<br/>TIENES", "BUEN<br/>TRABAJO", "GRAN<br/>TRABAJO", "MUY<br/>BIEN", "GENIAL", "BIEN<br/>POR TÍ", "HERMOSO", "LO<br/>HICISTE", "ESTUPENDO", "VAS<br/>BIEN", "VERY<br/>GOOD", "MAGNÍFICO", "SIGUE<br/>ASÍ", "MUY BIEN<br/>HECHO", "BUENOS<br/>MOVIMIENTOS", "DIABLOS,<br/>SÍ", "NADA<br/>MAL", "DECEEECENTE", "BRAVO"],
+        storyText: ["¡GUAU!", "SANTO<br/>DIABLO", "MUCHOS<br/>PUNTOS", "TREMENDO", "QUÉ GENIAL", "TRIUNFO<br/>ENORME", "MARAVILLOSO", "PICANTE", "DING<br/>DING", "SÍ<br/>POR FAVOR", "PUNTO DE<br/>LA TRAMA"],
         messages: {
-            EAT_BUGS: "Tasty!<br/>Chomp more!",
-            POSE_FOR_PIC: "Adorable!<br/>Keep hamming!",
-            SHOW_BELLY: "Good flop!<br/>Flop again!",
-            SHOW_CLAWS: "Great!<br/>Keep holding!",
-            FIGHT_VACUUM: "Nice!<br/>Keep fighting!",
-            DESTROY_LITTER: "Nice mess!<br/>Go again!",
-            LAY_ON_LAPTOP: "Great!<br/>Hold your<br/>ground!",
-            VOMIT: "Almost!<br/>Keep horking!",
-            DART_OUT: "Sneaky!<br/>Go again!",
-            SCRATCH_CHAIR: "Great!<br/>Scratch again!",
-            KNOCK_ITEMS: "Nice!<br/>Keep<br/>smacking!",
-            PAW_WATER: "Refreshing!<br/>Go again!",
-            SHOW_BELLY_TRAP: "Good flop!<br/>Flop again!"
+            EAT_BUGS: "¡Rico!<br/>¡Mastica más!",
+            POSE_FOR_PIC: "¡Adorable!<br/>¡Sigue así!",
+            SHOW_BELLY: "¡Qué pancita!<br/>¡Otro panzazo!",
+            SHOW_CLAWS: "¡Genial!<br/>¡Sigue sosteniendo!",
+            FIGHT_VACUUM: "¡Bien!<br/>¡Sigue luchando!",
+            DESTROY_LITTER: "¡Buen desorden!<br/>¡Otra vez!",
+            LAY_ON_LAPTOP: "¡Genial!<br/>¡Quédate<br/>ahí!",
+            VOMIT: "¡Ya casi!<br/>¡Sigue vomitando!",
+            DART_OUT: "¡Astuto!<br/>¡Otra vez!",
+            SCRATCH_CHAIR: "¡Genial!<br/>¡Rasguña otra vez!",
+            KNOCK_ITEMS: "¡Bien!<br/>¡Sigue<br/>golpeando!",
+            PAW_WATER: "¡Refrescante!<br/>¡Otra vez!",
+            SHOW_BELLY_TRAP: "¡Qué pancita!<br/>¡Otro panzazo!"
         },
         bindings: {
             ":el": {
@@ -21790,7 +21790,7 @@ const wR = je.View.extend({
         }
     }),
     MR = `<div class="clamp">
-    <p class="info">This task can\u2019t start without helpers. Yell at your family to join you.</br>Or you can leave this task by tapping the X.</p>
+    <p class="info">Esta tarea no puede comenzar sin ayudantes. Grita a tu familia que se una a ti.</br>O puedes abandonar esta tarea tocando la X.</p>
 </div>
 <button class="leave"></button>
 <div class="instructions-container">
@@ -21834,10 +21834,10 @@ const wR = je.View.extend({
     }),
     IR = `<div class="scrollable">
     <div class="clamp">
-        <div class="info">This task can't start until everyone is here.</div>
-        <div class="waiting">Waiting for:</div>
+        <div class="info">Esta tarea no puede comenzar hasta que todos estén aquí.</div>
+        <div class="waiting">Esperando a:</div>
         <div class="players"></div>
-        <div class="info">Guilt these family members into joining!</div>
+        <div class="info">¡Culpa a estos miembros de la familia para que se unan!</div>
     </div>
 </div>
 <button class="leave"></button>
@@ -21891,7 +21891,7 @@ const wR = je.View.extend({
             })
         }
     }),
-    UR = `<p>THE HOUSE IS ON FIRE!</p>
+    UR = `<p>¡LA CASA ESTÁ EN LLAMAS!</p>
 <div class="starter"></div>
 <div class="fixer"></div>`,
     FR = je.View.extend({
@@ -21902,13 +21902,13 @@ const wR = je.View.extend({
             ".starter": {
                 observe: "playerThatCausedEmergency",
                 onGet(t) {
-                    return t ? `${t.name} selfish action caused it` : "BUG: NO PLAYER CAUSED THIS WHY?"
+                    return t ? `La acción egoísta de ${t.name} lo causó` : "BUG: NINGÚN JUGADOR CAUSÓ ESTO, ¿POR QUÉ?"
                 }
             },
             ".fixer": {
                 observe: "captain",
                 onGet(t) {
-                    return `${t.name} has to fix it`
+                    return `${t.name} tiene que arreglarlo`
                 }
             }
         },
@@ -23944,119 +23944,119 @@ const Jy = {
             tapsRequired: 25,
             waitInMs: 450,
             scene: "AudienceSpawnEatBugs",
-            successTitle: "So helpful!",
-            successText: "You deserve a delicious treat"
+            successTitle: "¡Qué útil!",
+            successText: "Te mereces un delicioso manjar"
         },
         POSE_FOR_PIC: {
             state: "HoldMechanic",
             durationInMs: 1e4,
             scene: "AudienceSpawnPoseForPic",
-            successTitle: "Too cute!",
-            successText: "Someone's gotta post these pics"
+            successTitle: "¡Qué tierno!",
+            successText: "Alguien tiene que publicar estas fotos"
         },
         SHOW_BELLY: {
             state: "RotateMechanic",
             direction: "CLOCKWISE",
             rotationsInDeg: 9e3,
             scene: "AudienceSpawnShowBelly",
-            successTitle: "So fluffy!",
-            successText: "You earned a nice belly rub"
+            successTitle: "¡Qué esponjoso!",
+            successText: "Te ganaste un buen masaje en la barriga"
         },
         SHOW_CLAWS: {
             state: "HoldMechanic",
             durationInMs: 1e4,
             scene: "AudienceSpawnShowClaws",
-            successTitle: "So patient!",
-            successText: "Now the family can clip your claws"
+            successTitle: "¡Qué paciente!",
+            successText: "Ahora la familia puede cortarte las garras"
         },
         FIGHT_VACUUM: {
             state: "TapResultingMechanic",
             tapsRequired: 25,
             waitInMs: 450,
             scene: "AudienceSpawnFightVacuum",
-            successTitle: "You broke the vacuum!",
-            successText: "Now someone has to get it fixed"
+            successTitle: "¡Rompiste la aspiradora!",
+            successText: "Ahora alguien tiene que arreglarla"
         },
         DESTROY_LITTER: {
             state: "TapResultingMechanic",
             tapsRequired: 35,
             waitInMs: 250,
             scene: "AudienceSpawnDestroyLitter",
-            successTitle: "Big mess!",
-            successText: "Now someone has to sweep it up"
+            successTitle: "¡Qué desastre!",
+            successText: "Ahora alguien tiene que barrerlo"
         },
         LAY_ON_LAPTOP: {
             state: "HoldMechanic",
             durationInMs: 1e4,
             scene: "AudienceSpawnLayOnLaptop",
-            successTitle: "You claimed the laptop!",
-            successText: "It will take a mighty shove to move you"
+            successTitle: "¡Reclamaste la computadora portátil!",
+            successText: "Se necesitará un fuerte empujón para moverte"
         },
         VOMIT: {
             state: "TapResultingMechanic",
             tapsRequired: 35,
             waitInMs: 250,
             scene: "AudienceSpawnVomit",
-            successTitle: "You puked!",
-            successText: "Now someone has to clean it up"
+            successTitle: "¡Vomitaste!",
+            successText: "Ahora alguien tiene que limpiarlo"
         },
         DART_OUT: {
             state: "TapResultingMechanic",
             tapsRequired: 35,
             waitInMs: 250,
             scene: "AudienceSpawnDartOut",
-            successTitle: "You escaped!",
-            successText: "Now the family has to find you"
+            successTitle: "¡Escapaste!",
+            successText: "Ahora la familia tiene que encontrarte"
         },
         SCRATCH_CHAIR: {
             state: "TapResultingMechanic",
             tapsRequired: 35,
             waitInMs: 250,
             scene: "AudienceSpawnScratchChair",
-            successTitle: "Chair ruined!",
-            successText: "Someone's definitely going to scold you for this"
+            successTitle: "¡Silla arruinada!",
+            successText: "Alguien definitivamente te va a regañar por esto"
         },
         KNOCK_ITEMS: {
             state: "TapResultingMechanic",
             tapsRequired: 35,
             waitInMs: 250,
             scene: "AudienceSpawnKnockItems",
-            successTitle: "You showed that crap who's boss!",
-            successText: "Now someone has to pick up your mess"
+            successTitle: "¡Le mostraste a esa cosa quién manda!",
+            successText: "Ahora alguien tiene que levantar tu desorden"
         },
         PAW_WATER: {
             state: "HoldMechanic",
             durationInMs: 1e4,
             scene: "AudienceSpawnPawWater",
-            successTitle: "Your water now!",
-            successText: "Someone has to fill a new glass if they want their own"
+            successTitle: "¡Es tu agua ahora!",
+            successText: "Alguien tiene que llenar un vaso nuevo si quiere el suyo"
         },
         SHOW_BELLY_TRAP: {
             state: "RotateMechanic",
             direction: "CLOCKWISE",
             rotationsInDeg: 9e3,
             scene: "AudienceSpawnShowBelly",
-            successTitle: "Your trap is set!",
-            successText: "When the family tries to pet you, they'll get a surprise scratch"
+            successTitle: "¡Tu trampa está puesta!",
+            successText: "Cuando la familia intente acariciarte, recibirán un rasguño sorpresa"
         }
     },
     JD = {
         ADULT: {
             state: "ScrubMechanic",
-            instructions: "Fuss at <NAME> for being selfish",
+            instructions: "Quéjate de <NAME> por ser egoísta",
             distance: "LONG",
             scene: "CancelerAdult"
         },
         TEEN: {
             state: "RotateMechanic",
-            instructions: "Roll your eyes at <NAME> to make them feel bad",
+            instructions: "Fija la mirada en <NAME> para hacerlo sentir mal",
             direction: "CLOCKWISE",
             rotationsInDeg: 6480,
             scene: "CancelerTeen"
         },
         CHILD: {
             state: "TapResultingMechanic",
-            instructions: "Throw a tantrum because <NAME> is being selfish",
+            instructions: "Haz un berrinche porque <NAME> está siendo egoísta",
             tapsRequired: 20,
             waitInMs: 250,
             scene: "CancelerChild"
@@ -24098,7 +24098,7 @@ const Jy = {
         className: "audience-success",
         template: ke.template(ZD),
         model: new ze.Model,
-        waitingText: ["Waiting for<br/>the next<br/>opurrrtunity", "Taking a little<br/>cat nap", "Nothing to do<br/>right meow", "Mischief<br/>is on a<br/>temporary paws", "Wait fur<br/>a moment", "More tasks<br/>just a<br/>whisker away"],
+        waitingText: ["Esperando a<br/>la siguiente<br/>oprrrtunidad", "Tomando una pequeña<br/>siesta gatuna", "Nada que hacer<br/>de miaumento", "La maldad<br/>está en una<br/>patausa temporal", "Esperando un<br/>momento gatuno", "Más tareas<br/>están a<br/>un bigote de llegar"],
         bindings: {
             ".waiting": {
                 observe: "waitingText",
@@ -24149,8 +24149,8 @@ const Jy = {
             }, 5);
             const t = this.model.get("taskResult"),
                 e = Jy[t.id] || {
-                    successTitle: "You did it!",
-                    successText: "Now the family has to deal with your shenanigans."
+                    successTitle: "¡Lo hiciste!",
+                    successText: "Ahora la familia tiene que lidiar con tus travesuras."
                 };
             this.model.set({
                 waitingText: ke.sample(this.waitingText),
@@ -24160,7 +24160,7 @@ const Jy = {
         }
     }),
     $D = `
-<p class="prompt">This Week's Challenge</p>
+<p class="prompt">El desafío de esta semana</p>
 <div class="stone-panel">
     <div class="grade"></div>
     <p class="title title-outline"></p>
@@ -24168,10 +24168,10 @@ const Jy = {
 </div>
 <div class="stone-buttons">
     <div class="button-wrapper">
-        <button class="stone-button prev"><span>previous<br/>episode</span></button>
+        <button class="stone-button prev"><span>episodio<br/>anterior</span></button>
     </div>
     <div class="button-wrapper">
-        <button class="stone-button next"><span>next<br/>episode</span></button>
+        <button class="stone-button next"><span>siguiente<br/>episodio</span></button>
     </div>
 </div>
 `,
@@ -24271,7 +24271,7 @@ const Jy = {
         <div id="characters" class="charactersContainer"></div>
     </div>
     <div id="artifactId" class="artifactContainer text">
-        <a id="artifactLink" aria-label="Visit the Gallery" class="artifactLink" target="_blank">
+        <a id="artifactLink" aria-label="Visitar la galería" class="artifactLink" target="_blank">
             <button id="artifactButton" class="artifactButton"></button>
         </a>
     </div>
@@ -24354,7 +24354,7 @@ const Jy = {
     oS = `<div class="scrollable">
     <div class="clamp">
         <div class="dialed"></div>
-        <button class="clear">CLEAR</button>
+        <button class="clear">BORRAR</button>
         <div class="handset">
             <button class="key" data-dial="1"><div class="key-move">1</div></button>
             <button class="key" data-dial="2"><div class="key-move">2</div></button>
@@ -24369,347 +24369,346 @@ const Jy = {
             <button class="key" data-dial="0"><div class="key-move">0</div></button>
             <button class="key key-pound" data-dial="#"><div class="key-move">#</div></button>
         </div>
-        <button class="button phonebook-button"><div class="icon"></div>OPEN PHONEBOOK</button>
+        <button class="button phonebook-button"><div class="icon"></div>ABRIR AGENDA</button>
     </div>
 </div>
 <div class="phonebook">
     <div class="listings">
-        <h2>The Town Phonebook</h2>
+        <h2>La agenda de la ciudad</h2>
         <h3>A</h3>
         <dl class="listing"><dt>Abram Vorman</dt><dd>791-9666</dd></dl>
-        <dl class="listing"><dt>Act Like You've Been There Drama School</dt><dd>979-5678</dd></dl>
-        <dl class="listing"><dt>Adrian Goof</dt><dd>222-2288</dd></dl>
-        <dl class="listing"><dt>Agatha Coffin</dt><dd>718-6543</dd></dl>
-        <dl class="listing"><dt>Agnes Longbottom</dt><dd>666-9898</dd></dl>
-        <dl class="listing"><dt>Aileen Twaddle</dt><dd>431-9426</dd></dl>
-        <dl class="listing"><dt>Ajay Gilderoy, MD</dt><dd>537-6976</dd></dl>
-        <dl class="listing"><dt>Alejandra Raisinette</dt><dd>929-1066</dd></dl>
-        <dl class="listing"><dt>Alfred J. Charon Post Office</dt><dd>642-3217</dd></dl>
-        <dl class="listing"><dt>All-Is-Frost Ice Cream</dt><dd>456-4567</dd></dl>
-        <dl class="listing"><dt>Amelia Smelting-Foxery</dt><dd>606-5678</dd></dl>
-        <dl class="listing"><dt>Angry Geese Park</dt><dd>373-7322</dd></dl>
-        <dl class="listing"><dt>Animal Control</dt><dd>885-6663</dd></dl>
-        <dl class="listing"><dt>Anne's House of Door Keys</dt><dd>981-2681</dd></dl>
-        <dl class="listing"><dt>Antenna Rippers Car Wash</dt><dd>822-7788</dd></dl>
-        <dl class="listing"><dt>Armando Quixote</dt><dd>543-3421</dd></dl>
-        <dl class="listing"><dt>Artie Clickman</dt><dd>266-6789</dd></dl>
-        <dl class="listing"><dt>Ashok Kumarvelous</dt><dd>310-1983</dd></dl>
+        <dl class="listing"><dt>Actúa como si hubieras estado: escuela de teatro</dt><dd>979-5678</dd></dl>
+        <dl class="listing"><dt>Administración Nacional de Aeronáutica y el Espacio (NASA)</dt><dd>567-5642</dd></dl>
+        <dl class="listing"><dt>Agatha Taud</dt><dd>718-6543</dd></dl>
+        <dl class="listing"><dt>Agente Especial Vecino Normal</dt><dd>272-4422</dd></dl>
+        <dl class="listing"><dt>Agnes Culargo</dt><dd>666-9898</dd></dl>
+        <dl class="listing"><dt>Ahorros y préstamos Fortaleza Inversa</dt><dd>333-9988</dd></dl>
+        <dl class="listing"><dt>Aileen Charlatana</dt><dd>431-9426</dd></dl>
+        <dl class="listing"><dl><dt>Al Hilo de lo Imposible</dt><dd>935-5511</dd></dl>
+        <dl class="listing"></dl><dt>Alejandra Chocopasas</dt><dd>929-1066</dd></dl>
+        <dl class="listing"><dt>Alfombrillas de baño veganas de Jen</dt><dd>469-5599</dd></dl>
+        <dl class="listing"><dt>Almacén Escombros del Porche</dt><dd>444-5389</dd></dl>
+        <dl class="listing"><dt>Amelia Fundezorrería</dt><dd>606-5678</dd></dl>
+        <dl class="listing"><dt>Ana y la casa de sus llaves</dt><dd>981-2681</dd></dl>
+        <dl class="listing"><dt>Antón Tinn</dt><dd>222-2288</dd></dl>
+        <dl class="listing"><dt>Armando Quijote</dt><dd>543-3421</dd></dl>
+        <dl class="listing"><dt>Arturo Cliqueador</dt><dd>266-6789</dd></dl>
+        <dl class="listing"><dt>Ashok Kumaravilla</dt><dd>310-1983</dd></dl>
         <dl class="listing"><dt>Aspen Fantismo</dt><dd>210-2223</dd></dl>
-        <dl class="listing"><dt>Aster Roth Train Station</dt><dd>987-3000</dd></dl>
-        <dl class="listing"><dt>Aunt Flemm</dt><dd>881-5432</dd></dl>
-        <dl class="listing"><dt>Aunt Hecuba</dt><dd>210-5999</dd></dl>
+        <dl class="listing"><dt>Asuntos infernales</dt><dd>722-1333</dd></dl>
+        <dl class="listing"><dt>Automóviles de un solo uso de Bob Robson</dt><dd>789-5432</dd></dl>
+        <dl class="listing"><dt>Autos (un poco) Robados</dt><dd>992-0005</dd></dl>
+        <dl class="listing"><dt>Autos inestables Melodía Achispada</dt><dd>456-6229</dd></dl>
+        <dl class="listing"><dt>Autos Superfluos Rob Camitti</dt><dd>367-7154</dd></dl>
+        <dl class="listing"><dt>Ayuntamiento</dt><dd>987-6543</dd></dl>
         <h3>B</h3>
-        <dl class="listing"><dt>Bacon Barn, The</dt><dd>567-6789</dd></dl>
-        <dl class="listing"><dt>Baskets of Robins</dt><dd>969-3587</dd></dl>
-        <dl class="listing"><dt>Bass Instincts Guitar Lessons</dt><dd>456-6229</dd></dl>
+        <dl class="listing"><dt>Bacalao Descongelado</dt><dd>277-2227</dd></dl>
+        <dl class="listing"><dt>Banco del Río</dt><dd>274-7722</dd></dl>
+        <dl class="listing"><dt>Bebidas de Parayeva para llevar</dt><dd>333-0777</dd></dl>
         <dl class="listing"><dt>Ben Jacobs</dt><dd>210-7822</dd></dl>
-        <dl class="listing"><dt>Berdie Fabble</dt><dd>973-5040</dd></dl>
-        <dl class="listing"><dt>Beshave Yourself</dt><dd>981-2681</dd></dl>
-        <dl class="listing"><dt>BigBand Internet Service</dt><dd>849-8765</dd></dl>
-        <dl class="listing"><dt>Big Rock Astronomical Observatory</dt><dd>222-5577</dd></dl>
-        <dl class="listing"><dt>Big Snake Pond</dt><dd>252-2345</dd></dl>
-        <dl class="listing"><dt>Bike Milder</dt><dd>464-8769</dd></dl>
-        <dl class="listing"><dt>Bill's Bankrupt Independent Theater</dt><dd>955-6665</dd></dl>
-        <dl class="listing"><dt>Bobo\u2019s: Home of the Thrown Kebabs</dt><dd>987-8484</dd></dl>
-        <dl class="listing"><dt>Bob Robson\u2019s Single-Use Autos</dt><dd>789-5432</dd></dl>
-        <dl class="listing"><dt>Boniface Cheebles</dt><dd>738-4666</dd></dl>
+        <dl class="listing"><dt>Bencina & Sushi</dt><dd>565-4443</dd></dl>
+        <dl class="listing"><dt>Bernardo Fabuloso</dt><dd>973-5040</dd></dl>
+        <dl class="listing"><dt>Bicicleta Sinamigos</dt><dd>464-8769</dd></dl>
+        <dl class="listing"><dt>Bobo’s: hogar de los kebabs arrojados</dt><dd>987-8484</dd></dl>
+        <dl class="listing"><dt>Bodega de Pasas Antiguas</dt><dd>234-3444</dd></dl>
+        <dl class="listing"><dt>Bodega Sarcástica</dt><dd>738-1234</dd></dl>
+        <dl class="listing"><dt>Bolígrafos y Taquígrafos</dt><dd>949-5454</dd></dl>
+        <dl class="listing"><dt>Bonifacio Cheebles</dt><dd>738-4666</dd></dl>
         <dl class="listing"><dt>Bonk Crockley</dt><dd>495-0123</dd></dl>
-        <dl class="listing"><dt>Brassy Brenda's Trumpet Lessons</dt><dd>363-5678</dd></dl>
         <dl class="listing"><dt>Brenda Yanluo</dt><dd>571-5550</dd></dl>
-        <dl class="listing"><dt>Broken Seat Cinemas</dt><dd>567-8888</dd></dl>
-        <dl class="listing"><dt>Bud Needletoes</dt><dd>432-0666</dd></dl>
-        <dl class="listing"><dt>Bug-B-Bye-Bye Exterminators</dt><dd>502-4242</dd></dl>
-        <dl class="listing"><dt>Build-A-Bra-Workshop</dt><dd>858-0099</dd></dl>
-        <dl class="listing"><dt>Burpie Hale</dt><dd>366-8934</dd></dl>
-        <dl class="listing"><dt>Butter Trough, The</dt><dd>965-0000</dd></dl>
-        <dl class="listing"><dt>Buy 'n Food</dt><dd>863-1010</dd></dl>
-        <dl class="listing"><dt>By-The-Pound Buffet</dt><dd>678-4444</dd></dl>
+        <dl class="listing"><dt>Buffet por libra</dt><dd>678-4444</dd></dl>
+        <dl class="listing"><dt>Buffet vegano Intestino Feliz</dt><dd>765-5049</dd></dl>
         <h3>C</h3>
-        <dl class="listing"><dt>Cabbage Thompson Jr.</dt><dd>414-6555</dd></dl>
-        <dl class="listing"><dt>Caked n' Loaded</dt><dd>666-2345</dd></dl>
-        <dl class="listing"><dt>Calgary Chumprints</dt><dd>444-1234</dd></dl>
-        <dl class="listing"><dt>Can-Do Kendo</dt><dd>876-2220</dd></dl>
-        <dl class="listing"><dt>Carmella Whoopingcough</dt><dd>328-5184</dd></dl>
-        <dl class="listing"><dt>Carnival Wilson</dt><dd>503-9666</dd></dl>
-        <dl class="listing"><dt>Car Side, The</dt><dd>320-3339</dd></dl>
-        <dl class="listing"><dt>Cash 4 Gold 4 Seeds 4 Less</dt><dd>444-3894</dd></dl>
-        <dl class="listing"><dt>Cassiel Seraph</dt><dd>706-3456</dd></dl>
-        <dl class="listing"><dt>Cave O\u2019 Savings</dt><dd>432-1554</dd></dl>
-        <dl class="listing"><dt>Cecelia Baggage</dt><dd>234-2130</dd></dl>
-        <dl class="listing"><dt>Ceramic Panic</dt><dd>931-2929</dd></dl>
-        <dl class="listing"><dt>Chap-Pier-One</dt><dd>543-2220</dd></dl>
+        <dl class="listing"><dt>Calendarios Caducados</dt><dd>242-3636</dd></dl>
+        <dl class="listing"><dt>Calgaria Carnadas</dt><dd>444-1234</dd></dl>
+        <dl class="listing"><dt>Calidad Magnífica Servicio Aceptable Philip el Místico</dt><dd>730-7774</dd></dl>
+        <dl class="listing"><dt>Cambia Oro (por semillas)</dt><dd>444-3894</dd></dl>
+        <dl class="listing"><dt>Camionetas de Cameron CamCam</dt><dd>293-5971</dd></dl>
+        <dl class="listing"><dt>Campos pequeños de liga pequeña</dt><dd>234-3333</dd></dl>
+        <dl class="listing"><dt>Canal de Enemigos Psíquicos</dt><dd>678-3131</dd></dl>
+        <dl class="listing"><dt>Capi-Tulo-Uno</dt><dd>543-2220</dd></dl>
+        <dl class="listing"><dt>Captura y Secuestro de Roedores S.A.</dt><dd>904-8444</dd></dl>
+        <dl class="listing"><dt>Caquitas Chiclitas</dt><dd>345-9933</dd></dl>
+        <dl class="listing"><dt>Cargado y Cenado</dt><dd>666-2345</dd></dl>
+        <dl class="listing"><dt>Carl Charlatán</dt><dd>938-8765</dd></dl>
+        <dl class="listing"><dt>Carmela Tosrronca</dt><dd>328-5184</dd></dl>
+        <dl class="listing"><dt>Carnaval Wilson</dt><dd>503-9666</dd></dl>
+        <dl class="listing"><dt>Casa de retiro Acres Inquietantes</dt><dd>527-5550</dd></dl>
+        <dl class="listing"><dt>Casiel Serafín</dt><dd>706-3456</dd></dl>
+        <dl class="listing"><dt>Cecilia Equipaje</dt><dd>234-2130</dd></dl>
+        <dl class="listing"><dt>Centeno Veloz: El pan más rápido de la ciudad</dt><dd>323-0444</dd></dl>
+        <dl class="listing"><dt>Centro de actividades de Cloverton</dt><dd>321-8666</dd></dl>
+        <dl class="listing"><dt>Cestas de Petirrojos</dt><dd>969-3587</dd></dl>
         <dl class="listing"><dt>Chase McClure</dt><dd>939-5552</dd></dl>
-        <dl class="listing"><dt>Chatty Carl</dt><dd>938-8765</dd></dl>
-        <dl class="listing"><dt>Chib Spittleton</dt><dd>222-2226</dd></dl>
-        <dl class="listing"><dt>Chikn 4 U</dt><dd>678-8881</dd></dl>
-        <dl class="listing"><dt>Chili Fountain, The</dt><dd>789-0001</dd></dl>
-        <dl class="listing"><dt>Choir Beware Singing Lessons</dt><dd>376-4440</dd></dl>
-        <dl class="listing"><dt>Cirque du Squirrel</dt><dd>595-4554</dd></dl>
-        <dl class="listing"><dt>City Hall</dt><dd>987-6543</dd></dl>
-        <dl class="listing"><dt>C.J. O\u2019Ballyhoo\u2019s American Eatery</dt><dd>535-7777</dd></dl>
-        <dl class="listing"><dt>Clearance-Meat Jerky Club</dt><dd>787-7740</dd></dl>
+        <dl class="listing"><dt>Chib Escupidor</dt><dd>222-2226</dd></dl>
+        <dl class="listing"><dt>Choza de las Costillas</dt><dd>259-1112</dd></dl>
+        <dl class="listing"><dt>Cine Asientos Rotos</dt><dd>567-8888</dd></dl>
+        <dl class="listing"><dt>Cines Pantalones de Lujo</dt><dd>389-1450</dd></dl>
+        <dl class="listing"><dt>Cintura adolescente</dt><dd>654-5063</dd></dl>
+        <dl class="listing"><dt>Circular de los Nueve Círculos</dt><dd>636-6688</dd></dl>
+        <dl class="listing"><dt>Ciro McAtrapadas</dt><dd>780-8436</dd></dl>
+        <dl class="listing"><dt>Cirque du Lune</dt><dd>595-4554</dd></dl>
+        <dl class="listing"><dt>Clases de canto Cuidado con el Coro</dt><dd>376-4440</dd></dl>
+        <dl class="listing"><dt>Clases de guitarra Bajo Instinto</dt><dd>456-6229</dd></dl>
         <dl class="listing"><dt>Cliff Cholera</dt><dd>319-6057</dd></dl>
-        <dl class="listing"><dt>Clora Head</dt><dd>982-0222</dd></dl>
-        <dl class="listing"><dt>Cloverton's Rec Center</dt><dd>321-8666</dd></dl>
-        <dl class="listing"><dt>Container Contentment</dt><dd>765-2222</dd></dl>
-        <dl class="listing"><dt>Contemporary Art Museum For Dads</dt><dd>984-1234</dd></dl>
-        <dl class="listing"><dt>Coral\u2019s Jr. Seafood</dt><dd>712-1234</dd></dl>
+        <dl class="listing"><dt>Clora Beza</dt><dd>982-0222</dd></dl>
+        <dl class="listing"><dt>Club de la carne seca en liquidación</dt><dd>787-7740</dd></dl>
+        <dl class="listing"><dt>Cobarde Manzanatón</dt><dd>446-4949</dd></dl>
+        <dl class="listing"><dt>Coches deportivos Crisis de mediana edad</dt><dd>333-0777</dd></dl>
+        <dl class="listing"><dt>Comcórtate</dt><dd>981-2681</dd></dl>
+        <dl class="listing"><dt>Come y Compra</dt><dd>863-1010</dd></dl>
+        <dl class="listing"><dt>Comer y Lanzar</dt><dd>577-5432</dd></dl>
+        <dl class="listing"><dt>Contenedor de Contenidos</dt><dd>765-2222</dd></dl>
+        <dl class="listing"><dt>Control de animales</dt><dd>885-6663</dd></dl>
         <dl class="listing"><dt>Corduroy P. Munke</dt><dd>321-8593</dd></dl>
-        <dl class="listing"><dt>Corky Zigzag, MD</dt><dd>987-0123</dd></dl>
-        <dl class="listing"><dt>Corncob McBilge</dt><dd>917-4751</dd></dl>
-        <dl class="listing"><dt>Cornwallace Stickle</dt><dd>750-1234</dd></dl>
-        <dl class="listing"><dt>Coward Appleton</dt><dd>446-4949</dd></dl>
         <dl class="listing"><dt>Coyo Kaleido</dt><dd>672-6868</dd></dl>
         <dl class="listing"><dt>Craig Jacobs</dt><dd>719-0044</dd></dl>
-        <dl class="listing"><dt>Crimp Beardbody</dt><dd>406-8068</dd></dl>
-        <dl class="listing"><dt>Cyrus McNabbers</dt><dd>780-8436</dd></dl>
+        <dl class="listing"><dt>Creación de velas con cera de abeja de Abe</dt><dd>712-8889</dd></dl>
+        <dl class="listing"><dt>Cremería Huesos Viejos</dt><dd>987-7079</dd></dl>
+        <dl class="listing"><dt>Crimp Barbudo</dt><dd>406-8068</dd></dl>
+        <dl class="listing"><dt>Cucharas Si-Me-Escucharas</dt><dd>345-3355</dd></dl>
+        <dl class="listing"><dt>Cuidado (decente) para gatitos</dt><dd>937-4999</dd></dl>
+        <dl class="listing"><dt>Cáscaras de Pistacho</dt><dd>959-3456</dd></dl>
         <h3>D</h3>
-        <dl class="listing"><dt>Daphne Ornery</dt><dd>409-2876</dd></dl>
-        <dl class="listing"><dt>Daredare Si</dt><dd>845-9876</dd></dl>
-        <dl class="listing"><dt>Decent Kitty Care</dt><dd>937-4999</dd></dl>
-        <dl class="listing"><dt>Delilah Hucksuckle</dt><dd>765-8451</dd></dl>
-        <dl class="listing"><dt>Dellbert Mints</dt><dd>999-5552</dd></dl>
-        <dl class="listing"><dt>Devils Family</dt><dd>552-9481</dd></dl>
-        <dl class="listing"><dt>Dirt Pile Park</dt><dd>543-3939</dd></dl>
+        <dl class="listing"><dt>Dafne Irascible</dt><dd>409-2876</dd></dl>
+        <dl class="listing"><dt>Daredare Sí</dt><dd>845-9876</dd></dl>
+        <dl class="listing"><dt>Decoración del hogar La Tía Fantástica</dt><dd>345-7018</dd></dl>
+        <dl class="listing"><dt>Delila Hucksuck</dt><dd>765-8451</dd></dl>
+        <dl class="listing"><dt>Dellbert Mentas</dt><dd>999-5552</dd></dl>
+        <dl class="listing"><dt>Demos una vuelta: Compañía de Transportes</dt><dd>565-1333</dd></dl>
+        <dl class="listing"><dt>Dentista Jim James Jonatheux</dt><dd>678-8281</dd></dl>
+        <dl class="listing"><dt>Dentista Kevin Pullman</dt><dd>979-7575</dd></dl>
+        <dl class="listing"><dt>Dentista Viviana Rigurosa</dt><dd>210-2555</dd></dl>
+        <dl class="listing"><dt>Dentistas E. Roy Finley</dt><dd>965-8104</dd></dl>
+        <dl class="listing"><dt>Descenso en Kayak</dt><dd>949-1112</dd></dl>
         <dl class="listing"><dt>DJ Mixmaster Max Mustermann</dt><dd>750-1116</dd></dl>
-        <dl class="listing"><dt>Dog & Cat Repair</dt><dd>439-0000</dd></dl>
-        <dl class="listing"><dt>Donna Chaffington's Dance Studio</dt><dd>737-9876</dd></dl>
-        <dl class="listing"><dt>Doug\u2019s Yoga and Bait</dt><dd>432-8222</dd></dl>
-        <dl class="listing"><dt>Drawing-A-Blank Art Supplies</dt><dd>372-7799</dd></dl>
-        <dl class="listing"><dt>Dr. Meowski DVM</dt><dd>432-7069</dd></dl>
-        <dl class="listing"><dt>Dumpy\u2019s Discount Cargo Pants</dt><dd>567-1356</dd></dl>
+        <dl class="listing"><dt>Dr. Ajay Gilderoy</dt><dd>537-6976</dd></dl>
+        <dl class="listing"><dt>Dr. Corky Zigzag</dt><dd>987-0123</dd></dl>
+        <dl class="listing"><dt>Dr. Frank Esponja</dt><dd>923-0001</dd></dl>
+        <dl class="listing"><dt>Dr. Zhang Pérez</dt><dd>841-6804</dd></dl>
         <h3>E</h3>
-        <dl class="listing"><dt>Edith Wickerbasket</dt><dd>898-2525</dd></dl>
-        <dl class="listing"><dt>Eerie Acres Retirement Home</dt><dd>527-5550</dd></dl>
+        <dl class="listing"><dt>Edith Cesta de Mimbre</dt><dd>898-2525</dd></dl>
+        <dl class="listing"><dt>El Abrevadero de Mantequilla</dt><dd>965-0000</dd></dl>
+        <dl class="listing"><dt>El Chalet de los Chalecos</dt><dd>787-1111</dd></dl>
+        <dl class="listing"><dt>El Coche Escorchado</dt><dd>320-3339</dd></dl>
+        <dl class="listing"><dt>El Granero del Tocino</dt><dd>567-6789</dd></dl>
+        <dl class="listing"><dt>El Louvre de los Palitos de Helado</dt><dd>626-6818</dd></dl>
+        <dl class="listing"><dt>El Lugar del Cartílago</dt><dd>939-1234</dd></dl>
+        <dl class="listing"><dt>El Mascoterinario</dt><dd>654-5555</dd></dl>
+        <dl class="listing"><dt>El Museo de los Banquillos</dt><dd>228-8909</dd></dl>
+        <dl class="listing"><dt>El Museo de “Arte”</dt><dd>910-5959</dd></dl>
+        <dl class="listing"><dt>El Museo Internacional de Perritos de Maíz</dt><dd>423-7676</dd></dl>
+        <dl class="listing"><dt>El Planetario de los Simios</dt><dd>567-7000</dd></dl>
+        <dl class="listing"><dt>El Tenedor Grasiento</dt><dd>262-5757</dd></dl>
         <dl class="listing"><dt>Elfrieda Mulberry</dt><dd>679-6870</dd></dl>
-        <dl class="listing"><dt>Emily's Slightly Corrupted Gems</dt><dd>777-0999</dd></dl>
-        <dl class="listing"><dt>Emmaline Morris</dt><dd>876-2220</dd></dl>
-        <dl class="listing"><dt>E.Roy Finley, DDS</dt><dd>965-8104</dd></dl>
-        <dl class="listing"><dt>Ezekiel Horsefeather</dt><dd>543-4040</dd></dl>
+        <dl class="listing"><dt>Eliminación de plagas (mayoritariamente) sin muerte</dt><dd>540-2288</dd></dl>
+        <dl class="listing"><dt>Emmanuel Morris</dt><dd>876-2220</dd></dl>
+        <dl class="listing"><dt>Enrique Panqueque</dt><dd>237-9000</dd></dl>
+        <dl class="listing"><dt>Eructitos Sanos</dt><dd>366-8934</dd></dl>
+        <dl class="listing"><dt>Escapada Rápida: Agencia de Viajes</dt><dd>693-3399</dd></dl>
+        <dl class="listing"><dt>Estación de trenes Aster Roth</dt><dd>987-3000</dd></dl>
+        <dl class="listing"><dt>Estanque Grandes Serpientes</dt><dd>252-2345</dd></dl>
+        <dl class="listing"><dt>Estudio de baile de Donna Chaffington</dt><dd>737-9876</dd></dl>
+        <dl class="listing"><dt>Estudios Omnipresentes</dt><dd>379-1444</dd></dl>
+        <dl class="listing"><dt>Exequiel Plumacaballo</dt><dd>543-4040</dd></dl>
+        <dl class="listing"><dt>Exterminadores A-di-os-Bichos</dt><dd>502-4242</dd></dl>
         <h3>F</h3>
-        <dl class="listing"><dt>Fanciful Aunt Home Decor</dt><dd>345-7018</dd></dl>
-        <dl class="listing"><dt>Fancy Pants Cinemas</dt><dd>389-1450</dd></dl>
+        <dl class="listing"><dt>Familia Infierno</dt><dd>552-9481</dd></dl>
+        <dl class="listing"><dt>Farmacia Ayuda Fina</dt><dd>795-5678</dd></dl>
+        <dl class="listing"><dt>Farmacia Por Detrás del Mostrador</dt><dd>637-3210</dd></dl>
         <dl class="listing"><dt>Fedora Jenkins</dt><dd>317-9933</dd></dl>
+        <dl class="listing"><dt>Feliz Manipulación de Jamones</dt><dd>504-1333</dd></dl>
         <dl class="listing"><dt>Ferd Parkington</dt><dd>424-3076</dd></dl>
-        <dl class="listing"><dt>Ferguson's Discount Piano Lessons</dt><dd>444-0123</dd></dl>
-        <dl class="listing"><dt>Fine Aid Pharmacy</dt><dd>795-5678</dd></dl>
-        <dl class="listing"><dt>Fix-Is-In Construction, The</dt><dd>876-8765</dd></dl>
         <dl class="listing"><dt>Flint Pemples</dt><dd>545-6543</dd></dl>
-        <dl class="listing"><dt>Florence Butt</dt><dd>321-3737</dd></dl>
-        <dl class="listing"><dt>Foggy Lagoon Park</dt><dd>434-1234</dd></dl>
-        <dl class="listing"><dt>Forrest Smallmouth</dt><dd>543-4321</dd></dl>
-        <dl class="listing"><dt>Fragrant Phil's Taxi Service</dt><dd>987-2224</dd></dl>
-        <dl class="listing"><dt>Frank Spongeman, MD</dt><dd>923-0001</dd></dl>
-        <dl class="listing"><dt>Fulano de Tallgrass</dt><dd>678-6666</dd></dl>
+        <dl class="listing"><dt>Florencio Culossé</dt><dd>321-3737</dd></dl>
+        <dl class="listing"><dt>Forrest Boquita</dt><dd>543-4321</dd></dl>
+        <dl class="listing"><dt>Fulano de Hierba Alta</dt><dd>678-6666</dd></dl>
         <h3>G</h3>
-        <dl class="listing"><dt>Gaberdine Joey: Aussie Kids Clothing, The</dt><dd>789-6271</dd></dl>
-        <dl class="listing"><dt>Gabriel Tootlebloom</dt><dd>375-4539</dd></dl>
+        <dl class="listing"><dt>Gabriel Flordepedito</dt><dd>375-4539</dd></dl>
         <dl class="listing"><dt>Gale Tiddlywinks</dt><dd>310-9876</dd></dl>
         <dl class="listing"><dt>Garland McRae</dt><dd>696-4449</dd></dl>
         <dl class="listing"><dt>Gary Tengu</dt><dd>456-4444</dd></dl>
-        <dl class="listing"><dt>Gas N\u2019 Sushi</dt><dd>565-4443</dd></dl>
-        <dl class="listing"><dt>Gears N Beers Autoshop and Brewery</dt><dd>678-2512</dd></dl>
-        <dl class="listing"><dt>Gently Used Produce</dt><dd>743-3535</dd></dl>
-        <dl class="listing"><dt>Gertrude Dixie</dt><dd>765-7744</dd></dl>
+        <dl class="listing"><dt>Gemas ligeramente corruptas de Emily</dt><dd>777-0999</dd></dl>
+        <dl class="listing"><dt>Gertrudis Sureña</dt><dd>765-7744</dd></dl>
         <dl class="listing"><dt>Gijs F Unas III</dt><dd>730-5749</dd></dl>
-        <dl class="listing"><dt>Ginny St. Porridge</dt><dd>777-0999</dd></dl>
+        <dl class="listing"><dt>Ginny San Porras</dt><dd>777-0999</dd></dl>
         <dl class="listing"><dt>Gnute Ipswitch</dt><dd>210-9292</dd></dl>
-        <dl class="listing"><dt>Gortnoy Cornmedley</dt><dd>486-3788</dd></dl>
-        <dl class="listing"><dt>Greasy Fork, The</dt><dd>262-5757</dd></dl>
+        <dl class="listing"><dt>Gortnoy Maicito</dt><dd>486-3788</dd></dl>
         <dl class="listing"><dt>Gretta Grisspiddler</dt><dd>323-0444</dd></dl>
-        <dl class="listing"><dt>Gristle Spot, The</dt><dd>939-1234</dd></dl>
+        <dl class="listing"><dt>Guantes Zurdos sin emparejar</dt><dd>567-4445</dd></dl>
+        <dl class="listing"><dt>Guía del adicto a la TV</dt><dd>338-5544</dd></dl>
         <h3>H</h3>
         <dl class="listing"><dt>Halley Jacobs</dt><dd>598-0404</dd></dl>
-        <dl class="listing"><dt>Ham By The Foot</dt><dd>247-1082</dd></dl>
-        <dl class="listing"><dt>Hand Turkey Art Museum</dt><dd>934-7654</dd></dl>
-        <dl class="listing"><dt>Happy Bowel Vegan Buffet, The</dt><dd>765-5049</dd></dl>
-        <dl class="listing"><dt>Happy Hamsmanning</dt><dd>504-1333</dd></dl>
-        <dl class="listing"><dt>Happy Scales Lizard Salon</dt><dd>765-3210</dd></dl>
-        <dl class="listing"><dt>Harvey Nutts</dt><dd>627-9238</dd></dl>
-        <dl class="listing"><dt>Heapin\u2019 Heaps o\u2019 Heaps</dt><dd>418-5000</dd></dl>
-        <dl class="listing"><dt>Heck Pancake</dt><dd>237-9000</dd></dl>
-        <dl class="listing"><dt>Holly T. Small</dt><dd>931-2929</dd></dl>
-        <dl class="listing"><dt>Horace Oaf</dt><dd>213-6363</dd></dl>
+        <dl class="listing"><dt>Harvey Nueces</dt><dd>627-9238</dd></dl>
+        <dl class="listing"><dt>Hiedra Tronadora</dt><dd>565-2226</dd></dl>
+        <dl class="listing"><dt>Holly T. Pequeña</dt><dd>931-2929</dd></dl>
+        <dl class="listing"><dt>Horacio Zoquete</dt><dd>213-6363</dd></dl>
         <h3>I</h3>
-        <dl class="listing"><dt>Ignacio Firestarter</dt><dd>525-6008</dd></dl>
-        <dl class="listing"><dt>Imp Fancy</dt><dd>444-7722</dd></dl>
-        <dl class="listing"><dt>Infernal Affairs</dt><dd>722-1333</dd></dl>
-        <dl class="listing"><dt>Insect Relocation Services</dt><dd>567-6999</dd></dl>
-        <dl class="listing"><dt>International Museum of Corn Dogs, The</dt><dd>423-7676</dd></dl>
-        <dl class="listing"><dt>Investinal Fortitude Savings and Loan</dt><dd>333-9988</dd></dl>
-        <dl class="listing"><dt>Isaac Jephcots</dt><dd>636-3333</dd></dl>
-        <dl class="listing"><dt>Ivy Trickle</dt><dd>565-2226</dd></dl>
+        <dl class="listing"><dt>Ignacio Incendiario</dt><dd>525-6008</dd></dl>
+        <dl class="listing"><dt>Isaac Jefcots</dt><dd>636-3333</dd></dl>
         <h3>J</h3>
-        <dl class="listing"><dt>Janet Borgleman, DDS</dt><dd>321-8765</dd></dl>
-        <dl class="listing"><dt>Jean Duponte Cristo</dt><dd>222-9876</dd></dl>
-        <dl class="listing"><dt>Jeff \u201CGeoff\u201D Jefferstein</dt><dd>710-1111</dd></dl>
+        <dl class="listing"><dt>J. “Cebolla” Envoltura Entrepierna</dt><dd>909-2214</dd></dl>
+        <dl class="listing"><dt>Jamón al Pie</dt><dd>247-1082</dd></dl>
         <dl class="listing"><dt>Jeff Hansen</dt><dd>764-9999</dd></dl>
-        <dl class="listing"><dt>Jen\u2019s Vegan Bathmats</dt><dd>469-5599</dd></dl>
-        <dl class="listing"><dt>Jim James Jonatheux, DDS</dt><dd>678-8281</dd></dl>
         <dl class="listing"><dt>Jimminy Myron Crankenfitz</dt><dd>948-7779</dd></dl>
         <dl class="listing"><dt>Jimmy Duranto</dt><dd>343-4567</dd></dl>
-        <dl class="listing"><dt>Joanna Custardio</dt><dd>888-4321</dd></dl>
-        <dl class="listing"><dt>John Boring</dt><dd>262-1010</dd></dl>
-        <dl class="listing"><dt>John Kangaroo</dt><dd>234-8270</dd></dl>
+        <dl class="listing"><dt>John Aburrido</dt><dd>262-1010</dd></dl>
+        <dl class="listing"><dt>John Canguro</dt><dd>234-8270</dd></dl>
         <dl class="listing"><dt>Johnny Gumlately</dt><dd>876-9999</dd></dl>
-        <dl class="listing"><dt>John\u2019s Irregular Casket Shop</dt><dd>555-1747</dd></dl>
-        <dl class="listing"><dt>J. \u201COnion\u201D Crotchswaddle</dt><dd>909-2214</dd></dl>
-        <dl class="listing"><dt>Jos Joskens Yo-Yo's</dt><dd>987-1111</dd></dl>
-        <dl class="listing"><dt>Just Old Calendars</dt><dd>242-3636</dd></dl>
+        <dl class="listing"><dt>Juan Duponte Cristo</dt><dd>222-9876</dd></dl>
+        <dl class="listing"><dt>Juana Custardio</dt><dd>888-4321</dd></dl>
         <h3>K</h3>
-        <dl class="listing"><dt>Karen\u2019s Non-Possessed Doll Shop</dt><dd>663-8880</dd></dl>
         <dl class="listing"><dt>Kate Stark</dt><dd>376-4440</dd></dl>
         <dl class="listing"><dt>Kayla Swift</dt><dd>210-2222</dd></dl>
         <dl class="listing"><dt>Kelly Paleczny</dt><dd>321-8666</dd></dl>
-        <dl class="listing"><dt>Kevin Pullman, DDS</dt><dd>979-7575</dd></dl>
+        <dl class="listing"><dt>Kendo Leendo</dt><dd>876-2220</dd></dl>
         <dl class="listing"><dt>Kip Ortiz</dt><dd>678-6789</dd></dl>
-        <dl class="listing"><dt>Kiss Pista's Pistachio Kisses</dt><dd>959-3456</dd></dl>
         <dl class="listing"><dt>Kurt I. Mukha</dt><dd>771-4441</dd></dl>
         <h3>L</h3>
-        <dl class="listing"><dt>Lacey\u2019s Tablecloths & Gowns</dt><dd>765-7222</dd></dl>
-        <dl class="listing"><dt>Lefty\u2019s Unpaired Gloves</dt><dd>567-4445</dd></dl>
-        <dl class="listing"><dt>Lem N. Forlolz</dt><dd>737-9876</dd></dl>
-        <dl class="listing"><dt>Leon Fishbucket</dt><dd>444-3335</dd></dl>
+        <dl class="listing"><dt>La Cueva de los Descuentos</dt><dd>432-1554</dd></dl>
+        <dl class="listing"><dt>La Fuente de Chili</dt><dd>789-0001</dd></dl>
+        <dl class="listing"><dt>La Gabardina de Joey: ropa australiana para niños</dt><dd>789-6271</dd></dl>
+        <dl class="listing"><dt>La Reparación de la Construcción</dt><dd>876-8765</dd></dl>
+        <dl class="listing"><dt>Lavado de autos Rompe-Antenas</dt><dd>822-7788</dd></dl>
+        <dl class="listing"><dt>Lecciones de piano (con descuento) de Ferguson</dt><dd>444-0123</dd></dl>
+        <dl class="listing"><dt>Lecciones de trompeta de Brassy Brenda</dt><dd>363-5678</dd></dl>
+        <dl class="listing"><dt>Lem N. Porlolez</dt><dd>737-9876</dd></dl>
         <dl class="listing"><dt>Leroy Bowditch</dt><dd>313-7333</dd></dl>
-        <dl class="listing"><dt>Lightly Stolen Cars</dt><dd>992-0005</dd></dl>
+        <dl class="listing"><dt>León Peceras</dt><dd>444-3335</dd></dl>
         <dl class="listing"><dt>Li Kumari</dt><dd>454-4321</dd></dl>
-        <dl class="listing"><dt>Lil \u201CLi\u2019l Goober\u201D Goober</dt><dd>288-4444</dd></dl>
-        <dl class="listing"><dt>Little Lord Little League Fields</dt><dd>234-3333</dd></dl>
         <dl class="listing"><dt>Logan Lee</dt><dd>204-6660</dd></dl>
-        <dl class="listing"><dt>Luella Bedwetter</dt><dd>496-4567</dd></dl>
-        <dl class="listing"><dt>Luke Poodtootle</dt><dd>660-8888</dd></dl>
+        <dl class="listing"><dt>Luana Mealacama</dt><dd>496-4567</dd></dl>
+        <dl class="listing"><dt>Lucas Cacapedito</dt><dd>660-8888</dd></dl>
+        <dl class="listing"><dt>Lujoso Diablillo</dt><dd>444-7722</dd></dl>
         <dl class="listing"><dt>Lulabelle Gertz-Smalley</dt><dd>432-9819</dd></dl>
+        <dl class="listing"><dt>Línea directa psíquica de Madame Harriet</dt><dd>948-6565</dd></dl>
         <h3>M</h3>
-        <dl class="listing"><dt>Mabel Rustbucket</dt><dd>919-8789</dd></dl>
-        <dl class="listing"><dt>Madam Harriet's Psychic Hotline</dt><dd>948-6565</dd></dl>
+        <dl class="listing"><dt>Mabel Cuboxidado</dt><dd>919-8789</dd></dl>
+        <dl class="listing"><dt>Maiciano Pegajoso</dt><dd>750-1234</dd></dl>
+        <dl class="listing"><dt>Mamá Padreman</dt><dd>757-6867</dd></dl>
         <dl class="listing"><dt>Manny Manananggal</dt><dd>484-3344</dd></dl>
-        <dl class="listing"><dt>Man Vanderslice</dt><dd>965-8866</dd></dl>
-        <dl class="listing"><dt>Marjorie Humid</dt><dd>734-7111</dd></dl>
-        <dl class="listing"><dt>Marty and the Fuzz Drive-Time Radio</dt><dd>483-7654</dd></dl>
-        <dl class="listing"><dt>Matilda Lampfoot</dt><dd>765-7779</dd></dl>
-        <dl class="listing"><dt>Melon Ballerz</dt><dd>682-0000</dd></dl>
+        <dl class="listing"><dt>Manteles y Vestidos de Lacey</dt><dd>765-7222</dd></dl>
+        <dl class="listing"><dt>Mariscos Coral Junior</dt><dd>712-1234</dd></dl>
+        <dl class="listing"><dt>Martín “Marty” Martínez</dt><dd>710-1111</dd></dl>
+        <dl class="listing"><dt>Marty y la radio de Fuzz Drive-Time</dt><dd>483-7654</dd></dl>
+        <dl class="listing"><dt>Matilda Piedelámpara</dt><dd>765-7779</dd></dl>
+        <dl class="listing"><dt>Mayor Humedad</dt><dd>734-7111</dd></dl>
+        <dl class="listing"><dt>Mazorca McSentina</dt><dd>917-4751</dd></dl>
+        <dl class="listing"><dt>Mecánico de chimpancés Tim Simian</dt><dd>603-4000</dd></dl>
+        <dl class="listing"><dt>Melones de baloncesto</dt><dd>682-0000</dd></dl>
         <dl class="listing"><dt>Mengano Wu</dt><dd>765-8882</dd></dl>
-        <dl class="listing"><dt>Mid-life Crisis Sports Cars</dt><dd>333-0777</dd></dl>
-        <dl class="listing"><dt>Miles of Aisles Discount Market</dt><dd>754-1152</dd></dl>
-        <dl class="listing"><dt>Mind Your Own Beeswax Candlemaking Studio</dt><dd>712-8889</dd></dl>
-        <dl class="listing"><dt>Misc. Rib Shack</dt><dd>259-1112</dd></dl>
-        <dl class="listing"><dt>Mom Fatherman</dt><dd>757-6867</dd></dl>
+        <dl class="listing"><dt>Mercado de descuentos: Pasa por los Pasillos</dt><dd>754-1152</dd></dl>
+        <dl class="listing"><dt>Montañas Rusas de pago por minutos</dt><dd>345-7711</dd></dl>
+        <dl class="listing"><dt>Montón de montón de montones</dt><dd>418-5000</dd></dl>
         <dl class="listing"><dt>Mordechai H. Sizzle</dt><dd>261-6543</dd></dl>
         <dl class="listing"><dt>Morten Menigmandible</dt><dd>631-5555</dd></dl>
-        <dl class="listing"><dt>Mostly No-Kill Pest Removal</dt><dd>540-2288</dd></dl>
+        <dl class="listing"><dt>Municipio del Partido</dt><dd>208-9494</dd></dl>
         <dl class="listing"><dt>Murry Bruin</dt><dd>886-3331</dd></dl>
-        <dl class="listing"><dt>Museum of \u201CArt\u201D, The</dt><dd>910-5959</dd></dl>
-        <dl class="listing"><dt>Museum of Benches, The</dt><dd>228-8909</dd></dl>
-        <dl class="listing"><dt>Museum of Clever Bumper Stickers</dt><dd>345-9999</dd></dl>
-        <dl class="listing"><dt>Museum of Potato Chips That Look Like Things</dt><dd>880-3300</dd></dl>
-        <dl class="listing"><dt>Museum of Science and Hearsay</dt><dd>306-3333</dd></dl>
-        <dl class="listing"><dt>Mysterious Crevice Park</dt><dd>272-4237</dd></dl>
-        <dl class="listing"><dt>Mystic Philip's High Quality Medium Service</dt><dd>730-7774</dd></dl>
+        <dl class="listing"><dt>Museo de Arte Contemporáneo para padres</dt><dd>984-1234</dd></dl>
+        <dl class="listing"><dt>Museo de Arte del Pavo de la Mano</dt><dd>934-7654</dd></dl>
+        <dl class="listing"><dt>Museo de la Ciencia y de Rumores</dt><dd>306-3333</dd></dl>
+        <dl class="listing"><dt>Museo de las Papas con forma de Cosas</dt><dd>880-3300</dd></dl>
+        <dl class="listing"><dt>Museo de Pegatinas de Autos Graciosas</dt><dd>345-9999</dd></dl>
+        <dl class="listing"><dt>Museo del Mordisqueo</dt><dd>567-0007</dd></dl>
+        <dl class="listing"><dt>Muñecas (no) Poseídas de Karen</dt><dd>663-8880</dd></dl>
         <h3>N</h3>
-        <dl class="listing"><dt>Nan D. Bear</dt><dd>966-2222</dd></dl>
-        <dl class="listing"><dt>National Aeronautics and Space Administration</dt><dd>567-5642</dd></dl>
-        <dl class="listing"><dt>Nine Circles Circular</dt><dd>636-6688</dd></dl>
-        <dl class="listing"><dt>Nothing But Toilet Seats</dt><dd>619-7878</dd></dl>
+        <dl class="listing"><dt>Nan D. Oso</dt><dd>966-2222</dd></dl>
         <h3>O</h3>
-        <dl class="listing"><dt>Old Bones Creamery</dt><dd>987-7079</dd></dl>
-        <dl class="listing"><dt>Old Raisin Winery</dt><dd>234-3444</dd></dl>
-        <dl class="listing"><dt>Ol\u2019 Hambone\u2019s Pig Petting Zoo</dt><dd>539-3555</dd></dl>
-        <dl class="listing"><dt>Omnipresent Studios</dt><dd>379-1444</dd></dl>
+        <dl class="listing"><dt>Observatorio Astronómico Tremenda Piedra</dt><dd>222-5577</dd></dl>
+        <dl class="listing"><dt>Odontóloga Janet Muella</dt><dd>321-8765</dd></dl>
+        <dl class="listing"><dt>Oficina de correos Alfredo Loe Charon</dt><dd>642-3217</dd></dl>
         <h3>P</h3>
-        <dl class="listing"><dt>Party Township</dt><dd>208-9494</dd></dl>
-        <dl class="listing"><dt>Pay-By-The-Minute Roller Coasters</dt><dd>345-7711</dd></dl>
+        <dl class="listing"><dt>Pánico Cerámico</dt><dd>931-2929</dd></dl>
+        <dl class="listing"><dt>Panorama Escénico</dt><dd>634-3355</dd></dl>
+        <dl class="listing"><dt>Pantalones con descuento de Dumpy</dt><dd>567-1356</dd></dl>
+        <dl class="listing"><dt>Parque de la Grieta Misteriosa</dt><dd>272-4237</dd></dl>
+        <dl class="listing"><dt>Parque Gansos Enojados</dt><dd>373-7322</dd></dl>
+        <dl class="listing"><dt>Parque Laguna en la Niebla</dt><dd>434-1234</dd></dl>
+        <dl class="listing"><dt>Parque Pila de Suciedad</dt><dd>543-3939</dd></dl>
+        <dl class="listing"><dt>Pasas por Aquí</dt><dd>696-0666</dd></dl>
+        <dl class="listing"><dt>Pastelería Pinco Pallino</dt><dd>656-4321</dd></dl>
+        <dl class="listing"><dt>Pedito Escalagas</dt><dd>678-1717</dd></dl>
         <dl class="listing"><dt>Penny Plinkstein</dt><dd>937-3331</dd></dl>
-        <dl class="listing"><dt>PensCrafters 1-Hour Pens</dt><dd>949-5454</dd></dl>
         <dl class="listing"><dt>Pepa Z. Depa</dt><dd>579-1177</dd></dl>
-        <dl class="listing"><dt>Pepper-Phonies Vegan Pizza</dt><dd>646-5555</dd></dl>
-        <dl class="listing"><dt>Pet Vet, The</dt><dd>654-5555</dd></dl>
-        <dl class="listing"><dt>Pho-getta Bout It!</dt><dd>943-5432</dd></dl>
-        <dl class="listing"><dt>Pinco Pallino's Pastry Palace</dt><dd>656-4321</dd></dl>
-        <dl class="listing"><dt>Pizza Fun Time</dt><dd>678-8883</dd></dl>
-        <dl class="listing"><dt>Planetarium of the Apes</dt><dd>567-7000</dd></dl>
-        <dl class="listing"><dt>Poopsie Gumball</dt><dd>345-9933</dd></dl>
-        <dl class="listing"><dt>Poorly Labelled Salt and/or Sugar Supply</dt><dd>838-4422</dd></dl>
-        <dl class="listing"><dt>Popsicle Stick Louvre</dt><dd>626-6818</dd></dl>
-        <dl class="listing"><dt>Porch Debris Warehouse</dt><dd>444-5389</dd></dl>
-        <dl class="listing"><dt>Pretentious Home & Yard</dt><dd>350-0123</dd></dl>
+        <dl class="listing"><dt>Pizzería Divertida</dt><dd>678-8883</dd></dl>
+        <dl class="listing"><dt>Pollo Para Ti</dt><dd>678-8881</dd></dl>
+        <dl class="listing"><dt>Postalín Postal Oficina de correos</dt><dd>987-6551</dd></dl>
+        <dl class="listing"><dt>Pretenciosos: Hogar y Jardín</dt><dd>350-0123</dd></dl>
         <dl class="listing"><dt>Priya Gildong</dt><dd>778-4466</dd></dl>
-        <dl class="listing"><dt>Psychic Enemies Network</dt><dd>678-3131</dd></dl>
-        <h3>Q</h3>
-        <dl class="listing"><dt>Quik Fix-A-Vac</dt><dd>471-3210</dd></dl>
-        <dl class="listing"><dt>Quite-A-Repair</dt><dd>465-2222</dd></dl>
+        <dl class="listing"><dt>Productos de segunda mano</dt><dd>743-3535</dd></dl>
+        <dl class="listing"><dt>Programa de Radio Zack Parloteos AM</dt><dd>383-4222</dd></dl>
+        <dl class="listing"><dt>Pura Escarcha Helados</dt><dd>456-4567</dd></dl>
         <h3>R</h3>
         <dl class="listing"><dt>Rebecca Impundulu</dt><dd>252-6694</dd></dl>
-        <dl class="listing"><dt>Ride or Don't Taxi Service</dt><dd>307-7555</dd></dl>
-        <dl class="listing"><dt>Riley Phoenix</dt><dd>654-2555</dd></dl>
-        <dl class="listing"><dt>Rivers Bank</dt><dd>274-7722</dd></dl>
-        <dl class="listing"><dt>Rob Camitti\u2019s Superfluous Cars</dt><dd>367-7154</dd></dl>
-        <dl class="listing"><dt>Rodent Capture & Rapture</dt><dd>904-8444</dd></dl>
-        <dl class="listing"><dt>Ronald Stoolback</dt><dd>456-1923</dd></dl>
+        <dl class="listing"><dt>Reparaciones de Perros y Gatos</dt><dd>439-0000</dd></dl>
+        <dl class="listing"><dt>Reparaciones Rápidas</dt><dd>471-3210</dd></dl>
+        <dl class="listing"><dt>Reparaciones sin paragones</dt><dd>465-2222</dd></dl>
+        <dl class="listing"><dt>Repollo Thompson Jr.</dt><dd>414-6555</dd></dl>
+        <dl class="listing"><dt>Reptiles poco usados de Toad</dt><dd>678-2512</dd></dl>
+        <dl class="listing"><dt>Restaurante americano C.J. Balonoso</dt><dd>535-7777</dd></dl>
+        <dl class="listing"><dt>Ricardo Agujas</dt><dd>432-0666</dd></dl>
+        <dl class="listing"><dt>Riley Fénix</dt><dd>654-2555</dd></dl>
+        <dl class="listing"><dt>Ronald Taburete</dt><dd>456-1923</dd></dl>
         <dl class="listing"><dt>Ryan DiGiorgi</dt><dd>444-0123</dd></dl>
-        <dl class="listing"><dt>Rye Dash: Fastest Bread in Town</dt><dd>323-0444</dd></dl>
         <h3>S</h3>
-        <dl class="listing"><dt>Salon And Hair-Well</dt><dd>432-1554</dd></dl>
-        <dl class="listing"><dt>Samuel Raintoot</dt><dd>222-3335</dd></dl>
-        <dl class="listing"><dt>Santiago Lemontoe</dt><dd>210-8898</dd></dl>
-        <dl class="listing"><dt>Scenic Underlook</dt><dd>634-3355</dd></dl>
+        <dl class="listing"><dt>Salas de escape de 3 minutos</dt><dd>654-9876</dd></dl>
+        <dl class="listing"><dt>Salón de Belleza (y peluquería)</dt><dd>432-1554</dd></dl>
+        <dl class="listing"><dt>Salón Escamas de Lagartija Felices</dt><dd>765-3210</dd></dl>
+        <dl class="listing"><dt>Samuel Lluviapedito</dt><dd>222-3335</dd></dl>
+        <dl class="listing"><dt>Santiago Limondedo</dt><dd>210-8898</dd></dl>
+        <dl class="listing"><dt>Sedanes Srednestatisticheskiy</dt><dd>210-4444</dd></dl>
+        <dl class="listing"><dt>Servicio de Internet AgrandaBanda</dt><dd>849-8765</dd></dl>
+        <dl class="listing"><dt>Servicio de mensaje con palomas Lento y Constante</dt><dd>976-0001</dd></dl>
+        <dl class="listing"><dt>Servicio de Taxi de Fragante Phil</dt><dd>987-2224</dd></dl>
+        <dl class="listing"><dt>Servicio de Taxi Súbete si Quieres</dt><dd>307-7555</dd></dl>
+        <dl class="listing"><dt>Servicio Telefónico \'Me olvidé\'</dt><dd>943-5432</dd></dl>
+        <dl class="listing"><dt>Servicios de Reubicación de Insectos</dt><dd>567-6999</dd></dl>
         <dl class="listing"><dt>Shelby Hoddle</dt><dd>790-8811</dd></dl>
-        <dl class="listing"><dt>Sherman Lyness</dt><dd>838-5559</dd></dl>
-        <dl class="listing"><dt>Shirt-Outta-Luck Dry Cleaners</dt><dd>345-0006</dd></dl>
+        <dl class="listing"><dt>Sherman Leinés</dt><dd>838-5559</dd></dl>
         <dl class="listing"><dt>Sidney Hammockman</dt><dd>345-5111</dd></dl>
-        <dl class="listing"><dt>Slow and Steady Pigeon Messaging Service</dt><dd>976-0001</dd></dl>
-        <dl class="listing"><dt>Smarm to Table Sarcastic Grocers</dt><dd>738-1234</dd></dl>
-        <dl class="listing"><dt>Snarf & Hurl</dt><dd>577-5432</dd></dl>
-        <dl class="listing"><dt>Special Agent Normal Neighborman</dt><dd>272-4422</dd></dl>
-        <dl class="listing"><dt>Speedy Getaway Travel Agency</dt><dd>693-3399</dd></dl>
-        <dl class="listing"><dt>Spoons \u2018R We</dt><dd>345-3355</dd></dl>
-        <dl class="listing"><dt>Srednestatisticheskiy Sedans</dt><dd>210-4444</dd></dl>
-        <dl class="listing"><dt>Stad's Thawed Pre-Jawed Scrod</dt><dd>277-2227</dd></dl>
-        <dl class="listing"><dt>Steve Phlansby</dt><dd>386-5013</dd></dl>
-        <dl class="listing"><dt>Sylvester Brunch</dt><dd>282-5222</dd></dl>
+        <dl class="listing"><dt>Silvestre Desalmuerzo</dt><dd>282-5222</dd></dl>
+        <dl class="listing"><dt>So-yun “Soy un cacahuate” Cacahuate</dt><dd>288-4444</dd></dl>
+        <dl class="listing"><dt>Solo Asientos de Inodoro</dt><dd>619-7878</dd></dl>
+        <dl class="listing"><dt>Somos Juguetes</dt><dd>502-5678</dd></dl>
+        <dl class="listing"><dt>Steve Flansby</dt><dd>386-5013</dd></dl>
+        <dl class="listing"><dt>Suministros de Arte: Dibujar en blanco</dt><dd>372-7799</dd></dl>
+        <dl class="listing"><dt>Suplementos mal etiquetados de Sal y/o azúcar</dt><dd>838-4422</dd></dl>
         <h3>T</h3>
-        <dl class="listing"><dt>Tad Thoodle</dt><dd>252-9974</dd></dl>
-        <dl class="listing"><dt>Take Me for a Ride Cab Co.</dt><dd>565-1333</dd></dl>
-        <dl class="listing"><dt>Teeds Wyvern</dt><dd>879-1234</dd></dl>
-        <dl class="listing"><dt>Teenage Waistline</dt><dd>654-5063</dd></dl>
-        <dl class="listing"><dt>TGIH Year-Round Halloween Depot</dt><dd>326-6190</dd></dl>
-        <dl class="listing"><dt>Three Minute Escape Rooms</dt><dd>654-9876</dd></dl>
-        <dl class="listing"><dt>Thurman Nogood</dt><dd>939-5656</dd></dl>
-        <dl class="listing"><dt>Tim Simian Chimp Mechanic</dt><dd>603-4000</dd></dl>
-        <dl class="listing"><dt>Tipsy Tune's Unsteady Autos</dt><dd>456-6229</dd></dl>
-        <dl class="listing"><dt>Toadboy's Slightly Used Reptiles</dt><dd>678-2512</dd></dl>
-        <dl class="listing"><dt>Tom Pudding</dt><dd>424-6737</dd></dl>
-        <dl class="listing"><dt>Toot Pootladder</dt><dd>678-1717</dd></dl>
+        <dl class="listing"><dt>Tad Dibujos</dt><dd>252-9974</dd></dl>
+        <dl class="listing"><dt>Tadeo Guiverno</dt><dd>879-1234</dd></dl>
+        <dl class="listing"><dt>Taller Arma Tu Sostén</dt><dd>858-0099</dd></dl>
+        <dl class="listing"><dt>Teatro Demoledor</dt><dd>399-6444</dd></dl>
+        <dl class="listing"><dt>Teatro independiente a la miseria de Bill</dt><dd>955-6665</dd></dl>
+        <dl class="listing"><dt>Teleforégano Pizza Vegana</dt><dd>646-5555</dd></dl>
+        <dl class="listing"><dt>Tenn Pudín</dt><dd>424-6737</dd></dl>
+        <dl class="listing"><dt>Teteras de Zuzu</dt><dd>248-4949</dd></dl>
+        <dl class="listing"><dt>Thurman Nobuenito</dt><dd>939-5656</dd></dl>
+        <dl class="listing"><dt>Tía Flemm</dt><dd>881-5432</dd></dl>
+        <dl class="listing"><dt>Tía Hecuba</dt><dd>210-5999</dd></dl>
+        <dl class="listing"><dt>Tienda de ataúdes irregulares de John</dt><dd>555-1747</dd></dl>
+        <dl class="listing"><dt>Tienda de Halloween (Abierta todo el año)</dt><dd>326-6190</dd></dl>
+        <dl class="listing"><dt>Tintorería Camiseta Rota</dt><dd>345-0006</dd></dl>
+        <dl class="listing"><dt>Tipo Tiposo</dt><dd>965-8866</dd></dl>
         <dl class="listing"><dt>Trent Jormbo</dt><dd>345-8886</dd></dl>
-        <dl class="listing"><dt>TV Addict's Guide</dt><dd>338-5544</dd></dl>
+        <dl class="listing"><dt>Tuercas y Cervezas: taller y cervecería</dt><dd>678-2512</dd></dl>
         <h3>U</h3>
-        <dl class="listing"><dt>Under the Counter Pharmacy</dt><dd>637-3210</dd></dl>
         <dl class="listing"><dt>U. Xie</dt><dd>234-3333</dd></dl>
         <h3>V</h3>
-        <dl class="listing"><dt>Vance VanVan\u2019s Van Lot</dt><dd>293-5971</dd></dl>
         <dl class="listing"><dt>Vardenis Pavardenis</dt><dd>345-8333</dd></dl>
-        <dl class="listing"><dt>Vestworld</dt><dd>787-1111</dd></dl>
-        <dl class="listing"><dt>Vincent Pricecheck</dt><dd>555-0003</dd></dl>
-        <dl class="listing"><dt>Vivian Stickler, DDS</dt><dd>210-2555</dd></dl>
+        <dl class="listing"><dt>Veterinario Miawski</dt><dd>432-7069</dd></dl>
+        <dl class="listing"><dt>Vicente Comprobación de Precios</dt><dd>555-0003</dd></dl>
         <h3>W</h3>
-        <dl class="listing"><dt>Walken Clinic, The</dt><dd>567-0007</dd></dl>
         <dl class="listing"><dt>Wang Zutano</dt><dd>242-4678</dd></dl>
         <dl class="listing"><dt>Waterdance</dt><dd>915-1508</dd></dl>
-        <dl class="listing"><dt>Welcome to Yarnia</dt><dd>935-5511</dd></dl>
-        <dl class="listing"><dt>We 'R Toys</dt><dd>502-5678</dd></dl>
-        <dl class="listing"><dt>Wilford O\u2019Hicks</dt><dd>885-3434</dd></dl>
-        <dl class="listing"><dt>Wok This Way</dt><dd>696-0666</dd></dl>
-        <dl class="listing"><dt>Wreckin' Crew Theatre</dt><dd>399-6444</dd></dl>
+        <dl class="listing"><dt>Wilford O’Hicks</dt><dd>885-3434</dd></dl>
         <dl class="listing"><dt>Wylie Skidd</dt><dd>526-1947</dd></dl>
         <h3>Y</h3>
-        <dl class="listing"><dt>Yakkin' Zack AM Radio Show</dt><dd>383-4222</dd></dl>
-        <dl class="listing"><dt>Yakkity Kayak Whitewater Rafting</dt><dd>949-1112</dd></dl>
-        <dl class="listing"><dt>Yamada Honeycomb</dt><dd>277-2227</dd></dl>
-        <dl class="listing"><dt>Yosup's To-Go Cups</dt><dd>333-0777</dd></dl>
+        <dl class="listing"><dt>Yamada Depanal</dt><dd>277-2227</dd></dl>
+        <dl class="listing"><dt>Yoga y Cebo de Doug</dt><dd>432-8222</dd></dl>
+        <dl class="listing"><dt>Yoyós de Yolanda Yordanov</dt><dd>987-1111</dd></dl>
         <h3>Z</h3>
         <dl class="listing"><dt>Zak Zakaryas</dt><dd>949-1112</dd></dl>
-        <dl class="listing"><dt>Zhang P\xE9rez, MD</dt><dd>841-6804</dd></dl>
-        <dl class="listing"><dt>Zippy Zip Memorial Post Office</dt><dd>987-6551</dd></dl>
-        <dl class="listing"><dt>Zuzu\u2019s Kettles</dt><dd>248-4949</dd></dl>
+        <dl class="listing"><dt>Zoológico de cerdos El Viejo Hambone</dt><dd>539-3555</dd></dl>
     </div>
 </div>
 <button class="leave"></button>
@@ -24739,7 +24738,7 @@ const Jy = {
             ".instructions": {
                 observe: "listingName",
                 onGet(t) {
-                    return `Call "${t}"`
+                    return `Llama a "${t}"`
                 }
             },
             ".score": {
@@ -24797,7 +24796,7 @@ const Jy = {
             e && atob && (e = atob(e)), this.triggerMethod("result", {
                 type: "fail",
                 category: e ? "number" : "",
-                message: e || "WRONG<br/>NUMBER"
+                message: e || "NÚMERO<br/>EQUIVOCADO"
             }), this.model.setUpdate({
                 dialed: "",
                 isWaiting: !1
@@ -25902,19 +25901,19 @@ const aT = `
         template: ke.template(aT),
         model: new ze.Model,
         paths: [{
-            name: "FLAT",
+            name: "PLANO",
             path: "M500.82,61c0,0-204.58,0-238.04,0S0.82,61,0.82,61"
         }, {
-            name: "HI-BOOST",
+            name: "IMPULSO ALTO",
             path: "M0.32,137.5c13-11,43-40,88-40s59,36,95,36s110-126,317-126"
         }, {
-            name: "LO-BOOST",
+            name: "IMPULSO BAJO",
             path: "M0.32,4.5c109,0,165,100,283,100s104-63,217-63"
         }, {
-            name: "MID-BOOST",
+            name: "IMPUSLO MEDIO",
             path: "M0.32,75.5c131,0,153-68,279-68s116,68,221,68"
         }, {
-            name: "SPOKEN",
+            name: "HABLADO",
             path: "M0.32,54.5c64,0,65,29,136,29c42,0,121-69,209-69s78,35,155,35"
         }, {
             name: "HI-PASS",
@@ -26293,9 +26292,9 @@ const aT = `
     <div class="dial">
         <div class="indicator"></div>
     </div>
-    <div class="label lo">LO</div>
-    <div class="label mid">MID</div>
-    <div class="label hi">HI</div>
+    <div class="label lo">BA</div>
+    <div class="label mid">MED</div>
+    <div class="label hi">AL</div>
 `,
     pT = je.View.extend({
         className: "gizmo gizmo-power",
@@ -26448,7 +26447,7 @@ const aT = `
         }
     }),
     qT = `
-    <input type="text" class="screen" placeholder="ENTER" maxlength="8"/>
+    <input type="text" class="screen" placeholder="INGRESAR" maxlength="8"/>
 `,
     gT = je.View.extend({
         className: "gizmo gizmo-text",
@@ -26586,7 +26585,7 @@ const aT = `
             </div>
             <div id="panel-region"></div>
         </div>
-        <button class="button submit">SUBMIT</button>
+        <button class="button submit">ENVIAR</button>
     </div>
 </div>
 <button class="leave"></button>
@@ -26626,7 +26625,7 @@ const aT = `
                 observe: ["state", "participant", "captain"],
                 updateMethod: "html",
                 onGet([t, e, n]) {
-                    return t === "GizmosMechanicCaptain" ? `You are setting the gizmos. Ask <span class="player-name ${e.avatar}">${e.name}</span> for the correct settings.` : `These are the correct gizmo settings. Describe them to <span class="player-name ${n.avatar}">${n.name}</span>.`
+                    return t === "GizmosMechanicCaptain" ? `Estás configurando los aparatos. Pídele a <span class="player-name ${e.avatar}">${e.name}</span> los ajustes correctos.` : `Estos son los ajustes correctos del aparato. Descríbeselos a <span class="player-name ${n.avatar}">${n.name}</span>.`
                 }
             },
             ".gizmo-panel": {
@@ -26665,7 +26664,7 @@ const aT = `
                 isWaiting: !1
             }), this.triggerMethod("result", {
                 type: "fail",
-                message: "TRY<br/>AGAIN"
+                message: "PRUEBA<br/>DE NUEVO"
             }))
         },
         onSubmitClick() {
@@ -28015,7 +28014,7 @@ const CT = je.View.extend({
     <div class="info"></div>
     <div id="items-region"></div>
     <div id="gesture-ui"></div>
-    <button class="button found">I FOUND IT!<div class="selected-item item"></div></button>
+    <button class="button found">¡LO ENCONTRÉ!<div class="selected-item item"></div></button>
 </div>
 <button class="leave"></button>
 <div class="instructions-container">
@@ -28067,7 +28066,7 @@ const CT = je.View.extend({
                 observe: "participant",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Ask <span class="player-name ${t.avatar}">${t.name}</span> to describe the item you need to find.` : ""
+                    return t ? `Pídele a <span class="player-name ${t.avatar}">${t.name}</span> que describa el artículo que necesitas encontrar.` : ""
                 }
             },
             ".found": {
@@ -28115,7 +28114,7 @@ const CT = je.View.extend({
                 isWaiting: !1
             }), this.triggerMethod("result", {
                 type: "fail",
-                message: "TRY<br/>AGAIN"
+                message: "PRUEBA<br/>DE NUEVO"
             }))
         },
         getItems() {
@@ -28270,7 +28269,7 @@ const CT = je.View.extend({
                 observe: "captain",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Describe this item to <span class="player-name ${t.avatar}">${t.name}</span>.` : ""
+                    return t ? `Descríbele este artículo a <span class="player-name ${t.avatar}">${t.name}</span>.` : ""
                 }
             },
             ".item": {
@@ -28294,7 +28293,7 @@ const CT = je.View.extend({
     }),
     OT = `<div class="scrollable">
     <div class="clamp">
-        <div class="info">You have the instructions. Tell your gatherers what you need:</div>
+        <div class="info">Tienes las instrucciones. Dile a tus recolectores lo que necesitas:</div>
         <div class="requirements"></div>
     </div>
 </div>
@@ -28315,7 +28314,7 @@ const CT = je.View.extend({
             ".instructions": {
                 observe: "name",
                 onGet(t) {
-                    return `Gather items for ${t}`
+                    return `Reune artículos para ${t}`
                 }
             },
             ".score": {
@@ -28340,7 +28339,7 @@ const CT = je.View.extend({
                     }), e.forEach(V => {
                         let A = "item";
                         n.find(c => c.id === V.id) && (A += " selected"), i += `<div class="${A}">${V.name} <em>${V.location||""}</em></div>`
-                    }), o.length && (i += `<div class="extra-title">${o.length} unneeded ${o.length===1?"item":"items"} must be put back!</div>`, i += `<div class="item extra">${o.join(", ")}</div>`), i
+                    }), o.length && (i += `<div class="extra-title">${o.length} ${o.length===1?"artículo innecesario debe ser deveulto":"artículos innecesarios deben ser deveultos"}</div>`, i += `<div class="item extra">${o.join(", ")}</div>`), i
                 }
             }
         },
@@ -28443,7 +28442,7 @@ const CT = je.View.extend({
             ".instructions": {
                 observe: "name",
                 onGet(t) {
-                    return `Gather items for ${t}`
+                    return `Recolecta artículos para ${t}`
                 }
             },
             ".score": {
@@ -28458,7 +28457,7 @@ const CT = je.View.extend({
                 observe: ["locationName", "captain"],
                 updateMethod: "html",
                 onGet([t, e]) {
-                    return e ? `Ask <span class="player-name ${e.avatar}">${e.name}</span> what you need to gather from ${t}` : ""
+                    return e ? `Pídele a <span class="player-name ${e.avatar}">${e.name}</span> lo que necesitas reunir de ${t}` : ""
                 }
             },
             ".location": {
@@ -46447,11 +46446,11 @@ const L0 = E.extend({
                 ease: "none"
             }, "<").add(() => {
                 this.model.setUpdate({
-                    infoText: "TAP AND HOLD"
+                    infoText: "TOCA Y MANTÉN"
                 })
             }).add(() => {
                 this.model.setUpdate({
-                    infoText: "DEAL WITH IT"
+                    infoText: "SUPÉRALO"
                 })
             }).to(".e.shades", {
                 y: 400
@@ -48499,12 +48498,12 @@ const L0 = E.extend({
                 class: "text-0",
                 type: "div",
                 pos: [400, 1200],
-                html: "LOOK AWAY"
+                html: "DESVÍA LA MIRADA"
             }, {
                 class: "text-1",
                 type: "div",
                 pos: [300, 2200],
-                html: "NO ONE WANTS<br/>TO SEE THIS"
+                html: "NADIE QUIERE<br/>VER ESTO"
             }, {
                 class: "pants",
                 type: "img",
@@ -52183,7 +52182,7 @@ const bc = E.extend({
     }),
     J0 = E.extend({
         className: "hide-magazine",
-        titles: ["SIN<br/>CITY", "RED HOT<br/>HORNS", "DEVILISH", "PITCHED<br/>FORKS", "CLOVEN<br/>HOOVES", "FANGED<br/>FANTASIES", "PENTAGRAM<br/>FORUM", "GOATEE<br/>FANCY"],
+        titles: ["CIUDAD<br/>PECADORA", "CUERNOS<br/>CALIENTES", "DIABÓLICO", "GRANDES<br/>TRIDENTES", "PEZUÑAS<br/>GRANDES", "FANTASÍAS<br/>DE COLMILLO", "FORO DEL<br/>PENTAGRAMA", "CHIVITAS<br/>ELEGANTES"],
         imageManifest: {
             magazine: new URL("main/pp7/everyday/assets/b3ffaf51.png", self.location).href,
             pillow: new URL("main/pp7/everyday/assets/41a235d5.png", self.location).href
@@ -58689,7 +58688,7 @@ const bc = E.extend({
             class: "text",
             type: "div",
             pos: [564, 198],
-            html: "<p>Breaking News!!! The gronking continues to plague the world's youth. No one understands anything.</p>"
+            html: "<p>¡¡¡Noticias de última hora!!! El gronking continúa plagando a la juventud mundial. Nadie entiende nada.</p>"
         }, ...a.elementsFromSprite("sprite", ["tv"])],
         onLoadComplete() {
             s.set(".e.text", {
@@ -58714,7 +58713,7 @@ const bc = E.extend({
                 class: "text",
                 type: "div",
                 pos: [564, 198],
-                html: "<p>Breaking News!!! The gronking continues to plague the world's youth. No one understands anything.</p>"
+                html: "<p>¡¡¡Noticias de última hora!!! El gronking continúa plagando a la juventud mundial. Nadie entiende nada.</p>"
             }, ...a.elementsFromSprite("sprite", ["tv"])]
         }],
         onLoadComplete() {
@@ -72286,9 +72285,9 @@ const bc = E.extend({
                     type: "div",
                     pos: [100, 758],
                     html: `
-                    <p>DEVIL</p>
+                    <p>DIABLO</p>
                     <p>${t.name}</p>
-                    <p>DEVILLE, UNDERWORLD</p>
+                    <p>DIABLLO, INFRAMUNDO</p>
                     <p>${o}</p>
                     <p>${r}</p>
                 `
@@ -74875,7 +74874,7 @@ const Yse = E.extend({
         className: "search-scene",
         progressCounter: 0,
         cloudCounter: 0,
-        mistakeText: ["IT'S NOT<br/>HERE", "NO LUCK", "DIDN'T<br/>FIND IT", "NOPE"],
+        mistakeText: ["NO ESTÁ<br/>AQUÍ", "NO HUBO<br/>SUERTE", "NO LO<br/>ENCONTRÉ", "NOUP"],
         imageManifest: {
             sprite: new URL("main/pp7/everyday/assets/43bbeef4.png", self.location).href
         },
@@ -74909,7 +74908,7 @@ const Yse = E.extend({
                 observe: ["location", "isMistake"],
                 updateMethod: "html",
                 onGet([t, e]) {
-                    return e ? X.exports.sample(this.mistakeText) : `SEARCH ${t}`
+                    return e ? X.exports.sample(this.mistakeText) : `BUSCAR EN: ${t}`
                 },
                 classes: {
                     mistake: "isMistake"
@@ -75186,7 +75185,7 @@ const Yse = E.extend({
             class: "text",
             type: "div",
             pos: [50, 50],
-            html: "<span>TAP AND HOLD!</span>"
+            html: "<span>¡TOCA Y MANTÉN!</span>"
         }],
         initializeTimeline() {
             const t = this.model.get("durationInMs");
@@ -75355,13 +75354,13 @@ const Yse = E.extend({
             class: "text",
             type: "div",
             pos: [50, 50],
-            html: '<span class="message">DO NOTHING!</span>'
+            html: '<span class="message">¡NO HAGAS NADA!</span>'
         }],
         onLoadComplete() {
             s.set(".e.text", {
                 rotation: -10
             }), this.model.setUpdate({
-                message: "DO NOTHING!"
+                message: "¡NO HAGAS NADA!"
             })
         }
     }),
@@ -75384,12 +75383,12 @@ const Yse = E.extend({
             class: "text",
             type: "div",
             pos: [50, 50],
-            html: "<span>ROTATE!</span>"
+            html: "<span>¡GIRA!</span>"
         }],
         onLoadComplete() {
             const t = this.model.get("direction");
-            let e = "ROTATE!";
-            t && t.toLowerCase() === "clockwise" && (e = "ROTATE<br/>CLOCKWISE!"), t && t.toLowerCase() === "counter" && (e = "ROTATE<br/>COUNTER!"), this.model.setUpdate({
+            let e = "¡GIRA!";
+            t && t.toLowerCase() === "clockwise" && (e = "¡GIRA EN<br/>SENTIDO HORARIO!"), t && t.toLowerCase() === "counter" && (e = "¡GIRA EN<br/>SENTIDO ANTIHORARIO!"), this.model.setUpdate({
                 message: e
             })
         },
@@ -75406,12 +75405,12 @@ const Yse = E.extend({
             class: "text background",
             type: "div",
             pos: [50, 50],
-            html: "<span>SCRUB!</span>"
+            html: "<span>¡FREGA!</span>"
         }, {
             class: "text foreground",
             type: "div",
             pos: [50, 50],
-            html: "<span>SCRUB!</span>"
+            html: "<span>¡FREGA!</span>"
         }],
         initializeTimeline() {
             s.set(".e.foreground", {
@@ -75515,7 +75514,7 @@ const Yse = E.extend({
             ".text span": {
                 observe: "isWaiting",
                 onGet(t) {
-                    return t ? "WAIT!" : "TAP!"
+                    return t ? "¡ESPERA!" : "¡TOCA!"
                 }
             }
         },
@@ -75523,7 +75522,7 @@ const Yse = E.extend({
             class: "text",
             type: "div",
             pos: [50, 50],
-            html: "<span>TAP!</span>"
+            html: "<span>¡TOCA!</span>"
         }]
     }),
     joe = E.extend({
@@ -77453,7 +77452,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
         tapTimeoutLength: 500,
         rotateTimeout: null,
         rotateTimeoutLength: 150,
-        successText: ["NICE ONE", "GOT IT", "GOOD JOB", "GREAT WORK", "WELL DONE"],
+        successText: ["BIEN HECHO", "LO HICISTE", "BUEN TRABAJO", "GRAN TRABAJO", "MUY BIEN"],
         bindings: {
             ".leave": {
                 observe: "canLeave",
@@ -77471,7 +77470,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
             ".info": {
                 observe: ["infoText", "isWaiting"],
                 onGet([t, e]) {
-                    return e ? "WAIT" : t || ""
+                    return e ? "ESPERA" : t || ""
                 },
                 classes: {
                     waiting: "isWaiting",
@@ -77483,7 +77482,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 observe: "participant",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Ask <span class="player-name ${t.avatar}">${t.name}</span> what to do.` : ""
+                    return t ? `Pregúntale a <span class="player-name ${t.avatar}">${t.name}</span> qué hacer.` : ""
                 },
                 classes: {
                     conceal: {
@@ -77508,7 +77507,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 isWaiting: !1
             }), t.changed.currentStepIndex === void 0 ? this.triggerMethod("result", {
                 type: "fail",
-                message: "TRY<br/>AGAIN"
+                message: "PRUEBA<br/>DE NUEVO"
             }) : (this.model.setUpdate({
                 isWaiting: !1,
                 isSuccess: !0,
@@ -77726,7 +77725,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 observe: "captain",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Give <span class="player-name ${t.avatar}">${t.name}</span> these instructions. Steps will be crossed off as they\u2019re completed.` : ""
+                    return t ? `Dale a <span class="player-name ${t.avatar}">${t.name}</span> estas instrucciones. Los pasos se tacharán a medida que se completen.` : ""
                 }
             },
             ".steps": {
@@ -77748,23 +77747,23 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
         getStepText(t) {
             switch (t.mechanic) {
                 case "ROTATE_CLOCK":
-                    return `${t.instructions} by rotating right twice`;
+                    return `${t.instructions} girando a la derecha dos veces`;
                 case "ROTATE_COUNTER":
-                    return `${t.instructions} by rotating left twice`;
+                    return `${t.instructions} girando a la izquierda dos veces`;
                 case "TAP":
-                    return `${t.instructions} by tapping once`;
+                    return `${t.instructions} tocando una vez`;
                 case "TAP_3":
-                    return `${t.instructions} by triple tapping`;
+                    return `${t.instructions} tocando tres veces`;
                 case "TAP_HOLD":
-                    return `${t.instructions} by tapping and holding for 3 seconds`;
+                    return `${t.instructions} tocando y manteniendo por 3 segundos`;
                 case "SWIPE_UP":
-                    return `${t.instructions} by swiping up`;
+                    return `${t.instructions} deslizando hacia arriba`;
                 case "SWIPE_DOWN":
-                    return `${t.instructions} by swiping down`;
+                    return `${t.instructions} deslizando hacia abajo`;
                 case "SWIPE_LEFT":
-                    return `${t.instructions} by swiping left`;
+                    return `${t.instructions} deslizando hacia la izquierda`;
                 case "SWIPE_RIGHT":
-                    return `${t.instructions} by swiping right`;
+                    return `${t.instructions} deslizando hacia la derecha`;
                 default:
                     return ""
             }
@@ -77779,7 +77778,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
         tagName: "button",
         className: "button location",
         template: ke.template('<div class="name"></div>'),
-        prefixes: ["LOOK", "CHECK", "SEARCH"],
+        prefixes: ["MIRA", "REVISA", "BUSCA"],
         events: {
             click: "onClick"
         },
@@ -77817,7 +77816,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
             const t = this.model.get("distance"),
                 e = this.distanceMap[t] || 5e3;
             this.model.setUpdate({
-                infoText: "SCRUB",
+                infoText: "FREGA",
                 distanceInPx: e,
                 lastDistance: 0,
                 distanceScrubbed: 0
@@ -77869,7 +77868,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
     <div class="progress">
         <div class="progress-bar"></div>
     </div>
-    <div class="info">SCRUB TO SEARCH</div>
+    <div class="info">FREGA PARA BUSCAR</div>
 `,
     _oe = hu.extend({
         className: "gesture scrub",
@@ -77945,7 +77944,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
             ".info": {
                 observe: "name",
                 onGet(t) {
-                    return `Tap any location to search for ${t}`
+                    return `Toca cualquier lugar para buscar ${t}`
                 }
             },
             ".leave": {
@@ -78050,7 +78049,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 observe: "participant",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Read <span class="player-name ${t.avatar}">${t.name}</span> this word. Spelling and spaces count!` : ""
+                    return t ? `Léele a <span class="player-name ${t.avatar}">${t.name}</span> esta palabra. ¡La ortografía y los espacios cuentan!` : ""
                 }
             },
             ".word": "correctText"
@@ -78067,9 +78066,9 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
     iae = `<div class="clamp">
     <div class="info"></div>
     <form>
-        <input type="text" name="word" placeholder="ENTER WORD" maxlength=40
+        <input type="text" name="word" placeholder="INTRODUCE UNA PALABRA" maxlength=40
             autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-        <button type="submit" class="button submit">SUBMIT</button>
+        <button type="submit" class="button submit">ENVIAR</button>
     </form>
 </div>
 <button class="leave"></button>
@@ -78106,7 +78105,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 observe: "captain",
                 updateMethod: "html",
                 onGet(t) {
-                    return t ? `Ask <span class="player-name ${t.avatar}">${t.name}</span> for the word you need.` : ""
+                    return t ? `Pregúntale a <span class="player-name ${t.avatar}">${t.name}</span> la palabra que necesitas.` : ""
                 }
             },
             "input[name=word]": "word",
@@ -78137,7 +78136,7 @@ const zoe = `<div id="gesture-ui" class="gestures scene-box-wrapper">
                 isWaiting: !1
             }), this.triggerMethod("result", {
                 type: "fail",
-                message: "TRY<br/>AGAIN"
+                message: "PRUEBA<br/>DE NUEVO"
             }))
         },
         isPaused(t, e) {
@@ -81110,7 +81109,7 @@ const rae = je.View.extend({
                 observe: ["participant", "destination"],
                 updateMethod: "html",
                 onGet([t, e]) {
-                    return !t || !e ? "" : `Ask <span class="player-name ${t.avatar}">${t.name}</span> for directions to ${e.name}`
+                    return !t || !e ? "" : `Pregúntale a <span class="player-name ${t.avatar}">${t.name}</span> cómo llegar a ${e.name}`
                 }
             },
             ".scene-box-wrapper": {
@@ -84369,7 +84368,7 @@ const lae = je.View.extend({
         useTaps: !0,
         setup() {
             this.model.setUpdate({
-                infoText: "TAP AND HOLD",
+                infoText: "TOCA Y MANTÉN",
                 elapsedInMs: 0
             }), this.listenTo(this.model, "change:isPaused", this.onIsPausedChange)
         },
@@ -84430,7 +84429,7 @@ const lae = je.View.extend({
         }),
         setup() {
             this.boundOnKeyDown = this.onKeyDown.bind(this), document.addEventListener("keydown", this.boundOnKeyDown), this.model.setUpdate({
-                infoText: "DO NOTHING",
+                infoText: "NO HAGAS NADA",
                 elapsedInMs: 0
             }), this.listenTo(this.model, "change:isPaused", this.onIsPausedChange)
         },
@@ -84455,13 +84454,13 @@ const lae = je.View.extend({
         getMistakeMessage(t) {
             switch (t) {
                 case "key":
-                    return "YOU HIT A KEY!";
+                    return "¡TOCASTE UNA TECLA!";
                 case "mouse":
-                    return "YOU MOVED THE CURSOR!";
+                    return "¡MOVISTE EL CURSOR!";
                 case "touch":
-                    return "YOU TOUCHED!";
+                    return "¡TOCASTE!";
                 case "move":
-                    return "YOU MOVED!";
+                    return "¡TE MOVISTE!";
                 default:
                     return ""
             }
@@ -84495,7 +84494,7 @@ const lae = je.View.extend({
         isRotating: !1,
         setup() {
             const t = this.model.get("direction").toLowerCase() || "clockwise",
-                e = t === "clockwise" ? "ROTATE RIGHT" : "ROTATE LEFT";
+                e = t === "clockwise" ? "GIRA HACIA LA DERECHA" : "GIRA HACIA LA IZQUIERDA";
             this.model.setUpdate({
                 demoClass: t,
                 infoText: e,
@@ -84519,7 +84518,7 @@ const lae = je.View.extend({
             let r = 0;
             if (n === "clockwise" ? r = o / i * 100 : n === "counter" && o !== 0 ? r = -o / i * 100 : r = Math.abs(o) / i * 100, r < 0) {
                 this.sceneView.onMistake(), this.model.set({
-                    mistakeText: "WRONG WAY",
+                    mistakeText: "DIRECCIÓN EQUIVOCADA",
                     mistake: !0
                 });
                 return
@@ -84592,13 +84591,13 @@ const lae = je.View.extend({
                 n = e[t];
             if (t === e.length) {
                 this.model.setUpdate({
-                    infoText: "DONE!"
+                    infoText: "¡HECHO!"
                 });
                 return
             }
             this.model.setUpdate({
                 demoClass: n ? `swipe-${n.toLowerCase()}` : "",
-                infoText: n ? `SWIPE ${n}` : ""
+                infoText: n ? `DESLIZA HACIA ${n.replace("UP", "ARRIBA").replace("DOWN", "ABAJO").replace("RIGHT", "LA DERECHA").replace("LEFT", "LA IZQUIERDA")}` : ""
             })
         },
         onSwipeEnd(t) {
@@ -84674,7 +84673,7 @@ const lae = je.View.extend({
         setup() {
             let t = this.model.get("wait") || 0;
             this.model.get("category") === "EMERGENCY" && (t = 500), this.throttledTap = X.exports.throttle(this.onTap, t, !0), this.listenTo(this.model, "change:tapsLeft", this.onTapsLeftChange), this.model.setUpdate({
-                infoText: "TAP",
+                infoText: "TOCA",
                 isWaiting: !1,
                 isWaitingForTimer: !1,
                 isWaitingForServer: !1
@@ -84735,7 +84734,7 @@ const lae = je.View.extend({
         useTaps: !0,
         setup() {
             this.model.setUpdate({
-                infoText: "TAP",
+                infoText: "TOCA",
                 isWaiting: !1,
                 tapsLeft: this.model.get("tapsRequired")
             })
@@ -84794,7 +84793,7 @@ const mae = `${_1}
         <div class="scene-box-wrapper">
             <div class="scene-box">
                 <div class="hand"></div>
-                <p>LOOK UP AND LISTEN</p>
+                <p>MIRA ARRIBA Y ESCUCHA</p>
             </div>
         </div>
         <div class="doh"></div>
@@ -84908,9 +84907,9 @@ const mae = `${_1}
             if (t.playerInfo = {
                     avatar: "Audience",
                     role: {
-                        id: "THE CAT"
+                        id: "EL GATO"
                     },
-                    name: t.catName || "THE CAT"
+                    name: t.catName || "EL GATO"
                 }, t.state !== "AudienceMechanic") return;
             const e = this.model.get("blob"),
                 n = e ? e.catTaskWorkingOn : null;

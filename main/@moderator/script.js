@@ -11084,7 +11084,7 @@ var Nie = eL(($ie, bA) => {
             directory: "standalone/quiplash2-international",
             categoryId: "quiplash2-internationalGame"
         }, {
-            name: "Guesspionage Crowdplay",
+            name: "Crowdplay de Espiadivinos",
             tag: "guesspionage-crowdplay",
             wrapper: "marionette",
             isPublic: !0,
@@ -11123,13 +11123,13 @@ var Nie = eL(($ie, bA) => {
             isPublic: !0,
             directory: "pp1/drawful"
         }, {
-            name: "Word Spud",
+            name: "Papa Palabra",
             tag: "wordspud",
             wrapper: "marionette",
             isPublic: !0,
             directory: "pp1/wordspud"
         }, {
-            name: "Lie Swatter",
+            name: "Mata Mentiras",
             tag: "lieswatter",
             wrapper: "marionette",
             isPublic: !0,
@@ -11153,13 +11153,13 @@ var Nie = eL(($ie, bA) => {
             isPublic: !0,
             directory: "pp2/earwax"
         }, {
-            name: "Bidiots",
+            name: "Subastardos",
             tag: "auction",
             wrapper: "marionette",
             isPublic: !0,
             directory: "pp2/auction"
         }, {
-            name: "Bomb Corp",
+            name: "Bomba S.A.",
             tag: "bombintern",
             wrapper: "marionette",
             isPublic: !0,
@@ -11171,7 +11171,7 @@ var Nie = eL(($ie, bA) => {
             isPublic: !0,
             directory: "pp2/quiplash"
         }, {
-            name: "Fakin' It",
+            name: "Engáñame",
             tag: "fakinit",
             wrapper: "marionette",
             isPublic: !0,
@@ -11199,7 +11199,7 @@ var Nie = eL(($ie, bA) => {
             directory: "pp3/triviadeath",
             categoryId: "TriviaDeathResults"
         }, {
-            name: "Guesspionage",
+            name: "Espiadivinos",
             tag: "pollposition",
             wrapper: "marionette",
             isPublic: !0,
@@ -11211,14 +11211,14 @@ var Nie = eL(($ie, bA) => {
             isPublic: !0,
             directory: "pp4/fibbage3"
         }, {
-            name: "Survive the Internet",
+            name: "Sobrevive al Internet",
             tag: "survivetheinternet",
             wrapper: "marionette",
             isPublic: !0,
             directory: "pp4/survivetheinternet",
             categoryId: "STIGame"
         }, {
-            name: "Monster Seeking Monster",
+            name: "Monstruo Busca Monstruo",
             tag: "monstermingle",
             wrapper: "marionette",
             isPublic: !0,
@@ -11232,7 +11232,7 @@ var Nie = eL(($ie, bA) => {
             directory: "pp4/bracketeering",
             categoryId: "BRKGame"
         }, {
-            name: "Civic Doodle",
+            name: "Garabato Cívico",
             tag: "overdrawn",
             wrapper: "marionette",
             isPublic: !0,
@@ -11247,7 +11247,7 @@ var Nie = eL(($ie, bA) => {
             directory: "pp5/ydkj2018",
             categoryId: "YDKJ2018Game"
         }, {
-            name: "Split the Room",
+            name: "Divide la Sala",
             tag: "splittheroom",
             wrapper: "marionette",
             isPublic: !0,
@@ -11268,7 +11268,7 @@ var Nie = eL(($ie, bA) => {
             directory: "pp5/slingshoot",
             categoryId: "SlingShootGame"
         }, {
-            name: "Patently Stupid",
+            name: "Patentes Dementes",
             tag: "patentlystupid",
             wrapper: "marionette",
             isPublic: !0,
@@ -11283,7 +11283,7 @@ var Nie = eL(($ie, bA) => {
             directory: "pp6/triviadeath2",
             categoryId: "TriviaDeath2Game"
         }, {
-            name: "Role Models",
+            name: "Modelo a Seguir",
             tag: "rolemodels",
             wrapper: "marionette",
             isPublic: !0,
@@ -11292,21 +11292,21 @@ var Nie = eL(($ie, bA) => {
             categoryId: "RoleModelsGame",
             shopItems: ["shirts"]
         }, {
-            name: "Joke Boat",
+            name: "Crucero Cómico",
             tag: "jokeboat",
             wrapper: "marionette",
             isPublic: !0,
             directory: "pp6/jokeboat",
             categoryId: "JokeboatGame"
         }, {
-            name: "Dictionarium",
+            name: "Diccionarium",
             tag: "ridictionary",
             wrapper: "marionette",
             isPublic: !0,
             directory: "pp6/ridictionary",
             categoryId: "RidictionaryGame"
         }, {
-            name: "Push the Button",
+            name: "Pulsa el Botón",
             tag: "pushthebutton",
             wrapper: "marionette",
             isPublic: !0,
@@ -11329,7 +11329,7 @@ var Nie = eL(($ie, bA) => {
             features: ["moderation"],
             categoryId: "quiplash3Game"
         }, {
-            name: "The Devils and the Details",
+            name: "La Familia es un Infierno",
             tag: "everyday",
             wrapper: "marionette",
             isPublic: !0,
@@ -11353,7 +11353,7 @@ var Nie = eL(($ie, bA) => {
             directory: "pp7/blanky-blank",
             categoryId: "BlankyBlankGame"
         }, {
-            name: "Job Job",
+            name: "Bajo Trabajo",
             tag: "apply-yourself",
             wrapper: "vue",
             isPublic: !0,
@@ -11361,7 +11361,7 @@ var Nie = eL(($ie, bA) => {
             categoryId: "JobGameGame",
             features: ["moderation", "previews"]
         }, {
-            name: "Drawful Animate",
+            name: "Drawful Animado",
             tag: "drawful-animate",
             wrapper: "vue",
             isPublic: !0,
@@ -11369,7 +11369,7 @@ var Nie = eL(($ie, bA) => {
             categoryId: "DrawfulAnimateGame",
             features: ["moderation"]
         }, {
-            name: "The Wheel of Enormous Proportions",
+            name: "La Ruleta de Enormes Proporciones",
             tag: "the-wheel",
             wrapper: "vue",
             isPublic: !0,
@@ -11383,7 +11383,7 @@ var Nie = eL(($ie, bA) => {
             directory: "pp8/survey-bomb",
             categoryId: "SurveyBombGame"
         }, {
-            name: "Weapons Drawn",
+            name: "Trazo del Crimen",
             tag: "murder-detectives",
             wrapper: "vue",
             isPublic: !0,
@@ -12832,7 +12832,7 @@ var Nie = eL(($ie, bA) => {
                     TV_SENTRY_DSN: "https://bb026273d98c4b99ab11c1de369f521f@o420318.ingest.sentry.io/6387933",
                     TV_SENTRY_RATE: "0.2",
                     TV_SLACK_DEBUG: "https://hooks.slack.com/services/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",
-                    TV_TWITCH_CLIENT_ID: "yn2iepd23vskpmkzgeg2lkfsct7gsc",
+                    TV_TWITCH_CLIENT_ID: "kevtapj8zlyw5lh8ulpwyuj967hdqu",
                     BASE_URL: "https://bundles.jackbox.tv/main/@moderator/",
                     MODE: "production",
                     DEV: !1,
@@ -12919,118 +12919,118 @@ ${r.message}`,
         }
     }
     const Gj = {
-            BACK: "Back",
-            CANCEL: "Cancel",
-            CLOSE: "Close",
-            CONFIRM: "Confirm",
-            CREATE: "Create",
-            DELETE: "Delete",
-            DONE: "Done",
-            EDIT: "Edit",
-            OK: "OK",
+            BACK: "Atr\xE1s",
+            CANCEL: "Cancelar",
+            CLOSE: "Cerrar",
+            CONFIRM: "Confirmar",
+            CREATE: "Crear",
+            DELETE: "Borrar",
+            DONE: "Hecho",
+            EDIT: "Editar",
+            OK: "Aceptar",
             NO: "No",
-            PLAY: "Play",
-            PUBLISH: "Publish",
-            REMOVE: "Remove",
-            RESET: "Reset",
-            SUBMIT: "Submit",
-            TRY_AGAIN: "Try Again",
-            UNDO: "Undo",
-            YES: "Yes"
+            PLAY: "Jugar",
+            PUBLISH: "Publicar",
+            REMOVE: "Remover",
+            RESET: "Reiniciar",
+            SUBMIT: "Enviar",
+            TRY_AGAIN: "Volver a intentarlo",
+            UNDO: "Deshacer",
+            YES: "S\xED"
         },
         Wj = {
             UGC: {
-                VISIBILITY_CONTROLLER_OFF: "prompts hidden on players\u2019 devices",
-                VISIBILITY_CONTROLLER_ON: "prompts shown on players\u2019 devices",
-                VISIBILITY_SCREEN_OFF: "prompts hidden on game screen",
-                VISIBILITY_SCREEN_ON: "prompts shown on game screen"
+                VISIBILITY_CONTROLLER_OFF: "indicaciones ocultas en los dispositivos de los jugadores",
+                VISIBILITY_CONTROLLER_ON: "indicaciones se muestran en los dispositivos de los jugadores",
+                VISIBILITY_SCREEN_OFF: "indicaciones ocultas en la pantalla del juego",
+                VISIBILITY_SCREEN_ON: "indicaciones se muestran en la pantalla del juego"
             }
         },
         jj = {
-            DISCONNECTED: "You have been disconnected.",
-            DRAWING_NOTHING: "You have to draw something!",
-            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-            ROOM_DESTROYED: "Thanks for playing!",
-            ROOM_DISCONNECTED: "Disconnected",
-            TEXT_NAUGHTY: "I\u2019m afraid you can\u2019t write that. Please be respectful of other players.",
-            TEXT_NOTHING: "You can\u2019t enter nothing!",
+            DISCONNECTED: "Te has desconectado.",
+            DRAWING_NOTHING: "\xA1Tienes que dibujar algo!",
+            PLAYER_KICKED: "Has sido echado de la partida por un moderador.",
+            ROOM_DESTROYED: "\xA1Gracias por jugar!",
+            ROOM_DISCONNECTED: "Desconectado",
+            TEXT_NAUGHTY: "Lo siento, no puedes escribir eso. Seamos respetuosos con los dem\xE1s jugadores.",
+            TEXT_NOTHING: "Tienes que escribir algo",
             TITLE: "Error"
         },
-        Hj = "LOADING",
+        Hj = "CARGANDO",
         Kj = {
-            JOINED_COUNT: "x | {count} of {maxPlayers} players joined | {count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "x | {count} player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "x | Se ha unido {count} de {maxPlayers} jugadores | Se han unido {count} de {maxPlayers} jugadores",
+            PLAYERS_NEEDED: "x | Se necesita {count} jugador para empezar | Se necesitan {count} jugadores para empezar",
+            WAITING_FOR_VIP: "Esperando a que {name} inicie la partida",
+            WAITING_FOR_GAMEPAD: "Esperando a que empiece la partida",
+            GAME_STARTING: "La partida va a empezar",
+            BUTTON_START: "Pulsa para empezar",
+            BUTTON_CANCEL: "Pulsa para cancelar"
         },
         Vj = {
-            GALLERY_LINK: "Visit the Gallery",
-            PLAY_AGAIN: "Play again?",
-            BUTTON_SAME_PLAYERS: "Same Players",
-            BUTTON_NEW_PLAYERS: "New Players"
+            GALLERY_LINK: "Visita la galer\xEDa",
+            PLAY_AGAIN: "\xBFJugar otra vez?",
+            BUTTON_SAME_PLAYERS: "Mismos jugadores",
+            BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
         Yj = {
-            AND: "AND",
+            AND: "Y",
             OR: "OR"
         },
         qj = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let\u2019s Go!"
+            BUTTON_SKIP: "Omitir",
+            BUTTON_NEXT: "Siguiente",
+            BUTTON_DONE: "\xA1Vamos!"
         },
         zj = {
-            NAME: "AUDIENCE"
+            NAME: "P\xDABLICO"
         },
         Xj = {
-            EPISODE_REPORT: "Report Episode",
-            EPISODE_UNLOAD: "Unload Episode",
-            EPISODE_VIEW_AUTHOR: "View Author",
-            EPISODES_LOAD: "Load an episode by id:",
-            EPISODES_MENU: "Episodes Menu",
-            EPISODES_SELECT: "Or select an epsiode:",
-            EPISODES_WARNING: "Warning: user generated content is not rated",
+            EPISODE_REPORT: "Denunciar episodio",
+            EPISODE_UNLOAD: "Retirar episodio",
+            EPISODE_VIEW_AUTHOR: "Ver autor",
+            EPISODES_LOAD: "Carga un episodio por ID:",
+            EPISODES_MENU: "Men\xFA de episodios",
+            EPISODES_SELECT: "O selecciona un episodio:",
+            EPISODES_WARNING: "Aviso: El contenido de los usuarios no tiene clasificaci\xF3n de edad",
             INSTRUCTION: {
-                CREATE_TITLE: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-                LOAD: "create or load?",
-                PUBLISH: "publish your episode",
-                TITLE: "name your episode",
-                TOGGLE_VISIBILITY: "tap to show/hide prompts",
-                WRITE: "write your prompts"
+                CREATE_TITLE: "Lo primero es que debes hacer es introducir un nombre para el episodio que contendr\xE1 todas sus indicaciones y pulsar crear.",
+                LOAD: "\xBFcrear o cargar?",
+                PUBLISH: "publica tu episodio",
+                TITLE: "nombra tu episodio",
+                TOGGLE_VISIBILITY: "pulsa para mostrar/ocultar las indicaciones",
+                WRITE: "escribe tus indicaciones"
             },
             WARNING: {
-                DELETE: "Are you sure you want to delete this episode?",
-                TOS: "By sharing content, you agree to our [tos]Terms of Service[/tos]",
-                TOS_AGREE: "agree and share"
+                DELETE: "\xBFEst\xE1s seguro de que quieres borrar este episodio?",
+                TOS: "Al compartir contenido, aceptas nuestros [tos]T\xE9rminos de servicio[/tos]",
+                TOS_AGREE: "aceptar y compartir"
             },
-            BACK_TO_EPISODES: "back to episodes",
-            BACK_TO_MENU: "back to menu",
-            CREATE_NEW_EPISODE: "create a new episode",
-            PREVIOUS_EPISODES: "previous episodes",
-            PROMPT_ADD: "add prompt",
-            PROMPT_PLACEHOLDER: "enter a prompt",
-            PROMPTS_COUNT_HIDDEN: "({count} hidden)",
-            TITLE_PLACEHOLDER: "enter a title"
+            BACK_TO_EPISODES: "volver a los episodios",
+            BACK_TO_MENU: "volver al men\xFA",
+            CREATE_NEW_EPISODE: "crear un nuevo episodio",
+            PREVIOUS_EPISODES: "episodios anteriores",
+            PROMPT_ADD: "a\xF1adir indicaci\xF3n",
+            PROMPT_PLACEHOLDER: "introducir una indicaci\xF3n",
+            PROMPTS_COUNT_HIDDEN: "({count} oculto)",
+            TITLE_PLACEHOLDER: "introducir un t\xEDtulo"
         },
         Jj = {
             BROADCASTER: {
-                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-                WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
+                SUBTEXT: "Has conectado correctamente tu cuenta a la extensi\xF3n para Twitch del kit para p\xFAblico de Jackbox.",
+                WARNING: "ESTA SALA NO TIENE ACTIVADA LA OPCI\xD3N DE P\xDABLICO"
             },
             RECONNECTED: {
-                TEXT: "RECONNECTED",
-                SUBTEXT: "Have fun!"
+                TEXT: "CONEXI\xD3N RESTABLECIDA",
+                SUBTEXT: "\xA1Divi\xE9rtete!"
             },
             RECONNECTING: {
                 CONTROLLER: {
-                    TEXT: "CONNECTION INTERRUPTED",
-                    SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
+                    TEXT: "CONEXI\xD3N INTERRUMPIDA",
+                    SUBTEXT: "Intento de reconexi\xF3n ({attempt} de 5)"
                 },
                 GAME: {
-                    TEXT: "GAME CONNECTION INTERRUPTED",
-                    SUBTEXT: "Please wait while we attempt to reconnect"
+                    TEXT: "SE INTERRUMPI\xD3 LA CONEXI\xD3N AL JUEGO",
+                    SUBTEXT: "Por favor, espera mientras intentamos restablecer la conexi\xF3n."
                 }
             }
         },
@@ -13701,93 +13701,93 @@ ${r.message}`,
             "es-XL": i4
         },
         a4 = {
-            LABEL: "BRANCH",
-            REFRESH_REQUIRED: "Refresh Required",
-            PREFERRED: "PREFERRED BRANCH",
-            SELECT: "Select a Branch",
-            WAITING: "Waiting for Room"
+            LABEL: "RAMA",
+            REFRESH_REQUIRED: "Se requiere recargar",
+            PREFERRED: "RAMA PREFERIDA",
+            SELECT: "Selecciona una rama",
+            WAITING: "Esperando una sala"
         },
         o4 = {
-            UNSUPPORTED_BROWSER: "This game is not supported on this browser. View '?' or HELP to see a list of compatible browsers.",
-            ROOM_IS_FULL: "The game is full",
-            ROOM_NOT_FOUND: "Room not found",
-            AUDIENCE_IS_FULL: "The audience is full",
-            UNABLE_TO_CONNECT: "Unable to connect to the Jackbox Games server. This is commonly caused by adblockers or privacy extensions.",
-            UNABLE_TO_PRELOAD: "Unable to preload this game bundle",
-            KICKED: "You cannot join because you have been kicked by a moderator",
-            REQUIRES_TWITCH_LOGIN: "Game requires Twitch login",
-            ROOM_IS_LOCKED: "Game is locked",
-            INCORRECT_PASSWORD: "Incorrect password",
-            GENERIC: "Error joining this game",
-            FILTER_NAME: "This game has profanity filters enabled. Please pick a different name."
+            UNSUPPORTED_BROWSER: "El juego no es compatible con este navegador. En '?' y AYUDA puedes ver la lista de navegadores compatibles.",
+            ROOM_IS_FULL: "La sala est\xE1 llena",
+            ROOM_NOT_FOUND: "No se encuentra la sala",
+            AUDIENCE_IS_FULL: "El p\xFAblico est\xE1 completo",
+            UNABLE_TO_CONNECT: "No podemos conectarte a los servidores de Jackbox Games. Puede ser debido a los bloqueadores de anuncios y las extensiones de privacidad.",
+            UNABLE_TO_PRELOAD: "No se ha podido precargar este lote de juegos",
+            KICKED: "No puedes unirte porque te ha expulsado un moderador",
+            REQUIRES_TWITCH_LOGIN: "Este juego requiere inicio de sesi\xF3n de Twitch",
+            ROOM_IS_LOCKED: "La sala est\xE1 bloqueada",
+            INCORRECT_PASSWORD: "Contrase\xF1a incorrecta",
+            GENERIC: "Error al unirte a la sala",
+            FILTER_NAME: "Esta partida tiene activados los filtros de lenguaje vulgar. Elige un nombre diferente."
         },
         c4 = {
-            NAME: "NAME",
-            NAME_PLACEHOLDER: "ENTER YOUR NAME",
-            PASSWORD_PLACEHOLDER: "ENTER 5-DIGIT PASSWORD",
-            PASSWORD_REQUIRED_TITLE: "Password required",
-            PASSWORD_REQUIRED_BODY: "Please enter the password or join as an audience member",
-            PASSWORD_JOIN_AS_PLAYER: "Join as Player",
-            PASSWORD_JOIN_AS_AUDIENCE: "Join Audience",
-            ROOM_CODE: "ROOM CODE",
-            ROOM_CODE_PLACEHOLDER: "ENTER 4-LETTER CODE"
+            NAME: "NOMBRE",
+            NAME_PLACEHOLDER: "INDICA TU NOMBRE",
+            PASSWORD_PLACEHOLDER: "INTRODUCE CONTRASE\xD1A DE 5 D\xCDGITOS",
+            PASSWORD_REQUIRED_TITLE: "Requiere contrase\xF1a",
+            PASSWORD_REQUIRED_BODY: "Introduce la contrase\xF1a o \xFAnete como p\xFAblico",
+            PASSWORD_JOIN_AS_PLAYER: "Unirse como jugador",
+            PASSWORD_JOIN_AS_AUDIENCE: "Unirse como p\xFAblico",
+            ROOM_CODE: "C\xD3DIGO DE SALA",
+            ROOM_CODE_PLACEHOLDER: "INTRODUCE EL C\xD3DIGO DE 4 CARACTERES"
         },
-        l4 = "Link to Jackbox Games Homepage",
+        l4 = "Enlace a la p\xE1gina principal de Jackbox Games",
         u4 = {
-            APPEARANCE: "APPEARANCE",
-            DARK: "dark",
-            HELP: "HELP",
+            APPEARANCE: "APARIENCIA",
+            DARK: "oscuro",
+            HELP: "AYUDA",
             TWITCH: "TWITCH",
-            LIGHT: "light",
-            LOGOUT: "LOGOUT",
-            MERCH: "MERCH",
-            PAST_GAMES: "PAST GAMES",
-            MAILING_LIST: "MAILING LIST",
-            MODERATOR: "MODERATOR"
+            LIGHT: "claro",
+            LOGOUT: "CERRAR SESI\xD3N",
+            MERCH: "MERCHANDISING",
+            PAST_GAMES: "PARTIDAS ANTERIORES",
+            MAILING_LIST: "LISTA DE CORREO",
+            MODERATOR: "MODERADOR"
         },
         f4 = {
             CALL_TO_ACTION: {
-                SHOP: "VIEW GAME & SHOP",
-                VIEW: "VIEW THIS GAME"
+                SHOP: "VER PARTIDA Y TIENDA",
+                VIEW: "VER ESTA PARTIDA"
             },
-            NEW: "NEW",
-            PLAYED_ON: "PLAYED ON",
+            NEW: "NUEVO",
+            PLAYED_ON: "JUGADO EL",
             REMOVE: {
-                CONFIRM: "Are you sure?",
-                DESCRIPTION: `This will permanently remove this game
-from your past games list.`,
-                MANAGE: "Remove Game?",
-                TITLE: "Are You Sure?"
+                CONFIRM: "\xBFSeguro?",
+                DESCRIPTION: `Esto remover\xE1 permanentemente esta partida
+de tu lista de partidas anteriores.`,
+                MANAGE: "\xBFRemover partida?",
+                TITLE: "\xBFSeguro?"
             }
         },
         d4 = {
-            EMPTY: "No Past Games Yet",
-            MANAGE: "MANAGE",
-            TITLE: "YOUR PAST GAMES"
+            EMPTY: "A\xFAn no hay partidas recientes",
+            MANAGE: "ADMINISTRAR",
+            TITLE: "TUS PARTIDAS ANTERIORES"
         },
         h4 = {
-            TITLE: "RECENT GAMES",
+            TITLE: "PARTIDAS RECIENTES",
             VIEW_ALL: {
-                BUTTON: "VIEW ALL",
-                LINK: "VIEW ALL PAST GAMES"
+                BUTTON: "VER TODAS",
+                LINK: "VER TODAS LAS PARTIDAS ANTERIORES"
             }
         },
         p4 = {
-            GAME_FULL: "Game is full",
-            GAME_STARTED: "Game has started",
-            ROOM_NOT_FOUND: "Room not found"
+            GAME_FULL: "La partida est\xE1 completa",
+            GAME_STARTED: "La partida ha empezado",
+            ROOM_NOT_FOUND: "No se encuentra la sala"
         },
         g4 = {
-            GAME_FULL: "GAME IS FULL",
-            GAME_STARTED: "GAME HAS STARTED",
-            JOIN_AUDIENCE: "JOIN AUDIENCE",
-            RECONNECT: "RECONNECT",
-            TWITCH_LOGIN: "LOGIN WITH TWITCH"
+            GAME_FULL: "LA PARTIDA EST\xC1 COMPLETA",
+            GAME_STARTED: "LA PARTIDA HA EMPEZADO",
+            JOIN_AUDIENCE: "UNIRSE AL P\xDABLICO",
+            RECONNECT: "RECONECTAR",
+            TWITCH_LOGIN: "INICIAR SESI\xD3N CON TWITCH"
         },
         m4 = {
-            CAMERA: "[b]HEADS UP:[/b] We\u2019re not detecting a camera, but you can still play the game without a photo. If this seems wrong, try joining with a different browser.",
-            STYLE: "[b]HEADS UP:[/b] Your browser seems a bit outdated, and will have some issues displaying this game.",
-            TOS: "By clicking {submit}, you agree to our [tos]Terms of Service[/tos]"
+            CAMERA: "[b]AVISO:[/b] No se detecta ninguna c\xE1mara, pero puedes jugar sin hacerte una foto. Si crees que se trata de un error, cambia de navegador.",
+            STYLE: "[b]AVISO:[/b] Tu navegador est\xE1 un poco desactualizado, as\xED que es posible que el juego no se vea del todo bien.",
+            TOS: "Traducción al español hecha por la comunidad. No afiliada con Jackbox Games. Al hacer clic en {submit}, aceptas las [tos]Condiciones del servicio[/tos]"
         },
         v4 = {
             BRANCH: a4,
@@ -14137,10 +14137,10 @@ deiner bisherigen Spiele entfernen.`,
             PASSWORD_REQUIRED_BODY: "Introduce la contrase\xF1a o \xFAnete como p\xFAblico",
             PASSWORD_JOIN_AS_PLAYER: "Unirse como jugador",
             PASSWORD_JOIN_AS_AUDIENCE: "Unirse como p\xFAblico",
-            ROOM_CODE: "C\xD3DIGO DE LA SALA",
+            ROOM_CODE: "C\xD3DIGO DE SALA",
             ROOM_CODE_PLACEHOLDER: "INTRODUCIR C\xD3DIGO DE 4 CARACTERES"
         },
-        nH = "Enlace a la p\xE1gina inicial de Jackbox Games",
+        nH = "Enlace a la p\xE1gina principal de Jackbox Games",
         iH = {
             APPEARANCE: "APARIENCIA",
             DARK: "oscura",
@@ -14155,28 +14155,28 @@ deiner bisherigen Spiele entfernen.`,
         },
         sH = {
             CALL_TO_ACTION: {
-                SHOP: "VER JUEGO Y COMPRAR",
-                VIEW: "VER ESTE JUEGO"
+                SHOP: "VER PARTIDA Y TIENDA",
+                VIEW: "VER ESTA PARTIDA"
             },
             NEW: "NUEVO",
-            PLAYED_ON: "SE JUEGA EN",
+            PLAYED_ON: "JUGADO EL",
             REMOVE: {
-                CONFIRM: "\xBFEst\xE1s seguro?",
-                DESCRIPTION: `Esto eliminar\xE1 de forma permanente esta partida
+                CONFIRM: "\xBFSeguro?",
+                DESCRIPTION: `Esto remover\xE1 permanentemente esta partida
 de tu lista de partidas anteriores.`,
-                MANAGE: "\xBFRetirar partida?",
-                TITLE: "\xBFEst\xE1s seguro?"
+                MANAGE: "\xBFRemover partida?",
+                TITLE: "\xBFSeguro?"
             }
         },
         aH = {
-            EMPTY: "Todav\xEDa no hay partidas anteriores",
+            EMPTY: "A\xFAn no hay partidas recientes",
             MANAGE: "ADMINISTRAR",
-            TITLE: "PARTIDAS ANTERIORES"
+            TITLE: "TUS PARTIDAS ANTERIORES"
         },
         oH = {
             TITLE: "PARTIDAS RECIENTES",
             VIEW_ALL: {
-                BUTTON: "VER TODO",
+                BUTTON: "VER TODAS",
                 LINK: "VER TODAS LAS PARTIDAS ANTERIORES"
             }
         },
@@ -14195,7 +14195,7 @@ de tu lista de partidas anteriores.`,
         uH = {
             CAMERA: "[b]AVISO:[/b] No se detecta ninguna c\xE1mara, pero puedes jugar sin foto. Si crees que se trata de un error, cambia de navegador.",
             STYLE: "[b]AVISO:[/b] Tu navegador est\xE1 un poco desactualizado, as\xED que es posible que el juego no se vea del todo bien.",
-            TOS: "Al hacer clic en {submit}, aceptas las [tos]Condiciones del servicio[/tos]"
+            TOS: "Traducción al español hecha por la comunidad. No afiliada con Jackbox Games. Al hacer clic en {submit}, aceptas las [tos]Condiciones del servicio[/tos]"
         },
         fH = {
             BRANCH: eH,
@@ -14257,28 +14257,28 @@ de tu lista de partidas anteriores.`,
         },
         vH = {
             CALL_TO_ACTION: {
-                SHOP: "VER JUEGO Y TIENDA",
-                VIEW: "VER ESTE JUEGO"
+                SHOP: "VER PARTIDA Y TIENDA",
+                VIEW: "VER ESTA PARTIDA"
             },
             NEW: "NUEVO",
-            PLAYED_ON: "SE JUG\xD3 EN",
+            PLAYED_ON: "JUGADO EL",
             REMOVE: {
-                CONFIRM: "\xBFDe verdad?",
-                DESCRIPTION: `Eliminar\xE1s permanentemente este juego
+                CONFIRM: "\xBFSeguro?",
+                DESCRIPTION: `Esto remover\xE1 permanentemente esta partida
 de tu lista de partidas anteriores.`,
-                MANAGE: "\xBFEliminar juego?",
-                TITLE: "\xBFDe verdad?"
+                MANAGE: "\xBFRemover partida?",
+                TITLE: "\xBFSeguro?"
             }
         },
         EH = {
-            EMPTY: "A\xFAn no hay partidas anteriores",
+            EMPTY: "A\xFAn no hay partidas recientes",
             MANAGE: "ADMINISTRAR",
             TITLE: "TUS PARTIDAS ANTERIORES"
         },
         _H = {
             TITLE: "PARTIDAS RECIENTES",
             VIEW_ALL: {
-                BUTTON: "VER TODOS",
+                BUTTON: "VER TODAS",
                 LINK: "VER TODAS LAS PARTIDAS ANTERIORES"
             }
         },
@@ -14297,7 +14297,7 @@ de tu lista de partidas anteriores.`,
         TH = {
             CAMERA: "[b]AVISO:[/b] No se detecta ninguna c\xE1mara, pero igual puedes jugar sin una foto. Si crees que se trata de un error, cambia de navegador.",
             STYLE: "[b]AVISO:[/b] Tu navegador est\xE1 un poco desactualizado, as\xED que es posible que el juego no se vea del todo bien.",
-            TOS: "Al hacer clic en {submit}, aceptas las [tos]Condiciones del servicio[/tos]"
+            TOS: "Traducción al español hecha por la comunidad. No afiliada con Jackbox Games. Al hacer clic en {submit}, aceptas las [tos]Condiciones del servicio[/tos]"
         },
         SH = {
             BRANCH: dH,
@@ -25110,30 +25110,30 @@ ${t}`
         }
     });
     const rre = {
-            GAME: "Game",
-            PASSWORD: "PASSWORD"
+            GAME: "Juego",
+            PASSWORD: "CONTRASE\xD1A"
         },
         nre = {
-            KICK: "Kick?",
-            KICK_PLAYERS: "KICK PLAYERS",
-            MODERATE: "Moderate",
-            APPROVE_ALL: "Approve All",
-            REJECT_ALL: "Reject All"
+            KICK: "\xBFExpulsar?",
+            KICK_PLAYERS: "EXPULSAR JUGADORES",
+            MODERATE: "Moderar",
+            APPROVE_ALL: "Aprobar todo",
+            REJECT_ALL: "Rechazar todo"
         },
         ire = {
-            ROOM_DESTROYED: "Thanks for helping out!"
+            ROOM_DESTROYED: "\xA1Gracias por ayudar!"
         },
         sre = {
-            DISABLED: "Moderation Disabled",
-            KICKED: "KICKED",
-            UNSUPPORTED: "Moderation Unsupported",
-            WAITING_FOR_SUBMISSIONS: "Waiting for submissions"
+            DISABLED: "Moderaci\xF3n deshabilitada",
+            KICKED: "EXPULSADO",
+            UNSUPPORTED: "Moderaci\xF3n no soportada",
+            WAITING_FOR_SUBMISSIONS: "Esperando aportaciones"
         },
         are = {
-            DISABLED: "The moderation setting for this game is turned off. Turn it on and restart the game to moderate content.",
-            UNSUPPORTED: "{gameName} doesn't have anything to moderate, but thanks for wanting to help out!"
+            DISABLED: "La moderaci\xF3n para esta partida est\xE1 desactivada. Act\xEDvala y reinicia el juego para moderar el contenido.",
+            UNSUPPORTED: "{gameName} no tiene nada que moderar, pero \xA1gracias por querer ayudar!"
         },
-        ore = "Submitted by:",
+        ore = "Enviado por:",
         cre = {
             FORM: rre,
             ACTION: nre,
@@ -25258,7 +25258,7 @@ ${t}`
         Pre = {
             DISABLED: "Moderaci\xF3n deshabilitada",
             KICKED: "EXPULSADO",
-            UNSUPPORTED: "Moderaci\xF3n no admitida",
+            UNSUPPORTED: "Moderaci\xF3n no soportada",
             WAITING_FOR_SUBMISSIONS: "Esperando aportaciones"
         },
         Dre = {
@@ -25291,8 +25291,8 @@ ${t}`
         Bre = {
             DISABLED: "Moderaci\xF3n desactivada",
             KICKED: "EXPULSADO",
-            UNSUPPORTED: "Moderaci\xF3n sin soporte",
-            WAITING_FOR_SUBMISSIONS: "Esperando entregas"
+            UNSUPPORTED: "Moderaci\xF3n no soportada",
+            WAITING_FOR_SUBMISSIONS: "Esperando aportaciones"
         },
         Gre = {
             DISABLED: "La moderaci\xF3n para esta partida est\xE1 desactivada. Act\xEDvala y reinicia el juego para moderar el contenido.",

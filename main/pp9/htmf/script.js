@@ -13471,8 +13471,8 @@ ${r.message}`,
         QF = {
             GALLERY_LINK: "Visita la galer\xEDa",
             PLAY_AGAIN: "\xBFJugar otra vez?",
-            BUTTON_SAME_PLAYERS: "Los mismos jugadores",
-            BUTTON_NEW_PLAYERS: "Otros jugadores"
+            BUTTON_SAME_PLAYERS: "Mismos jugadores",
+            BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
         ZF = {
             AND: "Y",
@@ -13600,8 +13600,8 @@ ${r.message}`,
         uB = {
             GALLERY_LINK: "Visita la galer\xEDa",
             PLAY_AGAIN: "\xBFJugar otra vez?",
-            BUTTON_SAME_PLAYERS: "Los mismos jugadores",
-            BUTTON_NEW_PLAYERS: "Otros jugadores"
+            BUTTON_SAME_PLAYERS: "Mismos jugadores",
+            BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
         fB = {
             AND: "Y",
@@ -28422,12 +28422,12 @@ En la partida tambi\xE9n pueden aparecer variaciones del nombre que has elegido.
         },
         Yse = "1 caracter restante | {num} caracteres restantes",
         Kse = {
-            PICKS: "elecciones",
+            PICKS: "elige a",
             WITH: "con"
         },
         zse = {
             INSTRUCTIONS: "\xBFQui\xE9n deber\xEDa irse?",
-            PLACEHOLDER: "\xBFQu\xE9 hicieron para merecer esto?"
+            PLACEHOLDER: "\xBFQu\xE9 hizo para merecer esto?"
         },
         Xse = "Final",
         Jse = "Terminado",

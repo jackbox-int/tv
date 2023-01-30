@@ -13161,7 +13161,7 @@ __p+='`), De
         <div class="inputGroup">\r
             <textarea id="input-text-textarea" rows="1" class="form-control jbg-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>\r
             <span class="inlineSubmit">\r
-                <button type="submit" class="btn btn-default inlineSubmitButton" type="button"><span class="inlineSubmitText">Send</span></button>\r
+                <button type="submit" class="btn btn-default inlineSubmitButton" type="button"><span class="inlineSubmitText">Enviar</span></button>\r
             </span>\r
             <span id="helpBlock2" class="help-block errorText"></span>\r
             <div class="charCountDisplay"><span class="charRemaining">70</span></div>\r
@@ -13239,7 +13239,7 @@ __p+='`), De
                 ".inlineSubmitText": {
                     observe: "inlineSubmitText",
                     onGet(t) {
-                        return t !== void 0 ? t : "Send"
+                        return t !== void 0 ? t : "Enviar"
                     }
                 },
                 ".form-group": {
@@ -13877,7 +13877,7 @@ __p+='`), De
                     denyButtonText: "No",
                     denyButtonAriaLabel: "",
                     denyButtonColor: void 0,
-                    cancelButtonText: "Cancel",
+                    cancelButtonText: "Cancelar",
                     cancelButtonAriaLabel: "",
                     cancelButtonColor: void 0,
                     buttonsStyling: !0,
@@ -15499,16 +15499,16 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                         this.currentStream = i, this.video.srcObject = i, await this.video.play(), this.gotDevices(o)
                     } catch (i) {
                         console.error(i), kt.show("alert", {
-                            titleText: "Unable to Access Camera",
-                            text: `Looks like we don't have access to your device's camera. You can refresh and try again, or choose the ${t} option instead.`,
+                            titleText: "No se pudo acceder a la cámara",
+                            text: `Parece que no tenemos acceso a la cámara de tu dispositivo. Puedes refrescar y volver a intentarlo, o elegir la opción de ${t} en su lugar.`,
                             willClose: () => {
                                 this.cameraAccessDenied()
                             }
                         })
                     }
                 } else kt.show("alert", {
-                    titleText: "No Camera Access",
-                    text: `It looks like camera access isn't available from this browser. Try the ${t} option instead.`,
+                    titleText: "No hay acceso a la cámara",
+                    text: `Parece que el acceso a la cámara no está disponible desde este navegador. Prueba la opción de ${t} en su lugar.`,
                     willClose: () => {
                         this.cameraAccessDenied()
                     }
@@ -16283,9 +16283,9 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
         <div id="buttons" class="buttons"></div>\r
         <div id="post-sketchpad" class="post-sketchpad">\r
             <div id="submit">\r
-                <button id='submitdrawing' class="button submitDrawing">Submit</button><br/>\r
+                <button id='submitdrawing' class="button submitDrawing">Enviar</button><br/>\r
             </div>\r
-            <button id='censorOptions' class='button'>Censor Options</button>\r
+            <button id='censorOptions' class='button'>Opciones de censura</button>\r
             <div class="footer"></div>\r
         </div>\r
         </div>\r
@@ -16319,9 +16319,9 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 disabled: !1,
                 debug: !1,
                 strings: {
-                    drawing_empty: "You must draw something!",
-                    submit: "submit",
-                    ERROR_REJECTED_OBJECT: "That's not allowed, enter something else!"
+                    drawing_empty: "¡Tienes que dibujar algo!",
+                    submit: "enviar",
+                    ERROR_REJECTED_OBJECT: "Eso no está permitido, ¡ingresa otra cosa!"
                 }
             }
         }),
@@ -16363,7 +16363,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                     visible: !0,
                     updateView: !0,
                     onGet(t) {
-                        return t[0] || t[1] ? !1 : t[2] === void 0 ? "" : t[2].submit || "Submit"
+                        return t[0] || t[1] ? !1 : t[2] === void 0 ? "" : t[2].submit || "Enviar"
                     }
                 }
             },
@@ -16523,7 +16523,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
             defaults: {
                 state: "EnterSingleText",
                 actions: [{
-                    text: "submit",
+                    text: "enviar",
                     action: "submit"
                 }],
                 allowEmpty: !1,
@@ -16540,11 +16540,11 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 autocapitalize: !1,
                 className: "",
                 inlineSubmit: !1,
-                inlineSubmitText: "Submit",
+                inlineSubmitText: "Enviar",
                 error: "",
                 strings: {
-                    ERROR_NOTHING_ENTERED: "You need to enter something!",
-                    ERROR_REJECTED_TEXT: "That's not allowed, enter something else! (You can change the level of filtering in the game's settings menu)"
+                    ERROR_NOTHING_ENTERED: "¡Tienes que ingresar algo!",
+                    ERROR_REJECTED_TEXT: "¡Eso no está permitido, ingresa otra cosa! (Puedes cambiar el nivel del filtro en el menú de ajustes del juego)"
                 }
             }
         }),
@@ -16614,7 +16614,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 }), this.inputComponent = this.inputComponent || new co({
                     model: new at.Model({})
                 }), this.buttonsCollection = this.buttonsCollection || new at.Collection([{
-                    text: "submit"
+                    text: "enviar"
                 }]), this.buttonsComponent = this.buttonsComponent || new mi({
                     block: !0,
                     collection: this.buttonsCollection
@@ -16627,7 +16627,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 })), this.promptComponent.model.clear({
                     silent: !0
                 }).set(this.model.get("prompt")), this.inputComponent.model.set(this.model.attributes), this.buttonsComponent.options.block = this.model.get("block"), this.buttonsCollection.set(this.model.get("actions") || [{
-                    text: "submit",
+                    text: "enviar",
                     action: "submit"
                 }]), this.model.get("entryId") && this.model.get("entryId") !== this.currentEntry && (this.inputComponent.clearInput(), this.currentEntry = this.model.get("entryId")), this.$el.find(".enterSingleTextFieldset").prop("disabled", !1), this.$el.find("textarea").focus(), this.stickit(), this.model.get("autoSubmit") && this.shouldSubmit && this.onChildviewInputSubmit()
             },
@@ -16770,7 +16770,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
         },
         showTwitchBroadcasterDialog(t) {
             let e = `<div class='icon-${this.client.roles.broadcaster.platform}'>${this.client.roles.broadcaster.name}</div>`;
-            e += "<div class='success'>You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.</div>", this.lacksAudience ? e += "<div class='warning'>THIS GAME DOESN'T HAVE AN AUDIENCE FEATURE</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), kt.show("custom", {
+            e += "<div class='success'>Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.</div>", this.lacksAudience ? e += "<div class='warning'>ESTE JUEGO NO TIENE FUNCIÓN DE PÚBLICO</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA</div>"), kt.show("custom", {
                 html: e,
                 position: "bottom",
                 timer: t,
@@ -16809,8 +16809,8 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
         },
         onRoomWasDestroyed() {
             en.remove("roomCode"), en.remove("reconnect"), kt.show("error", {
-                titleText: "Disconnected",
-                text: "Thanks for playing!",
+                titleText: "Desconectado",
+                text: "¡Gracias por jugar!",
                 willClose: () => {
                     window.location.reload(!0)
                 }
@@ -16818,8 +16818,8 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
         },
         onDisconnected() {
             kt.show("error", {
-                titleText: "Disconnected",
-                text: "You have been disconnected.",
+                titleText: "Desconectado",
+                text: "Has sido desconectado.",
                 willClose: () => {
                     window.location.reload(!0)
                 }
@@ -16881,7 +16881,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
         <div id="characters" class="charactersContainer"></div>
     </div>
     <div id="artifactId" class="artifactContainer text">
-        <a id="artifactLink" aria-label="Visit the Gallery" class="artifactLink" target="_blank">
+        <a id="artifactLink" aria-label="Visita la galería" class="artifactLink" target="_blank">
             <button id="artifactButton" class="artifactButton"></button>
         </a>
     </div>
@@ -16915,28 +16915,28 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 formattedActiveContentId: null,
                 isLocal: !1,
                 strings: {
-                    wait: "Sit back and relax!",
-                    vip_waiting: "Waiting for all players to join",
-                    vip_canStart: "Press this button when everybody has joined",
-                    vip_cancel: "Press this button to cancel game start",
-                    vip_postgame: "What would you like to do now?",
-                    vip_episodes_menu: "Episodes Menu",
-                    vip_episodes_unload: "Unload Episode",
-                    vip_episodes_report: "Report Episode",
-                    vip_episodes_warning: "Warning: user generated content is not rated",
-                    vip_episodes_load: "Load an episode by id:",
-                    vip_episodes_select: "Or select an episode:",
-                    vip_episodes_back: "Back",
-                    vip_episodes_submit: "SUBMIT",
-                    vip_episodes_view_author: "View Author",
-                    button_start: "Everybody's In",
-                    button_cancel: "Cancel",
-                    button_changename: "Change Name",
-                    button_sameplayers: "Same Players",
-                    button_newplayers: "New Players",
-                    prompt_entername: "Enter your name",
-                    prompt_choosecharacter: "Select your character",
-                    button_censorOptions: "Censor Options",
+                    wait: "¡Siéntate y relájate!",
+                    vip_waiting: "Esperando a que todos los jugadores se unan",
+                    vip_canStart: "Pulsa este botón cuando todos se hayan unido",
+                    vip_cancel: "Pulsa este botón para cancelar el inicio de la partida",
+                    vip_postgame: "¿Qué quieres hacer ahora?",
+                    vip_episodes_menu: "Menú de episodios",
+                    vip_episodes_unload: "Retirar episodio",
+                    vip_episodes_report: "Reportar episodio",
+                    vip_episodes_warning: "Aviso: El contenido de los usuarios no tiene clasificación de edad",
+                    vip_episodes_load: "Cargar un episodio por id:",
+                    vip_episodes_select: "O selecciona un episodio:",
+                    vip_episodes_back: "Atrás",
+                    vip_episodes_submit: "ENVIAR",
+                    vip_episodes_view_author: "Ver autor",
+                    button_start: "Estamos todos",
+                    button_cancel: "Cancelar",
+                    button_changename: "Cambiar el nombre",
+                    button_sameplayers: "Mismos jugadores",
+                    button_newplayers: "Nuevos jugadores",
+                    prompt_entername: "Ingresa tu nombre",
+                    prompt_choosecharacter: "Selecciona tu personaje",
+                    button_censorOptions: "Opciones de censura",
                     censor_prompt: ""
                 }
             }
@@ -17161,7 +17161,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                                 inputAttributes: {
                                     maxlength: 12
                                 },
-                                inputValidator: d => d ? d.length > 12 ? "Limit 12 characters" : null : "You need to write something!"
+                                inputValidator: d => d ? d.length > 12 ? "Límite de 12 caracteres" : null : "¡Tienes que escribir algo!"
                             });
                             if (o.dismiss) return;
                             this.triggerMethod("client:message", {
@@ -17285,7 +17285,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
 <div id="message" class="message"><h2 class="messageText"></h2></div>
 <div id="action" class="action"></div>
 <div id="artifactId" class="artifactContainer text">
-    <a id="artifactLink" aria-label="Visit the Gallery" class="artifactLink" target="_blank">
+    <a id="artifactLink" aria-label="Visita la galería" class="artifactLink" target="_blank">
         <button id="artifactButton" class="artifactButton"></button>
     </a>
 </div>
@@ -17373,10 +17373,10 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 LANGUAGE_NAME: "English",
                 SUPPORTED_LANGUAGES: ["English", "Fran\xE7ais", "Italiano", "Deutsch", "Espa\xF1ol"],
                 SUPPORTED_LOCALES: ["en", "fr", "it", "de", "es"],
-                LANGUAGE: "Language",
+                LANGUAGE: "Idioma",
                 LOGIN: "Login",
-                STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Disconnected",
-                STRING_ERROR_SERVER_ROOM_DESTROYED: "Thanks for playing!"
+                STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Desconectado",
+                STRING_ERROR_SERVER_ROOM_DESTROYED: "¡Gracias por jugar!"
             },
             fr: {
                 LANGUAGE_NAME: "Fran\xE7ais",
@@ -17585,7 +17585,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 this.promptComponent.model.clear({
                     silent: !0
                 }).set(this.model.get("prompt")), this.choicesList.options.block = this.model.get("block"), this.choicesList.collection.set(this.model.get("choices")), this.model.get("type") === "multiple" && Ze.all(this.model.get("choices"), t => !t.disabled) && this.choicesList.collection.push({
-                    text: "Submit",
+                    text: "Enviar",
                     action: "submit",
                     block: !1
                 }), this.model.get("isAudience") && ((this.model.get("choiceId") === void 0 || this.model.get("choiceId") !== this.getOption("choiceId")) && (this.selected = [], this.audienceChoice = void 0, this.votesLeft = void 0), this.selected.length > 0 && (this.model.get("type") === "multiple" ? this.choicesList.children.forEach(t => {
@@ -17638,7 +17638,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 })), !1
             },
             displayAudienceChoice(t) {
-                let e = "Thank you.";
+                let e = "Gracias.";
                 const n = t.map(o => {
                     const d = this.choicesList.children.find(m => m.model.get("index") === o);
                     return d ? d.model.get("html") || d.model.get("text") : ""
@@ -19145,7 +19145,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
             className: "SorterView",
             template: Ze.template(`
         <div id="rankedChoicesRegion"></div>
-        <div class="instructions">Choose where this item ranks:</div>
+        <div class="instructions">Elige dónde se posiciona este artículo:</div>
         <div id="unrankedChoicesRegion"></div>
         <div id="lockInRegion"></div>
     `),
@@ -19191,7 +19191,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                     block: !1,
                     model: new at.Model({
                         action: "lock",
-                        html: "Lock In"
+                        html: "Bloquear"
                     })
                 }), this.listenTo(this.model, "change:choices", this.update, this)
             },
@@ -20447,8 +20447,8 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
             </div>`;
             e += `
             <div class='success'>
-                You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.
-            </div>`, this.lacksAudience ? e += "<div class='warning'>THIS GAME DOESN'T HAVE AN AUDIENCE FEATURE</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), kt.show("custom", {
+                Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.
+            </div>`, this.lacksAudience ? e += "<div class='warning'>ESTE JUEGO NO TIENE FUNCIÓN DE PÚBLICO</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA</div>"), kt.show("custom", {
                 html: e,
                 position: "bottom",
                 timer: t,
@@ -21865,17 +21865,17 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 <div id="lobby-main-menu">
                     <p id="quiplash-lobby-text" class='quiplash-text'></p>
                     <form class="pure-form">
-                        <button type="button" id="quiplash-startgame" class="lobby-button quiplash2-button btn btn-lg btn-block">everybody's in</button>
-                        <button type="button" id="quiplash-stopcountdown" class="lobby-button quiplash2-button btn btn-lg btn-block">cancel</button>
-                        <button type="button" id="quiplash-sameplayers" class="lobby-button quiplash2-button btn btn-lg btn-block quiplash-endbuttons">same players</button>
-                        <button type="button" id="quiplash-newplayers" class="lobby-button quiplash2-button btn btn-lg btn-block quiplash-endbuttons">new players</button>    
+                        <button type="button" id="quiplash-startgame" class="lobby-button quiplash2-button btn btn-lg btn-block">estamos todos</button>
+                        <button type="button" id="quiplash-stopcountdown" class="lobby-button quiplash2-button btn btn-lg btn-block">cancelar</button>
+                        <button type="button" id="quiplash-sameplayers" class="lobby-button quiplash2-button btn btn-lg btn-block quiplash-endbuttons">mismos jugadores</button>
+                        <button type="button" id="quiplash-newplayers" class="lobby-button quiplash2-button btn btn-lg btn-block quiplash-endbuttons">nuevos jugadores</button>    
                     </form>
                     
                     <div class="pure-u-1"></div>
                     
                     <form class="pure-form">
-                        <button type="button" id="quiplash-lobby-menu-ugc" class="menu-button lobby-button quiplash2-button btn btn-lg btn-block">EPISODES MENU</button><br>
-                        <button type="button" id="quiplash-lobby-menu-censor" class="menu-button lobby-button quiplash2-button btn btn-lg btn-block">Censor Menu</button><br>
+                        <button type="button" id="quiplash-lobby-menu-ugc" class="menu-button lobby-button quiplash2-button btn btn-lg btn-block">MENÚ DE EPISODIOS</button><br>
+                        <button type="button" id="quiplash-lobby-menu-censor" class="menu-button lobby-button quiplash2-button btn btn-lg btn-block">Menú de censura</button><br>
                     </form>
                     <div id="quiplash2-lobby-postgame" class="quiplash2-quips">
                         <a target="_blank" class="gallery-link" href=""></a>
@@ -21884,26 +21884,26 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 
                 <div id="lobby-ugc">
                     <p id="lobby-ugc-error"></p>
-                    <button type="button" class="quiplash-lobby-menu-back quiplash2-button btn btn-lg btn-block">back</button><br>
+                    <button type="button" class="quiplash-lobby-menu-back quiplash2-button btn btn-lg btn-block">atrás</button><br>
                     <div id="lobby-ugc-enter" class="lobby-ugc-option">
                         <form class="">
                             <div class="row">
                                 <div class="col-xs-12">
-                                    <p id="lobby-ugc-help" class='quiplash-text'>to load a custom episode, go to "make your own" or enter a 7-letter episode id</p>
-                                    <p class="quiplash-text-box quiplash-text">Load an episode by id:</p>
+                                    <p id="lobby-ugc-help" class='quiplash-text'>para cargar un episodio personalizado, ve a "juega a tu manera" o ingresa un id de episodio de 7 letras</p>
+                                    <p class="quiplash-text-box quiplash-text">Cargar un episodio por id:</p>
                                 </div>
                                 <div class="col-xs-12">
                                     <div class="quiplash2-button-group">
                                         <input id="lobby-ugc-input" type="text" style="flex-grow:2;" class="capitalized jbg-input " placeholder="???-????" />
-                                        <button type="submit" id="lobby-ugc-submit" style="flex-grow:0;min-width:120px;" class="quiplash2-button btn quiplash-text">submit</button>
+                                        <button type="submit" id="lobby-ugc-submit" style="flex-grow:0;min-width:120px;" class="quiplash2-button btn quiplash-text">enviar</button>
                                     </div>
                                 </div>
                             </div>
-                            <small class="help quiplash-text quiplash-text-danger">warning : user generated content is not rated.</small>
+                            <small class="help quiplash-text quiplash-text-danger">Aviso: El contenido de los usuarios no tiene clasificación de edad.</small>
                         </form>
                         
                         <div class="quiplash-ugc-previous">
-                            <p class="quiplash-text">Or select an episode:</p>
+                            <p class="quiplash-text">O selecciona un episodio:</p>
     						<!-- <div id="lobby-ugc-history"></div> -->
                             <table id="lobby-ugc-history" class="quiplash-list"></table>
                         </div>
@@ -21911,9 +21911,9 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                     
                     <div id="lobby-ugc-choices" class="lobby-ugc-option">
                         <div class="quiplash-text-box" id="lobby-ugc-choices-content-id quiplash-text"></div>
-                        <button type="button" id="lobby-ugc-clear" class="quiplash2-button quiplash2-button-black button-xlarge pure-button">unload</button><br>
-						<button type="button" id="lobby-ugc-report" class="quiplash2-button quiplash2-button-black button-xlarge pure-button">report</button>
-						<button type="button" id="lobby-ugc-view-author" class="quiplash2-button button-xlarge pure-button">view author</button>
+                        <button type="button" id="lobby-ugc-clear" class="quiplash2-button quiplash2-button-black button-xlarge pure-button">retirar</button><br>
+						<button type="button" id="lobby-ugc-report" class="quiplash2-button quiplash2-button-black button-xlarge pure-button">reportar</button>
+						<button type="button" id="lobby-ugc-view-author" class="quiplash2-button button-xlarge pure-button">ver autor</button>
                     </div>
                     
                 </div>
@@ -21924,13 +21924,13 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                     
                     <form class="pure-form">
                         <div class="pure-u-1">
-                            <button type="button" class="quiplash-lobby-menu-back quiplash2-button btn btn-lg btn-block" style="margin-left: 0px; margin-right: 0px;">back</button>
+                            <button type="button" class="quiplash-lobby-menu-back quiplash2-button btn btn-lg btn-block" style="margin-left: 0px; margin-right: 0px;">atrás</button>
                         </div>
                         
                         <div class="pure-u-1"></div>
                         
                         <div id="lobby-censor-players" class="pure-u-1"></div>
-                        <div class="quiplash-text quiplash-text-alt">Hit X to CENSOR player for rest of the game, removing their answers and name. (It's kind of intense.)</div>
+                        <div class="quiplash-text quiplash-text-alt">Pulsa X para CENSURAR un jugador por el resto de la partida, eliminando sus respuestas y nombre. (Es algo intenso).</div>
                     </form>
                 </div>
                 
@@ -21954,21 +21954,21 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 <span id="quiplash-submit-alert" class="alert alert-info">Alert message goes here</span>
                 <form class="pure-form" id="quiplash-answer-field">
                     <div class="pure-u-1 gridmargin">
-                        <input id="quiplash-answer-input" name="quiplash-answer" class="pure-input-1 capitalize jbg-input quiplash2-answer-input" type="text" maxlength="45" placeholder="ANSWER HERE" autocapitalize="off" autocorrect="off" autocomplete="off">
+                        <input id="quiplash-answer-input" name="quiplash-answer" class="pure-input-1 capitalize jbg-input quiplash2-answer-input" type="text" maxlength="45" placeholder="RESPONDE AQUÍ" autocapitalize="off" autocorrect="off" autocomplete="off">
                     </div>
                     
                     <div class="pure-u-1 gridmargin">
-                    <button type="submit" id="quiplash-submit-answer" class="quiplash2-button button-large pure-button capitalize" style="width:100%;"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;SEND</button>
+                    <button type="submit" id="quiplash-submit-answer" class="quiplash2-button button-large pure-button capitalize" style="width:100%;"><i class="fas fa-paper-plane"></i>&nbsp;&nbsp;ENVIAR</button>
                     </div>
                     
                     <div class="pure-u-1 gridmargin"></div>
                         
                     <div class="pure-u-1 gridmargin">
-                    <button type="button" id="quiplash-submit-safetyquip" class="quiplash2-button button-large pure-button capitalize" style="width:100%;">SAFETY QUIP<br />(HALF POINTS)</button>
+                    <button type="button" id="quiplash-submit-safetyquip" class="quiplash2-button button-large pure-button capitalize" style="width:100%;">OCURRENCIA DE EMERGENCIA<br/>(MITAD DE PUNTOS)</button>
                     </div>
                     
                     <div class="pure-u-1 gridmargin">
-                    <button type="button" id="quiplash-audience-censor" class="quiplash2-button button-large pure-button capitalize" style="width:100%; display:none;">CENSOR AUDIENCE</button>
+                    <button type="button" id="quiplash-audience-censor" class="quiplash2-button button-large pure-button capitalize" style="width:100%; display:none;">CENSURAR PÚBLICO</button>
                     </div>
                     
                     <div id="quiplash-submit-answer-loading" style="display:none;" class="quiplash2-button-loading"></div>
@@ -21982,11 +21982,11 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
         
         <div id="state-done-answering" class="pt-page-off quiplash2-page">
             <div style="padding-top:5px;">
-                <p class="quiplash-text">Thanks for your answers!</p>
+                <p class="quiplash-text">¡Gracias por tus respuestas!</p>
             </div>
             
             <div class="pure-u-1 gridmargin">
-            <button type="button" id="quiplash-audience-censor-done" class="quiplash2-button button-large pure-button capitalize" style="width:100%;">CENSOR AUDIENCE</button>
+            <button type="button" id="quiplash-audience-censor-done" class="quiplash2-button button-large pure-button capitalize" style="width:100%;">CENSURAR PÚBLICO</button>
             </div>
         </div>
         
@@ -22003,13 +22003,13 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
         
         <div class="pt-page-off quiplash2-page background-yellow" id="state-ugc">
             <div id="ugc-submit-dialog" style="display:none;" class="container">
-                <div class="quiplash-text-box">By sharing content, you agree to our <a href="http://www.jackboxgames.com/terms-of-service/" target="_blank">Terms of service</a></div>
-                <button id="ugc-submit-confirm" class="quiplash2-button quiplash2-button-black button-xlarge pure-button">agree and share</button><br />
-                <button id="ugc-submit-cancel" class="quiplash2-button quiplash2-button-black button-xlarge pure-button">back to menu</button>
+                <div class="quiplash-text-box">Al compartir contenidos, aceptas las <a href="http://www.jackboxgames.com/terms-of-service/" target="_blank">Condiciones del servicio</a></div>
+                <button id="ugc-submit-confirm" class="quiplash2-button quiplash2-button-black button-xlarge pure-button">aceptar y compartir</button><br />
+                <button id="ugc-submit-cancel" class="quiplash2-button quiplash2-button-black button-xlarge pure-button">volver al menú</button>
             </div>
             <div id="ugc-container" class="container">
                     <div id="ugc-toggle-visibility" class="ugc-option">
-                        <span class="quiplash-text">Tap to show/hide prompts</span><br/>
+                        <span class="quiplash-text">Toca para mostrar u ocultar los enunciados</span><br/>
                         <div class="quiplash-text-box">
                             <div id="ugc-toggle-visibility-button-controller" class="ugc-toggle-visibility-button quiplash-image-controller ugc-toggle-visibility-button pure-u-1-2" data-target="controller"></div>
                             <div id="ugc-toggle-visibility-button-screen" class="ugc-toggle-visibility-button quiplash-image-screen ugc-toggle-visibility-button-screen pure-u-1-2" data-target="screen"></div>
@@ -22017,10 +22017,10 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                     </div>
                 <div id="ugc-episode-name"></div>
                 <div id="ugc-new" class="ugc-option">
-                    <button type="button" id="ugc-new-button" class="quiplash2-button quiplash2-button-black btn btn-lg">create a new episode</button>
+                    <button type="button" id="ugc-new-button" class="quiplash2-button quiplash2-button-black btn btn-lg">crear nuevo episodio</button>
                 </div>
 
-                <h3 class="ugc-option quiplash-text-box quiplash-text ugc-load">Previous episodes:</h3>
+                <h3 class="ugc-option quiplash-text-box quiplash-text ugc-load">Episodios anteriores:</h3>
                 <table id="ugc-load" class="ugc-option quiplash-list">
                 </table>
                 
@@ -22034,12 +22034,12 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                         </p>
                         <form class="">
                             <div class="form-group">
-                                <p class='quiplash-text'>First things first, enter a name for the episode that will contain all your prompts and hit create.</p>
+                                <p class='quiplash-text'>En primer lugar, ponle un nombre al episodio que contendrá tus enunciados y dale a crear.</p>
                                 <input id="ugc-title-input" class="lowercase form-control quiplash2-answer-input input-lg" type="text" placeholder="" autocapitalize="off" autocorrect="off" autocomplete="off"/>
                             </div>
                             <div class="form-group">
-                                <button type="submit" id="ugc-title-button" name="ugc-title-button" class="ugc-form-button quiplash2-button quiplash2-button-black btn btn-lg pull-right">create</button>
-                                <button type="button" id="ugc-exit-button" class="ugc-form-button quiplash2-button quiplash2-button-black btn btn-lg pull-left">back to episodes</button>
+                                <button type="submit" id="ugc-title-button" name="ugc-title-button" class="ugc-form-button quiplash2-button quiplash2-button-black btn btn-lg pull-right">crear</button>
+                                <button type="button" id="ugc-exit-button" class="ugc-form-button quiplash2-button quiplash2-button-black btn btn-lg pull-left">volver a los episodios</button>
                             </div>
                                 
                             
@@ -22049,16 +22049,16 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                     
                         <form class="pure-form">
                             <div class="pure-u-1">
-                                <input id="ugc-add-input" class="lowercase ugc-input pure-input-1 quiplash2-answer-input ugc-option ugc-add" type="text" placeholder="enter a prompt" autocapitalize="off" autocorrect="off" autocomplete="off"/>
+                                <input id="ugc-add-input" class="lowercase ugc-input pure-input-1 quiplash2-answer-input ugc-option ugc-add" type="text" placeholder="escribe un enunciado" autocapitalize="off" autocorrect="off" autocomplete="off"/>
                             </div>
                             <div class="ugc-option ugc-add">
-                                <button type="submit" id="ugc-add-button" name="ugc-add-button" class="ugc-form-button quiplash2-button quiplash2-button-black button-xlarge pure-button gridmargin right">add prompt</button>
+                                <button type="submit" id="ugc-add-button" name="ugc-add-button" class="ugc-form-button quiplash2-button quiplash2-button-black button-xlarge pure-button gridmargin right">añadir enunciado</button>
                             </div>
                             <div id="ugc-close" class="ugc-option">
-                                <button type="button" id="ugc-close-button" class="ugc-form-button quiplash2-button quiplash2-button-black button-xlarge pure-button gridmargin left">close</button>
+                                <button type="button" id="ugc-close-button" class="ugc-form-button quiplash2-button quiplash2-button-black button-xlarge pure-button gridmargin left">cerrar</button>
                             </div>
                             <div id="ugc-save" class="ugc-option">
-                                <button type="save" id="ugc-save-button" class="ugc-form-button quiplash2-button quiplash2-button-black button-xlarge pure-button gridmargin left">done</button>
+                                <button type="save" id="ugc-save-button" class="ugc-form-button quiplash2-button quiplash2-button-black button-xlarge pure-button gridmargin left">hecho</button>
                             </div>
                         </form>
                     
@@ -22071,33 +22071,33 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 
                 <!--<div id="ugc-screen-confirm" class="ugc-screen">-->
                     <div id="ugc-unlock" class="ugc-option">
-                        <button type="button" id="ugc-unlock-button" class="quiplash2-button quiplash2-button-black btn btn-lg btn-block">edit</button>
+                        <button type="button" id="ugc-unlock-button" class="quiplash2-button quiplash2-button-black btn btn-lg btn-block">editar</button>
                     </div>
                     
                     <div id="ugc-save" class="ugc-option">
-                        <button type="save" id="ugc-save-button" class="quiplash2-button quiplash2-button-black btn btn-lg btn-block">save</button>
+                        <button type="save" id="ugc-save-button" class="quiplash2-button quiplash2-button-black btn btn-lg btn-block">guardar</button>
                     </div>
                 <!--</div>-->
                 
                 <!--<div id="ugc-screen-post-save" class="ugc-screen">-->
     			    <div id="ugc-submit" class="ugc-option">
-                        <button type="button" id="ugc-submit-button" class="quiplash2-button quiplash2-button-black btn btn-lg btn-block">publish</button>
+                        <button type="button" id="ugc-submit-button" class="quiplash2-button quiplash2-button-black btn btn-lg btn-block">publicar</button>
                     </div>
                     <div id="ugc-play" class="ugc-option">
-                        <button type="button" id="ugc-play-button" class="quiplash2-button quiplash2-button-black btn btn-lg btn-block">play</button>
+                        <button type="button" id="ugc-play-button" class="quiplash2-button quiplash2-button-black btn btn-lg btn-block">jugar</button>
                     </div>
                     <div id="ugc-remove-content" class="ugc-option">
-                        <button type="button" id="ugc-delete-button" class="quiplash2-button quiplash2-button-black btn btn-lg btn-block ugc-remove-content-button">delete</button>
+                        <button type="button" id="ugc-delete-button" class="quiplash2-button quiplash2-button-black btn btn-lg btn-block ugc-remove-content-button">borrar</button>
                         <div id="ugc-remove-content-dialog" style="display:none;" class="well well-sm quiplash-confirm-dialog">
-                            <p class="quiplash-text quiplash-text-box quiplash-text-danger">Are you sure you want to delete this episode?</p>
-                            <button id="ugc-remove-content-confirm" class="quiplash2-button quiplash2-button-black">Yes</button>
+                            <p class="quiplash-text quiplash-text-box quiplash-text-danger">¿Seguro que quieres borrar este episodio?</p>
+                            <button id="ugc-remove-content-confirm" class="quiplash2-button quiplash2-button-black">Sí</button>
                             <button id="ugc-remove-content-cancel" class="quiplash2-button">No</button>
                         </div>
 
                     </div>
 
                     <div id="ugc-exit" class="ugc-option">
-                        <button type="button" id="ugc-exit-button" class="quiplash2-button quiplash2-button-black btn btn-lg btn-block">back to episodes</button>
+                        <button type="button" id="ugc-exit-button" class="quiplash2-button quiplash2-button-black btn btn-lg btn-block">volver a los episodios</button>
                     </div>
                 <!--</div>-->
             </div>
@@ -22198,7 +22198,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                     return
                 }
                 if (be(".ugc-option").hide(), n === "RoomFull") {
-                    kt.show(Error("The room is full"), {
+                    kt.show(Error("La sala está llena"), {
                         willClose: () => {
                             window.location.reload(!0)
                         }
@@ -22206,7 +22206,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                     return
                 }
                 if (n === "GameLocked") {
-                    kt.show(Error("Game is in progress. Please wait for a new game to start."), {
+                    kt.show(Error("La partida está en curso. Espera a que comience otra."), {
                         willClose: () => {
                             window.location.reload(!0)
                         }
@@ -22265,11 +22265,11 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                         }
                     } else this.$el.find("#quiplash2-lobby-postgame").html("");
                     if (!e.isAllowedToStartGame) {
-                        this.$el.find("#quiplash-lobby-text").html("Sit back and relax!"), this.showScreen("#state-lobby");
+                        this.$el.find("#quiplash-lobby-text").html("¡Siéntate y relájate!"), this.showScreen("#state-lobby");
                         return
                     }
                     const C = t.lobbyState;
-                    C === "WaitingForMore" ? this.$el.find("#quiplash-lobby-text").html("Waiting for all players to join") : C === "CanStart" ? (this.$el.find("#quiplash-lobby-text").html("Press this button when everybody has joined"), this.$el.find("#quiplash-startgame").show()) : C === "Countdown" ? (this.$el.find("#quiplash-lobby-text").html("Press this button to cancel game start"), this.$el.find("#quiplash-stopcountdown").show()) : C === "PostGame" && (this.$el.find("#quiplash-lobby-text").html("What do you want to do?"), be(".quiplash-endbuttons").show()), this.showScreen("#state-lobby")
+                    C === "WaitingForMore" ? this.$el.find("#quiplash-lobby-text").html("Esperando a que todos los jugadores se unan") : C === "CanStart" ? (this.$el.find("#quiplash-lobby-text").html("Pulsa este botón cuando todos se hayan unido"), this.$el.find("#quiplash-startgame").show()) : C === "Countdown" ? (this.$el.find("#quiplash-lobby-text").html("Pulsa este botón para cancelar el inicio de la partida"), this.$el.find("#quiplash-stopcountdown").show()) : C === "PostGame" && (this.$el.find("#quiplash-lobby-text").html("¿Qué quieres hacer?"), be(".quiplash-endbuttons").show()), this.showScreen("#state-lobby")
                 } else if (i === "Gameplay_Logo" || i === "Logo") {
                     if (this.showScreen("#state-logo"), this.prevPlayerState === "Gameplay_AnswerQuestion" && this.doneAnswering === !1) {
                         const m = this.$el.find("#quiplash-answer-input").val();
@@ -22287,17 +22287,17 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                         }
                         if (this.doneAnswering = !1, this.$el.find("#quiplash-answer-input").val(""), this.$el.find("#quiplash-submit-answer").removeAttr("disabled"), this.$el.find("#quiplash-answer-field").show(), this.$el.find("#quiplash-submit-alert").hide(), this.$el.find("#quiplash-submit-answer").show(), this.$el.find("#quiplash-audience-censor").hide(), t.safetyQuip === !0 ? this.$el.find("#quiplash-submit-safetyquip").show() : this.$el.find("#quiplash-submit-safetyquip").hide(), e.canCensor && this.$el.find("#quiplash-audience-censor").show(), this.$el.find("#state-answer-question #question-text").html(e.question.prompt.replace(/<BLANK>/gi, "________")), this.$el.find("#state-answer-question #question-text-alt").html(""), e.question.quip !== void 0 ? (this.$el.find("#state-answer-question #question-text-alt").html(e.question.quip.replace(/<BLANK>/gi, "________")), this.$el.find("#state-answer-question #question-text").removeClass("quiplash-text"), this.$el.find("#state-answer-question #question-text").addClass("quiplash-text-big")) : (this.$el.find("#state-answer-question #question-text").addClass("quiplash-text"), this.$el.find("#state-answer-question #question-text").removeClass("quiplash-text-big")), e.showError) {
                             const m = this.$el.find("#quiplash-submit-alert");
-                            this.$el.find("#quiplash-submit-alert").html("You entered the same thing as someone else! Try again."), m.addClass("alert-info"), m.removeClass("alert-danger"), m.show()
+                            this.$el.find("#quiplash-submit-alert").html("¡Has escrito lo mismo que otra persona! Vuelve a intentarlo."), m.addClass("alert-info"), m.removeClass("alert-danger"), m.show()
                         }
                         this.prevAnswerQuestionId = e.question.id, this.currentAnswerQuestionId = e.question.id, this.showScreen("#state-answer-question")
-                    } else this.$el.find("#quiplash-answer-input").val(""), this.$el.find("#quiplash-submit-answer").removeAttr("disabled"), this.$el.find("#quiplash-answer-field").hide(), this.$el.find("#quiplash-submit-alert").hide(), this.$el.find("#quiplash-submit-safetyquip").hide(), this.$el.find("#quiplash-submit-answer").hide(), this.$el.find("#quiplash-audience-censor").hide(), t.audienceQuip && t.canDoAudiencePlay ? (this.$el.find("#state-answer-question #question-text").html(t.audienceQuip.replace(/<BLANK>/gi, "________")), this.$el.find("#quiplash-answer-field").show(), this.$el.find("#quiplash-submit-answer").show()) : this.$el.find("#state-answer-question #question-text").html("You\u2019re in the audience! Wait for the time to vote."), this.showScreen("#state-answer-question");
+                    } else this.$el.find("#quiplash-answer-input").val(""), this.$el.find("#quiplash-submit-answer").removeAttr("disabled"), this.$el.find("#quiplash-answer-field").hide(), this.$el.find("#quiplash-submit-alert").hide(), this.$el.find("#quiplash-submit-safetyquip").hide(), this.$el.find("#quiplash-submit-answer").hide(), this.$el.find("#quiplash-audience-censor").hide(), t.audienceQuip && t.canDoAudiencePlay ? (this.$el.find("#state-answer-question #question-text").html(t.audienceQuip.replace(/<BLANK>/gi, "________")), this.$el.find("#quiplash-answer-field").show(), this.$el.find("#quiplash-submit-answer").show()) : this.$el.find("#state-answer-question #question-text").html("¡Estás en el público! Espera el momento de votar."), this.showScreen("#state-answer-question");
                 else if (i === "Gameplay_Vote") {
                     if (this.$el.find("#state-vote #question-text-alt").html(""), !e.canCensor && e.doneVoting) {
-                        this.$el.find("#state-vote #vote-text").html("Wait for the other players!"), this.$el.find("#quiplash-vote").html(""), this.showScreen("#state-vote");
+                        this.$el.find("#state-vote #vote-text").html("¡Espera a los demás jugadores!"), this.$el.find("#quiplash-vote").html(""), this.showScreen("#state-vote");
                         return
                     }
                     t.question ? this.$el.find("#state-vote #question-text").html(t.question.prompt.replace(/<BLANK>/gi, "________")) : this.$el.find("#state-vote #question-text").html("");
-                    const m = e.censorOnly || e.doneVoting ? "" : "Which one do you like more?";
+                    const m = e.censorOnly || e.doneVoting ? "" : "¿Con cuál te quedas?";
                     this.$el.find("#state-vote #vote-text").html(m);
                     let C = "";
                     if (t.choices && t.order)
@@ -22322,20 +22322,20 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                     this.notify(), this.$el.find("#quiplash-vote").html(C), be(".quiplash2-disabled").attr("disabled", "disabled"), this.showScreen("#state-vote")
                 } else if (i === "Gameplay_R3Vote") {
                     if (this.$el.find("#state-vote #question-text-alt").html(""), !e.canCensor && e.doneVoting) {
-                        this.$el.find("#state-vote #vote-text").html("Wait for the other players!"), this.$el.find("#quiplash-vote").html(""), this.showScreen("#state-vote");
+                        this.$el.find("#state-vote #vote-text").html("¡Espera a los demás jugadores!"), this.$el.find("#quiplash-vote").html(""), this.showScreen("#state-vote");
                         return
                     }
                     this.$el.find("#state-vote #question-text").html(t.question.prompt.replace(/<BLANK>/gi, "________")), t.question.quip !== void 0 ? (this.$el.find("#state-vote #question-text-alt").html(t.question.quip.replace(/<BLANK>/gi, "________")), this.$el.find("#state-vote #question-text").removeClass("quiplash-text"), this.$el.find("#state-vote #question-text").addClass("quiplash-text-big")) : (this.$el.find("#state-vote #question-text").addClass("quiplash-text"), this.$el.find("#state-vote #question-text").removeClass("quiplash-text-big"));
-                    let m = "Which one do you like more?";
+                    let m = "¿Con cuál te quedas?";
                     if (e.currentVote) switch (e.currentVote) {
                         case 0:
-                            m = "Award your gold medal to your favorite answer!";
+                            m = "¡Otorga la medalla de oro a tu respuesta favorita!";
                             break;
                         case 1:
-                            m = "Now award your silver medal!";
+                            m = "¡La de plata a la segunda!";
                             break;
                         case 2:
-                            m = "And hand out a bronze medal to your third favorite.";
+                            m = "Y la de bronce a la tercera.";
                             break
                     }
                     this.$el.find("#state-vote #vote-text").html(m);
@@ -22421,7 +22421,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 const t = this.sanitize(this.$el.find("#quiplash-answer-input").val()).toUpperCase();
                 if (t.length === 0) {
                     const e = this.$el.find("#quiplash-submit-alert");
-                    return e.html("You can't enter nothing!"), e.removeClass("alert-info"), e.addClass("alert-danger"), e.show(), this.alertTimeout && clearTimeout(this.alertTimeout), this.alertTimeout = setTimeout(() => {
+                    return e.html("¡No puedes dejarlo en blanco!"), e.removeClass("alert-info"), e.addClass("alert-danger"), e.show(), this.alertTimeout && clearTimeout(this.alertTimeout), this.alertTimeout = setTimeout(() => {
                         this.$el.find("#quiplash-submit-alert").hide()
                     }, 5e3), !1
                 }
@@ -22452,7 +22452,7 @@ https://sweetalert2.github.io/#ajax-request`), Uo(c), typeof c.title == "string"
                 }) : this.client.isRole("audience") && (this.client.sessionSend("vote", "Quiplash2 Vote", {
                     type: "vote",
                     vote: e
-                }), this.$el.find("#vote-text").html("Thanks, audience member!"), this.$el.find("#quiplash-vote").html(""), this.showScreen("#state-vote")), be(".quiplash2-button").removeClass("selected"), be(t.target).addClass("selected"), !1
+                }), this.$el.find("#vote-text").html("¡Gracias, miembro del público!"), this.$el.find("#quiplash-vote").html(""), this.showScreen("#state-vote")), be(".quiplash2-button").removeClass("selected"), be(t.target).addClass("selected"), !1
             },
             newGameSamePlayers() {
                 return this.client.send("SendMessageToRoomOwner", {

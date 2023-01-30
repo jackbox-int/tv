@@ -13159,7 +13159,7 @@ const cC = `<form>\r
         <div class="inputGroup">\r
             <textarea id="input-text-textarea" rows="1" class="form-control jbg-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>\r
             <span class="inlineSubmit">\r
-                <button type="submit" class="btn btn-default inlineSubmitButton" type="button"><span class="inlineSubmitText">Send</span></button>\r
+                <button type="submit" class="btn btn-default inlineSubmitButton" type="button"><span class="inlineSubmitText">Enviar</span></button>\r
             </span>\r
             <span id="helpBlock2" class="help-block errorText"></span>\r
             <div class="charCountDisplay"><span class="charRemaining">70</span></div>\r
@@ -13237,7 +13237,7 @@ const cC = `<form>\r
             ".inlineSubmitText": {
                 observe: "inlineSubmitText",
                 onGet(t) {
-                    return t !== void 0 ? t : "Send"
+                    return t !== void 0 ? t : "Enviar"
                 }
             },
             ".form-group": {
@@ -13875,7 +13875,7 @@ var Xu = {
                 denyButtonText: "No",
                 denyButtonAriaLabel: "",
                 denyButtonColor: void 0,
-                cancelButtonText: "Cancel",
+                cancelButtonText: "Cancelar",
                 cancelButtonAriaLabel: "",
                 cancelButtonColor: void 0,
                 buttonsStyling: !0,
@@ -15497,16 +15497,16 @@ const yC = `<div class="canvasContainer">\r
                     this.currentStream = i, this.video.srcObject = i, await this.video.play(), this.gotDevices(o)
                 } catch (i) {
                     console.error(i), kt.show("alert", {
-                        titleText: "Unable to Access Camera",
-                        text: `Looks like we don't have access to your device's camera. You can refresh and try again, or choose the ${t} option instead.`,
+                        titleText: "No se pudo acceder a la cámara",
+                        text: `Parece que no tenemos acceso a la cámara de tu dispositivo. Puedes refrescar y volver a intentarlo, o elegir la opción de ${t} en su lugar.`,
                         willClose: () => {
                             this.cameraAccessDenied()
                         }
                     })
                 }
             } else kt.show("alert", {
-                titleText: "No Camera Access",
-                text: `It looks like camera access isn't available from this browser. Try the ${t} option instead.`,
+                titleText: "No hay acceso a la cámara",
+                text: `Parece que el acceso a la cámara no está disponible desde este navegador. Prueba la opción de ${t} en su lugar.`,
                 willClose: () => {
                     this.cameraAccessDenied()
                 }
@@ -15659,8 +15659,8 @@ const yC = `<div class="canvasContainer">\r
                     <path d="M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
                 </svg>
             `,
-                cancelButton: "Cancel",
-                confirmButton: "Confirm"
+                cancelButton: "Cancelar",
+                confirmButton: "Confirmar"
             }
         }
     }),
@@ -16281,9 +16281,9 @@ const OC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
         <div id="buttons" class="buttons"></div>\r
         <div id="post-sketchpad" class="post-sketchpad">\r
             <div id="submit">\r
-                <button id='submitdrawing' class="button submitDrawing">Submit</button><br/>\r
+                <button id='submitdrawing' class="button submitDrawing">Enviar</button><br/>\r
             </div>\r
-            <button id='censorOptions' class='button'>Censor Options</button>\r
+            <button id='censorOptions' class='button'>Opciones de censura</button>\r
             <div class="footer"></div>\r
         </div>\r
         </div>\r
@@ -16317,9 +16317,9 @@ const OC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             disabled: !1,
             debug: !1,
             strings: {
-                drawing_empty: "You must draw something!",
-                submit: "submit",
-                ERROR_REJECTED_OBJECT: "That's not allowed, enter something else!"
+                drawing_empty: "¡Tienes que dibujar algo!",
+                submit: "enviar",
+                ERROR_REJECTED_OBJECT: "Eso no está permitido, ¡ingresa otra cosa!"
             }
         }
     }),
@@ -16361,7 +16361,7 @@ const OC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
                 visible: !0,
                 updateView: !0,
                 onGet(t) {
-                    return t[0] || t[1] ? !1 : t[2] === void 0 ? "" : t[2].submit || "Submit"
+                    return t[0] || t[1] ? !1 : t[2] === void 0 ? "" : t[2].submit || "Enviar"
                 }
             }
         },
@@ -16521,7 +16521,7 @@ const OC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
         defaults: {
             state: "EnterSingleText",
             actions: [{
-                text: "submit",
+                text: "enviar",
                 action: "submit"
             }],
             allowEmpty: !1,
@@ -16538,11 +16538,11 @@ const OC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             autocapitalize: !1,
             className: "",
             inlineSubmit: !1,
-            inlineSubmitText: "Submit",
+            inlineSubmitText: "Enviar",
             error: "",
             strings: {
-                ERROR_NOTHING_ENTERED: "You need to enter something!",
-                ERROR_REJECTED_TEXT: "That's not allowed, enter something else! (You can change the level of filtering in the game's settings menu)"
+                ERROR_NOTHING_ENTERED: "¡Tienes que ingresar algo!",
+                ERROR_REJECTED_TEXT: "¡Eso no está permitido, ingresa otra cosa! (Puedes cambiar el nivel del filtro en el menú de ajustes del juego)"
             }
         }
     }),
@@ -16612,7 +16612,7 @@ const OC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             }), this.inputComponent = this.inputComponent || new to({
                 model: new ot.Model({})
             }), this.buttonsCollection = this.buttonsCollection || new ot.Collection([{
-                text: "submit"
+                text: "enviar"
             }]), this.buttonsComponent = this.buttonsComponent || new fi({
                 block: !0,
                 collection: this.buttonsCollection
@@ -16625,7 +16625,7 @@ const OC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             })), this.promptComponent.model.clear({
                 silent: !0
             }).set(this.model.get("prompt")), this.inputComponent.model.set(this.model.attributes), this.buttonsComponent.options.block = this.model.get("block"), this.buttonsCollection.set(this.model.get("actions") || [{
-                text: "submit",
+                text: "enviar",
                 action: "submit"
             }]), this.model.get("entryId") && this.model.get("entryId") !== this.currentEntry && (this.inputComponent.clearInput(), this.currentEntry = this.model.get("entryId")), this.$el.find(".enterSingleTextFieldset").prop("disabled", !1), this.$el.find("textarea").focus(), this.stickit(), this.model.get("autoSubmit") && this.shouldSubmit && this.onChildviewInputSubmit()
         },
@@ -16768,7 +16768,7 @@ const VC = Et.View.extend({
     },
     showTwitchBroadcasterDialog(t) {
         let e = `<div class='icon-${this.client.roles.broadcaster.platform}'>${this.client.roles.broadcaster.name}</div>`;
-        e += "<div class='success'>You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.</div>", this.lacksAudience ? e += "<div class='warning'>THIS GAME DOESN'T HAVE AN AUDIENCE FEATURE</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), kt.show("custom", {
+        e += "<div class='success'>Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.</div>", this.lacksAudience ? e += "<div class='warning'>ESTE JUEGO NO TIENE FUNCIÓN DE PÚBLICO</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA</div>"), kt.show("custom", {
             html: e,
             position: "bottom",
             timer: t,
@@ -16807,8 +16807,8 @@ const VC = Et.View.extend({
     },
     onRoomWasDestroyed() {
         en.remove("roomCode"), en.remove("reconnect"), kt.show("error", {
-            titleText: "Disconnected",
-            text: "Thanks for playing!",
+            titleText: "Desconectado",
+            text: "¡Gracias por jugar!",
             willClose: () => {
                 window.location.reload(!0)
             }
@@ -16816,8 +16816,8 @@ const VC = Et.View.extend({
     },
     onDisconnected() {
         kt.show("error", {
-            titleText: "Disconnected",
-            text: "You have been disconnected.",
+            titleText: "Desconectado",
+            text: "Has sido desconectado.",
             willClose: () => {
                 window.location.reload(!0)
             }
@@ -16879,7 +16879,7 @@ const BC = `<div id="controller" class="state-controller controller-content">
         <div id="characters" class="charactersContainer"></div>
     </div>
     <div id="artifactId" class="artifactContainer text">
-        <a id="artifactLink" aria-label="Visit the Gallery" class="artifactLink" target="_blank">
+        <a id="artifactLink" aria-label="Visita la galería" class="artifactLink" target="_blank">
             <button id="artifactButton" class="artifactButton"></button>
         </a>
     </div>
@@ -16913,28 +16913,28 @@ const BC = `<div id="controller" class="state-controller controller-content">
             formattedActiveContentId: null,
             isLocal: !1,
             strings: {
-                wait: "Sit back and relax!",
-                vip_waiting: "Waiting for all players to join",
-                vip_canStart: "Press this button when everybody has joined",
-                vip_cancel: "Press this button to cancel game start",
-                vip_postgame: "What would you like to do now?",
-                vip_episodes_menu: "Episodes Menu",
-                vip_episodes_unload: "Unload Episode",
-                vip_episodes_report: "Report Episode",
-                vip_episodes_warning: "Warning: user generated content is not rated",
-                vip_episodes_load: "Load an episode by id:",
-                vip_episodes_select: "Or select an episode:",
-                vip_episodes_back: "Back",
-                vip_episodes_submit: "SUBMIT",
-                vip_episodes_view_author: "View Author",
-                button_start: "Everybody's In",
-                button_cancel: "Cancel",
-                button_changename: "Change Name",
-                button_sameplayers: "Same Players",
-                button_newplayers: "New Players",
-                prompt_entername: "Enter your name",
-                prompt_choosecharacter: "Select your character",
-                button_censorOptions: "Censor Options",
+                wait: "¡Siéntate y relájate!",
+                vip_waiting: "Esperando a que todos los jugadores se unan",
+                vip_canStart: "Pulsa este botón cuando todos se hayan unido",
+                vip_cancel: "Pulsa este botón para cancelar el inicio de la partida",
+                vip_postgame: "¿Qué quieres hacer ahora?",
+                vip_episodes_menu: "Menú de episodios",
+                vip_episodes_unload: "Retirar episodio",
+                vip_episodes_report: "Reportar episodio",
+                vip_episodes_warning: "Aviso: El contenido de los usuarios no tiene clasificación de edad",
+                vip_episodes_load: "Cargar un episodio por id:",
+                vip_episodes_select: "O selecciona un episodio:",
+                vip_episodes_back: "Atrás",
+                vip_episodes_submit: "ENVIAR",
+                vip_episodes_view_author: "Ver autor",
+                button_start: "Estamos todos",
+                button_cancel: "Cancelar",
+                button_changename: "Cambiar el nombre",
+                button_sameplayers: "Mismos jugadores",
+                button_newplayers: "Nuevos jugadores",
+                prompt_entername: "Ingresa tu nombre",
+                prompt_choosecharacter: "Selecciona tu personaje",
+                button_censorOptions: "Opciones de censura",
                 censor_prompt: ""
             }
         }
@@ -17159,7 +17159,7 @@ const BC = `<div id="controller" class="state-controller controller-content">
                             inputAttributes: {
                                 maxlength: 12
                             },
-                            inputValidator: c => c ? c.length > 12 ? "Limit 12 characters" : null : "You need to write something!"
+                            inputValidator: c => c ? c.length > 12 ? "Límite de 12 caracteres" : null : "¡Tienes que escribir algo!"
                         });
                         if (o.dismiss) return;
                         this.triggerMethod("client:message", {
@@ -17283,7 +17283,7 @@ const BC = `<div id="controller" class="state-controller controller-content">
 <div id="message" class="message"><h2 class="messageText"></h2></div>
 <div id="action" class="action"></div>
 <div id="artifactId" class="artifactContainer text">
-    <a id="artifactLink" aria-label="Visit the Gallery" class="artifactLink" target="_blank">
+    <a id="artifactLink" aria-label="Visita la galería" class="artifactLink" target="_blank">
         <button id="artifactButton" class="artifactButton"></button>
     </a>
 </div>
@@ -17371,10 +17371,10 @@ const BC = `<div id="controller" class="state-controller controller-content">
             LANGUAGE_NAME: "English",
             SUPPORTED_LANGUAGES: ["English", "Fran\xE7ais", "Italiano", "Deutsch", "Espa\xF1ol"],
             SUPPORTED_LOCALES: ["en", "fr", "it", "de", "es"],
-            LANGUAGE: "Language",
-            LOGIN: "Login",
-            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Disconnected",
-            STRING_ERROR_SERVER_ROOM_DESTROYED: "Thanks for playing!"
+            LANGUAGE: "Idioma",
+            LOGIN: "Iniciar sesi\xF3n",
+            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Desconectado",
+            STRING_ERROR_SERVER_ROOM_DESTROYED: "¡Gracias por jugar!"
         },
         fr: {
             LANGUAGE_NAME: "Fran\xE7ais",
@@ -17494,10 +17494,10 @@ const BC = `<div id="controller" class="state-controller controller-content">
             announcePrompt: !1,
             countGroupName: null,
             strings: {
-                your_choice: "Thank you. Your choice: ",
-                censor_prompt: "Censor this?",
-                censor_confirm: "Yes, Censor!",
-                censor_cancel: "No!"
+                your_choice: "Gracias. Tu elección: ",
+                censor_prompt: "¿Censurar esto?",
+                censor_confirm: "¡Sí, censurarlo!",
+                censor_cancel: "¡No!"
             }
         }
     }),
@@ -17583,7 +17583,7 @@ const BC = `<div id="controller" class="state-controller controller-content">
             this.promptComponent.model.clear({
                 silent: !0
             }).set(this.model.get("prompt")), this.choicesList.options.block = this.model.get("block"), this.choicesList.collection.set(this.model.get("choices")), this.model.get("type") === "multiple" && at.all(this.model.get("choices"), t => !t.disabled) && this.choicesList.collection.push({
-                text: "Submit",
+                text: "Enviar",
                 action: "submit",
                 block: !1
             }), this.model.get("isAudience") && ((this.model.get("choiceId") === void 0 || this.model.get("choiceId") !== this.getOption("choiceId")) && (this.selected = [], this.audienceChoice = void 0, this.votesLeft = void 0), this.selected.length > 0 && (this.model.get("type") === "multiple" ? this.choicesList.children.forEach(t => {
@@ -17636,7 +17636,7 @@ const BC = `<div id="controller" class="state-controller controller-content">
             })), !1
         },
         displayAudienceChoice(t) {
-            let e = "Thank you.";
+            let e = "Gracias.";
             const n = t.map(o => {
                 const c = this.choicesList.children.find(m => m.model.get("index") === o);
                 return c ? c.model.get("html") || c.model.get("text") : ""
@@ -19105,10 +19105,10 @@ const Ex = `<div id="controller" class="state-controller controller-content">\r
             doneText: {},
             announcePrompt: !1,
             strings: {
-                your_choice: "Thank you. Your choice: ",
-                censor_prompt: "Censor this?",
-                censor_confirm: "Yes, Censor!",
-                censor_cancel: "No!"
+                your_choice: "Gracias. Tu elección: ",
+                censor_prompt: "¿Censurar esto?",
+                censor_confirm: "¡Sí, censurarlo!",
+                censor_cancel: "¡No!"
             }
         }
     }),
@@ -19143,7 +19143,7 @@ const Ex = `<div id="controller" class="state-controller controller-content">\r
         className: "SorterView",
         template: at.template(`
         <div id="rankedChoicesRegion"></div>
-        <div class="instructions">Choose where this item ranks:</div>
+        <div class="instructions">Elige dónde se posiciona este artículo:</div>
         <div id="unrankedChoicesRegion"></div>
         <div id="lockInRegion"></div>
     `),
@@ -19189,7 +19189,7 @@ const Ex = `<div id="controller" class="state-controller controller-content">\r
                 block: !1,
                 model: new ot.Model({
                     action: "lock",
-                    html: "Lock In"
+                    html: "Bloquear"
                 })
             }), this.listenTo(this.model, "change:choices", this.update, this)
         },
@@ -19347,28 +19347,28 @@ const Ex = `<div id="controller" class="state-controller controller-content">\r
             text: "",
             validActions: [],
             strings: {
-                tos_warning: "By sharing content, you agree to our Terms of service",
-                tos_warning_agree: "agree and share",
-                tos_warning_back: "back to menu",
-                create_new_episode: "create a new episode",
-                create_new_name_prompt: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-                create_new_button: "create",
-                button_back_to_episodes: "back to episodes",
-                button_back_to_menu: "back to menu",
-                previous_episodes: "previous episodes:",
-                toggle_prompts_prompt: "tap to show/hide prompts",
-                button_close: "close",
-                button_done: "done",
-                button_add: "add prompt",
-                input_placeholder: "enter a prompt",
-                label_hidden: "hidden",
-                button_edit: "edit",
-                button_save: "save",
-                button_publish: "publish",
-                button_play: "play",
-                button_delete: "delete",
-                delete_warning: "Are you sure you want to delete this episode?",
-                delete_warning_confirm: "Yes",
+                tos_warning: "Al compartir contenido, aceptas nuestros Términos de servicio",
+                tos_warning_agree: "aceptar y compartir",
+                tos_warning_back: "volver al menú",
+                create_new_episode: "crear un nuevo episodio",
+                create_new_name_prompt: "primero lo primero, ingresa un nombre para el episodio que contendrá todos tus enunciados y pulsa crear.",
+                create_new_button: "crear",
+                button_back_to_episodes: "volver a los episodios",
+                button_back_to_menu: "volver al menú",
+                previous_episodes: "episodios anteriores:",
+                toggle_prompts_prompt: "toca para mostrar/ocultar los enunciados",
+                button_close: "cerrar",
+                button_done: "listo",
+                button_add: "añadir enunciado",
+                input_placeholder: "ingresa un enunciado",
+                label_hidden: "oculto",
+                button_edit: "editar",
+                button_save: "guardar",
+                button_publish: "publicar",
+                button_play: "jugar",
+                button_delete: "borrar",
+                delete_warning: "¿Seguro que quieres eliminar este episodio?",
+                delete_warning_confirm: "Sí",
                 delete_warning_cancel: "No"
             }
         }
@@ -20445,8 +20445,8 @@ Et.View.extend({
             </div>`;
         e += `
             <div class='success'>
-                You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.
-            </div>`, this.lacksAudience ? e += "<div class='warning'>THIS GAME DOESN'T HAVE AN AUDIENCE FEATURE</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), kt.show("custom", {
+                Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.
+            </div>`, this.lacksAudience ? e += "<div class='warning'>ESTE JUEGO NO TIENE FUNCIÓN DE PÚBLICO</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA</div>"), kt.show("custom", {
             html: e,
             position: "bottom",
             timer: t,
@@ -21144,16 +21144,16 @@ const jx = Et.View.extend({
 				<div id="lobby-main-menu">
 					<span id="drawful-lobby-text" class='drawful-text drawful-text-box'></span><br />
 					<form class="pure-form">                    
-						<button type="button" id="drawful-startgame" class="lobby-button button-drawful button-xlarge pure-button pure-input-1">everybody's in</button>
-						<button type="button" id="drawful-stopcountdown" class="lobby-button button-drawful button-xlarge pure-button pure-input-1">cancel</button>
-						<button type="button" id="drawful-sameplayers" class="lobby-button button-drawful button-xlarge pure-button pure-input-1 drawful-endbuttons">same players</button>
-						<button type="button" id="drawful-newplayers" class="lobby-button button-drawful button-xlarge pure-button pure-input-1 drawful-endbuttons">new players</button>    
+						<button type="button" id="drawful-startgame" class="lobby-button button-drawful button-xlarge pure-button pure-input-1">estamos todos</button>
+						<button type="button" id="drawful-stopcountdown" class="lobby-button button-drawful button-xlarge pure-button pure-input-1">cancelar</button>
+						<button type="button" id="drawful-sameplayers" class="lobby-button button-drawful button-xlarge pure-button pure-input-1 drawful-endbuttons">mismos jugadores</button>
+						<button type="button" id="drawful-newplayers" class="lobby-button button-drawful button-xlarge pure-button pure-input-1 drawful-endbuttons">nuevos jugadores</button>    
 					</form>
 					<br>
 					<br>
 					<div class="drawful-start-menu">
-                        <button type="button" id="drawful-lobby-menu-ugc" class="menu-button lobby-button button-drawful button-drawful-black button-xlarge pure-button pure-input-1 drawful-text">custom episodes</button><br>
-    					<button type="button" id="drawful-lobby-menu-censor" class="menu-button lobby-button button-drawful button-drawful-black button-xlarge pure-button pure-input-1 drawful-text">censor menu</button><br>
+                        <button type="button" id="drawful-lobby-menu-ugc" class="menu-button lobby-button button-drawful button-drawful-black button-xlarge pure-button pure-input-1 drawful-text">episodios personalizados</button><br>
+    					<button type="button" id="drawful-lobby-menu-censor" class="menu-button lobby-button button-drawful button-drawful-black button-xlarge pure-button pure-input-1 drawful-text">menú de censura</button><br>
                     </div>
                     <div id="drawful-lobby-postgame" class="drawful-images">
                         <a target="_blank" class="gallery-link" href=""><div class='galleryImage'></div></a>
@@ -21162,24 +21162,24 @@ const jx = Et.View.extend({
 				
                 <div id="lobby-ugc">
 					<div id="lobby-ugc-error"></div>
-					<button type="button" class="drawful-lobby-menu-back button-drawful button-drawful-black button-xlarge pure-button pure-input-1">back</button><br>
+					<button type="button" class="drawful-lobby-menu-back button-drawful button-drawful-black button-xlarge pure-button pure-input-1">atrás</button><br>
                     <div id="lobby-ugc-enter" class="lobby-ugc-option">
                         <form class="">
                         <div class="row">
                             <div class="col-xs-12">
-                                <p id="lobby-ugc-help">to load a custom episode, go to "make your own" or enter a 7-letter episode id</p>
-                                <p class="drawful-text-box">load an episode by id:</p>
+                                <p id="lobby-ugc-help">para cargar un episodio personalizado, ve a "juega a tu manera" o ingresa un id de episodio de 7 letras</p>
+                                <p class="drawful-text-box">cargar un episodio por id:</p>
                             </div>
                             <div class="col-xs-12">
                                 <div class="input-group input-group-lg drawful-box-border">
                                     <input id="lobby-ugc-input" type="text" class="capitalized jbg-input form-control" placeholder="???-????">
                                     <span class="input-group-btn">
-                                        <button type="submit" id="lobby-ugc-submit" class="btn">submit</button>
+                                        <button type="submit" id="lobby-ugc-submit" class="btn">enviar</button>
                                     </span>
                                 </div>
                             </div>
                         </div>
-						<small class="help text-danger">warning : user generated content is not rated.</small>
+						<small class="help text-danger">aviso: el contenido de los usuarios no tiene clasificación de edad.</small>
                         </form>
 						
                         <div class="drawful-ugc-previous">
@@ -21191,22 +21191,22 @@ const jx = Et.View.extend({
                     
                     <div id="lobby-ugc-choices" class="lobby-ugc-option">
                         <div class="drawful-text-box" id="lobby-ugc-choices-content-id"></div>
-                        <button type="button" id="lobby-ugc-clear" class="button-drawful button-drawful-black button-xlarge pure-button">unload</button><br>
-						<button type="button" id="lobby-ugc-report" class="button-drawful button-drawful-black button-xlarge pure-button">report</button>
-						<button type="button" id="lobby-ugc-view-author" class="button-drawful button-xlarge pure-button">view author</button>
+                        <button type="button" id="lobby-ugc-clear" class="button-drawful button-drawful-black button-xlarge pure-button">retirar</button><br>
+						<button type="button" id="lobby-ugc-report" class="button-drawful button-drawful-black button-xlarge pure-button">reportar</button>
+						<button type="button" id="lobby-ugc-view-author" class="button-drawful button-xlarge pure-button">ver autor</button>
                     </div>
                 </div>
                 
 				<div id="lobby-censor">
-					<button type="button" class="drawful-lobby-menu-back button-drawful button-drawful-black button-xlarge pure-button pure-input-1">back</button><br>
+					<button type="button" class="drawful-lobby-menu-back button-drawful button-drawful-black button-xlarge pure-button pure-input-1">atrás</button><br>
 					<p style="display:none;" class="drawful-player-censor-dialog drawful-confirm-dialog">
-                        <span class="drawful-text drawful-text-box text-danger">This will remove this player's name, avatar, entries and drawings. Are you sure?</span>
-                        <button class="drawful-player-censor-confirm button-drawful button-drawful-black">Yes</button>
+                        <span class="drawful-text drawful-text-box text-danger">se eliminará la entrada de este jugador, así como todas sus entradas y dibujos futuros. ¿quieres continuar?</span>
+                        <button class="drawful-player-censor-confirm button-drawful button-drawful-black">Sí</button>
                         <button class="drawful-player-censor-cancel button-drawful">No</button>
                     </p>
 					<table id="lobby-censor-players" class="drawful-list">
 					</table>
-                    <div class="drawful-text">hit <span class="censor-button-image censor-button-black"></span> to censor player for rest of the game, removing their answers, name and avatar (it's kind of intense)</div>
+                    <div class="drawful-text">pulsa <span class="censor-button-image censor-button-black"></span> para censurar al jugador el resto de la partida y eliminar sus respuestas, nombre y avatar (qué intenso)</div>
 				</div>
 				
             </div>
@@ -21214,7 +21214,7 @@ const jx = Et.View.extend({
 
         <div class="pt-page-off state-nothing drawful2-page">
             <div id="drawful-nothing-skip-round-container">
-                <button type="button" class="drawful-skip-round-button button-drawful button-xlarge pure-button pure-input-1">skip!</button>
+                <button type="button" class="drawful-skip-round-button button-drawful button-xlarge pure-button pure-input-1">¡omitir!</button>
             </div>
             <div class="logo-image" style=""></div>
         </div>
@@ -21228,13 +21228,13 @@ const jx = Et.View.extend({
         <div class="pt-page-off state-drawing-sent drawful2-page">
             <div class="container">
                 <br /><span id="drawful-drawing-received" class='drawful-text'></span><br />
-                <span class='drawful-text'>thanks for your drawing</span><br />
+                <span class='drawful-text'>gracias por tu dibujo</span><br />
             </div>
         </div>
 
         <div class="pt-page-off state-drawing-done drawful2-page">
             <div class="container">
-                <br /><span class='drawful-text'>drawing time is over!</span><br />
+                <br /><span class='drawful-text'>¡el tiempo para dibujar se acabó!</span><br />
             </div>
         </div>        
 
@@ -21246,15 +21246,15 @@ const jx = Et.View.extend({
                 <div id="drawful-submit-alert" class="alert alert-info">Alert message goes here</div>
                 <form class="pure-form" id="drawful-enterlie-field">
                     <div class="">
-                        <input id="drawful-lie-input" name="drawful-lie" class="lowercase pure-input-1 jbg-input" type="text" maxlength="45" placeholder="enter a title" autocapitalize="off" autocorrect="off" autocomplete="off">
+                        <input id="drawful-lie-input" name="drawful-lie" class="lowercase pure-input-1 jbg-input" type="text" maxlength="45" placeholder="ingresa un título" autocapitalize="off" autocorrect="off" autocomplete="off">
                     </div>
                     <div class=" right">
-                        <button type="submit" id="drawful-submitlie" class="button-drawful button-drawful-black button-xlarge pure-button  right">send</button>
+                        <button type="submit" id="drawful-submitlie" class="button-drawful button-drawful-black button-xlarge pure-button  right">enviar</button>
                         <div id="drawful-submitlie-loading" class="button-drawful-loading  right" style="display:none; width: 110px; height: 48px; margin-top:10px;" ></div>
                     </div>
                 </form>
                 <div id="drawful-enterlie-skip-round-container">
-                    <button type="button" class="drawful-skip-round-button button-drawful button-xlarge pure-button pure-input-1">skip!</button>
+                    <button type="button" class="drawful-skip-round-button button-drawful button-xlarge pure-button pure-input-1">¡omitir!</button>
                 </div>
             </div>
         </div>    
@@ -21262,8 +21262,8 @@ const jx = Et.View.extend({
         <div class="pt-page-off state-chooselie drawful2-page">
             <div class="container">
                 <p style="display:none;" class="drawful-chooselie-censor-dialog drawful-confirm-dialog">
-                    <span class="drawful-text drawful-text-box text-danger">this will remove this player's entry and all future entries and future drawings. are you sure?</span>
-                    <button class="drawful-chooselie-censor-confirm button-drawful button-drawful-black">Yes</button>
+                    <span class="drawful-text drawful-text-box text-danger">se eliminará la entrada de este jugador, así como todas sus entradas y dibujos futuros. ¿quieres continuar?</span>
+                    <button class="drawful-chooselie-censor-confirm button-drawful button-drawful-black">Sí</button>
                     <button class="drawful-chooselie-censor-cancel button-drawful">No</button>
                 </p>
                 <br /><span id="chooselie-text" class='drawful-text'></span><br />
@@ -21277,8 +21277,8 @@ const jx = Et.View.extend({
                 <br /><span id="chooselikes-choice" class='drawful-text'></span><br />
                 <span id="chooselikes-text" class='drawful-text'></span><br />
                 <p style="display:none;" class="drawful-chooselie-censor-dialog drawful-confirm-dialog">
-                    <span class="drawful-text drawful-text-box text-danger">this will remove this player's entry and all future entries and future drawings. are you sure?</span>
-                    <button class="drawful-chooselie-censor-confirm button-drawful button-drawful-black">Yes</button>
+                    <span class="drawful-text drawful-text-box text-danger">se eliminará la entrada de este jugador, así como todas sus entradas y dibujos futuros. ¿quieres continuar?</span>
+                    <button class="drawful-chooselie-censor-confirm button-drawful button-drawful-black">Sí</button>
                     <button class="drawful-chooselie-censor-cancel button-drawful">No</button>
                 </p>
                 <table id="drawful-chooselikes" class="drawful-list drawful-list-no-border" style="width:100%; display:inline-block;">
@@ -21288,13 +21288,13 @@ const jx = Et.View.extend({
 
         <div class="pt-page-off state-liereceived drawful2-page">
             <div class="container">
-                <br /><span class='drawful-text'>title entered!<br />waiting for other players.</span><br />
+                <br /><span class='drawful-text'>¡título introducido!<br />esperando a otros jugadores.</span><br />
             </div>
         </div>
 
         <div class="pt-page-off state-lyingdone drawful2-page">
             <div class="container">
-                <br /><span class='drawful-text'>done!</span><br />
+                <br /><span class='drawful-text'>¡listo!</span><br />
             </div>
         </div>        
 
@@ -21306,12 +21306,12 @@ const jx = Et.View.extend({
 
         <div class="pt-page-off state-draw drawful2-page">
             <!-- <div class="container"> -->
-                <span id="drawful-prompt" class='prompt drawful-text'>please draw:</span><br />
-                <span id="drawful-instructions" class='instructions drawful-text'>a picture of yourself!</span><br />
+                <span id="drawful-prompt" class='prompt drawful-text'>por favor dibuja:</span><br />
+                <span id="drawful-instructions" class='instructions drawful-text'>¡un autorretrato!</span><br />
 
                 <div class="sketchpad-container">
                     <canvas class="sketchpad" width='240' height='300' style='background-color:white;'>
-                        Sorry, your browser is not supported.
+                        Lo sentimos, tu navegador no es compatible.
                     </canvas>
                 </div>
                 <div class="row button-bar">
@@ -21321,7 +21321,7 @@ const jx = Et.View.extend({
                     <div class="col-xs-5">
                         <form class="pure-form">
                             
-                            <button type="submit" id="drawful-submitdrawing" class="submit-drawing button-drawful button-drawful-black button-large col-xs-12" style="margin-top: 0px;">send</button>
+                            <button type="submit" id="drawful-submitdrawing" class="submit-drawing button-drawful button-drawful-black button-large col-xs-12" style="margin-top: 0px;">enviar</button>
                             <div id="drawful-submitdrawing-loading" style="display:none;" class="button-drawful-loading"></div>
                         </form>
                     </div>
@@ -21331,23 +21331,23 @@ const jx = Et.View.extend({
         
 		<div class="pt-page-off state-audience-chose drawful2-page">
             <div class="container">
-                <br /><span class='drawful-text'>thank you for your input, audience member!</span><br />
+                <br /><span class='drawful-text'>¡gracias por participar, miembro del público!</span><br />
             </div>
         </div>
 		
         <div class="pt-page-off drawful2-page" id="state-ugc">
             <div id="ugc-submit-dialog" style="display:none;" class="container">
-                <div class="drawful-text-box">By sharing content, you agree to our <a href="http://www.jackboxgames.com/terms-of-service/" target="_blank">Terms of service</a></div>
-                <button id="ugc-submit-confirm" class="button-drawful">agree and share</button><br />
-                <button id="ugc-submit-cancel" class="button-drawful">back to menu</button>
+                <div class="drawful-text-box">al compartir contenidos, aceptas las <a href="http://www.jackboxgames.com/terms-of-service/" target="_blank">Condiciones del servicio</a></div>
+                <button id="ugc-submit-confirm" class="button-drawful">aceptar y compartir</button><br />
+                <button id="ugc-submit-cancel" class="button-drawful">volver al menú</button>
             </div>
             <div id="ugc-container" class="container">
                 <div id="ugc-episode-name"></div>
     			<div id="ugc-new" class="ugc-option">
-    				<button type="button" id="ugc-new-button" class="button-drawful button-drawful-black button-xlarge pure-button pure-input-1">create a new episode</button>
+    				<button type="button" id="ugc-new-button" class="button-drawful button-drawful-black button-xlarge pure-button pure-input-1">crear nuevo episodio</button>
     			</div>
 
-                <p class="ugc-option drawful-text-box ugc-load">previous episodes:</p>
+                <p class="ugc-option drawful-text-box ugc-load">episodios anteriores:</p>
     			<table id="ugc-load" class="ugc-option drawful-list">
     			</table>
     			
@@ -21356,22 +21356,22 @@ const jx = Et.View.extend({
     				<div id="ugc-no-actions-text"></div>
     				<div id="ugc-title" class="ugc-option">
     					<p class="drawful-text-box">
-                            <span class='drawful-text'>first things first, enter a name for the episode that will contain all your prompts and hit create.</span>
+                            <span class='drawful-text'>en primer lugar, ponle un nombre al episodio que contendrá tus enunciados y dale a crear.</span>
                         </p>
                         <form class="pure-form">
                             <div class="">
                                 <input id="ugc-title-input" class="lowercase ugc-input pure-input-1 jbg-input" type="text" placeholder="" autocapitalize="off" autocorrect="off" autocomplete="off"/>
                             </div>
                             <div class="right">
-                                <button type="submit" id="ugc-title-button" name="ugc-title-button" class="ugc-form-button button-drawful button-drawful-black button-xlarge pure-button  right">create</button>
-                                <button type="button" id="ugc-exit-button" class="ugc-form-button button-drawful button-drawful-black button-xlarge pure-button left">back to episodes</button>
+                                <button type="submit" id="ugc-title-button" name="ugc-title-button" class="ugc-form-button button-drawful button-drawful-black button-xlarge pure-button  right">crear</button>
+                                <button type="button" id="ugc-exit-button" class="ugc-form-button button-drawful button-drawful-black button-xlarge pure-button left">volver a los episodios</button>
                             </div>
                                 
                             
                         </form>
                     </div>
                     <div id="ugc-toggle-visibility" class="ugc-option">
-                        <span class="drawful-text">tap to show/hide prompts</span><br/>
+                        <span class="drawful-text">toca para mostrar u ocultar los enunciados</span><br/>
                         <div class="drawful-text-box">
                             <div id="ugc-toggle-visibility-button-controller" class="ugc-toggle-visibility-button drawful-image-controller ugc-toggle-visibility-button pure-u-1-2" data-target="controller"></div>
                             <div id="ugc-toggle-visibility-button-screen" class="ugc-toggle-visibility-button drawful-image-screen ugc-toggle-visibility-button-screen pure-u-1-2" data-target="screen"></div>
@@ -21380,16 +21380,16 @@ const jx = Et.View.extend({
                     
                         <form class="pure-form">
                             <div class="">
-                                <input id="ugc-add-input" class="lowercase ugc-input pure-input-1 jbg-input ugc-option ugc-add" type="text" placeholder="enter a prompt" autocapitalize="off" autocorrect="off" autocomplete="off"/>
+                                <input id="ugc-add-input" class="lowercase ugc-input pure-input-1 jbg-input ugc-option ugc-add" type="text" placeholder="ingresa un enunciado" autocapitalize="off" autocorrect="off" autocomplete="off"/>
                             </div>
                             <div class="ugc-option ugc-add">
-                                <button type="submit" id="ugc-add-button" name="ugc-add-button" class="ugc-form-button button-drawful button-drawful-black button-xlarge pure-button right">add prompt</button>
+                                <button type="submit" id="ugc-add-button" name="ugc-add-button" class="ugc-form-button button-drawful button-drawful-black button-xlarge pure-button right">agregar enunciado</button>
                             </div>
                             <div id="ugc-close" class="ugc-option">
-                                <button type="button" id="ugc-close-button" class="ugc-form-button button-drawful button-drawful-black button-xlarge pure-button left">close</button>
+                                <button type="button" id="ugc-close-button" class="ugc-form-button button-drawful button-drawful-black button-xlarge pure-button left">cerrar</button>
                             </div>
                             <div id="ugc-save" class="ugc-option">
-                                <button type="save" id="ugc-save-button" class="ugc-form-button button-drawful button-drawful-black button-xlarge pure-button left">done</button>
+                                <button type="save" id="ugc-save-button" class="ugc-form-button button-drawful button-drawful-black button-xlarge pure-button left">hecho</button>
                             </div>
                         </form>
                     
@@ -21401,40 +21401,40 @@ const jx = Et.View.extend({
                 
                 <!--<div id="ugc-screen-confirm" class="ugc-screen">-->
                     <div id="ugc-unlock" class="ugc-option">
-                        <button type="button" id="ugc-unlock-button" class="button-drawful button-drawful-black button-xlarge pure-button pure-input-1">edit</button>
+                        <button type="button" id="ugc-unlock-button" class="button-drawful button-drawful-black button-xlarge pure-button pure-input-1">editar</button>
                     </div>
                     
                     <div id="ugc-save" class="ugc-option">
-                        <button type="save" id="ugc-save-button" class="button-drawful button-drawful-black button-xlarge pure-button pure-input-1">save</button>
+                        <button type="save" id="ugc-save-button" class="button-drawful button-drawful-black button-xlarge pure-button pure-input-1">guardar</button>
                     </div>
                 <!--</div>-->
                 
                 <!--<div id="ugc-screen-post-save" class="ugc-screen">-->
     			    <div id="ugc-submit" class="ugc-option">
-                        <button type="button" id="ugc-submit-button" class="button-drawful button-drawful-black button-xlarge pure-button pure-input-1">publish</button>
+                        <button type="button" id="ugc-submit-button" class="button-drawful button-drawful-black button-xlarge pure-button pure-input-1">publicar</button>
                     </div>
                     <div id="ugc-play" class="ugc-option">
-                        <button type="button" id="ugc-play-button" class="button-drawful button-drawful-black button-xlarge pure-button pure-input-1">play</button>
+                        <button type="button" id="ugc-play-button" class="button-drawful button-drawful-black button-xlarge pure-button pure-input-1">jugar</button>
                     </div>
                     <div id="ugc-delete" class="ugc-option">
-                        <button type="button" id="ugc-delete-button" class="button-drawful button-drawful-black button-xlarge pure-button pure-input-1 ugc-remove-content-button">delete</button>
+                        <button type="button" id="ugc-delete-button" class="button-drawful button-drawful-black button-xlarge pure-button pure-input-1 ugc-remove-content-button">borrar</button>
                         <div id="ugc-remove-content-dialog" style="display:none;" class="drawful-confirm-dialog">
-                            <span class="drawful-text drawful-text-box text-danger">Are you sure you want to delete this episode?</span>
-                            <button id="ugc-remove-content-confirm" class="button-drawful button-drawful-black">Yes</button>
+                            <span class="drawful-text drawful-text-box text-danger">¿seguro que quieres borrar este episodio?</span>
+                            <button id="ugc-remove-content-confirm" class="button-drawful button-drawful-black">Sí</button>
                             <button id="ugc-remove-content-cancel" class="button-drawful">No</button>
                         </div>
 
                     </div>
 
                     <div id="ugc-exit" class="ugc-option">
-                        <button type="button" id="ugc-exit-button" class="button-drawful button-drawful-black button-xlarge pure-button pure-input-1">back to episodes</button>
+                        <button type="button" id="ugc-exit-button" class="button-drawful button-drawful-black button-xlarge pure-button pure-input-1">volver a los episodios</button>
                     </div>
                 <!--</div>-->
             </div>
         </div>
 
         <div class="pt-page-off state-audience drawful2-page" id="state-wait">
-            <p id="audience-welcome" class="drawful-text drawful-text-box">welcome to the audience</p>
+            <p id="audience-welcome" class="drawful-text drawful-text-box">te damos la bienvenida al público</p>
         </div>
     </div>
 </div>
@@ -21443,8 +21443,8 @@ const Hx = VC.extend({
     template: at.template(Ux),
     currentCanvas: void 0,
     prevRoomState: "",
-    audienceMessages: ["welcome to the audience<br />it\u2019s fun!", "welcome to the audience<br />you\u2019ll get to participate in just a moment", "welcome to the audience<br />the fun is coming any second", "welcome to the audience<br />we\u2019ve been waiting for you", "welcome to the audience<br />not quite as fun as owning the game, but more fun than sitting alone doing nothing", "welcome to the audience<br />the more the merrier", "welcome to the audience<br />one of us, one of us", "welcome to the audience<br />please don\u2019t unwrap any hard candy during the show", "welcome to the audience<br />it\u2019s our time down here", "welcome to the audience<br />you like to watch, eh?", "welcome to the audience<br />this is one of those slow moments for the audience but it\u2019ll pick up", "welcome to the audience<br />please don\u2019t organize and form a coup", "welcome to the audience<br />make yourself at home", "welcome to the audience<br />we hope you like judging people", "welcome to the audience<br />take a deep breath, the action will start soon", "welcome to the audience<br />enjoy it", "welcome to the audience<br />of everyone in the audience, you\u2019re our favorite", "welcome to the audience<br />dreams do come true!", "welcome to the audience<br />the second most fun way to play this game!", "welcome to the audience<br />we wrote this extra sentence here just for you", "welcome to the audience<br />please find your seat", "welcome to the audience<br />soooooo... what\u2019s new with you?"],
-    authorMessages: ["You drew this.<br />Take a moment to reflect.", "You drew this.<br />Maybe consult a doctor?", "You drew this.<br />This is what you've become.", "You drew this.<br />This is your design.", "You drew this.<br />There's nowhere to go but up!", "You drew this.<br />Relax.", "You drew this.<br />Enjoy this moment.", "You drew this.<br />It's too late to change it.", "You drew this.<br />There's no way to blame someone else.", "You drew this.<br />And your life is forever changed.", "You drew this.<br />Yay?", "You drew this.<br />No comment.", "You drew this.<br />It could be worse.", "You drew this.<br />You're to blame.", "You drew this.<br />So...yeah...", "You drew this.<br />Don't worry, it'll be over soon.", "You drew this.<br />Feel as good about that as you can.", "You drew this.<br />It is art.", "You drew this.<br />Thank you?", "You drew this.<br />High five!", "You drew this.<br />Maybe take a quick nap.", "You drew this.<br />Be cool about it.", "You drew this.<br />This too shall pass.", "You drew this.<br />Deal with it.", "You drew this.<br />Confront the consequences.", "You drew this.<br />It is done.", "You drew this?<br />It's okay. It's going to be okay.", "You drew this.<br />But you still deserve love, probably.", "You drew this.<br />Thank you.", "You drew this.<br />Creation is its own gift.", "You drew this.<br />Ha ha ha ha ha.", "You drew this.<br />And I love you for it.", "You drew this.<br />Weird.", "You drew this.<br />I hope it works out for you.", "You drew this.<br />Have you ever considered that you might be the only person in the universe? And everything else...everyone, every thing, is just in your mind? Have you?", "You drew this.<br />And fun was had by all.", "You drew this.<br />It will not be fully appreciated until after you are dead.", "You drew this.<br />But, you probably know that already.", "You drew this.<br />You.", "You drew this.<br />Only history can judge you.", "You drew this.<br />Enjoy it.", "You drew this.<br />It is good."],
+    audienceMessages: ["te damos la bienvenida al público<br />¡es divertido!", "te damos la bienvenida al público<br />participarás en un momento", "te damos la bienvenida al público<br />la diversión vendrá en cualquier momento", "te damos la bienvenida al público<br />te hemos estado esperando", "te damos la bienvenida al público<br />no es tan divertido como tener el juego, pero es más divertido que sentarse solo sin hacer nada", "te damos la bienvenida al público<br />cuanto más, mejor", "te damos la bienvenida al público<br />uno de nosotros, uno de nosotros", "te damos la bienvenida al público<br />por favor no desenvuelvas ningún caramelo duro durante el espectáculo", "te damos la bienvenida al público<br />nos toca a nosotros aquí abajo", "te damos la bienvenida al público<br />te gusta mirar, ¿eh?", "te damos la bienvenida al público<br />este es uno de esos momentos lentos para el público, pero se recuperará", "te damos la bienvenida al público<br />por favor no organicen y formen una revuelta", "te damos la bienvenida al público<br />siéntete como en casa", "te damos la bienvenida al público<br />esperamos que te guste juzgar a la gente", "te damos la bienvenida al público<br />respira hondo, la acción comenzará pronto", "te damos la bienvenida al público<br />disfrútalo", "te damos la bienvenida al público<br />de todos en el público, eres nuestro favorito", "te damos la bienvenida al público<br />¡los sueños se hacen realidad!", "te damos la bienvenida al público<br />¡la segunda forma más divertida de jugar este juego!", "te damos la bienvenida al público<br />escribimos esta oración extra aquí solo para ti", "te damos la bienvenida al público<br />por favor encuentra tu asiento", "te damos la bienvenida al público<br />así queeeeee... ¿alguna novedad que contar?"],
+    authorMessages: ["este es tu dibujo.<br />tómate un momento para reflexionar", "este es tu dibujo.<br />¿quizás consulta a un doctor?", "este es tu dibujo.<br />esto es en lo que t ehas convertido", "este es tu dibujo.<br />este es tu diseño.", "este es tu dibujo.<br />¡no hay adónde ir sino hacia arriba!", "este es tu dibujo.<br />relájate.", "este es tu dibujo.<br />disfruta de este momento.", "este es tu dibujo.<br />es demasiado tarde para cambiarlo.", "este es tu dibujo.<br />no hay manera de culpar a alguien más.", "este es tu dibujo.<br />y tu vida ha cambiado para siempre.", "este es tu dibujo.<br />¿yey?", "este es tu dibujo.<br />sin comentarios.", "este es tu dibujo.<br />podría ser peor.", "este es tu dibujo.<br />es tu culpa.", "este es tu dibujo.<br />pues...seh...", "este es tu dibujo.<br />no te preocupes. se acabará pronto.", "este es tu dibujo.<br />siéntete tan bien con eso como puedas.", "este es tu dibujo.<br />es arte.", "este es tu dibujo.<br />¿gracias?", "este es tu dibujo.<br />¡choca esos cinco!", "este es tu dibujo.<br />quizás podrías tomarte una siesta rápida.", "este es tu dibujo.<br />no te preocupes con esto.", "este es tu dibujo.<br />esto también pasará.", "este es tu dibujo.<br />supéralo.", "este es tu dibujo.<br />confronta las consecuencias.", "este es tu dibujo.<br />está listo.", "¿este es tu dibujo?<br />está bien. todo estará bien", "este es tu dibujo.<br />pero aún mereces amor, probablemente.", "este es tu dibujo.<br />gracias.", "este es tu dibujo.<br />la creación es su propio regalo.", "este es tu dibujo.<br />ja ja ja ja ja.", "este es tu dibujo.<br />y por eso te amo.", "este es tu dibujo.<br />qué raro.", "este es tu dibujo.<br />espero que funcione para ti.", "este es tu dibujo.<br />¿alguna vez has considerado que podrías ser la única persona en el universo? y todo lo demás... todos, cada cosa, ¿está solo en tu mente? ¿lo has hecho?", "este es tu dibujo.<br />y todos se divirtieron.", "este es tu dibujo.<br />no se apreciará por completo hasta que mueras.", "este es tu dibujo.<br />pero, probablemente ya lo sepas.", "este es tu dibujo.<br />tuyo.", "este es tu dibujo.<br />solo la historia puede juzgarte.", "este es tu dibujo.<br />disfrútalo.", "este es tu dibujo.<br />es bueno."],
     events: {
         "click .drawful-lobby-menu-back": "lobbyMenuBack",
         "click #drawful-lobby-menu-ugc": "lobbyMenuUgc",
@@ -21527,7 +21527,7 @@ const Hx = VC.extend({
             return
         }
         if (j(".ugc-option").hide(), n === "RoomFull") {
-            kt.show(Error("The room is full"), {
+            kt.show(Error("La sala está llena"), {
                 willClose: () => {
                     window.location.reload(!0)
                 }
@@ -21535,7 +21535,7 @@ const Hx = VC.extend({
             return
         }
         if (n === "GameLocked") {
-            kt.show(Error("Game is in progress. Please wait for a new game to start."), {
+            kt.show(Error("La partida está en curso. Espera a que comience otra."), {
                 willClose: () => {
                     window.location.reload(!0)
                 }
@@ -21547,20 +21547,20 @@ const Hx = VC.extend({
                 this.onResize();
                 return
             }
-            this.startDrawingInterface(t.playerColors, "a picture of yourself!"), this.onResize(), this.joiningInterfaceIsUp = !0;
+            this.startDrawingInterface(t.playerColors, "¡un autorretrato!"), this.onResize(), this.joiningInterfaceIsUp = !0;
             return
         }
         if (this.joiningInterfaceIsUp = !1, i === "Lobby") {
             if (this.currentCanvas = void 0, this.formattedActiveContentId = e.formattedActiveContentId, this.hideLobbyButtons(), !t.isAllowedToStartGame) {
-                j("#drawful-lobby-text").html("Sit back and relax!"), this.showScreen(".state-lobby"), e.lobbyState && e.lobbyState === "PostGame" && this.showPostgameDrawings(e.artifact);
+                j("#drawful-lobby-text").html("¡Siéntate y relájate!"), this.showScreen(".state-lobby"), e.lobbyState && e.lobbyState === "PostGame" && this.showPostgameDrawings(e.artifact);
                 return
             }
             j(".menu-button").hide(); {
                 const c = e.lobbyState;
-                c === "WaitingForMore" ? j("#drawful-lobby-text").html("waiting for all players to join") : c === "CanStart" ? (j("#drawful-startgame").html("everybody's in"), j("#drawful-lobby-text").html("press this button when everybody has joined"), j("#drawful-startgame").removeClass("button-drawful-red"), j("#drawful-startgame").show()) : c === "Countdown" ? (j("#drawful-lobby-text").html("press this button to cancel game start"), j("#drawful-stopcountdown").show()) : c === "PostGame" && (j("#drawful-lobby-text").html("what do you want to do?"), j(".drawful-endbuttons").show(), this.showPostgameDrawings(e.artifact))
+                c === "WaitingForMore" ? j("#drawful-lobby-text").html("esperando a que todos los jugadores se unan") : c === "CanStart" ? (j("#drawful-startgame").html("estamos todos"), j("#drawful-lobby-text").html("pulsa este botón cuando todos se hayan unido"), j("#drawful-startgame").removeClass("button-drawful-red"), j("#drawful-startgame").show()) : c === "Countdown" ? (j("#drawful-lobby-text").html("pulsa este botón para cancelar el inicio de la partida"), j("#drawful-stopcountdown").show()) : c === "PostGame" && (j("#drawful-lobby-text").html("qué quieres hacer?"), j(".drawful-endbuttons").show(), this.showPostgameDrawings(e.artifact))
             }
             if (t.canDoUGC) {
-                if (j(".lobby-ugc-option").hide(), e.formattedActiveContentId ? (e.isLocal ? j("#lobby-ugc-choices-content-id").html("local content loaded") : j("#lobby-ugc-choices-content-id").html(`published content loaded<br><span class="lobby-episode-id capitalize">${e.formattedActiveContentId}</span>`), j("#lobby-ugc-choices").show(), !e.isLocal && t.canReport ? j("#lobby-ugc-report").show() : j("#lobby-ugc-report").hide(), !e.isLocal && t.canViewAuthor ? j("#lobby-ugc-view-author").show() : j("#lobby-ugc-view-author").hide()) : j("#lobby-ugc-enter").show(), t.history !== void 0) {
+                if (j(".lobby-ugc-option").hide(), e.formattedActiveContentId ? (e.isLocal ? j("#lobby-ugc-choices-content-id").html("contenido local cargado") : j("#lobby-ugc-choices-content-id").html(`contenido publicado cargado<br><span class="lobby-episode-id capitalize">${e.formattedActiveContentId}</span>`), j("#lobby-ugc-choices").show(), !e.isLocal && t.canReport ? j("#lobby-ugc-report").show() : j("#lobby-ugc-report").hide(), !e.isLocal && t.canViewAuthor ? j("#lobby-ugc-view-author").show() : j("#lobby-ugc-view-author").hide()) : j("#lobby-ugc-enter").show(), t.history !== void 0) {
                     j("#lobby-ugc-help").hide();
                     let c = "";
                     t.history.forEach(m => {
@@ -21580,14 +21580,14 @@ const Hx = VC.extend({
             }
             t.lastUGCResult && !t.lastUGCResult.success && t.lastUGCResult.error ? j("#lobby-ugc-error").html(`<span>${t.lastUGCResult.error}</span>`) : j("#lobby-ugc-error").html(""), this.showScreen(".state-lobby")
         } else if (i === "Gameplay_Logo" || i === "Logo") this.showLogo(t.showSkip);
-        else if (i === "Gameplay_Round") j(".round-text").html(`ROUND ${e.round}`), this.showScreen(".state-round");
+        else if (i === "Gameplay_Round") j(".round-text").html(`RONDA ${e.round}`), this.showScreen(".state-round");
         else if (i === "Gameplay_DrawingTime") n === "Gameplay_DrawingTime" ? t.receivedDrawing ? (j("#drawful-drawing-received").html(t.prompt), this.showScreen(".state-drawing-sent")) : this.startDrawingInterface(t.playerColors, t.prompt) : this.showLogo(!1);
         else if (i === "Gameplay_DrawingDone") this.showScreen(".state-drawing-done"), this.currentCanvas = void 0;
         else if (i === "Gameplay_EnterLie")
             if (n === "Gameplay_EnterLie") {
                 if (!this.activeScreen !== ".state-enterlie" && (t.canSkipRound ? (this.setSkipButtonState(!1), j("#drawful-enterlie-skip-round-container").show()) : j("#drawful-enterlie-skip-round-container").hide(), t.isAuthor ? (j("#drawful-lie-input").hide(), j("#drawful-enterlie-field").hide(), j("#drawful-submit-alert").hide(), j("#drawful-submitlie").hide(), j(".state-enterlie .author-text").html(this.authorMessages[Math.floor(Math.random() * this.authorMessages.length)])) : (j(".state-enterlie .author-text").html(""), j("#drawful-lie-input").val(""), j("#drawful-lie-input").show(), j("#drawful-enterlie-field").show(), j("#drawful-submitlie").show(), j("#drawful-submit-alert").hide())), t.showError) {
                     const c = j("#drawful-submit-alert");
-                    j("#drawful-submit-alert").html("you got too close to the real title, or entered something someone else already did!"), c.addClass("alert-info"), c.removeClass("alert-danger"), c.show()
+                    j("#drawful-submit-alert").html("¡estuviste muy cerca del título real o respondiste igual que otra persona!"), c.addClass("alert-info"), c.removeClass("alert-danger"), c.show()
                 }
                 this.enableLoadingButton("#drawful-submitlie", !0), this.showScreen(".state-enterlie")
             } else n === "Gameplay_LieReceived" ? this.showScreen(".state-liereceived") : this.showLogo(!1);
@@ -21596,7 +21596,7 @@ const Hx = VC.extend({
             const c = !!(e.choosingDone || t.chosen || t.isAuthor);
             if (this.lastLikesMode !== void 0 && this.lastLikesMode === c && this.activeScreen === ".state-audience-chose") return;
             if (c) {
-                t.isAuthor ? j("#chooselikes-choice").html("") : this.client.isRole("player") ? j("#chooselikes-choice").html(t.chosen ? `you chose: ${t.chosen.isCensored?"************":t.chosen.text}` : "you didn't make a choice") : j("#chooselikes-choice").html(""), j("#chooselikes-text").html(this.client.isRole("player") ? "award bonus likes" : "award a bonus like");
+                t.isAuthor ? j("#chooselikes-choice").html("") : this.client.isRole("player") ? j("#chooselikes-choice").html(t.chosen ? `elegiste: ${t.chosen.isCensored?"************":t.chosen.text}` : "no tomaste una decisión") : j("#chooselikes-choice").html(""), j("#chooselikes-text").html(this.client.isRole("player") ? "concede likes de bonificación" : "concede un like de bonificación");
                 let m = "";
                 for (o = 0; o < e.choices.length; o++) {
                     if (t.entry && e.choices[o].text === t.entry.text) continue;
@@ -21607,7 +21607,7 @@ const Hx = VC.extend({
                 }
                 j("#drawful-chooselikes").html(m), this.showScreen(".state-chooselikes")
             } else {
-                j("#chooselie-text").html("What's the real title?");
+                j("#chooselie-text").html("¿cuál es el título real?");
                 let m = "";
                 for (o = 0; o < e.choices.length; o++) t.entry && e.choices[o].text === t.entry.text || (e.choices[o].isCensored ? m += '<tr><td class="drawful-list-black">************</td></tr>' : (m += "<tr>", m += `<td data-choice="${Rt.htmlEscape(e.choices[o].text)}" class="drawful-list-fill drawful-lie-button drawful-list-button">${Rt.safeText(e.choices[o].text)}</td>`, t.canCensor && (m += `<td class="drawful-list-black"><div data-censor="${Rt.htmlEscape(e.choices[o].text)}" class="drawful-censor-button"></div></td>`), m += "</tr>"));
                 j("#drawful-chooselie").html(m), this.showScreen(".state-chooselie")
@@ -21658,7 +21658,7 @@ const Hx = VC.extend({
             startGame: !0
         }), n.removeClass("button-drawful-red")) : e.allPlayersHavePortraits ? (this.client.send("SendMessageToRoomOwner", {
             startGame: !0
-        }), n.removeClass("button-drawful-red")) : (n.html("Are you sure?"), n.addClass("button-drawful-red"), t.stopPropagation()), !1
+        }), n.removeClass("button-drawful-red")) : (n.html("¿estás seguro?"), n.addClass("button-drawful-red"), t.stopPropagation()), !1
     },
     stopCountdown() {
         return this.client.send("SendMessageToRoomOwner", {
@@ -21701,7 +21701,7 @@ const Hx = VC.extend({
         !this.currentCanvas || (this.currentCanvas.color = j(t.currentTarget).data("color"), j(".button-color").removeClass("selected"), j(t.currentTarget).addClass("selected"), j("#player").css("background-color", this.currentCanvas.color), j("#drawful-instructions").css("color", this.currentCanvas.color), j("#chooselikes-choice").css("color", this.currentCanvas.color))
     },
     submitDrawing() {
-        if (this.currentCanvas.isClean) return alert("You have to draw something!"), !1;
+        if (this.currentCanvas.isClean) return alert("¡Tienes que dibujar algo!"), !1;
         this.enableLoadingButton("#drawful-submitdrawing", !1);
         const t = this.joiningInterfaceIsUp ? {
             setPlayerPicture: !0,
@@ -21712,7 +21712,7 @@ const Hx = VC.extend({
         return this.client.send("SendMessageToRoomOwner", t), !1
     },
     setSkipButtonState(t) {
-        t ? (j(".drawful-skip-round-button").addClass("button-drawful-red"), j(".drawful-skip-round-button").html("are you sure?")) : (j(".drawful-skip-round-button").removeClass("button-drawful-red"), j(".drawful-skip-round-button").html("skip (this is offensive)"))
+        t ? (j(".drawful-skip-round-button").addClass("button-drawful-red"), j(".drawful-skip-round-button").html("¿estás seguro?")) : (j(".drawful-skip-round-button").removeClass("button-drawful-red"), j(".drawful-skip-round-button").html("omitir (es ofensivo)"))
     },
     submitSkipRound(t) {
         j(t.target).hasClass("button-drawful-red") ? this.client.send("SendMessageToRoomOwner", {
@@ -21723,7 +21723,7 @@ const Hx = VC.extend({
         let t = this.sanitize(j("#drawful-lie-input").val()).toLowerCase();
         if (t = t.replace(/\s\s+/g, " ").trim(), t.length === 0) {
             const e = j("#drawful-submit-alert");
-            return j("#drawful-submit-alert").html("you can't enter nothing!"), e.removeClass("alert-info"), e.addClass("alert-danger"), e.show(), !1
+            return j("#drawful-submit-alert").html("¡no puedes dejarlo en blanco!"), e.removeClass("alert-info"), e.addClass("alert-danger"), e.show(), !1
         }
         return this.enableLoadingButton("#drawful-submitlie", !1), this.client.send("SendMessageToRoomOwner", {
             lieEntered: t,

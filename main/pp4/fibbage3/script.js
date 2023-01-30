@@ -13163,7 +13163,7 @@ const vC = `<form>\r
         <div class="inputGroup">\r
             <textarea id="input-text-textarea" rows="1" class="form-control jbg-input" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"></textarea>\r
             <span class="inlineSubmit">\r
-                <button type="submit" class="btn btn-default inlineSubmitButton" type="button"><span class="inlineSubmitText">Send</span></button>\r
+                <button type="submit" class="btn btn-default inlineSubmitButton" type="button"><span class="inlineSubmitText">Enviar</span></button>\r
             </span>\r
             <span id="helpBlock2" class="help-block errorText"></span>\r
             <div class="charCountDisplay"><span class="charRemaining">70</span></div>\r
@@ -13241,7 +13241,7 @@ const vC = `<form>\r
             ".inlineSubmitText": {
                 observe: "inlineSubmitText",
                 onGet(t) {
-                    return t !== void 0 ? t : "Send"
+                    return t !== void 0 ? t : "Enviar"
                 }
             },
             ".form-group": {
@@ -13879,7 +13879,7 @@ var th = {
                 denyButtonText: "No",
                 denyButtonAriaLabel: "",
                 denyButtonColor: void 0,
-                cancelButtonText: "Cancel",
+                cancelButtonText: "Cancelar",
                 cancelButtonAriaLabel: "",
                 cancelButtonColor: void 0,
                 buttonsStyling: !0,
@@ -15501,16 +15501,16 @@ const kC = `<div class="canvasContainer">\r
                     this.currentStream = i, this.video.srcObject = i, await this.video.play(), this.gotDevices(a)
                 } catch (i) {
                     console.error(i), bt.show("alert", {
-                        titleText: "Unable to Access Camera",
-                        text: `Looks like we don't have access to your device's camera. You can refresh and try again, or choose the ${t} option instead.`,
+                        titleText: "No se pudo acceder a la cámara",
+                        text: `Parece que no tenemos acceso a la cámara de tu dispositivo. Puedes refrescar y volver a intentarlo, o elegir la opción de ${t} en su lugar.`,
                         willClose: () => {
                             this.cameraAccessDenied()
                         }
                     })
                 }
             } else bt.show("alert", {
-                titleText: "No Camera Access",
-                text: `It looks like camera access isn't available from this browser. Try the ${t} option instead.`,
+                titleText: "No hay acceso a la cámara",
+                text: `Parece que el acceso a la cámara no está disponible desde este navegador. Prueba la opción de ${t} en su lugar.`,
                 willClose: () => {
                     this.cameraAccessDenied()
                 }
@@ -15663,8 +15663,8 @@ const kC = `<div class="canvasContainer">\r
                     <path d="M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
                 </svg>
             `,
-                cancelButton: "Cancel",
-                confirmButton: "Confirm"
+                cancelButton: "Cancelar",
+                confirmButton: "Confirmar"
             }
         }
     }),
@@ -16285,9 +16285,9 @@ const VC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
         <div id="buttons" class="buttons"></div>\r
         <div id="post-sketchpad" class="post-sketchpad">\r
             <div id="submit">\r
-                <button id='submitdrawing' class="button submitDrawing">Submit</button><br/>\r
+                <button id='submitdrawing' class="button submitDrawing">Enviar</button><br/>\r
             </div>\r
-            <button id='censorOptions' class='button'>Censor Options</button>\r
+            <button id='censorOptions' class='button'>Opciones de censura</button>\r
             <div class="footer"></div>\r
         </div>\r
         </div>\r
@@ -16321,9 +16321,9 @@ const VC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             disabled: !1,
             debug: !1,
             strings: {
-                drawing_empty: "You must draw something!",
-                submit: "submit",
-                ERROR_REJECTED_OBJECT: "That's not allowed, enter something else!"
+                drawing_empty: "¡Tienes que dibujar algo!",
+                submit: "enviar",
+                ERROR_REJECTED_OBJECT: "Eso no está permitido, ¡ingresa otra cosa!"
             }
         }
     }),
@@ -16365,7 +16365,7 @@ const VC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
                 visible: !0,
                 updateView: !0,
                 onGet(t) {
-                    return t[0] || t[1] ? !1 : t[2] === void 0 ? "" : t[2].submit || "Submit"
+                    return t[0] || t[1] ? !1 : t[2] === void 0 ? "" : t[2].submit || "Enviar"
                 }
             }
         },
@@ -16525,7 +16525,7 @@ const VC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
         defaults: {
             state: "EnterSingleText",
             actions: [{
-                text: "submit",
+                text: "enviar",
                 action: "submit"
             }],
             allowEmpty: !1,
@@ -16542,11 +16542,11 @@ const VC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             autocapitalize: !1,
             className: "",
             inlineSubmit: !1,
-            inlineSubmitText: "Submit",
+            inlineSubmitText: "Enviar",
             error: "",
             strings: {
-                ERROR_NOTHING_ENTERED: "You need to enter something!",
-                ERROR_REJECTED_TEXT: "That's not allowed, enter something else! (You can change the level of filtering in the game's settings menu)"
+                ERROR_NOTHING_ENTERED: "¡Tienes que ingresar algo!",
+                ERROR_REJECTED_TEXT: "¡Eso no está permitido, ingresa otra cosa! (Puedes cambiar el nivel del filtro en el menú de ajustes del juego)"
             }
         }
     }),
@@ -16616,7 +16616,7 @@ const VC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             }), this.inputComponent = this.inputComponent || new us({
                 model: new Ze.Model({})
             }), this.buttonsCollection = this.buttonsCollection || new Ze.Collection([{
-                text: "submit"
+                text: "enviar"
             }]), this.buttonsComponent = this.buttonsComponent || new fi({
                 block: !0,
                 collection: this.buttonsCollection
@@ -16629,7 +16629,7 @@ const VC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             })), this.promptComponent.model.clear({
                 silent: !0
             }).set(this.model.get("prompt")), this.inputComponent.model.set(this.model.attributes), this.buttonsComponent.options.block = this.model.get("block"), this.buttonsCollection.set(this.model.get("actions") || [{
-                text: "submit",
+                text: "enviar",
                 action: "submit"
             }]), this.model.get("entryId") && this.model.get("entryId") !== this.currentEntry && (this.inputComponent.clearInput(), this.currentEntry = this.model.get("entryId")), this.$el.find(".enterSingleTextFieldset").prop("disabled", !1), this.$el.find("textarea").focus(), this.stickit(), this.model.get("autoSubmit") && this.shouldSubmit && this.onChildviewInputSubmit()
         },
@@ -16772,7 +16772,7 @@ xt.View.extend({
     },
     showTwitchBroadcasterDialog(t) {
         let e = `<div class='icon-${this.client.roles.broadcaster.platform}'>${this.client.roles.broadcaster.name}</div>`;
-        e += "<div class='success'>You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.</div>", this.lacksAudience ? e += "<div class='warning'>THIS GAME DOESN'T HAVE AN AUDIENCE FEATURE</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), bt.show("custom", {
+        e += "<div class='success'>Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.</div>", this.lacksAudience ? e += "<div class='warning'>ESTE JUEGO NO TIENE FUNCIÓN DE PÚBLICO</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA</div>"), bt.show("custom", {
             html: e,
             position: "bottom",
             timer: t,
@@ -16811,8 +16811,8 @@ xt.View.extend({
     },
     onRoomWasDestroyed() {
         en.remove("roomCode"), en.remove("reconnect"), bt.show("error", {
-            titleText: "Disconnected",
-            text: "Thanks for playing!",
+            titleText: "Desconectado",
+            text: "¡Gracias por jugar!",
             willClose: () => {
                 window.location.reload(!0)
             }
@@ -16820,8 +16820,8 @@ xt.View.extend({
     },
     onDisconnected() {
         bt.show("error", {
-            titleText: "Disconnected",
-            text: "You have been disconnected.",
+            titleText: "Desconectado",
+            text: "Has sido desconectado.",
             willClose: () => {
                 window.location.reload(!0)
             }
@@ -16856,7 +16856,7 @@ const UC = `<div id="controller" class="state-controller controller-content">
         <div id="characters" class="charactersContainer"></div>
     </div>
     <div id="artifactId" class="artifactContainer text">
-        <a id="artifactLink" aria-label="Visit the Gallery" class="artifactLink" target="_blank">
+        <a id="artifactLink" aria-label="Visita la galería" class="artifactLink" target="_blank">
             <button id="artifactButton" class="artifactButton"></button>
         </a>
     </div>
@@ -16890,28 +16890,28 @@ const UC = `<div id="controller" class="state-controller controller-content">
             formattedActiveContentId: null,
             isLocal: !1,
             strings: {
-                wait: "Sit back and relax!",
-                vip_waiting: "Waiting for all players to join",
-                vip_canStart: "Press this button when everybody has joined",
-                vip_cancel: "Press this button to cancel game start",
-                vip_postgame: "What would you like to do now?",
-                vip_episodes_menu: "Episodes Menu",
-                vip_episodes_unload: "Unload Episode",
-                vip_episodes_report: "Report Episode",
-                vip_episodes_warning: "Warning: user generated content is not rated",
-                vip_episodes_load: "Load an episode by id:",
-                vip_episodes_select: "Or select an episode:",
-                vip_episodes_back: "Back",
-                vip_episodes_submit: "SUBMIT",
-                vip_episodes_view_author: "View Author",
-                button_start: "Everybody's In",
-                button_cancel: "Cancel",
-                button_changename: "Change Name",
-                button_sameplayers: "Same Players",
-                button_newplayers: "New Players",
-                prompt_entername: "Enter your name",
-                prompt_choosecharacter: "Select your character",
-                button_censorOptions: "Censor Options",
+                wait: "¡Siéntate y relájate!",
+                vip_waiting: "Esperando a que todos los jugadores se unan",
+                vip_canStart: "Pulsa este botón cuando todos se hayan unido",
+                vip_cancel: "Pulsa este botón para cancelar el inicio de la partida",
+                vip_postgame: "¿Qué quieres hacer ahora?",
+                vip_episodes_menu: "Menú de episodios",
+                vip_episodes_unload: "Retirar episodio",
+                vip_episodes_report: "Reportar episodio",
+                vip_episodes_warning: "Aviso: El contenido de los usuarios no tiene clasificación de edad",
+                vip_episodes_load: "Cargar un episodio por id:",
+                vip_episodes_select: "O selecciona un episodio:",
+                vip_episodes_back: "Atrás",
+                vip_episodes_submit: "ENVIAR",
+                vip_episodes_view_author: "Ver autor",
+                button_start: "Estamos todos",
+                button_cancel: "Cancelar",
+                button_changename: "Cambiar el nombre",
+                button_sameplayers: "Mismos jugadores",
+                button_newplayers: "Nuevos jugadores",
+                prompt_entername: "Ingresa tu nombre",
+                prompt_choosecharacter: "Selecciona tu personaje",
+                button_censorOptions: "Opciones de censura",
                 censor_prompt: ""
             }
         }
@@ -17136,7 +17136,7 @@ const UC = `<div id="controller" class="state-controller controller-content">
                             inputAttributes: {
                                 maxlength: 12
                             },
-                            inputValidator: f => f ? f.length > 12 ? "Limit 12 characters" : null : "You need to write something!"
+                            inputValidator: f => f ? f.length > 12 ? "Límite de 12 caracteres" : null : "¡Tienes que escribir algo!"
                         });
                         if (a.dismiss) return;
                         this.triggerMethod("client:message", {
@@ -17260,7 +17260,7 @@ const UC = `<div id="controller" class="state-controller controller-content">
 <div id="message" class="message"><h2 class="messageText"></h2></div>
 <div id="action" class="action"></div>
 <div id="artifactId" class="artifactContainer text">
-    <a id="artifactLink" aria-label="Visit the Gallery" class="artifactLink" target="_blank">
+    <a id="artifactLink" aria-label="Visita la galería" class="artifactLink" target="_blank">
         <button id="artifactButton" class="artifactButton"></button>
     </a>
 </div>
@@ -17348,10 +17348,10 @@ const UC = `<div id="controller" class="state-controller controller-content">
             LANGUAGE_NAME: "English",
             SUPPORTED_LANGUAGES: ["English", "Fran\xE7ais", "Italiano", "Deutsch", "Espa\xF1ol"],
             SUPPORTED_LOCALES: ["en", "fr", "it", "de", "es"],
-            LANGUAGE: "Language",
-            LOGIN: "Login",
-            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Disconnected",
-            STRING_ERROR_SERVER_ROOM_DESTROYED: "Thanks for playing!"
+            LANGUAGE: "Idioma",
+            LOGIN: "Iniciar sesi\xF3n",
+            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Desconectado",
+            STRING_ERROR_SERVER_ROOM_DESTROYED: "¡Gracias por jugar!"
         },
         fr: {
             LANGUAGE_NAME: "Fran\xE7ais",
@@ -17471,10 +17471,10 @@ const UC = `<div id="controller" class="state-controller controller-content">
             announcePrompt: !1,
             countGroupName: null,
             strings: {
-                your_choice: "Thank you. Your choice: ",
-                censor_prompt: "Censor this?",
-                censor_confirm: "Yes, Censor!",
-                censor_cancel: "No!"
+                your_choice: "Gracias. Tu elección: ",
+                censor_prompt: "¿Censurar esto?",
+                censor_confirm: "¡Sí, censurarlo!",
+                censor_cancel: "¡No!"
             }
         }
     }),
@@ -17560,7 +17560,7 @@ const UC = `<div id="controller" class="state-controller controller-content">
             this.promptComponent.model.clear({
                 silent: !0
             }).set(this.model.get("prompt")), this.choicesList.options.block = this.model.get("block"), this.choicesList.collection.set(this.model.get("choices")), this.model.get("type") === "multiple" && at.all(this.model.get("choices"), t => !t.disabled) && this.choicesList.collection.push({
-                text: "Submit",
+                text: "Enviar",
                 action: "submit",
                 block: !1
             }), this.model.get("isAudience") && ((this.model.get("choiceId") === void 0 || this.model.get("choiceId") !== this.getOption("choiceId")) && (this.selected = [], this.audienceChoice = void 0, this.votesLeft = void 0), this.selected.length > 0 && (this.model.get("type") === "multiple" ? this.choicesList.children.forEach(t => {
@@ -17613,7 +17613,7 @@ const UC = `<div id="controller" class="state-controller controller-content">
             })), !1
         },
         displayAudienceChoice(t) {
-            let e = "Thank you.";
+            let e = "Gracias.";
             const n = t.map(a => {
                 const f = this.choicesList.children.find(v => v.model.get("index") === a);
                 return f ? f.model.get("html") || f.model.get("text") : ""
@@ -19082,10 +19082,10 @@ const Sx = `<div id="controller" class="state-controller controller-content">\r
             doneText: {},
             announcePrompt: !1,
             strings: {
-                your_choice: "Thank you. Your choice: ",
-                censor_prompt: "Censor this?",
-                censor_confirm: "Yes, Censor!",
-                censor_cancel: "No!"
+                your_choice: "Gracias. Tu elección: ",
+                censor_prompt: "¿Censurar esto?",
+                censor_confirm: "¡Sí, censurarlo!",
+                censor_cancel: "¡No!"
             }
         }
     }),
@@ -19120,7 +19120,7 @@ const Sx = `<div id="controller" class="state-controller controller-content">\r
         className: "SorterView",
         template: at.template(`
         <div id="rankedChoicesRegion"></div>
-        <div class="instructions">Choose where this item ranks:</div>
+        <div class="instructions">Elige dónde se posiciona este artículo:</div>
         <div id="unrankedChoicesRegion"></div>
         <div id="lockInRegion"></div>
     `),
@@ -19166,7 +19166,7 @@ const Sx = `<div id="controller" class="state-controller controller-content">\r
                 block: !1,
                 model: new Ze.Model({
                     action: "lock",
-                    html: "Lock In"
+                    html: "Bloquear"
                 })
             }), this.listenTo(this.model, "change:choices", this.update, this)
         },
@@ -19324,28 +19324,28 @@ const Sx = `<div id="controller" class="state-controller controller-content">\r
             text: "",
             validActions: [],
             strings: {
-                tos_warning: "By sharing content, you agree to our Terms of service",
-                tos_warning_agree: "agree and share",
-                tos_warning_back: "back to menu",
-                create_new_episode: "create a new episode",
-                create_new_name_prompt: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-                create_new_button: "create",
-                button_back_to_episodes: "back to episodes",
-                button_back_to_menu: "back to menu",
-                previous_episodes: "previous episodes:",
-                toggle_prompts_prompt: "tap to show/hide prompts",
-                button_close: "close",
-                button_done: "done",
-                button_add: "add prompt",
-                input_placeholder: "enter a prompt",
-                label_hidden: "hidden",
-                button_edit: "edit",
-                button_save: "save",
-                button_publish: "publish",
-                button_play: "play",
-                button_delete: "delete",
-                delete_warning: "Are you sure you want to delete this episode?",
-                delete_warning_confirm: "Yes",
+                tos_warning: "Al compartir contenido, aceptas nuestros Términos de servicio",
+                tos_warning_agree: "aceptar y compartir",
+                tos_warning_back: "volver al menú",
+                create_new_episode: "crear un nuevo episodio",
+                create_new_name_prompt: "primero lo primero, ingresa un nombre para el episodio que contendrá todos tus enunciados y pulsa crear.",
+                create_new_button: "crear",
+                button_back_to_episodes: "volver a los episodios",
+                button_back_to_menu: "volver al menú",
+                previous_episodes: "episodios anteriores:",
+                toggle_prompts_prompt: "toca para mostrar/ocultar los enunciados",
+                button_close: "cerrar",
+                button_done: "listo",
+                button_add: "añadir enunciado",
+                input_placeholder: "ingresa un enunciado",
+                label_hidden: "oculto",
+                button_edit: "editar",
+                button_save: "guardar",
+                button_publish: "publicar",
+                button_play: "jugar",
+                button_delete: "borrar",
+                delete_warning: "¿Seguro que quieres eliminar este episodio?",
+                delete_warning_confirm: "Sí",
                 delete_warning_cancel: "No"
             }
         }
@@ -20422,8 +20422,8 @@ const $x = xt.View.extend({
             </div>`;
         e += `
             <div class='success'>
-                You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.
-            </div>`, this.lacksAudience ? e += "<div class='warning'>THIS GAME DOESN'T HAVE AN AUDIENCE FEATURE</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), bt.show("custom", {
+                Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.
+            </div>`, this.lacksAudience ? e += "<div class='warning'>ESTE JUEGO NO TIENE FUNCIÓN DE PÚBLICO</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA</div>"), bt.show("custom", {
             html: e,
             position: "bottom",
             timer: t,
@@ -21022,16 +21022,16 @@ const Gx = xt.View.extend({
             })
         })
     },
-    Hx = `<div>Are you sure you want to censor the answer <span class="censorMenuTitle">title</span></div>
+    Hx = `<div>¿Seguro que quieres censurar la respuesta <span class="censorMenuTitle">title</span></div>
 <div class="btn-toolbar choices">
     <div class="button-group btn-group btn-block">
-        <button type="button" style="" class="button btn btn-lg censorRound">CENSOR THIS ENTRY</button>
+        <button type="button" style="" class="button btn btn-lg censorRound">CENSURAR ESTA ENTRADA</button>
     </div>
     <div class="button-group btn-group btn-block">
-        <button type="button" style="" class="button btn btn-lg censorGame">CENSOR THIS PLAYER</button>
+        <button type="button" style="" class="button btn btn-lg censorGame">CENSURAR ESTE JUGADOR</button>
     </div>
     <div class="button-group btn-group btn-block">
-        <button type="button" style="" class="button btn btn-lg cancel">CANCEL</button>
+        <button type="button" style="" class="button btn btn-lg cancel">CANCELAR</button>
     </div>
 </div>`,
     qx = xt.View.extend({
@@ -21107,7 +21107,7 @@ const Gx = xt.View.extend({
                 vote: this.model.get("choices")[n].text
             }), this.model.setUpdate({
                 prompt: {
-                    text: `Thank you. Your choice: ${this.model.get("choices")[n].text}`,
+                    text: `Gracias. Tu elección: ${this.model.get("choices")[n].text}`,
                     html: null
                 },
                 choices: []
@@ -21155,17 +21155,17 @@ const Gx = xt.View.extend({
             </div>
             <span class="inlineSubmit">
                 <div class="col-xs-6">
-                    <button type="button" class="btn btn-block lieForMe" type="button">Lie For Me</button>
+                    <button type="button" class="btn btn-block lieForMe" type="button">Miente por mí</button>
                 </div>
                 <div class="col-xs-6">
-                    <button type="submit" class="btn btn-block submitButton" type="button">Send</button>
+                    <button type="submit" class="btn btn-block submitButton" type="button">Enviar</button>
                 </div>
             </span>
         </div>
     </div>
 </div>
 <div class="entryDone">
-    Thank you! Your entry: <span class="entryText">entryText</span>
+    ¡Gracias! Tu entrada: <span class="entryText">entryText</span>
 </div>
 </form>`,
     Jx = us.extend({
@@ -21283,7 +21283,7 @@ const Gx = xt.View.extend({
             this.shouldSubmit && this.onChildviewInputSubmit()
         },
         update() {
-            rs.prototype.update.apply(this), this.model.get("requireLie") === !0 && this.inputComponent.model.set("answerDelim", "Write one LIE about yourself."), this.inputComponent.model.set("doubleInput", this.model.get("requireLie") || this.model.get("doubleInput")), this.inputComponent.model.set("canUseSuggestions", this.model.get("canUseSuggestions")), this.inputComponent.model.set("usedSuggestion", this.model.get("usedSuggestion")), this.inputComponent.model.set("question", this.model.get("question")), this.model.get("entry") && this.model.get("entry").length > 0 ? this.buttonsCollection.reset() : this.model.get("suggestions") && this.buttonsCollection.set(this.model.get("suggestions").map(t => ({
+            rs.prototype.update.apply(this), this.model.get("requireLie") === !0 && this.inputComponent.model.set("answerDelim", "Escribe una MENTIRA sobre ti."), this.inputComponent.model.set("doubleInput", this.model.get("requireLie") || this.model.get("doubleInput")), this.inputComponent.model.set("canUseSuggestions", this.model.get("canUseSuggestions")), this.inputComponent.model.set("usedSuggestion", this.model.get("usedSuggestion")), this.inputComponent.model.set("question", this.model.get("question")), this.model.get("entry") && this.model.get("entry").length > 0 ? this.buttonsCollection.reset() : this.model.get("suggestions") && this.buttonsCollection.set(this.model.get("suggestions").map(t => ({
                 block: !0,
                 text: t
             })))
@@ -21302,8 +21302,8 @@ const Gx = xt.View.extend({
             let t = this.inputComponent.getValue();
             const e = {};
             if (this.inputComponent.model.set("error", ""), typeof t == "object") {
-                if (t[0] = t[0].replace(/\s\s+/g, " ").trim(), t[1] = t[1].replace(/\s\s+/g, " ").trim(), e.inputs = t, t[0] === "" || t[1] === "") return this.inputComponent.model.set("error", "You must write two things."), !1
-            } else if (t = t.replace(/\s\s+/g, " ").trim(), e.entry = t, e.entry.length === 0) return this.inputComponent.model.set("error", "You must write something."), !1;
+                if (t[0] = t[0].replace(/\s\s+/g, " ").trim(), t[1] = t[1].replace(/\s\s+/g, " ").trim(), e.inputs = t, t[0] === "" || t[1] === "") return this.inputComponent.model.set("error", "Debes escribir dos cosas."), !1
+            } else if (t = t.replace(/\s\s+/g, " ").trim(), e.entry = t, e.entry.length === 0) return this.inputComponent.model.set("error", "Debes escribir algo."), !1;
             return this.triggerMethod("client:message", e), !1
         }
     }),
@@ -21320,7 +21320,7 @@ const Gx = xt.View.extend({
             }
         }),
         update() {
-            Ys.prototype.update.apply(this, []), !this.model.get("playerCanStartGame") && this.model.get("type") === "TMI" && this.titleComponent.model.set("text", "TIP: This game is better when you use your real name!")
+            Ys.prototype.update.apply(this, []), !this.model.get("playerCanStartGame") && this.model.get("type") === "TMI" && this.titleComponent.model.set("text", "CONSEJO: ¡Este juego es mejor cuando usas tu nombre real!")
         }
     }),
     eE = hs.extend({
@@ -21328,8 +21328,8 @@ const Gx = xt.View.extend({
             "#playername": {
                 observe: "customerBlob",
                 onGet(t) {
-                    let e = "audience";
-                    return t ? (t.displayName ? e = t.displayName : t.name && (e = t.name), e.toUpperCase()) : "audience"
+                    let e = "público";
+                    return t ? (t.displayName ? e = t.displayName : t.name && (e = t.name), e.toUpperCase()) : "público"
                 }
             },
             "#playericon": {
@@ -21374,7 +21374,7 @@ const tE = $x.extend({
         return t.playerInfo = {
             username: t.displayName || t.playerName,
             avatar: t.playerAvatar
-        }, t.state === "EndShortie" && (t.state = "Logo"), t.state === "Lobby" && (this.client.isRole("player") || (t.state = "Logo"), t.playerInfo = t.playerInfo || {}, t.playerInfo.username = t.displayName || t.playerName || "audience", t.playerInfo.username = t.playerInfo.username.toUpperCase(), t.playerIsVIP = t.isAllowedToStartGame, t.playerCanStartGame = t.isAllowedToStartGame, t.playerCanCensor = t.canCensor, t.gameCanStart = ["CanStart", "Countdown", "PostGame"].indexOf(t.lobbyState) !== -1, t.gameIsStarting = t.lobbyState === "Countdown", t.gameFinished = t.lobbyState === "PostGame", t.type === "TMI" && this.client.isRole("player") && !t.artifact && (t.canChangeName = !0)), t.state === "Logo" && (t.classes = [t.type], t.actions = []), ["EnterText", "EnterTruth"].indexOf(t.state) !== -1 && (t.prompt = {
+        }, t.state === "EndShortie" && (t.state = "Logo"), t.state === "Lobby" && (this.client.isRole("player") || (t.state = "Logo"), t.playerInfo = t.playerInfo || {}, t.playerInfo.username = t.displayName || t.playerName || "público", t.playerInfo.username = t.playerInfo.username.toUpperCase(), t.playerIsVIP = t.isAllowedToStartGame, t.playerCanStartGame = t.isAllowedToStartGame, t.playerCanCensor = t.canCensor, t.gameCanStart = ["CanStart", "Countdown", "PostGame"].indexOf(t.lobbyState) !== -1, t.gameIsStarting = t.lobbyState === "Countdown", t.gameFinished = t.lobbyState === "PostGame", t.type === "TMI" && this.client.isRole("player") && !t.artifact && (t.canChangeName = !0)), t.state === "Logo" && (t.classes = [t.type], t.actions = []), ["EnterText", "EnterTruth"].indexOf(t.state) !== -1 && (t.prompt = {
             html: t.question
         }, this.client.isRole("audience") && (t.state = "ChooseLie", t.choices = t.suggestions.map(e => ({
             key: e,
@@ -21398,9 +21398,9 @@ const tE = $x.extend({
                 className: S
             }
         })), t.state === "CategorySelection" && (t.state = "MakeSingleChoice", t.classes = ["CategorySelection"], t.prompt = t.isChoosing ? {
-            text: "Pick a Category"
+            text: "Elige una categoría"
         } : {
-            text: `${t.choosingPlayerName} is picking a category`
+            text: `${t.choosingPlayerName} está eligiendo una categoría`
         }, t.choices = t.choices && t.isChoosing ? t.choices.map((e, n) => ({
             text: e,
             order: n,

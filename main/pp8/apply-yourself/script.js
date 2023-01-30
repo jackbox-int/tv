@@ -11879,23 +11879,23 @@ ${n.message}`,
         }
     }
     const e5 = {
-            BACK: "Back",
-            CANCEL: "Cancel",
-            CLOSE: "Close",
-            CREATE: "Create",
-            DELETE: "Delete",
-            DONE: "Done",
-            EDIT: "Edit",
+            BACK: "Atrás",
+            CANCEL: "Cancelar",
+            CLOSE: "Cerrar",
+            CREATE: "Crear",
+            DELETE: "Borrar",
+            DONE: "Hecho",
+            EDIT: "Editar",
             OK: "OK",
             NO: "No",
-            PLAY: "Play",
-            PUBLISH: "Publish",
-            REMOVE: "Remove",
-            RESET: "Reset",
-            SUBMIT: "Submit",
-            TRY_AGAIN: "Try Again",
-            UNDO: "Undo",
-            YES: "Yes"
+            PLAY: "Jugar",
+            PUBLISH: "Publicar",
+            REMOVE: "Remover",
+            RESET: "Reiniciar",
+            SUBMIT: "Enviar",
+            TRY_AGAIN: "Intentarlo de nuevo",
+            UNDO: "Deshacer",
+            YES: "Sí"
         },
         t5 = {
             UGC: {
@@ -11906,42 +11906,42 @@ ${n.message}`,
             }
         },
         n5 = {
-            DISCONNECTED: "You have been disconnected.",
-            DRAWING_NOTHING: "You have to draw something!",
-            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-            ROOM_DESTROYED: "Thanks for playing!",
-            ROOM_DISCONNECTED: "Disconnected",
-            TEXT_NAUGHTY: "I\u2019m afraid you can\u2019t write that. Please be respectful of other players.",
-            TEXT_NOTHING: "You can\u2019t enter nothing!",
+            DISCONNECTED: "Has sido desconectado.",
+            DRAWING_NOTHING: "¡Tienes que dibujar algo!",
+            PLAYER_KICKED: "Has sido echado de la partida por un moderador.",
+            ROOM_DESTROYED: "¡Gracias por jugar!",
+            ROOM_DISCONNECTED: "Desconectado",
+            TEXT_NAUGHTY: "Me temo que no puedes escribir eso. Por favor sé respetuoso con otros jugadores.",
+            TEXT_NOTHING: "¡No puedes dejarlo en blanco!",
             TITLE: "Error"
         },
         r5 = "LOADING",
         i5 = {
-            JOINED_COUNT: "x | {count} of {maxPlayers} players joined | {count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "x | {count} player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
+            JOINED_COUNT: "x | Se han unido {count} de {maxPlayers} jugadores | Se han unido {count} de {maxPlayers} jugadores",
+            PLAYERS_NEEDED: "x | Se necesita {count} jugador para empezar | Se necesitan {count} jugadores para empezar",
+            WAITING_FOR_VIP: "Esperando a que {name} empiece la partida",
+            WAITING_FOR_GAMEPAD: "Esperando a que empiece la partida",
+            GAME_STARTING: "La partida está empezando",
+            BUTTON_START: "Pulsa para empezar",
+            BUTTON_CANCEL: "Pulsa para cancelar"
         },
         s5 = {
-            GALLERY_LINK: "Visit the Gallery",
-            PLAY_AGAIN: "Play again?",
-            BUTTON_SAME_PLAYERS: "Same Players",
-            BUTTON_NEW_PLAYERS: "New Players"
+            GALLERY_LINK: "Visita la galería",
+            PLAY_AGAIN: "¿Jugar otra vez?",
+            BUTTON_SAME_PLAYERS: "Mismos jugadores",
+            BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
         a5 = {
-            AND: "AND",
-            OR: "OR"
+            AND: "Y",
+            OR: "O"
         },
         o5 = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let\u2019s Go!"
+            BUTTON_SKIP: "Omitir",
+            BUTTON_NEXT: "Siguiente",
+            BUTTON_DONE: "¡Vamos!"
         },
         l5 = {
-            NAME: "AUDIENCE"
+            NAME: "PÚBLICO"
         },
         c5 = {
             EPISODE_REPORT: "Report Episode",
@@ -11975,21 +11975,21 @@ ${n.message}`,
         },
         u5 = {
             BROADCASTER: {
-                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-                WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
+                SUBTEXT: "Has conectado correctamente tu cuenta a la Extensión de Twitch del Kit de Público de Jackbox.",
+                WARNING: "ESTA SALA NO TIENE LA OPCIÓN DE PÚBLICO HABILITADA"
             },
             RECONNECTED: {
-                TEXT: "RECONNECTED",
-                SUBTEXT: "Have fun!"
+                TEXT: "RECONECTADO",
+                SUBTEXT: "¡Diviértete!"
             },
             RECONNECTING: {
                 CONTROLLER: {
-                    TEXT: "CONNECTION INTERRUPTED",
-                    SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
+                    TEXT: "CONEXIÓN INTERRUMPIDA",
+                    SUBTEXT: "Intentando reconectar ({attempt} de 5)"
                 },
                 GAME: {
-                    TEXT: "GAME CONNECTION INTERRUPTED",
-                    SUBTEXT: "Please wait while we attempt to reconnect"
+                    TEXT: "CONEXIÓN DEL JUEGO INTERRUMPIDA",
+                    SUBTEXT: "Por favor espera mientras intentamos reconectarte"
                 }
             }
         },
@@ -26754,7 +26754,7 @@ ${t}`
             onSubmit: t[3] || (t[3] = Bt((...u) => e.onSubmit && e.onSubmit(...u), ["prevent"]))
         }, [V("div", {
             class: ke(e.charactersRemaining === 0 ? "max-characters character-count" : "character-count"),
-            "aria-label": "characters remaining",
+            "aria-label": "caracteres restantes",
             "aria-live": "polite"
         }, $e(e.charactersRemaining), 3), V("textarea", {
             id: "answer",
@@ -26773,12 +26773,12 @@ ${t}`
         }, null, 40, Aae), Me(s, {
             progress: e.player.progress,
             submitted: e.submitting && !e.badAnswer && !e.player.error
-        }, null, 8, ["progress", "submitted"]), !!e.badAnswer || e.player.error ? (J(), ie("div", Rae, [e.player.error ? (J(), ie("span", Pae, $e(e.player.error), 1)) : Re("", !0), e.badAnswer ? (J(), ie("span", Lae, "That's not allowed! Please enter something else.")) : Re("", !0)])) : Re("", !0), V("button", {
+        }, null, 8, ["progress", "submitted"]), !!e.badAnswer || e.player.error ? (J(), ie("div", Rae, [e.player.error ? (J(), ie("span", Pae, $e(e.player.error), 1)) : Re("", !0), e.badAnswer ? (J(), ie("span", Lae, "¡Eso no está permitido! Por favor ingresa otra cosa.")) : Re("", !0)])) : Re("", !0), V("button", {
             class: "submit-button control",
             type: "submit",
-            value: "Submit",
+            value: "Enviar",
             disabled: e.submitDisabled
-        }, " Submit ", 8, xae)], 32)])
+        }, " Enviar ", 8, xae)], 32)])
     }
     const kae = St(Oae, [
         ["render", Nae]
@@ -31667,7 +31667,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         return J(), ie("div", {
             class: "header",
             role: "region",
-            "aria-label": "player name",
+            "aria-label": "nombre del jugador",
             style: Jn(`--border: ${e.color||"#95907C"}`)
         }, [e.drag ? (J(), cn(s, {
             key: 1,
@@ -31811,7 +31811,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                     try {
                         await this.$ecast.updateObject(this.player.responseKey, n) instanceof un.OK && (this.stamps[0] && (this.previousStamp = this.stamps[0]), this.stamps = [t]), this.draggingAvatar = !1
                     } catch (r) {
-                        this.$handleEcastError(r, "Unable to skip")
+                        this.$handleEcastError(r, "No se puede omitir")
                     }
                 },
                 async handleAvatarDrop(e) {
@@ -31832,7 +31832,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             class: "visually-hidden",
             role: "region",
             "aria-label": "instructions"
-        }, " Build your business card by clicking your name below. Once added, you can select your character. ", -1),
+        }, " Crea tu tarjeta de presentación haciendo clic en tu nombre debajo. Una vez agregado, puedes seleccionar tu personaje. ", -1),
         $oe = {
             key: 0,
             class: "avatar-stash",
@@ -31910,13 +31910,13 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             key: 0,
             class: "name-instructions",
             style: Jn(e.instructionStyles)
-        }, " Drag your name to the card below ", 4))]), V("div", {
+        }, " Arrastra tu nombre a la tarjeta debajo ", 4))]), V("div", {
             class: ke(e.names.length ? "paper-container slide-down" : "paper-container")
         }, [V("div", xoe, [Me(c, {
             modelValue: e.names,
             "onUpdate:modelValue": t[2] || (t[2] = f => e.names = f),
             class: ke(!e.names.length && !e.draggingName ? "name-draggable name-empty" : "name-draggable"),
-            style: "--content: 'Name here'",
+            style: "--content: 'Nombre aquí'",
             group: {
                 name: "name",
                 put: !0,
@@ -31934,7 +31934,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             modelValue: e.stamps,
             "onUpdate:modelValue": t[3] || (t[3] = f => e.stamps = f),
             class: ke(!!e.names.length && !e.stamps.length && !e.draggingAvatar ? "stamp-draggable empty" : "stamp-draggable"),
-            style: "--content: 'Stamp here'",
+            style: "--content: 'Sello aquí'",
             group: {
                 name: "stamp",
                 put: ["avatars"],
@@ -32194,7 +32194,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             role: "region",
             class: "visually-hidden",
             "aria-label": "keyboard instructions"
-        }, [V("span", null, " Each sentence will be followed by buttons for each word in the sentence. Once a word has been added to your answer, you can focus that word in the composition and press Alt + Left or Right to change word order ")], -1),
+        }, [V("span", null, " Cada frase le seguirán botones para cada palabra de la frase. Una vez que se ha agregado una palabra a tu respuesta, puedes enfocar esa palabra en la composición y presionar Alt + Izquierda o Derecha para cambiar el orden de las palabras ")], -1),
         Yoe = {
             role: "region",
             class: "prompt",
@@ -32402,10 +32402,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }, 8, ["list", "disabled"])])), V("div", ole, [V("button", {
             class: "shuffle control",
             onClick: t[0] || (t[0] = h => e.showShuffled ? e.showShuffled = !1 : e.shuffleStash())
-        }, $e(e.showShuffled ? "Show Original" : "Shuffle"), 1), V("button", {
+        }, $e(e.showShuffled ? "Mostrar original" : "Mezclar"), 1), V("button", {
             class: "unshuffle control",
             onClick: t[1] || (t[1] = h => e.showSorted ? e.showSorted = !1 : e.sortStash())
-        }, $e(e.showSorted ? "Show Original" : "Sort"), 1)])], 6), Me(ki, {
+        }, $e(e.showSorted ? "Mostrar original" : "Ordenar"), 1)])], 6), Me(ki, {
             name: "clipboard",
             appear: ""
         }, {
@@ -32447,11 +32447,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 }]),
                 disabled: !!e.answer && e.answer.length < 1 || e.submitting,
                 onClick: t[5] || (t[5] = Bt((...h) => e.onSubmit && e.onSubmit(...h), ["prevent"]))
-            }, " Submit ", 10, vle), !e.answer.length && !e.submitting ? (J(), ie("button", {
+            }, " Enviar ", 10, vle), !e.answer.length && !e.submitting ? (J(), ie("button", {
                 key: 0,
                 class: "start control",
                 onClick: t[6] || (t[6] = Bt((...h) => e.startForMe && e.startForMe(...h), ["prevent"]))
-            }, " Start for me ")) : Re("", !0)])], 512), Me(u, {
+            }, " Empieza por mí ")) : Re("", !0)])], 512), Me(u, {
                 progress: e.player.progress,
                 submitted: e.submitting
             }, null, 8, ["progress", "submitted"])], 2)]),
@@ -32463,7 +32463,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         ]),
         Dp = "job-achievement",
         ble = () => {
-            const e = ["Hey!", "Ah!", "Woo!", "I'm going to hide now", "Job Job!", "Working for the weekend!", "Wow!", "Bada bing.", "Booyah", "Why are you poking me?", "Gee whiz", "Hello", "Lena says hi!", "Maybe they'll let me host the game one day.", "Oh!", "Rude", "How do you do?", "Oof", "Sheesh", "No, it's not real leather", "I haven't been fed in 23 years", "I forgot my own lock combination", "If I had hands, I'd poke you back", "Have you heard of Liam? He's great!"];
+            const e = ["¡Hey!", "¡Ah!", "¡Wuu!", "Me voy a esconder ahora", "¡Bajo Trabajo!", "¡Trabajando para el fin de semana!", "¡Wow!", "Bada bing.", "Booyah", "¿Por qué me estás tocando?", "Caramba", "Hola", "¡Lena dice hola!", "Tal vez me dejen presental el juego algún día.", "¡Oh!", "Grosero", "¿Cómo te va?", "Uf", "Sheesh", "No, no es cuero de verdad", "No he sido alimentado en 23 años", "Olvidé mi propia combinación de candado", "Si tuviera manos, también te tocaría", "¿Has oído hablar de Liam? ¡Es genial!"];
             return e[Math.floor(Math.random() * e.length)]
         },
         Ele = it({
@@ -32520,7 +32520,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                             action: "skip"
                         })
                     } catch (e) {
-                        this.$handleEcastError(e, "Unable to skip")
+                        this.$handleEcastError(e, "No se puede omitir")
                     }
                 }
             }
@@ -32546,25 +32546,25 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         Lle = {
             key: 0,
             src: Sle,
-            alt: "The word 'one' in wavy blue word art style"
+            alt: "La palabra 'uno' en azul ondulado estilo word art"
         },
         xle = {
             key: 1,
             src: Tle,
-            alt: "The word 'two' in wavy blue word art style"
+            alt: "La palabra 'dos' en azul ondulado estilo word art"
         },
         Nle = {
             key: 2,
             class: "three",
             src: wle,
-            alt: "The words 'Final Round' in a rainbow word art with a dramatic shadow behind them."
+            alt: "Las palabras 'Ronda final' en word art de arco iris con una sombra dramática detrás de ellas."
         },
         kle = {
             key: 1,
             class: "non-round"
         },
         Dle = ["disabled"],
-        Mle = l_('<img alt="briefcase&#39;s body, whose eyes move when you tap it" class="body" src="' + _le + '"><img alt="whites of the briefcases&#39;s eyes" class="eyes" src="' + Ole + '"><img alt="briefcase&#39;s left pupil" class="left-pupil" src="' + Cle + '"><img alt="briefcase&#39;s right pupil" class="right-pupil" src="' + Ile + '"><img alt="briefcase&#39;s eyelids" class="eyelids" src="' + $le + '">', 5),
+        Mle = l_('<img alt="el cuerpo del maletín, cuyos ojos se mueven cuando lo tocas" class="body" src="' + _le + '"><img alt="blanco de los ojos del maletín" class="eyes" src="' + Ole + '"><img alt="pupila izquierda del maletín" class="left-pupil" src="' + Cle + '"><img alt="pupila derecha del maletín" class="right-pupil" src="' + Ile + '"><img alt="párpados del maletín" class="eyelids" src="' + $le + '">', 5),
         Ule = [Mle],
         Fle = {
             key: 2,
@@ -32586,11 +32586,11 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             }, [e.player.round === "one" ? (J(), ie("img", Lle)) : Re("", !0), e.player.round === "two" ? (J(), ie("img", xle)) : Re("", !0), e.player.round === "three" ? (J(), ie("img", Nle)) : Re("", !0)], 2)]),
             _: 1
         })])) : (J(), ie("div", kle, [Me(s, {
-            username: e.info ? e.info.name : "AUDIENCE",
+            username: e.info ? e.info.name : "PÚBLICO",
             color: e.info ? e.info.color : null
         }, null, 8, ["username", "color"]), V("button", {
             class: "briefcase look",
-            "aria-label": "a briefcase with googly eyes",
+            "aria-label": "un maletín con ojos saltones",
             disabled: !e.hasStorage,
             style: Jn({
                 transform: `translate(${e.briefcasePosition.x}vw, ${e.briefcasePosition.y}vh)`
@@ -32599,7 +32599,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }, Ule, 12, Dle)])), e.isPlayer(e.player) && e.player.hasControls ? (J(), ie("div", Fle, [V("button", {
             class: "skip control",
             onClick: t[2] || (t[2] = (...c) => e.skip && e.skip(...c))
-        }, "Skip")])) : Re("", !0)])
+        }, "Omitir")])) : Re("", !0)])
     }
     const Ble = St(Ele, [
             ["render", jle]
@@ -32704,7 +32704,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                     deep: !0
                 },
                 focusedIndex() {
-                    this.$announce(`Now filling answer ${this.focusedIndex+1}`)
+                    this.$announce(`Llenando la respuesta ${this.focusedIndex+1}`)
                 }
             },
             methods: {
@@ -32857,7 +32857,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             role: "region",
             class: "visually-hidden",
             "aria-label": "keyboard instructions"
-        }, [V("span", null, " Each sentence will be followed by buttons for each word in the sentence. Once a word has been added to your answer,you can focus that word in the composition and press Alt + Left or Right to change word order ")], -1),
+        }, [V("span", null, " Cada frase le seguirán botones para cada palabra de la frase. Una vez que se ha agregado una palabra a tu respuesta, puede enfocar esa palabra en la composición y presionar Alt + Izquierda o Derecha para cambiar el orden de las palabras ")], -1),
         Xle = ["aria-label"],
         zle = ["onClick"],
         Jle = {
@@ -33070,10 +33070,10 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
         }, 8, ["modelValue", "disabled"])])) : Re("", !0), V("div", oce, [V("button", {
             class: "shuffle control",
             onClick: t[14] || (t[14] = u => e.showShuffled ? e.showShuffled = !1 : e.shuffleStash())
-        }, $e(e.showShuffled ? "Show Original" : "Shuffle"), 1), V("button", {
+        }, $e(e.showShuffled ? "Mostrar original" : "Mezclar"), 1), V("button", {
             class: "unshuffle control",
             onClick: t[15] || (t[15] = u => e.showSorted ? e.showSorted = !1 : e.sortStash())
-        }, $e(e.showSorted ? "Show Original" : "Sort"), 1)])], 6), Me(ki, {
+        }, $e(e.showSorted ? "Mostrar original" : "Ordenar"), 1)])], 6), Me(ki, {
             name: "clipboard",
             appear: ""
         }, {
@@ -33131,12 +33131,12 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
                 }]),
                 disabled: e.hasEmptyBlank || e.submitted,
                 onClick: t[21] || (t[21] = Bt((...u) => e.onSubmit && e.onSubmit(...u), ["prevent"]))
-            }, " Submit ", 10, mce), e.hasEmptyBlank ? (J(), ie("button", {
+            }, " Enviar ", 10, mce), e.hasEmptyBlank ? (J(), ie("button", {
                 key: 0,
                 disabled: !!e.answers[e.focusedIndex].length,
                 class: "start control",
                 onClick: t[22] || (t[22] = Bt((...u) => e.startForMe && e.startForMe(...u), ["prevent"]))
-            }, " Start for me ", 8, yce)) : Re("", !0)])], 512)], 2)]),
+            }, " Empieza por mí ", 8, yce)) : Re("", !0)])], 512)], 2)]),
             _: 1
         })], 512)
     }
@@ -33619,7 +33619,7 @@ In order to be iterable, non-array objects must have a [Symbol.iterator]() metho
             style: Jn(`--remaining:${e.player.timer.timeLeft>14?"0px":(1-e.player.timer.timeLeft/15)*100+"vh"}`)
         }, null, 6)) : Re("", !0)])) : Re("", !0), e.audiencePlayer ? (J(), ie("div", uue, [e.audiencePlayer.kind !== "Logo" ? (J(), cn(c, {
             key: 0,
-            username: "AUDIENCE"
+            username: "PÚBLICO"
         })) : Re("", !0), e.audiencePlayer.kind == "Logo" ? (J(), cn(s, {
             key: 1,
             player: e.audiencePlayer
