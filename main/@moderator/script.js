@@ -11346,7 +11346,7 @@ var Nie = eL(($ie, bA) => {
             categoryId: "WorldChampionsGame",
             shopItems: ["cards"]
         }, {
-            name: "Blather 'Round",
+            name: "Balbuceando Juntos",
             tag: "blanky-blank",
             wrapper: "marionette",
             isPublic: !0,

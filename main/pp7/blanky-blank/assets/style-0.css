@@ -23950,7 +23950,7 @@ button {
     .blanky-blank .MakeSingleChoice .button-group.medium:before,
     .blanky-blank .MakeSingleChoice .button-group.hard:before {
         margin-right: 230px;
-        font-size: 24px;
+        font-size: 19px;
         line-height: 24px
     }
 }
@@ -23958,28 +23958,28 @@ button {
 .blanky-blank .MakeSingleChoice .button-group.easy.person:before,
 .blanky-blank .MakeSingleChoice .button-group.medium.person:before,
 .blanky-blank .MakeSingleChoice .button-group.hard.person:before {
-    content: "PERSON";
+    content: "PERSONA";
     background: #ff4d7f
 }
 
 .blanky-blank .MakeSingleChoice .button-group.easy.place:before,
 .blanky-blank .MakeSingleChoice .button-group.medium.place:before,
 .blanky-blank .MakeSingleChoice .button-group.hard.place:before {
-    content: "PLACE";
+    content: "LUGAR";
     background: #8b5ed3
 }
 
 .blanky-blank .MakeSingleChoice .button-group.easy.story:before,
 .blanky-blank .MakeSingleChoice .button-group.medium.story:before,
 .blanky-blank .MakeSingleChoice .button-group.hard.story:before {
-    content: "STORY";
+    content: "HISTORIA";
     background: #228fea
 }
 
 .blanky-blank .MakeSingleChoice .button-group.easy.thing:before,
 .blanky-blank .MakeSingleChoice .button-group.medium.thing:before,
 .blanky-blank .MakeSingleChoice .button-group.hard.thing:before {
-    content: "THING";
+    content: "COSA";
     background: #e45e27
 }
 
@@ -24018,7 +24018,7 @@ button {
 }
 
 .blanky-blank .MakeSingleChoice .button-group.easy .button:after {
-    content: "EASY";
+    content: "FÁCIL";
     width: 150px;
     background: #31d171;
     position: absolute;

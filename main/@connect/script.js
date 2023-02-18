@@ -13800,7 +13800,7 @@ var tae = M$((nae, nI) => {
             categoryId: "WorldChampionsGame",
             shopItems: ["cards"]
         }, {
-            name: "Blather 'Round",
+            name: "Balbuceando Juntos",
             tag: "blanky-blank",
             wrapper: "marionette",
             isPublic: !0,

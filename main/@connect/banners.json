@@ -2,12 +2,6 @@
     "bannerAds": [
         {
             "start": "2020-10-15",
-            "text": "¡Nuevo juego traducido!",
-            "src": "/main/@connect/assets/Fibbage2Promo.png",
-            "href": "https://traducciones.jackbox.lol/novedades"
-        },
-        {
-            "start": "2020-10-15",
             "text": "¡Nuestras traducciones!",
             "src": "/main/@connect/assets/sitioweb.png",
             "href": "https://traducciones.jackbox.lol/"
