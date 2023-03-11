@@ -22404,7 +22404,7 @@ const JC = ["Canela", "Vómito de Serpiente", "Quimus", "Bollos de Mono", "Cara 
                 timer: 2e4,
                 input: "text",
                 title: "Estás Enroscado",
-                text: `Enter the passcode: ${t.activeScrew.behaviorData.code}`,
+                text: `Ingresa la contraseña: ${t.activeScrew.behaviorData.code}`,
                 inputValidator: i => {
                     const a = i.toUpperCase() === t.activeScrew.behaviorData.code.toUpperCase();
                     return a && this.client.isRole("player") && this.onChildviewClientMessage({
