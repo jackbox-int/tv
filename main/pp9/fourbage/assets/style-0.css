@@ -2671,7 +2671,7 @@ body {
     margin: 0 auto
 }
 
-.lobby[data-v-fb506f32] {
+.lobby[data-v-2ca13ace] {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -2679,7 +2679,7 @@ body {
     align-items: center
 }
 
-.lobby .lobby-content[data-v-fb506f32] {
+.lobby .lobby-content[data-v-2ca13ace] {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -2689,27 +2689,27 @@ body {
     -ms-overflow-style: none
 }
 
-.lobby .lobby-content[data-v-fb506f32]::-webkit-scrollbar {
+.lobby .lobby-content[data-v-2ca13ace]::-webkit-scrollbar {
     background: transparent;
     width: 0px
 }
 
-.lobby .lobby-logo[data-v-fb506f32] {
+.lobby .lobby-logo[data-v-2ca13ace] {
     margin-bottom: 10px
 }
 
-.lobby .avatar-instruction[data-v-fb506f32] {
+.lobby .avatar-instruction[data-v-2ca13ace] {
     text-align: center
 }
 
-.lobby .avatar-container[data-v-fb506f32] {
+.lobby .avatar-container[data-v-2ca13ace] {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 151px
 }
 
-.lobby .avatar-container .avatar-row[data-v-fb506f32] {
+.lobby .avatar-container .avatar-row[data-v-2ca13ace] {
     width: 85%;
     display: flex;
     flex-direction: row;
@@ -2718,7 +2718,7 @@ body {
     max-height: 116px
 }
 
-.lobby .avatar-container .avatar-button[data-v-fb506f32] {
+.lobby .avatar-container .avatar-button[data-v-2ca13ace] {
     width: 33%;
     color: transparent;
     background: transparent;
@@ -2729,17 +2729,17 @@ body {
     transition: all .3s ease-in-out
 }
 
-.lobby .avatar-container .avatar-button.selected[data-v-fb506f32] {
+.lobby .avatar-container .avatar-button.selected[data-v-2ca13ace] {
     z-index: 2;
     -webkit-transform: scale(1.4);
     transform: scale(1.4);
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
-    -webkit-animation: active-fb506f32 .5s ease-in-out alternate infinite .2s;
-    animation: active-fb506f32 .5s ease-in-out alternate infinite .2s
+    -webkit-animation: active-2ca13ace .5s ease-in-out alternate infinite .2s;
+    animation: active-2ca13ace .5s ease-in-out alternate infinite .2s
 }
 
-@-webkit-keyframes active-fb506f32 {
+@-webkit-keyframes active-2ca13ace {
     0% {
         transform: scale(1.4)
     }
@@ -2749,7 +2749,7 @@ body {
     }
 }
 
-@keyframes active-fb506f32 {
+@keyframes active-2ca13ace {
     0% {
         transform: scale(1.4)
     }
@@ -2759,23 +2759,23 @@ body {
     }
 }
 
-.lobby .avatar-container .avatar-image[data-v-fb506f32] {
+.lobby .avatar-container .avatar-image[data-v-2ca13ace] {
     width: 100%;
     filter: contrast(.3) brightness(1.4) drop-shadow(0px 4px 4px rgba(0, 0, 0, .25)) sepia(.3);
     opacity: 100
 }
 
-.lobby .avatar-container .avatar-image.unavailable[data-v-fb506f32] {
+.lobby .avatar-container .avatar-image.unavailable[data-v-2ca13ace] {
     filter: brightness(.5);
     opacity: 75%
 }
 
-.lobby .avatar-container .avatar-image.selected[data-v-fb506f32] {
+.lobby .avatar-container .avatar-image.selected[data-v-2ca13ace] {
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, .25));
     opacity: 100%
 }
 
-.lobby .eay-instruction[data-v-fb506f32] {
+.lobby .eay-instruction[data-v-2ca13ace] {
     font-family: SofiaPro-Black;
     font-style: normal;
     font-weight: 600;
@@ -2785,13 +2785,13 @@ body {
     margin-bottom: 10px
 }
 
-.lobby .eay-name-change-container[data-v-fb506f32] {
+.lobby .eay-name-change-container[data-v-2ca13ace] {
     width: 85%;
     display: flex;
     flex-direction: row
 }
 
-.lobby .eay-name-change-container .eay-name-box[data-v-fb506f32] {
+.lobby .eay-name-change-container .eay-name-box[data-v-2ca13ace] {
     color: #000;
     letter-spacing: -.045em;
     font-variant-caps: all-small-caps;
@@ -2810,19 +2810,19 @@ body {
     padding-left: 20px
 }
 
-.lobby .eay-name-change-container .eay-name-submit[data-v-fb506f32] {
+.lobby .eay-name-change-container .eay-name-submit[data-v-2ca13ace] {
     padding-top: 10px;
     max-height: 44px;
     flex: 1
 }
 
-.lobby .error-bubble[data-v-fb506f32] {
+.lobby .error-bubble[data-v-2ca13ace] {
     width: 85%;
     margin-top: -20px;
     margin-bottom: 10px
 }
 
-.lobby .error-container[data-v-fb506f32] {
+.lobby .error-container[data-v-2ca13ace] {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -2831,11 +2831,11 @@ body {
     padding-right: 20px
 }
 
-.lobby .error-container .warning-icon[data-v-fb506f32] {
+.lobby .error-container .warning-icon[data-v-2ca13ace] {
     height: 100%
 }
 
-.lobby .error-container .error-text[data-v-fb506f32] {
+.lobby .error-container .error-text[data-v-2ca13ace] {
     margin: 10px;
     font-size: 18px;
     line-height: 90.2%;
@@ -2843,20 +2843,20 @@ body {
     text-align: left
 }
 
-.lobby .error-container .error-text.profanity-error[data-v-fb506f32] {
+.lobby .error-container .error-text.profanity-error[data-v-2ca13ace] {
     color: #ff3e4e
 }
 
-.lobby .lobby-spacer[data-v-fb506f32] {
+.lobby .lobby-spacer[data-v-2ca13ace] {
     flex: 1
 }
 
-.lobby .bottom-spacer[data-v-fb506f32] {
+.lobby .bottom-spacer[data-v-2ca13ace] {
     height: 151px;
     width: 100%
 }
 
-.lobby .fader[data-v-fb506f32] {
+.lobby .fader[data-v-2ca13ace] {
     position: absolute;
     bottom: 0px;
     z-index: 3;
@@ -2865,19 +2865,19 @@ body {
 }
 
 @media screen and (max-height: 775px) {
-    .lobby .fader[data-v-fb506f32] {
+    .lobby .fader[data-v-2ca13ace] {
         background: linear-gradient(180deg, rgba(255, 183, 45, 0) 0%, rgba(255, 194, 77, .37) 31.25%, rgba(18, 241, 255, .36) 100%)
     }
 }
 
-.lobby[data-v-fb506f32] .controls {
+.lobby[data-v-2ca13ace] .controls {
     width: 85%;
     position: absolute;
     bottom: 15px;
     z-index: 4
 }
 
-.lobby[data-v-fb506f32] .controls .message {
+.lobby[data-v-2ca13ace] .controls .message {
     bottom: 0px;
     font-family: SofiaPro-Light;
     color: #000;
@@ -2890,7 +2890,7 @@ body {
     text-transform: uppercase
 }
 
-.lobby[data-v-fb506f32] .controls .status {
+.lobby[data-v-2ca13ace] .controls .status {
     font-family: SofiaPro-Black;
     color: #fff;
     font-size: 21px;
@@ -2902,7 +2902,7 @@ body {
     text-transform: uppercase
 }
 
-.lobby[data-v-fb506f32] .controls button.action {
+.lobby[data-v-2ca13ace] .controls button.action {
     font-family: SofiaPro-Black;
     background-color: #000;
     font-weight: 700;
@@ -3099,7 +3099,7 @@ body {
     margin-bottom: 25px
 }
 
-.writing[data-v-4db5bb6d] {
+.writing[data-v-4b39257d] {
     display: flex;
     flex-direction: column;
     height: 100%;
@@ -3107,17 +3107,17 @@ body {
     align-items: center
 }
 
-.writing .primary-button[data-v-4db5bb6d] {
+.writing .primary-button[data-v-4b39257d] {
     text-transform: uppercase
 }
 
-.writing .error-bubble[data-v-4db5bb6d] {
+.writing .error-bubble[data-v-4b39257d] {
     width: 85%;
     margin-top: -25px;
     margin-bottom: 10px
 }
 
-.writing .error-container[data-v-4db5bb6d] {
+.writing .error-container[data-v-4b39257d] {
     height: 100%;
     display: flex;
     flex-direction: row;
@@ -3126,11 +3126,11 @@ body {
     padding-right: 20px
 }
 
-.writing .error-container .warning-icon[data-v-4db5bb6d] {
+.writing .error-container .warning-icon[data-v-4b39257d] {
     height: 100%
 }
 
-.writing .error-container .error-text[data-v-4db5bb6d] {
+.writing .error-container .error-text[data-v-4b39257d] {
     margin: 10px;
     font-size: 20px;
     line-height: 90.2%;
@@ -3138,15 +3138,15 @@ body {
     text-align: left
 }
 
-.writing .error-container .error-text.truth-error[data-v-4db5bb6d] {
+.writing .error-container .error-text.truth-error[data-v-4b39257d] {
     color: #ffd233
 }
 
-.writing .error-container .error-text.profanity-error[data-v-4db5bb6d] {
+.writing .error-container .error-text.profanity-error[data-v-4b39257d] {
     color: #ff3e4e
 }
 
-.writing .button-separator[data-v-4db5bb6d] {
+.writing .button-separator[data-v-4b39257d] {
     font-size: 22px;
     line-height: 98.2%;
     letter-spacing: -.045em;
@@ -3155,7 +3155,7 @@ body {
     margin-bottom: 20px
 }
 
-.writing .separator[data-v-4db5bb6d] {
+.writing .separator[data-v-4b39257d] {
     font-family: SofiaPro-Black;
     color: #000;
     font-size: 30px;
@@ -3165,7 +3165,7 @@ body {
     text-align: left
 }
 
-.writing .joiner[data-v-4db5bb6d] {
+.writing .joiner[data-v-4b39257d] {
     font-family: SofiaPro-Black;
     color: #000;
     font-size: 21px;

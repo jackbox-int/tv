@@ -11019,6 +11019,15 @@ var $oe = Dk((Aoe, n1) => {
             directory: "pp9/lineup",
             features: ["kicking", "previews"],
             categoryId: "LineupGame"
+        }, {
+            name: "Tee K.O. 2",
+            tag: "awshirt2",
+            wrapper: "vue",
+            isPublic: !1,
+            directory: "pp10/awshirt2",
+            features: ["moderation"],
+            shopItems: ["shirts"],
+            categoryId: "TeeKO2Game"
         }],
         wh = e => mq.find(t => t.tag === e || t.categoryId === e);
 
@@ -19701,8 +19710,8 @@ function print() { __p += __j.call(arguments, '') }
         ]),
         v5 = st({
             components: {
-                Input: SK,
-                TextArea: Yw
+                TextArea: Yw,
+                TextInput: SK
             },
             props: {
                 player: Object
@@ -19774,7 +19783,7 @@ function print() { __p += __j.call(arguments, '') }
 
     function S5(e, t, r, n, s, o) {
         const c = $r("TextArea"),
-            u = $r("Input"),
+            u = $r("TextInput"),
             f = qt("bb");
         return q(), Y("div", y5, [K("div", E5, [e.player.prompt ? Ne((q(), Y("p", b5, null, 512)), [
             [f, e.player.prompt]
@@ -28120,15 +28129,15 @@ ${t}`
             ["render", ase]
         ]),
         use = st({
-            name: "Switch",
             props: {
                 checked: {
                     type: Boolean,
                     required: !0
                 }
-            }
+            },
+            emits: "update:checked"
         }),
-        lse = e => (Wa("data-v-e61fc9b8"), e = e(), qa(), e),
+        lse = e => (Wa("data-v-854f67c1"), e = e(), qa(), e),
         fse = {
             id: "toggleMode",
             class: "switchContainer"
@@ -28148,12 +28157,12 @@ ${t}`
     }
     const gse = ct(use, [
             ["render", pse],
-            ["__scopeId", "data-v-e61fc9b8"]
+            ["__scopeId", "data-v-854f67c1"]
         ]),
         _se = st({
             components: {
                 LobbyActions: nw,
-                Switch: gse
+                ModeSwitch: gse
             },
             props: {
                 info: Object,
@@ -28237,7 +28246,7 @@ ${t}`
 
     function Rse(e, t, r, n, s, o) {
         var d, p, v, y;
-        const c = $r("Switch"),
+        const c = $r("ModeSwitch"),
             u = $r("LobbyActions"),
             f = qt("t");
         return q(), Y("div", mse, [K("div", vse, [e.player && e.player.canChooseMode && e.player.presentationModeOn === void 0 ? (q(), Y(Ze, {
@@ -28773,4 +28782,4 @@ ${t}`
     })
 });
 export default $oe();
-//# sourceMappingURL=16742d45.js.map
+//# sourceMappingURL=eaedd0a5.js.map

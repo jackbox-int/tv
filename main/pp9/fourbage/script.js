@@ -10989,6 +10989,15 @@ var Bae = UL((jae, sA) => {
             directory: "pp9/lineup",
             features: ["kicking", "previews"],
             categoryId: "LineupGame"
+        }, {
+            name: "Tee K.O. 2",
+            tag: "awshirt2",
+            wrapper: "vue",
+            isPublic: !1,
+            directory: "pp10/awshirt2",
+            features: ["moderation"],
+            shopItems: ["shirts"],
+            categoryId: "TeeKO2Game"
         }],
         Oh = e => v6.find(t => t.tag === e || t.categoryId === e);
 
@@ -19671,8 +19680,8 @@ function print() { __p += __j.call(arguments, '') }
         ]),
         yK = ct({
             components: {
-                Input: hg,
-                TextArea: vK
+                TextArea: vK,
+                TextInput: hg
             },
             props: {
                 player: Object
@@ -19744,7 +19753,7 @@ function print() { __p += __j.call(arguments, '') }
 
     function OK(e, t, r, n, s, a) {
         const c = kt("TextArea"),
-            l = kt("Input"),
+            l = kt("TextInput"),
             f = Ut("bb");
         return H(), X("div", bK, [Q("div", EK, [e.player.prompt ? $e((H(), X("p", TK, null, 512)), [
             [f, e.player.prompt]
@@ -27907,9 +27916,9 @@ ${t}`
         Qie = ct({
             components: {
                 FourbageLogo: tA,
-                Input: hg,
                 LobbyActions: nS,
                 SpeechBubble: rA,
+                TextInput: hg,
                 WarningSymbol: nA
             },
             props: {
@@ -28055,7 +28064,7 @@ ${t}`
                 }
             }
         }),
-        ese = e => (ru("data-v-fb506f32"), e = e(), nu(), e),
+        ese = e => (ru("data-v-2ca13ace"), e = e(), nu(), e),
         tse = {
             class: "lobby"
         },
@@ -28108,7 +28117,7 @@ ${t}`
 
     function Sse(e, t, r, n, s, a) {
         const c = kt("FourbageLogo"),
-            l = kt("Input"),
+            l = kt("TextInput"),
             f = kt("WarningSymbol"),
             d = kt("SpeechBubble"),
             p = kt("LobbyActions"),
@@ -28204,7 +28213,7 @@ ${t}`
     }
     const Ose = Ze(Qie, [
             ["render", Sse],
-            ["__scopeId", "data-v-fb506f32"]
+            ["__scopeId", "data-v-2ca13ace"]
         ]),
         Ase = ct({
             components: {
@@ -28569,9 +28578,9 @@ ${t}`
         ]),
         gae = ct({
             components: {
-                Input: hg,
                 SadFace: pae,
                 SpeechBubble: rA,
+                TextInput: hg,
                 WarningSymbol: nA
             },
             props: {
@@ -28704,7 +28713,7 @@ ${t}`
         Rae = ["disabled", "aria-label", "onClick"];
 
     function Lae(e, t, r, n, s, a) {
-        const c = kt("Input"),
+        const c = kt("TextInput"),
             l = kt("WarningSymbol"),
             f = kt("SpeechBubble"),
             d = kt("SadFace"),
@@ -28804,7 +28813,7 @@ ${t}`
     }
     const kae = Ze(gae, [
             ["render", Lae],
-            ["__scopeId", "data-v-4db5bb6d"]
+            ["__scopeId", "data-v-4b39257d"]
         ]),
         Pae = ct({
             bb: {
@@ -28943,4 +28952,4 @@ ${t}`
     })
 });
 export default Bae();
-//# sourceMappingURL=c59e2949.js.map
+//# sourceMappingURL=ede80981.js.map

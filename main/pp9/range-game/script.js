@@ -10989,6 +10989,15 @@ var Che = QD((Ihe, y$) => {
             directory: "pp9/lineup",
             features: ["kicking", "previews"],
             categoryId: "LineupGame"
+        }, {
+            name: "Tee K.O. 2",
+            tag: "awshirt2",
+            wrapper: "vue",
+            isPublic: !1,
+            directory: "pp10/awshirt2",
+            features: ["moderation"],
+            shopItems: ["shirts"],
+            categoryId: "TeeKO2Game"
         }],
         kg = t => RH.find(e => e.tag === t || e.categoryId === t);
 
@@ -12141,7 +12150,7 @@ ${r}`,
             ge(this, "canvas");
             ge(this, "ctx");
             ge(this, "doodle");
-            ge(this, "color", "#000");
+            ge(this, "color", "#000000");
             ge(this, "layer", 0);
             ge(this, "layers", 1);
             ge(this, "maxPoints", Number.MAX_SAFE_INTEGER);
@@ -13807,14 +13816,14 @@ ${r.message}`,
                     return !(this.isSubmitting || this.isUndoing || this.player.doodle.lines.length <= 0)
                 },
                 pointerBoxWidth() {
-                    var e, r, n;
+                    var e, r, n, i;
                     let t = 320;
-                    return (e = this.player.doodle.size) != null && e.width && (t = this.player.doodle.size.width), t * ((n = (r = this.canvasOptions.scale) == null ? void 0 : r.width) != null ? n : 1)
+                    return (e = this.player.doodle.size) != null && e.width && (t = this.player.doodle.size.width), t * ((i = (n = (r = this.canvasOptions) == null ? void 0 : r.scale) == null ? void 0 : n.width) != null ? i : 1)
                 },
                 pointerBoxHeight() {
-                    var e, r, n;
+                    var e, r, n, i;
                     let t = 320;
-                    return (e = this.player.doodle.size) != null && e.height && (t = this.player.doodle.size.height), t * ((n = (r = this.canvasOptions.scale) == null ? void 0 : r.height) != null ? n : 1)
+                    return (e = this.player.doodle.size) != null && e.height && (t = this.player.doodle.size.height), t * ((i = (n = (r = this.canvasOptions) == null ? void 0 : r.scale) == null ? void 0 : n.height) != null ? i : 1)
                 }
             },
             watch: {
@@ -19972,8 +19981,8 @@ function print() { __p += __j.call(arguments, '') }
         ]),
         R7 = Ze({
             components: {
-                Input: yC,
-                TextArea: x7
+                TextArea: x7,
+                TextInput: yC
             },
             props: {
                 player: Object
@@ -20045,7 +20054,7 @@ function print() { __p += __j.call(arguments, '') }
 
     function F7(t, e, r, n, i, s) {
         const a = rr("TextArea"),
-            c = rr("Input"),
+            c = rr("TextInput"),
             l = Wt("bb");
         return te(), oe("div", k7, [ee("div", L7, [t.player.prompt ? ke((te(), oe("p", D7, null, 512)), [
             [l, t.player.prompt]
@@ -31064,8 +31073,8 @@ ${e}`
         ]),
         Gfe = Ze({
             components: {
-                Input: yC,
-                Scale: _I
+                Scale: _I,
+                TextInput: yC
             },
             props: {
                 content: Object,
@@ -31135,7 +31144,7 @@ ${e}`
 
     function Yfe(t, e, r, n, i, s) {
         const a = rr("Scale"),
-            c = rr("Input"),
+            c = rr("TextInput"),
             l = Wt("bb"),
             f = Wt("t");
         return te(), oe("div", jfe, [ee("div", Wfe, [ke(ee("p", Hfe, null, 512), [
@@ -31166,7 +31175,7 @@ ${e}`
     }
     const zfe = rt(Gfe, [
             ["render", Yfe],
-            ["__scopeId", "data-v-1b6f3c82"]
+            ["__scopeId", "data-v-231c3166"]
         ]),
         Xfe = Ze({
             props: {
@@ -31521,4 +31530,4 @@ ${e}`
     })
 });
 export default Che();
-//# sourceMappingURL=d25bd4ad.js.map
+//# sourceMappingURL=0030cbea.js.map
