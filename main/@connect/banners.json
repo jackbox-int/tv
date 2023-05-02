@@ -2,15 +2,15 @@
     "bannerAds": [
         {
             "start": "2020-10-15",
-            "text": "Jackbox Utility",
-            "src": "/main/@connect/assets/jackboxutility.png",
-            "href": "https://traducciones.jackbox.lol/descargas/"
-        },
-        {
-            "start": "2020-10-15",
             "text": "¡Nuestras traducciones!",
             "src": "/main/@connect/assets/sitioweb.png",
             "href": "https://traducciones.jackbox.lol/"
+        },
+        {
+            "start": "2020-10-15",
+            "text": "Jackbox Utility",
+            "src": "/main/@connect/assets/jackboxutility.png",
+            "href": "https://traducciones.jackbox.lol/descargas/"
         },
         {
             "start": "2020-10-15",
