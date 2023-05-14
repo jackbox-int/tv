@@ -4232,7 +4232,7 @@ button.audience.connecting:before {
     transform: translate(-50%, -50%)
 }
 
-.jbg.schemable.theme-dark[data-v-08558975] {
+.jbg.schemable.theme-dark[data-v-fc7922bd] {
     --accent: #4254F4;
     --alert: #ce4949;
     --shadows: rgb(4, 9, 14, .5);
@@ -4247,7 +4247,7 @@ button.audience.connecting:before {
 }
 
 @media (prefers-color-scheme: dark) {
-    .jbg.schemable.theme-device[data-v-08558975] {
+    .jbg.schemable.theme-device[data-v-fc7922bd] {
         --accent: #4254F4;
         --alert: #ce4949;
         --shadows: rgb(4, 9, 14, .5);
@@ -4262,7 +4262,7 @@ button.audience.connecting:before {
     }
 }
 
-.jbg[data-v-08558975] {
+.jbg[data-v-fc7922bd] {
     --accent: #4254F4;
     --alert: #cf2929;
     --shadows: rgba(128, 128, 128, .4);
@@ -4280,16 +4280,16 @@ button.audience.connecting:before {
     color: var(--textPrimary)
 }
 
-.jbg a[data-v-08558975] {
+.jbg a[data-v-fc7922bd] {
     color: var(--accent);
     text-decoration: none
 }
 
-.jbg h1[data-v-08558975] {
+.jbg h1[data-v-fc7922bd] {
     font-size: 2em
 }
 
-.jbg button[data-v-08558975] {
+.jbg button[data-v-fc7922bd] {
     cursor: pointer;
     height: 48px;
     width: calc(100% - 50px);
@@ -4307,32 +4307,32 @@ button.audience.connecting:before {
     transition: color .5s, background-position .5s, box-shadow .5s
 }
 
-.jbg button .loading[data-v-08558975],
-.jbg button.connecting span[data-v-08558975] {
+.jbg button .loading[data-v-fc7922bd],
+.jbg button.connecting span[data-v-fc7922bd] {
     display: none
 }
 
-.jbg button.connecting .loading[data-v-08558975] {
+.jbg button.connecting .loading[data-v-fc7922bd] {
     display: block
 }
 
-.jbg button.cancel[data-v-08558975] {
+.jbg button.cancel[data-v-fc7922bd] {
     background-color: #ff0;
     box-shadow: 0 5px 0 0 var(--shadows)
 }
 
-.jbg button[data-v-08558975]:disabled {
+.jbg button[data-v-fc7922bd]:disabled {
     background: var(--inputPrimary);
     color: var(--textPrimary);
     box-shadow: 0 0 0 0 var(--shadows)
 }
 
-.jbg form[data-v-08558975] {
+.jbg form[data-v-fc7922bd] {
     margin: 0 auto 5px;
     padding: 70px 15px 0
 }
 
-.jbg label[data-v-08558975] {
+.jbg label[data-v-fc7922bd] {
     display: inline-block;
     width: 100%;
     margin-bottom: 5px;
@@ -4341,9 +4341,9 @@ button.audience.connecting:before {
     font-size: 17px
 }
 
-.jbg input[data-v-08558975],
-.jbg textarea[data-v-08558975],
-.jbg select[data-v-08558975] {
+.jbg input[data-v-fc7922bd],
+.jbg textarea[data-v-fc7922bd],
+.jbg select[data-v-fc7922bd] {
     width: 100%;
     height: 34px;
     margin-bottom: 15px;
@@ -4357,36 +4357,36 @@ button.audience.connecting:before {
     text-transform: uppercase
 }
 
-.jbg input[data-v-08558975]::placeholder,
-.jbg textarea[data-v-08558975]::placeholder,
-.jbg select[data-v-08558975]::placeholder {
+.jbg input[data-v-fc7922bd]::placeholder,
+.jbg textarea[data-v-fc7922bd]::placeholder,
+.jbg select[data-v-fc7922bd]::placeholder {
     color: var(--textSecondary)
 }
 
-.jbg input[data-v-08558975]:disabled,
-.jbg textarea[data-v-08558975]:disabled,
-.jbg select[data-v-08558975]:disabled {
+.jbg input[data-v-fc7922bd]:disabled,
+.jbg textarea[data-v-fc7922bd]:disabled,
+.jbg select[data-v-fc7922bd]:disabled {
     background: var(--inputPrimary);
     color: var(--textSecondary);
     cursor: not-allowed;
     user-select: none
 }
 
-.jbg textarea[data-v-08558975] {
+.jbg textarea[data-v-fc7922bd] {
     height: auto;
     padding: 12px;
     font-size: 14px
 }
 
-.jbg .select[data-v-08558975] {
+.jbg .select[data-v-fc7922bd] {
     position: relative
 }
 
-.jbg .select.disabled[data-v-08558975]:after {
+.jbg .select.disabled[data-v-fc7922bd]:after {
     display: none
 }
 
-.jbg .select[data-v-08558975]:after {
+.jbg .select[data-v-fc7922bd]:after {
     content: "\25bc";
     position: absolute;
     top: 11px;
@@ -4394,7 +4394,7 @@ button.audience.connecting:before {
     font-size: 12px
 }
 
-.jbg select[data-v-08558975] {
+.jbg select[data-v-fc7922bd] {
     cursor: inherit;
     appearance: none;
     height: auto;
@@ -4402,49 +4402,49 @@ button.audience.connecting:before {
     -webkit-appearance: none
 }
 
-.jbg .loading[data-v-08558975],
-.jbg .loading[data-v-08558975]:before,
-.jbg .loading[data-v-08558975]:after {
+.jbg .loading[data-v-fc7922bd],
+.jbg .loading[data-v-fc7922bd]:before,
+.jbg .loading[data-v-fc7922bd]:after {
     width: 12px;
     height: 12px;
     border: 2px solid #0E167D;
     border-radius: 50%;
     background: #4254F4;
     animation-fill-mode: both;
-    animation: loading-08558975 1.5s infinite ease-in-out
+    animation: loading-fc7922bd 1.5s infinite ease-in-out
 }
 
-.jbg .loading[data-v-08558975] {
+.jbg .loading[data-v-fc7922bd] {
     position: relative;
     margin: 18px auto;
     animation-delay: -.25s
 }
 
-.jbg .loading[data-v-08558975]:before,
-.jbg .loading[data-v-08558975]:after {
+.jbg .loading[data-v-fc7922bd]:before,
+.jbg .loading[data-v-fc7922bd]:after {
     content: "";
     position: absolute;
     top: -2px
 }
 
-.jbg .loading[data-v-08558975]:before {
+.jbg .loading[data-v-fc7922bd]:before {
     left: -22px;
     animation-delay: -.5s
 }
 
-.jbg .loading[data-v-08558975]:after {
+.jbg .loading[data-v-fc7922bd]:after {
     left: 18px
 }
 
-.jbg .disabled.loading[data-v-08558975],
-.jbg .disabled.loading[data-v-08558975]:before,
-.jbg .disabled.loading[data-v-08558975]:after {
+.jbg .disabled.loading[data-v-fc7922bd],
+.jbg .disabled.loading[data-v-fc7922bd]:before,
+.jbg .disabled.loading[data-v-fc7922bd]:after {
     border: 2px solid var(--textSecondary);
     background: var(--backgroundSecondary);
-    animation-name: loading-disabled-08558975
+    animation-name: loading-disabled-fc7922bd
 }
 
-@keyframes loading-08558975 {
+@keyframes loading-fc7922bd {
 
     0%,
     20%,
@@ -4458,7 +4458,7 @@ button.audience.connecting:before {
     }
 }
 
-@keyframes loading-disabled-08558975 {
+@keyframes loading-disabled-fc7922bd {
 
     0%,
     20%,
@@ -4472,7 +4472,7 @@ button.audience.connecting:before {
     }
 }
 
-.slide-banner[data-v-08558975] {
+.slide-banner[data-v-fc7922bd] {
     user-select: none;
     max-width: 375px;
     margin: 18px auto 0;
@@ -4480,14 +4480,14 @@ button.audience.connecting:before {
     mask-image: linear-gradient(to right, transparent 0%, white 10%, white 90%, transparent 100%)
 }
 
-.slide[data-v-08558975] {
+.slide[data-v-fc7922bd] {
     position: relative;
     display: block;
     padding: 0 6px;
     overflow: hidden
 }
 
-.slide button[data-v-08558975] {
+.slide button[data-v-fc7922bd] {
     width: auto;
     height: auto;
     margin: 0;
@@ -4497,13 +4497,13 @@ button.audience.connecting:before {
     background: transparent
 }
 
-.slide img[data-v-08558975] {
+.slide img[data-v-fc7922bd] {
     width: 100%;
     height: auto;
     border-radius: 15px
 }
 
-.slide p[data-v-08558975] {
+.slide p[data-v-fc7922bd] {
     position: absolute;
     width: 100%;
     top: 1px;
@@ -4516,12 +4516,12 @@ button.audience.connecting:before {
 }
 
 @media only screen and (max-width: 375px) {
-    .slide p[data-v-08558975] {
+    .slide p[data-v-fc7922bd] {
         font-size: 12px
     }
 }
 
-[data-v-08558975] .dots button {
+[data-v-fc7922bd] .dots button {
     width: 6px;
     height: 6px;
     padding: 0;
@@ -4530,7 +4530,7 @@ button.audience.connecting:before {
     transition: transform .25s, background-color .25s
 }
 
-[data-v-08558975] .dots button.carousel__pagination-button--active {
+[data-v-fc7922bd] .dots button.carousel__pagination-button--active {
     background-color: var(--accent);
     transform: scale(1.3)
 }
