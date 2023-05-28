@@ -10029,7 +10029,7 @@ Url: ${Rr(t)}`), !0)
                     "@connect": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
-                        base: "main//@connect",
+                        base: "main/@connect",
                         version: "5.160.53"
                     },
                     "the-wheel": {
@@ -10047,7 +10047,7 @@ Url: ${Rr(t)}`), !0)
                     "@moderator": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
-                        base: "main//@moderator",
+                        base: "main/@moderator",
                         version: "5.161.53"
                     },
                     "awshirt-tjsp": {
@@ -10371,7 +10371,7 @@ Url: ${Rr(t)}`), !0)
                     "@teeko-web": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
-                        base: "main//@teeko-web",
+                        base: "main/@teeko-web",
                         version: "5.163.54"
                     }
                 }
