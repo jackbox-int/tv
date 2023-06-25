@@ -12940,10 +12940,10 @@ ${r.message}`,
         },
         Wj = {
             UGC: {
-                VISIBILITY_CONTROLLER_OFF: "indicaciones ocultas en los dispositivos de los jugadores",
-                VISIBILITY_CONTROLLER_ON: "indicaciones se muestran en los dispositivos de los jugadores",
-                VISIBILITY_SCREEN_OFF: "indicaciones ocultas en la pantalla del juego",
-                VISIBILITY_SCREEN_ON: "indicaciones se muestran en la pantalla del juego"
+                VISIBILITY_CONTROLLER_OFF: "enunciados ocultos en los dispositivos de los jugadores",
+                VISIBILITY_CONTROLLER_ON: "enunciados se muestran en los dispositivos de los jugadores",
+                VISIBILITY_SCREEN_OFF: "enunciados ocultos en la pantalla del juego",
+                VISIBILITY_SCREEN_ON: "enunciados se muestran en la pantalla del juego"
             }
         },
         jj = {
@@ -12974,7 +12974,7 @@ ${r.message}`,
         },
         Yj = {
             AND: "Y",
-            OR: "OR"
+            OR: "O"
         },
         qj = {
             BUTTON_SKIP: "Omitir",
@@ -12993,7 +12993,7 @@ ${r.message}`,
             EPISODES_SELECT: "O selecciona un episodio:",
             EPISODES_WARNING: "Aviso: El contenido de los usuarios no tiene clasificaci\xF3n de edad",
             INSTRUCTION: {
-                CREATE_TITLE: "Lo primero es que debes hacer es introducir un nombre para el episodio que contendr\xE1 todas sus indicaciones y pulsar crear.",
+                CREATE_TITLE: "Lo primero es que debes hacer es introducir un nombre para el episodio que contendr\xE1 todos tus enunciados y pulsar crear.",
                 LOAD: "\xBFcrear o cargar?",
                 PUBLISH: "publica tu episodio",
                 TITLE: "nombra tu episodio",
@@ -14242,7 +14242,7 @@ de tu lista de partidas anteriores.`,
             ROOM_CODE: "C\xD3DIGO DE SALA",
             ROOM_CODE_PLACEHOLDER: "INTRODUCE EL C\xD3DIGO DE 4 CARACTERES"
         },
-        l4 = "Enlace a la p\xE1gina principal de Jackbox Games",
+        gH = "Enlace a la p\xE1gina principal de Jackbox Games",
         mH = {
             APPEARANCE: "APARIENCIA",
             DARK: "oscuro",
