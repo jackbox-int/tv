@@ -13212,11 +13212,23 @@ var Aae = XL((dce, m0) => {
                 }
             }), p
         }
+        async decrementNumber(t) {
+            const r = await this.send("number/decrement", {
+                key: t
+            });
+            return this.entities[t].val = r.val, r
+        }
         async getNumber(t) {
             const r = await this.send("number/get", {
                 key: t
             });
             return this.entities[t].val = r.val, this.entities[t].restrictions = r.restrictions, r
+        }
+        async incrementNumber(t) {
+            const r = await this.send("number/increment", {
+                key: t
+            });
+            return this.entities[t].val = r.val, r
         }
         async updateNumber(t, r) {
             const n = await this.send("number/update", {
@@ -14075,7 +14087,7 @@ var Aae = XL((dce, m0) => {
             wrapper: "vue",
             isPublic: !1,
             directory: "pp10/us-them",
-            features: ["kicking"],
+            features: ["moderation", "kicking"],
             shopItems: [],
             categoryId: "UsThemGame"
         }],
@@ -15538,7 +15550,7 @@ ${r.message}`,
         }
         static html(t) {
             if (String(t).match(/<fart>/g)) {
-                const n = new Audio(new URL("main//@moderator/assets/4af6cbea.wav", self.location).href);
+                const n = new Audio(new URL("main/@moderator/assets/4af6cbea.wav", self.location).href);
                 n.volume = .1, n.play()
             }
             const r = /<(?:"[^"]*"['"]*|'[^']*'['"]*|[^'">])+>/g;
@@ -24273,11 +24285,11 @@ function print() { __p += __j.call(arguments, '') }
                 }
             }
         }),
-        DI = "main//@moderator/assets/ad9172fc.png",
-        kI = "main//@moderator/assets/dc131b16.png",
-        QZ = "main//@moderator/assets/38715b18.png",
-        ZZ = "main//@moderator/assets/b0d7c822.png",
-        eee = "main//@moderator/assets/06150f24.png",
+        DI = "main/@moderator/assets/ad9172fc.png",
+        kI = "main/@moderator/assets/dc131b16.png",
+        QZ = "main/@moderator/assets/38715b18.png",
+        ZZ = "main/@moderator/assets/b0d7c822.png",
+        eee = "main/@moderator/assets/06150f24.png",
         ln = e => (Co("data-v-c4b66a33"), e = e(), No(), e),
         tee = {
             class: "jbg"
@@ -27485,9 +27497,9 @@ ${t}`
                 dismissText: String
             }
         }),
-        Lie = "main//@moderator/assets/928ef0da.png",
-        Pie = "main//@moderator/assets/0bb76a2d.png",
-        Die = "main//@moderator/assets/ed4469b3.png",
+        Lie = "main/@moderator/assets/928ef0da.png",
+        Pie = "main/@moderator/assets/0bb76a2d.png",
+        Die = "main/@moderator/assets/ed4469b3.png",
         kie = {
             key: 0,
             class: "image",
@@ -27632,14 +27644,18 @@ ${t}`
             install: e => {
                 if (e.config.globalProperties.$showModal) return;
                 let t;
-                const r = (s, o, c) => {
+                const r = () => {
                         if (!t) throw new Error("No ModalComponent is registered");
-                        return t.show(s, o, c)
+                        return t.onBackgroundClick()
                     },
-                    n = s => {
-                        t = s
+                    n = (o, c, u) => {
+                        if (!t) throw new Error("No ModalComponent is registered");
+                        return t.show(o, c, u)
+                    },
+                    s = o => {
+                        t = o
                     };
-                e.component("Modal", Qie), e.config.globalProperties.$showModal = r, e.config.globalProperties.$registerModal = n
+                e.component("Modal", Qie), e.config.globalProperties.$hideModal = r, e.config.globalProperties.$showModal = n, e.config.globalProperties.$registerModal = s
             }
         };
     ct({
@@ -29005,4 +29021,4 @@ ${t}`
     })
 });
 export default Aae();
-//# sourceMappingURL=7d49ec6c.js.map
+//# sourceMappingURL=8e6c12a2.js.map
