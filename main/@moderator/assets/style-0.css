@@ -164,7 +164,7 @@
     background-color: var(--accent);
     color: var(--textButton);
     line-height: 1.5;
-    text-transform: none;
+    text-transform: uppercase;
     box-shadow: 0 5px 0 0 var(--shadows);
     transition: color .5s, background-position .5s, box-shadow .5s
 }
