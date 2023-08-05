@@ -3697,12 +3697,12 @@ body {
     overflow-wrap: break-word
 }
 
-.dots[data-v-9319b2d3] {
+.dots[data-v-4ec3ea31] {
     margin: 15px 0;
     line-height: 1rem
 }
 
-.dots .dot[data-v-9319b2d3] {
+.dots .dot[data-v-4ec3ea31] {
     display: inline-block;
     width: 10px;
     height: 10px;
@@ -3714,11 +3714,11 @@ body {
     transition: background-color .25s, transform .25s
 }
 
-.dots .dot.active[data-v-9319b2d3] {
+.dots .dot.active[data-v-4ec3ea31] {
     background: white
 }
 
-.lobby[data-v-9319b2d3] {
+.lobby[data-v-4ec3ea31] {
     display: flex;
     flex-direction: column;
     position: relative;
@@ -3726,7 +3726,7 @@ body {
     margin-bottom: 90px
 }
 
-.lobby[data-v-9319b2d3] .lobby-actions {
+.lobby[data-v-4ec3ea31] .lobby-actions {
     position: fixed;
     bottom: 0;
     left: 50%;
@@ -3736,24 +3736,24 @@ body {
     transform: translate(-50%)
 }
 
-.lobby[data-v-9319b2d3] .lobby-actions button {
+.lobby[data-v-4ec3ea31] .lobby-actions button {
     height: 48px
 }
 
-.lobby button[data-v-9319b2d3],
-.lobby[data-v-9319b2d3] .lobby-actions button {
+.lobby button[data-v-4ec3ea31],
+.lobby[data-v-4ec3ea31] .lobby-actions button {
     background-color: #000;
     color: #fff
 }
 
-.lobby .avatars[data-v-9319b2d3] {
+.lobby .avatars[data-v-4ec3ea31] {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
     -webkit-tap-highlight-color: transparent
 }
 
-.lobby .avatars .avatar[data-v-9319b2d3] {
+.lobby .avatars .avatar[data-v-4ec3ea31] {
     position: relative;
     flex: 1 0 33%;
     max-width: 33%;
@@ -3764,31 +3764,31 @@ body {
     box-shadow: none
 }
 
-.lobby .avatars .avatar.selected[data-v-9319b2d3] {
+.lobby .avatars .avatar.selected[data-v-4ec3ea31] {
     filter: drop-shadow(2px 2px 0 white) drop-shadow(-2px 2px 0 white) drop-shadow(2px -2px 0 white) drop-shadow(-2px -2px 0 white)
 }
 
-.lobby .avatars .avatar.selected[data-v-9319b2d3]:disabled {
+.lobby .avatars .avatar.selected[data-v-4ec3ea31]:disabled {
     opacity: 1
 }
 
-.lobby .avatars .avatar[data-v-9319b2d3]:disabled {
+.lobby .avatars .avatar[data-v-4ec3ea31]:disabled {
     opacity: .25
 }
 
-.lobby .avatars .avatar img[data-v-9319b2d3] {
+.lobby .avatars .avatar img[data-v-4ec3ea31] {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%
 }
 
-.lobby .confirm[data-v-9319b2d3],
-.lobby[data-v-9319b2d3] .lobby-actions button {
+.lobby .confirm[data-v-4ec3ea31],
+.lobby[data-v-4ec3ea31] .lobby-actions button {
     text-transform: uppercase
 }
 
-.lobby .confirm[data-v-9319b2d3] {
+.lobby .confirm[data-v-4ec3ea31] {
     position: relative;
     width: fit-content;
     min-height: 35px;
@@ -3796,37 +3796,37 @@ body {
     font-size: 2rem
 }
 
-.lobby .description[data-v-9319b2d3] {
+.lobby .description[data-v-4ec3ea31] {
     margin: 15px 0
 }
 
-.lobby .error[data-v-9319b2d3] {
+.lobby .error[data-v-4ec3ea31] {
     display: block
 }
 
-.lobby .flair-entry[data-v-9319b2d3] {
+.lobby .flair-entry[data-v-4ec3ea31] {
     min-height: 65px;
     text-align: center
 }
 
-.lobby .name[data-v-9319b2d3] {
+.lobby .name[data-v-4ec3ea31] {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
     font-size: 1.7rem
 }
 
-.lobby .name .name-entry[data-v-9319b2d3] {
+.lobby .name .name-entry[data-v-4ec3ea31] {
     font-size: 2.4rem;
     text-align: center;
     text-transform: uppercase
 }
 
-.lobby .name .pronoun-entry[data-v-9319b2d3] {
+.lobby .name .pronoun-entry[data-v-4ec3ea31] {
     margin: 10px 0
 }
 
-.lobby .name .pronoun-entry select[data-v-9319b2d3] {
+.lobby .name .pronoun-entry select[data-v-4ec3ea31] {
     display: block;
     margin: 5px auto 15px;
     padding: 5px 35px 5px 5px;
@@ -3843,22 +3843,22 @@ body {
     appearance: none
 }
 
-.lobby .name .pronoun-entry select[data-v-9319b2d3]:focus {
+.lobby .name .pronoun-entry select[data-v-4ec3ea31]:focus {
     background-image: linear-gradient(45deg, transparent 50%, white 50%), linear-gradient(135deg, white 50%, transparent 50%), radial-gradient(black 70%, transparent 72%);
     background-repeat: no-repeat
 }
 
-.lobby .name .warning[data-v-9319b2d3] {
+.lobby .name .warning[data-v-4ec3ea31] {
     margin: auto 0 100px
 }
 
-.lobby .separator[data-v-9319b2d3] {
+.lobby .separator[data-v-4ec3ea31] {
     margin: 10px 0;
     overflow: hidden
 }
 
-.lobby .separator[data-v-9319b2d3]:before,
-.lobby .separator[data-v-9319b2d3]:after {
+.lobby .separator[data-v-4ec3ea31]:before,
+.lobby .separator[data-v-4ec3ea31]:after {
     content: "";
     background-color: #000;
     display: inline-block;
@@ -3868,12 +3868,12 @@ body {
     width: 35%
 }
 
-.lobby .separator[data-v-9319b2d3]:before {
+.lobby .separator[data-v-4ec3ea31]:before {
     right: 10px;
     margin-left: -50%
 }
 
-.lobby .separator[data-v-9319b2d3]:after {
+.lobby .separator[data-v-4ec3ea31]:after {
     left: 10px;
     margin-right: -50%
 }

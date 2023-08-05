@@ -11080,6 +11080,15 @@ var due = eR((pue, bS) => {
             directory: "pp9/lineup",
             features: ["kicking", "previews"],
             categoryId: "LineupGame"
+        }, {
+            name: "Tee K.O. 2",
+            tag: "awshirt2",
+            wrapper: "vue",
+            isPublic: !1,
+            directory: "pp10/awshirt2",
+            features: ["moderation"],
+            shopItems: ["shirts"],
+            categoryId: "TeeKO2Game"
         }],
         Lh = e => MU.find(t => t.tag === e || t.categoryId === e);
 
@@ -19870,8 +19879,8 @@ function print() { __p += __j.call(arguments, '') }
         ]),
         YV = et({
             components: {
-                Input: S2,
-                TextArea: Mu
+                TextArea: Mu,
+                TextInput: S2
             },
             props: {
                 player: Object
@@ -19943,7 +19952,7 @@ function print() { __p += __j.call(arguments, '') }
 
     function QV(e, t, r, n, s, a) {
         const c = St("TextArea"),
-            l = St("Input"),
+            l = St("TextInput"),
             f = Ut("bb");
         return U(), q("div", KV, [F("div", zV, [e.player.prompt ? Ae((U(), q("p", XV, null, 512)), [
             [f, e.player.prompt]
@@ -29519,8 +29528,8 @@ Es posible que aparezcan en el juego algunas variaciones de tu nombre.`
                 Banner: zu,
                 CharacterCounter: am,
                 LobbyActions: b2,
-                Input: S2,
-                TextArea: Mu
+                TextArea: Mu,
+                TextInput: S2
             },
             props: {
                 avatarImages: {
@@ -29726,7 +29735,7 @@ Es posible que aparezcan en el juego algunas variaciones de tu nombre.`
     function ule(e, t, r, n, s, a) {
         const c = St("Banner"),
             l = St("CharacterCounter"),
-            f = St("Input"),
+            f = St("TextInput"),
             d = St("TextArea"),
             p = St("LobbyActions"),
             _ = Ut("bb"),
@@ -29816,7 +29825,7 @@ Es posible que aparezcan en el juego algunas variaciones de tu nombre.`
     }
     const fle = rt(qce, [
             ["render", ule],
-            ["__scopeId", "data-v-9319b2d3"]
+            ["__scopeId", "data-v-4ec3ea31"]
         ]),
         dle = et({
             extends: T2,
@@ -30472,4 +30481,4 @@ Es posible que aparezcan en el juego algunas variaciones de tu nombre.`
     })
 });
 export default due();
-//# sourceMappingURL=9361d2ef.js.map
+//# sourceMappingURL=8fff6456.js.map
