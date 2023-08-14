@@ -10013,16 +10013,16 @@ Url: ${xr(t)}`), !0)
         fm = 1,
         lm = {
             branch: "main",
-            sha: "fc84164edcf5e474b3135597613c978f8495728d",
-            lastUpdated: 1691609331093,
-            version: "5.236.119",
+            sha: "4d20425f966d500a3a4d6b8961a01778ffe55e58",
+            lastUpdated: 1691893998849,
+            version: "5.237.119",
             type: "production"
         },
         pm = {
             main: {
-                sha: "fc84164edcf5e474b3135597613c978f8495728d",
-                lastUpdated: 1691609331093,
-                version: "5.236.119",
+                sha: "4d20425f966d500a3a4d6b8961a01778ffe55e58",
+                lastUpdated: 1691893998849,
+                version: "5.237.119",
                 type: "production",
                 bundles: {
                     "@connect": {
@@ -10383,7 +10383,7 @@ Url: ${xr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp10/nopus-opus",
-                        version: "5.236.119"
+                        version: "5.237.119"
                     },
                     "risky-text": {
                         file: "script.js",
@@ -10436,4 +10436,4 @@ Url: ${xr(t)}`), !0)
     sm()
 });
 export default mm();
-//# sourceMappingURL=79a6253b.js.map
+//# sourceMappingURL=96a73b9f.js.map
