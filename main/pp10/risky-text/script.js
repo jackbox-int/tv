@@ -27718,7 +27718,7 @@ ${e}`
             SUBMIT: "Terminé"
         },
         Yle = {
-            GO: "C'EST PARTI !",
+            GO: "OK !",
             SUGGESTION: "%##$% Suggestion #%#^☻",
             OUT_OF_CHARS: "Plus de personnages",
             SO_PROLIFIC: "TELLEMENT PROLIFIQUE !",
@@ -44370,4 +44370,4 @@ ${e}`
     })
 });
 export default Ope();
-//# sourceMappingURL=6deb3559.js.map
+//# sourceMappingURL=2e23478e.js.map
