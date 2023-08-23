@@ -26791,8 +26791,8 @@ ${e}`
         Whe = {
             WHEN: "Quando lo schermo dice di",
             GET_READY: "Preparati",
-            TAP_HERE: "CLICCA[break][/break]QUI[break][/break][info](O PREMI LA BARRA SPAZIATRICE)[/info]",
-            TAP: "clicca",
+            TAP_HERE: "TOCCA[break][/break]QUI[break][/break][info](O PREMI LA BARRA SPAZIATRICE)[/info]",
+            TAP: "tocca",
             SYNCED: "sincronizzato",
             SYNCING: "Sincronizzazione"
         },
@@ -26988,7 +26988,7 @@ ${e}`
             WHEN: "Cuando lo indique la pantalla",
             GET_READY: "Prepárate",
             TAP_HERE: "TOCA[break][/break]AQUÍ[break][/break][info](O DALE A LA BARRA ESPACIADORA)[/info]",
-            TAP: "toque",
+            TAP: "toca",
             SYNCED: "sincronizado",
             SYNCING: "Sincronizando"
         },
@@ -46541,4 +46541,4 @@ __p+='`), Z
     })
 });
 export default Dwe();
-//# sourceMappingURL=ee923912.js.map
+//# sourceMappingURL=990c7cf3.js.map

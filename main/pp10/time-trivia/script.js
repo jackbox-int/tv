@@ -26541,7 +26541,7 @@ ${t}`
         wne = {
             CONFIRMATION: "Vous voyagez vers l'année",
             SETUP: "Voyage vers l'année...",
-            SUBMIT: "C'EST PARTI !"
+            SUBMIT: "OK !"
         },
         Ine = {
             CHOOSE_AVATAR: "Choisissez votre avatar"
@@ -28162,4 +28162,4 @@ ${t}`
     })
 });
 export default lae();
-//# sourceMappingURL=dbae6634.js.map
+//# sourceMappingURL=86087b62.js.map
