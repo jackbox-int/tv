@@ -4875,14 +4875,14 @@ body {
     background-color: #f2c0d0
 }
 
-.lobby[data-v-d4111950] {
+.lobby[data-v-b2cc74dd] {
     display: flex;
     flex-direction: column;
     gap: 15px;
     height: 100%
 }
 
-.lobby .avatars[data-v-d4111950] {
+.lobby .avatars[data-v-b2cc74dd] {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -4892,7 +4892,7 @@ body {
     -webkit-tap-highlight-color: transparent
 }
 
-.lobby .avatars .avatar[data-v-d4111950] {
+.lobby .avatars .avatar[data-v-b2cc74dd] {
     position: relative;
     width: 24%;
     height: auto;
@@ -4902,15 +4902,15 @@ body {
     border-width: 2px
 }
 
-.lobby .avatars .avatar.selected[data-v-d4111950],
-.lobby .avatars .avatar.selected[data-v-d4111950]:disabled {
+.lobby .avatars .avatar.selected[data-v-b2cc74dd],
+.lobby .avatars .avatar.selected[data-v-b2cc74dd]:disabled {
     border-color: #feffe7;
     box-shadow: 0 0 8px 8px #feffe7;
     opacity: 1;
     z-index: 1
 }
 
-.lobby .avatars .avatar img[data-v-d4111950] {
+.lobby .avatars .avatar img[data-v-b2cc74dd] {
     position: absolute;
     top: 0;
     left: 0;
@@ -4919,7 +4919,7 @@ body {
     line-height: 1
 }
 
-.lobby textarea[data-v-d4111950] {
+.lobby textarea[data-v-b2cc74dd] {
     display: block;
     width: 100%;
     margin-top: 15px;
@@ -4932,11 +4932,11 @@ body {
     resize: none
 }
 
-.lobby textarea[data-v-d4111950]:disabled {
+.lobby textarea[data-v-b2cc74dd]:disabled {
     background-color: transparent
 }
 
-.lobby[data-v-d4111950] .lobby-actions {
+.lobby[data-v-b2cc74dd] .lobby-actions {
     margin-top: auto
 }
 
@@ -4966,24 +4966,33 @@ body {
     background-image: url(813b4d2b.png)
 }
 
-.remaking .controls[data-v-c95b1fec] {
+.remaking .controls[data-v-17a187d8] {
     display: flex;
     flex-flow: column;
     gap: 4px;
     margin-top: 16px
 }
 
-.remaking .controls button[data-v-c95b1fec] {
+.remaking .controls button[data-v-17a187d8] {
     margin: 0
 }
 
-.remaking .drawing[data-v-c95b1fec] {
+.remaking .drawings[data-v-17a187d8] {
+    max-width: 425px
+}
+
+.remaking .drawings .drawing[data-v-17a187d8] {
     width: 300px;
     height: 300px
 }
 
-.remaking .drawing.active[data-v-c95b1fec] {
-    border: 3px solid #0d0f11
+.remaking .drawings .drawing img[data-v-17a187d8] {
+    filter: brightness(75%);
+    transition: filter .3s
+}
+
+.remaking .drawings .drawing img.active[data-v-17a187d8] {
+    filter: brightness(100%)
 }
 
 .voting button[data-v-b968a0c6],
@@ -5094,7 +5103,7 @@ body {
     z-index: 2
 }
 
-.waiting[data-v-e74f9700] {
+.waiting[data-v-da9f153f] {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -5102,17 +5111,32 @@ body {
     height: 100%
 }
 
-.waiting .art[data-v-e74f9700] {
+.waiting .art[data-v-da9f153f] {
     flex-grow: 1;
     min-height: 0
 }
 
-.waiting .art img[data-v-e74f9700] {
+.waiting .art img[data-v-da9f153f] {
     position: relative;
     top: 50%;
-    left: 50%;
     max-width: 100%;
     max-height: 100%;
+    transform: translateY(-50%)
+}
+
+.waiting .name-header[data-v-da9f153f] {
+    position: relative;
+    width: 100%
+}
+
+.waiting .name-header img[data-v-da9f153f] {
+    width: 225px
+}
+
+.waiting .name-header .name[data-v-da9f153f] {
+    position: absolute;
+    top: 45%;
+    left: 50%;
     transform: translate(-50%, -50%)
 }
 
@@ -5926,10 +5950,7 @@ button.swiper-pagination-bullet {
 }
 
 :root {
-    font-size: 62.5%;
-    --swiper-navigation-size: 20px;
-    --swiper-navigation-sides-offset: 0;
-    --swiper-theme-color: #0d0f11
+    font-size: 62.5%
 }
 
 .constrain {
