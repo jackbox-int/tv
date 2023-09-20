@@ -4401,23 +4401,23 @@ body {
     src: url(1ad8daf7.eot), url(8285d2bf.woff) format("woff"), url(9975f3e9.ttf) format("truetype"), url(4ced29eb.svg) format("svg")
 }
 
-.assembling[data-v-80732fa9] {
+.assembling[data-v-dc033043] {
     font-size: 30px;
     background-color: #f3fed3
 }
 
-.assembling .form-container[data-v-80732fa9] {
+.assembling .form-container[data-v-dc033043] {
     padding: 5px 0;
     margin: 8px
 }
 
-.assembling .assembly[data-v-80732fa9] {
+.assembling .assembly[data-v-dc033043] {
     width: clamp(300px, min(90vw, 90vh), 600px);
     margin: 0 auto
 }
 
-.assembling .drawing-container[data-v-80732fa9],
-.assembling .slogan-preview-container[data-v-80732fa9] {
+.assembling .drawing-container[data-v-dc033043],
+.assembling .slogan-preview-container[data-v-dc033043] {
     position: absolute;
     left: 50%;
     width: clamp(150px, min(45vw, 45vh), 300px);
@@ -4425,7 +4425,7 @@ body {
     z-index: 1
 }
 
-.assembling .slogan-input[data-v-80732fa9] {
+.assembling .slogan-input[data-v-dc033043] {
     flex-grow: 2;
     font-family: inherit;
     font-size: 2rem;
@@ -4434,16 +4434,16 @@ body {
 }
 
 @media only screen and (max-width: 425px) {
-    .assembling .slogan-input[data-v-80732fa9] {
+    .assembling .slogan-input[data-v-dc033043] {
         font-size: 24px !important
     }
 }
 
-.assembling .slogan-input[data-v-80732fa9]:disabled {
+.assembling .slogan-input[data-v-dc033043]:disabled {
     background-color: transparent
 }
 
-.assembling .slogan-label[data-v-80732fa9] {
+.assembling .slogan-label[data-v-dc033043] {
     display: inline-block;
     width: 100%;
     margin-bottom: 5px;
@@ -4453,26 +4453,26 @@ body {
 }
 
 @media only screen and (max-width: 425px) {
-    .assembling .slogan-label[data-v-80732fa9] {
+    .assembling .slogan-label[data-v-dc033043] {
         font-size: 24px
     }
 }
 
-.assembling .slogan-label .remaining[data-v-80732fa9] {
+.assembling .slogan-label .remaining[data-v-dc033043] {
     float: right
 }
 
-.assembling .inline[data-v-80732fa9] {
+.assembling .inline[data-v-dc033043] {
     display: flex;
     margin: 0 8px 16px
 }
 
-.assembling .inline button[data-v-80732fa9],
-.assembling .inline input[data-v-80732fa9] {
+.assembling .inline button[data-v-dc033043],
+.assembling .inline input[data-v-dc033043] {
     padding: 5px
 }
 
-.assembling .inline button[data-v-80732fa9] {
+.assembling .inline button[data-v-dc033043] {
     width: auto;
     margin: 0;
     border: 5px solid #231f20;
@@ -4480,20 +4480,20 @@ body {
     background-color: #8dc349
 }
 
-.assembling .inline button.submit[data-v-80732fa9] {
+.assembling .inline button.submit[data-v-dc033043] {
     width: 70px;
     background-image: url(bc644f06.png);
     background-position: center;
     background-repeat: no-repeat
 }
 
-.assembling .inline button[data-v-80732fa9]:disabled {
+.assembling .inline button[data-v-dc033043]:disabled {
     color: #fff;
     background-color: #8dc349;
     opacity: .5
 }
 
-.assembling .inline .slogan-input[data-v-80732fa9] {
+.assembling .inline .slogan-input[data-v-dc033043] {
     flex-grow: 3;
     font-family: inherit;
     font-size: 2rem;
@@ -4501,28 +4501,28 @@ body {
     border-radius: 12px 0 0 12px
 }
 
-.assembling .drawing-container[data-v-80732fa9] {
+.assembling .drawing-container[data-v-dc033043] {
     top: 10%
 }
 
-.assembling .drawing-container .drawing[data-v-80732fa9] {
+.assembling .drawing-container .drawing[data-v-dc033043] {
     width: 100%
 }
 
-.assembling .instruction[data-v-80732fa9] {
+.assembling .instruction[data-v-dc033043] {
     margin-bottom: 10px
 }
 
-.assembling .shirt[data-v-80732fa9] {
+.assembling .shirt[data-v-dc033043] {
     position: relative;
     margin: 5px 0
 }
 
-.assembling .slogan-preview-container[data-v-80732fa9] {
+.assembling .slogan-preview-container[data-v-dc033043] {
     top: 80%
 }
 
-.assembling .slogan-preview-container .slogan-preview[data-v-80732fa9] {
+.assembling .slogan-preview-container .slogan-preview[data-v-dc033043] {
     width: 95%;
     color: #fff;
     font-size: clamp(.78rem, min(3.5vw, 3.5vh), 2.2rem);
@@ -4530,12 +4530,12 @@ body {
     overflow-wrap: break-word
 }
 
-.assembling .disclaimer[data-v-80732fa9] {
+.assembling .disclaimer[data-v-dc033043] {
     font-size: 18px
 }
 
 @media only screen and (max-width: 425px) {
-    .assembling .disclaimer[data-v-80732fa9] {
+    .assembling .disclaimer[data-v-dc033043] {
         font-size: 14px
     }
 }

@@ -3424,10 +3424,6 @@ var xm = ka((Lm, _a) => {
             const e = document.createElement("canvas");
             return !!(e.getContext && e.getContext("2d"))
         }
-        static toPrecision(e, r) {
-            const n = 10 ** r;
-            return Math.round((e + Number.EPSILON) * n) / n
-        }
         static isProduction() {
             return window.location.hostname === "jackbox.tv"
         }
@@ -10038,23 +10034,23 @@ Url: ${xr(t)}`), !0)
         bm = 1,
         Em = {
             branch: "main",
-            sha: "f6a8a0d111c55a52a7e63fb8c4781a17f4170830",
-            lastUpdated: 1693261714958,
-            version: "5.253.119",
+            sha: "dc25140c73be912df9fe75eb2d791c50ef22b474",
+            lastUpdated: 1694209799376,
+            version: "5.262.119",
             type: "production"
         },
         Sm = {
             main: {
-                sha: "f6a8a0d111c55a52a7e63fb8c4781a17f4170830",
-                lastUpdated: 1693261714958,
-                version: "5.253.119",
+                sha: "dc25140c73be912df9fe75eb2d791c50ef22b474",
+                lastUpdated: 1694209799376,
+                version: "5.262.119",
                 type: "production",
                 bundles: {
                     "@connect": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@connect",
-                        version: "5.250.119"
+                        version: "5.260.119"
                     },
                     "the-wheel": {
                         file: "script.js",
@@ -10072,13 +10068,13 @@ Url: ${xr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@moderator",
-                        version: "5.251.119"
+                        version: "5.256.119"
                     },
                     "awshirt-tjsp": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/tjsp/awshirt",
-                        version: "5.94.0"
+                        version: "5.256.119"
                     },
                     "ecast-test-client": {
                         file: "script.js",
@@ -10336,7 +10332,7 @@ Url: ${xr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/tjsp/triviadeath2",
-                        version: "5.120.22"
+                        version: "5.256.119"
                     },
                     "murder-detectives": {
                         file: "script.js",
@@ -10396,19 +10392,19 @@ Url: ${xr(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@teeko-web",
-                        version: "5.249.119"
+                        version: "5.256.119"
                     },
                     awshirt2: {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp10/awshirt2",
-                        version: "5.253.119"
+                        version: "5.262.119"
                     },
                     "nopus-opus": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp10/nopus-opus",
-                        version: "5.247.119"
+                        version: "5.255.119"
                     },
                     "risky-text": {
                         file: "script.js",
@@ -10461,4 +10457,4 @@ Url: ${xr(t)}`), !0)
     gm()
 });
 export default xm();
-//# sourceMappingURL=b4c09f7b.js.map
+//# sourceMappingURL=db134020.js.map
