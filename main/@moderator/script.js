@@ -13969,7 +13969,7 @@ var wse = kP((goe, i0) => {
             shopItems: [],
             categoryId: "UsThemGame"
         }],
-        rH = e => tH.find(t => t.tag === e || t.categoryId === e);
+        rH = e => tH.find(t => t.tag === e || t.galleryId === e || t.categoryId === e);
 
     function nH(e) {
         throw new Error('Could not dynamically require "' + e + '". Please configure the dynamicRequireTargets or/and ignoreDynamicRequires option of @rollup/plugin-commonjs appropriately for this require call to work.')
@@ -27495,11 +27495,11 @@ ${t}`
     ]);
     window.tv.register({
         mount: e => {
-            var s, o, c;
+            var s, o;
             let t = mx(Rse);
             t.config.unwrapInjectedRef = !0;
             let r;
-            (s = e.room) != null && s.locale && (r = e.room.locale), (c = (o = e.match) == null ? void 0 : o.params) != null && c.locale && (r = e.match.params.locale), ro.set(r);
+            (s = e.room) != null && s.locale && (r = e.room.locale), (o = e.match) != null && o.params.locale && (r = e.match.params.locale), ro.set(r);
             const n = DM({
                 fallbackLocale: "en",
                 locale: ro.locale,
@@ -27520,4 +27520,4 @@ ${t}`
     })
 });
 export default wse();
-//# sourceMappingURL=8596a05c.js.map
+//# sourceMappingURL=6b086c1e.js.map

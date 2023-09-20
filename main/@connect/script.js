@@ -18504,14 +18504,14 @@ var Oae = J$((doe, _I) => {
             TextMapEntity: ZY
         } = Kg,
         {
-            TextRing: e5
+            TextRing: eV
         } = Xg,
         {
-            parseResponseMessage: t5
+            parseResponseMessage: tV
         } = FY,
-        r5 = 1e3 + Math.floor(Math.random() * 500),
+        rV = 1e3 + Math.floor(Math.random() * 500),
         Rw = 13e3;
-    let n5 = class extends WY {
+    let nV = class extends WY {
         constructor(e) {
             if (super(), this.debug = e.debug || !1, !e.host) throw new Error("unable to create ecast WSClient: no host provided");
             if (this.host = e.host, !e.code) throw new Error("unable to create ecast WSClient: no room code provided");
@@ -18556,7 +18556,7 @@ var Oae = J$((doe, _I) => {
                     };
                 this.conn = new Iw(n, "ecast-v0"), this.conn.onmessage = d => {
                     this.debugLog(`recv <- ${JSON.stringify(JSON.parse(d.data),null,2)}`);
-                    const h = t5(d);
+                    const h = tV(d);
                     if (h instanceof XY) this.onReply(h);
                     else if (h instanceof Cw) {
                         if (h.result instanceof zY) c = !0, this.id = h.result.id, this.deviceId = h.result.deviceId, this.entities = h.result.entities, this.secret = h.result.secret, h.result.name && (this.name = h.result.name), u(h.result);
@@ -18584,7 +18584,7 @@ var Oae = J$((doe, _I) => {
         async reconnect() {
             this.disconnect(), this.debugLog("Attempting to reconnect");
             let e = 1,
-                r = r5;
+                r = rV;
             for (;;) try {
                 this.emit("connection", {
                     status: "connecting",
@@ -19072,7 +19072,7 @@ var Oae = J$((doe, _I) => {
                 } = r;
             i && (n.limit = i), s && (n.accept = s), o && (n.reject = o);
             const c = await this.send("audience/text-ring/create", n);
-            return this.entities[e] = new e5({
+            return this.entities[e] = new eV({
                 key: e,
                 elements: [],
                 limit: i,
@@ -19093,68 +19093,68 @@ var Oae = J$((doe, _I) => {
             })
         }
     };
-    var i5 = {
-        WSClient: n5
+    var iV = {
+        WSClient: nV
     };
     const {
-        APIClient: s5
+        APIClient: sV
     } = h4, {
-        WSClient: a5
-    } = i5, {
-        CreateRoomReply: o5,
-        GetRoomReply: l5
+        WSClient: aV
+    } = iV, {
+        CreateRoomReply: oV,
+        GetRoomReply: lV
     } = Bf, {
-        ClientWelcome: c5,
-        ClientDisconnected: u5
+        ClientWelcome: cV,
+        ClientDisconnected: uV
     } = Gg, {
-        ArtifactEntity: f5
+        ArtifactEntity: fV
     } = v1, {
-        GCounter: d5
+        GCounter: dV
     } = zg, {
-        NumberEntity: p5
+        NumberEntity: pV
     } = jg, {
-        TextEntity: h5
+        TextEntity: hV
     } = Vg, {
-        DoodleEntity: m5
+        DoodleEntity: mV
     } = Hg, {
-        ObjectEntity: g5
+        ObjectEntity: gV
     } = qg, {
-        CountGroup: v5
+        CountGroup: vV
     } = Wg, {
-        DropEntity: _5
+        DropEntity: _V
     } = _1, {
-        OK: y5
+        OK: yV
     } = y1, {
-        RoomExit: E5
+        RoomExit: EV
     } = Bf, {
-        TextRing: b5
+        TextRing: bV
     } = Xg, {
-        TextMapEntity: w5
+        TextMapEntity: wV
     } = Kg, {
-        PNCounter: S5
+        PNCounter: SV
     } = Yg;
-    var T5 = {
-        APIClient: s5,
-        WSClient: a5,
-        ClientWelcome: c5,
-        CreateRoomReply: o5,
-        DropEntity: _5,
-        GetRoomReply: l5,
-        ClientDisconnected: u5,
-        RoomExit: E5,
-        OK: y5,
-        ArtifactEntity: f5,
-        DoodleEntity: m5,
-        NumberEntity: p5,
-        CountGroup: v5,
-        GCounter: d5,
-        ObjectEntity: g5,
-        PNCounter: S5,
-        TextEntity: h5,
-        TextRing: b5,
-        TextMapEntity: w5
+    var TV = {
+        APIClient: sV,
+        WSClient: aV,
+        ClientWelcome: cV,
+        CreateRoomReply: oV,
+        DropEntity: _V,
+        GetRoomReply: lV,
+        ClientDisconnected: uV,
+        RoomExit: EV,
+        OK: yV,
+        ArtifactEntity: fV,
+        DoodleEntity: mV,
+        NumberEntity: pV,
+        CountGroup: vV,
+        GCounter: dV,
+        ObjectEntity: gV,
+        PNCounter: SV,
+        TextEntity: hV,
+        TextRing: bV,
+        TextMapEntity: wV
     };
-    const O5 = [{
+    const OV = [{
             name: "Prototype",
             tag: "prototype",
             wrapper: "vue",
@@ -19590,9 +19590,9 @@ var Oae = J$((doe, _I) => {
             shopItems: [],
             categoryId: "UsThemGame"
         }],
-        Wf = t => O5.find(e => e.tag === t || e.categoryId === t);
+        Wf = t => OV.find(e => e.tag === t || e.galleryId === t || e.categoryId === t);
 
-    function A5(t) {
+    function AV(t) {
         throw new Error('Could not dynamically require "' + t + '". Please configure the dynamicRequireTargets or/and ignoreDynamicRequires option of @rollup/plugin-commonjs appropriately for this require call to work.')
     }
     var Lw = {
@@ -20214,7 +20214,7 @@ var Oae = J$((doe, _I) => {
             };
 
             function ye() {
-                return typeof window < "u" ? window : typeof process == "object" && typeof A5 == "function" && typeof Jt == "object" ? Jt : this
+                return typeof window < "u" ? window : typeof process == "object" && typeof AV == "function" && typeof Jt == "object" ? Jt : this
             }
             var ce = {
                     mock: !0,
@@ -20430,7 +20430,7 @@ var Oae = J$((doe, _I) => {
             })
         })
     })(Lw, Lw.exports);
-    var I5 = {
+    var IV = {
         exports: {}
     };
     (function(t) {
@@ -20479,8 +20479,8 @@ var Oae = J$((doe, _I) => {
             }
             t.exports = o, t.exports.default = o
         })()
-    })(I5);
-    class C5 {
+    })(IV);
+    class CV {
         static async warningsForAppTag(e) {
             var i;
             const r = [],
@@ -20530,38 +20530,38 @@ var Oae = J$((doe, _I) => {
             return e.replace(/(\u00a9|\u00ae|[\u2000-\u2017]|[\u2020-\u3300]|\ud83c[\ud000-\udfff]|\ud83d[\ud000-\udfff]|\ud83e[\ud000-\udfff])/, "")
         }
     }
-    var Kc, R5 = new Uint8Array(16);
+    var Kc, RV = new Uint8Array(16);
 
-    function L5() {
+    function LV() {
         if (!Kc && (Kc = typeof crypto < "u" && crypto.getRandomValues && crypto.getRandomValues.bind(crypto) || typeof msCrypto < "u" && typeof msCrypto.getRandomValues == "function" && msCrypto.getRandomValues.bind(msCrypto), !Kc)) throw new Error("crypto.getRandomValues() not supported. See https://github.com/uuidjs/uuid#getrandomvalues-not-supported");
-        return Kc(R5)
+        return Kc(RV)
     }
-    const N5 = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i;
+    const NV = /^(?:[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}|00000000-0000-0000-0000-000000000000)$/i;
 
-    function P5(t) {
-        return typeof t == "string" && N5.test(t)
+    function PV(t) {
+        return typeof t == "string" && NV.test(t)
     }
     var dr = [];
     for (var zp = 0; zp < 256; ++zp) dr.push((zp + 256).toString(16).substr(1));
 
-    function x5(t) {
+    function xV(t) {
         var e = arguments.length > 1 && arguments[1] !== void 0 ? arguments[1] : 0,
             r = (dr[t[e + 0]] + dr[t[e + 1]] + dr[t[e + 2]] + dr[t[e + 3]] + "-" + dr[t[e + 4]] + dr[t[e + 5]] + "-" + dr[t[e + 6]] + dr[t[e + 7]] + "-" + dr[t[e + 8]] + dr[t[e + 9]] + "-" + dr[t[e + 10]] + dr[t[e + 11]] + dr[t[e + 12]] + dr[t[e + 13]] + dr[t[e + 14]] + dr[t[e + 15]]).toLowerCase();
-        if (!P5(r)) throw TypeError("Stringified UUID is invalid");
+        if (!PV(r)) throw TypeError("Stringified UUID is invalid");
         return r
     }
 
     function E1(t, e, r) {
         t = t || {};
-        var n = t.random || (t.rng || L5)();
+        var n = t.random || (t.rng || LV)();
         if (n[6] = n[6] & 15 | 64, n[8] = n[8] & 63 | 128, e) {
             r = r || 0;
             for (var i = 0; i < 16; ++i) e[r + i] = n[i];
             return e
         }
-        return x5(n)
+        return xV(n)
     }
-    class $5 {
+    class $V {
         constructor(e) {
             fi(this, "user");
             if (!ze.isSupported) {
@@ -20621,7 +20621,7 @@ var Oae = J$((doe, _I) => {
             }
         }
     }
-    const M5 = {
+    const MV = {
             BACK: "Back",
             CANCEL: "Cancel",
             CLOSE: "Close",
@@ -20642,7 +20642,7 @@ var Oae = J$((doe, _I) => {
             UNDO: "Undo",
             YES: "Yes"
         },
-        D5 = {
+        DV = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "prompts hidden on players’ devices",
                 VISIBILITY_CONTROLLER_ON: "prompts shown on players’ devices",
@@ -20650,7 +20650,7 @@ var Oae = J$((doe, _I) => {
                 VISIBILITY_SCREEN_ON: "prompts shown on game screen"
             }
         },
-        k5 = {
+        kV = {
             DISCONNECTED: "You have been disconnected.",
             DRAWING_NOTHING: "You have to draw something!",
             PLAYER_KICKED: "You have been kicked from the game by a moderator.",
@@ -20660,8 +20660,8 @@ var Oae = J$((doe, _I) => {
             TEXT_NOTHING: "You can’t enter nothing!",
             TITLE: "Error"
         },
-        U5 = "LOADING",
-        B5 = {
+        UV = "LOADING",
+        BV = {
             JOINED_COUNT: "{count} of {maxPlayers} players joined",
             PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
             WAITING_FOR_VIP: "Waiting for {name} to start the game",
@@ -20670,25 +20670,25 @@ var Oae = J$((doe, _I) => {
             BUTTON_START: "Press to Start",
             BUTTON_CANCEL: "Press to Cancel"
         },
-        F5 = {
+        FV = {
             GALLERY_LINK: "Visit the Gallery",
             PLAY_AGAIN: "Play again?",
             BUTTON_SAME_PLAYERS: "Same Players",
             BUTTON_NEW_PLAYERS: "New Players"
         },
-        G5 = {
+        GV = {
             AND: "AND",
             OR: "OR"
         },
-        W5 = {
+        WV = {
             BUTTON_SKIP: "Skip",
             BUTTON_NEXT: "Next",
             BUTTON_DONE: "Let’s Go!"
         },
-        H5 = {
+        HV = {
             NAME: "AUDIENCE"
         },
-        z5 = {
+        zV = {
             EPISODE_REPORT: "Report Episode",
             EPISODE_UNLOAD: "Unload Episode",
             EPISODE_VIEW_AUTHOR: "View Author",
@@ -20718,7 +20718,7 @@ var Oae = J$((doe, _I) => {
             PROMPTS_COUNT_HIDDEN: "({count} hidden)",
             TITLE_PLACEHOLDER: "enter a title"
         },
-        j5 = {
+        jV = {
             BROADCASTER: {
                 SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
                 WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
@@ -20742,20 +20742,20 @@ var Oae = J$((doe, _I) => {
                 SUBTEXT: "Anything you submit will still be sent to the game."
             }
         },
-        q5 = {
-            ACTION: M5,
-            ALT: D5,
-            ERROR: k5,
-            LOADING: U5,
-            LOBBY: B5,
-            POST_GAME: F5,
-            SEPARATOR: G5,
-            TUTORIAL: W5,
-            AUDIENCE: H5,
-            UGC: z5,
-            TOAST: j5
+        qV = {
+            ACTION: MV,
+            ALT: DV,
+            ERROR: kV,
+            LOADING: UV,
+            LOBBY: BV,
+            POST_GAME: FV,
+            SEPARATOR: GV,
+            TUTORIAL: WV,
+            AUDIENCE: HV,
+            UGC: zV,
+            TOAST: jV
         },
-        Y5 = {
+        YV = {
             BACK: "Retour",
             CANCEL: "Annuler",
             CLOSE: "Fermer",
@@ -20776,7 +20776,7 @@ var Oae = J$((doe, _I) => {
             UNDO: "Annuler",
             YES: "Oui"
         },
-        V5 = {
+        VV = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "sujets non affichés sur les appareils des joueurs",
                 VISIBILITY_CONTROLLER_ON: "sujets affichés sur les appareils des joueurs",
@@ -20784,7 +20784,7 @@ var Oae = J$((doe, _I) => {
                 VISIBILITY_SCREEN_ON: "sujets affichés sur l'écran de jeu"
             }
         },
-        K5 = {
+        KV = {
             DISCONNECTED: "Vous avez été déconnecté(e).",
             DRAWING_NOTHING: "Vous devez dessiner quelque chose !",
             PLAYER_KICKED: "Vous avez été éjecté(e) de la partie par un modérateur.",
@@ -20794,8 +20794,8 @@ var Oae = J$((doe, _I) => {
             TEXT_NOTHING: "Vous ne pouvez pas ne rien entrer",
             TITLE: "Erreur"
         },
-        X5 = "CHARGEMENT",
-        J5 = {
+        XV = "CHARGEMENT",
+        JV = {
             JOINED_COUNT: "{count} joueurs sur {maxPlayers} ont rejoint la partie",
             PLAYERS_NEEDED: "1 joueur nécessaire pour commencer | {count} joueurs nécessaires pour commencer",
             WAITING_FOR_VIP: "En attente de {name} pour commencer la partie",
@@ -20804,25 +20804,25 @@ var Oae = J$((doe, _I) => {
             BUTTON_START: "Appuyer pour commencer",
             BUTTON_CANCEL: "Appuyer pour annuler"
         },
-        Q5 = {
+        QV = {
             GALLERY_LINK: "Visiter la galerie",
             PLAY_AGAIN: "Rejouer ?",
             BUTTON_SAME_PLAYERS: "Les mêmes joueurs",
             BUTTON_NEW_PLAYERS: "De nouveaux joueurs"
         },
-        Z5 = {
+        ZV = {
             AND: "ET",
             OR: "OU"
         },
-        eV = {
+        e5 = {
             BUTTON_SKIP: "Passer",
             BUTTON_NEXT: "Suivant",
             BUTTON_DONE: "Allons-y !"
         },
-        tV = {
+        t5 = {
             NAME: "SPECTATEURS"
         },
-        rV = {
+        r5 = {
             EPISODE_REPORT: "Signaler l'épisode",
             EPISODE_UNLOAD: "Retirer l'épisode",
             EPISODE_VIEW_AUTHOR: "Voir l'auteur",
@@ -20852,7 +20852,7 @@ var Oae = J$((doe, _I) => {
             PROMPTS_COUNT_HIDDEN: "({count} non affiché)",
             TITLE_PLACEHOLDER: "taper un titre"
         },
-        nV = {
+        n5 = {
             BROADCASTER: {
                 SUBTEXT: "La connexion de votre compte à l'extension Twitch Jackbox Audience Kit a réussi.",
                 WARNING: "LE PARAMÈTRE 'PUBLIC' N'EST PAS ACTIVÉ DANS CETTE SALLE."
@@ -20876,20 +20876,20 @@ var Oae = J$((doe, _I) => {
                 SUBTEXT: "Tout ce que vous proposez sera quand même envoyé dans le jeu."
             }
         },
-        iV = {
-            ACTION: Y5,
-            ALT: V5,
-            ERROR: K5,
-            LOADING: X5,
-            LOBBY: J5,
-            POST_GAME: Q5,
-            SEPARATOR: Z5,
-            TUTORIAL: eV,
-            AUDIENCE: tV,
-            UGC: rV,
-            TOAST: nV
+        i5 = {
+            ACTION: YV,
+            ALT: VV,
+            ERROR: KV,
+            LOADING: XV,
+            LOBBY: JV,
+            POST_GAME: QV,
+            SEPARATOR: ZV,
+            TUTORIAL: e5,
+            AUDIENCE: t5,
+            UGC: r5,
+            TOAST: n5
         },
-        sV = {
+        s5 = {
             BACK: "Indietro",
             CANCEL: "Annulla",
             CLOSE: "Chiuda",
@@ -20910,7 +20910,7 @@ var Oae = J$((doe, _I) => {
             UNDO: "Annulla",
             YES: "Sì"
         },
-        aV = {
+        a5 = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "definizioni nascoste sui dispositivi dei giocatori",
                 VISIBILITY_CONTROLLER_ON: "definizioni visualizzate sui dispositivi dei giocatori",
@@ -20918,7 +20918,7 @@ var Oae = J$((doe, _I) => {
                 VISIBILITY_SCREEN_ON: "definizioni visualizzate sullo schermo di gioco"
             }
         },
-        oV = {
+        o5 = {
             DISCONNECTED: "È stata effettuata la disconnessione.",
             DRAWING_NOTHING: "Devi disegnare qualcosa!",
             PLAYER_KICKED: "Un moderatore ti ha cacciato dalla partita.",
@@ -20928,8 +20928,8 @@ var Oae = J$((doe, _I) => {
             TEXT_NOTHING: "Devi per forza inserire qualcosa!",
             TITLE: "Errore"
         },
-        lV = "CARICAMENTO",
-        cV = {
+        l5 = "CARICAMENTO",
+        c5 = {
             JOINED_COUNT: "{count} su {maxPlayers} giocatori in partita",
             PLAYERS_NEEDED: "Manca 1 giocatore per iniziare | Mancano {count} giocatori per iniziare",
             WAITING_FOR_VIP: "In attesa di {name} per iniziare la partita",
@@ -20938,25 +20938,25 @@ var Oae = J$((doe, _I) => {
             BUTTON_START: "Premi per avviare",
             BUTTON_CANCEL: "Premi per annullare"
         },
-        uV = {
+        u5 = {
             GALLERY_LINK: "Visita la galleria",
             PLAY_AGAIN: "Vuoi giocare di nuovo?",
             BUTTON_SAME_PLAYERS: "Stessi giocatori",
             BUTTON_NEW_PLAYERS: "Nuovi giocatori"
         },
-        fV = {
+        f5 = {
             AND: "E",
             OR: "O"
         },
-        dV = {
+        d5 = {
             BUTTON_SKIP: "Salta",
             BUTTON_NEXT: "Avanti",
             BUTTON_DONE: "Iniziamo!"
         },
-        pV = {
+        p5 = {
             NAME: "PUBBLICO"
         },
-        hV = {
+        h5 = {
             EPISODE_REPORT: "Segnala episodio",
             EPISODE_UNLOAD: "Rimuovi episodio",
             EPISODE_VIEW_AUTHOR: "Mostra autore",
@@ -20986,7 +20986,7 @@ var Oae = J$((doe, _I) => {
             PROMPTS_COUNT_HIDDEN: "({count} nascosti)",
             TITLE_PLACEHOLDER: "inserisci un titolo"
         },
-        mV = {
+        m5 = {
             BROADCASTER: {
                 SUBTEXT: "Il collegamento del tuo account con l'estensione per Twitch Jackbox Audience Kit è andato a buon fine.",
                 WARNING: "L'IMPOSTAZIONE DEL PUBBLICO NON È ATTIVA PER QUESTA STANZA"
@@ -21010,20 +21010,20 @@ var Oae = J$((doe, _I) => {
                 SUBTEXT: "Qualsiasi cosa invii sarà comunque inviata al gioco."
             }
         },
-        gV = {
-            ACTION: sV,
-            ALT: aV,
-            ERROR: oV,
-            LOADING: lV,
-            LOBBY: cV,
-            POST_GAME: uV,
-            SEPARATOR: fV,
-            TUTORIAL: dV,
-            AUDIENCE: pV,
-            UGC: hV,
-            TOAST: mV
+        g5 = {
+            ACTION: s5,
+            ALT: a5,
+            ERROR: o5,
+            LOADING: l5,
+            LOBBY: c5,
+            POST_GAME: u5,
+            SEPARATOR: f5,
+            TUTORIAL: d5,
+            AUDIENCE: p5,
+            UGC: h5,
+            TOAST: m5
         },
-        vV = {
+        v5 = {
             BACK: "Zurück",
             CANCEL: "Abbrechen",
             CLOSE: "Schließen",
@@ -21044,7 +21044,7 @@ var Oae = J$((doe, _I) => {
             UNDO: "Rückgängig",
             YES: "Ja"
         },
-        _V = {
+        _5 = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "Prompts auf Spielergeräten verborgen",
                 VISIBILITY_CONTROLLER_ON: "Prompts auf Spielergeräten angezeigt",
@@ -21052,7 +21052,7 @@ var Oae = J$((doe, _I) => {
                 VISIBILITY_SCREEN_ON: "Prompts auf Spielbildschirm angezeigt"
             }
         },
-        yV = {
+        y5 = {
             DISCONNECTED: "Deine Verbindung wurde getrennt.",
             DRAWING_NOTHING: "Du musst irgendwas zeichnen!",
             PLAYER_KICKED: "Du wurdest von einem Moderator gekickt.",
@@ -21062,8 +21062,8 @@ var Oae = J$((doe, _I) => {
             TEXT_NOTHING: "Du musst etwas eingeben!",
             TITLE: "Fehler"
         },
-        EV = "LADE",
-        bV = {
+        E5 = "LADE",
+        b5 = {
             JOINED_COUNT: "{count} von {maxPlayers} Spielern sind beigetreten",
             PLAYERS_NEEDED: "1 Spieler zum Starten benötigt | {count} Spieler zum Starten benötigt",
             WAITING_FOR_VIP: "Warten, bis {name} das Spiel startet",
@@ -21072,25 +21072,25 @@ var Oae = J$((doe, _I) => {
             BUTTON_START: "Zum Starten drücken",
             BUTTON_CANCEL: "Zum Abbrechen drücken"
         },
-        wV = {
+        w5 = {
             GALLERY_LINK: "Galerie besuchen",
             PLAY_AGAIN: "Erneut spielen?",
             BUTTON_SAME_PLAYERS: "Selbe Spieler",
             BUTTON_NEW_PLAYERS: "Neue Spieler"
         },
-        SV = {
+        S5 = {
             AND: "UND",
             OR: "ODER"
         },
-        TV = {
+        T5 = {
             BUTTON_SKIP: "Überspringen",
             BUTTON_NEXT: "Weiter",
             BUTTON_DONE: "Los geht's!"
         },
-        OV = {
+        O5 = {
             NAME: "PUBLIKUM"
         },
-        AV = {
+        A5 = {
             EPISODE_REPORT: "Episode melden",
             EPISODE_UNLOAD: "Episode deaktivieren",
             EPISODE_VIEW_AUTHOR: "Autor ansehen",
@@ -21120,7 +21120,7 @@ var Oae = J$((doe, _I) => {
             PROMPTS_COUNT_HIDDEN: "({count} versteckt)",
             TITLE_PLACEHOLDER: "Titel eingeben"
         },
-        IV = {
+        I5 = {
             BROADCASTER: {
                 SUBTEXT: "Du hast dein Konto erfolgreich mit der Jackbox Audience Kit Twitch-Erweiterung verknüpft.",
                 WARNING: "FÜR DIESEN RAUM IST DIE PUBLIKUMS-EINSTELLUNG NICHT AKTIV"
@@ -21144,20 +21144,20 @@ var Oae = J$((doe, _I) => {
                 SUBTEXT: "Alles, was du abschickst, wird weiterhin ans Spiel gesendet."
             }
         },
-        CV = {
-            ACTION: vV,
-            ALT: _V,
-            ERROR: yV,
-            LOADING: EV,
-            LOBBY: bV,
-            POST_GAME: wV,
-            SEPARATOR: SV,
-            TUTORIAL: TV,
-            AUDIENCE: OV,
-            UGC: AV,
-            TOAST: IV
+        C5 = {
+            ACTION: v5,
+            ALT: _5,
+            ERROR: y5,
+            LOADING: E5,
+            LOBBY: b5,
+            POST_GAME: w5,
+            SEPARATOR: S5,
+            TUTORIAL: T5,
+            AUDIENCE: O5,
+            UGC: A5,
+            TOAST: I5
         },
-        RV = {
+        R5 = {
             BACK: "Atrás",
             CANCEL: "Cancelar",
             CLOSE: "Cerrar",
@@ -21178,7 +21178,7 @@ var Oae = J$((doe, _I) => {
             UNDO: "Deshacer",
             YES: "Sí"
         },
-        LV = {
+        L5 = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "los enunciados no se muestran en el dispositivo del jugador",
                 VISIBILITY_CONTROLLER_ON: "los enunciados se muestran en el dispositivo del jugador",
@@ -21186,7 +21186,7 @@ var Oae = J$((doe, _I) => {
                 VISIBILITY_SCREEN_ON: "los enunciados se muestran en la pantalla"
             }
         },
-        NV = {
+        N5 = {
             DISCONNECTED: "Te has desconectado.",
             DRAWING_NOTHING: "¡Tienes que dibujar algo!",
             PLAYER_KICKED: "Un moderador te ha expulsado de la partida.",
@@ -21196,8 +21196,8 @@ var Oae = J$((doe, _I) => {
             TEXT_NOTHING: "Tienes que escribir algo",
             TITLE: "Error"
         },
-        PV = "CARGANDO",
-        xV = {
+        P5 = "CARGANDO",
+        x5 = {
             JOINED_COUNT: "Se han unido {count} de {maxPlayers} jugadores",
             PLAYERS_NEEDED: "Se necesita 1 jugador para empezar | Se necesitan {count} jugadores para empezar",
             WAITING_FOR_VIP: "Esperando a que {name} inicie la partida",
@@ -21206,25 +21206,25 @@ var Oae = J$((doe, _I) => {
             BUTTON_START: "Pulsa para empezar",
             BUTTON_CANCEL: "Pulsa para cancelar"
         },
-        $V = {
+        $5 = {
             GALLERY_LINK: "Visita la galería",
             PLAY_AGAIN: "¿Jugar otra vez?",
             BUTTON_SAME_PLAYERS: "Los mismos jugadores",
             BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
-        MV = {
+        M5 = {
             AND: "Y",
             OR: "O"
         },
-        DV = {
+        D5 = {
             BUTTON_SKIP: "Omitir",
             BUTTON_NEXT: "Siguiente",
             BUTTON_DONE: "¡Vamos!"
         },
-        kV = {
+        k5 = {
             NAME: "PÚBLICO"
         },
-        UV = {
+        U5 = {
             EPISODE_REPORT: "Denunciar episodio",
             EPISODE_UNLOAD: "Retirar episodio",
             EPISODE_VIEW_AUTHOR: "Ver autor",
@@ -21254,7 +21254,7 @@ var Oae = J$((doe, _I) => {
             PROMPTS_COUNT_HIDDEN: "({count} ocultos)",
             TITLE_PLACEHOLDER: "escribe un título"
         },
-        BV = {
+        B5 = {
             BROADCASTER: {
                 SUBTEXT: "Has conectado tu cuenta con éxito a la extensión de Twitch del kit para público de Jackbox.",
                 WARNING: "ESTA SALA NO TIENE LA FUNCIÓN DE PÚBLICO HABILITADA"
@@ -21278,20 +21278,20 @@ var Oae = J$((doe, _I) => {
                 SUBTEXT: "Tus respuestas se enviarán igualmente al juego."
             }
         },
-        FV = {
-            ACTION: RV,
-            ALT: LV,
-            ERROR: NV,
-            LOADING: PV,
-            LOBBY: xV,
-            POST_GAME: $V,
-            SEPARATOR: MV,
-            TUTORIAL: DV,
-            AUDIENCE: kV,
-            UGC: UV,
-            TOAST: BV
+        F5 = {
+            ACTION: R5,
+            ALT: L5,
+            ERROR: N5,
+            LOADING: P5,
+            LOBBY: x5,
+            POST_GAME: $5,
+            SEPARATOR: M5,
+            TUTORIAL: D5,
+            AUDIENCE: k5,
+            UGC: U5,
+            TOAST: B5
         },
-        GV = {
+        G5 = {
             BACK: "Volver",
             CANCEL: "Cancelar",
             CLOSE: "Cerrar",
@@ -21312,7 +21312,7 @@ var Oae = J$((doe, _I) => {
             UNDO: "Deshacer",
             YES: "Sí"
         },
-        WV = {
+        W5 = {
             UGC: {
                 VISIBILITY_CONTROLLER_OFF: "indicaciones ocultas en los dispositivos de los jugadores",
                 VISIBILITY_CONTROLLER_ON: "indicaciones presentes en los dispositivos de los jugadores",
@@ -21320,7 +21320,7 @@ var Oae = J$((doe, _I) => {
                 VISIBILITY_SCREEN_ON: "indicaciones presentes en la pantalla del juego"
             }
         },
-        HV = {
+        H5 = {
             DISCONNECTED: "Te desconectaste.",
             DRAWING_NOTHING: "¡Tienes que dibujar algo!",
             PLAYER_KICKED: "Un moderador te expulsó del juego.",
@@ -21330,8 +21330,8 @@ var Oae = J$((doe, _I) => {
             TEXT_NOTHING: "¡Tienes que escribir algo!",
             TITLE: "Error"
         },
-        zV = "CARGANDO",
-        jV = {
+        z5 = "CARGANDO",
+        j5 = {
             JOINED_COUNT: "{count} de {maxPlayers} jugadores se unieron",
             PLAYERS_NEEDED: "Se necesita 1 jugador para empezar | Se necesitan {count} jugadores para empezar",
             WAITING_FOR_VIP: "Esperando a que {name} inicie la partida",
@@ -21340,25 +21340,25 @@ var Oae = J$((doe, _I) => {
             BUTTON_START: "Pulsa para empezar",
             BUTTON_CANCEL: "Pulsa para cancelar"
         },
-        qV = {
+        q5 = {
             GALLERY_LINK: "Visita la galería",
             PLAY_AGAIN: "¿Jugar otra vez?",
             BUTTON_SAME_PLAYERS: "Los mismos jugadores",
             BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
-        YV = {
+        Y5 = {
             AND: "Y",
             OR: "O"
         },
-        VV = {
+        V5 = {
             BUTTON_SKIP: "Omitir",
             BUTTON_NEXT: "Siguiente",
             BUTTON_DONE: "¡Vamos!"
         },
-        KV = {
+        K5 = {
             NAME: "PÚBLICO"
         },
-        XV = {
+        X5 = {
             EPISODE_REPORT: "Denunciar episodio",
             EPISODE_UNLOAD: "Descargar episodio",
             EPISODE_VIEW_AUTHOR: "Ver autor",
@@ -21388,7 +21388,7 @@ var Oae = J$((doe, _I) => {
             PROMPTS_COUNT_HIDDEN: "({count} oculto(s))",
             TITLE_PLACEHOLDER: "Escribir un título"
         },
-        JV = {
+        J5 = {
             BROADCASTER: {
                 SUBTEXT: "Conectaste correctamente tu cuenta a la extensión para Twitch del kit para público de Jackbox.",
                 WARNING: "ESTA SALA NO TIENE ACTIVADA LA OPCIÓN DE PÚBLICO"
@@ -21412,26 +21412,26 @@ var Oae = J$((doe, _I) => {
                 SUBTEXT: "Todo lo que ingreses será enviado al juego."
             }
         },
-        QV = {
-            ACTION: GV,
-            ALT: WV,
-            ERROR: HV,
-            LOADING: zV,
-            LOBBY: jV,
-            POST_GAME: qV,
-            SEPARATOR: YV,
-            TUTORIAL: VV,
-            AUDIENCE: KV,
-            UGC: XV,
-            TOAST: JV
+        Q5 = {
+            ACTION: G5,
+            ALT: W5,
+            ERROR: H5,
+            LOADING: z5,
+            LOBBY: j5,
+            POST_GAME: q5,
+            SEPARATOR: Y5,
+            TUTORIAL: V5,
+            AUDIENCE: K5,
+            UGC: X5,
+            TOAST: J5
         },
-        ZV = {
-            en: q5,
-            fr: iV,
-            it: gV,
-            de: CV,
-            es: FV,
-            "es-XL": QV
+        Z5 = {
+            en: qV,
+            fr: i5,
+            it: g5,
+            de: C5,
+            es: F5,
+            "es-XL": Q5
         },
         Rr = (t, e) => {
             const r = t.__vccOpts || t;
@@ -32231,7 +32231,7 @@ de tu lista de partidas anteriores.`,
                     branch: "",
                     isConnecting: !1,
                     reconnectData: null,
-                    api: new T5.APIClient({
+                    api: new TV.APIClient({
                         host: Ds.serverUrl,
                         scheme: "https"
                     }),
@@ -32473,7 +32473,7 @@ de tu lista de partidas anteriores.`,
                         const t = await this.api.getRoom({
                             code: this.code
                         });
-                        this.room = t, this.warnings = await C5.warningsForAppTag(t.appTag), this.$i18n.locale = this.room.locale;
+                        this.room = t, this.warnings = await CV.warningsForAppTag(t.appTag), this.$i18n.locale = this.room.locale;
                         const e = this.getBranchForRoom();
                         if (!e) return;
                         this.branch = e, await this.preloadBundle()
@@ -32579,7 +32579,7 @@ de tu lista de partidas anteriores.`,
                 }
             }
         }),
-        Lie = t => ($l("data-v-b34d46f5"), t = t(), Ml(), t),
+        Lie = t => ($l("data-v-66b19376"), t = t(), Ml(), t),
         Nie = {
             for: "roomcode"
         },
@@ -32711,7 +32711,7 @@ de tu lista de partidas anteriores.`,
     }
     const Vie = Rr(Rie, [
             ["render", Yie],
-            ["__scopeId", "data-v-b34d46f5"]
+            ["__scopeId", "data-v-66b19376"]
         ]),
         Kie = Cr({
             props: {
@@ -33446,7 +33446,7 @@ de tu lista de partidas anteriores.`,
                 return {
                     artifacts: new Al,
                     theme: ze.get("preference:theme") || "device",
-                    twitch: new $5(this.options.match.hashString)
+                    twitch: new $V(this.options.match.hashString)
                 }
             },
             computed: {
@@ -33501,11 +33501,11 @@ de tu lista de partidas anteriores.`,
                     this.theme = ze.get("preference:theme") || "device"
                 },
                 checkForPastGamesUrl() {
-                    var r, n;
+                    var r;
                     const t = (r = this.options) == null ? void 0 : r.match;
                     if (!t || !t.url.includes("past-games")) return;
                     const e = this.$refs.topBar;
-                    (n = t.data) != null && n.game && (e.$data.pastGamesFilter = t.data.game), e.$data.openedTo = "pastGames"
+                    t.data.game && (e.$data.pastGamesFilter = t.data.game), e.$data.openedTo = "pastGames"
                 }
             }
         }),
@@ -33551,36 +33551,36 @@ de tu lista de partidas anteriores.`,
     }
     const Tae = Rr(yae, [
         ["render", Sae],
-        ["__scopeId", "data-v-73125a09"]
+        ["__scopeId", "data-v-d720b942"]
     ]);
     iF();
     window.tv.register({
         mount: t => {
-            var i, s;
+            var i;
             let e = Lk(Tae, {
                     options: t
                 }),
                 r;
-            (s = (i = t.match) == null ? void 0 : i.params) != null && s.locale && (r = t.match.params.locale), Ms.set(r);
+            (i = t.match) != null && i.params.locale && (r = t.match.params.locale), Ms.set(r);
             const n = YU({
                 fallbackLocale: "en",
                 locale: Ms.locale,
-                messages: Ms.mergeMessages(ZV, Ea)
+                messages: Ms.mergeMessages(Z5, Ea)
             });
             return e.use(rQ), e.use(zte), e.use(n), e.use(wre, {
                 i18n: n
             }), e.use(jre), e.use(_Q, {
                 onChange: ({
-                    cookie: o
+                    cookie: s
                 }) => {
                     console.log(`user changed their cookie preferences:
-`, o)
+`, s)
                 },
                 onFirstConsent: ({
-                    cookie: o
+                    cookie: s
                 }) => {
                     console.log(`user set cookie preferences for the first time:
-`, o)
+`, s)
                 },
                 revision: 1,
                 guiOptions: {
@@ -33605,19 +33605,19 @@ de tu lista de partidas anteriores.`,
                 language: {
                     default: "en",
                     autoDetect: "browser",
-                    translations: Ms.supported.reduce((o, c) => {
-                        var u;
-                        return (u = Ea[c]) != null && u.COOKIE && (o[c] = {
+                    translations: Ms.supported.reduce((s, o) => {
+                        var c;
+                        return (c = Ea[o]) != null && c.COOKIE && (s[o] = {
                             consentModal: {
-                                label: Ea[c].COOKIE.CONSENT_MODAL.ARIA,
-                                description: e.config.globalProperties.$bb(Ea[c].COOKIE.DESCRIPTION),
-                                acceptAllBtn: Ea[c].COOKIE.ACCEPT_ALL,
-                                acceptNecessaryBtn: Ea[c].COOKIE.REJECT_ALL
+                                label: Ea[o].COOKIE.CONSENT_MODAL.ARIA,
+                                description: e.config.globalProperties.$bb(Ea[o].COOKIE.DESCRIPTION),
+                                acceptAllBtn: Ea[o].COOKIE.ACCEPT_ALL,
+                                acceptNecessaryBtn: Ea[o].COOKIE.REJECT_ALL
                             },
                             preferencesModal: {
                                 sections: []
                             }
-                        }), o
+                        }), s
                     }, {})
                 }
             }), e.mount("#app"), () => {
@@ -33633,4 +33633,4 @@ de tu lista de partidas anteriores.`,
     })
 });
 export default Oae();
-//# sourceMappingURL=20697f41.js.map
+//# sourceMappingURL=b14311ea.js.map

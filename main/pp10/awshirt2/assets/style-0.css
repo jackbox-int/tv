@@ -4995,8 +4995,8 @@ body {
     filter: brightness(100%)
 }
 
-.voting button[data-v-d7cc588e],
-.voting .choice[data-v-d7cc588e] {
+.voting button[data-v-834efabc],
+.voting .choice[data-v-834efabc] {
     position: relative;
     height: 100%;
     margin: 0;
@@ -5006,101 +5006,102 @@ body {
     background: none
 }
 
-.voting button[data-v-d7cc588e]:hover:enabled {
+.voting button[data-v-834efabc]:hover:enabled {
     background-color: #fde4a5
 }
 
-.voting button[data-v-d7cc588e]:active:enabled {
+.voting button[data-v-834efabc]:active:enabled {
     background-color: #fff
 }
 
-.voting .battle[data-v-d7cc588e] {
+.voting .battle[data-v-834efabc] {
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative
 }
 
-.voting .battle .left[data-v-d7cc588e] {
+.voting .battle .left[data-v-834efabc] {
     margin-left: -50px;
     transform: rotate(-5deg)
 }
 
-.voting .battle .right[data-v-d7cc588e] {
+.voting .battle .right[data-v-834efabc] {
     margin-right: -50px;
     transform: rotate(5deg)
 }
 
-.voting .choice[data-v-d7cc588e],
-.voting .logo[data-v-d7cc588e] {
+.voting .choice[data-v-834efabc],
+.voting .logo[data-v-834efabc] {
     width: 100%;
     max-width: 550px;
     margin: 0 auto
 }
 
-.voting .choice .drawing[data-v-d7cc588e] {
+.voting .choice .drawing[data-v-834efabc] {
     top: 18%;
     width: clamp(130px, min(40vw, 40vh), 200px)
 }
 
-.voting .choice .slogan[data-v-d7cc588e] {
+.voting .choice .slogan[data-v-834efabc] {
     top: 72%
 }
 
-.voting .choice .slogan.bold[data-v-d7cc588e] {
+.voting .choice .slogan.bold[data-v-834efabc] {
     font-size: clamp(1.4rem, min(5vw, 5vh), 3rem)
 }
 
-.voting .choice .slogan.classic[data-v-d7cc588e] {
+.voting .choice .slogan.classic[data-v-834efabc] {
     font-size: clamp(1.5rem, min(5vw, 5vh), 2.8rem)
 }
 
-.voting .choice .slogan.childish[data-v-d7cc588e] {
+.voting .choice .slogan.childish[data-v-834efabc] {
     font-size: clamp(1rem, min(3.5vw, 3.5vh), 2rem)
 }
 
-.voting .choice .slogan.handwritten[data-v-d7cc588e] {
+.voting .choice .slogan.handwritten[data-v-834efabc] {
     font-size: clamp(1.65rem, min(5vw, 5vh), 2.7rem)
 }
 
-.voting .drawing[data-v-d7cc588e],
-.voting .slogan[data-v-d7cc588e] {
+.voting .drawing[data-v-834efabc],
+.voting .slogan[data-v-834efabc] {
     position: absolute;
     left: 50%;
     transform: translate(-50%)
 }
 
-.voting .drawing[data-v-d7cc588e] {
+.voting .drawing[data-v-834efabc] {
     top: 22.5%;
     width: clamp(80px, 22vw, 200px)
 }
 
-.voting .slogan[data-v-d7cc588e] {
+.voting .slogan[data-v-834efabc] {
     top: 73%
 }
 
-.voting .slogan.bold[data-v-d7cc588e] {
+.voting .slogan.bold[data-v-834efabc] {
     font-size: clamp(1.05rem, 3vw, 2.6rem)
 }
 
-.voting .slogan.classic[data-v-d7cc588e] {
+.voting .slogan.classic[data-v-834efabc] {
     font-size: clamp(1.1rem, 3vw, 2.8rem)
 }
 
-.voting .slogan.childish[data-v-d7cc588e] {
+.voting .slogan.childish[data-v-834efabc] {
     font-size: clamp(.8rem, 2.25vw, 2rem)
 }
 
-.voting .slogan.handwritten[data-v-d7cc588e] {
+.voting .slogan.handwritten[data-v-834efabc] {
     font-size: clamp(1rem, 3vw, 2.5rem)
 }
 
-.voting .versus[data-v-d7cc588e] {
+.voting .versus[data-v-834efabc] {
     position: absolute;
     left: 50%;
     width: 35%;
     transform: translate(-50%);
-    z-index: 2
+    z-index: 2;
+    pointer-events: none
 }
 
 .tip[data-v-cef3bec6] {

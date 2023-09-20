@@ -26977,10 +26977,10 @@ ${t}`
                     this.$i18n.locale = e
                 },
                 checkForEventCode() {
-                    var r, n;
+                    var r;
                     const e = (r = this.options) == null ? void 0 : r.match;
                     if (!e || !e.url.includes("event")) return;
-                    const t = (n = e.params) == null ? void 0 : n.code;
+                    const t = e.params.code;
                     t && (this.eventCode = t, console.log("DEBUG - eventCode:", t))
                 },
                 galleryLink(e, t, r) {
@@ -26990,7 +26990,7 @@ ${t}`
                 }
             }
         }),
-        Kie = e => (Ep("data-v-f629682b"), e = e(), yp(), e),
+        Kie = e => (Ep("data-v-7d944f4c"), e = e(), yp(), e),
         Yie = {
             class: "tko-web"
         },
@@ -27092,17 +27092,17 @@ ${t}`
     }
     const ase = Ur(qie, [
         ["render", ose],
-        ["__scopeId", "data-v-f629682b"]
+        ["__scopeId", "data-v-7d944f4c"]
     ]);
     window.tv.register({
         mount: e => {
-            var s, o, c;
+            var s, o;
             let t = ux(ase, {
                 options: e
             });
             t.config.unwrapInjectedRef = !0;
             let r;
-            (s = e.room) != null && s.locale && (r = e.room.locale), (c = (o = e.match) == null ? void 0 : o.params) != null && c.locale && (r = e.match.params.locale), vs.set(r);
+            (s = e.room) != null && s.locale && (r = e.room.locale), (o = e.match) != null && o.params.locale && (r = e.match.params.locale), vs.set(r);
             const n = IM({
                 fallbackLocale: "en",
                 locale: vs.locale,
@@ -27123,4 +27123,4 @@ ${t}`
     })
 });
 export default cse();
-//# sourceMappingURL=a7ce3364.js.map
+//# sourceMappingURL=9be586f1.js.map
