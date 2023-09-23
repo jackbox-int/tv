@@ -43752,7 +43752,7 @@ ${e}`
             console.log("done!")
         }
     }
-    const gde = ih.import("main/pp10/risky-text/.clipboard");
+    const gde = ih.import("modules/clipboard");
     class vde extends gde {
         onPaste(e) {
             e.preventDefault(), console.error("Paste not allowed!")
