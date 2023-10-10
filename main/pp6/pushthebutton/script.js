@@ -21586,9 +21586,9 @@ const jx = rt.View.extend({
             <p class="title in">Informe del bioescaneo</p>
             <p class="prompt in">Depende de ti decidir qué hacer con esta información.</p>
             <p class="result in">
-                <span class="username"></span> is <span class="role"></span>
+                <span class="username"></span> es <span class="role"></span>
             </p>
-            <p class="help in">AVISO: los aliens pueden considerar mentir.</p>
+            <p class="help in">AVISO: Los aliens quizás deberían mentir.</p>
         </div>
     </div>
 </div>`,
