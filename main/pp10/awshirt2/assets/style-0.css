@@ -4581,23 +4581,23 @@ body {
     font-size: clamp(1.2rem, min(3.5vw, 3.5vh), 2.4rem)
 }
 
-.creation[data-v-8c2cce02] {
+.creation[data-v-94c89c36] {
     font-size: 2.2rem
 }
 
-.creation h1[data-v-8c2cce02] {
+.creation h1[data-v-94c89c36] {
     font-size: 3rem;
     font-weight: 400
 }
 
-.creation textarea[data-v-8c2cce02],
-.creation .drawing[data-v-8c2cce02] {
+.creation textarea[data-v-94c89c36],
+.creation .drawing[data-v-94c89c36] {
     width: 100%;
     border: 4px solid #0d0f11;
     border-radius: 10px
 }
 
-.creation textarea[data-v-8c2cce02] {
+.creation textarea[data-v-94c89c36] {
     margin: 2px 0;
     padding: 12px 6px;
     font-family: inherit;
@@ -4606,18 +4606,18 @@ body {
     resize: none
 }
 
-.creation .actions[data-v-8c2cce02] {
+.creation .actions[data-v-94c89c36] {
     display: flex;
     gap: 5px
 }
 
-.creation .actions button[data-v-8c2cce02] {
+.creation .actions button[data-v-94c89c36] {
     margin: 6px 0 0;
     font-size: inherit
 }
 
-.creation .drawing[data-v-8c2cce02] {
-    background-color: var(--b4d94f26);
+.creation .drawing[data-v-94c89c36] {
+    background-color: var(--2472bd90);
     margin-bottom: 12px
 }
 
@@ -4865,22 +4865,30 @@ body {
     transform: translate(-50%, -50%)
 }
 
-.idling .activities button[data-v-d572dff5] {
-    min-height: 120px
+.idling .activities button[data-v-f952fa20] {
+    position: relative;
+    min-height: 120px;
+    z-index: 0
 }
 
-.idling .activities button svg[data-v-d572dff5] {
-    height: 50%
+.idling .activities button svg[data-v-f952fa20] {
+    height: 100%
 }
 
-.idling .activities button[data-v-d572dff5]:disabled {
+.idling .activities button[data-v-f952fa20]:disabled {
     background-color: #b2ddb4;
+    border-color: #feffe7;
+    box-shadow: 0 0 8px 8px #feffe7;
     opacity: 1
 }
 
-.idling .activities progress[data-v-d572dff5] {
-    display: block;
-    width: 100%
+.idling .activities progress[data-v-f952fa20] {
+    position: absolute;
+    left: 2.5%;
+    top: -25%;
+    width: 95%;
+    height: 150%;
+    z-index: -1
 }
 
 .lobby[data-v-b2cc74dd] {
@@ -5093,18 +5101,18 @@ body {
     pointer-events: none
 }
 
-.tip[data-v-cef3bec6] {
+.tip[data-v-7f15eb55] {
     padding: 8px;
     border: 3px solid black;
     border-radius: 8px;
     background-color: #00000026
 }
 
-.tip .content[data-v-cef3bec6] {
+.tip .content[data-v-7f15eb55] {
     font-size: 2.2rem
 }
 
-.tip .title[data-v-cef3bec6] {
+.tip .title[data-v-7f15eb55] {
     font-size: 2.4rem
 }
 

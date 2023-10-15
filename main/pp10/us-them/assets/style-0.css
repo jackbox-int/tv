@@ -82,6 +82,47 @@
     font-size: 18px
 }
 
+.gallery[data-v-d4a34e95] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%
+}
+
+.gallery .content[data-v-d4a34e95] {
+    flex-grow: 1;
+    width: 100%;
+    background: green;
+    overflow: auto
+}
+
+.gallery .options[data-v-d4a34e95] {
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: blue
+}
+
+.topbar[data-v-d4a34e95] {
+    all: initial;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 50px;
+    color: #f7f8f9;
+    background: #1A1F26;
+    text-align: center
+}
+
+.topbar .logo[data-v-d4a34e95] {
+    margin-top: 5px;
+    height: 40px;
+    width: auto
+}
+
+.topbar .logo path[data-v-d4a34e95] {
+    fill: #fff
+}
+
 .artifact-link {
     display: inline-block;
     width: 100%
@@ -4397,31 +4438,56 @@ body {
 }
 
 @font-face {
-    font-family: DrowsyLunchItalics;
+    font-family: DrowsyLunch;
+    font-style: italic;
+    font-weight: 400;
     src: url(../assets/fonts/drowsylunch_italic.otf)
 }
 
 @font-face {
     font-family: DrowsyLunch;
+    font-weight: 400;
     src: url(../assets/fonts/drowsylunch.otf)
 }
 
 @font-face {
-    font-family: PPFuji;
-    src: url(../assets/fonts/PPFuji-Regular.woff)
+    font-family: Ashtray;
+    src: url(../assets/fonts/surfing_ashtray.otf)
 }
 
 @font-face {
-    font-family: PPFuji-Light;
-    src: url(../assets/fonts/PPFuji-Light.woff)
+    font-family: FamiljenGrotesk;
+    font-weight: 400;
+    src: url(../assets/fonts/FamiljenGrotesk-VariableFont_wght.ttf)
 }
 
 @font-face {
-    font-family: PPFuji-Bold;
-    src: url(../assets/fonts/PPFuji-Bold.woff)
+    font-family: FamiljenGrotesk;
+    font-style: italic;
+    font-weight: 400;
+    src: url(../assets/fonts/FamiljenGrotesk-Italic-VariableFont_wght.ttf)
 }
 
-button[data-v-2abfbc86] {
+@font-face {
+    font-family: FamiljenGrotesk;
+    font-weight: 500;
+    src: url(../assets/fonts/FamiljenGrotesk-Medium.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Medium-Italic;
+    font-weight: 500;
+    font-style: italic;
+    src: url(../assets/fonts/FamiljenGrotesk-MediumItalic.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Bold;
+    font-weight: 700;
+    src: url(../assets/fonts/FamiljenGrotesk-Bold.ttf)
+}
+
+button[data-v-b99c1393] {
     cursor: pointer;
     display: inline-block;
     background: #000;
@@ -4434,102 +4500,96 @@ button[data-v-2abfbc86] {
     border-radius: 8px
 }
 
-@media screen and (max-width: 480px) {
-    button[data-v-2abfbc86] {
-        font-size: 20px
+@media screen and (max-width: 375px) {
+    button[data-v-b99c1393] {
+        font-size: 22px
     }
 }
 
-button[data-v-2abfbc86]:disabled {
+button[data-v-b99c1393]:disabled {
     opacity: .25
 }
 
-button.black-btn[data-v-2abfbc86] {
+button.black-btn[data-v-b99c1393] {
     text-transform: uppercase;
     padding: 5px 20px;
     box-shadow: 5px 5px #00000040;
     border-radius: 10px
 }
 
-button.black-btn[data-v-2abfbc86]:disabled {
+button.black-btn[data-v-b99c1393]:disabled {
     box-shadow: 0 0 #00000040
 }
 
-button.black-btn[data-v-2abfbc86]:active {
+button.black-btn[data-v-b99c1393]:active {
     box-shadow: 2px 2px #00000040
 }
 
-button.red-btn[data-v-2abfbc86] {
+button.red-btn[data-v-b99c1393] {
     padding: 5px 20px;
     box-shadow: 5px 5px #00000040;
     border-radius: 10px;
     background-color: #9a0000
 }
 
-button.red-btn[data-v-2abfbc86]:active {
+button.red-btn[data-v-b99c1393]:active {
     box-shadow: 2px 2px #00000040
 }
 
-button.green-btn[data-v-2abfbc86] {
+button.green-btn[data-v-b99c1393] {
     padding: 5px 20px;
     border-radius: 10px;
     background: #419544;
     box-shadow: 4px 8px #1e5d20
 }
 
-button.green-btn[data-v-2abfbc86]:disabled {
+button.green-btn[data-v-b99c1393]:disabled {
     box-shadow: 0 0 #00000040
 }
 
-button.yellow-btn[data-v-2abfbc86] {
+button.yellow-btn[data-v-b99c1393] {
     color: #000;
     background: #F5C558;
     box-shadow: 4px 8px #b95013
 }
 
-button.gray-btn[data-v-2abfbc86] {
+button.gray-btn[data-v-b99c1393] {
     color: #000;
     background: #E0E4FD;
     box-shadow: 4px 8px #020b4b
 }
 
-button.gray-btn.selected[data-v-2abfbc86] {
+button.gray-btn.selected[data-v-b99c1393] {
     background-color: #6577fe;
     color: #fff
 }
 
-button.submit[data-v-2abfbc86] {
+button.submit[data-v-b99c1393] {
     width: auto;
     float: right;
     padding: 5px 40px;
     font-size: 28px
 }
 
-@media screen and (max-width: 480px) {
-    button.submit[data-v-2abfbc86] {
-        font-size: 18px
-    }
-}
-
-.prevAnswers-container[data-v-2abfbc86] {
+.prevAnswers-container[data-v-b99c1393] {
     margin-top: 16px
 }
 
-.prevAnswers-label[data-v-2abfbc86] {
+.prevAnswers-label[data-v-b99c1393] {
     font-size: 24px
 }
 
-.question-prompt[data-v-2abfbc86] {
+.question-prompt[data-v-b99c1393] {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 8px
 }
 
-.question-answer[data-v-2abfbc86] {
+.question-answer[data-v-b99c1393] {
     font-size: 16px
 }
 
-.modal-container[data-v-2abfbc86] {
+.modal-container[data-v-b99c1393] {
     --polygon-0: polygon(1% 0, 96% 0, 95% 93%, 6% 97%);
     filter: drop-shadow(0px 8px 0px #B95013);
     border: none;
@@ -4544,13 +4604,23 @@ button.submit[data-v-2abfbc86] {
     box-shadow: none
 }
 
+.modal-container.hintModal[data-v-b99c1393] {
+    filter: drop-shadow(0px 8px 0px #419544)
+}
+
+.modal-container.hintModal .close[data-v-b99c1393] {
+    color: #fff;
+    background-color: #6ebe71;
+    box-shadow: 0 4px #419544
+}
+
 @media screen and (max-width: 400px) {
-    .modal-container[data-v-2abfbc86] {
+    .modal-container[data-v-b99c1393] {
         padding: 20px 38px 50px
     }
 }
 
-.modal-container .close[data-v-2abfbc86] {
+.modal-container .close[data-v-b99c1393] {
     position: absolute;
     top: 7px;
     right: 20px;
@@ -4565,8 +4635,8 @@ button.submit[data-v-2abfbc86] {
     box-shadow: 0 4px #b95013
 }
 
-.modal-container[data-v-2abfbc86]:before,
-.modal-container[data-v-2abfbc86]:after {
+.modal-container[data-v-b99c1393]:before,
+.modal-container[data-v-b99c1393]:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -4578,17 +4648,31 @@ button.submit[data-v-2abfbc86] {
     background: #F3E1BA
 }
 
-.hints[data-v-2abfbc86] {
-    font-size: 28px;
-    font-family: DrowsyLunch;
+.hintModal[data-v-b99c1393]:before,
+.hintModal[data-v-b99c1393]:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    clip-path: var(--polygon-0);
+    background: #D4ECD5
+}
+
+.hints[data-v-b99c1393] {
+    font-size: 18px;
+    font-family: FamiljenGrotesk;
+    font-weight: 500;
     position: relative;
-    margin: 32px auto auto;
+    margin: 8px auto auto;
     padding-right: 20px;
     padding-left: 20px;
     color: #000
 }
 
-.hint[data-v-2abfbc86] {
+.hint[data-v-b99c1393] {
     font-size: 28px;
     font-family: DrowsyLunch;
     position: relative;
@@ -4596,82 +4680,110 @@ button.submit[data-v-2abfbc86] {
     color: #000
 }
 
-.prev-answer-modal[data-v-2abfbc86] {
+.prev-answer-modal[data-v-b99c1393] {
     font-family: DrowsyLunch;
     display: flex;
     flex-direction: column
 }
 
-.prev-answer-modal .target-name[data-v-2abfbc86] {
+.prev-answer-modal .target-name[data-v-b99c1393] {
     font-size: 32px;
     position: relative;
-    margin: 8px auto auto;
+    margin: 0 auto auto;
+    font-family: DrowsyLunch;
     color: #000
 }
 
-.prev-answer-modal .prev-answers-container[data-v-2abfbc86] {
+.prev-answer-modal .prev-answers-container[data-v-b99c1393] {
     display: flex;
     flex-direction: column
 }
 
-.prev-answer-modal .question-container[data-v-2abfbc86] {
+.prev-answer-modal .question-container[data-v-b99c1393] {
     margin-bottom: 16px
 }
 
-.prev-answer-modal .question-prompt[data-v-2abfbc86] {
-    font-family: PPFuji;
-    font-size: 24px;
+.prev-answer-modal .question-prompt[data-v-b99c1393] {
+    font-family: FamiljenGrotesk;
+    font-weight: 500;
+    font-size: 18px;
     margin: 0;
     color: #4b5768;
     overflow-wrap: break-word
 }
 
 @media screen and (max-width: 400px) {
-    .prev-answer-modal .question-prompt[data-v-2abfbc86] {
+    .prev-answer-modal .question-prompt[data-v-b99c1393] {
         font-size: 20px
     }
 }
 
-.prev-answer-modal .question-answer[data-v-2abfbc86] {
+.prev-answer-modal .question-answer[data-v-b99c1393] {
     font-size: 24px;
-    font-family: PPFuji-Light;
+    font-family: FamiljenGrotesk;
+    font-weight: 700;
     color: #000;
-    line-height: 32px;
+    line-height: 18px;
     overflow-wrap: break-word
 }
 
 @media screen and (max-width: 400px) {
-    .prev-answer-modal .question-answer[data-v-2abfbc86] {
+    .prev-answer-modal .question-answer[data-v-b99c1393] {
         font-size: 20px
     }
 }
 
 @font-face {
-    font-family: DrowsyLunchItalics;
+    font-family: DrowsyLunch;
+    font-style: italic;
+    font-weight: 400;
     src: url(../assets/fonts/drowsylunch_italic.otf)
 }
 
 @font-face {
     font-family: DrowsyLunch;
+    font-weight: 400;
     src: url(../assets/fonts/drowsylunch.otf)
 }
 
 @font-face {
-    font-family: PPFuji;
-    src: url(../assets/fonts/PPFuji-Regular.woff)
+    font-family: Ashtray;
+    src: url(../assets/fonts/surfing_ashtray.otf)
 }
 
 @font-face {
-    font-family: PPFuji-Light;
-    src: url(../assets/fonts/PPFuji-Light.woff)
+    font-family: FamiljenGrotesk;
+    font-weight: 400;
+    src: url(../assets/fonts/FamiljenGrotesk-VariableFont_wght.ttf)
 }
 
 @font-face {
-    font-family: PPFuji-Bold;
-    src: url(../assets/fonts/PPFuji-Bold.woff)
+    font-family: FamiljenGrotesk;
+    font-style: italic;
+    font-weight: 400;
+    src: url(../assets/fonts/FamiljenGrotesk-Italic-VariableFont_wght.ttf)
 }
 
-button[data-v-fbb50e4e] {
+@font-face {
+    font-family: FamiljenGrotesk;
+    font-weight: 500;
+    src: url(../assets/fonts/FamiljenGrotesk-Medium.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Medium-Italic;
+    font-weight: 500;
+    font-style: italic;
+    src: url(../assets/fonts/FamiljenGrotesk-MediumItalic.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Bold;
+    font-weight: 700;
+    src: url(../assets/fonts/FamiljenGrotesk-Bold.ttf)
+}
+
+button[data-v-a7555569] {
     cursor: pointer;
     display: inline-block;
     background: #000;
@@ -4684,136 +4796,135 @@ button[data-v-fbb50e4e] {
     border-radius: 8px
 }
 
-@media screen and (max-width: 480px) {
-    button[data-v-fbb50e4e] {
-        font-size: 20px
+@media screen and (max-width: 375px) {
+    button[data-v-a7555569] {
+        font-size: 22px
     }
 }
 
-button[data-v-fbb50e4e]:disabled {
+button[data-v-a7555569]:disabled {
     opacity: .25
 }
 
-button.black-btn[data-v-fbb50e4e] {
+button.black-btn[data-v-a7555569] {
     text-transform: uppercase;
     padding: 5px 20px;
     box-shadow: 5px 5px #00000040;
     border-radius: 10px
 }
 
-button.black-btn[data-v-fbb50e4e]:disabled {
+button.black-btn[data-v-a7555569]:disabled {
     box-shadow: 0 0 #00000040
 }
 
-button.black-btn[data-v-fbb50e4e]:active {
+button.black-btn[data-v-a7555569]:active {
     box-shadow: 2px 2px #00000040
 }
 
-button.red-btn[data-v-fbb50e4e] {
+button.red-btn[data-v-a7555569] {
     padding: 5px 20px;
     box-shadow: 5px 5px #00000040;
     border-radius: 10px;
     background-color: #9a0000
 }
 
-button.red-btn[data-v-fbb50e4e]:active {
+button.red-btn[data-v-a7555569]:active {
     box-shadow: 2px 2px #00000040
 }
 
-button.green-btn[data-v-fbb50e4e] {
+button.green-btn[data-v-a7555569] {
     padding: 5px 20px;
     border-radius: 10px;
     background: #419544;
     box-shadow: 4px 8px #1e5d20
 }
 
-button.green-btn[data-v-fbb50e4e]:disabled {
+button.green-btn[data-v-a7555569]:disabled {
     box-shadow: 0 0 #00000040
 }
 
-button.yellow-btn[data-v-fbb50e4e] {
+button.yellow-btn[data-v-a7555569] {
     color: #000;
     background: #F5C558;
     box-shadow: 4px 8px #b95013
 }
 
-button.gray-btn[data-v-fbb50e4e] {
+button.gray-btn[data-v-a7555569] {
     color: #000;
     background: #E0E4FD;
     box-shadow: 4px 8px #020b4b
 }
 
-button.gray-btn.selected[data-v-fbb50e4e] {
+button.gray-btn.selected[data-v-a7555569] {
     background-color: #6577fe;
     color: #fff
 }
 
-button.submit[data-v-fbb50e4e] {
+button.submit[data-v-a7555569] {
     width: auto;
     float: right;
     padding: 5px 40px;
     font-size: 28px
 }
 
-@media screen and (max-width: 480px) {
-    button.submit[data-v-fbb50e4e] {
-        font-size: 18px
-    }
-}
-
-.prevAnswers-container[data-v-fbb50e4e] {
+.prevAnswers-container[data-v-a7555569] {
     margin-top: 16px
 }
 
-.prevAnswers-label[data-v-fbb50e4e] {
+.prevAnswers-label[data-v-a7555569] {
     font-size: 24px
 }
 
-.question-prompt[data-v-fbb50e4e] {
+.question-prompt[data-v-a7555569] {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 8px
 }
 
-.question-answer[data-v-fbb50e4e] {
+.question-answer[data-v-a7555569] {
     font-size: 16px
 }
 
-.shadow-yellow[data-v-fbb50e4e] {
+button[data-v-a7555569] {
+    font-family: Ashtray
+}
+
+.shadow-yellow[data-v-a7555569] {
     filter: drop-shadow(4px 8px 0px #B95013)
 }
 
-.shadow-gray-left[data-v-fbb50e4e] {
+.shadow-gray-left[data-v-a7555569] {
     filter: drop-shadow(11px 8px 0px #020B4B)
 }
 
-.shadow-gray-center[data-v-fbb50e4e] {
+.shadow-gray-center[data-v-a7555569] {
     filter: drop-shadow(4px 8px 0px #020B4B)
 }
 
-.shadow-gray-right[data-v-fbb50e4e] {
+.shadow-gray-right[data-v-a7555569] {
     filter: drop-shadow(-3px 8px 0px #020B4B)
 }
 
-.shadow-green[data-v-fbb50e4e] {
+.shadow-green[data-v-a7555569] {
     filter: drop-shadow(4px 8px 0px #1E5D20)
 }
 
-.button-container[data-v-fbb50e4e] {
-    --polygon-0: polygon(1% 0, 100% 0, 96% 85%, 6% 90%);
-    --polygon-1: polygon(4% 0, 92% 0, 98% 90%, 10% 90%);
-    --polygon-2: polygon(4% 0%, 100% 0%, 86% 90%, 7% 90%);
-    --polygon-3: polygon(5% 0%, 100% 0%, 92% 88%, 4% 88%);
+.button-container[data-v-a7555569] {
+    --polygon-0: polygon(5% 14%, 100% 8%, 95% 91%, 7% 88%);
+    --polygon-1: polygon(4% 0%, 92% 6%, 97% 91%, 8% 92%);
+    --polygon-2: polygon(6% 0%, 93% 7%, 97% 90%, 3% 90%);
+    --polygon-3: polygon(1% 0, 100% 0, 96% 85%, 6% 90%);
     --polygon-left: polygon(0 2%, 78% 0, 100% 100%, 0 100%);
     --polygon-center: polygon(0 0, 100% 0, 78% 100%, 22% 100%);
-    --polygon-right: polygon(22% 0, 100% 0, 100% 100%, 0 100%)
+    --polygon-right: polygon(22% 0, 100% 0, 100% 100%, 0 100%);
+    height: 100%
 }
 
-.button-container .disabled[data-v-fbb50e4e] {
+.button-container .disabled[data-v-a7555569] {
     opacity: .5
 }
 
-.button-container .parallelogram[data-v-fbb50e4e] {
+.button-container .parallelogram[data-v-a7555569] {
     padding: 8px 38px;
     color: #000;
     border: none;
@@ -4823,17 +4934,25 @@ button.submit[data-v-fbb50e4e] {
     z-index: 0;
     margin: 6px;
     border-radius: 0;
-    width: 100%
+    width: 100%;
+    height: 100%;
+    max-height: 48px
 }
 
 @media screen and (max-width: 375px) {
-    .button-container .parallelogram[data-v-fbb50e4e] {
+    .button-container .parallelogram[data-v-a7555569] {
         padding: 8px 38px
     }
 }
 
-.button-container .parallelogram[data-v-fbb50e4e]:before,
-.button-container .parallelogram[data-v-fbb50e4e]:after {
+@media screen and (max-width: 375px) {
+    .button-container .parallelogram[data-v-a7555569] {
+        max-height: 40px
+    }
+}
+
+.button-container .parallelogram[data-v-a7555569]:before,
+.button-container .parallelogram[data-v-a7555569]:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -4844,37 +4963,44 @@ button.submit[data-v-fbb50e4e] {
     background: #F5C558
 }
 
-.button-container .parallelogram.shape-0[data-v-fbb50e4e]:before,
-.button-container .parallelogram.shape-0[data-v-fbb50e4e]:after {
+.button-container .parallelogram.shape-0[data-v-a7555569]:before,
+.button-container .parallelogram.shape-0[data-v-a7555569]:after {
     clip-path: var(--polygon-0)
 }
 
-.button-container .parallelogram.shape-1[data-v-fbb50e4e]:before,
-.button-container .parallelogram.shape-1[data-v-fbb50e4e]:after {
+.button-container .parallelogram.shape-1[data-v-a7555569]:before,
+.button-container .parallelogram.shape-1[data-v-a7555569]:after {
     clip-path: var(--polygon-1)
 }
 
-.button-container .parallelogram.shape-2[data-v-fbb50e4e]:before,
-.button-container .parallelogram.shape-2[data-v-fbb50e4e]:after {
+.button-container .parallelogram.shape-2[data-v-a7555569]:before,
+.button-container .parallelogram.shape-2[data-v-a7555569]:after {
     clip-path: var(--polygon-2)
 }
 
-.button-container .parallelogram.shape-3[data-v-fbb50e4e]:before,
-.button-container .parallelogram.shape-3[data-v-fbb50e4e]:after {
+.button-container .parallelogram.shape-3[data-v-a7555569]:before,
+.button-container .parallelogram.shape-3[data-v-a7555569]:after {
     clip-path: var(--polygon-3)
 }
 
-.button-container .parallelogram.green-poly[data-v-fbb50e4e] {
-    color: #fff
+.button-container .parallelogram.green-poly[data-v-a7555569] {
+    color: #fff;
+    max-height: 64px
 }
 
-.button-container .parallelogram.green-poly[data-v-fbb50e4e]:before,
-.button-container .parallelogram.green-poly[data-v-fbb50e4e]:after {
+@media screen and (max-width: 375px) {
+    .button-container .parallelogram.green-poly[data-v-a7555569] {
+        max-height: 56px
+    }
+}
+
+.button-container .parallelogram.green-poly[data-v-a7555569]:before,
+.button-container .parallelogram.green-poly[data-v-a7555569]:after {
     clip-path: var(--polygon-0);
     background: #419544
 }
 
-.button-container .gray-poly[data-v-fbb50e4e] {
+.button-container .gray-poly[data-v-a7555569] {
     padding: 12px 20px 12px 8px;
     color: #000;
     border: none;
@@ -4883,11 +5009,12 @@ button.submit[data-v-fbb50e4e] {
     position: relative;
     z-index: 0;
     border-radius: 0;
-    width: 100%
+    width: 100%;
+    font-size: 24px
 }
 
-.button-container .gray-poly[data-v-fbb50e4e]:before,
-.button-container .gray-poly[data-v-fbb50e4e]:after {
+.button-container .gray-poly[data-v-a7555569]:before,
+.button-container .gray-poly[data-v-a7555569]:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -4898,64 +5025,89 @@ button.submit[data-v-fbb50e4e] {
     background: #E0E4FD
 }
 
-.button-container .gray-poly.left-shape[data-v-fbb50e4e]:before,
-.button-container .gray-poly.left-shape[data-v-fbb50e4e]:after {
+.button-container .gray-poly.left-shape[data-v-a7555569]:before,
+.button-container .gray-poly.left-shape[data-v-a7555569]:after {
     clip-path: var(--polygon-left)
 }
 
-.button-container .gray-poly.center-shape[data-v-fbb50e4e] {
+.button-container .gray-poly.center-shape[data-v-a7555569] {
     padding: 12px 20px
 }
 
-.button-container .gray-poly.center-shape[data-v-fbb50e4e]:before,
-.button-container .gray-poly.center-shape[data-v-fbb50e4e]:after {
+.button-container .gray-poly.center-shape[data-v-a7555569]:before,
+.button-container .gray-poly.center-shape[data-v-a7555569]:after {
     clip-path: var(--polygon-center)
 }
 
-.button-container .gray-poly.right-shape[data-v-fbb50e4e] {
+.button-container .gray-poly.right-shape[data-v-a7555569] {
     padding: 12px 8px 12px 20px
 }
 
-.button-container .gray-poly.right-shape[data-v-fbb50e4e]:before,
-.button-container .gray-poly.right-shape[data-v-fbb50e4e]:after {
+.button-container .gray-poly.right-shape[data-v-a7555569]:before,
+.button-container .gray-poly.right-shape[data-v-a7555569]:after {
     clip-path: var(--polygon-right)
 }
 
-.button-container .gray-poly.active-poly[data-v-fbb50e4e] {
+.button-container .gray-poly.active-poly[data-v-a7555569] {
     color: #fff
 }
 
-.button-container .gray-poly.active-poly[data-v-fbb50e4e]:before,
-.button-container .gray-poly.active-poly[data-v-fbb50e4e]:after {
+.button-container .gray-poly.active-poly[data-v-a7555569]:before,
+.button-container .gray-poly.active-poly[data-v-a7555569]:after {
     background: #6577FE
 }
 
 @font-face {
-    font-family: DrowsyLunchItalics;
+    font-family: DrowsyLunch;
+    font-style: italic;
+    font-weight: 400;
     src: url(bbd01185.otf)
 }
 
 @font-face {
     font-family: DrowsyLunch;
+    font-weight: 400;
     src: url(dbc59031.otf)
 }
 
 @font-face {
-    font-family: PPFuji;
-    src: url(edfc762b.woff)
+    font-family: Ashtray;
+    src: url(d6a1a91d.otf)
 }
 
 @font-face {
-    font-family: PPFuji-Light;
-    src: url(29abf5c0.woff)
+    font-family: FamiljenGrotesk;
+    font-weight: 400;
+    src: url(c3cfdc99.ttf)
 }
 
 @font-face {
-    font-family: PPFuji-Bold;
-    src: url(fc4212a7.woff)
+    font-family: FamiljenGrotesk;
+    font-style: italic;
+    font-weight: 400;
+    src: url(ed1d29ad.ttf)
 }
 
-button[data-v-c4689982] {
+@font-face {
+    font-family: FamiljenGrotesk;
+    font-weight: 500;
+    src: url(15b6fb3f.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Medium-Italic;
+    font-weight: 500;
+    font-style: italic;
+    src: url(44e35b4c.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Bold;
+    font-weight: 700;
+    src: url(a38c46b1.ttf)
+}
+
+button[data-v-cdf16c7d] {
     cursor: pointer;
     display: inline-block;
     background: #000;
@@ -4968,102 +5120,96 @@ button[data-v-c4689982] {
     border-radius: 8px
 }
 
-@media screen and (max-width: 480px) {
-    button[data-v-c4689982] {
-        font-size: 20px
+@media screen and (max-width: 375px) {
+    button[data-v-cdf16c7d] {
+        font-size: 22px
     }
 }
 
-button[data-v-c4689982]:disabled {
+button[data-v-cdf16c7d]:disabled {
     opacity: .25
 }
 
-button.black-btn[data-v-c4689982] {
+button.black-btn[data-v-cdf16c7d] {
     text-transform: uppercase;
     padding: 5px 20px;
     box-shadow: 5px 5px #00000040;
     border-radius: 10px
 }
 
-button.black-btn[data-v-c4689982]:disabled {
+button.black-btn[data-v-cdf16c7d]:disabled {
     box-shadow: 0 0 #00000040
 }
 
-button.black-btn[data-v-c4689982]:active {
+button.black-btn[data-v-cdf16c7d]:active {
     box-shadow: 2px 2px #00000040
 }
 
-button.red-btn[data-v-c4689982] {
+button.red-btn[data-v-cdf16c7d] {
     padding: 5px 20px;
     box-shadow: 5px 5px #00000040;
     border-radius: 10px;
     background-color: #9a0000
 }
 
-button.red-btn[data-v-c4689982]:active {
+button.red-btn[data-v-cdf16c7d]:active {
     box-shadow: 2px 2px #00000040
 }
 
-button.green-btn[data-v-c4689982] {
+button.green-btn[data-v-cdf16c7d] {
     padding: 5px 20px;
     border-radius: 10px;
     background: #419544;
     box-shadow: 4px 8px #1e5d20
 }
 
-button.green-btn[data-v-c4689982]:disabled {
+button.green-btn[data-v-cdf16c7d]:disabled {
     box-shadow: 0 0 #00000040
 }
 
-button.yellow-btn[data-v-c4689982] {
+button.yellow-btn[data-v-cdf16c7d] {
     color: #000;
     background: #F5C558;
     box-shadow: 4px 8px #b95013
 }
 
-button.gray-btn[data-v-c4689982] {
+button.gray-btn[data-v-cdf16c7d] {
     color: #000;
     background: #E0E4FD;
     box-shadow: 4px 8px #020b4b
 }
 
-button.gray-btn.selected[data-v-c4689982] {
+button.gray-btn.selected[data-v-cdf16c7d] {
     background-color: #6577fe;
     color: #fff
 }
 
-button.submit[data-v-c4689982] {
+button.submit[data-v-cdf16c7d] {
     width: auto;
     float: right;
     padding: 5px 40px;
     font-size: 28px
 }
 
-@media screen and (max-width: 480px) {
-    button.submit[data-v-c4689982] {
-        font-size: 18px
-    }
-}
-
-.prevAnswers-container[data-v-c4689982] {
+.prevAnswers-container[data-v-cdf16c7d] {
     margin-top: 16px
 }
 
-.prevAnswers-label[data-v-c4689982] {
+.prevAnswers-label[data-v-cdf16c7d] {
     font-size: 24px
 }
 
-.question-prompt[data-v-c4689982] {
+.question-prompt[data-v-cdf16c7d] {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 8px
 }
 
-.question-answer[data-v-c4689982] {
+.question-answer[data-v-cdf16c7d] {
     font-size: 16px
 }
 
-.choices[data-v-c4689982] {
+.choices[data-v-cdf16c7d] {
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -5075,67 +5221,53 @@ button.submit[data-v-c4689982] {
     font-family: DrowsyLunch
 }
 
-.choices .hypno-modal[data-v-c4689982] {
-    background-color: #000c !important
-}
-
-.choices .hypno-modal .options-modal[data-v-c4689982] {
-    background-color: #f3e1ba;
-    font-family: PPFuji;
-    box-shadow: 5px 5px #b95013
-}
-
-.choices .hypno-modal .options-modal .actions[data-v-c4689982] {
-    font-family: DrowsyLunch !important
-}
-
-.choices .prompt[data-v-c4689982] {
+.choices .prompt[data-v-cdf16c7d] {
     margin: 8px auto;
     font-size: 28px
 }
 
 @media screen and (max-width: 375px) {
-    .choices .prompt[data-v-c4689982] {
+    .choices .prompt[data-v-cdf16c7d] {
         font-size: 24px
     }
 }
 
-.choices .sub-header[data-v-c4689982] {
+.choices .sub-header[data-v-cdf16c7d] {
     font-size: 28px;
     font-family: DrowsyLunch;
     color: #000
 }
 
 @media screen and (max-width: 375px) {
-    .choices .sub-header[data-v-c4689982] {
+    .choices .sub-header[data-v-cdf16c7d] {
         font-size: 24px
     }
 }
 
-.choices .choice-container[data-v-c4689982] {
+.choices .choice-container[data-v-cdf16c7d] {
     display: flex;
     flex-direction: column
 }
 
-.choices .choice[data-v-c4689982] {
+.choices .choice[data-v-cdf16c7d] {
     font-size: 26px;
     margin: 8px
 }
 
 @media screen and (max-width: 375px) {
-    .choices .choice[data-v-c4689982] {
+    .choices .choice[data-v-cdf16c7d] {
         font-size: 22px;
         margin: 4px
     }
 }
 
-.choices .header[data-v-c4689982] {
+.choices .header[data-v-cdf16c7d] {
     display: flex;
     flex-direction: row;
     align-items: center
 }
 
-.choices .hint[data-v-c4689982] {
+.choices .hint[data-v-cdf16c7d] {
     position: relative;
     right: -3%;
     padding: 4px 10px;
@@ -5147,36 +5279,63 @@ button.submit[data-v-c4689982] {
 }
 
 @font-face {
-    font-family: DrowsyLunchItalics;
+    font-family: DrowsyLunch;
+    font-style: italic;
+    font-weight: 400;
     src: url(bbd01185.otf)
 }
 
 @font-face {
     font-family: DrowsyLunch;
+    font-weight: 400;
     src: url(dbc59031.otf)
 }
 
 @font-face {
-    font-family: PPFuji;
-    src: url(edfc762b.woff)
+    font-family: Ashtray;
+    src: url(d6a1a91d.otf)
 }
 
 @font-face {
-    font-family: PPFuji-Light;
-    src: url(29abf5c0.woff)
+    font-family: FamiljenGrotesk;
+    font-weight: 400;
+    src: url(c3cfdc99.ttf)
 }
 
 @font-face {
-    font-family: PPFuji-Bold;
-    src: url(fc4212a7.woff)
+    font-family: FamiljenGrotesk;
+    font-style: italic;
+    font-weight: 400;
+    src: url(ed1d29ad.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk;
+    font-weight: 500;
+    src: url(15b6fb3f.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Medium-Italic;
+    font-weight: 500;
+    font-style: italic;
+    src: url(44e35b4c.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Bold;
+    font-weight: 700;
+    src: url(a38c46b1.ttf)
 }
 
 .waiting {
     color: #fff;
-    font-family: PPFuji;
+    font-family: FamiljenGrotesk;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     text-align: center;
+    align-items: center;
     padding: 0 16px;
     height: 100%;
     width: 100%;
@@ -5188,13 +5347,14 @@ button.submit[data-v-c4689982] {
     width: 90%
 }
 
+.waiting .brain {
+    margin: 80px auto 20px;
+    max-height: 500px;
+    max-width: 200px
+}
+
 .waiting .waiting-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     color: #fff;
-    flex-grow: 1;
     font-size: 32px
 }
 
@@ -5255,7 +5415,8 @@ button.submit[data-v-c4689982] {
 .waiting .role {
     margin: 16px auto 32px;
     font-size: 32px;
-    font-family: PPFuji-Bold
+    font-family: FamiljenGrotesk;
+    font-weight: 700
 }
 
 @media screen and (max-width: 375px) {
@@ -5276,28 +5437,53 @@ button.submit[data-v-c4689982] {
 }
 
 @font-face {
-    font-family: DrowsyLunchItalics;
+    font-family: DrowsyLunch;
+    font-style: italic;
+    font-weight: 400;
     src: url(bbd01185.otf)
 }
 
 @font-face {
     font-family: DrowsyLunch;
+    font-weight: 400;
     src: url(dbc59031.otf)
 }
 
 @font-face {
-    font-family: PPFuji;
-    src: url(edfc762b.woff)
+    font-family: Ashtray;
+    src: url(d6a1a91d.otf)
 }
 
 @font-face {
-    font-family: PPFuji-Light;
-    src: url(29abf5c0.woff)
+    font-family: FamiljenGrotesk;
+    font-weight: 400;
+    src: url(c3cfdc99.ttf)
 }
 
 @font-face {
-    font-family: PPFuji-Bold;
-    src: url(fc4212a7.woff)
+    font-family: FamiljenGrotesk;
+    font-style: italic;
+    font-weight: 400;
+    src: url(ed1d29ad.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk;
+    font-weight: 500;
+    src: url(15b6fb3f.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Medium-Italic;
+    font-weight: 500;
+    font-style: italic;
+    src: url(44e35b4c.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Bold;
+    font-weight: 700;
+    src: url(a38c46b1.ttf)
 }
 
 button[data-v-7dbd8c49] {
@@ -5313,9 +5499,9 @@ button[data-v-7dbd8c49] {
     border-radius: 8px
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375px) {
     button[data-v-7dbd8c49] {
-        font-size: 20px
+        font-size: 22px
     }
 }
 
@@ -5382,12 +5568,6 @@ button.submit[data-v-7dbd8c49] {
     float: right;
     padding: 5px 40px;
     font-size: 28px
-}
-
-@media screen and (max-width: 480px) {
-    button.submit[data-v-7dbd8c49] {
-        font-size: 18px
-    }
 }
 
 .prevAnswers-container[data-v-7dbd8c49] {
@@ -5474,295 +5654,69 @@ button.submit[data-v-7dbd8c49] {
 }
 
 @font-face {
-    font-family: DrowsyLunchItalics;
+    font-family: DrowsyLunch;
+    font-style: italic;
+    font-weight: 400;
     src: url(bbd01185.otf)
 }
 
 @font-face {
     font-family: DrowsyLunch;
+    font-weight: 400;
     src: url(dbc59031.otf)
 }
 
 @font-face {
-    font-family: PPFuji;
-    src: url(edfc762b.woff)
+    font-family: Ashtray;
+    src: url(d6a1a91d.otf)
 }
 
 @font-face {
-    font-family: PPFuji-Light;
-    src: url(29abf5c0.woff)
+    font-family: FamiljenGrotesk;
+    font-weight: 400;
+    src: url(c3cfdc99.ttf)
 }
 
 @font-face {
-    font-family: PPFuji-Bold;
-    src: url(fc4212a7.woff)
+    font-family: FamiljenGrotesk;
+    font-style: italic;
+    font-weight: 400;
+    src: url(ed1d29ad.ttf)
 }
 
-button[data-v-7f16df62] {
-    cursor: pointer;
-    display: inline-block;
-    background: #000;
-    color: #fff;
-    border: none;
-    font-size: 24px;
-    font-family: DrowsyLunch;
-    transition: box-shadow .05s linear;
-    text-transform: uppercase;
-    border-radius: 8px
+@font-face {
+    font-family: FamiljenGrotesk;
+    font-weight: 500;
+    src: url(15b6fb3f.ttf)
 }
 
-@media screen and (max-width: 480px) {
-    button[data-v-7f16df62] {
-        font-size: 20px
-    }
+@font-face {
+    font-family: FamiljenGrotesk-Medium-Italic;
+    font-weight: 500;
+    font-style: italic;
+    src: url(44e35b4c.ttf)
 }
 
-button[data-v-7f16df62]:disabled {
-    opacity: .25
-}
-
-button.black-btn[data-v-7f16df62] {
-    text-transform: uppercase;
-    padding: 5px 20px;
-    box-shadow: 5px 5px #00000040;
-    border-radius: 10px
-}
-
-button.black-btn[data-v-7f16df62]:disabled {
-    box-shadow: 0 0 #00000040
-}
-
-button.black-btn[data-v-7f16df62]:active {
-    box-shadow: 2px 2px #00000040
-}
-
-button.red-btn[data-v-7f16df62] {
-    padding: 5px 20px;
-    box-shadow: 5px 5px #00000040;
-    border-radius: 10px;
-    background-color: #9a0000
-}
-
-button.red-btn[data-v-7f16df62]:active {
-    box-shadow: 2px 2px #00000040
-}
-
-button.green-btn[data-v-7f16df62] {
-    padding: 5px 20px;
-    border-radius: 10px;
-    background: #419544;
-    box-shadow: 4px 8px #1e5d20
-}
-
-button.green-btn[data-v-7f16df62]:disabled {
-    box-shadow: 0 0 #00000040
-}
-
-button.yellow-btn[data-v-7f16df62] {
-    color: #000;
-    background: #F5C558;
-    box-shadow: 4px 8px #b95013
-}
-
-button.gray-btn[data-v-7f16df62] {
-    color: #000;
-    background: #E0E4FD;
-    box-shadow: 4px 8px #020b4b
-}
-
-button.gray-btn.selected[data-v-7f16df62] {
-    background-color: #6577fe;
-    color: #fff
-}
-
-button.submit[data-v-7f16df62] {
-    width: auto;
-    float: right;
-    padding: 5px 40px;
-    font-size: 28px
-}
-
-@media screen and (max-width: 480px) {
-    button.submit[data-v-7f16df62] {
-        font-size: 18px
-    }
-}
-
-.prevAnswers-container[data-v-7f16df62] {
-    margin-top: 16px
-}
-
-.prevAnswers-label[data-v-7f16df62] {
-    font-size: 24px
-}
-
-.question-prompt[data-v-7f16df62] {
-    font-size: 18px;
+@font-face {
+    font-family: FamiljenGrotesk-Bold;
     font-weight: 700;
-    margin-bottom: 8px
-}
-
-.question-answer[data-v-7f16df62] {
-    font-size: 16px
-}
-
-form[data-v-7f16df62] {
-    position: relative
-}
-
-.writing[data-v-7f16df62] {
-    padding: 0 16px;
-    height: 100%;
-    width: 100%;
-    background: radial-gradient(105.96% 79.38% at 50% 50%, #DC8D8D 0%, #633232 100%);
-    color: #fff
-}
-
-.writing .input[data-v-7f16df62] {
-    font-family: DrowsyLunch;
-    margin-bottom: 15px;
-    padding: 5px 10px 3px;
-    font-size: 36px;
-    border-radius: 10px;
-    border-color: transparent;
-    width: 100%;
-    height: 105px;
-    text-overflow: wrap;
-    border: 3px dashed #000
-}
-
-@media screen and (max-width: 480px) {
-    .writing .input[data-v-7f16df62] {
-        font-size: 26px
-    }
-}
-
-.writing .input.errored[data-v-7f16df62] {
-    border: 2px solid #9A0000
-}
-
-.writing .input[data-v-7f16df62]:disabled {
-    opacity: .25;
-    color: #999;
-    background: #fff
-}
-
-.writing .input-footer[data-v-7f16df62] {
-    display: flex
-}
-
-.writing .counter-container[data-v-7f16df62] {
-    float: left;
-    margin-right: 8px;
-    margin-bottom: 16px;
-    display: flex;
-    align-items: center
-}
-
-.writing .chars-left[data-v-7f16df62] {
-    float: left;
-    font-size: 20px
-}
-
-@media screen and (max-width: 480px) {
-    .writing .chars-left[data-v-7f16df62] {
-        font-size: 16px;
-        top: 14px;
-        right: 10px
-    }
-}
-
-.writing .counter-num[data-v-7f16df62] {
-    font-size: 28px;
-    padding-right: 8px
-}
-
-@media screen and (max-width: 480px) {
-    .writing .counter-num[data-v-7f16df62] {
-        font-size: 24px;
-        top: 14px;
-        right: 10px
-    }
-}
-
-.writing .submit-btn[data-v-7f16df62] {
-    margin-left: auto;
-    float: right
-}
-
-.writing .role-container[data-v-7f16df62] {
-    display: flex;
-    margin-top: 32px
-}
-
-.writing .role[data-v-7f16df62] {
-    margin: auto;
-    font-size: 28px;
-    font-family: DrowsyLunchItalics
-}
-
-@media screen and (max-width: 480px) {
-    .writing .role[data-v-7f16df62] {
-        font-size: 24px;
-        top: 14px;
-        right: 10px
-    }
-}
-
-.writing .prompt[data-v-7f16df62] {
-    font-size: 32px;
-    padding-top: 16px;
-    margin-bottom: 16px;
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
-    font-family: PPFuji
-}
-
-.writing .error-text[data-v-7f16df62] {
-    float: left;
-    max-width: 50%;
-    font-size: 28px;
-    color: red
-}
-
-@font-face {
-    font-family: DrowsyLunchItalics;
-    src: url(bbd01185.otf)
-}
-
-@font-face {
-    font-family: DrowsyLunch;
-    src: url(dbc59031.otf)
-}
-
-@font-face {
-    font-family: PPFuji;
-    src: url(edfc762b.woff)
-}
-
-@font-face {
-    font-family: PPFuji-Light;
-    src: url(29abf5c0.woff)
-}
-
-@font-face {
-    font-family: PPFuji-Bold;
-    src: url(fc4212a7.woff)
+    src: url(a38c46b1.ttf)
 }
 
 .lobby {
     overflow-y: auto;
     text-align: center;
+    align-items: center;
     padding: 0 16px;
     height: 100%;
     width: 100%;
     color: #fff;
-    background: radial-gradient(105.96% 79.38% at 50% 50%, #7AA9D8 0%, #324C63 100%)
+    background: radial-gradient(105.96% 79.38% at 50% 50%, #7AA9D8 0%, #324C63 100%);
+    display: flex
 }
 
 .lobby .logo {
-    margin: 40px auto;
+    margin: auto;
     width: 90%
 }
 
@@ -5776,7 +5730,11 @@ form[data-v-7f16df62] {
 }
 
 .lobby .lobby-actions {
-    margin-top: 20px
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    margin-bottom: 20px
 }
 
 .lobby .lobby-actions .message {
@@ -5809,7 +5767,8 @@ form[data-v-7f16df62] {
     z-index: 0;
     margin: 6px;
     border-radius: 0;
-    width: 90%
+    width: 90%;
+    height: 56px
 }
 
 .lobby .lobby-actions button.action:disabled {
@@ -5834,31 +5793,56 @@ form[data-v-7f16df62] {
 }
 
 @font-face {
-    font-family: DrowsyLunchItalics;
+    font-family: DrowsyLunch;
+    font-style: italic;
+    font-weight: 400;
     src: url(bbd01185.otf)
 }
 
 @font-face {
     font-family: DrowsyLunch;
+    font-weight: 400;
     src: url(dbc59031.otf)
 }
 
 @font-face {
-    font-family: PPFuji;
-    src: url(edfc762b.woff)
+    font-family: Ashtray;
+    src: url(d6a1a91d.otf)
 }
 
 @font-face {
-    font-family: PPFuji-Light;
-    src: url(29abf5c0.woff)
+    font-family: FamiljenGrotesk;
+    font-weight: 400;
+    src: url(c3cfdc99.ttf)
 }
 
 @font-face {
-    font-family: PPFuji-Bold;
-    src: url(fc4212a7.woff)
+    font-family: FamiljenGrotesk;
+    font-style: italic;
+    font-weight: 400;
+    src: url(ed1d29ad.ttf)
 }
 
-button[data-v-64ca0d74] {
+@font-face {
+    font-family: FamiljenGrotesk;
+    font-weight: 500;
+    src: url(15b6fb3f.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Medium-Italic;
+    font-weight: 500;
+    font-style: italic;
+    src: url(44e35b4c.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Bold;
+    font-weight: 700;
+    src: url(a38c46b1.ttf)
+}
+
+button[data-v-69266329] {
     cursor: pointer;
     display: inline-block;
     background: #000;
@@ -5871,102 +5855,96 @@ button[data-v-64ca0d74] {
     border-radius: 8px
 }
 
-@media screen and (max-width: 480px) {
-    button[data-v-64ca0d74] {
-        font-size: 20px
+@media screen and (max-width: 375px) {
+    button[data-v-69266329] {
+        font-size: 22px
     }
 }
 
-button[data-v-64ca0d74]:disabled {
+button[data-v-69266329]:disabled {
     opacity: .25
 }
 
-button.black-btn[data-v-64ca0d74] {
+button.black-btn[data-v-69266329] {
     text-transform: uppercase;
     padding: 5px 20px;
     box-shadow: 5px 5px #00000040;
     border-radius: 10px
 }
 
-button.black-btn[data-v-64ca0d74]:disabled {
+button.black-btn[data-v-69266329]:disabled {
     box-shadow: 0 0 #00000040
 }
 
-button.black-btn[data-v-64ca0d74]:active {
+button.black-btn[data-v-69266329]:active {
     box-shadow: 2px 2px #00000040
 }
 
-button.red-btn[data-v-64ca0d74] {
+button.red-btn[data-v-69266329] {
     padding: 5px 20px;
     box-shadow: 5px 5px #00000040;
     border-radius: 10px;
     background-color: #9a0000
 }
 
-button.red-btn[data-v-64ca0d74]:active {
+button.red-btn[data-v-69266329]:active {
     box-shadow: 2px 2px #00000040
 }
 
-button.green-btn[data-v-64ca0d74] {
+button.green-btn[data-v-69266329] {
     padding: 5px 20px;
     border-radius: 10px;
     background: #419544;
     box-shadow: 4px 8px #1e5d20
 }
 
-button.green-btn[data-v-64ca0d74]:disabled {
+button.green-btn[data-v-69266329]:disabled {
     box-shadow: 0 0 #00000040
 }
 
-button.yellow-btn[data-v-64ca0d74] {
+button.yellow-btn[data-v-69266329] {
     color: #000;
     background: #F5C558;
     box-shadow: 4px 8px #b95013
 }
 
-button.gray-btn[data-v-64ca0d74] {
+button.gray-btn[data-v-69266329] {
     color: #000;
     background: #E0E4FD;
     box-shadow: 4px 8px #020b4b
 }
 
-button.gray-btn.selected[data-v-64ca0d74] {
+button.gray-btn.selected[data-v-69266329] {
     background-color: #6577fe;
     color: #fff
 }
 
-button.submit[data-v-64ca0d74] {
+button.submit[data-v-69266329] {
     width: auto;
     float: right;
     padding: 5px 40px;
     font-size: 28px
 }
 
-@media screen and (max-width: 480px) {
-    button.submit[data-v-64ca0d74] {
-        font-size: 18px
-    }
-}
-
-.prevAnswers-container[data-v-64ca0d74] {
+.prevAnswers-container[data-v-69266329] {
     margin-top: 16px
 }
 
-.prevAnswers-label[data-v-64ca0d74] {
+.prevAnswers-label[data-v-69266329] {
     font-size: 24px
 }
 
-.question-prompt[data-v-64ca0d74] {
+.question-prompt[data-v-69266329] {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 8px
 }
 
-.question-answer[data-v-64ca0d74] {
+.question-answer[data-v-69266329] {
     font-size: 16px
 }
 
-.role-container[data-v-64ca0d74] {
+.role-container[data-v-69266329] {
     display: flex;
     flex-direction: column;
     padding: 0 16px;
@@ -5974,59 +5952,99 @@ button.submit[data-v-64ca0d74] {
     width: 100%;
     background: radial-gradient(50% 50% at 50% 50%, #6A50B4 0%, #554899 100%);
     color: #fff;
-    font-family: PPFuji;
+    font-family: FamiljenGrotesk;
     text-align: center
 }
 
-.role-container .page-title[data-v-64ca0d74] {
-    font-size: 36px;
+.role-container button[data-v-69266329] {
+    font-size: 32px !important
+}
+
+.role-container .page-title[data-v-69266329] {
+    font-size: 48px;
     margin: 8px auto;
     font-family: DrowsyLunch
 }
 
 @media screen and (max-width: 375px) {
-    .role-container .page-title[data-v-64ca0d74] {
-        font-size: 32px
+    .role-container .page-title[data-v-69266329] {
+        font-size: 44px
     }
 }
 
-.role-container .role[data-v-64ca0d74] {
+.role-container .role[data-v-69266329] {
     margin: 16px auto 32px;
     font-size: 32px;
-    font-family: PPFuji-Bold
+    font-family: FamiljenGrotesk;
+    font-weight: 700
 }
 
 @media screen and (max-width: 375px) {
-    .role-container .role[data-v-64ca0d74] {
+    .role-container .role[data-v-69266329] {
         font-size: 28px
     }
 }
 
-.role-container .description[data-v-64ca0d74] {
+.role-container .description[data-v-69266329] {
     font-size: 28px;
-    margin-bottom: 16px
+    margin-bottom: 16px;
+    font-family: FamiljenGrotesk;
+    font-weight: 500
 }
 
 @media screen and (max-width: 375px) {
-    .role-container .description[data-v-64ca0d74] {
+    .role-container .description[data-v-69266329] {
         font-size: 24px
     }
 }
 
-.role-container .confirm[data-v-64ca0d74] {
+.role-container .action-container[data-v-69266329] {
+    display: flex;
+    flex-direction: column
+}
+
+.role-container .action-container .button-container[data-v-69266329] {
+    padding-top: 0 !important;
+    height: 75px
+}
+
+.role-container .confirm[data-v-69266329] {
     padding: 15px 20px
 }
 
-.role-container .reroll[data-v-64ca0d74] {
+.role-container .reroll[data-v-69266329] {
     padding: 15px 20px;
     margin: 4px
 }
 
-.role-container .disclaimer[data-v-64ca0d74] {
+.role-container .reroll[data-v-69266329] .parallelogram {
+    max-height: 64px !important
+}
+
+@media screen and (max-width: 375px) {
+    .role-container .reroll[data-v-69266329] .parallelogram {
+        max-height: 48px !important
+    }
+}
+
+.role-container .disclaimer[data-v-69266329] {
+    font-family: FamiljenGrotesk;
+    font-style: italic;
+    font-weight: 500;
     margin: 8px auto 0
 }
 
-.post-game[data-v-0b72820c] {
+.eyes[data-v-ddad5624] {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    width: 100%;
+    min-height: 250px;
+    padding: 50px
+}
+
+.post-game[data-v-ddad5624] {
     width: 100%;
     overflow-y: auto;
     text-align: center;
@@ -6036,17 +6054,12 @@ button.submit[data-v-64ca0d74] {
     background: radial-gradient(105.96% 79.38% at 50% 50%, #7AA9D8 0%, #324C63 100%)
 }
 
-.post-game .logo[data-v-0b72820c] {
-    margin: 40px auto;
-    width: 90%
-}
-
-.post-game[data-v-0b72820c] .post-game-actions .message {
+.post-game[data-v-ddad5624] .post-game-actions .message {
     margin-bottom: 15px;
     font-size: 32px
 }
 
-.post-game[data-v-0b72820c] .post-game-actions button.action {
+.post-game[data-v-ddad5624] .post-game-actions button.action {
     padding: 12px 38px;
     font-size: 22px;
     color: #000;
@@ -6061,16 +6074,16 @@ button.submit[data-v-64ca0d74] {
     max-width: 300px
 }
 
-.post-game[data-v-0b72820c] .post-game-actions button.action:disabled {
+.post-game[data-v-ddad5624] .post-game-actions button.action:disabled {
     opacity: .5
 }
 
-.post-game[data-v-0b72820c] .post-game-actions button {
+.post-game[data-v-ddad5624] .post-game-actions button {
     filter: drop-shadow(4px 8px 0px #B95013)
 }
 
-.post-game[data-v-0b72820c] .post-game-actions .action:before,
-.post-game[data-v-0b72820c] .post-game-actions .action:after {
+.post-game[data-v-ddad5624] .post-game-actions .action:before,
+.post-game[data-v-ddad5624] .post-game-actions .action:after {
     content: "";
     position: absolute;
     z-index: -1;
@@ -6083,31 +6096,56 @@ button.submit[data-v-64ca0d74] {
 }
 
 @font-face {
-    font-family: DrowsyLunchItalics;
+    font-family: DrowsyLunch;
+    font-style: italic;
+    font-weight: 400;
     src: url(bbd01185.otf)
 }
 
 @font-face {
     font-family: DrowsyLunch;
+    font-weight: 400;
     src: url(dbc59031.otf)
 }
 
 @font-face {
-    font-family: PPFuji;
-    src: url(edfc762b.woff)
+    font-family: Ashtray;
+    src: url(d6a1a91d.otf)
 }
 
 @font-face {
-    font-family: PPFuji-Light;
-    src: url(29abf5c0.woff)
+    font-family: FamiljenGrotesk;
+    font-weight: 400;
+    src: url(c3cfdc99.ttf)
 }
 
 @font-face {
-    font-family: PPFuji-Bold;
-    src: url(fc4212a7.woff)
+    font-family: FamiljenGrotesk;
+    font-style: italic;
+    font-weight: 400;
+    src: url(ed1d29ad.ttf)
 }
 
-button[data-v-37bda1ff] {
+@font-face {
+    font-family: FamiljenGrotesk;
+    font-weight: 500;
+    src: url(15b6fb3f.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Medium-Italic;
+    font-weight: 500;
+    font-style: italic;
+    src: url(44e35b4c.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Bold;
+    font-weight: 700;
+    src: url(a38c46b1.ttf)
+}
+
+button[data-v-f514fda8] {
     cursor: pointer;
     display: inline-block;
     background: #000;
@@ -6120,106 +6158,100 @@ button[data-v-37bda1ff] {
     border-radius: 8px
 }
 
-@media screen and (max-width: 480px) {
-    button[data-v-37bda1ff] {
-        font-size: 20px
+@media screen and (max-width: 375px) {
+    button[data-v-f514fda8] {
+        font-size: 22px
     }
 }
 
-button[data-v-37bda1ff]:disabled {
+button[data-v-f514fda8]:disabled {
     opacity: .25
 }
 
-button.black-btn[data-v-37bda1ff] {
+button.black-btn[data-v-f514fda8] {
     text-transform: uppercase;
     padding: 5px 20px;
     box-shadow: 5px 5px #00000040;
     border-radius: 10px
 }
 
-button.black-btn[data-v-37bda1ff]:disabled {
+button.black-btn[data-v-f514fda8]:disabled {
     box-shadow: 0 0 #00000040
 }
 
-button.black-btn[data-v-37bda1ff]:active {
+button.black-btn[data-v-f514fda8]:active {
     box-shadow: 2px 2px #00000040
 }
 
-button.red-btn[data-v-37bda1ff] {
+button.red-btn[data-v-f514fda8] {
     padding: 5px 20px;
     box-shadow: 5px 5px #00000040;
     border-radius: 10px;
     background-color: #9a0000
 }
 
-button.red-btn[data-v-37bda1ff]:active {
+button.red-btn[data-v-f514fda8]:active {
     box-shadow: 2px 2px #00000040
 }
 
-button.green-btn[data-v-37bda1ff] {
+button.green-btn[data-v-f514fda8] {
     padding: 5px 20px;
     border-radius: 10px;
     background: #419544;
     box-shadow: 4px 8px #1e5d20
 }
 
-button.green-btn[data-v-37bda1ff]:disabled {
+button.green-btn[data-v-f514fda8]:disabled {
     box-shadow: 0 0 #00000040
 }
 
-button.yellow-btn[data-v-37bda1ff] {
+button.yellow-btn[data-v-f514fda8] {
     color: #000;
     background: #F5C558;
     box-shadow: 4px 8px #b95013
 }
 
-button.gray-btn[data-v-37bda1ff] {
+button.gray-btn[data-v-f514fda8] {
     color: #000;
     background: #E0E4FD;
     box-shadow: 4px 8px #020b4b
 }
 
-button.gray-btn.selected[data-v-37bda1ff] {
+button.gray-btn.selected[data-v-f514fda8] {
     background-color: #6577fe;
     color: #fff
 }
 
-button.submit[data-v-37bda1ff] {
+button.submit[data-v-f514fda8] {
     width: auto;
     float: right;
     padding: 5px 40px;
     font-size: 28px
 }
 
-@media screen and (max-width: 480px) {
-    button.submit[data-v-37bda1ff] {
-        font-size: 18px
-    }
-}
-
-.prevAnswers-container[data-v-37bda1ff] {
+.prevAnswers-container[data-v-f514fda8] {
     margin-top: 16px
 }
 
-.prevAnswers-label[data-v-37bda1ff] {
+.prevAnswers-label[data-v-f514fda8] {
     font-size: 24px
 }
 
-.question-prompt[data-v-37bda1ff] {
+.question-prompt[data-v-f514fda8] {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 8px
 }
 
-.question-answer[data-v-37bda1ff] {
+.question-answer[data-v-f514fda8] {
     font-size: 16px
 }
 
-form[data-v-37bda1ff] {
+form[data-v-f514fda8] {
     position: relative
 }
 
-.writing[data-v-37bda1ff] {
+.writing[data-v-f514fda8] {
     padding: 0 16px;
     height: 100%;
     width: 100%;
@@ -6227,11 +6259,12 @@ form[data-v-37bda1ff] {
     color: #fff
 }
 
-.writing .input[data-v-37bda1ff] {
-    font-family: DrowsyLunch;
+.writing .input[data-v-f514fda8] {
+    font-family: FamiljenGrotesk;
+    font-weight: 700;
     margin-bottom: 15px;
     padding: 5px 10px 3px;
-    font-size: 36px;
+    font-size: 24px;
     border-radius: 10px;
     border-color: transparent;
     width: 100%;
@@ -6241,26 +6274,26 @@ form[data-v-37bda1ff] {
 }
 
 @media screen and (max-width: 480px) {
-    .writing .input[data-v-37bda1ff] {
-        font-size: 26px
+    .writing .input[data-v-f514fda8] {
+        font-size: 18px
     }
 }
 
-.writing .input.errored[data-v-37bda1ff] {
+.writing .input.errored[data-v-f514fda8] {
     border: 2px solid #9A0000
 }
 
-.writing .input[data-v-37bda1ff]:disabled {
+.writing .input[data-v-f514fda8]:disabled {
     opacity: .25;
     color: #999;
     background: #fff
 }
 
-.writing .input-footer[data-v-37bda1ff] {
+.writing .input-footer[data-v-f514fda8] {
     display: flex
 }
 
-.writing .counter-container[data-v-37bda1ff] {
+.writing .counter-container[data-v-f514fda8] {
     float: left;
     margin-right: 8px;
     margin-bottom: 16px;
@@ -6268,111 +6301,145 @@ form[data-v-37bda1ff] {
     align-items: center
 }
 
-.writing .chars-left[data-v-37bda1ff] {
+.writing .chars-left[data-v-f514fda8] {
     float: left;
+    font-family: DrowsyLunch;
     font-size: 20px
 }
 
 @media screen and (max-width: 480px) {
-    .writing .chars-left[data-v-37bda1ff] {
+    .writing .chars-left[data-v-f514fda8] {
         font-size: 16px;
         top: 14px;
         right: 10px
     }
 }
 
-.writing .counter-num[data-v-37bda1ff] {
+.writing .counter-num[data-v-f514fda8] {
     font-size: 28px;
+    font-family: DrowsyLunch;
     padding-right: 8px
 }
 
 @media screen and (max-width: 480px) {
-    .writing .counter-num[data-v-37bda1ff] {
+    .writing .counter-num[data-v-f514fda8] {
         font-size: 24px;
         top: 14px;
         right: 10px
     }
 }
 
-.writing .submit-btn[data-v-37bda1ff] {
+.writing .submit-btn[data-v-f514fda8] {
     margin-left: auto;
     float: right
 }
 
-.writing .role-container[data-v-37bda1ff] {
-    display: flex;
-    flex-direction: column;
-    margin-top: 32px
-}
-
-.writing .remember[data-v-37bda1ff] {
-    margin: auto;
-    font-size: 32px
-}
-
-@media screen and (max-width: 480px) {
-    .writing .remember[data-v-37bda1ff] {
-        font-size: 28px
-    }
-}
-
-.writing .role[data-v-37bda1ff] {
-    margin: auto;
-    font-size: 28px;
-    font-family: DrowsyLunchItalics
-}
-
-@media screen and (max-width: 480px) {
-    .writing .role[data-v-37bda1ff] {
-        font-size: 24px;
-        top: 14px;
-        right: 10px
-    }
-}
-
-.writing .prompt[data-v-37bda1ff] {
+.writing .prompt[data-v-f514fda8] {
     font-size: 32px;
     padding-top: 16px;
     margin-bottom: 16px;
     position: relative;
     left: 50%;
     transform: translate(-50%);
-    font-family: PPFuji
+    font-family: FamiljenGrotesk;
+    font-weight: 700
 }
 
-.writing .error-text[data-v-37bda1ff] {
+.writing .error-text[data-v-f514fda8] {
     float: left;
     max-width: 50%;
     font-size: 28px;
     color: red
 }
 
+.role-container[data-v-f514fda8] {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    margin: auto auto 20px;
+    position: absolute;
+    bottom: 0;
+    width: 100%
+}
+
+.role-container .remember[data-v-f514fda8] {
+    margin: auto;
+    font-size: 32px;
+    font-family: DrowsyLunch
+}
+
+@media screen and (max-width: 480px) {
+    .role-container .remember[data-v-f514fda8] {
+        font-size: 28px
+    }
+}
+
+.role-container .role[data-v-f514fda8] {
+    margin: auto;
+    font-size: 28px;
+    font-family: DrowsyLunch;
+    font-style: italic
+}
+
+@media screen and (max-width: 480px) {
+    .role-container .role[data-v-f514fda8] {
+        font-size: 24px;
+        top: 14px;
+        right: 10px
+    }
+}
+
 @font-face {
-    font-family: DrowsyLunchItalics;
+    font-family: DrowsyLunch;
+    font-style: italic;
+    font-weight: 400;
     src: url(bbd01185.otf)
 }
 
 @font-face {
     font-family: DrowsyLunch;
+    font-weight: 400;
     src: url(dbc59031.otf)
 }
 
 @font-face {
-    font-family: PPFuji;
-    src: url(edfc762b.woff)
+    font-family: Ashtray;
+    src: url(d6a1a91d.otf)
 }
 
 @font-face {
-    font-family: PPFuji-Light;
-    src: url(29abf5c0.woff)
+    font-family: FamiljenGrotesk;
+    font-weight: 400;
+    src: url(c3cfdc99.ttf)
 }
 
 @font-face {
-    font-family: PPFuji-Bold;
-    src: url(fc4212a7.woff)
+    font-family: FamiljenGrotesk;
+    font-style: italic;
+    font-weight: 400;
+    src: url(ed1d29ad.ttf)
 }
 
-button[data-v-75b0c9b1] {
+@font-face {
+    font-family: FamiljenGrotesk;
+    font-weight: 500;
+    src: url(15b6fb3f.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Medium-Italic;
+    font-weight: 500;
+    font-style: italic;
+    src: url(44e35b4c.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Bold;
+    font-weight: 700;
+    src: url(a38c46b1.ttf)
+}
+
+button[data-v-a288e7a0] {
     cursor: pointer;
     display: inline-block;
     background: #000;
@@ -6385,153 +6452,142 @@ button[data-v-75b0c9b1] {
     border-radius: 8px
 }
 
-@media screen and (max-width: 480px) {
-    button[data-v-75b0c9b1] {
-        font-size: 20px
+@media screen and (max-width: 375px) {
+    button[data-v-a288e7a0] {
+        font-size: 22px
     }
 }
 
-button[data-v-75b0c9b1]:disabled {
+button[data-v-a288e7a0]:disabled {
     opacity: .25
 }
 
-button.black-btn[data-v-75b0c9b1] {
+button.black-btn[data-v-a288e7a0] {
     text-transform: uppercase;
     padding: 5px 20px;
     box-shadow: 5px 5px #00000040;
     border-radius: 10px
 }
 
-button.black-btn[data-v-75b0c9b1]:disabled {
+button.black-btn[data-v-a288e7a0]:disabled {
     box-shadow: 0 0 #00000040
 }
 
-button.black-btn[data-v-75b0c9b1]:active {
+button.black-btn[data-v-a288e7a0]:active {
     box-shadow: 2px 2px #00000040
 }
 
-button.red-btn[data-v-75b0c9b1] {
+button.red-btn[data-v-a288e7a0] {
     padding: 5px 20px;
     box-shadow: 5px 5px #00000040;
     border-radius: 10px;
     background-color: #9a0000
 }
 
-button.red-btn[data-v-75b0c9b1]:active {
+button.red-btn[data-v-a288e7a0]:active {
     box-shadow: 2px 2px #00000040
 }
 
-button.green-btn[data-v-75b0c9b1] {
+button.green-btn[data-v-a288e7a0] {
     padding: 5px 20px;
     border-radius: 10px;
     background: #419544;
     box-shadow: 4px 8px #1e5d20
 }
 
-button.green-btn[data-v-75b0c9b1]:disabled {
+button.green-btn[data-v-a288e7a0]:disabled {
     box-shadow: 0 0 #00000040
 }
 
-button.yellow-btn[data-v-75b0c9b1] {
+button.yellow-btn[data-v-a288e7a0] {
     color: #000;
     background: #F5C558;
     box-shadow: 4px 8px #b95013
 }
 
-button.gray-btn[data-v-75b0c9b1] {
+button.gray-btn[data-v-a288e7a0] {
     color: #000;
     background: #E0E4FD;
     box-shadow: 4px 8px #020b4b
 }
 
-button.gray-btn.selected[data-v-75b0c9b1] {
+button.gray-btn.selected[data-v-a288e7a0] {
     background-color: #6577fe;
     color: #fff
 }
 
-button.submit[data-v-75b0c9b1] {
+button.submit[data-v-a288e7a0] {
     width: auto;
     float: right;
     padding: 5px 40px;
     font-size: 28px
 }
 
-@media screen and (max-width: 480px) {
-    button.submit[data-v-75b0c9b1] {
-        font-size: 18px
-    }
-}
-
-.prevAnswers-container[data-v-75b0c9b1] {
+.prevAnswers-container[data-v-a288e7a0] {
     margin-top: 16px
 }
 
-.prevAnswers-label[data-v-75b0c9b1] {
+.prevAnswers-label[data-v-a288e7a0] {
     font-size: 24px
 }
 
-.question-prompt[data-v-75b0c9b1] {
+.question-prompt[data-v-a288e7a0] {
     font-size: 18px;
     font-weight: 700;
     margin-bottom: 8px
 }
 
-.question-answer[data-v-75b0c9b1] {
+.question-answer[data-v-a288e7a0] {
     font-size: 16px
 }
 
-.grouping[data-v-75b0c9b1] {
+.grouping[data-v-a288e7a0] {
     display: flex;
     align-items: center;
     flex-direction: column;
     padding: 0 16px;
     height: 100%;
     width: 100%;
+    overflow-y: auto;
     background: radial-gradient(105.96% 79.38% at 50% 50%, #7AA9D8 0%, #324C63 100%);
     color: #fff
 }
 
-.grouping .hypno-modal[data-v-75b0c9b1] {
-    background-color: #000c !important
+.grouping .player[data-v-a288e7a0] {
+    margin: 10px;
+    width: 100%
 }
 
-.grouping .hypno-modal .options-modal[data-v-75b0c9b1] {
-    background-color: #f3e1ba;
-    font-family: PPFuji;
-    box-shadow: 5px 5px #b95013
+@media screen and (max-width: 375px) {
+    .grouping .player[data-v-a288e7a0] {
+        margin: 4px
+    }
 }
 
-.grouping .hypno-modal .options-modal .actions[data-v-75b0c9b1] {
-    font-family: DrowsyLunch !important
-}
-
-.grouping .player[data-v-75b0c9b1] {
-    margin: 4px
-}
-
-.grouping .header[data-v-75b0c9b1] {
+.grouping .header[data-v-a288e7a0] {
     display: flex;
     flex-direction: row
 }
 
 @media screen and (max-width: 375px) {
-    .grouping .header[data-v-75b0c9b1] {
+    .grouping .header[data-v-a288e7a0] {
         font-size: 26px
     }
 }
 
-.grouping .page-title[data-v-75b0c9b1] {
-    font-size: 38px;
+.grouping .page-title[data-v-a288e7a0] {
+    font-family: DrowsyLunch;
+    font-size: 48px;
     margin: 8px auto
 }
 
 @media screen and (max-width: 375px) {
-    .grouping .page-title[data-v-75b0c9b1] {
+    .grouping .page-title[data-v-a288e7a0] {
         font-size: 34px
     }
 }
 
-.grouping .hint[data-v-75b0c9b1] {
+.grouping .hint[data-v-a288e7a0] {
     position: relative;
     right: -10%;
     padding: 4px 10px;
@@ -6542,85 +6598,133 @@ button.submit[data-v-75b0c9b1] {
     box-shadow: 4px 6px #020b4b
 }
 
-.grouping .section-header[data-v-75b0c9b1] {
+.grouping .section-header[data-v-a288e7a0] {
     margin-bottom: 4px;
     margin-top: 12px;
     font-size: 20px;
-    color: #fff
+    color: #fff;
+    font-family: FamiljenGrotesk;
+    font-weight: 700
 }
 
-.grouping .section-header.investigate[data-v-75b0c9b1] {
+.grouping .section-header.investigate[data-v-a288e7a0] {
     margin-top: 0
 }
 
 @media screen and (max-width: 375px) {
-    .grouping .section-header[data-v-75b0c9b1] {
+    .grouping .section-header[data-v-a288e7a0] {
         font-size: 16px
     }
 }
 
-.grouping .group-container[data-v-75b0c9b1] {
+.grouping .group-container[data-v-a288e7a0] {
     display: flex;
     flex-direction: row;
     width: 100%;
     max-width: 300px
 }
 
-.grouping .group[data-v-75b0c9b1] {
+.grouping .group[data-v-a288e7a0] {
     width: 100%;
     position: relative
 }
 
-.grouping .group-0[data-v-75b0c9b1] {
+.grouping .group-0[data-v-a288e7a0] {
     left: 5%
 }
 
-.grouping .group-2[data-v-75b0c9b1] {
+.grouping .group-2[data-v-a288e7a0] {
     right: 5%
 }
 
-.grouping .player-container[data-v-75b0c9b1] {
+.grouping .player-container[data-v-a288e7a0] {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 300px
-}
-
-.grouping .hurry[data-v-75b0c9b1] {
-    font-size: 28px;
-    width: 100%;
-    max-width: 300px
+    max-width: 308px;
+    align-items: center;
+    padding-right: 22px
 }
 
 @media screen and (max-width: 375px) {
-    .grouping .hurry[data-v-75b0c9b1] {
-        font-size: 24px
+    .grouping .player-container .button-container[data-v-a288e7a0] {
+        margin: 2px
+    }
+}
+
+.grouping .hurry[data-v-a288e7a0] {
+    font-size: 28px;
+    width: 100%;
+    max-width: 300px;
+    height: 56px;
+    padding-right: 20px
+}
+
+@media screen and (max-width: 375px) {
+    .grouping .hurry[data-v-a288e7a0] {
+        font-size: 22px
+    }
+}
+
+.grouping .hurry .button-container[data-v-a288e7a0] {
+    max-height: 56px !important
+}
+
+@media screen and (max-width: 375px) {
+    .grouping .hurry .button-container[data-v-a288e7a0] {
+        max-height: 50px;
+        margin: 4px
     }
 }
 
 @font-face {
-    font-family: DrowsyLunchItalics;
+    font-family: DrowsyLunch;
+    font-style: italic;
+    font-weight: 400;
     src: url(bbd01185.otf)
 }
 
 @font-face {
     font-family: DrowsyLunch;
+    font-weight: 400;
     src: url(dbc59031.otf)
 }
 
 @font-face {
-    font-family: PPFuji;
-    src: url(edfc762b.woff)
+    font-family: Ashtray;
+    src: url(d6a1a91d.otf)
 }
 
 @font-face {
-    font-family: PPFuji-Light;
-    src: url(29abf5c0.woff)
+    font-family: FamiljenGrotesk;
+    font-weight: 400;
+    src: url(c3cfdc99.ttf)
 }
 
 @font-face {
-    font-family: PPFuji-Bold;
-    src: url(fc4212a7.woff)
+    font-family: FamiljenGrotesk;
+    font-style: italic;
+    font-weight: 400;
+    src: url(ed1d29ad.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk;
+    font-weight: 500;
+    src: url(15b6fb3f.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Medium-Italic;
+    font-weight: 500;
+    font-style: italic;
+    src: url(44e35b4c.ttf)
+}
+
+@font-face {
+    font-family: FamiljenGrotesk-Bold;
+    font-weight: 700;
+    src: url(a38c46b1.ttf)
 }
 
 button {
@@ -6636,9 +6740,9 @@ button {
     border-radius: 8px
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 375px) {
     button {
-        font-size: 20px
+        font-size: 22px
     }
 }
 
@@ -6705,12 +6809,6 @@ button.submit {
     float: right;
     padding: 5px 40px;
     font-size: 28px
-}
-
-@media screen and (max-width: 480px) {
-    button.submit {
-        font-size: 18px
-    }
 }
 
 .prevAnswers-container {
