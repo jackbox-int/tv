@@ -82,6 +82,47 @@
     font-size: 18px
 }
 
+.gallery[data-v-d4a34e95] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%
+}
+
+.gallery .content[data-v-d4a34e95] {
+    flex-grow: 1;
+    width: 100%;
+    background: green;
+    overflow: auto
+}
+
+.gallery .options[data-v-d4a34e95] {
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: blue
+}
+
+.topbar[data-v-d4a34e95] {
+    all: initial;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 50px;
+    color: #f7f8f9;
+    background: #1A1F26;
+    text-align: center
+}
+
+.topbar .logo[data-v-d4a34e95] {
+    margin-top: 5px;
+    height: 40px;
+    width: auto
+}
+
+.topbar .logo path[data-v-d4a34e95] {
+    fill: #fff
+}
+
 .artifact-link {
     display: inline-block;
     width: 100%
@@ -4891,14 +4932,14 @@ body {
     z-index: -1
 }
 
-.lobby[data-v-b2cc74dd] {
+.lobby[data-v-1ab1716d] {
     display: flex;
     flex-direction: column;
     gap: 15px;
     height: 100%
 }
 
-.lobby .avatars[data-v-b2cc74dd] {
+.lobby .avatars[data-v-1ab1716d] {
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -4908,7 +4949,7 @@ body {
     -webkit-tap-highlight-color: transparent
 }
 
-.lobby .avatars .avatar[data-v-b2cc74dd] {
+.lobby .avatars .avatar[data-v-1ab1716d] {
     position: relative;
     width: 24%;
     height: auto;
@@ -4918,15 +4959,15 @@ body {
     border-width: 2px
 }
 
-.lobby .avatars .avatar.selected[data-v-b2cc74dd],
-.lobby .avatars .avatar.selected[data-v-b2cc74dd]:disabled {
+.lobby .avatars .avatar.selected[data-v-1ab1716d],
+.lobby .avatars .avatar.selected[data-v-1ab1716d]:disabled {
     border-color: #feffe7;
     box-shadow: 0 0 8px 8px #feffe7;
     opacity: 1;
     z-index: 1
 }
 
-.lobby .avatars .avatar img[data-v-b2cc74dd] {
+.lobby .avatars .avatar img[data-v-1ab1716d] {
     position: absolute;
     top: 0;
     left: 0;
@@ -4935,7 +4976,7 @@ body {
     line-height: 1
 }
 
-.lobby textarea[data-v-b2cc74dd] {
+.lobby textarea[data-v-1ab1716d] {
     display: block;
     width: 100%;
     margin-top: 15px;
@@ -4948,11 +4989,11 @@ body {
     resize: none
 }
 
-.lobby textarea[data-v-b2cc74dd]:disabled {
+.lobby textarea[data-v-1ab1716d]:disabled {
     background-color: transparent
 }
 
-.lobby[data-v-b2cc74dd] .lobby-actions {
+.lobby[data-v-1ab1716d] .lobby-actions {
     margin-top: auto
 }
 
@@ -5137,11 +5178,11 @@ body {
     transform: translateY(-50%)
 }
 
-.writing[data-v-ca87eaaf] {
+.writing[data-v-118c2692] {
     text-align: center
 }
 
-.writing textarea[data-v-ca87eaaf] {
+.writing textarea[data-v-118c2692] {
     width: 100%;
     margin: 15px 0 6px;
     padding: 20px 16px;

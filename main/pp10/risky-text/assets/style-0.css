@@ -82,6 +82,47 @@
     font-size: 18px
 }
 
+.gallery[data-v-d4a34e95] {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%
+}
+
+.gallery .content[data-v-d4a34e95] {
+    flex-grow: 1;
+    width: 100%;
+    background: green;
+    overflow: auto
+}
+
+.gallery .options[data-v-d4a34e95] {
+    flex-shrink: 0;
+    flex-grow: 0;
+    background: blue
+}
+
+.topbar[data-v-d4a34e95] {
+    all: initial;
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 100%;
+    height: 50px;
+    color: #f7f8f9;
+    background: #1A1F26;
+    text-align: center
+}
+
+.topbar .logo[data-v-d4a34e95] {
+    margin-top: 5px;
+    height: 40px;
+    width: auto
+}
+
+.topbar .logo path[data-v-d4a34e95] {
+    fill: #fff
+}
+
 .artifact-link {
     display: inline-block;
     width: 100%
@@ -4396,18 +4437,18 @@ body {
     margin: 0 auto
 }
 
-.message[data-v-63b30de9] {
+.message[data-v-46b07053] {
     align-items: center;
     display: flex;
     flex-direction: column
 }
 
-.message .speaker-head[data-v-63b30de9] {
+.message .speaker-head[data-v-46b07053] {
     position: relative;
     left: -28%
 }
 
-.message .bubble[data-v-63b30de9] {
+.message .bubble[data-v-46b07053] {
     background-color: #3fb58a;
     border-color: #000;
     border-width: 2px;
@@ -4425,7 +4466,7 @@ body {
     max-width: 255px
 }
 
-.message .bubble[data-v-63b30de9]:after {
+.message .bubble[data-v-46b07053]:after {
     content: "";
     background-color: #3fb58a;
     border-bottom-left-radius: 6px;
@@ -4434,12 +4475,12 @@ body {
     height: 25px;
     width: 25px;
     left: 48%;
-    top: 94%;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black
+    bottom: -14px;
+    border-bottom: 4px solid black;
+    border-left: 3.25px solid black
 }
 
-.waiting[data-v-7ec23225] {
+.waiting[data-v-81eb392b] {
     background-image: url(04f72f8b.png);
     background-color: #6434ad;
     height: 100%;
@@ -4450,16 +4491,16 @@ body {
     align-items: center
 }
 
-.waiting .waiting-text[data-v-7ec23225] {
+.waiting .waiting-text[data-v-81eb392b] {
     color: #000;
     margin: 0 auto 50px;
     background-color: #6434ad;
     text-transform: uppercase;
     font-size: 32px;
-    padding: 8px
+    padding: 7px 8px 0
 }
 
-.waiting .bubble[data-v-7ec23225] {
+.waiting .bubble[data-v-81eb392b] {
     background-color: #fbb03b;
     border-color: #000;
     border-width: 2px;
@@ -4469,7 +4510,7 @@ body {
     border-style: solid;
     color: #000;
     margin-bottom: 8px;
-    padding: 30px 45px 60px;
+    padding: 30px 50px 60px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -4477,7 +4518,7 @@ body {
     max-width: 315px
 }
 
-.waiting .bubble[data-v-7ec23225]:after {
+.waiting .bubble[data-v-81eb392b]:after {
     content: "";
     background-color: #fbb03b;
     border-bottom-left-radius: 6px;
@@ -4486,17 +4527,17 @@ body {
     height: 25px;
     width: 25px;
     left: 48%;
-    top: 96%;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black
+    bottom: -14px;
+    border-bottom: 4px solid black;
+    border-left: 3.25px solid black
 }
 
-.waiting .bubble .face[data-v-7ec23225] {
+.waiting .bubble .face[data-v-81eb392b] {
     padding-top: 20px;
     padding-bottom: 50px
 }
 
-.waiting .bubble .tips[data-v-7ec23225] {
+.waiting .bubble .tips[data-v-81eb392b] {
     color: #fbb03b;
     background-color: #000;
     transform: rotate(90deg);
@@ -4504,10 +4545,10 @@ body {
     font-size: 22px;
     padding: 2px;
     top: calc(100% - 80px);
-    left: -63%
+    left: -66%
 }
 
-.waiting .flip[data-v-7ec23225] {
+.waiting .flip[data-v-81eb392b] {
     display: block;
     cursor: pointer;
     font-family: Anitkor;
@@ -4537,8 +4578,8 @@ body {
     background-color: #6434ad;
     border-radius: 15px;
     padding: 4px;
-    font-size: 16px;
-    max-width: 160px;
+    font-size: 18px;
+    max-width: fit-content;
     margin: auto auto 8px
 }
 
@@ -4590,7 +4631,8 @@ body {
 
 .lobby .lobby-actions .message {
     color: #000;
-    margin-bottom: 10px
+    margin: auto auto 10px;
+    width: fit-content
 }
 
 .lobby .lobby-actions button.action {
@@ -4604,7 +4646,7 @@ body {
     width: 100%;
     max-width: 400px;
     margin: auto;
-    text-transform: uppercase
+    text-transform: lowercase
 }
 
 .lobby .lobby-actions button.action:disabled {
@@ -4824,7 +4866,7 @@ body {
     text-align: center
 }
 
-.prompt[data-v-0e694eb1] {
+.prompt[data-v-ca0a74fa] {
     text-align: left;
     background-color: #6434ad;
     display: inline-block;
@@ -4834,14 +4876,28 @@ body {
     color: #fff
 }
 
-.choosing[data-v-0e694eb1] {
-    color: #fff;
+.choosing[data-v-ca0a74fa] {
+    color: #fbb03b;
     justify-content: space-around;
     padding: 25px;
     text-align: center
 }
 
-.choosing .choice-button[data-v-0e694eb1] {
+.choosing button[data-v-ca0a74fa]:hover {
+    color: #fff !important
+}
+
+.choosing button[data-v-ca0a74fa]:active {
+    background-color: #6434ad;
+    border-color: #000;
+    color: #fbb03b
+}
+
+.choosing button[data-v-ca0a74fa]:disabled {
+    opacity: .5
+}
+
+.choosing .choice-button[data-v-ca0a74fa] {
     background-color: #000;
     border-radius: 10px;
     border: 2px solid #000000;
@@ -4851,20 +4907,8 @@ body {
     min-height: 50px;
     width: 100%;
     font-size: 18px;
-    text-transform: lowercase
-}
-
-.choosing .choice-button[data-v-0e694eb1]:hover {
-    color: #fbb03b
-}
-
-.choosing .choice-button[data-v-0e694eb1]:active {
-    background-color: #6434ad;
-    color: #fbb03b
-}
-
-.choosing .choice-button[data-v-0e694eb1]:disabled {
-    opacity: .5
+    text-transform: lowercase;
+    cursor: pointer
 }
 
 @font-face {
@@ -5277,13 +5321,36 @@ body {
     }
 }
 
-.top-container[data-v-9408eb5e] {
+.ui-keyboard {
+    background-color: #fbb03b;
+    border-radius: 0;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    min-height: 400px;
+    padding: 8px
+}
+
+.ui-keyboard .ui-keyboard-button {
+    font-family: Antikor;
+    font-size: 22px;
+    margin: 1.25px
+}
+
+.ui-keyboard .ui-keyboard-space {
+    width: 80%;
+    min-width: 150px
+}
+
+.top-container[data-v-8bf3a8ce] {
     display: flex;
     flex-direction: row;
     padding: 14px 14px 0
 }
 
-.top-container .prompt[data-v-9408eb5e] {
+.top-container .prompt[data-v-8bf3a8ce] {
     font-weight: 700;
     margin-bottom: 10px;
     text-align: left;
@@ -5291,42 +5358,42 @@ body {
     background-color: #6434ad
 }
 
-.top-container .vote-counter[data-v-9408eb5e] {
+.top-container .vote-counter[data-v-8bf3a8ce] {
     text-align: right;
     color: #fbb03b;
     margin-left: auto;
     background-color: #6434ad
 }
 
-.favorites[data-v-9408eb5e] {
+.favorites[data-v-8bf3a8ce] {
     height: 88%;
     padding: 17px 14px 14px;
     overflow-y: auto
 }
 
 @media screen and (min-width: 300px) {
-    .favorites[data-v-9408eb5e] {
+    .favorites[data-v-8bf3a8ce] {
         height: 80%
     }
 }
 
-.favorites .words[data-v-9408eb5e] {
+.favorites .words[data-v-8bf3a8ce] {
     display: flex;
     gap: clamp(1px, 1vw, 20px);
     flex-wrap: wrap;
     list-style-type: none
 }
 
-.favorites .words button[data-v-9408eb5e]:disabled {
+.favorites .words button[data-v-8bf3a8ce]:disabled {
     color: #4c238c;
     background-color: #804ad2
 }
 
-.favorites .words button[data-v-9408eb5e]:hover {
+.favorites .words button[data-v-8bf3a8ce]:hover {
     transform: translateY(-2px)
 }
 
-.favorites .words button[data-v-9408eb5e]:after {
+.favorites .words button[data-v-8bf3a8ce]:after {
     position: absolute;
     content: "";
     width: 30px;
@@ -5340,12 +5407,12 @@ body {
 }
 
 @media screen and (min-width: 600px) {
-    .favorites .words button[data-v-9408eb5e]:after {
+    .favorites .words button[data-v-8bf3a8ce]:after {
         top: -15px
     }
 }
 
-.favorites .words .word[data-v-9408eb5e] {
+.favorites .words .word[data-v-8bf3a8ce] {
     border-radius: 5px;
     font-size: clamp(14px, 5vw, 40px);
     color: #000;
@@ -5355,31 +5422,31 @@ body {
     padding: 7px 5px 5px
 }
 
-.favorites .words .word.selected[data-v-9408eb5e] {
+.favorites .words .word.selected[data-v-8bf3a8ce] {
     background-color: #fbb03b;
-    animation: shakeButton2-9408eb5e .3s cubic-bezier(0, 0, .3, 1) forwards
+    animation: shakeButton-8bf3a8ce .3s cubic-bezier(0, 0, .3, 1) forwards
 }
 
-.favorites .words .word.selected[data-v-9408eb5e]:disabled {
+.favorites .words .word.selected[data-v-8bf3a8ce]:disabled {
     color: #000
 }
 
-.favorites .words .word.doubled[data-v-9408eb5e] {
+.favorites .words .word.doubled[data-v-8bf3a8ce] {
     background-color: #ff4d44;
-    animation: shakeButton2-9408eb5e .2s linear forwards
+    animation: shakeButton2-8bf3a8ce .2s linear forwards
 }
 
-.favorites .words .word.doubled[data-v-9408eb5e]:disabled {
+.favorites .words .word.doubled[data-v-8bf3a8ce]:disabled {
     color: #000
 }
 
-.favorites .words .word.doubled[data-v-9408eb5e]:after {
+.favorites .words .word.doubled[data-v-8bf3a8ce]:after {
     transform: scale(1.2) rotate(0) translateY(0);
     opacity: 1;
     transition: all .3s cubic-bezier(.26, 2, .48, .81)
 }
 
-@keyframes shakeButton-9408eb5e {
+@keyframes shakeButton-8bf3a8ce {
     0% {
         transform: translate(2px, 3px)
     }
@@ -5401,7 +5468,7 @@ body {
     }
 }
 
-@keyframes shakeButton2-9408eb5e {
+@keyframes shakeButton2-8bf3a8ce {
     0% {
         transform: translate(-4px, 5px)
     }
@@ -5423,7 +5490,7 @@ body {
     }
 }
 
-.controls-wrapper[data-v-9408eb5e] {
+.controls-wrapper[data-v-8bf3a8ce] {
     background: linear-gradient(0deg, #6434AD 0%, rgba(100, 52, 173, 0) 100%);
     position: absolute;
     bottom: 0;
@@ -5434,14 +5501,14 @@ body {
     pointer-events: none
 }
 
-.controls[data-v-9408eb5e] {
+.controls[data-v-8bf3a8ce] {
     display: flex;
     gap: 10px;
     margin: auto auto 10px;
     pointer-events: auto
 }
 
-.controls button[data-v-9408eb5e] {
+.controls button[data-v-8bf3a8ce] {
     border-radius: 4px;
     width: 50%;
     min-height: 50px;
@@ -5451,21 +5518,21 @@ body {
 }
 
 @media screen and (min-width: 300px) {
-    .controls button[data-v-9408eb5e] {
+    .controls button[data-v-8bf3a8ce] {
         font-size: 16px
     }
 }
 
-.controls button[data-v-9408eb5e]:disabled {
+.controls button[data-v-8bf3a8ce]:disabled {
     opacity: .5
 }
 
-.controls .clear-button[data-v-9408eb5e] {
+.controls .clear-button[data-v-8bf3a8ce] {
     color: #ff4d44;
     min-width: 115px
 }
 
-.controls .submit-button[data-v-9408eb5e] {
+.controls .submit-button[data-v-8bf3a8ce] {
     width: 80%;
     color: #00e08f;
     min-width: 225px
