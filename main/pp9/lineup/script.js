@@ -13506,7 +13506,7 @@ ${r.message}`,
         h7 = {
             GALLERY_LINK: "Visita la galería",
             PLAY_AGAIN: "¿Jugar otra vez?",
-            BUTTON_SAME_PLAYERS: "Los mismos jugadores",
+            BUTTON_SAME_PLAYERS: "Mismos jugadores",
             BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
         p7 = {
@@ -13640,7 +13640,7 @@ ${r.message}`,
         A7 = {
             GALLERY_LINK: "Visita la galería",
             PLAY_AGAIN: "¿Jugar otra vez?",
-            BUTTON_SAME_PLAYERS: "Los mismos jugadores",
+            BUTTON_SAME_PLAYERS: "Mismos jugadores",
             BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
         w7 = {

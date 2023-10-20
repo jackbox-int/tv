@@ -13402,8 +13402,8 @@ ${r.message}`,
         Cq = {
             GALLERY_LINK: "Visita la galería",
             PLAY_AGAIN: "¿Jugar otra vez?",
-            BUTTON_SAME_PLAYERS: "Los mismos jugadores",
-            BUTTON_NEW_PLAYERS: "Otros jugadores"
+            BUTTON_SAME_PLAYERS: "Mismos jugadores",
+            BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
         $q = {
             AND: "Y",
@@ -13532,8 +13532,8 @@ ${r.message}`,
         Bq = {
             GALLERY_LINK: "Visita la galería",
             PLAY_AGAIN: "¿Jugar otra vez?",
-            BUTTON_SAME_PLAYERS: "Los mismos jugadores",
-            BUTTON_NEW_PLAYERS: "Otros jugadores"
+            BUTTON_SAME_PLAYERS: "Mismos jugadores",
+            BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
         Gq = {
             AND: "Y",
