@@ -2868,8 +2868,7 @@ var Cm = ia((Mm, Hs) => {
             isPublic: !0,
             directory: "pp9/lineup",
             features: ["kicking", "previews"],
-            categoryId: "LineupGame",
-            galleryId: "quixort"
+            categoryId: "LineupGame"
         }, {
             name: "Tee K.O. 2",
             tag: "awshirt2",
@@ -9836,7 +9835,7 @@ Url: ${Er(t)}`), !0)
                     })
                 }
             }, {
-                path: "/render/:galleryId/:artifactId",
+                path: "/render/:galleryId/:artifactId/:renderer",
                 handler: t => {
                     const e = fi(t.data.galleryId);
                     return !e || !e.categoryId ? {
@@ -9987,23 +9986,23 @@ Url: ${Er(t)}`), !0)
         Pm = 1,
         Nm = {
             branch: "main",
-            sha: "102f787d840bd78081fe35c99f65ffc38b2a6092",
-            lastUpdated: 1697666734518,
-            version: "5.296.119",
+            sha: "d9199bf2d61c1ecbba5cf63fde43010b9f4d4d4d",
+            lastUpdated: 1697768855567,
+            version: "5.300.119",
             type: "production"
         },
         Dm = {
             main: {
-                sha: "102f787d840bd78081fe35c99f65ffc38b2a6092",
-                lastUpdated: 1697666734518,
-                version: "5.296.119",
+                sha: "d9199bf2d61c1ecbba5cf63fde43010b9f4d4d4d",
+                lastUpdated: 1697768855567,
+                version: "5.300.119",
                 type: "production",
                 bundles: {
                     "@connect": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@connect",
-                        version: "5.285.119"
+                        version: "5.297.119"
                     },
                     "the-wheel": {
                         file: "script.js",
@@ -10327,7 +10326,7 @@ Url: ${Er(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp9/lineup",
-                        version: "5.83.0"
+                        version: "5.297.119"
                     },
                     "range-game": {
                         file: "script.js",
@@ -10351,31 +10350,31 @@ Url: ${Er(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp10/awshirt2",
-                        version: "5.291.119"
+                        version: "5.299.119"
                     },
                     "nopus-opus": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp10/nopus-opus",
-                        version: "5.294.119"
+                        version: "5.297.119"
                     },
                     "risky-text": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp10/risky-text",
-                        version: "5.296.119"
+                        version: "5.297.119"
                     },
                     "time-trivia": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp10/time-trivia",
-                        version: "5.279.119"
+                        version: "5.297.119"
                     },
                     "us-them": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp10/us-them",
-                        version: "5.286.119"
+                        version: "5.300.119"
                     }
                 }
             }
@@ -10404,4 +10403,4 @@ Url: ${Er(t)}`), !0)
     new Am([xm, Rm])
 });
 export default Cm();
-//# sourceMappingURL=80b07b1a.js.map
+//# sourceMappingURL=d851f711.js.map
