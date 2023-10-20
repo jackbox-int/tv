@@ -13741,7 +13741,7 @@ ${r.message}`,
         aV = {
             GALLERY_LINK: "Visita la galería",
             PLAY_AGAIN: "¿Jugar otra vez?",
-            BUTTON_SAME_PLAYERS: "Mismos jugadores",
+            BUTTON_SAME_PLAYERS: "Los mismos jugadores",
             BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
         cV = {
@@ -13875,7 +13875,7 @@ ${r.message}`,
         yV = {
             GALLERY_LINK: "Visita la galería",
             PLAY_AGAIN: "¿Jugar otra vez?",
-            BUTTON_SAME_PLAYERS: "Mismos jugadores",
+            BUTTON_SAME_PLAYERS: "Los mismos jugadores",
             BUTTON_NEW_PLAYERS: "Nuevos jugadores"
         },
         EV = {

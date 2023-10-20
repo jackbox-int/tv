@@ -16151,6 +16151,225 @@ var ooe = kP((Voe, iR) => {
             "pt-BR": xK
         },
         UK = {
+            LABEL: "BRANCH",
+            REFRESH_REQUIRED: "Refresh Required",
+            PREFERRED: "PREFERRED BRANCH",
+            SELECT: "Select a Branch",
+            WAITING: "Waiting for Room"
+        },
+        FK = {
+            ACCEPT_ALL: "Got it!",
+            CONSENT_MODAL: {
+                ARIA: "Cookie consent form"
+            },
+            DESCRIPTION: "We use cookies to improve your game experience and analyze website traffic. Find out more in our [pp]Privacy Policy[/pp].",
+            REJECT_ALL: "Opt out"
+        },
+        BK = {
+            UNSUPPORTED_BROWSER: "This game is not supported on this browser. View '?' or HELP to see a list of compatible browsers.",
+            ROOM_IS_FULL: "The game is full",
+            ROOM_NOT_FOUND: "Room not found",
+            AUDIENCE_IS_FULL: "The audience is full",
+            UNABLE_TO_CONNECT: "Unable to connect to the Jackbox Games server. This is commonly caused by adblockers or privacy extensions.",
+            UNABLE_TO_PRELOAD: "Unable to preload this game bundle",
+            KICKED: "You cannot join because you have been kicked by a moderator",
+            REQUIRES_TWITCH_LOGIN: "Game requires Twitch login",
+            ROOM_IS_LOCKED: "Game is locked",
+            INCORRECT_PASSWORD: "Incorrect password",
+            GENERIC: "Error joining this game",
+            FILTER_NAME: "This game has profanity filters enabled. Please pick a different name."
+        },
+        GK = {
+            NAME: "NAME",
+            NAME_PLACEHOLDER: "ENTER YOUR NAME",
+            PASSWORD_PLACEHOLDER: "ENTER 5-DIGIT PASSWORD",
+            PASSWORD_REQUIRED_TITLE: "Password required",
+            PASSWORD_REQUIRED_BODY: "Please enter the password or join as an audience member",
+            PASSWORD_JOIN_AS_PLAYER: "Join as Player",
+            PASSWORD_JOIN_AS_AUDIENCE: "Join Audience",
+            ROOM_CODE: "ROOM CODE",
+            ROOM_CODE_PLACEHOLDER: "ENTER 4-LETTER CODE"
+        },
+        WK = "Link to Jackbox Games Homepage",
+        jK = {
+            APPEARANCE: "APPEARANCE",
+            DARK: "dark",
+            HELP: "HELP",
+            TWITCH: "TWITCH",
+            LIGHT: "light",
+            LOGOUT: "LOGOUT",
+            MERCH: "MERCH",
+            PAST_GAMES: "PAST GAMES",
+            MAILING_LIST: "MAILING LIST",
+            MODERATOR: "MODERATOR"
+        },
+        HK = {
+            CALL_TO_ACTION: {
+                SHOP: "VIEW GAME & SHOP",
+                VIEW: "VIEW THIS GAME"
+            },
+            PAUSED: {
+                TEXT: "EL JUEGO ESTÁ EN PAUSA",
+                SUBTEXT: "Todo lo que ingreses será enviado al juego."
+            }
+        },
+        OK = {
+            ACTION: hK,
+            ALT: pK,
+            ERROR: gK,
+            LOADING: _K,
+            LOBBY: mK,
+            POST_GAME: vK,
+            SEPARATOR: EK,
+            TUTORIAL: yK,
+            AUDIENCE: TK,
+            UGC: SK,
+            TOAST: bK
+        },
+        AK = {
+            BACK: "Voltar",
+            CANCEL: "Cancelar",
+            CLOSE: "Fechar",
+            CONFIRM: "Confirmar",
+            CREATE: "Criar",
+            DELETE: "Excluir",
+            DONE: "Pronto",
+            EDIT: "Editar",
+            OK: "OK",
+            NEXT: "Avançar",
+            NO: "Não",
+            PLAY: "Jogar",
+            PUBLISH: "Publicar",
+            REMOVE: "Remover",
+            RESET: "Redefinir",
+            SUBMIT: "Enviar",
+            TRY_AGAIN: "Tentar de novo",
+            UNDO: "Desfazer",
+            YES: "Sim"
+        },
+        IK = {
+            UGC: {
+                VISIBILITY_CONTROLLER_OFF: "enunciados ocultos no dispositivo dos jogadores",
+                VISIBILITY_CONTROLLER_ON: "enunciados exibidos no dispositivo dos jogadores",
+                VISIBILITY_SCREEN_OFF: "enunciados ocultos na tela do jogo",
+                VISIBILITY_SCREEN_ON: "enunciados exibidos na tela do jogo"
+            }
+        },
+        RK = {
+            DISCONNECTED: "Você foi desconectado.",
+            DRAWING_NOTHING: "Você tem que desenhar!",
+            PLAYER_KICKED: "Você foi expulso do jogo por um moderador.",
+            ROOM_DESTROYED: "Obrigado por jogar!",
+            ROOM_DISCONNECTED: "Desconectado",
+            TEXT_NAUGHTY: "Não pode escrever isso. Respeite os outros jogadores.",
+            TEXT_NOTHING: "Não dá para inserir texto vazio!",
+            TITLE: "Erro"
+        },
+        NK = "CARREGANDO",
+        CK = {
+            JOINED_COUNT: "{count} de {maxPlayers} jogadores entraram",
+            PLAYERS_NEEDED: "1 jogador necessário para começar | {count} jogadores necessários para começar",
+            WAITING_FOR_VIP: "Aguardando {name} começar o jogo",
+            WAITING_FOR_GAMEPAD: "Aguardando o começo do jogo",
+            GAME_STARTING: "O jogo está começando",
+            BUTTON_START: "Aperte para começar",
+            BUTTON_CANCEL: "Aperte para cancelar"
+        },
+        wK = {
+            GALLERY_LINK: "Visitar a galeria",
+            PLAY_AGAIN: "Jogar de novo?",
+            BUTTON_SAME_PLAYERS: "Mesmos jogadores",
+            BUTTON_NEW_PLAYERS: "Outros jogadores"
+        },
+        LK = {
+            AND: "E",
+            OR: "OU"
+        },
+        PK = {
+            BUTTON_SKIP: "Pular",
+            BUTTON_NEXT: "Avançar",
+            BUTTON_DONE: "Vamos lá!"
+        },
+        $K = {
+            NAME: "PLATEIA"
+        },
+        DK = {
+            EPISODE_REPORT: "Denunciar episódio",
+            EPISODE_UNLOAD: "Excluir cópia local do episódio",
+            EPISODE_VIEW_AUTHOR: "Visualizar autor",
+            EPISODES_LOAD: "Carregar um episódio por ID:",
+            EPISODES_MENU: "Menu de episódios",
+            EPISODES_SELECT: "Ou selecione um episódio:",
+            EPISODES_WARNING: "Aviso: os conteúdos gerados pelos usuários não têm classificação indicativa",
+            INSTRUCTION: {
+                CREATE_TITLE: "para começar, insira o nome do episódio que conterá todos os seus enunciados e aperte “Criar”.",
+                LOAD: "criar ou carregar?",
+                PUBLISH: "publicar seu episódio",
+                TITLE: "dê um nome ao seu episódio",
+                TOGGLE_VISIBILITY: "toque para exibir/ocultar enunciados",
+                WRITE: "escreva seus enunciados"
+            },
+            WARNING: {
+                DELETE: "Deseja mesmo excluir este episódio?",
+                TOS: "Ao compartilhar conteúdo, você concordará com os nossos [tos]Termos de Serviço[/tos]",
+                TOS_AGREE: "concordar e compartilhar"
+            },
+            BACK_TO_EPISODES: "voltar aos episódios",
+            BACK_TO_MENU: "voltar ao menu",
+            CREATE_NEW_EPISODE: "criar novo episódio",
+            PREVIOUS_EPISODES: "episódios anteriores",
+            PROMPT_ADD: "adicionar enunciado",
+            PROMPT_PLACEHOLDER: "insira um enunciado",
+            PROMPTS_COUNT_HIDDEN: "({count} oculto[s])",
+            TITLE_PLACEHOLDER: "insira um título"
+        },
+        MK = {
+            BROADCASTER: {
+                SUBTEXT: "Você conectou sua conta à extensão Jackbox Audience Kit para Twitch.",
+                WARNING: "A CONFIGURAÇÃO DE PLATEIA NÃO ESTÁ ATIVA NESTA SALA"
+            },
+            RECONNECTED: {
+                TEXT: "CONEXÃO RESTABELECIDA",
+                SUBTEXT: "Divirtam-se!"
+            },
+            RECONNECTING: {
+                CONTROLLER: {
+                    TEXT: "CONEXÃO INTERROMPIDA",
+                    SUBTEXT: "Tentando reconectar-se ({attempt} de 5)"
+                },
+                GAME: {
+                    TEXT: "CONEXÃO DO JOGO INTERROMPIDA",
+                    SUBTEXT: "Aguarde enquanto tentamos restabelecer a conexão"
+                }
+            },
+            PAUSED: {
+                TEXT: "O JOGO ESTÁ PAUSADO",
+                SUBTEXT: "Tudo que você enviar ainda será enviado ao jogo."
+            }
+        },
+        xK = {
+            ACTION: AK,
+            ALT: IK,
+            ERROR: RK,
+            LOADING: NK,
+            LOBBY: CK,
+            POST_GAME: wK,
+            SEPARATOR: LK,
+            TUTORIAL: PK,
+            AUDIENCE: $K,
+            UGC: DK,
+            TOAST: MK
+        },
+        kK = {
+            en: v4,
+            fr: w4,
+            it: W4,
+            de: eK,
+            es: dK,
+            "es-XL": OK,
+            "pt-BR": xK
+        },
+        UK = {
             LABEL: "RAMA",
             REFRESH_REQUIRED: "Se requiere recargar",
             PREFERRED: "RAMA PREFERIDA",
