@@ -2,6 +2,12 @@
     "bannerAds": [
         {
             "start": "2020-10-15",
+            "text": "¡Nuevo doblaje latino!",
+            "src": "/main/@connect/assets/PtBDubPromo.png",
+            "href": "https://traducciones.jackbox.lol/novedades/"
+        },
+        {
+            "start": "2020-10-15",
             "text": "¡Nuestras traducciones!",
             "src": "/main/@connect/assets/sitioweb.png",
             "href": "https://traducciones.jackbox.lol/"
