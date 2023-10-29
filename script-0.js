@@ -2915,6 +2915,20 @@ var Cm = ia((Mm, Hs) => {
             features: ["moderation", "kicking"],
             categoryId: "StrangersGame",
             galleryId: "hypnotorious"
+        }, {
+            name: "Fakin' It After Dark",
+            tag: "fakinit2",
+            wrapper: "vue",
+            isPublic: !1,
+            directory: "ppad/fakinit2",
+            features: ["moderation", "kicking"]
+        }, {
+            name: "Drawful After Dark",
+            tag: "drawful3",
+            wrapper: "vue",
+            isPublic: !1,
+            directory: "ppad/drawful3",
+            features: ["moderation", "kicking"]
         }],
         fi = t => Pa.find(e => e.tag === t || e.galleryId === t || e.categoryId === t);
 
@@ -9825,7 +9839,7 @@ Url: ${Er(t)}`), !0)
                     redirect: `/past-games/${t.data.galleryId}`
                 })
             }, {
-                path: "/gallery/:galleryId/:artifactId",
+                path: ["/gallery/:galleryId/:artifactId", "/gallery/:galleryId/:artifactId/:itemId"],
                 handler: t => {
                     const e = fi(t.data.galleryId);
                     return !e || !e.categoryId ? {
@@ -9986,23 +10000,23 @@ Url: ${Er(t)}`), !0)
         Pm = 1,
         Nm = {
             branch: "main",
-            sha: "d9199bf2d61c1ecbba5cf63fde43010b9f4d4d4d",
-            lastUpdated: 1697768855567,
-            version: "5.300.119",
+            sha: "6024aa9961a94b950d0e16d340daf7564380c686",
+            lastUpdated: 1698470670373,
+            version: "5.313.120",
             type: "production"
         },
         Dm = {
             main: {
-                sha: "d9199bf2d61c1ecbba5cf63fde43010b9f4d4d4d",
-                lastUpdated: 1697768855567,
-                version: "5.300.119",
+                sha: "6024aa9961a94b950d0e16d340daf7564380c686",
+                lastUpdated: 1698470670373,
+                version: "5.313.120",
                 type: "production",
                 bundles: {
                     "@connect": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@connect",
-                        version: "5.297.119"
+                        version: "5.307.120"
                     },
                     "the-wheel": {
                         file: "script.js",
@@ -10020,7 +10034,7 @@ Url: ${Er(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/@moderator",
-                        version: "5.276.119"
+                        version: "5.304.119"
                     },
                     "awshirt-tjsp": {
                         file: "script.js",
@@ -10350,13 +10364,13 @@ Url: ${Er(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp10/awshirt2",
-                        version: "5.299.119"
+                        version: "5.312.120"
                     },
                     "nopus-opus": {
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp10/nopus-opus",
-                        version: "5.297.119"
+                        version: "5.313.120"
                     },
                     "risky-text": {
                         file: "script.js",
@@ -10374,7 +10388,7 @@ Url: ${Er(t)}`), !0)
                         file: "script.js",
                         css: ["assets/style-0.css"],
                         base: "main/pp10/us-them",
-                        version: "5.300.119"
+                        version: "5.309.120"
                     }
                 }
             }
@@ -10403,4 +10417,4 @@ Url: ${Er(t)}`), !0)
     new Am([xm, Rm])
 });
 export default Cm();
-//# sourceMappingURL=d851f711.js.map
+//# sourceMappingURL=b91ebdd9.js.map

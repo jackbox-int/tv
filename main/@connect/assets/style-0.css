@@ -580,7 +580,7 @@ path[data-v-55a824a4] {
     fill: #fff
 }
 
-.empty[data-v-e196870a] {
+.empty[data-v-a808a26a] {
     position: relative;
     width: 100%;
     height: 100%;
@@ -588,11 +588,11 @@ path[data-v-55a824a4] {
     left: 0
 }
 
-.form-section[data-v-e196870a] {
+.form-section[data-v-a808a26a] {
     margin-top: 15px
 }
 
-.graphic[data-v-e196870a] {
+.graphic[data-v-a808a26a] {
     position: absolute;
     width: 100%;
     top: 50%;
@@ -601,86 +601,86 @@ path[data-v-55a824a4] {
     text-align: center
 }
 
-.graphic svg[data-v-e196870a] {
+.graphic svg[data-v-a808a26a] {
     width: 25%;
     max-width: 125px;
     height: auto;
     overflow: visible
 }
 
-.item[data-v-e196870a] {
+.item[data-v-a808a26a] {
     padding: 10px 0;
     display: flex;
     gap: 15px;
     align-items: center
 }
 
-.item img[data-v-e196870a] {
+.item img[data-v-a808a26a] {
     width: 60px;
     height: 60px;
     border-radius: 10px
 }
 
-.item .info[data-v-e196870a] {
+.item .info[data-v-a808a26a] {
     flex-grow: 1;
     font-weight: 600
 }
 
-.item .info .name[data-v-e196870a] {
+.item .info .name[data-v-a808a26a] {
     font-weight: 600
 }
 
-.item .info .price[data-v-e196870a] {
+.item .info .price[data-v-a808a26a] {
     margin-top: 3px;
     font-size: 14px
 }
 
-.item .quantity[data-v-e196870a] {
+.item .quantity[data-v-a808a26a] {
     height: 100%;
     font-size: 12px;
     font-weight: 600
 }
 
-.item .quantity p[data-v-e196870a] {
+.item .quantity p[data-v-a808a26a] {
     padding: 2px 5px;
     background: #3A3C43;
     border-radius: 50vw
 }
 
-.item .trash[data-v-e196870a] {
+.item .trash[data-v-a808a26a] {
     width: 30px;
     fill: #fff
 }
 
-.total[data-v-e196870a] {
+.total[data-v-a808a26a] {
     margin-top: 10px;
     padding: 10px 0 20px;
     border-top: 1px solid #64748B
 }
 
-.total span[data-v-e196870a] {
+.total span[data-v-a808a26a] {
     float: right
 }
 
-.submit[data-v-e196870a] {
+.submit[data-v-a808a26a] {
     display: inline-block;
     width: 100%;
     text-align: center
 }
 
 @media (min-width: 650px) {
-    .gallery-ui h2.title[data-v-e196870a] {
+    .gallery-ui h2.title[data-v-a808a26a] {
         margin-bottom: 0;
         padding-bottom: 0;
         font-size: 20px;
         border: none
     }
 
-    .empty[data-v-e196870a] {
+    .empty[data-v-a808a26a] {
         height: 200px
     }
 
-    .graphic svg[data-v-e196870a] {
+    .graphic svg[data-v-a808a26a] {
         max-width: 50px
     }
 }
@@ -879,7 +879,7 @@ path[data-v-95ca8319] {
     }
 }
 
-.gallery-root[data-v-319856df] {
+.gallery-root[data-v-f31cb476] {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -887,18 +887,18 @@ path[data-v-95ca8319] {
     height: 100%
 }
 
-.gallery-root .content[data-v-319856df] {
+.gallery-root .content[data-v-f31cb476] {
     flex-grow: 1;
     width: 100%;
     overflow: auto
 }
 
-.gallery-root .post-game[data-v-319856df] {
+.gallery-root .post-game[data-v-f31cb476] {
     flex-shrink: 0;
     flex-grow: 0
 }
 
-.topbar[data-v-319856df] {
+.topbar[data-v-f31cb476] {
     display: flex;
     flex-grow: 0;
     flex-shrink: 0;
@@ -912,48 +912,48 @@ path[data-v-95ca8319] {
     justify-content: space-between
 }
 
-.topbar *[data-v-319856df],
-.topbar *[data-v-319856df]:before,
-.topbar *[data-v-319856df]:after {
+.topbar *[data-v-f31cb476],
+.topbar *[data-v-f31cb476]:before,
+.topbar *[data-v-f31cb476]:after {
     all: unset;
     box-sizing: border-box
 }
 
-.topbar div[data-v-319856df] {
+.topbar div[data-v-f31cb476] {
     height: 100%;
     flex-basis: 33.33%
 }
 
-.topbar svg[data-v-319856df],
-.topbar button[data-v-319856df] {
+.topbar svg[data-v-f31cb476],
+.topbar button[data-v-f31cb476] {
     width: auto;
     height: 100%
 }
 
-.topbar .back[data-v-319856df] {
+.topbar .back[data-v-f31cb476] {
     padding: 14px 0;
     text-align: left
 }
 
-.topbar .logo[data-v-319856df] {
+.topbar .logo[data-v-f31cb476] {
     padding: 5px 0;
     text-align: center
 }
 
-.topbar .cart[data-v-319856df] {
+.topbar .cart[data-v-f31cb476] {
     padding: 12px 0;
     text-align: right
 }
 
-.topbar button[data-v-319856df] {
+.topbar button[data-v-f31cb476] {
     cursor: pointer
 }
 
-.topbar button[data-v-319856df]:hover:enabled {
+.topbar button[data-v-f31cb476]:hover:enabled {
     background: transparent
 }
 
-.topbar button[data-v-319856df]:active {
+.topbar button[data-v-f31cb476]:active {
     transform: scale(.95)
 }
 

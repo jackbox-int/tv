@@ -14907,6 +14907,20 @@ var Qae = JM((Boe, _1) => {
             features: ["moderation", "kicking"],
             categoryId: "StrangersGame",
             galleryId: "hypnotorious"
+        }, {
+            name: "Fakin' It After Dark",
+            tag: "fakinit2",
+            wrapper: "vue",
+            isPublic: !1,
+            directory: "ppad/fakinit2",
+            features: ["moderation", "kicking"]
+        }, {
+            name: "Drawful After Dark",
+            tag: "drawful3",
+            wrapper: "vue",
+            isPublic: !1,
+            directory: "ppad/drawful3",
+            features: ["moderation", "kicking"]
         }],
         Wl = t => NG.find(e => e.tag === t || e.galleryId === t || e.categoryId === t);
 
@@ -33965,4 +33979,4 @@ de sua lista de jogos anteriores.`,
     })
 });
 export default Qae();
-//# sourceMappingURL=2d6415a3.js.map
+//# sourceMappingURL=feaffd96.js.map
