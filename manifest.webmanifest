@@ -1,4 +1,6 @@
 {
+    "name": "jackbox.tv",
+    "display": "standalone",
     "icons": [
         {
             "src": "./favicon-192.png",
