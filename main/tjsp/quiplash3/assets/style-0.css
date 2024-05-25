@@ -972,18 +972,18 @@ img.fit[data-v-4c36e35f] {
 }
 
 #cc-main {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-text-size-adjust: 100%;
     background: transparent;
     color: var(--cc-primary-color);
     font-family: var(--cc-font-family);
     font-size: 16px;
     font-weight: 400;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     line-height: 1.15;
     position: relative;
-    position: fixed;
     text-rendering: optimizeLegibility;
+    -webkit-text-size-adjust: 100%;
+    position: fixed;
     z-index: var(--cc-z-index)
 }
 
@@ -992,7 +992,9 @@ img.fit[data-v-4c36e35f] {
 #cc-main a,
 #cc-main button,
 #cc-main div,
+#cc-main h2,
 #cc-main input,
+#cc-main p,
 #cc-main span {
     all: unset;
     box-sizing: border-box
@@ -1140,8 +1142,8 @@ img.fit[data-v-4c36e35f] {
         -webkit-background-clip: padding-box;
         background-clip: padding-box;
         background: var(--cc-toggle-readonly-bg);
-        border: .25em solid var(--cc-bg);
-        border-radius: 1em
+        border: .25rem solid var(--cc-bg);
+        border-radius: 1rem
     }
 
     #cc-main ::-webkit-scrollbar-thumb:hover {
@@ -1217,7 +1219,7 @@ html.disable--interaction.show--consent body {
     box-shadow: 0 .625em 1.875em #0000024d;
     display: flex;
     flex-direction: column;
-    max-width: 24em;
+    max-width: 24rem;
     opacity: 0;
     overflow: hidden;
     position: fixed;
@@ -1264,9 +1266,8 @@ html.disable--interaction.show--consent body {
 }
 
 #cc-main .cm__btns,
-#cc-main .cm__links,
-#cc-main .cm__texts {
-    padding: 1em 1.3em;
+#cc-main .cm__links {
+    padding: 1rem 1.3rem;
     width: unset
 }
 
@@ -1275,7 +1276,12 @@ html.disable--interaction.show--consent body {
     flex: 1;
     flex-direction: column;
     justify-content: center;
-    padding-bottom: 0
+    padding: 1rem 0 0
+}
+
+#cc-main .cm__desc,
+#cc-main .cm__title {
+    padding: 0 1.3rem
 }
 
 #cc-main .cm__title {
@@ -1425,7 +1431,7 @@ html.disable--interaction.show--consent body {
 }
 
 #cc-main .cm__btn--close+.cm__texts .cm__title {
-    padding-right: 2em
+    padding-right: 3rem
 }
 
 #cc-main .cm--inline .cm__btn-group {
@@ -1454,7 +1460,7 @@ html.disable--interaction.show--consent body {
 }
 
 #cc-main .cm__link-group>*+* {
-    margin-left: 1.3em
+    margin-left: 1.3rem
 }
 
 #cc-main .cm--flip .cm__btn:last-child {
@@ -1549,7 +1555,6 @@ html.disable--interaction.show--consent body {
 }
 
 #cc-main .cm--bar {
-    --cc-modal-transition-duration: .35s;
     border-radius: 0;
     left: 0;
     margin: 0;
@@ -1557,7 +1562,8 @@ html.disable--interaction.show--consent body {
     opacity: 1;
     right: 0;
     transform: translateY(0);
-    width: 100vw
+    width: 100vw;
+    --cc-modal-transition-duration: .35s
 }
 
 #cc-main .cm--bar.cm--top {
@@ -1688,8 +1694,8 @@ html.disable--interaction.show--consent body {
 }
 
 #cc-main.cc--rtl .cm__btn--close+.cm__texts .cm__title {
-    padding-left: 2em;
-    padding-right: unset
+    padding-left: 3rem !important;
+    padding-right: 1.3rem
 }
 
 #cc-main.cc--rtl .cm--inline .cm__btn+.cm__btn {
@@ -1718,7 +1724,7 @@ html.disable--interaction.show--consent body {
 
 #cc-main.cc--rtl .cm__link-group>*+* {
     margin-left: 0;
-    margin-right: 1.3em
+    margin-right: 1.3rem
 }
 
 @media screen and (max-width:640px) {
@@ -1737,10 +1743,11 @@ html.disable--interaction.show--consent body {
     }
 
     #cc-main .cm__btns,
+    #cc-main .cm__desc,
     #cc-main .cm__links,
-    #cc-main .cm__texts {
-        padding-left: 1.1em !important;
-        padding-right: 1.1em !important
+    #cc-main .cm__title {
+        padding-left: 1.1rem !important;
+        padding-right: 1.1rem !important
     }
 
     #cc-main .cm__btns {
@@ -1810,7 +1817,7 @@ html.disable--interaction.show--consent body {
 #cc-main .pm__body,
 #cc-main .pm__footer,
 #cc-main .pm__header {
-    padding: 1em 1.5em
+    padding: 1em 1.4em
 }
 
 #cc-main .pm__header {
@@ -2100,7 +2107,7 @@ html.disable--interaction.show--consent body {
 #cc-main .toggle__icon-circle {
     background: var(--cc-toggle-off-knob-bg);
     border: none;
-    border-radius: 100%;
+    border-radius: var(--cc-pm-toggle-border-radius);
     box-shadow: 0 1px 2px #1820035c;
     display: block;
     height: 23px;
@@ -2186,14 +2193,13 @@ html.disable--interaction.show--consent body {
     font-size: .9em
 }
 
+#cc-main .pm__section-desc-wrapper>:not(:last-child) {
+    border-bottom: 1px solid var(--cc-cookie-category-block-border)
+}
+
 #cc-main .pm__section-services {
     display: flex;
     flex-direction: column
-}
-
-#cc-main .pm__section-services+div,
-#cc-main .pm__section-services+table {
-    border-top: 1px solid var(--cc-cookie-category-block-border)
 }
 
 #cc-main .pm__service {
@@ -2220,7 +2226,7 @@ html.disable--interaction.show--consent body {
     border: 2px solid;
     border-radius: 100%;
     height: 8px;
-    margin-left: 7px;
+    margin-left: 6px;
     margin-right: 20px;
     margin-top: 1px;
     min-width: 8px
@@ -2247,8 +2253,7 @@ html.disable--interaction.show--consent body {
 }
 
 #cc-main .pm__table-caption {
-    border-top: 1px solid var(--cc-cookie-category-block-border);
-    text-align: start
+    text-align: left
 }
 
 #cc-main .pm__table-caption,
@@ -2344,7 +2349,6 @@ html.disable--interaction.show--consent body {
 }
 
 #cc-main .pm--bar {
-    --cc-modal-transition-duration: .35s;
     border-radius: 0;
     bottom: 0;
     height: 100%;
@@ -2352,7 +2356,9 @@ html.disable--interaction.show--consent body {
     max-height: none;
     max-width: 29em;
     opacity: 1;
-    top: 0
+    top: 0;
+    width: 100%;
+    --cc-modal-transition-duration: .35s
 }
 
 #cc-main .pm--bar .pm__section-table,
@@ -2443,7 +2449,7 @@ html.disable--interaction.show--consent body {
 #cc-main .pm--bar.pm--wide .pm__body,
 #cc-main .pm--bar.pm--wide .pm__footer,
 #cc-main .pm--bar.pm--wide .pm__header {
-    padding: 1em 1.65em
+    padding: 1em 1.4em
 }
 
 #cc-main .pm--bar.pm--wide.pm--flip .pm__btn-group,
@@ -3457,7 +3463,7 @@ html.disable--interaction.show--consent body {
     display: block;
     width: 100%;
     padding-top: 37.7778%;
-    background-image: url(jFG_qjlY.png);
+    background-image: url(CMUb-qOV.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center
@@ -5139,7 +5145,7 @@ body {
     right: 5px;
     width: 36px;
     height: 36px;
-    background-image: url(q4Breu_X.png);
+    background-image: url(CrgGt679.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
@@ -5303,25 +5309,29 @@ body {
 }
 
 .artifact-link {
-    background-image: url(ZjeZP5T8.png);
+    background-image: url(DlxjbVGK.png);
     border-radius: 16px
 }
 
 .locale-de .artifact-link {
-    background-image: url(9A_U1ayz.png)
+    background-image: url(BkNDOrF8.png)
 }
 
 .locale-es .artifact-link,
 .locale-es-XL .artifact-link {
-    background-image: url(JfzLKyPF.png)
+    background-image: url(CHsiPWK6.png)
 }
 
 .locale-fr .artifact-link {
-    background-image: url(H27y-fnl.png)
+    background-image: url(BlzfXRQE.png)
 }
 
 .locale-it .artifact-link {
-    background-image: url(azyJKIDR.png)
+    background-image: url(C6uKqgJi.png)
+}
+
+.locale-pt-BR .artifact-link {
+    background-image: url(CaY5vux6.png)
 }
 
 .constrain {
@@ -5346,12 +5356,12 @@ body {
 }
 
 .quiplash3.blue .name-header {
-    background-image: url(7uG2Kh4N.png)
+    background-image: url(Du4bYqHg.png)
 }
 
 .quiplash3.blue .stage {
     background-color: #5e9df0;
-    background: no-repeat center/cover url(F82pOBZs.png)
+    background: no-repeat center/cover url(Xzak4Fmy.png)
 }
 
 .quiplash3.cactus button {
@@ -5359,12 +5369,12 @@ body {
 }
 
 .quiplash3.cactus .name-header {
-    background-image: url(YPOlbYAZ.png)
+    background-image: url(Bg86VtgB.png)
 }
 
 .quiplash3.cactus .stage {
     background-color: #629335;
-    background: no-repeat center/cover url(DV1zfr29.png)
+    background: no-repeat center/cover url(NXXN-vb2.png)
 }
 
 .quiplash3.coffin button {
@@ -5372,12 +5382,12 @@ body {
 }
 
 .quiplash3.coffin .name-header {
-    background-image: url(IQfrhtIm.png)
+    background-image: url(hB-uG0ib.png)
 }
 
 .quiplash3.coffin .stage {
     background-color: #8f8f8f;
-    background: no-repeat center/cover url(wjjLkWDo.png)
+    background: no-repeat center/cover url(DCOMuRYO.png)
 }
 
 .quiplash3.default button {
@@ -5385,12 +5395,12 @@ body {
 }
 
 .quiplash3.default .name-header {
-    background-image: url(IQfrhtIm.png)
+    background-image: url(hB-uG0ib.png)
 }
 
 .quiplash3.default .stage {
     background-color: #8f8f8f;
-    background: no-repeat center/cover url(WIwO4dAP.png)
+    background: no-repeat center/cover url(BYjA7h0A.png)
 }
 
 .quiplash3.green button {
@@ -5398,12 +5408,12 @@ body {
 }
 
 .quiplash3.green .name-header {
-    background-image: url(WXFIJ8qC.png)
+    background-image: url(BZcUgnyo.png)
 }
 
 .quiplash3.green .stage {
     background-color: #6dc979;
-    background: no-repeat center/cover url(mJkm1ruG.png)
+    background: no-repeat center/cover url(CYmSbWu4.png)
 }
 
 .quiplash3.kitten button {
@@ -5411,12 +5421,12 @@ body {
 }
 
 .quiplash3.kitten .name-header {
-    background-image: url(0dY7FxAI.png)
+    background-image: url(DR1jsXEA.png)
 }
 
 .quiplash3.kitten .stage {
     background-color: #74beac;
-    background: no-repeat center/cover url(d3nLUUgm.png)
+    background: no-repeat center/cover url(B3ectRSC.png)
 }
 
 .quiplash3.moon button {
@@ -5424,12 +5434,12 @@ body {
 }
 
 .quiplash3.moon .name-header {
-    background-image: url(ahfCQzp8.png)
+    background-image: url(BqF8JDOn.png)
 }
 
 .quiplash3.moon .stage {
     background-color: #edaf3f;
-    background: no-repeat center/cover url(nmtGXuSq.png)
+    background: no-repeat center/cover url(Cea0Ze5K.png)
 }
 
 .quiplash3.orange button {
@@ -5437,12 +5447,12 @@ body {
 }
 
 .quiplash3.orange .name-header {
-    background-image: url(MlK5pvYR.png)
+    background-image: url(yUrmm9hF.png)
 }
 
 .quiplash3.orange .stage {
     background-color: #e09b4a;
-    background: no-repeat center/cover url(jNBBkuiA.png)
+    background: no-repeat center/cover url(CM0EGS6I.png)
 }
 
 .quiplash3.pink button {
@@ -5450,12 +5460,12 @@ body {
 }
 
 .quiplash3.pink .name-header {
-    background-image: url(XIP16Q4z.png)
+    background-image: url(Bcg_XpDj.png)
 }
 
 .quiplash3.pink .stage {
     background-color: #e37df5;
-    background: no-repeat center/cover url(ui7dxaWv.png)
+    background: no-repeat center/cover url(C6Lt3Fpa.png)
 }
 
 .quiplash3.poop button {
@@ -5463,12 +5473,12 @@ body {
 }
 
 .quiplash3.poop .name-header {
-    background-image: url(XpA9FQ3Y.png)
+    background-image: url(BekD0VDd.png)
 }
 
 .quiplash3.poop .stage {
     background-color: #8f5c47;
-    background: no-repeat center/cover url(rJbdPJ90.png)
+    background: no-repeat center/cover url(Cslt08n3.png)
 }
 
 .quiplash3.purple button {
@@ -5476,12 +5486,12 @@ body {
 }
 
 .quiplash3.purple .name-header {
-    background-image: url(pyNnMT3T.png)
+    background-image: url(CnI2cxPd.png)
 }
 
 .quiplash3.purple .stage {
     background-color: #8c66ff;
-    background: no-repeat center/cover url(xddSKUrT.png)
+    background: no-repeat center/cover url(DF11IpSt.png)
 }
 
 .quiplash3.red button {
@@ -5489,12 +5499,12 @@ body {
 }
 
 .quiplash3.red .name-header {
-    background-image: url(cHHtGH6C.png)
+    background-image: url(Bwce0Yfo.png)
 }
 
 .quiplash3.red .stage {
     background-color: #f26f6f;
-    background: no-repeat center/cover url(GlIcDG8f.png)
+    background: no-repeat center/cover url(aUhwMbx8.png)
 }
 
 .quiplash3.star button {
@@ -5502,12 +5512,12 @@ body {
 }
 
 .quiplash3.star .name-header {
-    background-image: url(_heciYhH.png)
+    background-image: url(D-F5yJiE.png)
 }
 
 .quiplash3.star .stage {
     background-color: #95b758;
-    background: no-repeat center/cover url(WxKGWbnt.png)
+    background: no-repeat center/cover url(BbEoZZue.png)
 }
 
 .quiplash3.teal button {
@@ -5515,12 +5525,12 @@ body {
 }
 
 .quiplash3.teal .name-header {
-    background-image: url(xbbkWgeH.png)
+    background-image: url(DFtuRaB4.png)
 }
 
 .quiplash3.teal .stage {
     background-color: #00d5ff;
-    background: no-repeat center/cover url(kyfZqhr5.png)
+    background: no-repeat center/cover url(CTJ9mqGv.png)
 }
 
 .quiplash3.tear button {
@@ -5528,12 +5538,12 @@ body {
 }
 
 .quiplash3.tear .name-header {
-    background-image: url(1_2_yIxU.png)
+    background-image: url(DX_b_IjF.png)
 }
 
 .quiplash3.tear .stage {
     background-color: #3962b5;
-    background: no-repeat center/cover url(mfVUcIyB.png)
+    background: no-repeat center/cover url(CZ9VRwjI.png)
 }
 
 .quiplash3.triclops button {
@@ -5541,12 +5551,12 @@ body {
 }
 
 .quiplash3.triclops .name-header {
-    background-image: url(OpnOFpg_.png)
+    background-image: url(6mc4WmD8.png)
 }
 
 .quiplash3.triclops .stage {
     background-color: #9d6dd2;
-    background: no-repeat center/cover url(07tvL23w.png)
+    background: no-repeat center/cover url(DTu28vbf.png)
 }
 
 .quiplash3.yellow button {
@@ -5554,12 +5564,12 @@ body {
 }
 
 .quiplash3.yellow .name-header {
-    background-image: url(1aC4Zm_T.png)
+    background-image: url(DVoLhmb9.png)
 }
 
 .quiplash3.yellow .stage {
     background-color: #e0da69;
-    background: no-repeat center/cover url(QTHFDNKM.png)
+    background: no-repeat center/cover url(BBMcUM0o.png)
 }
 
 .quiplash3 .stage {
@@ -5568,7 +5578,7 @@ body {
 }
 
 .quiplash3 .stage.logo {
-    background: no-repeat center/cover url(kveo6XaE.png)
+    background: no-repeat center/cover url(CS96jpdo.png)
 }
 
 .quiplash3 .stage.round {
