@@ -858,38 +858,13 @@ const XT = "UNABLE TO LOAD. TAP TO TRY AGAIN.",
     jT = {
         RETRY: XT
     },
-    FT = "CHARGEMENT IMPOSSIBLE. APPUYEZ POUR RÉESSAYER.",
-    qT = {
-        RETRY: FT
-    },
-    HT = "IMPOSSIBILE CARICARE. CLICCA PER RIPROVARE.",
-    WT = {
-        RETRY: HT
-    },
-    zT = "LADEN FEHLGESCHLAGEN. DRÜCKEN ZUM ERNEUT VERSUCHEN.",
+    zT = "ŁADOWANIE NIE UDAŁO SIĘ. NACIŚNIJ, ABY SPRÓBOWAĆ PONOWNIE.",
     YT = {
         RETRY: zT
     },
-    JT = "CARGA FALLIDA. TOCA PARA VOLVER A INTENTARLO.",
-    QT = {
-        RETRY: JT
-    },
-    ZT = "NO SE PUEDE CARGAR. TOCA PARA VOLVER A INTENTARLO.",
-    eg = {
-        RETRY: ZT
-    },
-    tg = "NÃO FOI POSSÍVEL CARREGAR. TOQUE PARA TENTAR DE NOVO.",
-    rg = {
-        RETRY: tg
-    },
     Ws = {
         en: jT,
-        fr: qT,
-        it: WT,
-        de: YT,
-        es: QT,
-        "es-XL": eg,
-        "pt-BR": rg
+        pl: YT
     };
 let ng = class {
     constructor(e) {

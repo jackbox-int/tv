@@ -1648,7 +1648,7 @@ var aoe = $P((Voe, e0) => {
             return F3(t[0], ...t)
         }
     }
-    Oe(vs, "locale"), Oe(vs, "supported", ["en", "fr", "it", "de", "es", "es-XL", "pt-BR"]);
+    Oe(vs, "locale"), Oe(vs, "supported", ["en", "pl"]);
     var Si;
     let $n = (Si = class {
         static get serverUrl() {
@@ -6895,452 +6895,144 @@ var aoe = $P((Voe, e0) => {
             TOAST: pj,
             SHARE: gj
         },
-        mj = {
-            BACK: "Retour",
-            CANCEL: "Annuler",
-            CLOSE: "Fermer",
-            CONFIRM: "Confirmer",
-            CREATE: "Créer",
-            DELETE: "Supprimer",
-            DONE: "Terminé",
-            EDIT: "Modifier",
-            OK: "OK",
-            NEXT: "Suivant",
-            NO: "Non",
-            PLAY: "Jouer",
-            PUBLISH: "Publier",
-            REMOVE: "Supprimer",
-            RESET: "Réinitialiser",
-            SUBMIT: "Envoyer",
-            TRY_AGAIN: "Réessayer",
-            UNDO: "Annuler",
-            YES: "Oui"
-        },
-        vj = {
-            UGC: {
-                VISIBILITY_CONTROLLER_OFF: "sujets non affichés sur les appareils des joueurs",
-                VISIBILITY_CONTROLLER_ON: "sujets affichés sur les appareils des joueurs",
-                VISIBILITY_SCREEN_OFF: "sujets non affichés sur l'écran de jeu",
-                VISIBILITY_SCREEN_ON: "sujets affichés sur l'écran de jeu"
-            }
-        },
-        Ej = {
-            DISCONNECTED: "Vous avez été déconnecté(e).",
-            DRAWING_NOTHING: "Vous devez dessiner quelque chose !",
-            PLAYER_KICKED: "Vous avez été éjecté(e) de la partie par un modérateur.",
-            ROOM_DESTROYED: "Merci d'avoir joué !",
-            ROOM_DISCONNECTED: "Déconnexion",
-            TEXT_NAUGHTY: "Je crains que vous ne puissiez pas écrire ça. Respectez les autres joueurs.",
-            TEXT_NOTHING: "Vous ne pouvez pas ne rien entrer",
-            TITLE: "Erreur"
-        },
-        yj = "CHARGEMENT",
-        Tj = {
-            JOINED_COUNT: "{count} joueurs sur {maxPlayers} ont rejoint la partie",
-            PLAYERS_NEEDED: "1 joueur nécessaire pour commencer | {count} joueurs nécessaires pour commencer",
-            WAITING_FOR_VIP: "En attente de {name} pour commencer la partie",
-            WAITING_FOR_GAMEPAD: "En attente du début de la partie",
-            WAITING_FOR_NEW_GAME: "En attente du début d'une nouvelle partie",
-            GAME_STARTING: "La partie commence",
-            BUTTON_START: "Appuyer pour commencer",
-            BUTTON_CANCEL: "Appuyer pour annuler"
-        },
-        bj = {
-            GALLERY_LINK: "Visiter la galerie",
-            NEW_GAME_STARTED: "Une nouvelle partie a commencé",
-            PLAY_AGAIN: "Rejouer ?",
-            THANKS_FOR_PLAYING: "Merci d'avoir joué !",
-            BUTTON_GO_TO_GAME: "Aller au jeu",
-            BUTTON_GO_TO_JACKBOX: "Retour à jackbox.tv",
-            BUTTON_SAME_PLAYERS: "Mêmes joueurs",
-            BUTTON_NEW_PLAYERS: "Nouveaux joueurs"
-        },
-        Sj = {
-            AND: "ET",
-            OR: "OU"
-        },
-        Oj = {
-            BUTTON_SKIP: "Passer",
-            BUTTON_NEXT: "Suivant",
-            BUTTON_DONE: "Allons-y !"
-        },
-        Aj = {
-            NAME: "SPECTATEURS"
-        },
-        Ij = {
-            CART: {
-                CHECK_OUT: "Paiement",
-                EMPTY: "Votre panier est vide",
-                TITLE: "Panier",
-                TOTAL: "Total"
-            }
-        },
-        Rj = {
-            EPISODE_REPORT: "Signaler l'épisode",
-            EPISODE_UNLOAD: "Retirer l'épisode",
-            EPISODE_VIEW_AUTHOR: "Voir l'auteur",
-            EPISODES_LOAD: "Charger un épisode par id :",
-            EPISODES_MENU: "Menu des épisodes",
-            EPISODES_SELECT: "Ou sélectionner un épisode :",
-            EPISODES_WARNING: "Attention : le contenu généré par les utilisateurs ne fait pas l'objet d'un classement",
-            INSTRUCTION: {
-                CREATE_TITLE: "commencez par donner un nom à l'épisode qui contiendra vos sujets, puis touchez créer.",
-                LOAD: "créer ou charger ?",
-                PUBLISH: "publiez votre épisode",
-                TITLE: "donnez un nom à votre épisode",
-                TOGGLE_VISIBILITY: "touchez pour afficher/masquer les sujets",
-                WRITE: "écrivez vos sujets"
-            },
-            WARNING: {
-                DELETE: "Voulez-vous vraiment supprimer cet épisode ?",
-                TOS: "En partageant votre contenu, vous acceptez nos [tos]Conditions de service[/tos]",
-                TOS_AGREE: "accepter et partager"
-            },
-            BACK_TO_EPISODES: "retour aux épisodes",
-            BACK_TO_MENU: "retour au menu",
-            CREATE_NEW_EPISODE: "créer un nouvel épisode",
-            PREVIOUS_EPISODES: "épisodes précédents",
-            PROMPT_ADD: "ajouter un sujet",
-            PROMPT_PLACEHOLDER: "taper un sujet",
-            PROMPTS_COUNT_HIDDEN: "({count} non affiché)",
-            TITLE_PLACEHOLDER: "taper un titre"
-        },
-        Nj = {
-            BROADCASTER: {
-                SUBTEXT: "La connexion de votre compte à l'extension Twitch Jackbox Audience Kit a réussi.",
-                WARNING: "LE PARAMÈTRE 'PUBLIC' N'EST PAS ACTIVÉ DANS CETTE SALLE."
-            },
-            RECONNECTED: {
-                TEXT: "RECONNECTÉ(E)",
-                SUBTEXT: "Amusez-vous bien !"
-            },
-            RECONNECTING: {
-                CONTROLLER: {
-                    TEXT: "CONNEXION INTERROMPUE",
-                    SUBTEXT: "Tentative de reconnexion ({attempt} sur 5)"
-                },
-                GAME: {
-                    TEXT: "CONNEXION AU JEU INTERROMPUE",
-                    SUBTEXT: "Veuillez patienter pendant que nous tentons de vous reconnecter."
-                }
-            },
-            PAUSED: {
-                TEXT: "LA PARTIE EST EN PAUSE",
-                SUBTEXT: "Tout ce que vous proposez sera quand même envoyé dans le jeu."
-            }
-        },
-        Cj = {
-            SHARE: "Partager",
-            COPY_TO_CLIPBOARD: "Copier dans le presse-papiers",
-            COPIED: "Copié"
-        },
-        wj = {
-            ACTION: mj,
-            ALT: vj,
-            ERROR: Ej,
-            LOADING: yj,
-            LOBBY: Tj,
-            POST_GAME: bj,
-            SEPARATOR: Sj,
-            TUTORIAL: Oj,
-            AUDIENCE: Aj,
-            GALLERY: Ij,
-            UGC: Rj,
-            TOAST: Nj,
-            SHARE: Cj
-        },
-        Lj = {
-            BACK: "Indietro",
-            CANCEL: "Annulla",
-            CLOSE: "Chiuda",
-            CONFIRM: "Conferma",
-            CREATE: "Crea",
-            DELETE: "Elimina",
-            DONE: "Fine",
-            EDIT: "Modifica",
-            OK: "OK",
-            NEXT: "Prossimo",
-            NO: "No",
-            PLAY: "Gioca",
-            PUBLISH: "Pubblica",
-            REMOVE: "Rimuovi",
-            RESET: "Reset",
-            SUBMIT: "Invia",
-            TRY_AGAIN: "Riprova",
-            UNDO: "Annulla",
-            YES: "Sì"
-        },
-        Pj = {
-            UGC: {
-                VISIBILITY_CONTROLLER_OFF: "definizioni nascoste sui dispositivi dei giocatori",
-                VISIBILITY_CONTROLLER_ON: "definizioni visualizzate sui dispositivi dei giocatori",
-                VISIBILITY_SCREEN_OFF: "definizioni nascoste sullo schermo di gioco",
-                VISIBILITY_SCREEN_ON: "definizioni visualizzate sullo schermo di gioco"
-            }
-        },
-        $j = {
-            DISCONNECTED: "È stata effettuata la disconnessione.",
-            DRAWING_NOTHING: "Devi disegnare qualcosa!",
-            PLAYER_KICKED: "Un moderatore ti ha cacciato dalla partita.",
-            ROOM_DESTROYED: "Grazie per aver scelto di giocare con noi!",
-            ROOM_DISCONNECTED: "Disconnessione effettuata",
-            TEXT_NAUGHTY: "Purtroppo non puoi scrivere questa cosa. Abbi rispetto per gli altri giocatori.",
-            TEXT_NOTHING: "Devi per forza inserire qualcosa!",
-            TITLE: "Errore"
-        },
-        Dj = "CARICAMENTO",
-        xj = {
-            JOINED_COUNT: "{count} su {maxPlayers} giocatori in partita",
-            PLAYERS_NEEDED: "Manca 1 giocatore per iniziare | Mancano {count} giocatori per iniziare",
-            WAITING_FOR_VIP: "In attesa di {name} per iniziare la partita",
-            WAITING_FOR_GAMEPAD: "In attesa d'iniziare la partita",
-            WAITING_FOR_NEW_GAME: "In attesa d'iniziare una nuova partita",
-            GAME_STARTING: "La partita sta per iniziare",
-            BUTTON_START: "Premi per avviare",
-            BUTTON_CANCEL: "Premi per annullare"
-        },
-        Mj = {
-            GALLERY_LINK: "Visita la galleria",
-            NEW_GAME_STARTED: "È iniziata una nuova partita",
-            PLAY_AGAIN: "Vuoi giocare di nuovo?",
-            THANKS_FOR_PLAYING: "Grazie per aver scelto di giocare con noi!",
-            BUTTON_GO_TO_GAME: "Vai al gioco",
-            BUTTON_GO_TO_JACKBOX: "Torna a jackbox.tv",
-            BUTTON_SAME_PLAYERS: "Stessi giocatori",
-            BUTTON_NEW_PLAYERS: "Nuovi giocatori"
-        },
-        kj = {
-            AND: "E",
-            OR: "O"
-        },
-        Uj = {
-            BUTTON_SKIP: "Salta",
-            BUTTON_NEXT: "Avanti",
-            BUTTON_DONE: "Iniziamo!"
-        },
-        Bj = {
-            NAME: "PUBBLICO"
-        },
-        Fj = {
-            CART: {
-                CHECK_OUT: "Vai al pagamento",
-                EMPTY: "Il carrello è vuoto",
-                TITLE: "Carrello",
-                TOTAL: "Totale"
-            }
-        },
-        Gj = {
-            EPISODE_REPORT: "Segnala episodio",
-            EPISODE_UNLOAD: "Rimuovi episodio",
-            EPISODE_VIEW_AUTHOR: "Mostra autore",
-            EPISODES_LOAD: "Carica un episodio in base al suo id:",
-            EPISODES_MENU: "Menu Episodi",
-            EPISODES_SELECT: "Oppure seleziona un episodio:",
-            EPISODES_WARNING: "Attenzione: il contenuto generato dagli utenti non è classificato",
-            INSTRUCTION: {
-                CREATE_TITLE: "per prima cosa, inserisci un nome per l’episodio che contenga tutti i tuoi suggerimenti e premi crea.",
-                LOAD: "creare o caricare?",
-                PUBLISH: "pubblica il tuo episodio",
-                TITLE: "dai un nome al tuo episodio",
-                TOGGLE_VISIBILITY: "tocca per mostrare/nascondere suggerimenti",
-                WRITE: "scrivi le tue definizioni"
-            },
-            WARNING: {
-                DELETE: "Vuoi davvero eliminare questo episodio?",
-                TOS: "Condividendo i contenuti, accetti le nostre [tos]Condizioni del servizio[/tos]",
-                TOS_AGREE: "accetta e condividi"
-            },
-            BACK_TO_EPISODES: "torna agli episodi",
-            BACK_TO_MENU: "torna al menu",
-            CREATE_NEW_EPISODE: "crea un nuovo episodio",
-            PREVIOUS_EPISODES: "episodi precedenti",
-            PROMPT_ADD: "aggiungi suggerimento",
-            PROMPT_PLACEHOLDER: "inserisci suggerimento",
-            PROMPTS_COUNT_HIDDEN: "({count} nascosti)",
-            TITLE_PLACEHOLDER: "inserisci un titolo"
-        },
-        Wj = {
-            BROADCASTER: {
-                SUBTEXT: "Il collegamento del tuo account con l'estensione per Twitch Jackbox Audience Kit è andato a buon fine.",
-                WARNING: "L'IMPOSTAZIONE DEL PUBBLICO NON È ATTIVA PER QUESTA STANZA"
-            },
-            RECONNECTED: {
-                TEXT: "RICONNESSO",
-                SUBTEXT: "Buon divertimento!"
-            },
-            RECONNECTING: {
-                CONTROLLER: {
-                    TEXT: "CONNESSIONE INTERROTTA",
-                    SUBTEXT: "Tentativo di riconnessione in corso ({attempt} di 5)"
-                },
-                GAME: {
-                    TEXT: "CONNESSIONE AL GIOCO INTERROTTA",
-                    SUBTEXT: "Resta in attesa mentre proviamo a riconnetterci"
-                }
-            },
-            PAUSED: {
-                TEXT: "IL GIOCO È IN PAUSA",
-                SUBTEXT: "Qualsiasi cosa invii sarà comunque inviata al gioco."
-            }
-        },
-        jj = {
-            SHARE: "Condividi",
-            COPY_TO_CLIPBOARD: "Copia negli appunti",
-            COPIED: "Copiato"
-        },
-        Hj = {
-            ACTION: Lj,
-            ALT: Pj,
-            ERROR: $j,
-            LOADING: Dj,
-            LOBBY: xj,
-            POST_GAME: Mj,
-            SEPARATOR: kj,
-            TUTORIAL: Uj,
-            AUDIENCE: Bj,
-            GALLERY: Fj,
-            UGC: Gj,
-            TOAST: Wj,
-            SHARE: jj
-        },
         qj = {
-            BACK: "Zurück",
-            CANCEL: "Abbrechen",
-            CLOSE: "Schließen",
-            CONFIRM: "Bestätigen",
-            CREATE: "Erstellen",
-            DELETE: "Löschen",
-            DONE: "Fertig",
-            EDIT: "Bearbeiten",
+            BACK: "Wstecz",
+            CANCEL: "Anuluj",
+            CLOSE: "Zamknij",
+            CONFIRM: "Potwierdź",
+            CREATE: "Utwórz",
+            DELETE: "Usuń",
+            DONE: "Gotowe",
+            EDIT: "Edytuj",
             OK: "OK",
-            NEXT: "Weiter",
-            NO: "Nein",
-            PLAY: "Spielen",
-            PUBLISH: "Veröffentlichen",
-            REMOVE: "Entfernen",
-            RESET: "Neu starten",
-            SUBMIT: "Abschicken",
-            TRY_AGAIN: "Erneut versuchen",
-            UNDO: "Rückgängig",
-            YES: "Ja"
+            NEXT: "Dalej",
+            NO: "Nie",
+            PLAY: "Graj",
+            PUBLISH: "Opublikuj",
+            REMOVE: "Usuń",
+            RESET: "Uruchom ponownie",
+            SUBMIT: "Prześlij",
+            TRY_AGAIN: "Spróbuj ponownie",
+            UNDO: "Cofnij",
+            YES: "Tak"
         },
         Kj = {
             UGC: {
-                VISIBILITY_CONTROLLER_OFF: "Prompts auf Spielergeräten verborgen",
-                VISIBILITY_CONTROLLER_ON: "Prompts auf Spielergeräten angezeigt",
-                VISIBILITY_SCREEN_OFF: "Prompts auf Spielbildschirm verborgen",
-                VISIBILITY_SCREEN_ON: "Prompts auf Spielbildschirm angezeigt"
+                VISIBILITY_CONTROLLER_OFF: "Prompty ukryte na urządzeniach graczy",
+                VISIBILITY_CONTROLLER_ON: "Prompty wyświetlane na urządzeniach graczy",
+                VISIBILITY_SCREEN_OFF: "Prompty ukryte na ekranie gry",
+                VISIBILITY_SCREEN_ON: "Prompty wyświetlane na ekranie gry"
             }
         },
         Yj = {
-            DISCONNECTED: "Deine Verbindung wurde getrennt.",
-            DRAWING_NOTHING: "Du musst irgendwas zeichnen!",
-            PLAYER_KICKED: "Du wurdest von einem Moderator gekickt.",
-            ROOM_DESTROYED: "Danke fürs Spielen!",
-            ROOM_DISCONNECTED: "Verbindung getrennt",
-            TEXT_NAUGHTY: "Das kannst du leider nicht schreiben. Bitte nimm Rücksicht auf deine Mitspieler.",
-            TEXT_NOTHING: "Du musst etwas eingeben!",
-            TITLE: "Fehler"
+            DISCONNECTED: "Twoje połączenie zostało przerwane.",
+            DRAWING_NOTHING: "Musisz coś narysować!",
+            PLAYER_KICKED: "Moderator wyrzucił cię z gry.",
+            ROOM_DESTROYED: "Dzięki za grę!",
+            ROOM_DISCONNECTED: "Połączenie przerwane",
+            TEXT_NAUGHTY: "Niestety nie możesz tego napisać. Prosimy, miej na uwadze innych graczy.",
+            TEXT_NOTHING: "Musisz coś wpisać!",
+            TITLE: "Błąd"
         },
-        Vj = "LADE",
+        Vj = "ŁADOWANIE",
         zj = {
-            JOINED_COUNT: "{count} von {maxPlayers} Spielern sind beigetreten",
-            PLAYERS_NEEDED: "1 Spieler zum Starten benötigt | {count} Spieler zum Starten benötigt",
-            WAITING_FOR_VIP: "Warten, bis {name} das Spiel startet",
-            WAITING_FOR_GAMEPAD: "Warten, bis das Spiel startet",
-            WAITING_FOR_NEW_GAME: "Warten, bis ein neues Spiel startet",
-            GAME_STARTING: "Das Spiel beginnt",
-            BUTTON_START: "Zum Starten drücken",
-            BUTTON_CANCEL: "Zum Abbrechen drücken"
+            JOINED_COUNT: "{count} z {maxPlayers} graczy dołączyło",
+            PLAYERS_NEEDED: "Do rozpoczęcia potrzebny jest 1 gracz | Do rozpoczęcia potrzebnych jest {count} graczy",
+            WAITING_FOR_VIP: "Oczekiwanie, aż {name} rozpocznie grę",
+            WAITING_FOR_GAMEPAD: "Oczekiwanie na rozpoczęcie gry",
+            WAITING_FOR_NEW_GAME: "Oczekiwanie na rozpoczęcie nowej gry",
+            GAME_STARTING: "Gra się rozpoczyna",
+            BUTTON_START: "Naciśnij, aby rozpocząć",
+            BUTTON_CANCEL: "Naciśnij, aby anulować"
         },
         Xj = {
-            GALLERY_LINK: "Galerie besuchen",
-            NEW_GAME_STARTED: "Ein neues Spiel hat begonnen",
-            PLAY_AGAIN: "Erneut spielen?",
-            THANKS_FOR_PLAYING: "Danke fürs Spielen!",
-            BUTTON_GO_TO_GAME: "Zum Spiel",
-            BUTTON_GO_TO_JACKBOX: "Zurück zu jackbox.tv",
-            BUTTON_SAME_PLAYERS: "Selbe Spieler",
-            BUTTON_NEW_PLAYERS: "Neue Spieler"
+            GALLERY_LINK: "Odwiedź galerię",
+            NEW_GAME_STARTED: "Rozpoczęła się nowa gra",
+            PLAY_AGAIN: "Zagrać ponownie?",
+            THANKS_FOR_PLAYING: "Dzięki za grę!",
+            BUTTON_GO_TO_GAME: "Do gry",
+            BUTTON_GO_TO_JACKBOX: "Wróć do jackbox.tv",
+            BUTTON_SAME_PLAYERS: "Ci sami gracze",
+            BUTTON_NEW_PLAYERS: "Nowi gracze"
         },
         Jj = {
-            AND: "UND",
-            OR: "ODER"
+            AND: "I",
+            OR: "ALBO"
         },
         Qj = {
-            BUTTON_SKIP: "Überspringen",
-            BUTTON_NEXT: "Weiter",
-            BUTTON_DONE: "Los geht's!"
+            BUTTON_SKIP: "Pomiń",
+            BUTTON_NEXT: "Dalej",
+            BUTTON_DONE: "Zaczynamy!"
         },
         Zj = {
-            NAME: "PUBLIKUM"
+            NAME: "PUBLICZNOŚĆ"
         },
         eH = {
             CART: {
-                CHECK_OUT: "Kasse",
-                EMPTY: "Dein Einkaufswagen ist leer",
-                TITLE: "Einkaufswagen",
-                TOTAL: "Gesamtsumme"
+                CHECK_OUT: "Do kasy",
+                EMPTY: "Twój koszyk jest pusty",
+                TITLE: "Koszyk",
+                TOTAL: "Suma"
             }
         },
         tH = {
-            EPISODE_REPORT: "Episode melden",
-            EPISODE_UNLOAD: "Episode deaktivieren",
-            EPISODE_VIEW_AUTHOR: "Autor ansehen",
-            EPISODES_LOAD: "Lade eine Episode über dessen ID:",
-            EPISODES_MENU: "Episoden-Menü",
-            EPISODES_SELECT: "Oder wähle eine Episode aus:",
-            EPISODES_WARNING: "Achtung: Von Nutzern erstellte Inhalte werden nicht auf Familientauglichkeit geprüft",
+            EPISODE_REPORT: "Zgłoś odcinek",
+            EPISODE_UNLOAD: "Wyłącz odcinek",
+            EPISODE_VIEW_AUTHOR: "Zobacz autora",
+            EPISODES_LOAD: "Wczytaj odcinek po jego ID:",
+            EPISODES_MENU: "Menu odcinków",
+            EPISODES_SELECT: "Albo wybierz odcinek:",
+            EPISODES_WARNING: "Uwaga: treści tworzone przez użytkowników nie są sprawdzane pod kątem familijności",
             INSTRUCTION: {
-                CREATE_TITLE: 'Benenne als allererstes deine Episode, die alle deine Prompts enthalten wird und drücke dann "Erstellen".',
-                LOAD: "Erstellen oder laden?",
-                PUBLISH: "Veröffentliche deine Episode",
-                TITLE: "Benenne deine Episode",
-                TOGGLE_VISIBILITY: "Drücken, um Prompts zu zeigen / zu verstecken",
-                WRITE: "Schreibe deine Prompts"
+                CREATE_TITLE: 'Najpierw nazwij swój odcinek, który będzie zawierał wszystkie twoje prompty, a następnie naciśnij "Utwórz".',
+                LOAD: "Utworzyć czy wczytać?",
+                PUBLISH: "Opublikuj swój odcinek",
+                TITLE: "Nazwij swój odcinek",
+                TOGGLE_VISIBILITY: "Naciśnij, aby pokazać / ukryć prompty",
+                WRITE: "Napisz swoje prompty"
             },
             WARNING: {
-                DELETE: "Bist du sicher, dass du diese Episode löschen möchtest?",
-                TOS: "Durch das Teilen von Inhalten stimmst du unseren [tos]Nutzungsbedingungen[/tos] zu",
-                TOS_AGREE: "Zustimmen und teilen"
+                DELETE: "Czy na pewno chcesz usunąć ten odcinek?",
+                TOS: "Udostępniając treści, akceptujesz nasze [tos]warunki korzystania[/tos]",
+                TOS_AGREE: "Akceptuję i udostępniam"
             },
-            BACK_TO_EPISODES: "Zurück zu den Episoden",
-            BACK_TO_MENU: "Zurück zum Menü",
-            CREATE_NEW_EPISODE: "Eigene Episode erstellen",
-            PREVIOUS_EPISODES: "Vorige Episoden",
-            PROMPT_ADD: "Prompt hinzufügen",
-            PROMPT_PLACEHOLDER: "Prompt eingeben",
-            PROMPTS_COUNT_HIDDEN: "({count} versteckt)",
-            TITLE_PLACEHOLDER: "Titel eingeben"
+            BACK_TO_EPISODES: "Wróć do odcinków",
+            BACK_TO_MENU: "Wróć do menu",
+            CREATE_NEW_EPISODE: "Utwórz własny odcinek",
+            PREVIOUS_EPISODES: "Poprzednie odcinki",
+            PROMPT_ADD: "Dodaj prompt",
+            PROMPT_PLACEHOLDER: "Wpisz prompt",
+            PROMPTS_COUNT_HIDDEN: "({count} ukrytych)",
+            TITLE_PLACEHOLDER: "Wpisz tytuł"
         },
         rH = {
             BROADCASTER: {
-                SUBTEXT: "Du hast dein Konto erfolgreich mit der Jackbox Audience Kit Twitch-Erweiterung verknüpft.",
-                WARNING: "FÜR DIESEN RAUM IST DIE PUBLIKUMS-EINSTELLUNG NICHT AKTIV"
+                SUBTEXT: "Pomyślnie połączyłeś swoje konto z rozszerzeniem Twitch Jackbox Audience Kit.",
+                WARNING: "USTAWIENIE PUBLICZNOŚCI NIE JEST AKTYWNE DLA TEGO POKOJU"
             },
             RECONNECTED: {
-                TEXT: "NEU VERBUNDEN",
-                SUBTEXT: "Viel Spaß!"
+                TEXT: "POŁĄCZONO PONOWNIE",
+                SUBTEXT: "Miłej zabawy!"
             },
             RECONNECTING: {
                 CONTROLLER: {
-                    TEXT: "VERBINDUNG UNTERBROCHEN",
-                    SUBTEXT: "Versuche neu zu verbinden ({attempt} von 5)"
+                    TEXT: "POŁĄCZENIE PRZERWANE",
+                    SUBTEXT: "Próba ponownego połączenia ({attempt} z 5)"
                 },
                 GAME: {
-                    TEXT: "VERBINDUNG ZUM SPIEL UNTERBROCHEN",
-                    SUBTEXT: "Bitte warte während wir versuchen, die Verbindung wiederherzustellen."
+                    TEXT: "POŁĄCZENIE Z GRĄ PRZERWANE",
+                    SUBTEXT: "Poczekaj, próbujemy przywrócić połączenie."
                 }
             },
             PAUSED: {
-                TEXT: "DAS SPIEL IST PAUSIERT",
-                SUBTEXT: "Alles, was du abschickst, wird weiterhin ans Spiel gesendet."
+                TEXT: "GRA JEST WSTRZYMANA",
+                SUBTEXT: "Wszystko, co prześlesz, nadal zostanie wysłane do gry."
             }
         },
         nH = {
-            SHARE: "Teilen",
-            COPY_TO_CLIPBOARD: "In Zwischenablage kopieren",
-            COPIED: "Kopiert"
+            SHARE: "Udostępnij",
+            COPY_TO_CLIPBOARD: "Skopiuj do schowka",
+            COPIED: "Skopiowano"
         },
         iH = {
             ACTION: qj,
@@ -7357,476 +7049,9 @@ var aoe = $P((Voe, e0) => {
             TOAST: rH,
             SHARE: nH
         },
-        sH = {
-            BACK: "Atrás",
-            CANCEL: "Cancelar",
-            CLOSE: "Cerrar",
-            CONFIRM: "Confirmar",
-            CREATE: "Crear",
-            DELETE: "Borrar",
-            DONE: "Hecho",
-            EDIT: "Editar",
-            OK: "Aceptar",
-            NEXT: "Siguiente",
-            NO: "No",
-            PLAY: "Jugar",
-            PUBLISH: "Publicar",
-            REMOVE: "Eliminar",
-            RESET: "Reiniciar",
-            SUBMIT: "Enviar",
-            TRY_AGAIN: "Volver a intentarlo",
-            UNDO: "Deshacer",
-            YES: "Sí"
-        },
-        oH = {
-            UGC: {
-                VISIBILITY_CONTROLLER_OFF: "los enunciados no se muestran en el dispositivo del jugador",
-                VISIBILITY_CONTROLLER_ON: "los enunciados se muestran en el dispositivo del jugador",
-                VISIBILITY_SCREEN_OFF: "los enunciados no se muestran en la pantalla",
-                VISIBILITY_SCREEN_ON: "los enunciados se muestran en la pantalla"
-            }
-        },
-        aH = {
-            DISCONNECTED: "Te has desconectado.",
-            DRAWING_NOTHING: "¡Tienes que dibujar algo!",
-            PLAYER_KICKED: "Un moderador te ha expulsado de la partida.",
-            ROOM_DESTROYED: "¡Gracias por jugar!",
-            ROOM_DISCONNECTED: "Desconectado",
-            TEXT_NAUGHTY: "Lo siento, no puedes escribir eso. Hay que ser respetuoso con los demás jugadores.",
-            TEXT_NOTHING: "Tienes que escribir algo",
-            TITLE: "Error"
-        },
-        cH = "CARGANDO",
-        uH = {
-            JOINED_COUNT: "Se han unido {count} de {maxPlayers} jugadores",
-            PLAYERS_NEEDED: "Se necesita 1 jugador para empezar | Se necesitan {count} jugadores para empezar",
-            WAITING_FOR_VIP: "Esperando a que {name} inicie la partida",
-            WAITING_FOR_GAMEPAD: "Esperando a que empiece la partida",
-            WAITING_FOR_NEW_GAME: "Esperando a que empiece otra partida",
-            GAME_STARTING: "La partida va a empezar",
-            BUTTON_START: "Pulsa para empezar",
-            BUTTON_CANCEL: "Pulsa para cancelar"
-        },
-        lH = {
-            GALLERY_LINK: "Visita la galería",
-            NEW_GAME_STARTED: "Ha empezado una nueva partida",
-            PLAY_AGAIN: "¿Jugar otra vez?",
-            THANKS_FOR_PLAYING: "¡Gracias por jugar!",
-            BUTTON_GO_TO_GAME: "Ir a al juego",
-            BUTTON_GO_TO_JACKBOX: "Volver a jackbox.tv",
-            BUTTON_SAME_PLAYERS: "Los mismos jugadores",
-            BUTTON_NEW_PLAYERS: "Nuevos jugadores"
-        },
-        fH = {
-            AND: "Y",
-            OR: "O"
-        },
-        dH = {
-            BUTTON_SKIP: "Omitir",
-            BUTTON_NEXT: "Siguiente",
-            BUTTON_DONE: "¡Vamos!"
-        },
-        hH = {
-            NAME: "PÚBLICO"
-        },
-        pH = {
-            CART: {
-                CHECK_OUT: "Pagar",
-                EMPTY: "El carrito está vacío",
-                TITLE: "Carrito de la compra",
-                TOTAL: "Total"
-            }
-        },
-        gH = {
-            EPISODE_REPORT: "Denunciar episodio",
-            EPISODE_UNLOAD: "Retirar episodio",
-            EPISODE_VIEW_AUTHOR: "Ver autor",
-            EPISODES_LOAD: "Cargar un episodio por ID:",
-            EPISODES_MENU: "Menú de episodios",
-            EPISODES_SELECT: "O selecciona un episodio:",
-            EPISODES_WARNING: "Aviso: El contenido de los usuarios no tiene clasificación de edad",
-            INSTRUCTION: {
-                CREATE_TITLE: "en primer lugar, ponle un nombre al episodio que contendrá tus enunciados y dale a crear.",
-                LOAD: "¿crear o cargar?",
-                PUBLISH: "publica tu episodio",
-                TITLE: "ponle nombre al episodio",
-                TOGGLE_VISIBILITY: "toca para mostrar u ocultar los enunciados",
-                WRITE: "escribe los enunciados"
-            },
-            WARNING: {
-                DELETE: "¿Seguro que quieres borrar este episodio?",
-                TOS: "Al compartir contenidos, aceptas las [tos]Condiciones del servicio[/tos]",
-                TOS_AGREE: "aceptar y compartir"
-            },
-            BACK_TO_EPISODES: "volver a los episodios",
-            BACK_TO_MENU: "volver al menú",
-            CREATE_NEW_EPISODE: "crear nuevo episodio",
-            PREVIOUS_EPISODES: "episodios anteriores",
-            PROMPT_ADD: "añadir enunciado",
-            PROMPT_PLACEHOLDER: "escribe un enunciado",
-            PROMPTS_COUNT_HIDDEN: "({count} ocultos)",
-            TITLE_PLACEHOLDER: "escribe un título"
-        },
-        _H = {
-            BROADCASTER: {
-                SUBTEXT: "Has conectado tu cuenta con éxito a la extensión de Twitch del kit para público de Jackbox.",
-                WARNING: "ESTA SALA NO TIENE LA FUNCIÓN DE PÚBLICO HABILITADA"
-            },
-            RECONNECTED: {
-                TEXT: "CONEXIÓN RESTABLECIDA",
-                SUBTEXT: "¡Diviértete!"
-            },
-            RECONNECTING: {
-                CONTROLLER: {
-                    TEXT: "SE HA INTERRUMPIDO LA CONEXIÓN",
-                    SUBTEXT: "Recuperando conexión (intento {attempt} de 5)"
-                },
-                GAME: {
-                    TEXT: "SE HA INTERRUMPIDO LA CONEXIÓN CON EL JUEGO",
-                    SUBTEXT: "Espera mientras intentamos recuperar la conexión"
-                }
-            },
-            PAUSED: {
-                TEXT: "PARTIDA EN PAUSA",
-                SUBTEXT: "Tus respuestas se enviarán igualmente al juego."
-            }
-        },
-        mH = {
-            SHARE: "Compartir",
-            COPY_TO_CLIPBOARD: "Copiar al portapapeles",
-            COPIED: "Copiado"
-        },
-        vH = {
-            ACTION: sH,
-            ALT: oH,
-            ERROR: aH,
-            LOADING: cH,
-            LOBBY: uH,
-            POST_GAME: lH,
-            SEPARATOR: fH,
-            TUTORIAL: dH,
-            AUDIENCE: hH,
-            GALLERY: pH,
-            UGC: gH,
-            TOAST: _H,
-            SHARE: mH
-        },
-        EH = {
-            BACK: "Volver",
-            CANCEL: "Cancelar",
-            CLOSE: "Cerrar",
-            CONFIRM: "Confirmar",
-            CREATE: "Crear",
-            DELETE: "Borrar",
-            DONE: "Listo",
-            EDIT: "Editar",
-            OK: "Aceptar",
-            NEXT: "Siguiente",
-            NO: "No",
-            PLAY: "Jugar",
-            PUBLISH: "Publicar",
-            REMOVE: "Quitar",
-            RESET: "Reiniciar",
-            SUBMIT: "Enviar",
-            TRY_AGAIN: "Volver a intentarlo",
-            UNDO: "Deshacer",
-            YES: "Sí"
-        },
-        yH = {
-            UGC: {
-                VISIBILITY_CONTROLLER_OFF: "indicaciones ocultas en los dispositivos de los jugadores",
-                VISIBILITY_CONTROLLER_ON: "indicaciones presentes en los dispositivos de los jugadores",
-                VISIBILITY_SCREEN_OFF: "indicaciones ocultas en la pantalla del juego",
-                VISIBILITY_SCREEN_ON: "indicaciones presentes en la pantalla del juego"
-            }
-        },
-        TH = {
-            DISCONNECTED: "Te desconectaste.",
-            DRAWING_NOTHING: "¡Tienes que dibujar algo!",
-            PLAYER_KICKED: "Un moderador te expulsó del juego.",
-            ROOM_DESTROYED: "¡Gracias por jugar!",
-            ROOM_DISCONNECTED: "Desconectado",
-            TEXT_NAUGHTY: "Lo siento, no puedes escribir eso. Seamos respetuosos con los demás jugadores.",
-            TEXT_NOTHING: "¡Tienes que escribir algo!",
-            TITLE: "Error"
-        },
-        bH = "CARGANDO",
-        SH = {
-            JOINED_COUNT: "{count} de {maxPlayers} jugadores se unieron",
-            PLAYERS_NEEDED: "Se necesita 1 jugador para empezar | Se necesitan {count} jugadores para empezar",
-            WAITING_FOR_VIP: "Esperando a que {name} inicie la partida",
-            WAITING_FOR_GAMEPAD: "Esperando a que empiece la partida",
-            WAITING_FOR_NEW_GAME: "Esperando a que empiece una partida nueva",
-            GAME_STARTING: "La partida va a empezar",
-            BUTTON_START: "Pulsa para empezar",
-            BUTTON_CANCEL: "Pulsa para cancelar"
-        },
-        OH = {
-            GALLERY_LINK: "Visita la galería",
-            NEW_GAME_STARTED: "Una partida nueva ha empezado",
-            PLAY_AGAIN: "¿Jugar otra vez?",
-            THANKS_FOR_PLAYING: "¡Gracias por jugar!",
-            BUTTON_GO_TO_GAME: "Ir a la partida",
-            BUTTON_GO_TO_JACKBOX: "Volver a jackbox.tv",
-            BUTTON_SAME_PLAYERS: "Los mismos jugadores",
-            BUTTON_NEW_PLAYERS: "Nuevos jugadores"
-        },
-        AH = {
-            AND: "Y",
-            OR: "O"
-        },
-        IH = {
-            BUTTON_SKIP: "Omitir",
-            BUTTON_NEXT: "Siguiente",
-            BUTTON_DONE: "¡Vamos!"
-        },
-        RH = {
-            NAME: "PÚBLICO"
-        },
-        NH = {
-            CART: {
-                CHECK_OUT: "Comprar ahora",
-                EMPTY: "Tu carrito está vacío",
-                TITLE: "Carrito de compras",
-                TOTAL: "Total"
-            }
-        },
-        CH = {
-            EPISODE_REPORT: "Denunciar episodio",
-            EPISODE_UNLOAD: "Descargar episodio",
-            EPISODE_VIEW_AUTHOR: "Ver autor",
-            EPISODES_LOAD: "Cargar un episodio por ID:",
-            EPISODES_MENU: "Menú de episodios",
-            EPISODES_SELECT: "O selecciona un episodio:",
-            EPISODES_WARNING: "Aviso: El contenido de los usuarios no tiene clasificación por edades",
-            INSTRUCTION: {
-                CREATE_TITLE: "Lo primero que debes hacer es escribir un nombre para el episodio que contendrá todas sus indicaciones y pulsar crear.",
-                LOAD: "¿Crear o cargar?",
-                PUBLISH: "Publica tu episodio",
-                TITLE: "Nombra tu episodio",
-                TOGGLE_VISIBILITY: "Pulsa para mostrar/ocultar las indicaciones",
-                WRITE: "Escribe tus indicaciones"
-            },
-            WARNING: {
-                DELETE: "¿De verdad quieres borrar este episodio?",
-                TOS: "Al compartir contenido, aceptas nuestros [tos]Términos de servicio[/tos]",
-                TOS_AGREE: "Aceptar y compartir"
-            },
-            BACK_TO_EPISODES: "Volver a los episodios",
-            BACK_TO_MENU: "Volver al menú",
-            CREATE_NEW_EPISODE: "Crear un nuevo episodio",
-            PREVIOUS_EPISODES: "Episodios anteriores",
-            PROMPT_ADD: "Añadir indicación",
-            PROMPT_PLACEHOLDER: "Escribe una indicación",
-            PROMPTS_COUNT_HIDDEN: "({count} oculto(s))",
-            TITLE_PLACEHOLDER: "Escribir un título"
-        },
-        wH = {
-            BROADCASTER: {
-                SUBTEXT: "Conectaste correctamente tu cuenta a la extensión para Twitch del kit para público de Jackbox.",
-                WARNING: "ESTA SALA NO TIENE ACTIVADA LA OPCIÓN DE PÚBLICO"
-            },
-            RECONNECTED: {
-                TEXT: "CONEXIÓN RESTABLECIDA",
-                SUBTEXT: "¡Diviértete!"
-            },
-            RECONNECTING: {
-                CONTROLLER: {
-                    TEXT: "CONEXIÓN INTERRUMPIDA",
-                    SUBTEXT: "Intento de reconexión ({attempt} de 5)"
-                },
-                GAME: {
-                    TEXT: "SE INTERRUMPIÓ LA CONEXIÓN AL JUEGO",
-                    SUBTEXT: "Espera mientras intentamos restablecer la conexión"
-                }
-            },
-            PAUSED: {
-                TEXT: "EL JUEGO ESTÁ EN PAUSA",
-                SUBTEXT: "Todo lo que ingreses será enviado al juego."
-            }
-        },
-        LH = {
-            SHARE: "Compartir",
-            COPY_TO_CLIPBOARD: "Copiar al portapapeles",
-            COPIED: "Se copió"
-        },
-        PH = {
-            ACTION: EH,
-            ALT: yH,
-            ERROR: TH,
-            LOADING: bH,
-            LOBBY: SH,
-            POST_GAME: OH,
-            SEPARATOR: AH,
-            TUTORIAL: IH,
-            AUDIENCE: RH,
-            GALLERY: NH,
-            UGC: CH,
-            TOAST: wH,
-            SHARE: LH
-        },
-        $H = {
-            BACK: "Voltar",
-            CANCEL: "Cancelar",
-            CLOSE: "Fechar",
-            CONFIRM: "Confirmar",
-            CREATE: "Criar",
-            DELETE: "Excluir",
-            DONE: "Pronto",
-            EDIT: "Editar",
-            OK: "OK",
-            NEXT: "Avançar",
-            NO: "Não",
-            PLAY: "Jogar",
-            PUBLISH: "Publicar",
-            REMOVE: "Remover",
-            RESET: "Redefinir",
-            SUBMIT: "Enviar",
-            TRY_AGAIN: "Tentar de novo",
-            UNDO: "Desfazer",
-            YES: "Sim"
-        },
-        DH = {
-            UGC: {
-                VISIBILITY_CONTROLLER_OFF: "enunciados ocultos no dispositivo dos jogadores",
-                VISIBILITY_CONTROLLER_ON: "enunciados exibidos no dispositivo dos jogadores",
-                VISIBILITY_SCREEN_OFF: "enunciados ocultos na tela do jogo",
-                VISIBILITY_SCREEN_ON: "enunciados exibidos na tela do jogo"
-            }
-        },
-        xH = {
-            DISCONNECTED: "Você foi desconectado.",
-            DRAWING_NOTHING: "Você tem que desenhar!",
-            PLAYER_KICKED: "Você foi expulso do jogo por um moderador.",
-            ROOM_DESTROYED: "Obrigado por jogar!",
-            ROOM_DISCONNECTED: "Desconectado",
-            TEXT_NAUGHTY: "Não pode escrever isso. Respeite os outros jogadores.",
-            TEXT_NOTHING: "Não dá para inserir texto vazio!",
-            TITLE: "Erro"
-        },
-        MH = "CARREGANDO",
-        kH = {
-            JOINED_COUNT: "{count} de {maxPlayers} jogadores entraram",
-            PLAYERS_NEEDED: "1 jogador necessário para começar | {count} jogadores necessários para começar",
-            WAITING_FOR_VIP: "Aguardando {name} começar o jogo",
-            WAITING_FOR_GAMEPAD: "Aguardando o começo do jogo",
-            WAITING_FOR_NEW_GAME: "Aguardando o começo de uma nova partida",
-            GAME_STARTING: "O jogo está começando",
-            BUTTON_START: "Aperte para começar",
-            BUTTON_CANCEL: "Aperte para cancelar"
-        },
-        UH = {
-            GALLERY_LINK: "Visitar a galeria",
-            NEW_GAME_STARTED: "Começou uma nova partida",
-            PLAY_AGAIN: "Jogar de novo?",
-            THANKS_FOR_PLAYING: "Obrigado por jogar!",
-            BUTTON_GO_TO_GAME: "Ir para o jogo",
-            BUTTON_GO_TO_JACKBOX: "Voltar para jackbox.tv",
-            BUTTON_SAME_PLAYERS: "Mesmos jogadores",
-            BUTTON_NEW_PLAYERS: "Outros jogadores"
-        },
-        BH = {
-            AND: "E",
-            OR: "OU"
-        },
-        FH = {
-            BUTTON_SKIP: "Pular",
-            BUTTON_NEXT: "Avançar",
-            BUTTON_DONE: "Vamos lá!"
-        },
-        GH = {
-            NAME: "PLATEIA"
-        },
-        WH = {
-            CART: {
-                CHECK_OUT: "Finalizar",
-                EMPTY: "Seu carrinho está vazio",
-                TITLE: "Carrinho de Compras",
-                TOTAL: "Total"
-            }
-        },
-        jH = {
-            EPISODE_REPORT: "Denunciar episódio",
-            EPISODE_UNLOAD: "Excluir cópia local do episódio",
-            EPISODE_VIEW_AUTHOR: "Visualizar autor",
-            EPISODES_LOAD: "Carregar um episódio por ID:",
-            EPISODES_MENU: "Menu de episódios",
-            EPISODES_SELECT: "Ou selecione um episódio:",
-            EPISODES_WARNING: "Aviso: os conteúdos gerados pelos usuários não têm classificação indicativa",
-            INSTRUCTION: {
-                CREATE_TITLE: "para começar, insira o nome do episódio que conterá todos os seus enunciados e aperte “Criar”.",
-                LOAD: "criar ou carregar?",
-                PUBLISH: "publicar seu episódio",
-                TITLE: "dê um nome ao seu episódio",
-                TOGGLE_VISIBILITY: "toque para exibir/ocultar enunciados",
-                WRITE: "escreva seus enunciados"
-            },
-            WARNING: {
-                DELETE: "Deseja mesmo excluir este episódio?",
-                TOS: "Ao compartilhar conteúdo, você concordará com os nossos [tos]Termos de Serviço[/tos]",
-                TOS_AGREE: "concordar e compartilhar"
-            },
-            BACK_TO_EPISODES: "voltar aos episódios",
-            BACK_TO_MENU: "voltar ao menu",
-            CREATE_NEW_EPISODE: "criar novo episódio",
-            PREVIOUS_EPISODES: "episódios anteriores",
-            PROMPT_ADD: "adicionar enunciado",
-            PROMPT_PLACEHOLDER: "insira um enunciado",
-            PROMPTS_COUNT_HIDDEN: "({count} oculto[s])",
-            TITLE_PLACEHOLDER: "insira um título"
-        },
-        HH = {
-            BROADCASTER: {
-                SUBTEXT: "Você conectou sua conta à extensão Jackbox Audience Kit para Twitch.",
-                WARNING: "A CONFIGURAÇÃO DE PLATEIA NÃO ESTÁ ATIVA NESTA SALA"
-            },
-            RECONNECTED: {
-                TEXT: "CONEXÃO RESTABELECIDA",
-                SUBTEXT: "Divirtam-se!"
-            },
-            RECONNECTING: {
-                CONTROLLER: {
-                    TEXT: "CONEXÃO INTERROMPIDA",
-                    SUBTEXT: "Tentando reconectar-se ({attempt} de 5)"
-                },
-                GAME: {
-                    TEXT: "CONEXÃO DO JOGO INTERROMPIDA",
-                    SUBTEXT: "Aguarde enquanto tentamos restabelecer a conexão"
-                }
-            },
-            PAUSED: {
-                TEXT: "O JOGO ESTÁ PAUSADO",
-                SUBTEXT: "Tudo que você enviar ainda será enviado ao jogo."
-            }
-        },
-        qH = {
-            SHARE: "Compartilhar",
-            COPY_TO_CLIPBOARD: "Copiar para área de transferência",
-            COPIED: "Copiado"
-        },
-        KH = {
-            ACTION: $H,
-            ALT: DH,
-            ERROR: xH,
-            LOADING: MH,
-            LOBBY: kH,
-            POST_GAME: UH,
-            SEPARATOR: BH,
-            TUTORIAL: FH,
-            AUDIENCE: GH,
-            GALLERY: WH,
-            UGC: jH,
-            TOAST: HH,
-            SHARE: qH
-        },
         YH = {
             en: _j,
-            fr: wj,
-            it: Hj,
-            de: iH,
-            es: vH,
-            "es-XL": PH,
-            "pt-BR": KH
+            pl: iH
         },
         VH = {
             LABEL: "BRANCH",
@@ -7939,324 +7164,103 @@ from your past games list.`,
             SUBMIT: i5,
             WARNING: s5
         },
-        a5 = {
-            LABEL: "SECTION",
-            REFRESH_REQUIRED: "Actualisation requise",
-            PREFERRED: "SECTION PRÉFÉRÉE",
-            SELECT: "Choisissez une section",
-            WAITING: "En attente de la salle"
-        },
-        c5 = {
-            ACCEPT_ALL: "Compris !",
-            CONSENT_MODAL: {
-                ARIA: "Formulaire d'acceptation des cookies"
-            },
-            DESCRIPTION: "Nous utilisons les cookies pour améliorer votre expérience de jeu et analyser le trafic du site. Plus d'infos sur notre [pp]politique de confidentialité[/pp].",
-            REJECT_ALL: "Refuser"
-        },
-        u5 = {
-            UNSUPPORTED_BROWSER: "Le jeu n'est pas compatible avec votre navigateur. Allez sur '?' ou sur AIDE pour afficher une liste des navigateurs compatibles.",
-            ROOM_IS_FULL: "La salle est pleine.",
-            ROOM_NOT_FOUND: "Salle introuvable",
-            AUDIENCE_IS_FULL: "Il n'y a plus de place dans le public.",
-            UNABLE_TO_CONNECT: "Impossible de se connecter au serveur de Jackbox Games. Les bloqueurs de publicité ou les modules de protection de la confidentialité sont généralement à l'origine de ce problème.",
-            UNABLE_TO_PRELOAD: "Impossible de précharger ce pack de jeux",
-            KICKED: "Vous ne pouvez pas rejoindre la partie, parce que vous avez été éjecté(e) par un modérateur.",
-            REQUIRES_TWITCH_LOGIN: "Ce jeu nécessite une connexion Twitch.",
-            ROOM_IS_LOCKED: "La salle est fermée.",
-            INCORRECT_PASSWORD: "Mot de passe incorrect",
-            GENERIC: "Erreur en rejoignant la salle",
-            FILTER_NAME: "Le filtre anti-grossièreté est activé pour cette partie. Veuillez choisir un autre nom."
-        },
-        l5 = {
-            NAME: "NOM",
-            NAME_PLACEHOLDER: "INDIQUEZ VOTRE NOM",
-            PASSWORD_PLACEHOLDER: "TAPEZ UN MOT DE PASSE À 5 CHIFFRES",
-            PASSWORD_REQUIRED_TITLE: "Mot de passe requis",
-            PASSWORD_REQUIRED_BODY: "Indiquez le mot de passe ou rejoignez la salle en tant que spectateur.",
-            PASSWORD_JOIN_AS_PLAYER: "Rejoindre en tant que joueur",
-            PASSWORD_JOIN_AS_AUDIENCE: "Rejoindre en tant que spectateur",
-            ROOM_CODE: "CODE DE SALLE",
-            ROOM_CODE_PLACEHOLDER: "TAPEZ LE CODE À 4 LETTRES"
-        },
-        f5 = "Lien vers la page d'accueil de Jackbox Games",
-        d5 = {
-            APPEARANCE: "APPARENCE",
-            DARK: "sombre",
-            HELP: "AIDE",
-            TWITCH: "TWITCH",
-            LIGHT: "clair",
-            LOGOUT: "DÉCONNEXION",
-            MERCH: "PRODUITS DÉRIVÉS",
-            PAST_GAMES: "ANCIENNES PARTIES",
-            MAILING_LIST: "LISTE DE DIFFUSION",
-            MODERATOR: "MODÉRATEUR"
-        },
-        h5 = {
-            CALL_TO_ACTION: {
-                SHOP: "VOIR LE JEU ET LA BOUTIQUE",
-                VIEW: "VOIR CETTE PARTIE"
-            },
-            NEW: "NOUVEAU",
-            PLAYED_ON: "JOUÉE LE",
-            REMOVE: {
-                CONFIRM: "Êtes-vous sûr ?",
-                DESCRIPTION: `Cela supprimera définitivement cette partie
-de votre liste d'anciennes parties.`,
-                MANAGE: "Supprimer la partie ?",
-                TITLE: "Êtes-vous sûr ?"
-            }
-        },
-        p5 = {
-            EMPTY: "Aucune ancienne partie",
-            MANAGE: "GÉRER",
-            TITLE: "VOS ANCIENNES PARTIES"
-        },
-        g5 = {
-            TITLE: "PARTIES RÉCENTES",
-            VIEW_ALL: {
-                BUTTON: "VOIR TOUT",
-                LINK: "VOIR TOUTES LES ANCIENNES PARTIES"
-            }
-        },
-        _5 = {
-            GAME_FULL: "La salle est pleine.",
-            GAME_STARTED: "La partie a commencé.",
-            ROOM_NOT_FOUND: "Salle introuvable"
-        },
-        m5 = {
-            GAME_FULL: "LA SALLE EST PLEINE.",
-            GAME_STARTED: "LA PARTIE A COMMENCÉ.",
-            JOIN_AUDIENCE: "REJOINDRE EN TANT QUE SPECTATEUR",
-            RECONNECT: "SE RECONNECTER",
-            TWITCH_LOGIN: "SE CONNECTER AVEC TWITCH"
-        },
-        v5 = {
-            CAMERA: "[b]ATTENTION :[/b] Nous ne détectons aucune caméra, mais vous pouvez jouer sans afficher votre photo. Si vous pensez qu'il s'agit d'une erreur, essayez de rejoindre en utilisant un autre navigateur.",
-            STYLE: "[b]ATTENTION :[/b] Votre navigateur semble obsolète. Vous risquez de rencontrer des problèmes d'affichage avec ce jeu.",
-            TOS: "En cliquant sur {submit}, vous acceptez nos [tos]Conditions de service[/tos]."
-        },
-        E5 = {
-            BRANCH: a5,
-            COOKIE: c5,
-            ERROR: u5,
-            FORM: l5,
-            HOMEPAGE_LINK: f5,
-            MENU: d5,
-            PAST_GAME: h5,
-            PAST_GAMES: p5,
-            RECENT_GAMES: g5,
-            STATUS: _5,
-            SUBMIT: m5,
-            WARNING: v5
-        },
-        y5 = {
-            LABEL: "BRANCH",
-            REFRESH_REQUIRED: "Ricarica necessaria",
-            PREFERRED: "BRANCH PREFERITA",
-            SELECT: "Scegli una branch",
-            WAITING: "In attesa di una stanza"
-        },
-        T5 = {
-            ACCEPT_ALL: "Capito!",
-            CONSENT_MODAL: {
-                ARIA: "Modulo di consenso sui cookie"
-            },
-            DESCRIPTION: "Usiamo i cookie per migliorare l'esperienza di gioco e analizzare il traffico del sito web. Per maggiori informazioni consulta la nostra [pp]Informativa sulla privacy[/pp].",
-            REJECT_ALL: "Nega consenso"
-        },
-        b5 = {
-            UNSUPPORTED_BROWSER: "Il gioco non è supportato dal browser attualmente in uso. Clicca su '?' o AIUTO per visualizzare la lista dei browser compatibili.",
-            ROOM_IS_FULL: "La partita è al completo",
-            ROOM_NOT_FOUND: "Stanza non trovata",
-            AUDIENCE_IS_FULL: "Il pubblico è al completo",
-            UNABLE_TO_CONNECT: "Impossibile collegarsi al server Jackbox Games. Solitamente il problema è causato da adblocker o estensioni per la privacy.",
-            UNABLE_TO_PRELOAD: "Impossibile pre-caricare questo bundle di giochi",
-            KICKED: "Non puoi unirti perché un moderatore ti ha cacciato",
-            REQUIRES_TWITCH_LOGIN: "Questo gioco richiede l'accesso a Twitch",
-            ROOM_IS_LOCKED: "La stanza è bloccata",
-            INCORRECT_PASSWORD: "Password errata",
-            GENERIC: "Impossibile entrare in questa stanza",
-            FILTER_NAME: "Questa partita ha i filtri delle volgarità attivi. Scegli un nome diverso."
-        },
-        S5 = {
-            NAME: "NOME",
-            NAME_PLACEHOLDER: "INSERISCI IL TUO NOME",
-            PASSWORD_PLACEHOLDER: "INSERISCI LA PASSWORD DI 5 CARATTERI",
-            PASSWORD_REQUIRED_TITLE: "Password necessaria",
-            PASSWORD_REQUIRED_BODY: "Inserisci la password o partecipa come pubblico",
-            PASSWORD_JOIN_AS_PLAYER: "Partecipa come giocatore",
-            PASSWORD_JOIN_AS_AUDIENCE: "Partecipa come pubblico",
-            ROOM_CODE: "CODICE STANZA",
-            ROOM_CODE_PLACEHOLDER: "INSERISCI IL CODICE DI 4 LETTERE"
-        },
-        O5 = "Link alla homepage di Jackbox Games",
-        A5 = {
-            APPEARANCE: "ASPETTO",
-            DARK: "scuro",
-            HELP: "AIUTO",
-            TWITCH: "TWITCH",
-            LIGHT: "chiaro",
-            LOGOUT: "ESCI",
-            MERCH: "NEGOZIO",
-            PAST_GAMES: "PARTITE PRECEDENTI",
-            MAILING_LIST: "NEWSLETTER",
-            MODERATOR: "MODERATORE"
-        },
-        I5 = {
-            CALL_TO_ACTION: {
-                SHOP: "VISUALIZZA GIOCO E NEGOZIO",
-                VIEW: "VISUALIZZA QUESTO GIOCO"
-            },
-            NEW: "NUOVO",
-            PLAYED_ON: "GIOCATO IL",
-            REMOVE: {
-                CONFIRM: "Confermi?",
-                DESCRIPTION: `Quest'azione rimuoverà per sempre questo gioco
-dalla lista dei giochi precedenti.`,
-                MANAGE: "Rimuovere gioco?",
-                TITLE: "Confermi?"
-            }
-        },
-        R5 = {
-            EMPTY: "Nessun gioco precedente",
-            MANAGE: "GESTISCI",
-            TITLE: "I TUOI GIOCHI PRECEDENTI"
-        },
-        N5 = {
-            TITLE: "GIOCHI RECENTI",
-            VIEW_ALL: {
-                BUTTON: "VISUALIZZA TUTTO",
-                LINK: "VISUALIZZA TUTTI I GIOCHI RECENTI"
-            }
-        },
-        C5 = {
-            GAME_FULL: "La partita è al completo",
-            GAME_STARTED: "La partita è già iniziata",
-            ROOM_NOT_FOUND: "Stanza non trovata"
-        },
-        w5 = {
-            GAME_FULL: "LA PARTITA È AL COMPLETO",
-            GAME_STARTED: "LA PARTITA È GIÀ INIZIATA",
-            JOIN_AUDIENCE: "PARTECIPA COME PUBBLICO",
-            RECONNECT: "RICOLLEGATI",
-            TWITCH_LOGIN: "ACCEDI CON TWITCH"
-        },
-        L5 = {
-            CAMERA: "[b]AVVISO:[/b] Non rileviamo la telecamera, ma puoi giocare anche senza aggiungere una foto. Se la cosa non ti torna, prova ad accedere usando un altro browser.",
-            STYLE: "[b]AVVISO:[/b] Il tuo browser è obsoleto e avrà dei problemi a visualizzare il gioco.",
-            TOS: "Selezionando {submit}, accetti le [tos]Condizioni del servizio[/tos]"
-        },
-        P5 = {
-            BRANCH: y5,
-            COOKIE: T5,
-            ERROR: b5,
-            FORM: S5,
-            HOMEPAGE_LINK: O5,
-            MENU: A5,
-            PAST_GAME: I5,
-            PAST_GAMES: R5,
-            RECENT_GAMES: N5,
-            STATUS: C5,
-            SUBMIT: w5,
-            WARNING: L5
-        },
+
         $5 = {
-            LABEL: "ZWEIG",
-            REFRESH_REQUIRED: "Refresh benötigt",
-            PREFERRED: "BEVORZUGTER ZWEIG",
-            SELECT: "Wähle deinen Zweig aus",
-            WAITING: "Warte auf Raum"
+            LABEL: "GAŁĄŹ",
+            REFRESH_REQUIRED: "Wymagane odświeżenie",
+            PREFERRED: "PREFEROWANA GAŁĄŹ",
+            SELECT: "Wybierz swoją gałąź",
+            WAITING: "Oczekiwanie na pokój"
         },
         D5 = {
             ACCEPT_ALL: "Okay!",
             CONSENT_MODAL: {
-                ARIA: "Cookie-Zustimmung"
+                ARIA: "Zgoda na pliki cookie"
             },
-            DESCRIPTION: "Wir verwenden Cookies, um deine Spielerfahrung zu verbessern und unseren Web-Traffic zu analysieren. Mehr darüber kannst du in unserer [pp]Datenschutzrichtlinie[/pp] erfahren.",
-            REJECT_ALL: "Ablehnen"
+            DESCRIPTION: "Używamy plików cookie, aby poprawić twoje doświadczenie z gry i analizować ruch na naszej stronie. Więcej informacji znajdziesz w naszej [pp]polityce prywatności[/pp].",
+            REJECT_ALL: "Odrzuć"
         },
         x5 = {
-            UNSUPPORTED_BROWSER: "Dieses Spiel wird von diesem Browser nicht unterstützt. Unter '?' und HILFE findest du eine vollständige Liste an kompatiblen Browsern.",
-            ROOM_IS_FULL: "Das Spiel ist voll",
-            ROOM_NOT_FOUND: "Raum wurde nicht gefunden.",
-            AUDIENCE_IS_FULL: "Das Publikum ist voll",
-            UNABLE_TO_CONNECT: "Es konnte keine Verbindung zum Server von Jackbox Games hergestellt werden. Dies wird häufig durch Adblocker oder Privacy Extensions verursacht.",
-            UNABLE_TO_PRELOAD: "Preload dieses Bundles ist nicht möglich",
-            KICKED: "Du kannst nicht beitreten, weil du von einem Moderator gekickt wurdest",
-            REQUIRES_TWITCH_LOGIN: "Für diesen Spiel ist Twitch erforderlich",
-            ROOM_IS_LOCKED: "Spiel verschlossen",
-            INCORRECT_PASSWORD: "Falsches Passwort",
-            GENERIC: "Fehler beim Betreten des Spiels",
-            FILTER_NAME: "Der Familientauglichkeits-Filter des Spiels ist aktiviert. Wähle einen anderen Namen."
+            UNSUPPORTED_BROWSER: "Ta gra nie jest obsługiwana przez tę przeglądarkę. Pod '?' i POMOC znajdziesz pełną listę kompatybilnych przeglądarek.",
+            ROOM_IS_FULL: "Gra jest pełna",
+            ROOM_NOT_FOUND: "Nie znaleziono pokoju.",
+            AUDIENCE_IS_FULL: "Publiczność jest pełna",
+            UNABLE_TO_CONNECT: "Nie udało się połączyć z serwerem Jackbox Games. Często jest to spowodowane przez blokery reklam lub rozszerzenia prywatności.",
+            UNABLE_TO_PRELOAD: "Nie można wstępnie załadować tego pakietu",
+            KICKED: "Nie możesz dołączyć, ponieważ moderator cię wyrzucił",
+            REQUIRES_TWITCH_LOGIN: "Ta gra wymaga Twitcha",
+            ROOM_IS_LOCKED: "Gra jest zablokowana",
+            INCORRECT_PASSWORD: "Nieprawidłowe hasło",
+            GENERIC: "Błąd podczas dołączania do gry",
+            FILTER_NAME: "Filtr rodzinny gry jest włączony. Wybierz inną nazwę."
         },
         M5 = {
-            NAME: "NAME",
-            NAME_PLACEHOLDER: "GIB DEINEN NAMEN EIN",
-            PASSWORD_PLACEHOLDER: "FÜNFSTELLIGES PASSWORT EINGEBEN",
-            PASSWORD_REQUIRED_TITLE: "Passwort benötigt",
-            PASSWORD_REQUIRED_BODY: "Bitte gib das Passwort ein oder setze dich ins Publikum",
-            PASSWORD_JOIN_AS_PLAYER: "Als Spieler beitreten",
-            PASSWORD_JOIN_AS_AUDIENCE: "Ins Publikum setzen",
-            ROOM_CODE: "RAUMCODE",
-            ROOM_CODE_PLACEHOLDER: "GIB DEN 4-STELLIGEN CODE EIN"
+            NAME: "IMIĘ",
+            NAME_PLACEHOLDER: "WPISZ SWOJE IMIĘ",
+            PASSWORD_PLACEHOLDER: "WPISZ PIĘCIOZNAKOWE HASŁO",
+            PASSWORD_REQUIRED_TITLE: "Wymagane hasło",
+            PASSWORD_REQUIRED_BODY: "Wpisz hasło albo dołącz do publiczności",
+            PASSWORD_JOIN_AS_PLAYER: "Dołącz jako gracz",
+            PASSWORD_JOIN_AS_AUDIENCE: "Dołącz do publiczności",
+            ROOM_CODE: "KOD POKOJU",
+            ROOM_CODE_PLACEHOLDER: "WPISZ 4-ZNAKOWY KOD"
         },
-        k5 = "Link zur Homepage von Jackbox Games",
+        k5 = "Link do strony głównej Jackbox Games",
         U5 = {
-            APPEARANCE: "DARSTELLUNG",
-            DARK: "Dunkel",
-            HELP: "HILFE",
+            APPEARANCE: "WYGLĄD",
+            DARK: "Ciemny",
+            HELP: "POMOC",
             TWITCH: "TWITCH",
-            LIGHT: "Hell",
-            LOGOUT: "ABMELDEN",
+            LIGHT: "Jasny",
+            LOGOUT: "WYLOGUJ",
             MERCH: "MERCH",
-            PAST_GAMES: "ANDERE SPIELE",
-            MAILING_LIST: "MAILINGLISTE",
+            PAST_GAMES: "INNE GRY",
+            MAILING_LIST: "LISTA MAILINGOWA",
             MODERATOR: "MODERATOR"
         },
         B5 = {
             CALL_TO_ACTION: {
-                SHOP: "SPIEL UND SHOP ANSEHEN",
-                VIEW: "DIESES SPIEL ANSEHEN"
+                SHOP: "ZOBACZ GRĘ I SKLEP",
+                VIEW: "ZOBACZ TĘ GRĘ"
             },
-            NEW: "NEU",
-            PLAYED_ON: "GESPIELT AM",
+            NEW: "NOWE",
+            PLAYED_ON: "GRANO DNIA",
             REMOVE: {
-                CONFIRM: "Bist du sicher?",
-                DESCRIPTION: `Dies wird das Spiel dauerhaft aus der Liste
-deiner bisherigen Spiele entfernen.`,
-                MANAGE: "Spiel entfernen?",
-                TITLE: "Bist du sicher?"
+                CONFIRM: "Czy na pewno?",
+                DESCRIPTION: `To trwale usunie grę z listy
+twoich poprzednich gier.`,
+                MANAGE: "Usunąć grę?",
+                TITLE: "Czy na pewno?"
             }
         },
         F5 = {
-            EMPTY: "Noch keine bisherigen Spiele",
-            MANAGE: "VERWALTEN",
-            TITLE: "DEINE BISHERIGEN SPIELE"
+            EMPTY: "Brak poprzednich gier",
+            MANAGE: "ZARZĄDZAJ",
+            TITLE: "TWOJE POPRZEDNIE GRY"
         },
         G5 = {
-            TITLE: "AKTUELLE SPIELE",
+            TITLE: "AKTUALNE GRY",
             VIEW_ALL: {
-                BUTTON: "ALLE ANSEHEN",
-                LINK: "ALLE BISHERIGEN SPIELE ANSEHEN"
+                BUTTON: "ZOBACZ WSZYSTKIE",
+                LINK: "ZOBACZ WSZYSTKIE POPRZEDNIE GRY"
             }
         },
         W5 = {
-            GAME_FULL: "Spiel ist voll",
-            GAME_STARTED: "Spiel hat bereits begonnen",
-            ROOM_NOT_FOUND: "Raum wurde nicht gefunden."
+            GAME_FULL: "Gra jest pełna",
+            GAME_STARTED: "Gra już się rozpoczęła",
+            ROOM_NOT_FOUND: "Nie znaleziono pokoju."
         },
         j5 = {
-            GAME_FULL: "SPIEL IST VOLL",
-            GAME_STARTED: "SPIEL HAT BEREITS BEGONNEN",
-            JOIN_AUDIENCE: "INS PUBLIKUM SETZEN",
-            RECONNECT: "NEU VERBINDEN",
-            TWITCH_LOGIN: "MIT TWITCH ANMELDEN"
+            GAME_FULL: "GRA JEST PEŁNA",
+            GAME_STARTED: "GRA JUŻ SIĘ ROZPOCZĘŁA",
+            JOIN_AUDIENCE: "DOŁĄCZ DO PUBLICZNOŚCI",
+            RECONNECT: "POŁĄCZ PONOWNIE",
+            TWITCH_LOGIN: "ZALOGUJ PRZEZ TWITCH"
         },
         H5 = {
-            CAMERA: "[b]ACHTUNG:[/b] Es wurde keine Kamera erkannt, aber du kannst das Spiel auch ohne Foto spielen. Falls eine Kamera vorhanden ist, probiere es mit einem anderen Browser.",
-            STYLE: "[b]ACHTUNG:[/b] Dein Browser scheint etwas veraltet zu sein. Es könnte Probleme bei der Anzeige dieses Spiels geben.",
-            TOS: "Wenn du auf {submit} klickst, erklärst du dich mit unseren [tos]Nutzungsbedingungen[/tos] einverstanden"
+            CAMERA: "[b]UWAGA:[/b] Nie wykryto kamery, ale możesz grać także bez zdjęcia. Jeśli masz kamerę, spróbuj użyć innej przeglądarki.",
+            STYLE: "[b]UWAGA:[/b] Twoja przeglądarka wydaje się nieco przestarzała. Mogą wystąpić problemy z wyświetlaniem tej gry.",
+            TOS: "Klikając {submit}, akceptujesz nasze [tos]warunki korzystania[/tos]"
         },
         q5 = {
             BRANCH: $5,
@@ -8272,347 +7276,9 @@ deiner bisherigen Spiele entfernen.`,
             SUBMIT: j5,
             WARNING: H5
         },
-        K5 = {
-            LABEL: "RAMA",
-            REFRESH_REQUIRED: "Actualización requerida",
-            PREFERRED: "RAMA PREFERIDA",
-            SELECT: "Selecciona una rama",
-            WAITING: "Esperando la sala"
-        },
-        Y5 = {
-            ACCEPT_ALL: "¡Vale!",
-            CONSENT_MODAL: {
-                ARIA: "Formulario de consentimiento para el uso de cookies"
-            },
-            DESCRIPTION: "Usamos las cookies para mejorar tu experiencia de juego y analizar el tráfico del sitio web. Puedes encontrar más información en nuestra [pp]política de privacidad[/pp].",
-            REJECT_ALL: "No aceptar"
-        },
-        V5 = {
-            UNSUPPORTED_BROWSER: "El juego no es compatible con este navegador. En '?' y AYUDA puedes ver la lista de navegadores compatibles.",
-            ROOM_IS_FULL: "La sala está llena",
-            ROOM_NOT_FOUND: "No se encuentra la sala",
-            AUDIENCE_IS_FULL: "El público está completo",
-            UNABLE_TO_CONNECT: "No ha podido establecerse conexión con el servidor de Jackbox Games. Puede ser debido a los bloqueadores de anuncios o a las extensiones de privacidad.",
-            UNABLE_TO_PRELOAD: "No se ha podido precargar este lote de juegos",
-            KICKED: "No puedes unirte porque te ha expulsado un moderador",
-            REQUIRES_TWITCH_LOGIN: "Este juego requiere un inicio de sesión de Twitch",
-            ROOM_IS_LOCKED: "El juego está bloqueado",
-            INCORRECT_PASSWORD: "Contraseña incorrecta",
-            GENERIC: "Error al unirte al juego",
-            FILTER_NAME: "Esta partida tiene activados los filtros de lenguaje malsonante. Elige un nombre diferente."
-        },
-        z5 = {
-            NAME: "NOMBRE",
-            NAME_PLACEHOLDER: "INDICA TU NOMBRE",
-            PASSWORD_PLACEHOLDER: "INTRODUCIR CONTRASEÑA DE 5 DÍGITOS",
-            PASSWORD_REQUIRED_TITLE: "Hace falta una contraseña",
-            PASSWORD_REQUIRED_BODY: "Introduce la contraseña o únete como público",
-            PASSWORD_JOIN_AS_PLAYER: "Unirse como jugador",
-            PASSWORD_JOIN_AS_AUDIENCE: "Unirse como público",
-            ROOM_CODE: "CÓDIGO DE LA SALA",
-            ROOM_CODE_PLACEHOLDER: "INTRODUCIR CÓDIGO DE 4 CARACTERES"
-        },
-        X5 = "Enlace a la página inicial de Jackbox Games",
-        J5 = {
-            APPEARANCE: "APARIENCIA",
-            DARK: "oscura",
-            HELP: "AYUDA",
-            TWITCH: "TWITCH",
-            LIGHT: "clara",
-            LOGOUT: "CERRAR SESIÓN",
-            MERCH: "MERCHANDISING",
-            PAST_GAMES: "PARTIDAS ANTERIORES",
-            MAILING_LIST: "LISTA DE CORREO",
-            MODERATOR: "MODERADOR"
-        },
-        Q5 = {
-            CALL_TO_ACTION: {
-                SHOP: "VER JUEGO Y COMPRAR",
-                VIEW: "VER ESTE JUEGO"
-            },
-            NEW: "NUEVO",
-            PLAYED_ON: "SE JUEGA EN",
-            REMOVE: {
-                CONFIRM: "¿Estás seguro?",
-                DESCRIPTION: `Esto eliminará de forma permanente esta partida
-de tu lista de partidas anteriores.`,
-                MANAGE: "¿Retirar partida?",
-                TITLE: "¿Estás seguro?"
-            }
-        },
-        Z5 = {
-            EMPTY: "Todavía no hay partidas anteriores",
-            MANAGE: "ADMINISTRAR",
-            TITLE: "PARTIDAS ANTERIORES"
-        },
-        e7 = {
-            TITLE: "PARTIDAS RECIENTES",
-            VIEW_ALL: {
-                BUTTON: "VER TODO",
-                LINK: "VER TODAS LAS PARTIDAS ANTERIORES"
-            }
-        },
-        t7 = {
-            GAME_FULL: "La partida está completa",
-            GAME_STARTED: "La partida ha empezado",
-            ROOM_NOT_FOUND: "No se encuentra la sala"
-        },
-        r7 = {
-            GAME_FULL: "LA PARTIDA ESTÁ COMPLETA",
-            GAME_STARTED: "LA PARTIDA HA EMPEZADO",
-            JOIN_AUDIENCE: "UNIRSE COMO PÚBLICO",
-            RECONNECT: "RECONECTAR",
-            TWITCH_LOGIN: "INICIAR SESIÓN CON TWITCH"
-        },
-        n7 = {
-            CAMERA: "[b]AVISO:[/b] No se detecta ninguna cámara, pero puedes jugar sin foto. Si crees que se trata de un error, cambia de navegador.",
-            STYLE: "[b]AVISO:[/b] Tu navegador está un poco desactualizado, así que es posible que el juego no se vea del todo bien.",
-            TOS: "Al hacer clic en {submit}, aceptas las [tos]Condiciones del servicio[/tos]"
-        },
-        i7 = {
-            BRANCH: K5,
-            COOKIE: Y5,
-            ERROR: V5,
-            FORM: z5,
-            HOMEPAGE_LINK: X5,
-            MENU: J5,
-            PAST_GAME: Q5,
-            PAST_GAMES: Z5,
-            RECENT_GAMES: e7,
-            STATUS: t7,
-            SUBMIT: r7,
-            WARNING: n7
-        },
-        s7 = {
-            LABEL: "RAMA",
-            REFRESH_REQUIRED: "Requiere actualizar",
-            PREFERRED: "RAMA PREFERIDA",
-            SELECT: "Selecciona una rama",
-            WAITING: "Esperando una sala"
-        },
-        o7 = {
-            ACCEPT_ALL: "¡Listo!",
-            CONSENT_MODAL: {
-                ARIA: "Formulario de consentimiento de cookies"
-            },
-            DESCRIPTION: "Usamos cookies para mejorar tu experiencia de juego y analizar el tráfico web. Para obtener más información, consulta nuestro [pp]Aviso de Privacidad[/pp].",
-            REJECT_ALL: "No participar"
-        },
-        a7 = {
-            UNSUPPORTED_BROWSER: "El juego no es compatible con este navegador. En '?' o AYUDA puedes ver la lista de navegadores compatibles.",
-            ROOM_IS_FULL: "La partida está completa",
-            ROOM_NOT_FOUND: "No se encuentra la sala",
-            AUDIENCE_IS_FULL: "El público está completo",
-            UNABLE_TO_CONNECT: "No podemos conectarte a los servidores de Jackbox Games. Puede ser debido a los bloqueadores de anuncios y las extensiones de privacidad.",
-            UNABLE_TO_PRELOAD: "No se puede precargar este paquete de juegos",
-            KICKED: "No puedes unirte porque un moderador te expulsó",
-            REQUIRES_TWITCH_LOGIN: "Este juego requiere inicio de sesión de Twitch",
-            ROOM_IS_LOCKED: "La partida está bloqueada",
-            INCORRECT_PASSWORD: "Contraseña incorrecta",
-            GENERIC: "Error al unirte a la partida",
-            FILTER_NAME: "Esta partida tiene activados los filtros de lenguaje soez. Elige un nombre diferente."
-        },
-        c7 = {
-            NAME: "NOMBRE",
-            NAME_PLACEHOLDER: "ESCRIBE TU NOMBRE",
-            PASSWORD_PLACEHOLDER: "INGRESA CONTRASEÑA DE 5 DÍGITOS",
-            PASSWORD_REQUIRED_TITLE: "Requiere contraseña",
-            PASSWORD_REQUIRED_BODY: "Ingresa la contraseña o únete como parte del público",
-            PASSWORD_JOIN_AS_PLAYER: "Unirse como jugador",
-            PASSWORD_JOIN_AS_AUDIENCE: "Unirse al público",
-            ROOM_CODE: "CÓDIGO DE LA SALA",
-            ROOM_CODE_PLACEHOLDER: "INGRESA EL CÓDIGO DE 4 CARACTERES"
-        },
-        u7 = "Enlace a la página de inicio de Jackbox Games",
-        l7 = {
-            APPEARANCE: "APARIENCIA",
-            DARK: "oscura",
-            HELP: "AYUDA",
-            TWITCH: "TWITCH",
-            LIGHT: "clara",
-            LOGOUT: "CERRAR SESIÓN",
-            MERCH: "PRODUCTOS",
-            PAST_GAMES: "PARTIDAS ANTERIORES",
-            MAILING_LIST: "LISTA DE CORREO",
-            MODERATOR: "MODERADOR"
-        },
-        f7 = {
-            CALL_TO_ACTION: {
-                SHOP: "VER JUEGO Y TIENDA",
-                VIEW: "VER ESTE JUEGO"
-            },
-            NEW: "NUEVO",
-            PLAYED_ON: "SE JUGÓ EN",
-            REMOVE: {
-                CONFIRM: "¿De verdad?",
-                DESCRIPTION: `Eliminarás permanentemente este juego
-de tu lista de partidas anteriores.`,
-                MANAGE: "¿Eliminar juego?",
-                TITLE: "¿De verdad?"
-            }
-        },
-        d7 = {
-            EMPTY: "Aún no hay partidas anteriores",
-            MANAGE: "ADMINISTRAR",
-            TITLE: "TUS PARTIDAS ANTERIORES"
-        },
-        h7 = {
-            TITLE: "PARTIDAS RECIENTES",
-            VIEW_ALL: {
-                BUTTON: "VER TODOS",
-                LINK: "VER TODAS LAS PARTIDAS ANTERIORES"
-            }
-        },
-        p7 = {
-            GAME_FULL: "La partida está completa",
-            GAME_STARTED: "La partida ha empezado",
-            ROOM_NOT_FOUND: "No se encuentra la sala"
-        },
-        g7 = {
-            GAME_FULL: "LA PARTIDA ESTÁ COMPLETA",
-            GAME_STARTED: "LA PARTIDA HA EMPEZADO",
-            JOIN_AUDIENCE: "UNIRSE AL PÚBLICO",
-            RECONNECT: "RECONECTAR",
-            TWITCH_LOGIN: "INICIAR SESIÓN CON TWITCH"
-        },
-        _7 = {
-            CAMERA: "[b]AVISO:[/b] No se detecta ninguna cámara, pero igual puedes jugar sin una foto. Si crees que se trata de un error, cambia de navegador.",
-            STYLE: "[b]AVISO:[/b] Tu navegador está un poco desactualizado, así que es posible que el juego no se vea del todo bien.",
-            TOS: "Al hacer clic en {submit}, aceptas las [tos]Condiciones del servicio[/tos]"
-        },
-        m7 = {
-            BRANCH: s7,
-            COOKIE: o7,
-            ERROR: a7,
-            FORM: c7,
-            HOMEPAGE_LINK: u7,
-            MENU: l7,
-            PAST_GAME: f7,
-            PAST_GAMES: d7,
-            RECENT_GAMES: h7,
-            STATUS: p7,
-            SUBMIT: g7,
-            WARNING: _7
-        },
-        v7 = {
-            LABEL: "RAMO",
-            REFRESH_REQUIRED: "Atualização obrigatória",
-            PREFERRED: "RAMO DE PREFERÊNCIA",
-            SELECT: "Selecione um ramo",
-            WAITING: "Aguardando sala"
-        },
-        E7 = {
-            ACCEPT_ALL: "Entendi!",
-            CONSENT_MODAL: {
-                ARIA: "Formulário de consentimento ao uso de cookies"
-            },
-            DESCRIPTION: "Nós usamos cookies para aprimorar sua experiência de jogo e analisar o tráfego do site. Saiba mais na nossa [pp]Política de Privacidade[/pp].",
-            REJECT_ALL: "Recusar"
-        },
-        y7 = {
-            UNSUPPORTED_BROWSER: "Este jogo não é compatível com este navegador. Clique em “?” ou “AJUDA” para ver uma lista de navegadores compatíveis.",
-            ROOM_IS_FULL: "O jogo está lotado",
-            ROOM_NOT_FOUND: "Sala não encontrada",
-            AUDIENCE_IS_FULL: "A plateia atingiu lotação máxima",
-            UNABLE_TO_CONNECT: "Não foi possível se conectar ao servidor da Jackbox Games. Geralmente isso se deve a bloqueadores de anúncios ou extensões de privacidade.",
-            UNABLE_TO_PRELOAD: "Não foi possível pré-carregar este pacote de jogo",
-            KICKED: "Não é possível entrar, pois um moderador expulsou você",
-            REQUIRES_TWITCH_LOGIN: "O jogo requer login na Twitch",
-            ROOM_IS_LOCKED: "O jogo é privado",
-            INCORRECT_PASSWORD: "Senha incorreta",
-            GENERIC: "Erro ao entrar neste jogo",
-            FILTER_NAME: "Filtros de linguagem imprópria estão ativos neste jogo. Escolha outro nome."
-        },
-        T7 = {
-            NAME: "NOME",
-            NAME_PLACEHOLDER: "INSIRA SEU NOME",
-            PASSWORD_PLACEHOLDER: "INSIRA UMA SENHA DE 5 DÍGITOS",
-            PASSWORD_REQUIRED_TITLE: "Senha obrigatória",
-            PASSWORD_REQUIRED_BODY: "Insira a senha ou entre como espectador",
-            PASSWORD_JOIN_AS_PLAYER: "Entrar como jogador",
-            PASSWORD_JOIN_AS_AUDIENCE: "Entrar como espectador",
-            ROOM_CODE: "CÓDIGO DA SALA",
-            ROOM_CODE_PLACEHOLDER: "INSIRA O CÓDIGO DE 4 LETRAS"
-        },
-        b7 = "Link para a página da Jackbox Games",
-        S7 = {
-            APPEARANCE: "TEMA",
-            DARK: "escuro",
-            HELP: "AJUDA",
-            TWITCH: "TWITCH",
-            LIGHT: "claro",
-            LOGOUT: "DESCONECTAR",
-            MERCH: "PRODUTOS",
-            PAST_GAMES: "JOGOS ANTERIORES",
-            MAILING_LIST: "LISTA DE E-MAILS",
-            MODERATOR: "MODERADOR"
-        },
-        O7 = {
-            CALL_TO_ACTION: {
-                SHOP: "VER JOGO E EXPLORAR",
-                VIEW: "VER ESTE JOGO"
-            },
-            NEW: "NOVO",
-            PLAYED_ON: "JOGADO EM",
-            REMOVE: {
-                CONFIRM: "Tem certeza?",
-                DESCRIPTION: `Este jogo será removido permanentemente
-de sua lista de jogos anteriores.`,
-                MANAGE: "Remover jogo?",
-                TITLE: "Tem certeza?"
-            }
-        },
-        A7 = {
-            EMPTY: "Nenhum jogo anterior",
-            MANAGE: "GERENCIAR",
-            TITLE: "SEUS JOGOS ANTERIORES"
-        },
-        I7 = {
-            TITLE: "JOGOS RECENTES",
-            VIEW_ALL: {
-                BUTTON: "VER TUDO",
-                LINK: "VER TODOS OS JOGOS ANTERIORES"
-            }
-        },
-        R7 = {
-            GAME_FULL: "O jogo está lotado",
-            GAME_STARTED: "O jogo começou",
-            ROOM_NOT_FOUND: "Sala não encontrada"
-        },
-        N7 = {
-            GAME_FULL: "O JOGO ESTÁ LOTADO",
-            GAME_STARTED: "O JOGO COMEÇOU",
-            JOIN_AUDIENCE: "ENTRAR COMO ESPECTADOR",
-            RECONNECT: "RECONECTAR",
-            TWITCH_LOGIN: "FAZER LOGIN COM A TWITCH"
-        },
-        C7 = {
-            CAMERA: "[b]AVISO:[/b] não detectamos nenhuma câmera, mas você ainda pode jogar sem foto. Se preferir, tente entrar com outro navegador.",
-            STYLE: "[b]AVISO:[/b] seu navegador está desatualizado e terá problemas para exibir o jogo.",
-            TOS: "Clicando em {submit}, você concordará com os nossos [tos]Termos de Serviço[/tos]"
-        },
-        w7 = {
-            BRANCH: v7,
-            COOKIE: E7,
-            ERROR: y7,
-            FORM: T7,
-            HOMEPAGE_LINK: b7,
-            MENU: S7,
-            PAST_GAME: O7,
-            PAST_GAMES: A7,
-            RECENT_GAMES: I7,
-            STATUS: R7,
-            SUBMIT: N7,
-            WARNING: C7
-        },
         L7 = {
             en: o5,
-            fr: E5,
-            it: P5,
-            de: q5,
-            es: i7,
-            "es-XL": m7,
-            "pt-BR": w7
+            pl: q5
         },
         Fr = (e, t) => {
             const r = e.__vccOpts || e;
@@ -11428,84 +10094,27 @@ ${t}`
             MODAL: Zne,
             WARNING: eie
         },
-        rie = {
-            BUY_NOW: "Acheter",
-            SLOGAN: "Slogan",
-            SLOGAN_PLACEHOLDER: "SAISISSEZ VOTRE SLOGAN"
-        },
-        nie = {
-            INSTRUCTIONS: "Faites un dessin"
-        },
-        iie = {
-            INSTRUCTIONS: "Ajoutez votre slogan",
-            DISCLAIMER: "* Cette image est un aperçu. Le positionnement final du dessin et du slogan peut varier."
-        },
-        sie = {
-            POST_SUBMIT: "Merci pour votre visite ! Cliquez ci-dessous pour acheter votre T-shirt. Assurez-vous de conserver le lien si vous voulez finaliser votre achat ultérieurement !"
-        },
-        oie = {
-            TEXT: "Si vous poursuivez, vous ne pourrez plus modifier votre T-shirt. Finaliser ?"
-        },
-        aie = {
-            TOS: "En cliquant sur {submit}, vous acceptez nos [tos]Conditions de service[/tos]"
-        },
-        cie = {
-            FORM: rie,
-            DRAWING: nie,
-            ASSEMBLING: iie,
-            INSTRUCTIONS: sie,
-            MODAL: oie,
-            WARNING: aie
-        },
-        uie = {
-            BUY_NOW: "Compra ora",
-            SLOGAN: "Slogan",
-            SLOGAN_PLACEHOLDER: "INSERISCI IL TUO SLOGAN"
-        },
-        lie = {
-            INSTRUCTIONS: "Crea il tuo design"
-        },
-        fie = {
-            INSTRUCTIONS: "Aggiungi il tuo slogan",
-            DISCLAIMER: "* Questa immagine è solo un'anteprima. Il posizionamento effettivo del disegno e dello slogan può variare."
-        },
-        die = {
-            POST_SUBMIT: "Grazie della visita! Clicca qui sotto per acquistare la tua maglietta. Assicurati di salvare il link per dopo se vuoi fare acquisti in un secondo momento!"
-        },
-        hie = {
-            TEXT: "Da qui in poi non sarà più possibile modificare la maglietta. Vuoi terminare?"
-        },
-        pie = {
-            TOS: "Selezionando {submit}, accetti le [tos]Condizioni del servizio[/tos]"
-        },
-        gie = {
-            FORM: uie,
-            DRAWING: lie,
-            ASSEMBLING: fie,
-            INSTRUCTIONS: die,
-            MODAL: hie,
-            WARNING: pie
-        },
+
         _ie = {
-            BUY_NOW: "Jetzt kaufen",
+            BUY_NOW: "Kup teraz",
             SLOGAN: "Slogan",
-            SLOGAN_PLACEHOLDER: "GIB DEINEN SLOGAN EIN"
+            SLOGAN_PLACEHOLDER: "WPISZ SWÓJ SLOGAN"
         },
         mie = {
-            INSTRUCTIONS: "Zeichne dein Motiv"
+            INSTRUCTIONS: "Narysuj swój projekt"
         },
         vie = {
-            INSTRUCTIONS: "Füge deinen Slogan hinzu",
-            DISCLAIMER: "* Dieses Bild ist nur eine Voransicht. Die tatsächliche Platzierung von Zeichnung und Slogan können abweichen."
+            INSTRUCTIONS: "Dodaj swój slogan",
+            DISCLAIMER: "* Ten obraz służy wyłącznie do celów podglądowych. Rzeczywiste umiejscowienie projektu i sloganu może się różnić."
         },
         Eie = {
-            POST_SUBMIT: "Vielen Dank für deinen Besuch! Klicke hier unten, um dein Shirt zu kaufen. Vergiss nicht, dir den Link zu kopieren, falls du später weitershoppen möchtest!"
+            POST_SUBMIT: "Dziękujemy za wizytę! Kliknij poniżej, aby kupić koszulkę. Nie zapomnij skopiować linku, jeśli chcesz kontynuować zakupy później!"
         },
         yie = {
-            TEXT: "Fortzufahren bedeutet, dass du das Shirt nicht weiter editieren kannst. Bist du sicher, dass du fertig bist?"
+            TEXT: "Kontynuowanie oznacza, że ​​nie będziesz już mógł edytować koszulki. Czy na pewno skończyłeś?"
         },
         Tie = {
-            TOS: "Wenn du auf {submit} klickst, erklärst du dich mit unseren [tos]Nutzungsbedingungen[/tos] einverstanden"
+            TOS: "Klikając {submit}, akceptujesz nasze [tos]Warunki korzystania z usługi[/tos]"
         },
         bie = {
             FORM: _ie,
@@ -11515,101 +10124,9 @@ ${t}`
             MODAL: yie,
             WARNING: Tie
         },
-        Sie = {
-            BUY_NOW: "Comprar ya",
-            SLOGAN: "Eslogan",
-            SLOGAN_PLACEHOLDER: "INTRODUCE TU ESLOGAN"
-        },
-        Oie = {
-            INSTRUCTIONS: "Dibuja tu diseño"
-        },
-        Aie = {
-            INSTRUCTIONS: "Añade tu eslogan",
-            DISCLAIMER: "* Esta imagen muestra una vista previa. La colocación final del dibujo y el eslogan pueden variar."
-        },
-        Iie = {
-            POST_SUBMIT: "¡Gracias por pasarte por aquí! Haz clic más abajo para comprar tu camiseta. ¡Asegúrate de guardar el enlace si quieres terminar la compra más tarde!"
-        },
-        Rie = {
-            TEXT: "Si sigues adelante, no podrás seguir editando tu camiseta. ¿Ya has terminado?"
-        },
-        Nie = {
-            TOS: "Al hacer clic en {submit}, aceptas las [tos]Condiciones del servicio[/tos]"
-        },
-        Cie = {
-            FORM: Sie,
-            DRAWING: Oie,
-            ASSEMBLING: Aie,
-            INSTRUCTIONS: Iie,
-            MODAL: Rie,
-            WARNING: Nie
-        },
-        wie = {
-            BUY_NOW: "Comprar ahora",
-            SLOGAN: "Eslogan",
-            SLOGAN_PLACEHOLDER: "ESCRIBE TU ESLOGAN"
-        },
-        Lie = {
-            INSTRUCTIONS: "Dibuja tu diseño"
-        },
-        Pie = {
-            INSTRUCTIONS: "Agrega tu slogan",
-            DISCLAIMER: "* Esta imagen es solo una vista preliminar. La colocación final del dibujo y el eslogan puede variar."
-        },
-        $ie = {
-            POST_SUBMIT: "¡Gracias por pasar! Haz clic debajo para comprar tu camiseta. ¡Asegúrate de guardar el enlace si quieres terminar de comprar más tarde!"
-        },
-        Die = {
-            TEXT: "Si continúas, ya no podrás seguir editando tu camiseta. ¿Todo listo para terminar?"
-        },
-        xie = {
-            TOS: "Al hacer clic en {submit}, aceptas las [tos]Condiciones del servicio[/tos]"
-        },
-        Mie = {
-            FORM: wie,
-            DRAWING: Lie,
-            ASSEMBLING: Pie,
-            INSTRUCTIONS: $ie,
-            MODAL: Die,
-            WARNING: xie
-        },
-        kie = {
-            BUY_NOW: "Comprar agora",
-            SLOGAN: "Frase",
-            SLOGAN_PLACEHOLDER: "INSIRA SUA FRASE"
-        },
-        Uie = {
-            INSTRUCTIONS: "Desenhe sua arte"
-        },
-        Bie = {
-            INSTRUCTIONS: "Adicione sua frase",
-            DISCLAIMER: "*Esta imagem é só uma prévia. A diagramação final do desenho e da frase podem variar."
-        },
-        Fie = {
-            POST_SUBMIT: "Agradecemos a preferência! Clique no botão abaixo para comprar sua camiseta. Guarde o link se quiser continuar a compra depois!"
-        },
-        Gie = {
-            TEXT: "Não será mais possível editar a sua camiseta. Concluir?"
-        },
-        Wie = {
-            TOS: "Clicando em {submit}, você concordará com os nossos [tos]Termos de Serviço[/tos]"
-        },
-        jie = {
-            FORM: kie,
-            DRAWING: Uie,
-            ASSEMBLING: Bie,
-            INSTRUCTIONS: Fie,
-            MODAL: Gie,
-            WARNING: Wie
-        },
         Hie = {
             en: tie,
-            fr: cie,
-            it: gie,
-            de: bie,
-            es: Cie,
-            "es-XL": Mie,
-            "pt-BR": jie
+            pl: bie
         },
         qie = Br({
             props: {
@@ -12142,20 +10659,8 @@ ${t}`
                         displayValue: "English",
                         value: "en"
                     }, {
-                        displayValue: "Français",
-                        value: "fr"
-                    }, {
-                        displayValue: "Italiano",
-                        value: "it"
-                    }, {
-                        displayValue: "Deutsch",
-                        value: "de"
-                    }, {
-                        displayValue: "Castellano",
-                        value: "es"
-                    }, {
-                        displayValue: "Español",
-                        value: "es-XL"
+                        displayValue: "Polski",
+                        value: "pl"
                     }],
                     nameLength: 12,
                     name: "",

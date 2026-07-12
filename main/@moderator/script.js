@@ -1648,7 +1648,7 @@ class pa {
         return pG(e[0], ...e)
     }
 }
-ge(pa, "locale"), ge(pa, "supported", ["en", "fr", "it", "de", "es", "es-XL", "pt-BR"]);
+ge(pa, "locale"), ge(pa, "supported", ["en", "pl"]);
 var Oi;
 let Ui = (Oi = class {
     static get serverUrl() {
@@ -10802,12 +10802,7 @@ const kF = {
     },
     I6 = {
         en: QF,
-        fr: h9,
-        it: y9,
-        de: G9,
-        es: t6,
-        "es-XL": _6,
-        "pt-BR": O6
+        pl: G9
     },
     N6 = {
         LABEL: "BRANCH",
@@ -10920,324 +10915,102 @@ from your past games list.`,
         SUBMIT: G6,
         WARNING: V6
     },
-    W6 = {
-        LABEL: "SECTION",
-        REFRESH_REQUIRED: "Actualisation requise",
-        PREFERRED: "SECTION PRÉFÉRÉE",
-        SELECT: "Choisissez une section",
-        WAITING: "En attente de la salle"
-    },
-    H6 = {
-        ACCEPT_ALL: "Compris !",
-        CONSENT_MODAL: {
-            ARIA: "Formulaire d'acceptation des cookies"
-        },
-        DESCRIPTION: "Nous utilisons les cookies pour améliorer votre expérience de jeu et analyser le trafic du site. Plus d'infos sur notre [pp]politique de confidentialité[/pp].",
-        REJECT_ALL: "Refuser"
-    },
-    j6 = {
-        UNSUPPORTED_BROWSER: "Le jeu n'est pas compatible avec votre navigateur. Allez sur '?' ou sur AIDE pour afficher une liste des navigateurs compatibles.",
-        ROOM_IS_FULL: "La salle est pleine.",
-        ROOM_NOT_FOUND: "Salle introuvable",
-        AUDIENCE_IS_FULL: "Il n'y a plus de place dans le public.",
-        UNABLE_TO_CONNECT: "Impossible de se connecter au serveur de Jackbox Games. Les bloqueurs de publicité ou les modules de protection de la confidentialité sont généralement à l'origine de ce problème.",
-        UNABLE_TO_PRELOAD: "Impossible de précharger ce pack de jeux",
-        KICKED: "Vous ne pouvez pas rejoindre la partie, parce que vous avez été éjecté(e) par un modérateur.",
-        REQUIRES_TWITCH_LOGIN: "Ce jeu nécessite une connexion Twitch.",
-        ROOM_IS_LOCKED: "La salle est fermée.",
-        INCORRECT_PASSWORD: "Mot de passe incorrect",
-        GENERIC: "Erreur en rejoignant la salle",
-        FILTER_NAME: "Le filtre anti-grossièreté est activé pour cette partie. Veuillez choisir un autre nom."
-    },
-    X6 = {
-        NAME: "NOM",
-        NAME_PLACEHOLDER: "INDIQUEZ VOTRE NOM",
-        PASSWORD_PLACEHOLDER: "TAPEZ UN MOT DE PASSE À 5 CHIFFRES",
-        PASSWORD_REQUIRED_TITLE: "Mot de passe requis",
-        PASSWORD_REQUIRED_BODY: "Indiquez le mot de passe ou rejoignez la salle en tant que spectateur.",
-        PASSWORD_JOIN_AS_PLAYER: "Rejoindre en tant que joueur",
-        PASSWORD_JOIN_AS_AUDIENCE: "Rejoindre en tant que spectateur",
-        ROOM_CODE: "CODE DE SALLE",
-        ROOM_CODE_PLACEHOLDER: "TAPEZ LE CODE À 4 LETTRES"
-    },
-    q6 = "Lien vers la page d'accueil de Jackbox Games",
-    Y6 = {
-        APPEARANCE: "APPARENCE",
-        DARK: "sombre",
-        HELP: "AIDE",
-        TWITCH: "TWITCH",
-        LIGHT: "clair",
-        LOGOUT: "DÉCONNEXION",
-        MERCH: "PRODUITS DÉRIVÉS",
-        PAST_GAMES: "ANCIENNES PARTIES",
-        MAILING_LIST: "LISTE DE DIFFUSION",
-        MODERATOR: "MODÉRATEUR"
-    },
-    z6 = {
-        CALL_TO_ACTION: {
-            SHOP: "VOIR LE JEU ET LA BOUTIQUE",
-            VIEW: "VOIR CETTE PARTIE"
-        },
-        NEW: "NOUVEAU",
-        PLAYED_ON: "JOUÉE LE",
-        REMOVE: {
-            CONFIRM: "Êtes-vous sûr ?",
-            DESCRIPTION: `Cela supprimera définitivement cette partie
-de votre liste d'anciennes parties.`,
-            MANAGE: "Supprimer la partie ?",
-            TITLE: "Êtes-vous sûr ?"
-        }
-    },
-    J6 = {
-        EMPTY: "Aucune ancienne partie",
-        MANAGE: "GÉRER",
-        TITLE: "VOS ANCIENNES PARTIES"
-    },
-    Z6 = {
-        TITLE: "PARTIES RÉCENTES",
-        VIEW_ALL: {
-            BUTTON: "VOIR TOUT",
-            LINK: "VOIR TOUTES LES ANCIENNES PARTIES"
-        }
-    },
-    Q6 = {
-        GAME_FULL: "La salle est pleine.",
-        GAME_STARTED: "La partie a commencé.",
-        ROOM_NOT_FOUND: "Salle introuvable"
-    },
-    e7 = {
-        GAME_FULL: "LA SALLE EST PLEINE.",
-        GAME_STARTED: "LA PARTIE A COMMENCÉ.",
-        JOIN_AUDIENCE: "REJOINDRE EN TANT QUE SPECTATEUR",
-        RECONNECT: "SE RECONNECTER",
-        TWITCH_LOGIN: "SE CONNECTER AVEC TWITCH"
-    },
-    t7 = {
-        CAMERA: "[b]ATTENTION :[/b] Nous ne détectons aucune caméra, mais vous pouvez jouer sans afficher votre photo. Si vous pensez qu'il s'agit d'une erreur, essayez de rejoindre en utilisant un autre navigateur.",
-        STYLE: "[b]ATTENTION :[/b] Votre navigateur semble obsolète. Vous risquez de rencontrer des problèmes d'affichage avec ce jeu.",
-        TOS: "En cliquant sur {submit}, vous acceptez nos [tos]Conditions de service[/tos]."
-    },
-    r7 = {
-        BRANCH: W6,
-        COOKIE: H6,
-        ERROR: j6,
-        FORM: X6,
-        HOMEPAGE_LINK: q6,
-        MENU: Y6,
-        PAST_GAME: z6,
-        PAST_GAMES: J6,
-        RECENT_GAMES: Z6,
-        STATUS: Q6,
-        SUBMIT: e7,
-        WARNING: t7
-    },
-    n7 = {
-        LABEL: "BRANCH",
-        REFRESH_REQUIRED: "Ricarica necessaria",
-        PREFERRED: "BRANCH PREFERITA",
-        SELECT: "Scegli una branch",
-        WAITING: "In attesa di una stanza"
-    },
-    i7 = {
-        ACCEPT_ALL: "Capito!",
-        CONSENT_MODAL: {
-            ARIA: "Modulo di consenso sui cookie"
-        },
-        DESCRIPTION: "Usiamo i cookie per migliorare l'esperienza di gioco e analizzare il traffico del sito web. Per maggiori informazioni consulta la nostra [pp]Informativa sulla privacy[/pp].",
-        REJECT_ALL: "Nega consenso"
-    },
-    s7 = {
-        UNSUPPORTED_BROWSER: "Il gioco non è supportato dal browser attualmente in uso. Clicca su '?' o AIUTO per visualizzare la lista dei browser compatibili.",
-        ROOM_IS_FULL: "La partita è al completo",
-        ROOM_NOT_FOUND: "Stanza non trovata",
-        AUDIENCE_IS_FULL: "Il pubblico è al completo",
-        UNABLE_TO_CONNECT: "Impossibile collegarsi al server Jackbox Games. Solitamente il problema è causato da adblocker o estensioni per la privacy.",
-        UNABLE_TO_PRELOAD: "Impossibile pre-caricare questo bundle di giochi",
-        KICKED: "Non puoi unirti perché un moderatore ti ha cacciato",
-        REQUIRES_TWITCH_LOGIN: "Questo gioco richiede l'accesso a Twitch",
-        ROOM_IS_LOCKED: "La stanza è bloccata",
-        INCORRECT_PASSWORD: "Password errata",
-        GENERIC: "Impossibile entrare in questa stanza",
-        FILTER_NAME: "Questa partita ha i filtri delle volgarità attivi. Scegli un nome diverso."
-    },
-    a7 = {
-        NAME: "NOME",
-        NAME_PLACEHOLDER: "INSERISCI IL TUO NOME",
-        PASSWORD_PLACEHOLDER: "INSERISCI LA PASSWORD DI 5 CARATTERI",
-        PASSWORD_REQUIRED_TITLE: "Password necessaria",
-        PASSWORD_REQUIRED_BODY: "Inserisci la password o partecipa come pubblico",
-        PASSWORD_JOIN_AS_PLAYER: "Partecipa come giocatore",
-        PASSWORD_JOIN_AS_AUDIENCE: "Partecipa come pubblico",
-        ROOM_CODE: "CODICE STANZA",
-        ROOM_CODE_PLACEHOLDER: "INSERISCI IL CODICE DI 4 LETTERE"
-    },
-    o7 = "Link alla homepage di Jackbox Games",
-    u7 = {
-        APPEARANCE: "ASPETTO",
-        DARK: "scuro",
-        HELP: "AIUTO",
-        TWITCH: "TWITCH",
-        LIGHT: "chiaro",
-        LOGOUT: "ESCI",
-        MERCH: "NEGOZIO",
-        PAST_GAMES: "PARTITE PRECEDENTI",
-        MAILING_LIST: "NEWSLETTER",
-        MODERATOR: "MODERATORE"
-    },
-    l7 = {
-        CALL_TO_ACTION: {
-            SHOP: "VISUALIZZA GIOCO E NEGOZIO",
-            VIEW: "VISUALIZZA QUESTO GIOCO"
-        },
-        NEW: "NUOVO",
-        PLAYED_ON: "GIOCATO IL",
-        REMOVE: {
-            CONFIRM: "Confermi?",
-            DESCRIPTION: `Quest'azione rimuoverà per sempre questo gioco
-dalla lista dei giochi precedenti.`,
-            MANAGE: "Rimuovere gioco?",
-            TITLE: "Confermi?"
-        }
-    },
-    f7 = {
-        EMPTY: "Nessun gioco precedente",
-        MANAGE: "GESTISCI",
-        TITLE: "I TUOI GIOCHI PRECEDENTI"
-    },
-    c7 = {
-        TITLE: "GIOCHI RECENTI",
-        VIEW_ALL: {
-            BUTTON: "VISUALIZZA TUTTO",
-            LINK: "VISUALIZZA TUTTI I GIOCHI RECENTI"
-        }
-    },
-    E7 = {
-        GAME_FULL: "La partita è al completo",
-        GAME_STARTED: "La partita è già iniziata",
-        ROOM_NOT_FOUND: "Stanza non trovata"
-    },
-    h7 = {
-        GAME_FULL: "LA PARTITA È AL COMPLETO",
-        GAME_STARTED: "LA PARTITA È GIÀ INIZIATA",
-        JOIN_AUDIENCE: "PARTECIPA COME PUBBLICO",
-        RECONNECT: "RICOLLEGATI",
-        TWITCH_LOGIN: "ACCEDI CON TWITCH"
-    },
-    p7 = {
-        CAMERA: "[b]AVVISO:[/b] Non rileviamo la telecamera, ma puoi giocare anche senza aggiungere una foto. Se la cosa non ti torna, prova ad accedere usando un altro browser.",
-        STYLE: "[b]AVVISO:[/b] Il tuo browser è obsoleto e avrà dei problemi a visualizzare il gioco.",
-        TOS: "Selezionando {submit}, accetti le [tos]Condizioni del servizio[/tos]"
-    },
-    _7 = {
-        BRANCH: n7,
-        COOKIE: i7,
-        ERROR: s7,
-        FORM: a7,
-        HOMEPAGE_LINK: o7,
-        MENU: u7,
-        PAST_GAME: l7,
-        PAST_GAMES: f7,
-        RECENT_GAMES: c7,
-        STATUS: E7,
-        SUBMIT: h7,
-        WARNING: p7
-    },
     g7 = {
-        LABEL: "ZWEIG",
-        REFRESH_REQUIRED: "Refresh benötigt",
-        PREFERRED: "BEVORZUGTER ZWEIG",
-        SELECT: "Wähle deinen Zweig aus",
-        WAITING: "Warte auf Raum"
+        LABEL: "GAŁĄŹ",
+        REFRESH_REQUIRED: "Wymagane odświeżenie",
+        PREFERRED: "PREFEROWANA GAŁĄŹ",
+        SELECT: "Wybierz swoją gałąź",
+        WAITING: "Oczekiwanie na pokój"
     },
     T7 = {
         ACCEPT_ALL: "Okay!",
         CONSENT_MODAL: {
-            ARIA: "Cookie-Zustimmung"
+            ARIA: "Zgoda na pliki cookie"
         },
-        DESCRIPTION: "Wir verwenden Cookies, um deine Spielerfahrung zu verbessern und unseren Web-Traffic zu analysieren. Mehr darüber kannst du in unserer [pp]Datenschutzrichtlinie[/pp] erfahren.",
-        REJECT_ALL: "Ablehnen"
+        DESCRIPTION: "Używamy plików cookie, aby poprawić twoje doświadczenie z gry i analizować ruch na naszej stronie. Więcej informacji znajdziesz w naszej [pp]polityce prywatności[/pp].",
+        REJECT_ALL: "Odrzuć"
     },
     R7 = {
-        UNSUPPORTED_BROWSER: "Dieses Spiel wird von diesem Browser nicht unterstützt. Unter '?' und HILFE findest du eine vollständige Liste an kompatiblen Browsern.",
-        ROOM_IS_FULL: "Das Spiel ist voll",
-        ROOM_NOT_FOUND: "Raum wurde nicht gefunden.",
-        AUDIENCE_IS_FULL: "Das Publikum ist voll",
-        UNABLE_TO_CONNECT: "Es konnte keine Verbindung zum Server von Jackbox Games hergestellt werden. Dies wird häufig durch Adblocker oder Privacy Extensions verursacht.",
-        UNABLE_TO_PRELOAD: "Preload dieses Bundles ist nicht möglich",
-        KICKED: "Du kannst nicht beitreten, weil du von einem Moderator gekickt wurdest",
-        REQUIRES_TWITCH_LOGIN: "Für diesen Spiel ist Twitch erforderlich",
-        ROOM_IS_LOCKED: "Spiel verschlossen",
-        INCORRECT_PASSWORD: "Falsches Passwort",
-        GENERIC: "Fehler beim Betreten des Spiels",
-        FILTER_NAME: "Der Familientauglichkeits-Filter des Spiels ist aktiviert. Wähle einen anderen Namen."
+        UNSUPPORTED_BROWSER: "Ta gra nie jest obsługiwana przez tę przeglądarkę. Pod '?' i POMOC znajdziesz pełną listę kompatybilnych przeglądarek.",
+        ROOM_IS_FULL: "Gra jest pełna",
+        ROOM_NOT_FOUND: "Nie znaleziono pokoju.",
+        AUDIENCE_IS_FULL: "Publiczność jest pełna",
+        UNABLE_TO_CONNECT: "Nie udało się połączyć z serwerem Jackbox Games. Często jest to spowodowane przez blokery reklam lub rozszerzenia prywatności.",
+        UNABLE_TO_PRELOAD: "Nie można wstępnie załadować tego pakietu",
+        KICKED: "Nie możesz dołączyć, ponieważ moderator cię wyrzucił",
+        REQUIRES_TWITCH_LOGIN: "Ta gra wymaga Twitcha",
+        ROOM_IS_LOCKED: "Gra jest zablokowana",
+        INCORRECT_PASSWORD: "Nieprawidłowe hasło",
+        GENERIC: "Błąd podczas dołączania do gry",
+        FILTER_NAME: "Filtr rodzinny gry jest włączony. Wybierz inną nazwę."
     },
     d7 = {
-        NAME: "NAME",
-        NAME_PLACEHOLDER: "GIB DEINEN NAMEN EIN",
-        PASSWORD_PLACEHOLDER: "FÜNFSTELLIGES PASSWORT EINGEBEN",
-        PASSWORD_REQUIRED_TITLE: "Passwort benötigt",
-        PASSWORD_REQUIRED_BODY: "Bitte gib das Passwort ein oder setze dich ins Publikum",
-        PASSWORD_JOIN_AS_PLAYER: "Als Spieler beitreten",
-        PASSWORD_JOIN_AS_AUDIENCE: "Ins Publikum setzen",
-        ROOM_CODE: "RAUMCODE",
-        ROOM_CODE_PLACEHOLDER: "GIB DEN 4-STELLIGEN CODE EIN"
+        NAME: "IMIĘ",
+        NAME_PLACEHOLDER: "WPISZ SWOJE IMIĘ",
+        PASSWORD_PLACEHOLDER: "WPISZ PIĘCIOZNAKOWE HASŁO",
+        PASSWORD_REQUIRED_TITLE: "Wymagane hasło",
+        PASSWORD_REQUIRED_BODY: "Wpisz hasło albo dołącz do publiczności",
+        PASSWORD_JOIN_AS_PLAYER: "Dołącz jako gracz",
+        PASSWORD_JOIN_AS_AUDIENCE: "Dołącz do publiczności",
+        ROOM_CODE: "KOD POKOJU",
+        ROOM_CODE_PLACEHOLDER: "WPISZ 4-ZNAKOWY KOD"
     },
-    m7 = "Link zur Homepage von Jackbox Games",
+    m7 = "Link do strony głównej Jackbox Games",
     x7 = {
-        APPEARANCE: "DARSTELLUNG",
-        DARK: "Dunkel",
-        HELP: "HILFE",
+        APPEARANCE: "WYGLĄD",
+        DARK: "Ciemny",
+        HELP: "POMOC",
         TWITCH: "TWITCH",
-        LIGHT: "Hell",
-        LOGOUT: "ABMELDEN",
-        MERCH: "MERCH",
-        PAST_GAMES: "ANDERE SPIELE",
-        MAILING_LIST: "MAILINGLISTE",
+        LIGHT: "Jasny",
+        LOGOUT: "WYLOGUJ",
+        MERCH: "SKLEP",
+        PAST_GAMES: "INNE GRY",
+        MAILING_LIST: "LISTA MAILINGOWA",
         MODERATOR: "MODERATOR"
     },
     A7 = {
         CALL_TO_ACTION: {
-            SHOP: "SPIEL UND SHOP ANSEHEN",
-            VIEW: "DIESES SPIEL ANSEHEN"
+            SHOP: "ZOBACZ GRĘ I SKLEP",
+            VIEW: "ZOBACZ TĘ GRĘ"
         },
-        NEW: "NEU",
-        PLAYED_ON: "GESPIELT AM",
+        NEW: "NOWE",
+        PLAYED_ON: "GRANO DNIA",
         REMOVE: {
-            CONFIRM: "Bist du sicher?",
-            DESCRIPTION: `Dies wird das Spiel dauerhaft aus der Liste
-deiner bisherigen Spiele entfernen.`,
-            MANAGE: "Spiel entfernen?",
-            TITLE: "Bist du sicher?"
+            CONFIRM: "Czy na pewno?",
+            DESCRIPTION: `To trwale usunie grę z listy
+twoich poprzednich gier.`,
+            MANAGE: "Usunąć grę?",
+            TITLE: "Czy na pewno?"
         }
     },
     S7 = {
-        EMPTY: "Noch keine bisherigen Spiele",
-        MANAGE: "VERWALTEN",
-        TITLE: "DEINE BISHERIGEN SPIELE"
+        EMPTY: "Brak poprzednich gier",
+        MANAGE: "ZARZĄDZAJ",
+        TITLE: "TWOJE POPRZEDNIE GRY"
     },
     v7 = {
-        TITLE: "AKTUELLE SPIELE",
+        TITLE: "AKTUALNE GRY",
         VIEW_ALL: {
-            BUTTON: "ALLE ANSEHEN",
-            LINK: "ALLE BISHERIGEN SPIELE ANSEHEN"
+            BUTTON: "ZOBACZ WSZYSTKIE",
+            LINK: "ZOBACZ WSZYSTKIE POPRZEDNIE GRY"
         }
     },
     b7 = {
-        GAME_FULL: "Spiel ist voll",
-        GAME_STARTED: "Spiel hat bereits begonnen",
-        ROOM_NOT_FOUND: "Raum wurde nicht gefunden."
+        GAME_FULL: "Gra jest pełna",
+        GAME_STARTED: "Gra już się rozpoczęła",
+        ROOM_NOT_FOUND: "Nie znaleziono pokoju."
     },
     L7 = {
-        GAME_FULL: "SPIEL IST VOLL",
-        GAME_STARTED: "SPIEL HAT BEREITS BEGONNEN",
-        JOIN_AUDIENCE: "INS PUBLIKUM SETZEN",
-        RECONNECT: "NEU VERBINDEN",
-        TWITCH_LOGIN: "MIT TWITCH ANMELDEN"
+        GAME_FULL: "GRA JEST PEŁNA",
+        GAME_STARTED: "GRA JUŻ SIĘ ROZPOCZĘŁA",
+        JOIN_AUDIENCE: "DOŁĄCZ DO PUBLICZNOŚCI",
+        RECONNECT: "POŁĄCZ PONOWNIE",
+        TWITCH_LOGIN: "ZALOGUJ PRZEZ TWITCH"
     },
     y7 = {
-        CAMERA: "[b]ACHTUNG:[/b] Es wurde keine Kamera erkannt, aber du kannst das Spiel auch ohne Foto spielen. Falls eine Kamera vorhanden ist, probiere es mit einem anderen Browser.",
-        STYLE: "[b]ACHTUNG:[/b] Dein Browser scheint etwas veraltet zu sein. Es könnte Probleme bei der Anzeige dieses Spiels geben.",
-        TOS: "Wenn du auf {submit} klickst, erklärst du dich mit unseren [tos]Nutzungsbedingungen[/tos] einverstanden"
+        CAMERA: "[b]UWAGA:[/b] Nie wykryto kamery, ale możesz grać także bez zdjęcia. Jeśli masz kamerę, spróbuj użyć innej przeglądarki.",
+        STYLE: "[b]UWAGA:[/b] Twoja przeglądarka wydaje się nieco przestarzała. Mogą wystąpić problemy z wyświetlaniem tej gry.",
+        TOS: "Klikając {submit}, akceptujesz nasze [tos]warunki korzystania[/tos]"
     },
     C7 = {
         BRANCH: g7,
@@ -11253,347 +11026,10 @@ deiner bisherigen Spiele entfernen.`,
         SUBMIT: L7,
         WARNING: y7
     },
-    O7 = {
-        LABEL: "RAMA",
-        REFRESH_REQUIRED: "Actualización requerida",
-        PREFERRED: "RAMA PREFERIDA",
-        SELECT: "Selecciona una rama",
-        WAITING: "Esperando la sala"
-    },
-    I7 = {
-        ACCEPT_ALL: "¡Vale!",
-        CONSENT_MODAL: {
-            ARIA: "Formulario de consentimiento para el uso de cookies"
-        },
-        DESCRIPTION: "Usamos las cookies para mejorar tu experiencia de juego y analizar el tráfico del sitio web. Puedes encontrar más información en nuestra [pp]política de privacidad[/pp].",
-        REJECT_ALL: "No aceptar"
-    },
-    N7 = {
-        UNSUPPORTED_BROWSER: "El juego no es compatible con este navegador. En '?' y AYUDA puedes ver la lista de navegadores compatibles.",
-        ROOM_IS_FULL: "La sala está llena",
-        ROOM_NOT_FOUND: "No se encuentra la sala",
-        AUDIENCE_IS_FULL: "El público está completo",
-        UNABLE_TO_CONNECT: "No ha podido establecerse conexión con el servidor de Jackbox Games. Puede ser debido a los bloqueadores de anuncios o a las extensiones de privacidad.",
-        UNABLE_TO_PRELOAD: "No se ha podido precargar este lote de juegos",
-        KICKED: "No puedes unirte porque te ha expulsado un moderador",
-        REQUIRES_TWITCH_LOGIN: "Este juego requiere un inicio de sesión de Twitch",
-        ROOM_IS_LOCKED: "El juego está bloqueado",
-        INCORRECT_PASSWORD: "Contraseña incorrecta",
-        GENERIC: "Error al unirte al juego",
-        FILTER_NAME: "Esta partida tiene activados los filtros de lenguaje malsonante. Elige un nombre diferente."
-    },
-    U7 = {
-        NAME: "NOMBRE",
-        NAME_PLACEHOLDER: "INDICA TU NOMBRE",
-        PASSWORD_PLACEHOLDER: "INTRODUCIR CONTRASEÑA DE 5 DÍGITOS",
-        PASSWORD_REQUIRED_TITLE: "Hace falta una contraseña",
-        PASSWORD_REQUIRED_BODY: "Introduce la contraseña o únete como público",
-        PASSWORD_JOIN_AS_PLAYER: "Unirse como jugador",
-        PASSWORD_JOIN_AS_AUDIENCE: "Unirse como público",
-        ROOM_CODE: "CÓDIGO DE LA SALA",
-        ROOM_CODE_PLACEHOLDER: "INTRODUCIR CÓDIGO DE 4 CARACTERES"
-    },
-    P7 = "Enlace a la página inicial de Jackbox Games",
-    D7 = {
-        APPEARANCE: "APARIENCIA",
-        DARK: "oscura",
-        HELP: "AYUDA",
-        TWITCH: "TWITCH",
-        LIGHT: "clara",
-        LOGOUT: "CERRAR SESIÓN",
-        MERCH: "MERCHANDISING",
-        PAST_GAMES: "PARTIDAS ANTERIORES",
-        MAILING_LIST: "LISTA DE CORREO",
-        MODERATOR: "MODERADOR"
-    },
-    B7 = {
-        CALL_TO_ACTION: {
-            SHOP: "VER JUEGO Y COMPRAR",
-            VIEW: "VER ESTE JUEGO"
-        },
-        NEW: "NUEVO",
-        PLAYED_ON: "SE JUEGA EN",
-        REMOVE: {
-            CONFIRM: "¿Estás seguro?",
-            DESCRIPTION: `Esto eliminará de forma permanente esta partida
-de tu lista de partidas anteriores.`,
-            MANAGE: "¿Retirar partida?",
-            TITLE: "¿Estás seguro?"
-        }
-    },
-    w7 = {
-        EMPTY: "Todavía no hay partidas anteriores",
-        MANAGE: "ADMINISTRAR",
-        TITLE: "PARTIDAS ANTERIORES"
-    },
-    K7 = {
-        TITLE: "PARTIDAS RECIENTES",
-        VIEW_ALL: {
-            BUTTON: "VER TODO",
-            LINK: "VER TODAS LAS PARTIDAS ANTERIORES"
-        }
-    },
-    $7 = {
-        GAME_FULL: "La partida está completa",
-        GAME_STARTED: "La partida ha empezado",
-        ROOM_NOT_FOUND: "No se encuentra la sala"
-    },
-    M7 = {
-        GAME_FULL: "LA PARTIDA ESTÁ COMPLETA",
-        GAME_STARTED: "LA PARTIDA HA EMPEZADO",
-        JOIN_AUDIENCE: "UNIRSE COMO PÚBLICO",
-        RECONNECT: "RECONECTAR",
-        TWITCH_LOGIN: "INICIAR SESIÓN CON TWITCH"
-    },
-    k7 = {
-        CAMERA: "[b]AVISO:[/b] No se detecta ninguna cámara, pero puedes jugar sin foto. Si crees que se trata de un error, cambia de navegador.",
-        STYLE: "[b]AVISO:[/b] Tu navegador está un poco desactualizado, así que es posible que el juego no se vea del todo bien.",
-        TOS: "Al hacer clic en {submit}, aceptas las [tos]Condiciones del servicio[/tos]"
-    },
-    G7 = {
-        BRANCH: O7,
-        COOKIE: I7,
-        ERROR: N7,
-        FORM: U7,
-        HOMEPAGE_LINK: P7,
-        MENU: D7,
-        PAST_GAME: B7,
-        PAST_GAMES: w7,
-        RECENT_GAMES: K7,
-        STATUS: $7,
-        SUBMIT: M7,
-        WARNING: k7
-    },
-    V7 = {
-        LABEL: "RAMA",
-        REFRESH_REQUIRED: "Requiere actualizar",
-        PREFERRED: "RAMA PREFERIDA",
-        SELECT: "Selecciona una rama",
-        WAITING: "Esperando una sala"
-    },
-    F7 = {
-        ACCEPT_ALL: "¡Listo!",
-        CONSENT_MODAL: {
-            ARIA: "Formulario de consentimiento de cookies"
-        },
-        DESCRIPTION: "Usamos cookies para mejorar tu experiencia de juego y analizar el tráfico web. Para obtener más información, consulta nuestro [pp]Aviso de Privacidad[/pp].",
-        REJECT_ALL: "No participar"
-    },
-    W7 = {
-        UNSUPPORTED_BROWSER: "El juego no es compatible con este navegador. En '?' o AYUDA puedes ver la lista de navegadores compatibles.",
-        ROOM_IS_FULL: "La partida está completa",
-        ROOM_NOT_FOUND: "No se encuentra la sala",
-        AUDIENCE_IS_FULL: "El público está completo",
-        UNABLE_TO_CONNECT: "No podemos conectarte a los servidores de Jackbox Games. Puede ser debido a los bloqueadores de anuncios y las extensiones de privacidad.",
-        UNABLE_TO_PRELOAD: "No se puede precargar este paquete de juegos",
-        KICKED: "No puedes unirte porque un moderador te expulsó",
-        REQUIRES_TWITCH_LOGIN: "Este juego requiere inicio de sesión de Twitch",
-        ROOM_IS_LOCKED: "La partida está bloqueada",
-        INCORRECT_PASSWORD: "Contraseña incorrecta",
-        GENERIC: "Error al unirte a la partida",
-        FILTER_NAME: "Esta partida tiene activados los filtros de lenguaje soez. Elige un nombre diferente."
-    },
-    H7 = {
-        NAME: "NOMBRE",
-        NAME_PLACEHOLDER: "ESCRIBE TU NOMBRE",
-        PASSWORD_PLACEHOLDER: "INGRESA CONTRASEÑA DE 5 DÍGITOS",
-        PASSWORD_REQUIRED_TITLE: "Requiere contraseña",
-        PASSWORD_REQUIRED_BODY: "Ingresa la contraseña o únete como parte del público",
-        PASSWORD_JOIN_AS_PLAYER: "Unirse como jugador",
-        PASSWORD_JOIN_AS_AUDIENCE: "Unirse al público",
-        ROOM_CODE: "CÓDIGO DE LA SALA",
-        ROOM_CODE_PLACEHOLDER: "INGRESA EL CÓDIGO DE 4 CARACTERES"
-    },
-    j7 = "Enlace a la página de inicio de Jackbox Games",
-    X7 = {
-        APPEARANCE: "APARIENCIA",
-        DARK: "oscura",
-        HELP: "AYUDA",
-        TWITCH: "TWITCH",
-        LIGHT: "clara",
-        LOGOUT: "CERRAR SESIÓN",
-        MERCH: "PRODUCTOS",
-        PAST_GAMES: "PARTIDAS ANTERIORES",
-        MAILING_LIST: "LISTA DE CORREO",
-        MODERATOR: "MODERADOR"
-    },
-    q7 = {
-        CALL_TO_ACTION: {
-            SHOP: "VER JUEGO Y TIENDA",
-            VIEW: "VER ESTE JUEGO"
-        },
-        NEW: "NUEVO",
-        PLAYED_ON: "SE JUGÓ EN",
-        REMOVE: {
-            CONFIRM: "¿De verdad?",
-            DESCRIPTION: `Eliminarás permanentemente este juego
-de tu lista de partidas anteriores.`,
-            MANAGE: "¿Eliminar juego?",
-            TITLE: "¿De verdad?"
-        }
-    },
-    Y7 = {
-        EMPTY: "Aún no hay partidas anteriores",
-        MANAGE: "ADMINISTRAR",
-        TITLE: "TUS PARTIDAS ANTERIORES"
-    },
-    z7 = {
-        TITLE: "PARTIDAS RECIENTES",
-        VIEW_ALL: {
-            BUTTON: "VER TODOS",
-            LINK: "VER TODAS LAS PARTIDAS ANTERIORES"
-        }
-    },
-    J7 = {
-        GAME_FULL: "La partida está completa",
-        GAME_STARTED: "La partida ha empezado",
-        ROOM_NOT_FOUND: "No se encuentra la sala"
-    },
-    Z7 = {
-        GAME_FULL: "LA PARTIDA ESTÁ COMPLETA",
-        GAME_STARTED: "LA PARTIDA HA EMPEZADO",
-        JOIN_AUDIENCE: "UNIRSE AL PÚBLICO",
-        RECONNECT: "RECONECTAR",
-        TWITCH_LOGIN: "INICIAR SESIÓN CON TWITCH"
-    },
-    Q7 = {
-        CAMERA: "[b]AVISO:[/b] No se detecta ninguna cámara, pero igual puedes jugar sin una foto. Si crees que se trata de un error, cambia de navegador.",
-        STYLE: "[b]AVISO:[/b] Tu navegador está un poco desactualizado, así que es posible que el juego no se vea del todo bien.",
-        TOS: "Al hacer clic en {submit}, aceptas las [tos]Condiciones del servicio[/tos]"
-    },
-    eW = {
-        BRANCH: V7,
-        COOKIE: F7,
-        ERROR: W7,
-        FORM: H7,
-        HOMEPAGE_LINK: j7,
-        MENU: X7,
-        PAST_GAME: q7,
-        PAST_GAMES: Y7,
-        RECENT_GAMES: z7,
-        STATUS: J7,
-        SUBMIT: Z7,
-        WARNING: Q7
-    },
-    tW = {
-        LABEL: "RAMO",
-        REFRESH_REQUIRED: "Atualização obrigatória",
-        PREFERRED: "RAMO DE PREFERÊNCIA",
-        SELECT: "Selecione um ramo",
-        WAITING: "Aguardando sala"
-    },
-    rW = {
-        ACCEPT_ALL: "Entendi!",
-        CONSENT_MODAL: {
-            ARIA: "Formulário de consentimento ao uso de cookies"
-        },
-        DESCRIPTION: "Nós usamos cookies para aprimorar sua experiência de jogo e analisar o tráfego do site. Saiba mais na nossa [pp]Política de Privacidade[/pp].",
-        REJECT_ALL: "Recusar"
-    },
-    nW = {
-        UNSUPPORTED_BROWSER: "Este jogo não é compatível com este navegador. Clique em “?” ou “AJUDA” para ver uma lista de navegadores compatíveis.",
-        ROOM_IS_FULL: "O jogo está lotado",
-        ROOM_NOT_FOUND: "Sala não encontrada",
-        AUDIENCE_IS_FULL: "A plateia atingiu lotação máxima",
-        UNABLE_TO_CONNECT: "Não foi possível se conectar ao servidor da Jackbox Games. Geralmente isso se deve a bloqueadores de anúncios ou extensões de privacidade.",
-        UNABLE_TO_PRELOAD: "Não foi possível pré-carregar este pacote de jogo",
-        KICKED: "Não é possível entrar, pois um moderador expulsou você",
-        REQUIRES_TWITCH_LOGIN: "O jogo requer login na Twitch",
-        ROOM_IS_LOCKED: "O jogo é privado",
-        INCORRECT_PASSWORD: "Senha incorreta",
-        GENERIC: "Erro ao entrar neste jogo",
-        FILTER_NAME: "Filtros de linguagem imprópria estão ativos neste jogo. Escolha outro nome."
-    },
-    iW = {
-        NAME: "NOME",
-        NAME_PLACEHOLDER: "INSIRA SEU NOME",
-        PASSWORD_PLACEHOLDER: "INSIRA UMA SENHA DE 5 DÍGITOS",
-        PASSWORD_REQUIRED_TITLE: "Senha obrigatória",
-        PASSWORD_REQUIRED_BODY: "Insira a senha ou entre como espectador",
-        PASSWORD_JOIN_AS_PLAYER: "Entrar como jogador",
-        PASSWORD_JOIN_AS_AUDIENCE: "Entrar como espectador",
-        ROOM_CODE: "CÓDIGO DA SALA",
-        ROOM_CODE_PLACEHOLDER: "INSIRA O CÓDIGO DE 4 LETRAS"
-    },
-    sW = "Link para a página da Jackbox Games",
-    aW = {
-        APPEARANCE: "TEMA",
-        DARK: "escuro",
-        HELP: "AJUDA",
-        TWITCH: "TWITCH",
-        LIGHT: "claro",
-        LOGOUT: "DESCONECTAR",
-        MERCH: "PRODUTOS",
-        PAST_GAMES: "JOGOS ANTERIORES",
-        MAILING_LIST: "LISTA DE E-MAILS",
-        MODERATOR: "MODERADOR"
-    },
-    oW = {
-        CALL_TO_ACTION: {
-            SHOP: "VER JOGO E EXPLORAR",
-            VIEW: "VER ESTE JOGO"
-        },
-        NEW: "NOVO",
-        PLAYED_ON: "JOGADO EM",
-        REMOVE: {
-            CONFIRM: "Tem certeza?",
-            DESCRIPTION: `Este jogo será removido permanentemente
-de sua lista de jogos anteriores.`,
-            MANAGE: "Remover jogo?",
-            TITLE: "Tem certeza?"
-        }
-    },
-    uW = {
-        EMPTY: "Nenhum jogo anterior",
-        MANAGE: "GERENCIAR",
-        TITLE: "SEUS JOGOS ANTERIORES"
-    },
-    lW = {
-        TITLE: "JOGOS RECENTES",
-        VIEW_ALL: {
-            BUTTON: "VER TUDO",
-            LINK: "VER TODOS OS JOGOS ANTERIORES"
-        }
-    },
-    fW = {
-        GAME_FULL: "O jogo está lotado",
-        GAME_STARTED: "O jogo começou",
-        ROOM_NOT_FOUND: "Sala não encontrada"
-    },
-    cW = {
-        GAME_FULL: "O JOGO ESTÁ LOTADO",
-        GAME_STARTED: "O JOGO COMEÇOU",
-        JOIN_AUDIENCE: "ENTRAR COMO ESPECTADOR",
-        RECONNECT: "RECONECTAR",
-        TWITCH_LOGIN: "FAZER LOGIN COM A TWITCH"
-    },
-    EW = {
-        CAMERA: "[b]AVISO:[/b] não detectamos nenhuma câmera, mas você ainda pode jogar sem foto. Se preferir, tente entrar com outro navegador.",
-        STYLE: "[b]AVISO:[/b] seu navegador está desatualizado e terá problemas para exibir o jogo.",
-        TOS: "Clicando em {submit}, você concordará com os nossos [tos]Termos de Serviço[/tos]"
-    },
-    hW = {
-        BRANCH: tW,
-        COOKIE: rW,
-        ERROR: nW,
-        FORM: iW,
-        HOMEPAGE_LINK: sW,
-        MENU: aW,
-        PAST_GAME: oW,
-        PAST_GAMES: uW,
-        RECENT_GAMES: lW,
-        STATUS: fW,
-        SUBMIT: cW,
-        WARNING: EW
-    },
+
     pW = {
         en: F6,
-        fr: r7,
-        it: _7,
-        de: C7,
-        es: G7,
-        "es-XL": eW,
-        "pt-BR": hW
+        pl: C7
     },
     Rr = (t, e) => {
         const r = t.__vccOpts || t;
@@ -12339,97 +11775,31 @@ const ose = {
         WARNING: cse,
         SUBMITTED_BY: Ese
     },
-    pse = {
-        GAME: "Jeu",
-        PASSWORD: "MOT DE PASSE"
-    },
-    _se = {
-        KICK: "Éjecter ?",
-        KICK_PLAYERS: "ÉJECTER DES JOUEURS",
-        MODERATE: "Modéré",
-        APPROVE_ALL: "Tout accepter",
-        REJECT_ALL: "Tout refuser"
-    },
-    gse = {
-        ROOM_DESTROYED: "Merci pour votre aide !"
-    },
-    Tse = {
-        DISABLED: "Modération désactivée",
-        KICKED: "ÉJECTÉ",
-        UNSUPPORTED: "Modération impossible",
-        WAITING_FOR_SUBMISSIONS: "En attente de propositions"
-    },
-    Rse = {
-        DISABLED: "Le paramètre de modération est désactivé pour ce jeu. Activez-le et relancez le jeu pour modérer le contenu.",
-        UNSUPPORTED: "Il n'y a rien à modérer dans {gameName}, mais merci d'avoir voulu aider !"
-    },
-    dse = "Envoyé par :",
-    mse = {
-        FORM: pse,
-        ACTION: _se,
-        ERROR: gse,
-        STATUS: Tse,
-        WARNING: Rse,
-        SUBMITTED_BY: dse
-    },
-    xse = {
-        GAME: "Gioco",
-        PASSWORD: "PASSWORD"
-    },
-    Ase = {
-        KICK: "Cacciare?",
-        KICK_PLAYERS: "CACCIA GIOCATORI",
-        MODERATE: "Modera",
-        APPROVE_ALL: "Approva tutto",
-        REJECT_ALL: "Rifiuta tutto"
-    },
-    Sse = {
-        ROOM_DESTROYED: "Grazie per l'aiuto!"
-    },
-    vse = {
-        DISABLED: "Moderazione disabilitata",
-        KICKED: "CACCIATO/A",
-        UNSUPPORTED: "Moderazione non supportata",
-        WAITING_FOR_SUBMISSIONS: "In attesa di invii"
-    },
-    bse = {
-        DISABLED: "La moderazione è disattivata per questo gioco. Per moderare i contenuti, attivala e riavvia il gioco.",
-        UNSUPPORTED: "{gameName} non ha nulla da moderare, ma grazie per l'aiuto!"
-    },
-    Lse = "Inviato da:",
-    yse = {
-        FORM: xse,
-        ACTION: Ase,
-        ERROR: Sse,
-        STATUS: vse,
-        WARNING: bse,
-        SUBMITTED_BY: Lse
-    },
     Cse = {
-        GAME: "Spiel",
-        PASSWORD: "PASSWORT"
+        GAME: "Gra",
+        PASSWORD: "HASŁO"
     },
     Ose = {
-        KICK: "Kicken?",
-        KICK_PLAYERS: "SPIELER KICKEN",
-        MODERATE: "Moderieren",
-        APPROVE_ALL: "Alles erlauben",
-        REJECT_ALL: "Alles zurückweisen"
+        KICK: "Wyrzucić?",
+        KICK_PLAYERS: "WYRZUĆ GRACZY",
+        MODERATE: "Moderuj",
+        APPROVE_ALL: "Zatwierdź wszystko",
+        REJECT_ALL: "Odrzuć wszystko"
     },
     Ise = {
-        ROOM_DESTROYED: "Danke fürs Helfen!"
+        ROOM_DESTROYED: "Dzięki za pomoc!"
     },
     Nse = {
-        DISABLED: "Moderation deaktiviert",
-        KICKED: "GEKICKT",
-        UNSUPPORTED: "Moderation nicht unterstützt",
-        WAITING_FOR_SUBMISSIONS: "Warte auf Einreichungen"
+        DISABLED: "Moderacja wyłączona",
+        KICKED: "WYRZUCONO",
+        UNSUPPORTED: "Moderacja nieobsługiwana",
+        WAITING_FOR_SUBMISSIONS: "Oczekiwanie na zgłoszenia"
     },
     Use = {
-        DISABLED: "Moderation für dieses Spiel ist ausgeschaltet Schalte sie ein und starte das Spiel erneut, um Inhalte moderieren zu können.",
-        UNSUPPORTED: "{gameName} hat keine zu moderierenden Inhalte, aber danke, dass du helfen wolltest!"
+        DISABLED: "Moderacja dla tej gry jest wyłączona. Włącz ją i uruchom grę ponownie, aby móc moderować treści.",
+        UNSUPPORTED: "{gameName} nie ma treści do moderowania, ale dzięki za chęć pomocy!"
     },
-    Pse = "Gesendet von:",
+    Pse = "Wysłane przez:",
     Dse = {
         FORM: Cse,
         ACTION: Ose,
@@ -12438,113 +11808,9 @@ const ose = {
         WARNING: Use,
         SUBMITTED_BY: Pse
     },
-    Bse = {
-        GAME: "Juego",
-        PASSWORD: "CONTRASEÑA"
-    },
-    wse = {
-        KICK: "¿Expulsar?",
-        KICK_PLAYERS: "EXPULSAR JUGADORES",
-        MODERATE: "Moderar",
-        APPROVE_ALL: "Aprobar todo",
-        REJECT_ALL: "Rechazar todo"
-    },
-    Kse = {
-        ROOM_DESTROYED: "¡Gracias por ayudar!"
-    },
-    $se = {
-        DISABLED: "Moderación deshabilitada",
-        KICKED: "EXPULSADO",
-        UNSUPPORTED: "Moderación no admitida",
-        WAITING_FOR_SUBMISSIONS: "Esperando aportaciones"
-    },
-    Mse = {
-        DISABLED: "La moderación para este juego está desactivada. Actívala y reinicia el juego para moderar el contenido.",
-        UNSUPPORTED: "{gameName} no tiene nada que moderar, ¡pero ¡gracias por querer ayudar!"
-    },
-    kse = "Enviado por:",
-    Gse = {
-        FORM: Bse,
-        ACTION: wse,
-        ERROR: Kse,
-        STATUS: $se,
-        WARNING: Mse,
-        SUBMITTED_BY: kse
-    },
-    Vse = {
-        GAME: "Juego",
-        PASSWORD: "CONTRASEÑA"
-    },
-    Fse = {
-        KICK: "¿Expulsar?",
-        KICK_PLAYERS: "EXPULSAR JUGADORES",
-        MODERATE: "Moderar",
-        APPROVE_ALL: "Aprobar todo",
-        REJECT_ALL: "Rechazar todo"
-    },
-    Wse = {
-        ROOM_DESTROYED: "¡Gracias por tu ayuda!"
-    },
-    Hse = {
-        DISABLED: "Moderación desactivada",
-        KICKED: "EXPULSADO",
-        UNSUPPORTED: "Moderación sin soporte",
-        WAITING_FOR_SUBMISSIONS: "Esperando entregas"
-    },
-    jse = {
-        DISABLED: "La moderación para esta partida está desactivada. Actívala y reinicia el juego para moderar el contenido.",
-        UNSUPPORTED: "{gameName} no tiene nada que moderar, ¡pero gracias por querer ayudar!"
-    },
-    Xse = "Enviado por:",
-    qse = {
-        FORM: Vse,
-        ACTION: Fse,
-        ERROR: Wse,
-        STATUS: Hse,
-        WARNING: jse,
-        SUBMITTED_BY: Xse
-    },
-    Yse = {
-        GAME: "Jogo",
-        PASSWORD: "SENHA"
-    },
-    zse = {
-        KICK: "Expulsar?",
-        KICK_PLAYERS: "EXPULSAR JOGADORES",
-        MODERATE: "Moderar",
-        APPROVE_ALL: "Aprovar todos",
-        REJECT_ALL: "Rejeitar todos"
-    },
-    Jse = {
-        ROOM_DESTROYED: "Obrigado por ajudar!"
-    },
-    Zse = {
-        DISABLED: "Moderação desativada",
-        KICKED: "EXPULSO(A)",
-        UNSUPPORTED: "Moderação não suportada",
-        WAITING_FOR_SUBMISSIONS: "Aguardando envios"
-    },
-    Qse = {
-        DISABLED: "A configuração de moderação para este jogo está desativada. Ative-a e reinicie o jogo para moderar o conteúdo.",
-        UNSUPPORTED: "{gameName} não tem nenhum conteúdo a ser moderado, mas agradecemos a disposição em ajudar!"
-    },
-    eae = "Enviado por:",
-    tae = {
-        FORM: Yse,
-        ACTION: zse,
-        ERROR: Jse,
-        STATUS: Zse,
-        WARNING: Qse,
-        SUBMITTED_BY: eae
-    },
     rae = {
         en: hse,
-        fr: mse,
-        it: yse,
-        de: Dse,
-        es: Gse,
-        "es-XL": qse,
-        "pt-BR": tae
+        pl: Dse
     },
     nae = Wr({
         components: {
