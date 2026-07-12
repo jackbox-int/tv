@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@sentry/browser": "^7.0.0",
+    "grapheme-splitter": "^1.0.4",
+    "lodash-es": "^4.17.21",
+    "mixpanel-browser": "2.48.1",
+    "mock-socket": "^9.3.1",
+    "whatwg-fetch": "^3.6.20"
+  }
+}
