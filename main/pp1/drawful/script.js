@@ -16769,7 +16769,7 @@ const lc = Et.View.extend({
         },
         showTwitchBroadcasterDialog(t) {
             let e = `<div class='icon-${this.client.roles.broadcaster.platform}'>${this.client.roles.broadcaster.name}</div>`;
-            e += "<div class='success'>You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.</div>", this.lacksAudience ? e += "<div class='warning'>THIS GAME DOESN'T HAVE AN AUDIENCE FEATURE</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), kt.show("custom", {
+            e += "<div class='success'>Udało ci się połączyć konto do rozszerzenia Jackbox Audience Kit Twitch.</div>", this.lacksAudience ? e += "<div class='warning'>TA GRA NIE MA OPCJI PUBLICZNOŚCI</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), kt.show("custom", {
                 html: e,
                 position: "bottom",
                 timer: t,
@@ -16808,8 +16808,8 @@ const lc = Et.View.extend({
         },
         onRoomWasDestroyed() {
             en.remove("roomCode"), en.remove("reconnect"), kt.show("error", {
-                titleText: "Disconnected",
-                text: "Thanks for playing!",
+                titleText: "Rozłączono",
+                text: "Dzięki za grę!",
                 willClose: () => {
                     window.location.reload(!0)
                 }
@@ -16817,7 +16817,7 @@ const lc = Et.View.extend({
         },
         onDisconnected() {
             kt.show("error", {
-                titleText: "Disconnected",
+                titleText: "Rozłączono",
                 text: "Sesja została przerwana.",
                 willClose: () => {
                     window.location.reload(!0)
@@ -20383,8 +20383,8 @@ Et.View.extend({
             </div>`;
         e += `
             <div class='success'>
-                You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.
-            </div>`, this.lacksAudience ? e += "<div class='warning'>THIS GAME DOESN'T HAVE AN AUDIENCE FEATURE</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), kt.show("custom", {
+                Udało ci się połączyć konto do rozszerzenia Jackbox Audience Kit Twitch.
+            </div>`, this.lacksAudience ? e += "<div class='warning'>TA GRA NIE MA OPCJI PUBLICZNOŚCI</div>" : this.client.roomInfo.audienceEnabled || (e += "<div class='warning'>THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED</div>"), kt.show("custom", {
             html: e,
             position: "bottom",
             timer: t,
