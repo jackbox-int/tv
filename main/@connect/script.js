@@ -718,7 +718,7 @@ class qs {
         return d6(e[0], ...e)
     }
 }
-Xn(qs, "locale"), Xn(qs, "supported", ["en", "pl"]);
+Xn(qs, "locale"), Xn(qs, "supported", ["en"]);
 const Za = class Za {
     static get serverUrl() {
         const e = this.getQueryParam("server") ?? this.getQueryParam("s");
@@ -8713,161 +8713,7 @@ class Ej {
         }
     }
 }
-const mj = {
-        BACK: "Back",
-        CANCEL: "Cancel",
-        CLOSE: "Close",
-        CONFIRM: "Confirm",
-        CREATE: "Create",
-        DELETE: "Delete",
-        DONE: "Done",
-        EDIT: "Edit",
-        OK: "OK",
-        NEXT: "Next",
-        NO: "No",
-        PLAY: "Play",
-        PUBLISH: "Publish",
-        REMOVE: "Remove",
-        RESET: "Reset",
-        SUBMIT: "Submit",
-        TRY_AGAIN: "Try Again",
-        UNDO: "Undo",
-        YES: "Yes"
-    },
-    gj = {
-        UGC: {
-            VISIBILITY_CONTROLLER_OFF: "prompts hidden on players’ devices",
-            VISIBILITY_CONTROLLER_ON: "prompts shown on players’ devices",
-            VISIBILITY_SCREEN_OFF: "prompts hidden on game screen",
-            VISIBILITY_SCREEN_ON: "prompts shown on game screen"
-        }
-    },
-    _j = {
-        DISCONNECTED: "You have been disconnected.",
-        DRAWING_NOTHING: "You have to draw something!",
-        PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-        ROOM_DESTROYED: "Thanks for playing!",
-        ROOM_DISCONNECTED: "Disconnected",
-        TEXT_NAUGHTY: "I’m afraid you can’t write that. Please be respectful of other players.",
-        TEXT_NOTHING: "You can’t enter nothing!",
-        TITLE: "Error"
-    },
-    Tj = "LOADING",
-    vj = {
-        JOINED_COUNT: "{count} of {maxPlayers} players joined",
-        PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
-        WAITING_FOR_VIP: "Waiting for {name} to start the game",
-        WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-        WAITING_FOR_NEW_GAME: "Waiting for a new game to start",
-        GAME_STARTING: "Game is starting",
-        BUTTON_START: "Press to Start",
-        BUTTON_CANCEL: "Press to Cancel"
-    },
-    bj = {
-        GALLERY_LINK: "Visit the Gallery",
-        NEW_GAME_STARTED: "A new game has started",
-        PLAY_AGAIN: "Play again?",
-        THANKS_FOR_PLAYING: "Thanks for playing!",
-        BUTTON_GO_TO_GAME: "Go to game",
-        BUTTON_GO_TO_JACKBOX: "Back to jackbox.tv",
-        BUTTON_SAME_PLAYERS: "Same players",
-        BUTTON_NEW_PLAYERS: "New players"
-    },
-    xj = {
-        AND: "AND",
-        OR: "OR"
-    },
-    Rj = {
-        BUTTON_SKIP: "Skip",
-        BUTTON_NEXT: "Next",
-        BUTTON_DONE: "Let’s Go!"
-    },
-    Sj = {
-        NAME: "AUDIENCE"
-    },
-    yj = {
-        CART: {
-            CHECK_OUT: "Check out",
-            EMPTY: "Your cart is empty",
-            TITLE: "Shopping Cart",
-            TOTAL: "Total"
-        }
-    },
-    Aj = {
-        EPISODE_REPORT: "Report Episode",
-        EPISODE_UNLOAD: "Unload Episode",
-        EPISODE_VIEW_AUTHOR: "View Author",
-        EPISODES_LOAD: "Load an episode by id:",
-        EPISODES_MENU: "Episodes Menu",
-        EPISODES_SELECT: "Or select an epsiode:",
-        EPISODES_WARNING: "Warning: user generated content is not rated",
-        INSTRUCTION: {
-            CREATE_TITLE: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-            LOAD: "create or load?",
-            PUBLISH: "publish your episode",
-            TITLE: "name your episode",
-            TOGGLE_VISIBILITY: "tap to show/hide prompts",
-            WRITE: "write your prompts"
-        },
-        WARNING: {
-            DELETE: "Are you sure you want to delete this episode?",
-            TOS: "By sharing content, you agree to our [tos]Terms of Service[/tos]",
-            TOS_AGREE: "agree and share"
-        },
-        BACK_TO_EPISODES: "back to episodes",
-        BACK_TO_MENU: "back to menu",
-        CREATE_NEW_EPISODE: "create a new episode",
-        PREVIOUS_EPISODES: "previous episodes",
-        PROMPT_ADD: "add prompt",
-        PROMPT_PLACEHOLDER: "enter a prompt",
-        PROMPTS_COUNT_HIDDEN: "({count} hidden)",
-        TITLE_PLACEHOLDER: "enter a title"
-    },
-    Lj = {
-        BROADCASTER: {
-            SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-            WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
-        },
-        RECONNECTED: {
-            TEXT: "RECONNECTED",
-            SUBTEXT: "Have fun!"
-        },
-        RECONNECTING: {
-            CONTROLLER: {
-                TEXT: "CONNECTION INTERRUPTED",
-                SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
-            },
-            GAME: {
-                TEXT: "GAME CONNECTION INTERRUPTED",
-                SUBTEXT: "Please wait while we attempt to reconnect"
-            }
-        },
-        PAUSED: {
-            TEXT: "THE GAME IS PAUSED",
-            SUBTEXT: "Anything you submit will still be sent to the game."
-        }
-    },
-    Cj = {
-        SHARE: "Share",
-        COPY_TO_CLIPBOARD: "Copy to clipboard",
-        COPIED: "Copied"
-    },
-    wj = {
-        ACTION: mj,
-        ALT: gj,
-        ERROR: _j,
-        LOADING: Tj,
-        LOBBY: vj,
-        POST_GAME: bj,
-        SEPARATOR: xj,
-        TUTORIAL: Rj,
-        AUDIENCE: Sj,
-        GALLERY: yj,
-        UGC: Aj,
-        TOAST: Lj,
-        SHARE: Cj
-    },
-    iz = {
+const iz = {
         BACK: "Wstecz",
         CANCEL: "Anuluj",
         CLOSE: "Zamknij",
@@ -9022,8 +8868,7 @@ const mj = {
         SHARE: mz
     },
     aq = {
-        en: wj,
-        pl: gz
+        en: gz
     },
     Ur = (t, e) => {
         const r = t.__vccOpts || t;
@@ -10788,117 +10633,7 @@ const Lae = Ur(Sae, [
         }
     };
 Hs("");
-const wae = {
-        LABEL: "BRANCH",
-        REFRESH_REQUIRED: "Refresh Required",
-        PREFERRED: "PREFERRED BRANCH",
-        SELECT: "Select a Branch",
-        WAITING: "Waiting for Room"
-    },
-    Oae = {
-        ACCEPT_ALL: "Got it!",
-        CONSENT_MODAL: {
-            ARIA: "Cookie consent form"
-        },
-        DESCRIPTION: "We use cookies to improve your game experience and analyze website traffic. Find out more in our [pp]Privacy Policy[/pp].",
-        REJECT_ALL: "Opt out"
-    },
-    Iae = {
-        UNSUPPORTED_BROWSER: "This game is not supported on this browser. View '?' or HELP to see a list of compatible browsers.",
-        ROOM_IS_FULL: "The game is full",
-        ROOM_NOT_FOUND: "Room not found",
-        AUDIENCE_IS_FULL: "The audience is full",
-        UNABLE_TO_CONNECT: "Unable to connect to the Jackbox Games server. This is commonly caused by adblockers or privacy extensions.",
-        UNABLE_TO_PRELOAD: "Unable to preload this game bundle",
-        KICKED: "You cannot join because you have been kicked by a moderator",
-        REQUIRES_TWITCH_LOGIN: "Game requires Twitch login",
-        ROOM_IS_LOCKED: "Game is locked",
-        INCORRECT_PASSWORD: "Incorrect password",
-        GENERIC: "Error joining this game",
-        FILTER_NAME: "This game has profanity filters enabled. Please pick a different name."
-    },
-    Nae = {
-        NAME: "NAME",
-        NAME_PLACEHOLDER: "ENTER YOUR NAME",
-        PASSWORD_PLACEHOLDER: "ENTER 5-DIGIT PASSWORD",
-        PASSWORD_REQUIRED_TITLE: "Password required",
-        PASSWORD_REQUIRED_BODY: "Please enter the password or join as an audience member",
-        PASSWORD_JOIN_AS_PLAYER: "Join as Player",
-        PASSWORD_JOIN_AS_AUDIENCE: "Join Audience",
-        ROOM_CODE: "ROOM CODE",
-        ROOM_CODE_PLACEHOLDER: "ENTER 4-LETTER CODE"
-    },
-    Pae = "Link to Jackbox Games Homepage",
-    Uae = {
-        APPEARANCE: "APPEARANCE",
-        DARK: "dark",
-        HELP: "HELP",
-        TWITCH: "TWITCH",
-        LIGHT: "light",
-        LOGOUT: "LOGOUT",
-        MERCH: "MERCH",
-        PAST_GAMES: "PAST GAMES",
-        MAILING_LIST: "MAILING LIST",
-        MODERATOR: "MODERATOR"
-    },
-    Dae = {
-        CALL_TO_ACTION: {
-            SHOP: "VIEW GAME & SHOP",
-            VIEW: "VIEW THIS GAME"
-        },
-        NEW: "NEW",
-        PLAYED_ON: "PLAYED ON",
-        REMOVE: {
-            CONFIRM: "Are you sure?",
-            DESCRIPTION: `This will permanently remove this game
-from your past games list.`,
-            MANAGE: "Remove Game?",
-            TITLE: "Are You Sure?"
-        }
-    },
-    Bae = {
-        EMPTY: "No Past Games Yet",
-        MANAGE: "MANAGE",
-        TITLE: "YOUR PAST GAMES"
-    },
-    Mae = {
-        TITLE: "RECENT GAMES",
-        VIEW_ALL: {
-            BUTTON: "VIEW ALL",
-            LINK: "VIEW ALL PAST GAMES"
-        }
-    },
-    $ae = {
-        GAME_FULL: "Game is full",
-        GAME_STARTED: "Game has started",
-        ROOM_NOT_FOUND: "Room not found"
-    },
-    Kae = {
-        GAME_FULL: "GAME IS FULL",
-        GAME_STARTED: "GAME HAS STARTED",
-        JOIN_AUDIENCE: "JOIN AUDIENCE",
-        RECONNECT: "RECONNECT",
-        TWITCH_LOGIN: "LOGIN WITH TWITCH"
-    },
-    kae = {
-        CAMERA: "[b]HEADS UP:[/b] We’re not detecting a camera, but you can still play the game without a photo. If this seems wrong, try joining with a different browser.",
-        STYLE: "[b]HEADS UP:[/b] Your browser seems a bit outdated, and will have some issues displaying this game.",
-        TOS: "By clicking {submit}, you agree to our [tos]Terms of Service[/tos]"
-    },
-    Gae = {
-        BRANCH: wae,
-        COOKIE: Oae,
-        ERROR: Iae,
-        FORM: Nae,
-        HOMEPAGE_LINK: Pae,
-        MENU: Uae,
-        PAST_GAME: Dae,
-        PAST_GAMES: Bae,
-        RECENT_GAMES: Mae,
-        STATUS: $ae,
-        SUBMIT: Kae,
-        WARNING: kae
-    },    hoe = {
+const hoe = {
         LABEL: "GAŁĄŹ",
         REFRESH_REQUIRED: "Wymagane odświeżenie",
         PREFERRED: "PREFEROWANA GAŁĄŹ",
@@ -10991,7 +10726,7 @@ twoich poprzednich gier.`,
         TWITCH_LOGIN: "ZALOGUJ PRZEZ TWITCH"
     },
     yoe = {
-        CAMERA: "[b]UWAGA:[/b] Nie wykryto kamery, ale możesz grać także bez zdjęcia. Jeśli masz kamerę, spróbuj użyć innej przeglądarki.",
+        CAMERA: "[b]UWAGA:[/b] Nie wykryto kamery, ale możesz grać także bez niej. Jeśli masz kamerę, spróbuj użyć innej przeglądarki.",
         STYLE: "[b]UWAGA:[/b] Twoja przeglądarka wydaje się nieco przestarzała. Mogą wystąpić problemy z wyświetlaniem tej gry.",
         TOS: "Klikając {submit}, akceptujesz nasze [tos]warunki korzystania[/tos]"
     },
@@ -11010,8 +10745,7 @@ twoich poprzednich gier.`,
         WARNING: yoe
     },
     Va = {
-        en: Gae,
-        pl: Aoe
+        en: Aoe
     };
 var Cf, ple = new Uint8Array(16);
 

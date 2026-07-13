@@ -8026,7 +8026,7 @@ class Sa {
         return sy(e[0], ...e)
     }
 }
-st(Sa, "locale"), st(Sa, "supported", ["en", "fr", "it", "de", "es", "es-XL"]);
+st(Sa, "locale"), st(Sa, "supported", ["en"]);
 const gl = class {
     static get serverUrl() {
         var n;
@@ -15506,16 +15506,17 @@ const EC = `<div class="canvasContainer">\r
                     this.currentStream = i, this.video.srcObject = i, await this.video.play(), this.gotDevices(a)
                 } catch (i) {
                     console.error(i), Ot.show("alert", {
-                        titleText: "Unable to Access Camera",
-                        text: `Looks like we don't have access to your device's camera. You can refresh and try again, or choose the ${t} option instead.`,
+                        titleText: "Brak dostępu do kamery",
+                        text: `Wygląda na to, że nie mamy dostępu do kamery Twojego urządzenia. Możesz odświeżyć stronę i spróbować ponownie lub wybrać opcję ${t}.`,
                         willClose: () => {
                             this.cameraAccessDenied()
                         }
                     })
                 }
             } else Ot.show("alert", {
-                titleText: "No Camera Access",
-                text: `It looks like camera access isn't available from this browser. Try the ${t} option instead.`,
+                titleText: "Brak dostępu do kamery",
+                text: `Wygląda na to, że dostęp do kamery nie jest możliwy z tej przeglądarki. Zamiast tego wypróbuj opcję ${t}
+.`,
                 willClose: () => {
                     this.cameraAccessDenied()
                 }
@@ -15668,8 +15669,8 @@ const EC = `<div class="canvasContainer">\r
                     <path d="M3 6.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0z" />
                 </svg>
             `,
-                cancelButton: "Cancel",
-                confirmButton: "Confirm"
+                cancelButton: "Anuluj",
+                confirmButton: "Potwierdź"
             }
         }
     }),
@@ -16292,7 +16293,7 @@ const MC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             <div id="submit">\r
                 <button id='submitdrawing' class="button submitDrawing">Submit</button><br/>\r
             </div>\r
-            <button id='censorOptions' class='button'>Censor Options</button>\r
+            <button id='censorOptions' class='button'>Opcje Cenzury</button>\r
             <div class="footer"></div>\r
         </div>\r
         </div>\r
@@ -16326,9 +16327,9 @@ const MC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             disabled: !1,
             debug: !1,
             strings: {
-                drawing_empty: "You must draw something!",
-                submit: "submit",
-                ERROR_REJECTED_OBJECT: "That's not allowed, enter something else!"
+                drawing_empty: "Coś musisz narysować!",
+                submit: "wyślij",
+                ERROR_REJECTED_OBJECT: "To nie jest dozwolone, spróbuj coś innego!"
             }
         }
     }),
@@ -16370,7 +16371,7 @@ const MC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
                 visible: !0,
                 updateView: !0,
                 onGet(t) {
-                    return t[0] || t[1] ? !1 : t[2] === void 0 ? "" : t[2].submit || "Submit"
+                    return t[0] || t[1] ? !1 : t[2] === void 0 ? "" : t[2].submit || "Wyślij"
                 }
             }
         },
@@ -16547,11 +16548,11 @@ const MC = `<canvas id="fullLayer" class="sketchpad fullLayer" width='480' heigh
             autocapitalize: !1,
             className: "",
             inlineSubmit: !1,
-            inlineSubmitText: "Submit",
+            inlineSubmitText: "Wyślij",
             error: "",
             strings: {
-                ERROR_NOTHING_ENTERED: "You need to enter something!",
-                ERROR_REJECTED_TEXT: "That's not allowed, enter something else! (You can change the level of filtering in the game's settings menu)"
+                ERROR_NOTHING_ENTERED: "Musisz coś napisać!",
+                ERROR_REJECTED_TEXT: "To nie jest dozwolone, spróbuj coś innego! (ograniczone przez filtry słowne - do zmiany w menu)"
             }
         }
     }),
@@ -16702,7 +16703,7 @@ yt.View.extend({
     model: new ot.Model({}),
     myViewOptions: ["width", "height", "sketchOptions"],
     template: at.template(`
-        <h1 class='title'>ImageView</h1>
+        <h1 class='title'>Obrazek</h1>
         <img class='imageData'>
     `),
     initialize(t) {
@@ -16826,7 +16827,7 @@ yt.View.extend({
     onDisconnected() {
         Ot.show("error", {
             titleText: "Disconnected",
-            text: "You have been disconnected.",
+            text: "Sesja została przerwana.",
             willClose: () => {
                 window.location.reload(!0)
             }
@@ -16895,28 +16896,28 @@ const zC = `<div id="controller" class="state-controller controller-content">
             formattedActiveContentId: null,
             isLocal: !1,
             strings: {
-                wait: "Sit back and relax!",
-                vip_waiting: "Waiting for all players to join",
-                vip_canStart: "Press this button when everybody has joined",
-                vip_cancel: "Press this button to cancel game start",
-                vip_postgame: "What would you like to do now?",
-                vip_episodes_menu: "Episodes Menu",
-                vip_episodes_unload: "Unload Episode",
-                vip_episodes_report: "Report Episode",
-                vip_episodes_warning: "Warning: user generated content is not rated",
-                vip_episodes_load: "Load an episode by id:",
-                vip_episodes_select: "Or select an episode:",
-                vip_episodes_back: "Back",
-                vip_episodes_submit: "SUBMIT",
-                vip_episodes_view_author: "View Author",
-                button_start: "Everybody's In",
-                button_cancel: "Cancel",
-                button_changename: "Change Name",
-                button_sameplayers: "Same Players",
-                button_newplayers: "New Players",
-                prompt_entername: "Enter your name",
-                prompt_choosecharacter: "Select your character",
-                button_censorOptions: "Censor Options",
+                wait: "Usiądź wygodnie i zrelaksuj się!",
+                vip_waiting: "Oczekiwanie, aż wszyscy gracze dołączą",
+                vip_canStart: "Naciśnij ten przycisk, gdy wszyscy dołączą",
+                vip_cancel: "Naciśnij ten przycisk, aby anulować rozpoczęcie gry",
+                vip_postgame: "Co chcesz teraz zrobić?",
+                vip_episodes_menu: "Menu odcinków",
+                vip_episodes_unload: "Wyłącz odcinek",
+                vip_episodes_report: "Zgłoś odcinek",
+                vip_episodes_warning: "Uwaga: treści tworzone przez użytkowników nie są oceniane",
+                vip_episodes_load: "Wczytaj odcinek po jego ID:",
+                vip_episodes_select: "Albo wybierz odcinek:",
+                vip_episodes_back: "Wstecz",
+                vip_episodes_submit: "wyślij",
+                vip_episodes_view_author: "Zobacz autora",
+                button_start: "Wszyscy są",
+                button_cancel: "Anuluj",
+                button_changename: "Zmień imię",
+                button_sameplayers: "Ci sami gracze",
+                button_newplayers: "Nowi gracze",
+                prompt_entername: "Wpisz swoje imię",
+                prompt_choosecharacter: "Wybierz swoją postać",
+                button_censorOptions: "Opcje cenzury",
                 censor_prompt: ""
             }
         }
@@ -17141,7 +17142,7 @@ const zC = `<div id="controller" class="state-controller controller-content">
                             inputAttributes: {
                                 maxlength: 12
                             },
-                            inputValidator: f => f ? f.length > 12 ? "Limit 12 characters" : null : "You need to write something!"
+                            inputValidator: f => f ? f.length > 12 ? "Maksymalnie 12 znaków" : null : "Napisz coś!"
                         });
                         if (a.dismiss) return;
                         this.triggerMethod("client:message", {
@@ -17198,19 +17199,19 @@ const zC = `<div id="controller" class="state-controller controller-content">
                         collection: new ot.Collection([])
                     });
                     a.collection.add({
-                        html: this.model.get("strings").vip_episodes_back || "Back",
+                        html: this.model.get("strings").vip_episodes_back || "Wstecz",
                         action: "back",
                         className: "backButton"
                     }), a.collection.add({
                         type: "text",
-                        html: this.model.get("strings").vip_episodes_load || "Load an episode by id:",
+                        html: this.model.get("strings").vip_episodes_load || "Załaduj odcinek po ID:",
                         className: "header"
                     }), a.collection.add({
                         type: "input",
                         preventAutosize: !0,
                         placeholder: "???-????",
                         inlineSubmit: !0,
-                        inlineSubmitText: this.model.get("strings").vip_episodes_submit || "SUBMIT",
+                        inlineSubmitText: this.model.get("strings").vip_episodes_submit || "WYŚLIJ",
                         className: "lobbyUgcInput"
                     }), a.collection.add({
                         type: "text",
@@ -17351,49 +17352,13 @@ const zC = `<div id="controller" class="state-controller controller-content">
     Bs = {
         en: {
             LANGUAGE_NAME: "English",
-            SUPPORTED_LANGUAGES: ["English", "Fran\xE7ais", "Italiano", "Deutsch", "Espa\xF1ol"],
-            SUPPORTED_LOCALES: ["en", "fr", "it", "de", "es"],
-            LANGUAGE: "Language",
-            LOGIN: "Login",
-            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Disconnected",
-            STRING_ERROR_SERVER_ROOM_DESTROYED: "Thanks for playing!"
+            SUPPORTED_LANGUAGES: ["English"],
+            SUPPORTED_LOCALES: ["en"],
+            LANGUAGE: "Jezyki",
+            LOGIN: "Zaloguj się",
+            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Rozłączono",
+            STRING_ERROR_SERVER_ROOM_DESTROYED: "Dzięki za grę!"
         },
-        fr: {
-            LANGUAGE_NAME: "Fran\xE7ais",
-            SUPPORTED_LANGUAGES: ["English", "Fran\xE7ais", "Italiano", "Deutsch", "Espa\xF1ol"],
-            SUPPORTED_LOCALES: ["en", "fr", "it", "de", "es"],
-            LANGUAGE: "Langue",
-            LOGIN: "Connexion",
-            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "D\xE9connect\xE9",
-            STRING_ERROR_SERVER_ROOM_DESTROYED: "Vous avez \xE9t\xE9 d\xE9connect\xE9"
-        },
-        it: {
-            LANGUAGE_NAME: "Italiano",
-            SUPPORTED_LANGUAGES: ["English", "Fran\xE7ais", "Italiano", "Deutsch", "Espa\xF1ol"],
-            SUPPORTED_LOCALES: ["en", "fr", "it", "de", "es"],
-            LANGUAGE: "Lingua",
-            LOGIN: "Accesso",
-            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Disconnesso",
-            STRING_ERROR_SERVER_ROOM_DESTROYED: "Disconnesso"
-        },
-        de: {
-            LANGUAGE_NAME: "Deutsche",
-            SUPPORTED_LANGUAGES: ["English", "Fran\xE7ais", "Italiano", "Deutsch", "Espa\xF1ol"],
-            SUPPORTED_LOCALES: ["en", "fr", "it", "de", "es"],
-            LANGUAGE: "Sprache",
-            LOGIN: "Login",
-            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Getrennt",
-            STRING_ERROR_SERVER_ROOM_DESTROYED: "Getrennt"
-        },
-        es: {
-            LANGUAGE_NAME: "Espa\xF1ol",
-            SUPPORTED_LANGUAGES: ["English", "Fran\xE7ais", "Italiano", "Deutsch", "Espa\xF1ol"],
-            SUPPORTED_LOCALES: ["en", "fr", "it", "de", "es"],
-            LANGUAGE: "idioma",
-            LOGIN: "Iniciar sesi\xF3n",
-            STRING_ERROR_SERVER_ROOM_DISCONNECTED: "Desconectado",
-            STRING_ERROR_SERVER_ROOM_DESTROYED: "Desconectado"
-        }
     },
     YC = `<div id="player" class="playerTopBar">
     <div id="playericon" class="playerIcon"></div>
@@ -17476,10 +17441,10 @@ const zC = `<div id="controller" class="state-controller controller-content">
             announcePrompt: !1,
             countGroupName: null,
             strings: {
-                your_choice: "Thank you. Your choice: ",
-                censor_prompt: "Censor this?",
-                censor_confirm: "Yes, Censor!",
-                censor_cancel: "No!"
+                your_choice: "Dziękujemy. Twój wybór: ",
+                censor_prompt: "Ocenzurować to?",
+                censor_confirm: "Tak, ocenzuruj!",
+                censor_cancel: "Nie!"
             }
         }
     }),
@@ -17565,7 +17530,7 @@ const zC = `<div id="controller" class="state-controller controller-content">
             this.promptComponent.model.clear({
                 silent: !0
             }).set(this.model.get("prompt")), this.choicesList.options.block = this.model.get("block"), this.choicesList.collection.set(this.model.get("choices")), this.model.get("type") === "multiple" && at.all(this.model.get("choices"), t => !t.disabled) && this.choicesList.collection.push({
-                text: "Submit",
+                text: "Wyślij",
                 action: "submit",
                 block: !1
             }), this.model.get("isAudience") && ((this.model.get("choiceId") === void 0 || this.model.get("choiceId") !== this.getOption("choiceId")) && (this.selected = [], this.audienceChoice = void 0, this.votesLeft = void 0), this.selected.length > 0 && (this.model.get("type") === "multiple" ? this.choicesList.children.forEach(t => {
@@ -17618,7 +17583,7 @@ const zC = `<div id="controller" class="state-controller controller-content">
             })), !1
         },
         displayAudienceChoice(t) {
-            let e = "Thank you.";
+            let e = "Dziękuję";
             const n = t.map(a => {
                 const f = this.choicesList.children.find(v => v.model.get("index") === a);
                 return f ? f.model.get("html") || f.model.get("text") : ""
@@ -19087,10 +19052,10 @@ const kx = `<div id="controller" class="state-controller controller-content">\r
             doneText: {},
             announcePrompt: !1,
             strings: {
-                your_choice: "Thank you. Your choice: ",
-                censor_prompt: "Censor this?",
-                censor_confirm: "Yes, Censor!",
-                censor_cancel: "No!"
+                your_choice: "Dziękujemy. Twój wybór: ",
+                censor_prompt: "Ocenzurować to?",
+                censor_confirm: "Tak, ocenzuruj!",
+                censor_cancel: "Nie!"
             }
         }
     }),
@@ -19329,30 +19294,29 @@ const kx = `<div id="controller" class="state-controller controller-content">\r
             text: "",
             validActions: [],
             strings: {
-                tos_warning: "By sharing content, you agree to our Terms of service",
-                tos_warning_agree: "agree and share",
-                tos_warning_back: "back to menu",
-                create_new_episode: "create a new episode",
-                create_new_name_prompt: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-                create_new_button: "create",
-                button_back_to_episodes: "back to episodes",
-                button_back_to_menu: "back to menu",
-                previous_episodes: "previous episodes:",
-                toggle_prompts_prompt: "tap to show/hide prompts",
-                button_close: "close",
-                button_done: "done",
-                button_add: "add prompt",
-                input_placeholder: "enter a prompt",
-                label_hidden: "hidden",
-                button_edit: "edit",
-                button_save: "save",
-                button_publish: "publish",
-                button_play: "play",
-                button_delete: "delete",
-                delete_warning: "Are you sure you want to delete this episode?",
-                delete_warning_confirm: "Yes",
-                delete_warning_cancel: "No"
-            }
+                tos_warning: "Udostępniając treści, akceptujesz nasze Warunki korzystania",
+                tos_warning_agree: "akceptuję i udostępniam",
+                tos_warning_back: "wróć do menu",
+                create_new_episode: "utwórz nowy odcinek",
+                create_new_name_prompt: "najpierw wpisz nazwę odcinka, który będzie zawierał wszystkie twoje wpisy, i naciśnij utwórz.",
+                create_new_button: "utwórz",
+                button_back_to_episodes: "wróć do odcinków",
+                button_back_to_menu: "wróć do menu",
+                previous_episodes: "poprzednie odcinki:",
+                toggle_prompts_prompt: "dotknij, aby pokazać/ukryć wpis",
+                button_close: "zamknij",
+                button_done: "gotowe",
+                button_add: "dodaj wpis",
+                input_placeholder: "miejsce wpisywania",
+                label_hidden: "ukryte",
+                button_edit: "edytuj",
+                button_save: "zapisz",
+                button_publish: "opublikuj",
+                button_play: "graj",
+                button_delete: "usuń",
+                delete_warning: "Czy na pewno chcesz usunąć ten odcinek?",
+                delete_warning_confirm: "Tak",
+                delete_warning_cancel: "Nie"            }
         }
     }),
     Lx = yt.View.extend({

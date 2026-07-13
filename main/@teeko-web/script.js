@@ -1648,7 +1648,7 @@ var aoe = $P((Voe, e0) => {
             return F3(t[0], ...t)
         }
     }
-    Oe(vs, "locale"), Oe(vs, "supported", ["en", "pl"]);
+    Oe(vs, "locale"), Oe(vs, "supported", ["en"]);
     var Si;
     let $n = (Si = class {
         static get serverUrl() {
@@ -6741,161 +6741,7 @@ var aoe = $P((Voe, e0) => {
             return t.replace(/(\u00A9|\u00AE|[\u2000-\u2017]|[\u2020-\u3300]|\uD83C[\uD000-\uDFFF]|\uD83D[\uD000-\uDFFF]|\uD83E[\uD000-\uDFFF])/, "")
         }
     }
-    const nj = {
-            BACK: "Back",
-            CANCEL: "Cancel",
-            CLOSE: "Close",
-            CONFIRM: "Confirm",
-            CREATE: "Create",
-            DELETE: "Delete",
-            DONE: "Done",
-            EDIT: "Edit",
-            OK: "OK",
-            NEXT: "Next",
-            NO: "No",
-            PLAY: "Play",
-            PUBLISH: "Publish",
-            REMOVE: "Remove",
-            RESET: "Reset",
-            SUBMIT: "Submit",
-            TRY_AGAIN: "Try Again",
-            UNDO: "Undo",
-            YES: "Yes"
-        },
-        ij = {
-            UGC: {
-                VISIBILITY_CONTROLLER_OFF: "prompts hidden on players’ devices",
-                VISIBILITY_CONTROLLER_ON: "prompts shown on players’ devices",
-                VISIBILITY_SCREEN_OFF: "prompts hidden on game screen",
-                VISIBILITY_SCREEN_ON: "prompts shown on game screen"
-            }
-        },
-        sj = {
-            DISCONNECTED: "You have been disconnected.",
-            DRAWING_NOTHING: "You have to draw something!",
-            PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-            ROOM_DESTROYED: "Thanks for playing!",
-            ROOM_DISCONNECTED: "Disconnected",
-            TEXT_NAUGHTY: "I’m afraid you can’t write that. Please be respectful of other players.",
-            TEXT_NOTHING: "You can’t enter nothing!",
-            TITLE: "Error"
-        },
-        oj = "LOADING",
-        aj = {
-            JOINED_COUNT: "{count} of {maxPlayers} players joined",
-            PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
-            WAITING_FOR_VIP: "Waiting for {name} to start the game",
-            WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-            WAITING_FOR_NEW_GAME: "Waiting for a new game to start",
-            GAME_STARTING: "Game is starting",
-            BUTTON_START: "Press to Start",
-            BUTTON_CANCEL: "Press to Cancel"
-        },
-        cj = {
-            GALLERY_LINK: "Visit the Gallery",
-            NEW_GAME_STARTED: "A new game has started",
-            PLAY_AGAIN: "Play again?",
-            THANKS_FOR_PLAYING: "Thanks for playing!",
-            BUTTON_GO_TO_GAME: "Go to game",
-            BUTTON_GO_TO_JACKBOX: "Back to jackbox.tv",
-            BUTTON_SAME_PLAYERS: "Same players",
-            BUTTON_NEW_PLAYERS: "New players"
-        },
-        uj = {
-            AND: "AND",
-            OR: "OR"
-        },
-        lj = {
-            BUTTON_SKIP: "Skip",
-            BUTTON_NEXT: "Next",
-            BUTTON_DONE: "Let’s Go!"
-        },
-        fj = {
-            NAME: "AUDIENCE"
-        },
-        dj = {
-            CART: {
-                CHECK_OUT: "Check out",
-                EMPTY: "Your cart is empty",
-                TITLE: "Shopping Cart",
-                TOTAL: "Total"
-            }
-        },
-        hj = {
-            EPISODE_REPORT: "Report Episode",
-            EPISODE_UNLOAD: "Unload Episode",
-            EPISODE_VIEW_AUTHOR: "View Author",
-            EPISODES_LOAD: "Load an episode by id:",
-            EPISODES_MENU: "Episodes Menu",
-            EPISODES_SELECT: "Or select an epsiode:",
-            EPISODES_WARNING: "Warning: user generated content is not rated",
-            INSTRUCTION: {
-                CREATE_TITLE: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-                LOAD: "create or load?",
-                PUBLISH: "publish your episode",
-                TITLE: "name your episode",
-                TOGGLE_VISIBILITY: "tap to show/hide prompts",
-                WRITE: "write your prompts"
-            },
-            WARNING: {
-                DELETE: "Are you sure you want to delete this episode?",
-                TOS: "By sharing content, you agree to our [tos]Terms of Service[/tos]",
-                TOS_AGREE: "agree and share"
-            },
-            BACK_TO_EPISODES: "back to episodes",
-            BACK_TO_MENU: "back to menu",
-            CREATE_NEW_EPISODE: "create a new episode",
-            PREVIOUS_EPISODES: "previous episodes",
-            PROMPT_ADD: "add prompt",
-            PROMPT_PLACEHOLDER: "enter a prompt",
-            PROMPTS_COUNT_HIDDEN: "({count} hidden)",
-            TITLE_PLACEHOLDER: "enter a title"
-        },
-        pj = {
-            BROADCASTER: {
-                SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-                WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
-            },
-            RECONNECTED: {
-                TEXT: "RECONNECTED",
-                SUBTEXT: "Have fun!"
-            },
-            RECONNECTING: {
-                CONTROLLER: {
-                    TEXT: "CONNECTION INTERRUPTED",
-                    SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
-                },
-                GAME: {
-                    TEXT: "GAME CONNECTION INTERRUPTED",
-                    SUBTEXT: "Please wait while we attempt to reconnect"
-                }
-            },
-            PAUSED: {
-                TEXT: "THE GAME IS PAUSED",
-                SUBTEXT: "Anything you submit will still be sent to the game."
-            }
-        },
-        gj = {
-            SHARE: "Share",
-            COPY_TO_CLIPBOARD: "Copy to clipboard",
-            COPIED: "Copied"
-        },
-        _j = {
-            ACTION: nj,
-            ALT: ij,
-            ERROR: sj,
-            LOADING: oj,
-            LOBBY: aj,
-            POST_GAME: cj,
-            SEPARATOR: uj,
-            TUTORIAL: lj,
-            AUDIENCE: fj,
-            GALLERY: dj,
-            UGC: hj,
-            TOAST: pj,
-            SHARE: gj
-        },
-        qj = {
+    const qj = {
             BACK: "Wstecz",
             CANCEL: "Anuluj",
             CLOSE: "Zamknij",
@@ -7050,121 +6896,8 @@ var aoe = $P((Voe, e0) => {
             SHARE: nH
         },
         YH = {
-            en: _j,
-            pl: iH
+            en: iH
         },
-        VH = {
-            LABEL: "BRANCH",
-            REFRESH_REQUIRED: "Refresh Required",
-            PREFERRED: "PREFERRED BRANCH",
-            SELECT: "Select a Branch",
-            WAITING: "Waiting for Room"
-        },
-        zH = {
-            ACCEPT_ALL: "Got it!",
-            CONSENT_MODAL: {
-                ARIA: "Cookie consent form"
-            },
-            DESCRIPTION: "We use cookies to improve your game experience and analyze website traffic. Find out more in our [pp]Privacy Policy[/pp].",
-            REJECT_ALL: "Opt out"
-        },
-        XH = {
-            UNSUPPORTED_BROWSER: "This game is not supported on this browser. View '?' or HELP to see a list of compatible browsers.",
-            ROOM_IS_FULL: "The game is full",
-            ROOM_NOT_FOUND: "Room not found",
-            AUDIENCE_IS_FULL: "The audience is full",
-            UNABLE_TO_CONNECT: "Unable to connect to the Jackbox Games server. This is commonly caused by adblockers or privacy extensions.",
-            UNABLE_TO_PRELOAD: "Unable to preload this game bundle",
-            KICKED: "You cannot join because you have been kicked by a moderator",
-            REQUIRES_TWITCH_LOGIN: "Game requires Twitch login",
-            ROOM_IS_LOCKED: "Game is locked",
-            INCORRECT_PASSWORD: "Incorrect password",
-            GENERIC: "Error joining this game",
-            FILTER_NAME: "This game has profanity filters enabled. Please pick a different name."
-        },
-        JH = {
-            NAME: "NAME",
-            NAME_PLACEHOLDER: "ENTER YOUR NAME",
-            PASSWORD_PLACEHOLDER: "ENTER 5-DIGIT PASSWORD",
-            PASSWORD_REQUIRED_TITLE: "Password required",
-            PASSWORD_REQUIRED_BODY: "Please enter the password or join as an audience member",
-            PASSWORD_JOIN_AS_PLAYER: "Join as Player",
-            PASSWORD_JOIN_AS_AUDIENCE: "Join Audience",
-            ROOM_CODE: "ROOM CODE",
-            ROOM_CODE_PLACEHOLDER: "ENTER 4-LETTER CODE"
-        },
-        QH = "Link to Jackbox Games Homepage",
-        ZH = {
-            APPEARANCE: "APPEARANCE",
-            DARK: "dark",
-            HELP: "HELP",
-            TWITCH: "TWITCH",
-            LIGHT: "light",
-            LOGOUT: "LOGOUT",
-            MERCH: "MERCH",
-            PAST_GAMES: "PAST GAMES",
-            MAILING_LIST: "MAILING LIST",
-            MODERATOR: "MODERATOR"
-        },
-        e5 = {
-            CALL_TO_ACTION: {
-                SHOP: "VIEW GAME & SHOP",
-                VIEW: "VIEW THIS GAME"
-            },
-            NEW: "NEW",
-            PLAYED_ON: "PLAYED ON",
-            REMOVE: {
-                CONFIRM: "Are you sure?",
-                DESCRIPTION: `This will permanently remove this game
-from your past games list.`,
-                MANAGE: "Remove Game?",
-                TITLE: "Are You Sure?"
-            }
-        },
-        t5 = {
-            EMPTY: "No Past Games Yet",
-            MANAGE: "MANAGE",
-            TITLE: "YOUR PAST GAMES"
-        },
-        r5 = {
-            TITLE: "RECENT GAMES",
-            VIEW_ALL: {
-                BUTTON: "VIEW ALL",
-                LINK: "VIEW ALL PAST GAMES"
-            }
-        },
-        n5 = {
-            GAME_FULL: "Game is full",
-            GAME_STARTED: "Game has started",
-            ROOM_NOT_FOUND: "Room not found"
-        },
-        i5 = {
-            GAME_FULL: "GAME IS FULL",
-            GAME_STARTED: "GAME HAS STARTED",
-            JOIN_AUDIENCE: "JOIN AUDIENCE",
-            RECONNECT: "RECONNECT",
-            TWITCH_LOGIN: "LOGIN WITH TWITCH"
-        },
-        s5 = {
-            CAMERA: "[b]HEADS UP:[/b] We’re not detecting a camera, but you can still play the game without a photo. If this seems wrong, try joining with a different browser.",
-            STYLE: "[b]HEADS UP:[/b] Your browser seems a bit outdated, and will have some issues displaying this game.",
-            TOS: "By clicking {submit}, you agree to our [tos]Terms of Service[/tos]"
-        },
-        o5 = {
-            BRANCH: VH,
-            COOKIE: zH,
-            ERROR: XH,
-            FORM: JH,
-            HOMEPAGE_LINK: QH,
-            MENU: ZH,
-            PAST_GAME: e5,
-            PAST_GAMES: t5,
-            RECENT_GAMES: r5,
-            STATUS: n5,
-            SUBMIT: i5,
-            WARNING: s5
-        },
-
         $5 = {
             LABEL: "GAŁĄŹ",
             REFRESH_REQUIRED: "Wymagane odświeżenie",
@@ -7277,8 +7010,7 @@ twoich poprzednich gier.`,
             WARNING: H5
         },
         L7 = {
-            en: o5,
-            pl: q5
+            en: q5
         },
         Fr = (e, t) => {
             const r = e.__vccOpts || e;
@@ -10065,37 +9797,7 @@ ${t}`
             }
         };
     pn("");
-    const zne = {
-            BUY_NOW: "Buy now",
-            SLOGAN: "Slogan",
-            SLOGAN_PLACEHOLDER: "ENTER YOUR SLOGAN"
-        },
-        Xne = {
-            INSTRUCTIONS: "Draw your design"
-        },
-        Jne = {
-            INSTRUCTIONS: "Add your slogan",
-            DISCLAIMER: "* This image is just a preview. Final placement of drawing and slogan may vary."
-        },
-        Qne = {
-            POST_SUBMIT: "Thanks for stopping by! Click below to purchase your shirt. Be sure to save the link for later if you'd like to finish shopping later!"
-        },
-        Zne = {
-            TEXT: "Moving on from here means you can no longer edit your shirt. Are you ready to finish?"
-        },
-        eie = {
-            TOS: "By clicking {submit}, you agree to our [tos]Terms of Service[/tos]"
-        },
-        tie = {
-            FORM: zne,
-            DRAWING: Xne,
-            ASSEMBLING: Jne,
-            INSTRUCTIONS: Qne,
-            MODAL: Zne,
-            WARNING: eie
-        },
-
-        _ie = {
+    const _ie = {
             BUY_NOW: "Kup teraz",
             SLOGAN: "Slogan",
             SLOGAN_PLACEHOLDER: "WPISZ SWÓJ SLOGAN"
@@ -10125,8 +9827,7 @@ ${t}`
             WARNING: Tie
         },
         Hie = {
-            en: tie,
-            pl: bie
+            en: bie
         },
         qie = Br({
             props: {
@@ -10656,11 +10357,8 @@ ${t}`
             data() {
                 return {
                     locales: [{
-                        displayValue: "English",
-                        value: "en"
-                    }, {
                         displayValue: "Polski",
-                        value: "pl"
+                        value: "en"
                     }],
                     nameLength: 12,
                     name: "",

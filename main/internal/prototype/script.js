@@ -8120,7 +8120,7 @@ class Pa {
         return B8(e[0], ...e)
     }
 }
-se(Pa, "locale"), se(Pa, "supported", ["en", "fr", "it", "de", "es", "es-XL", "pt-BR"]);
+se(Pa, "locale"), se(Pa, "supported", ["en"]);
 const La = class La {
     static get serverUrl() {
         const e = this.getQueryParam("server") ?? this.getQueryParam("s");
@@ -17022,162 +17022,7 @@ class X1 {
         return e.replace(new RegExp("\\p{Currency_Symbol}", "gu"), "").replace(new RegExp("\\p{Letter}", "gu"), "").replace(new RegExp("\\p{Number}", "gu"), "").replace(new RegExp("\\p{Math_Symbol}", "gu"), "").replace(new RegExp("\\p{Punctuation}", "gu"), "").replace(new RegExp("\\p{Separator}", "gu"), "").replace(/[`^¿]/gu, "")
     }
 }
-const wG = {
-        BACK: "Back",
-        CANCEL: "Cancel",
-        CLOSE: "Close",
-        CONFIRM: "Confirm",
-        CREATE: "Create",
-        DELETE: "Delete",
-        DONE: "Done",
-        EDIT: "Edit",
-        OK: "OK",
-        NEXT: "Next",
-        NO: "No",
-        PLAY: "Play",
-        PUBLISH: "Publish",
-        REMOVE: "Remove",
-        RESET: "Reset",
-        SUBMIT: "Submit",
-        TRY_AGAIN: "Try Again",
-        UNDO: "Undo",
-        YES: "Yes"
-    },
-    UG = {
-        UGC: {
-            VISIBILITY_CONTROLLER_OFF: "prompts hidden on players’ devices",
-            VISIBILITY_CONTROLLER_ON: "prompts shown on players’ devices",
-            VISIBILITY_SCREEN_OFF: "prompts hidden on game screen",
-            VISIBILITY_SCREEN_ON: "prompts shown on game screen"
-        }
-    },
-    PG = {
-        DISCONNECTED: "You have been disconnected.",
-        DRAWING_NOTHING: "You have to draw something!",
-        PLAYER_KICKED: "You have been kicked from the game by a moderator.",
-        ROOM_DESTROYED: "Thanks for playing!",
-        ROOM_DISCONNECTED: "Disconnected",
-        TEXT_NAUGHTY: "I’m afraid you can’t write that. Please be respectful of other players.",
-        TEXT_NOTHING: "You can’t enter nothing!",
-        TITLE: "Error"
-    },
-    BG = "LOADING",
-    $G = {
-        JOINED_COUNT: "{count} of {maxPlayers} players joined",
-        PLAYERS_NEEDED: "1 player needed to start | {count} players needed to start",
-        WAITING_FOR_VIP: "Waiting for {name} to start the game",
-        WAITING_FOR_GAMEPAD: "Waiting for the game to start",
-        WAITING_FOR_NEW_GAME: "Waiting for a new game to start",
-        GAME_STARTING: "Game is starting",
-        BUTTON_START: "Press to Start",
-        BUTTON_CANCEL: "Press to Cancel"
-    },
-    DG = {
-        GALLERY_LINK: "Visit the Gallery",
-        NEW_GAME_STARTED: "A new game has started",
-        PLAY_AGAIN: "Play again?",
-        THANKS_FOR_PLAYING: "Thanks for playing!",
-        BUTTON_GO_TO_GAME: "Go to game",
-        BUTTON_GO_TO_JACKBOX: "Back to jackbox.tv",
-        BUTTON_SAME_PLAYERS: "Same players",
-        BUTTON_NEW_PLAYERS: "New players",
-        BUTTON_CHANGE_GAME: "Play {gameName}"
-    },
-    KG = {
-        AND: "AND",
-        OR: "OR"
-    },
-    kG = {
-        BUTTON_SKIP: "Skip",
-        BUTTON_NEXT: "Next",
-        BUTTON_DONE: "Let’s Go!"
-    },
-    MG = {
-        NAME: "AUDIENCE"
-    },
-    VG = {
-        CART: {
-            CHECK_OUT: "Check out",
-            EMPTY: "Your cart is empty",
-            TITLE: "Shopping Cart",
-            TOTAL: "Total"
-        }
-    },
-    GG = {
-        EPISODE_REPORT: "Report Episode",
-        EPISODE_UNLOAD: "Unload Episode",
-        EPISODE_VIEW_AUTHOR: "View Author",
-        EPISODES_LOAD: "Load an episode by id:",
-        EPISODES_MENU: "Episodes Menu",
-        EPISODES_SELECT: "Or select an epsiode:",
-        EPISODES_WARNING: "Warning: user generated content is not rated",
-        INSTRUCTION: {
-            CREATE_TITLE: "first things first, enter a name for the episode that will contain all your prompts and hit create.",
-            LOAD: "create or load?",
-            PUBLISH: "publish your episode",
-            TITLE: "name your episode",
-            TOGGLE_VISIBILITY: "tap to show/hide prompts",
-            WRITE: "write your prompts"
-        },
-        WARNING: {
-            DELETE: "Are you sure you want to delete this episode?",
-            TOS: "By sharing content, you agree to our [tos]Terms of Service[/tos]",
-            TOS_AGREE: "agree and share"
-        },
-        BACK_TO_EPISODES: "back to episodes",
-        BACK_TO_MENU: "back to menu",
-        CREATE_NEW_EPISODE: "create a new episode",
-        PREVIOUS_EPISODES: "previous episodes",
-        PROMPT_ADD: "add prompt",
-        PROMPT_PLACEHOLDER: "enter a prompt",
-        PROMPTS_COUNT_HIDDEN: "({count} hidden)",
-        TITLE_PLACEHOLDER: "enter a title"
-    },
-    FG = {
-        BROADCASTER: {
-            SUBTEXT: "You have successfully connected your account to the Jackbox Audience Kit Twitch Extension.",
-            WARNING: "THIS ROOM DOESN'T HAVE THE AUDIENCE SETTING ENABLED"
-        },
-        RECONNECTED: {
-            TEXT: "RECONNECTED",
-            SUBTEXT: "Have fun!"
-        },
-        RECONNECTING: {
-            CONTROLLER: {
-                TEXT: "CONNECTION INTERRUPTED",
-                SUBTEXT: "Attempting to reconnect ({attempt} of 5)"
-            },
-            GAME: {
-                TEXT: "GAME CONNECTION INTERRUPTED",
-                SUBTEXT: "Please wait while we attempt to reconnect"
-            }
-        },
-        PAUSED: {
-            TEXT: "THE GAME IS PAUSED",
-            SUBTEXT: "Anything you submit will still be sent to the game."
-        }
-    },
-    XG = {
-        SHARE: "Share",
-        COPY_TO_CLIPBOARD: "Copy to clipboard",
-        COPIED: "Copied"
-    },
-    jG = {
-        ACTION: wG,
-        ALT: UG,
-        ERROR: PG,
-        LOADING: BG,
-        LOBBY: $G,
-        POST_GAME: DG,
-        SEPARATOR: KG,
-        TUTORIAL: kG,
-        AUDIENCE: MG,
-        GALLERY: VG,
-        UGC: GG,
-        TOAST: FG,
-        SHARE: XG
-    },
-    x7 = {
+const x7 = {
         BACK: "Wstecz",
         CANCEL: "Anuluj",
         CLOSE: "Zamknij",
@@ -17332,8 +17177,7 @@ const wG = {
         SHARE: w7
     },
     vF = {
-        en: jG,
-        pl: U7
+        en: U7
     };
 var xf = {
     exports: {}
@@ -21778,7 +21622,7 @@ function OF(t, e, r, n, s, a) {
         style: al(t.stageDimensions)
     }, null, 4), te("button", {
         onClick: e[0] || (e[0] = Zr((...f) => t.onSubmitClick && t.onSubmitClick(...f), ["prevent"]))
-    }, ft(t.player.submitText || "SUBMIT"), 1)])], 512)])
+    }, ft(t.player.submitText || "WYŚLIJ"), 1)])], 512)])
 }
 const IF = lt(RF, [
         ["render", OF]
@@ -23465,7 +23309,7 @@ function ZY(t, e, r, n, s, a) {
     }, null, 8, ["disabled", "placeholder", "model-value", "onKeypress", "onUpdate:modelValue"])), Ye(te("button", {
         onClick: e[0] || (e[0] = Zr((...p) => t.onSubmit && t.onSubmit(...p), ["prevent"]))
     }, null, 512), [
-        [h, t.player.submitText || "SUBMIT"]
+        [h, t.player.submitText || "WYŚLIJ"]
     ])])])
 }
 const QY = lt(WY, [
@@ -23587,7 +23431,7 @@ function az(t, e, r, n, s, a) {
     }, null, 8, ["disabled", "placeholder", "model-value", "onKeypress", "onUpdate:modelValue"])), Ye(te("button", {
         onClick: e[0] || (e[0] = Zr((...p) => t.onSubmit && t.onSubmit(...p), ["prevent"]))
     }, null, 512), [
-        [h, t.player.submitText || "SUBMIT"]
+        [h, t.player.submitText || "WYŚLIJ"]
     ]), t.player.choices.length ? (ee(!0), ue(vt, {
         key: 4
     }, Hs(t.player.choices, (p, d) => Ye((ee(), ue("button", {
@@ -23691,7 +23535,7 @@ function dz(t, e, r, n, s, a) {
     }, null, 40, Ez))], 64))), 256)), Ye(te("button", {
         onClick: e[0] || (e[0] = Zr((...f) => t.onSubmitClick && t.onSubmitClick(...f), ["prevent"]))
     }, null, 512), [
-        [u, t.player.submitText || "SUBMIT"]
+        [u, t.player.submitText || "WYŚLIJ"]
     ])])])
 }
 const _z = lt(lz, [
